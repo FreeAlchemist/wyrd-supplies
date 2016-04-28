@@ -1,0 +1,592 @@
+body {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	background-color: transparent;
+	width: 20cm;
+	/*height: 29cm;*/
+	/*height: 24cm;*/
+	height: 21cm;
+	border:solid 3px Black;
+}
+
+.fate {
+	position: absolute;
+	width: 19cm;
+	/*height: 35%;*/
+	/*height: 44%;*/
+	height: 9cm;
+	/*top: 55%;*/
+	top: 11.5cm;
+	left:3%;
+	overflow: auto;
+	/*padding: 10px;*/
+}
+
+.fate-title{
+width: 100px;
+position: relative;
+float: left;
+}
+
+.history {
+	position: absolute;
+	width: 10.5cm;
+	/*height: 50%;*/
+	height: 11cm;
+	top: 0px;
+	left: 43%;
+	overflow: auto;
+	padding: 10px;
+	font-size: 10pt;
+}
+
+.crossroad {
+	position: absolute;
+	/*width: 30%;
+	height: 40%;*/
+	width: 8cm;
+	height: 11cm;
+	top: 0px;
+	left:3%;
+}
+
+.crossroad-north ,
+.crossroad-west ,
+.crossroad-station ,
+.crossroad-east,
+.crossroad-south {
+	position: absolute;	
+	height: 30%;
+	width: 15%;
+	font-size: 16pt;
+	box-sizing: border-box;
+}
+
+.crossroad-card {
+	width: 100%;
+	height: 100%;
+	box-sizing:border-box;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: -2px 2px 5px black;
+	text-align: center;
+	font-size: 20pt;
+	line-height: 1.5cm;
+	background-position: 55% 80%;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-color: Linen;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+}
+
+.crossroad-card:hover {
+	box-shadow: -4px 4px 20px black;
+	cursor: pointer;
+}
+
+.stage{
+	width: 280px;
+	height: 30px;
+	/*border:1px solid;*/
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+.title{
+	float: left;
+	width: 90px;
+	padding-right: 5px;
+	font-size: 12pt;
+	text-align: center;
+}
+.title input{
+	border:none;
+	border-bottom: solid 2px;
+}
+#name{
+	float: left;
+	width: 290px;
+	font-size: 16px;
+}
+
+.crossroad-north , .crossroad-west , .crossroad-station , .crossroad-east, .crossroad-south  {
+	/*height: 20%;
+	width: 27%;*/
+	height: 3cm;
+	width: 2cm;
+}
+
+.crossroad-north {
+	/*top:2.5%;
+	left: 35%;*/
+	top:0.5cm;
+	left: 3cm;
+}
+.crossroad-west {
+	/*top:25%;
+	left: 2.5%;*/
+	top:4cm;
+	left: 0.5cm;
+}
+.crossroad-station {
+	/*top:25%;
+	left: 35%;*/
+	top:4cm;
+	left: 3cm;
+}
+.crossroad-east {
+	/*top:25%;
+	left:67.5%;*/
+	top:4cm;
+	left:5.5cm;
+}
+.crossroad-south {
+	/*top:48%;
+	left: 35%;*/
+	top:7.5cm;
+	left: 3cm;
+}
+
+.skill,.skill-fate{
+height: 30px;
+width: 100%;
+margin-top: 10px;
+line-height: 30px;
+}
+.skill-title,.skill-fate-title{
+float: left;
+font-size: 16px;
+font-weight: bold;
+width: 43%;
+padding-left: 5px;
+border: 1px solid;
+border-radius: 3px;
+background-color: Bisque;
+margin-right: 3px;
+}
+.skill-fate-title{
+	width: 26%;
+}
+.skill-text,.skill-fate-text{
+float: left;
+padding-left: 5px;
+width: 50%;
+font-size: 13px;
+border: 1px solid;
+border-radius: 3px;
+background-color: Linen;
+}
+.skill-fate-text{
+	width: 69%;
+}
+.skill-desc{
+margin-top: 6px;
+padding: 5px;
+width: 94%;
+}
+
+#header-wrap{
+	/*width: 280px;*/
+	height: 30px;
+	/*border:1px solid;*/
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+#header-title{
+	float: left;
+	/*font-size: 18px;*/
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header-title a{
+	color: black;
+	text-decoration: none;
+}
+
+#header-title a:hover{
+	color: SteelBlue;
+}
+
+#header-menu{
+	float: left;
+}
+
+#header-menu input{
+	margin-left: 5px;
+	border:2px groove;
+	border-bottom-width: 3px;
+	border-radius: 8px;
+	background: linear-gradient(to bottom, Linen, Burlywood);
+	border-left-color: Bisque;
+    border-right-color: Burlywood;
+    border-bottom-color: Burlywood;
+    border-top-color: Bisque;
+    color: black;
+}
+
+#header-menu input:hover{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
+}
+
+.lang{
+	padding: 1px 5px;
+	border:2px groove;
+	border-bottom-width: 3px;
+	text-decoration: none;
+    border-left-color: Bisque;
+    border-right-color: Burlywood;
+    border-bottom-color: Burlywood;
+    border-top-color: Bisque;
+    color: black;
+    background-color: Linen;
+}
+
+#lang-eng{
+	border-radius: 8px 0px 0px 8px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+#lang-rus{
+	border-radius: 0px 8px 8px 0px;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.lang:hover{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
+}
+
+.lang-active{
+	background-color: Bisque;
+	box-shadow: inset -1px 2px 3px Saddlebrown;
+}
+
+.card-back{
+	background-size: 100% 100%;
+	background-color: Burlywood;
+	background-image: url(../img/Back.svg);
+	background-image: url(../img/Back.svg),radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+}
+
+.color-clubs{
+	background-image: url(../img/clubs.svg);
+	background-image: url(../img/tomes.svg);
+	/*background-image: url(../img/tomes1.svg);*/
+	/*background-size: 80%;*/
+	/*box-shadow: 0px 0px 15px rgba(48,100,175,1);*/
+}
+
+.color-diamonds{
+	background-image: url(../img/diamonds.svg);
+	background-image: url(../img/masks.svg);
+	/*background-image: url(../img/masks1.svg);*/
+	/*background-size: 50%;*/
+	/*box-shadow: 0px 0px 15px rgba(121,78,143,1);*/
+}
+
+.color-hearts{
+	background-image: url(../img/hearts.svg);
+	background-image:url(../img/rams.svg);
+	/*background-image:url(../img/rams1.svg);*/
+	/*background-image:url(../img/rams2.svg);*/
+	/*background-size: 80%;*/
+	/*box-shadow: 0px 0px 15px rgba(171,49,45,1);*/
+}
+
+.color-spades{
+	background-image: url(../img/spades.svg);
+	background-image: url(../img/crows.svg);
+	/*background-image: url(../img/crows1.svg);*/
+	/*background-image: url(../img/crows2.svg);*/
+	/*background-size: 60%;*/
+	/*box-shadow: 0px 0px 15px rgba(0,150,72,1);*/
+}
+
+.color-jockers{
+	background-size: 70%;
+	/*font-size: 10pt;*/
+	/*box-shadow: 0px 0px 15px rgba(200,130,30,1);*/
+}
+
+.jockers_0{background-image:url(../img/jockers-black.svg);}
+.jockers_14{background-image:url(../img/jockers-red.svg);}
+.jockers_14{background-image:url(../img/jockers-red0.svg);}
+
+/*--- POPUP ---*/
+.popup {
+	position: absolute;
+	top:25px;
+	left:25px;
+	bottom:25px;
+	right:25px;
+}
+.popupWrapper {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+.notdisplay {
+	display: none;
+}
+.popupLine {
+	/*height: 18%;
+	margin-bottom: 1%;*/
+	height: 8%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+.popupCard {
+	display: inline-block;
+	width: 6%;
+	height: 90%;
+	background-color: Wheat;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	vertical-align: top;
+	border:solid 1px black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	font-size: 14pt;
+	line-height: 30px;
+	background-position: 55% 85%;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+
+.popupCard:hover{
+	cursor: pointer;
+	background-color: Linen;
+	background-color: Burlywood;
+}
+
+.popupCard.color-jockers{
+	color: transparent;
+	background-position: center;
+	background-size: 95%;
+}
+
+.catched {
+	box-shadow: inset 0 0 30px rgba(170,20,20,1);
+	margin-top: 5px;
+	transform:skew(2grad);
+}
+
+/*Print*/
+/*.bodyprint{
+	background-color: transparent;
+	width: 20cm;
+	height: 29cm;
+	height: 24cm;
+	border:solid 3px Black;
+}
+*/
+.bodyprint #header-menu,.bodyprint #copyright{display: none;}
+
+.bodyprint .crossroad{
+	border:none;
+	background-color: transparent;
+}
+
+.bodyprint .crossroad-card {
+	box-shadow: none;
+	background-color: transparent;
+	/*width: 6.2cm;
+	height: 8.7cm;*/
+}
+
+.bodyprint .card-back{
+	background-image: none;
+}
+
+.bodyprint a{
+	color: black;
+	text-decoration: none;
+}
+
+.bodyprint .skill div,.bodyprint .skill-fate div,.bodyprint .skill-desc{
+	background-color: transparent;
+}
+
+@media print {
+	#header-menu,#copyright{display: none;}
+	.crossroad{
+		border:none;
+		background-color: transparent;
+	}
+	.crossroad-card {
+		box-shadow: none;
+		background-color: transparent;
+	}
+	.card-back{background-image: none;}
+	a{
+	color: black;
+	text-decoration: none;
+	}
+	.skill div, .skill-fate div, .skill-desc{
+		background-color: transparent;
+	}
+}
+
+/*.hearts_1{background-image: url(../img/cards/hearts_1.svg);}
+.hearts_2{background-image: url(../img/cards/hearts_2.svg);}
+.hearts_3{background-image: url(../img/cards/hearts_3.svg);}
+.hearts_4{background-image: url(../img/cards/hearts_4.svg);}
+.hearts_5{background-image: url(../img/cards/hearts_5.svg);}
+.hearts_6{background-image: url(../img/cards/hearts_6.svg);}
+.hearts_7{background-image: url(../img/cards/hearts_7.svg);}
+.hearts_8{background-image: url(../img/cards/hearts_8.svg);}
+.hearts_9{background-image: url(../img/cards/hearts_9.svg);}
+.hearts_10{background-image: url(../img/cards/hearts_10.svg);}
+.hearts_11{background-image: url(../img/cards/hearts_11.svg);}
+.hearts_12{background-image: url(../img/cards/hearts_12.svg);}
+.hearts_13{background-image: url(../img/cards/hearts_13.svg);}
+.clubs_1{background-image: url(../img/cards/clubs_1.svg);}
+.clubs_2{background-image: url(../img/cards/clubs_2.svg);}
+.clubs_3{background-image: url(../img/cards/clubs_3.svg);}
+.clubs_4{background-image: url(../img/cards/clubs_4.svg);}
+.clubs_5{background-image: url(../img/cards/clubs_5.svg);}
+.clubs_6{background-image: url(../img/cards/clubs_6.svg);}
+.clubs_7{background-image: url(../img/cards/clubs_7.svg);}
+.clubs_8{background-image: url(../img/cards/clubs_8.svg);}
+.clubs_9{background-image: url(../img/cards/clubs_9.svg);}
+.clubs_10{background-image: url(../img/cards/clubs_10.svg);}
+.clubs_11{background-image: url(../img/cards/clubs_11.svg);}
+.clubs_12{background-image: url(../img/cards/clubs_12.svg);}
+.clubs_13{background-image: url(../img/cards/clubs_13.svg);}
+.spades_1{background-image: url(../img/cards/spades_1.svg);}
+.spades_2{background-image: url(../img/cards/spades_2.svg);}
+.spades_3{background-image: url(../img/cards/spades_3.svg);}
+.spades_4{background-image: url(../img/cards/spades_4.svg);}
+.spades_5{background-image: url(../img/cards/spades_5.svg);}
+.spades_6{background-image: url(../img/cards/spades_6.svg);}
+.spades_7{background-image: url(../img/cards/spades_7.svg);}
+.spades_8{background-image: url(../img/cards/spades_8.svg);}
+.spades_9{background-image: url(../img/cards/spades_9.svg);}
+.spades_10{background-image: url(../img/cards/spades_10.svg);}
+.spades_11{background-image: url(../img/cards/spades_11.svg);}
+.spades_12{background-image: url(../img/cards/spades_12.svg);}
+.spades_13{background-image: url(../img/cards/spades_13.svg);}
+.diamonds_1{background-image: url(../img/cards/diamonds_1.svg);}
+.diamonds_2{background-image: url(../img/cards/diamonds_2.svg);}
+.diamonds_3{background-image: url(../img/cards/diamonds_3.svg);}
+.diamonds_4{background-image: url(../img/cards/diamonds_4.svg);}
+.diamonds_5{background-image: url(../img/cards/diamonds_5.svg);}
+.diamonds_6{background-image: url(../img/cards/diamonds_6.svg);}
+.diamonds_7{background-image: url(../img/cards/diamonds_7.svg);}
+.diamonds_8{background-image: url(../img/cards/diamonds_8.svg);}
+.diamonds_9{background-image: url(../img/cards/diamonds_9.svg);}
+.diamonds_10{background-image: url(../img/cards/diamonds_10.svg);}
+.diamonds_11{background-image: url(../img/cards/diamonds_11.svg);}
+.diamonds_12{background-image: url(../img/cards/diamonds_12.svg);}
+.diamonds_13{background-image: url(../img/cards/diamonds_13.svg);}*/
+
+/*.hearts_1{background-image: url(../img/malifaux_cards/card_p1_ram_1.png);}
+.hearts_2{background-image: url(../img/malifaux_cards/card_p1_ram_2.png);}
+.hearts_3{background-image: url(../img/malifaux_cards/card_p1_ram_3.png);}
+.hearts_4{background-image: url(../img/malifaux_cards/card_p1_ram_4.png);}
+.hearts_5{background-image: url(../img/malifaux_cards/card_p1_ram_5.png);}
+.hearts_6{background-image: url(../img/malifaux_cards/card_p1_ram_6.png);}
+.hearts_7{background-image: url(../img/malifaux_cards/card_p1_ram_7.png);}
+.hearts_8{background-image: url(../img/malifaux_cards/card_p1_ram_8.png);}
+.hearts_9{background-image: url(../img/malifaux_cards/card_p1_ram_9.png);}
+.hearts_10{background-image: url(../img/malifaux_cards/card_p1_ram_10.png);}
+.hearts_11{background-image: url(../img/malifaux_cards/card_p1_ram_11.png);}
+.hearts_12{background-image: url(../img/malifaux_cards/card_p1_ram_12.png);}
+.hearts_13{background-image: url(../img/malifaux_cards/card_p1_ram_13.png);}
+
+.clubs_1{background-image: url(../img/malifaux_cards/card_p1_tomes_1.png);}
+.clubs_2{background-image: url(../img/malifaux_cards/card_p1_tomes_2.png);}
+.clubs_3{background-image: url(../img/malifaux_cards/card_p1_tomes_3.png);}
+.clubs_4{background-image: url(../img/malifaux_cards/card_p1_tomes_4.png);}
+.clubs_5{background-image: url(../img/malifaux_cards/card_p1_tomes_5.png);}
+.clubs_6{background-image: url(../img/malifaux_cards/card_p1_tomes_6.png);}
+.clubs_7{background-image: url(../img/malifaux_cards/card_p1_tomes_7.png);}
+.clubs_8{background-image: url(../img/malifaux_cards/card_p1_tomes_8.png);}
+.clubs_9{background-image: url(../img/malifaux_cards/card_p1_tomes_9.png);}
+.clubs_10{background-image: url(../img/malifaux_cards/card_p1_tomes_10.png);}
+.clubs_11{background-image: url(../img/malifaux_cards/card_p1_tomes_11.png);}
+.clubs_12{background-image: url(../img/malifaux_cards/card_p1_tomes_12.png);}
+.clubs_13{background-image: url(../img/malifaux_cards/card_p1_tomes_13.png);}
+
+.spades_1{background-image: url(../img/malifaux_cards/card_p1_crows_1.png);}
+.spades_2{background-image: url(../img/malifaux_cards/card_p1_crows_2.png);}
+.spades_3{background-image: url(../img/malifaux_cards/card_p1_crows_3.png);}
+.spades_4{background-image: url(../img/malifaux_cards/card_p1_crows_4.png);}
+.spades_5{background-image: url(../img/malifaux_cards/card_p1_crows_5.png);}
+.spades_6{background-image: url(../img/malifaux_cards/card_p1_crows_6.png);}
+.spades_7{background-image: url(../img/malifaux_cards/card_p1_crows_7.png);}
+.spades_8{background-image: url(../img/malifaux_cards/card_p1_crows_8.png);}
+.spades_9{background-image: url(../img/malifaux_cards/card_p1_crows_9.png);}
+.spades_10{background-image: url(../img/malifaux_cards/card_p1_crows_10.png);}
+.spades_11{background-image: url(../img/malifaux_cards/card_p1_crows_11.png);}
+.spades_12{background-image: url(../img/malifaux_cards/card_p1_crows_12.png);}
+.spades_13{background-image: url(../img/malifaux_cards/card_p1_crows_13.png);}
+
+.diamonds_1{background-image: url(../img/malifaux_cards/card_p1_masks_1.png);}
+.diamonds_2{background-image: url(../img/malifaux_cards/card_p1_masks_2.png);}
+.diamonds_3{background-image: url(../img/malifaux_cards/card_p1_masks_3.png);}
+.diamonds_4{background-image: url(../img/malifaux_cards/card_p1_masks_4.png);}
+.diamonds_5{background-image: url(../img/malifaux_cards/card_p1_masks_5.png);}
+.diamonds_6{background-image: url(../img/malifaux_cards/card_p1_masks_6.png);}
+.diamonds_7{background-image: url(../img/malifaux_cards/card_p1_masks_7.png);}
+.diamonds_8{background-image: url(../img/malifaux_cards/card_p1_masks_8.png);}
+.diamonds_9{background-image: url(../img/malifaux_cards/card_p1_masks_9.png);}
+.diamonds_10{background-image: url(../img/malifaux_cards/card_p1_masks_10.png);}
+.diamonds_11{background-image: url(../img/malifaux_cards/card_p1_masks_11.png);}
+.diamonds_12{background-image: url(../img/malifaux_cards/card_p1_masks_12.png);}
+.diamonds_13{background-image: url(../img/malifaux_cards/card_p1_masks_13.png);}*/
+
+/*.jockers_0{background-image:url(../img/malifaux_cards/card_p1_black_joker.png);}
+.jockers_14{background-image:url(../img/malifaux_cards/card_p1_red_joker.png);}*/
+
+/*.jockers_0{background-image:url(../img/bjocker.jpg);}
+.jockers_14{background-image:url(../img/rjocker.jpg);}*/
+
+/*
+ANIMATION OPTIONS
+-webkit-animation-name:;
+-webkit-animation-timing-function:linear;
+-webkit-animation-duration:10s;
+-webkit-animation-delay:0s;
+-webkit-animation-iteration-count:once;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:normal;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+-webkit-animation: aniname 10s linear 2s infinite alternate;
+*/
+
+/*.crossroad-card:hover{
+-webkit-animation-name:cardflip-h;
+-webkit-animation-timing-function:linear;
+-webkit-animation-duration:2s;
+-webkit-animation-delay:0s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:normal;
+-webkit-animation-play-state:running;	
+}*/
+
+/*.popupCard:hover{
+-webkit-animation-name:cardflip-h;
+-webkit-animation-timing-function:linear;
+-webkit-animation-duration:2s;
+-webkit-animation-delay:0s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:normal;
+-webkit-animation-play-state:running;	
+}*/
+
+#suits{
+	position: absolute;
+	top: 0cm;
+	left:20cm;
+	display: none;
+}
+
+/*.crossroad, .history, .fate{border:solid Crimson 1px;}*/

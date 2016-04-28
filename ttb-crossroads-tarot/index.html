@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crossroads Tarot</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+</head>
+<body onload="checkLang('ENG')">
+
+<div class="crossroad">
+	<div class="crossroad-north" id="crossroad-north">
+		<div class="crossroad-card card-back" id="card-north">
+		</div>
+	</div>
+	<div class="crossroad-west" id="crossroad-west">
+		<div class="crossroad-card card-back" id="card-west"></div>
+	</div>
+	<div class="crossroad-station" id="crossroad-station">
+		<div class="crossroad-card card-back" id="card-station"></div>
+	</div>
+	<div class="crossroad-east" id="crossroad-east">
+		<div class="crossroad-card card-back" id="card-east"></div>
+	</div>
+	<div class="crossroad-south" id="crossroad-south">
+		<div class="crossroad-card card-back" id="card-south"></div>
+	</div>
+</div>
+
+<div class="history">
+	<div id="header-wrap">
+	<!-- Language: -->
+	<div id="header-title">
+	<a href="../index.html" >THROUGH THE BREACH:</a>
+	<a href="index.html" >Crossroads Tarot</a>
+	</div>
+	<div id="header-menu">
+		<a id="lang-eng" class="lang" href="index.html">ENG</a><a id="lang-rus" class="lang" href="index-rus.html">RUS</a>
+		<input type="button" id="printbtn" value="Print" onclick="print()">
+		<input type="button" id="randombtn" value="Random Fate" onclick="randomize()">
+	</div>	
+	</div>
+	<!-- <h3>History</h3> -->
+	<div class="stage">
+		<div class="title">Fated:</div>
+		<!-- <div class="title"><input id="name" type="text" placeholder="Jack Daw"></div> -->
+		<div class="title"><input id="name" type="text"></div>
+	</div>
+	<div class="history-block" id="history-station">
+	</div>
+	<div class="history-block" id="history-west">
+	</div>
+	<div class="history-block" id="history-north">
+	</div>	
+	<div class="history-block" id="history-east">
+	</div>	
+	<div class="history-block" id="history-south">
+	</div>	
+</div>
+
+<div class="fate">
+	<!-- <h3>Fate:</h3> -->
+	<div id="fate-south">
+	</div>
+	<div id="fate-east">
+	</div>	
+	<div id="fate-north">
+	</div>	
+	<div id="fate-west">
+	</div>
+	<div id="fate-station">
+	</div>
+	<div id="copyright">
+	<h4>Web part, <a href="http://www.github.com/freealchemist">FreeAlchemist</a></h4>
+	<h4>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</h4>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/cardsInterpretation.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cardsFlip.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+pursuits-advanced
+pursuits-basic
+pursuits-basic-rus
+pursuits-beyond-fate
+pursuits-from-nightmares
+pursuits-guild-wars
+pursuits-into-the-bayou
+pursuits-into-the-steam
+pursuits-under-quarantine

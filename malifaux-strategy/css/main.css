@@ -1,3 +1,7 @@
+body{
+	width:20cm;
+}
+
 .card {
 	float: left;
 	width: 6.3cm;
@@ -47,14 +51,27 @@ p {
 
 .seal {
 	float: left;
-	/*background-color: rgba(88,141,97,0.5);*/
+	background-color: Linen;
 	width: 1cm;
 	height: 1cm;
 	background-position: center center;
-	background-size:  auto 100%;
+	background-size:  auto 80%;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1cm;
+	border:ridge 0.1cm rgba(200,160,60,1);
+	border-radius: 50%;
 }
 
-.seal.cbr {background-image: url('img/support.jpg');}
+.masks{background-image:url(../img/masks.svg);}
+.crows{background-image:url(../img/crows.svg);}
+.tomes{background-image:url(../img/tomes.svg);}
+.rams{background-image:url(../img/rams.svg);}
+.jockers{background-image:url(../img/jockers.svg);}
+
 
 .seal .circle{
 	/*width: 100%;*/
@@ -139,7 +156,7 @@ p {
 
 .back {
 	background-color: gray;
-	background-image: url('img/darkwood.jpg');
+	/*background-image: url('img/darkwood.jpg');*/
 	color: rgba(255,255,255,1);
 	font-size: 3em;
 }
@@ -171,13 +188,13 @@ p {
 	bottom: 3cm;
 	left: 1.5cm;
 	/*background-color: rgba(255,20,255,0.5);*/
-	background-image: url('img/cbr.gif');
+	/*background-image: url('img/cbr.gif');*/
 	background-position: center center;
 	background-size:  auto 100%;
 	text-align: center;
 }
 
-
+.row{clear:both;}
 
 .hr {
 	float: left;

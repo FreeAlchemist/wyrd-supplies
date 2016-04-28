@@ -2,6 +2,8 @@ $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'Wyrd Supplies'}))
 $('#menu').append($('<a />',{href:'strategy-basic.html',text:'Strategy: Basic'}))
 $('#menu').append($('<a />',{href:'scheme-basic.html',text:'Scheme: Basic'}))
+$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Strategy: Gaining Grounds 2016'}))
+$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Scheme: Gaining Grounds 2016'}))
 
 var arr = [];
 

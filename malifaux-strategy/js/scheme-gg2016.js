@@ -1,7 +1,7 @@
 var cards = {
 	'always' : {
 		type:'Scheme',
-		name: 'A Line in the Sand',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -9,7 +9,7 @@ var cards = {
 	},
 	'doubles' : {
 		type:'Scheme',
-		name: 'Distract',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -17,7 +17,7 @@ var cards = {
 	},
 	'masks' : {
 		type:'Scheme',
-		name: 'Breakthrough',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -25,7 +25,7 @@ var cards = {
 	},
 	'crows' : {
 		type:'Scheme',
-		name: 'Assassinate',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -33,7 +33,7 @@ var cards = {
 	},
 	'tomes' : {
 		type:'Scheme',
-		name: 'Protect Territory',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -41,7 +41,7 @@ var cards = {
 	},
 	'rams' : {
 		type:'Scheme',
-		name: 'Bodyguard',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -49,7 +49,7 @@ var cards = {
 	},
 	'1' : {
 		type:'Scheme',
-		name: 'Cursed Object',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -57,7 +57,7 @@ var cards = {
 	},
 	'2' : {
 		type:'Scheme',
-		name: 'Outflank',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -65,7 +65,7 @@ var cards = {
 	},
 	'3' : {
 		type:'Scheme',
-		name: 'Plant Evidence',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -73,7 +73,7 @@ var cards = {
 	},
 	'4' : {
 		type:'Scheme',
-		name: 'Entourage',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -81,7 +81,7 @@ var cards = {
 	},
 	'5' : {
 		type:'Scheme',
-		name: 'Vendetta',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -89,7 +89,7 @@ var cards = {
 	},
 	'6' : {
 		type:'Scheme',
-		name: 'Plant Explosives',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -97,7 +97,7 @@ var cards = {
 	},
 	'7' : {
 		type:'Scheme',
-		name: 'Make Them Suffer',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -105,7 +105,7 @@ var cards = {
 	},
 	'8' : {
 		type:'Scheme',
-		name: 'Deliver a Message',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -113,7 +113,7 @@ var cards = {
 	},
 	'9' : {
 		type:'Scheme',
-		name: 'Take Prisoner',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -121,7 +121,7 @@ var cards = {
 	},
 	'10' : {
 		type:'Scheme',
-		name: 'Spring the Trap',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -129,7 +129,7 @@ var cards = {
 	},
 	'11' : {
 		type:'Scheme',
-		name: 'Murder Protege',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -137,7 +137,7 @@ var cards = {
 	},
 	'12' : {
 		type:'Scheme',
-		name: 'Frame For Murder',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -145,7 +145,7 @@ var cards = {
 	},
 	'13' : {
 		type:'Scheme',
-		name: 'Power Ritual',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',

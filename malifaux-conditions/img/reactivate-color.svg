@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 reactivate-color.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.01017in" height="2.01017in"
+		viewBox="0 0 144.732 144.732" xml:space="preserve" color-interpolation-filters="sRGB" class="st7">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {fill:#50632a;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:#50632a;fill-opacity:0.8;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st4 {fill:#50632a;fill-opacity:0.7;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st5 {fill:#50632a;fill-opacity:0.6;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st6 {fill:#50632a;fill-opacity:0.5;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(1.5,-1.5)">
+			<title>Квадрат.139</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<rect x="0" y="3" width="141.732" height="141.732" class="st1"/>
+		</g>
+		<g id="shape4-3" v:mID="4" v:groupContext="shape" transform="translate(21.3417,-18.5118)">
+			<title>Лист.4</title>
+			<path d="M99.96 79.27 L83.5 83.59 A34.0163 34.0163 0 0 1 85.04 93.71 A34.0163 34.0163 0 0 1 17.01 93.71 A34.0163 34.0163
+						 0 0 1 23.31 73.99 L31.92 82.6 L35.33 50.8 L3.53 54.21 L11.17 61.85 A51.0244 51.0244 -180 0 0 -0 93.71 A51.0244
+						 51.0244 -180 0 0 102.05 93.71 A51.0244 51.0244 -180 0 0 99.96 79.27 Z" class="st2"/>
+		</g>
+		<g id="shape5-5" v:mID="5" v:groupContext="shape" transform="translate(98.4145,-81.7363)">
+			<title>Лист.5</title>
+			<path d="M21.11 137.45 A51.0244 51.0244 -180 0 0 14.02 125.35 L0 135.06 A34.0163 34.0163 0 0 1 5.7 144.73 L21.11 137.45
+						 Z" class="st3"/>
+		</g>
+		<g id="shape6-7" v:mID="6" v:groupContext="shape" transform="translate(90.4512,-93.0153)">
+			<title>Лист.6</title>
+			<path d="M18.5 132.64 A51.0244 51.0244 -180 0 0 8.58 124.71 L0 139.4 A34.0163 34.0163 0 0 1 6.53 144.73 L18.5 132.64 Z"
+					class="st4"/>
+		</g>
+		<g id="shape7-9" v:mID="7" v:groupContext="shape" transform="translate(81.123,-99.2919)">
+			<title>Лист.7</title>
+			<path d="M13.51 128.58 A51.0244 51.0244 -180 0 0 4.49 125.21 L0 141.62 A34.0163 34.0163 0 0 1 7.73 144.73 L13.51 128.58
+						 Z" class="st5"/>
+		</g>
+		<g id="shape8-11" v:mID="8" v:groupContext="shape" transform="translate(73.3452,-102.856)">
+			<title>Лист.8</title>
+			<path d="M7.27 127.7 A51.0244 51.0244 -180 0 0 -0 127.04 L0.23 144.06 A34.0163 34.0163 0 0 1 5.87 144.73 L7.27 127.7 Z"
+					class="st6"/>
+		</g>
+	</g>
+</svg>

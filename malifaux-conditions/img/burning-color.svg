@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 burning-color.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.01017in" height="2.01017in"
+		viewBox="0 0 144.732 144.732" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {fill:url(#grad36-6);stroke:#c00000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st3 {fill:url(#grad36-10);stroke:#cc5200;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<radialGradient id="grad36-6" v:fillPattern="36" v:foreground="#ffce3c" v:background="#cc5200" cx="0" cy="0" r="1">
+			<stop offset="0" style="stop-color:#ffce3c;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#cc5200;stop-opacity:1"/>
+		</radialGradient>
+		<radialGradient id="grad36-10" v:fillPattern="36" v:foreground="#ffff00" v:background="#ffc000" cx="0" cy="0" r="1">
+			<stop offset="0" style="stop-color:#ffff00;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#ffc000;stop-opacity:1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(1.5,-1.5)">
+			<title>Квадрат.145</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<rect x="0" y="3" width="141.732" height="141.732" class="st1"/>
+		</g>
+		<g id="shape3-3" v:mID="3" v:groupContext="shape" transform="translate(12.3038,-4.96438)">
+			<title>Лист.3</title>
+			<path d="M17.54 127.22 C51.56 145.36 61.76 148.2 102.58 141.39 C122.42 109.65 109.88 93.8 126.68 83 C118.17 75.91 113.07
+						 73.08 97.43 84.5 C82.17 47.5 109.88 53.46 108.13 21.89 C97.6 42.94 80.77 34.87 79.39 59.21 C64.06 32.96
+						 56.21 34.17 59.21 11.28 C40.22 32.54 59.19 32.06 45.32 56.18 C45.21 56.15 34.98 56.72 27.46 39.06 C23.21
+						 53.24 34.11 62.93 22.96 69.64 C10.61 78.02 3.37 67.41 16.69 48.98 C-26.39 65.99 28.88 101.43 17.54 127.22
+						 Z" class="st2"/>
+		</g>
+		<g id="shape4-7" v:mID="4" v:groupContext="shape" transform="translate(18.8535,-9.69816)">
+			<title>Лист.4</title>
+			<path d="M20.91 127.42 C50.68 147.26 57.76 147.26 90.36 141.59 C114.46 109.56 97.45 96.24 114.46 87.73 C107.37 83.48
+						 97.45 86.32 93.2 93.97 C75.06 58.82 97.45 63.64 96.03 38.13 C87.53 55.14 73.92 48.62 73.05 64.55 C64.85
+						 41.25 54.08 48.05 56.91 21.12 C37.07 43.51 56.49 46.35 45.31 64.55 C39.91 58.54 38.49 65.06 28 51.45 C25.45
+						 63.92 36.22 71.29 27.21 76.71 C17.23 83.48 3.91 74.98 17.23 60.8 C-26.42 74.13 27.43 98.51 20.91 127.42
+						 Z" class="st3"/>
+		</g>
+	</g>
+</svg>

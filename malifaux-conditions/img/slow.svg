@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 slow.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.01017in" height="2.01017in"
+		viewBox="0 0 144.732 144.732" xml:space="preserve" color-interpolation-filters="sRGB" class="st5">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad40-4);stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {fill:none;stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st3 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st4 {fill:#510000;stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st5 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<radialGradient id="grad40-4" v:fillPattern="40" v:foreground="#ffffcc" v:background="#dead78" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" style="stop-color:#ffffcc;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#dead78;stop-opacity:1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(1.5,-1.5)">
+			<title>Квадрат.7</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<rect x="0" y="3" width="141.732" height="141.732" class="st1"/>
+		</g>
+		<g id="shape3-5" v:mID="3" v:groupContext="shape" transform="translate(30.3721,-25.026)">
+			<title>Лист.3</title>
+			<path d="M0 144.06 C28.19 144.06 91.61 153.93 79.87 99.9 C115.1 86.74 70.47 58.56 61.07 96.14 C56.38 134.66 35.24 131.38
+						 0 144.06 Z" class="st2"/>
+		</g>
+		<g id="shape4-7" v:mID="4" v:groupContext="shape" transform="translate(253.397,65.1135) rotate(101.653)">
+			<title>Лист.4</title>
+			<path d="M0 144.73 L16.95 144.73" class="st3"/>
+		</g>
+		<g id="shape5-10" v:mID="5" v:groupContext="shape" transform="translate(109.299,-106.504)">
+			<title>Круг</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 142.38 A2.34901 2.34901 0 0 1 4.7 142.38 A2.34901 2.34901 0 1 1 0 142.38 Z" class="st4"/>
+		</g>
+		<g id="shape6-12" v:mID="6" v:groupContext="shape" transform="translate(248.75,119.559) rotate(124.19)">
+			<title>Лист.6</title>
+			<path d="M0 144.73 L19.39 144.73" class="st3"/>
+		</g>
+		<g id="shape7-15" v:mID="7" v:groupContext="shape" transform="translate(126.682,-104.155)">
+			<title>Круг.49</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 142.38 A2.34901 2.34901 0 0 1 4.7 142.38 A2.34901 2.34901 0 1 1 0 142.38 Z" class="st4"/>
+		</g>
+		<g id="shape8-17" v:mID="8" v:groupContext="shape" transform="translate(-59.8021,92.9207) rotate(-81.8699)">
+			<title>Лист.8</title>
+			<path d="M0 120.51 C0.7 105.88 5.07 90.85 14.43 81.42 C25.74 70.01 44.33 66.8 58.54 76.31 C66.44 81.59 72.98 90.81 75.17
+						 100.57 C78.47 115.22 72 131.09 62.27 138.78 C55.56 144.07 47.31 145.49 38.76 144.41 C28.81 143.15 18.45
+						 138.49 14.99 127.24 C12.83 120.19 13.37 110.55 16.4 103.26 C20.74 92.82 30.18 87.19 39.82 87.04 C45.88 86.95
+						 52.03 89.03 56.18 93.49 C62.77 100.56 64.34 113.6 60.74 122.68 C56.64 133.03 45.83 138.25 36.22 132.7 C30.56
+						 129.43 25.31 122.41 26.6 115.28 C27.98 107.63 36.86 99.86 44.34 102.56 C48.39 104.02 52.04 108.56 52.83
+						 112.91 C54.21 120.38 47.16 127.27 41.53 120.51" class="st3"/>
+		</g>
+	</g>
+</svg>

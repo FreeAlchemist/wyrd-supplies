@@ -1,0 +1,35 @@
+.menu{
+margin-left: 10px;
+float: left;
+width: 250px;
+border: ridge; 1px;
+border-radius: 5px;
+padding: 5px;
+background-color: Azure;
+box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
+}
+
+
+.menu a{
+text-decoration: none;
+float: left;
+padding: 3px;
+margin: 5px;
+border: 2px groove;
+border-bottom-width: 3px;
+border-radius: 8px;
+background: linear-gradient(to bottom, Linen, Burlywood);
+border-left-color: Bisque;
+border-right-color: Burlywood;
+border-bottom-color: Burlywood;
+border-top-color: Bisque;
+color: black;
+}
+
+.menu a:hover{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
+}
+
+@media print {
+	.menu{display: none;}
+}

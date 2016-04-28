@@ -1,27 +1,30 @@
-var strategy = {
-	type:'Basic',
-	'guild' : {
+var cards = {
+	'rams' : {
+		type:'Strategy',
 		name: 'Turf War',
 		text:'Turf War text',
-		setup:'Turf War setup',
-		// special:'',
-		vp:'Turf War VP',
+		setup:'Corners',
+		special:'',
+		vp:'For every crew marker on the centerline get 1 VP at the end of each turn after turn 3',
 	},
 	'crows' : {
+		type:'Strategy',
 		name: 'Reckoning',
 		text:'Reckoning text',
-		// setup:'',
-		// special:'',
+		setup:'',
+		special:'',
 		vp:'Reckoning VP',
 	},
 	'masks' : {
+		type:'Strategy',
 		name: 'Reconnoiter',
 		text:'Reconnoiter text',
 		setup:'Reconnoiter setup',
-		// special:'',
+		special:'',
 		vp:'Reconnoiter VP',
 	},
 	'tomes' : {
+		type:'Strategy',
 		name: 'Squatter\'s Rights',
 		text:'Squatter\'s Rights text',
 		setup:'Squatter\'s Rights setup',
@@ -29,9 +32,10 @@ var strategy = {
 		vp:'Squatter\'s Rights VP',
 	},
 	'jockers' : {
+		type:'Strategy',
 		name: 'Stake A Claim',
 		text:'Stake A Claim text',
-		// setup:'',
+		setup:'',
 		special:'Stake A Claim special',
 		vp:'Stake A Claim VP',
 	},

@@ -1,0 +1,64 @@
+.page{
+width: 21cm;
+height: 29cm;
+border:solid 1px;
+margin: 0px;
+padding: 0px;
+}
+
+.condition,.token{
+width: 1cm;
+height: 1cm;
+background-size: 100%;
+background-repeat: no-repeat;
+float: left;
+text-align: center;
+line-height: 1cm;
+font-weight: bold;
+color: black;
+border: solid Maroon 1px;
+}
+
+.row{
+	clear:both;
+}
+
+.token{
+width: 2cm;
+height: 2cm;
+clear:right;
+color: Maroon;
+/*border-radius: 50%;*/
+/*border: solid Maroon 0.1cm;*/
+/*border: solid Maroon 1px;*/
+}
+
+/*rgba(222,173,120)*/
+/*rgba(255,255,204)*/
+/*rgba(80,0,0)*/
+
+.poison,.poison-color,.burning,.burning-color,.armor{line-height: 47px;}
+
+.poison{background-image: url(../img/poison.svg);}
+.poison-color{background-image: url(../img/poison-color.svg);}
+.burning{background-image: url(../img/burning.svg);}
+.burning-color{background-image: url(../img/burning-color.svg);}
+.focus{background-image: url(../img/focus.svg);}
+
+.reactivate{background-image: url(../img/reactivate.svg);}
+.reactivate-color{background-image: url(../img/reactivate-color.svg);}
+.manipulate{background-image: url(../img/manipulate.svg);}
+
+.slow{background-image: url(../img/slow.svg);}
+.slow-color{background-image: url(../img/slow-color.svg);}
+.fast{background-image: url(../img/fast.svg);}
+.fast-color{background-image: url(../img/fast-color.svg);}
+.defensive{background-image: url(../img/defensive.svg);}
+
+.armor{background-image: url(../img/armor.svg);}
+
+.paralyzed{background-image: url(../img/paralyzed.svg);}
+
+.brilliance{background-image: url(../img/brilliance.svg);}
+
+.cursed{background-image: url(../img/cursed.svg);}

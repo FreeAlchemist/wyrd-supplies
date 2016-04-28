@@ -1,0 +1,279 @@
+body{
+	width:20cm;
+}
+
+.card{
+width: 6.2cm;
+height: 8.7cm;
+float: left;
+border: solid black 1px;
+margin-bottom: 1.2cm;
+background-color: Blanchedalmond;
+background-color: rgba(89, 62, 42, 1);
+/*background-color: transparent;*/
+}
+
+.title{
+font-weight: bold;
+text-transform: uppercase;
+font-size: 8pt;
+/*margin-top: 3px;*/
+}
+
+.text{font-size: 8pt;}
+
+.name{font-weight: bold;}
+
+.pursuit-title{
+text-align: center;
+background-color: rgba(89, 62, 42, 1);
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+color: Linen;
+height: 0.5cm;
+line-height: 0.5cm;
+font-size: 13pt;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.step-title{
+text-align: center;
+background-color: rgba(89, 62, 42, 1);
+background-color: rgba(126, 97, 77, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+color: Linen;
+height: 0.4cm;
+line-height: 0.4cm;
+font-size: 10pt;
+}
+
+.pursuit-text{
+font-size: 8pt;
+display: none;
+}
+.gear-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 8pt;
+	float: left;
+	padding: 3px 3px 0px 3px;
+}
+.gear-text{
+	font-size: 8pt;
+	padding: 3px 3px 0px 3px;
+}
+
+.talent-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 8pt;
+	padding: 3px 3px 0px 3px;
+}
+.talent-text{
+	font-size: 8pt;
+	padding: 0px 3px 0px 3px;
+}
+
+.step td{
+border: solid 1px rgba(126, 97, 77, 1);
+border: solid 1px rgba(89, 62, 42, 1);
+line-height: 0.35cm;
+padding-left: 0.1cm;
+}
+
+.step tr{
+	height: 0.35cm;
+}
+
+.step{
+width: 5.68cm;
+font-size: 7.5pt;
+/*font-size: 8pt;*/
+}
+
+table.gear{
+	width: 100%;
+
+}
+
+table.gear{
+	width: 100%;
+	
+}
+
+table.step{
+/*position: relative;*/
+/*top: 24%;*/
+}
+
+
+
+.td-num{
+	width: 0.1cm;
+}
+
+.card-back{
+background-color: rgba(89, 62, 42, 1);
+/*background-color: transparent;*/
+margin-bottom: 1cm;
+}
+
+.card, .card-back{
+	background-color: rgba(180, 135, 105, 1);
+}
+
+.title-back{
+background-color: Blanchedalmond;
+background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));
+background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));
+font-weight: bold;
+color: Linen;
+text-transform: uppercase;
+font-size: 16pt;
+position: relative;
+top: 5.5cm;
+border: 1px solid rgba(89, 62, 42, 1);
+text-align: center;
+/* box-shadow: 0px 0px 5px black; */
+}
+
+.type{
+font-size: 12pt;
+}
+
+.basic{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
+}
+.advanced{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 179, 105, 1), rgba(92, 88, 43, 1));
+}
+.arcanist{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(105, 117, 180, 1), rgba(43, 47, 92, 1));
+}
+.ressurectionist{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(110, 180, 105, 1), rgba(43, 92, 45, 1));
+}
+.gremlin{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(174, 154, 88, 1), rgba(94, 75, 50, 1));
+}
+.neverborn{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(158, 105, 180, 1), rgba(85, 43, 92, 1));
+}
+.guild{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(181, 105, 105, 1), rgba(92, 45, 43, 1));
+}
+.avatar{
+background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(163, 158, 60, 1), rgba(43, 92, 85, 1));
+}
+
+.front{
+height: 8cm;
+background-color: Linen;
+margin: 0.3cm;
+border: 1px solid black;
+/*border-radius: 6px;*/
+background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+}
+
+.front1{
+height: 3.6cm;
+width: 5.6cm;
+background-color: Linen;
+/*margin: 0.3cm 0.3cm 0cm 0.3cm;*/
+margin: 0.2cm 0cm 0cm 0.2cm;
+border: 0.1cm solid rgba(89, 62, 42, 1);
+border-bottom-style: none;
+/*border-radius: 6px;*/
+background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+overflow: hidden;
+}
+
+.front2{
+height: 4.4cm;
+width: 5.61cm;
+background-color: Linen;
+/*margin: 0cm 0.3cm 0.3cm 0.3cm;*/
+margin: 0cm 0cm 0.2cm 0.2cm;
+border: 0.1cm solid rgba(89, 62, 42, 1);
+border-top-style: none;
+/*border-radius: 6px;*/
+background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+}
+
+
+.back{
+height: 8cm;
+background-color: Blanchedalmond;
+background-color: #FAFBF8;
+background-position: center;
+background-position: 50% 20px;
+background-size: auto 100%;
+background-repeat: no-repeat;
+margin: 0.3cm;
+border: 1px solid black;
+border-radius: 6px;
+}
+
+.row{clear:both;}
+/*Basic*/
+.academic{background-image: url(../img/basic/academic.png);}
+.criminal{background-image: url(../img/basic/criminal.png);}
+.dabbler{background-image: url(../img/basic/dabbler.jpg);}
+.drudge{background-image: url(../img/basic/drudge.png);}
+.graverobber{background-image: url(../img/basic/graverobber.png);}
+.guard{background-image: url(../img/basic/guard.png);}
+.gunfighter{background-image: url(../img/basic/gunfighter.png);}
+.mercenary{background-image: url(../img/basic/mercenary.png);}
+.overseer{background-image: url(../img/basic/overseer.png);}
+.performer{background-image: url(../img/basic/performer.png);}
+.pioneer{background-image: url(../img/basic/pioneer.png);}
+.scrapper{background-image: url(../img/basic/scrapper.png);}
+.tinkerer{background-image: url(../img/basic/tinkerer.png);}
+.wastrel{background-image: url(../img/basic/wastrel.png);}
+
+/*Advanced*/
+.death-marshal{background-image: url(../img/advanced/death-marshal.png);}
+
+/*Into the Steam*/
+.animator{background-image: url(../img/into-the-steam/animator.jpg);}
+.augmented{background-image: url(../img/into-the-steam/augmented.jpg);}
+.collaborator{background-image: url(../img/into-the-steam/collaborator.jpg);}
+.engineer{background-image: url(../img/into-the-steam/engineer.jpg);}
+.illusionist{background-image: url(../img/into-the-steam/illusionist.jpg);}
+.infiltrator{background-image: url(../img/into-the-steam/infiltrator.jpg);}
+.mage{background-image: url(../img/into-the-steam/mage.jpg);}
+.primal{background-image: url(../img/into-the-steam/primal.jpg);}
+.shape-shifter{background-image: url(../img/into-the-steam/shape-shifter.jpg);}
+
+/*Under Quarantine*/
+.bully{background-image: url(../img/under-quarantine/bully.jpg);}
+.ghost-eater{background-image: url(../img/under-quarantine/ghost-eater.jpg);}
+.ghoul{background-image: url(../img/under-quarantine/ghoul.jpg);}
+/*Into the Bayou*/
+.bokor{background-image: url(../img/into-the-bayou/bokor.jpg);}
+
+
+
+#menu{
+position: fixed;
+top: 1cm;
+left: 21cm;
+width: 200px;
+border: solid 1px;
+border-radius: 8px;
+padding: 5px;
+background-color: Bisque;
+}
+
+#menu a{
+	text-decoration: none;
+	border: solid 1px;
+border-radius: 3px;
+background-color: Burlywood;
+margin: 3px;
+float: left;
+}
+
+@media print {
+	#menu{display: none;}
+}

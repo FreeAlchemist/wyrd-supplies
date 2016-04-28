@@ -1,1 +1,213 @@
-strategy css
+.card {
+	float: left;
+	width: 6.3cm;
+	height: 8.8cm;
+	background-size: 100% 100%;
+	font-size: 0.225cm;
+	line-height: 0.225cm;
+	display: inline-block;
+	border-right: 1px solid  rgba(0,0,0,1);
+	border-bottom: 1px solid  rgba(0,0,0,1);
+	border: 1px solid  rgba(0,0,0,1);
+	font-family: 'AGFriquer';
+	background-color: rgba(255,255,255,1);
+}
+
+p {
+	margin: 0cm; 
+	padding: 0cm; 
+}
+
+.front, .back {
+	background-color: rgba(255,255,255,1);
+	width: 6.05cm;
+	height: 8.4cm;
+	margin: 0.125cm;
+	position: relative;
+	border:solid 0.04cm black;
+	border-radius: 6%;
+}
+
+.front{
+	background-color: Linen;
+	background: linear-gradient(to top, gray, Linen, Linen);
+}
+
+.header {
+	color: #FFF;
+	padding: 0  0.1cm  0  0.3cm;
+	margin-top: 0.2cm;
+	font-size: 2em;
+	min-height: 1cm;
+	/*line-height: 0.35cm;*/
+	border-bottom: 0.05cm solid rgba(0,0,0,1);
+	background-color: rgba(10,10,10,0.5);
+	
+}
+
+.seal {
+	float: left;
+	/*background-color: rgba(88,141,97,0.5);*/
+	width: 1cm;
+	height: 1cm;
+	background-position: center center;
+	background-size:  auto 100%;
+}
+
+.seal.cbr {background-image: url('img/support.jpg');}
+
+.seal .circle{
+	/*width: 100%;*/
+	/*height: 100%;*/
+	width: 0.6cm;
+	height: 0.6cm;
+	position: relative;
+	top: 0.15cm;
+	left: 0.15cm;
+	border:solid 0.05cm rgba(200,160,60,1);
+	border-radius: 50%;
+	background-color: rgba(150,100,50,1);
+	background: -webkit-radial-gradient(center, circle cover, black 0%,Wheat 100%);
+	color: rgba(255,255,255,1);
+	text-align: center;
+	line-height: 0.6cm;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.title{
+	float: left;
+	/*background-color: rgba(100,100,255,0.3);*/
+	font-size: 21px;
+	/*padding-top: 0.25cm;*/
+	padding-left: 0.25cm;
+	line-height: 1.05cm;
+}
+
+.block {
+	float: left;
+	width: 100%;
+	border-bottom: 0.05cm solid rgba(0,0,0,0.5);
+}
+
+.flavor {
+	padding: 0.1cm 0.1cm 0.125cm;
+	background-color:  rgba(255,255,255,0.3);
+	font-size: 0.2cm;
+	line-height: 0.2cm;
+	font-style: italic;
+
+}
+
+.text {
+	padding: 0.1cm 0.1cm 0.1cm 0.1cm; 
+	font-size: 1.1em;
+	min-height: 4.45cm;
+	line-height: 1.1em;
+	width: 100%;
+	float: left;
+}
+.text p{
+	padding: 0cm 0cm 0.1cm 0cm; 
+}
+.bottom {
+	position: absolute;
+	bottom: 1cm;
+	width: 100%;
+	/*border-top: 0.05cm solid rgba(88,141,97,1);*/
+	/*background-color: rgba(255,20,255,0.5);*/
+	text-align: center;
+	font-size: 16pt;
+	
+
+}
+
+.label{
+	position: absolute;
+	/*top: 3cm;*/
+	right: 1.25cm;
+	/*bottom: 3cm;*/
+	left: 1.25cm;
+	line-height: 0.7cm;
+	/*border: 0.05cm solid rgba(88,141,97,1);*/
+	background-color: rgba(10,10,10,0.5);
+	color:  rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+
+
+.back {
+	background-color: gray;
+	background-image: url('img/darkwood.jpg');
+	color: rgba(255,255,255,1);
+	font-size: 3em;
+}
+
+.top_label,.bottom_label {
+	position: absolute;
+	width: 100%;
+	height: 0.5cm;
+	background-color: rgba(230,220,210,0.5);
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 0.25cm;
+	box-shadow:inset 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.top_label {
+	top: 1cm;
+}
+
+.bottom_label {
+	bottom: 1cm;
+	transform: rotate(180deg);
+}
+
+.logo{
+	position: absolute;
+	top: 3cm;
+	right: 1.5cm;
+	bottom: 3cm;
+	left: 1.5cm;
+	/*background-color: rgba(255,20,255,0.5);*/
+	background-image: url('img/cbr.gif');
+	background-position: center center;
+	background-size:  auto 100%;
+	text-align: center;
+}
+
+
+
+.hr {
+	float: left;
+	clear: both;
+	width: 100%
+	padding: 0px;
+	margin: 0px;
+}
+
+#menu{
+position: fixed;
+top: 1cm;
+left: 21cm;
+width: 200px;
+border: solid 1px;
+border-radius: 8px;
+padding: 5px;
+background-color: Bisque;
+}
+
+#menu a{
+text-decoration: none;
+border: solid 1px;
+border-radius: 3px;
+background-color: Burlywood;
+margin: 3px;
+float: left;
+color: black;
+}
+
+@media print {
+	#menu{display: none;}
+}

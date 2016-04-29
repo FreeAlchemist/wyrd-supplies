@@ -1,6 +1,7 @@
+var set = 'gaining grounds 2016';
+var type = 'Strategy';
 var cards = {
 	'rams' : {
-		type:'Strategy',
 		name: 'Extraction',
 		text:'',
 		setup:'',
@@ -8,7 +9,6 @@ var cards = {
 		vp:'',
 	},
 	'crows' : {
-		type:'Strategy',
 		name: 'Guard the Stash',
 		text:'',
 		setup:'',
@@ -16,7 +16,6 @@ var cards = {
 		vp:'',
 	},
 	'masks' : {
-		type:'Strategy',
 		name: 'Interference',
 		text:'',
 		setup:'',
@@ -24,7 +23,6 @@ var cards = {
 		vp:'',
 	},
 	'tomes' : {
-		type:'Strategy',
 		name: 'Headhunter',
 		text:'',
 		setup:'',
@@ -32,7 +30,6 @@ var cards = {
 		vp:'',
 	},
 	'jockers' : {
-		type:'Strategy',
 		name: 'Collect the Bounty',
 		text:'',
 		setup:'',

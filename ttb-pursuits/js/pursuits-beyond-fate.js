@@ -1,5 +1,6 @@
 var set = 'Beyond Fate';
 var faction = 'avatar';
+var lang = 'eng';
 var pursuit = {
 	'beyond-fate' : {
 		name: 'beyond-fate',

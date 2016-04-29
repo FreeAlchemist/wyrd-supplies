@@ -1,5 +1,6 @@
 var set = 'From Nightmares';
 var faction = 'neverborn';
+var lang = 'eng';
 var pursuit = {
 	'from-nightmares' : {
 		name: 'from-nightmares',

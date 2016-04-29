@@ -1,6 +1,7 @@
+var set = 'basic';
+var type = 'Scheme';
 var cards = {
 	'always' : {
-		type:'Scheme',
 		name: 'A Line in the Sand',
 		text:'',
 		setup:'',
@@ -8,7 +9,6 @@ var cards = {
 		vp:'',
 	},
 	'doubles' : {
-		type:'Scheme',
 		name: 'Distract',
 		text:'',
 		setup:'',
@@ -16,7 +16,6 @@ var cards = {
 		vp:'',
 	},
 	'masks' : {
-		type:'Scheme',
 		name: 'Breakthrough',
 		text:'',
 		setup:'',
@@ -24,7 +23,6 @@ var cards = {
 		vp:'',
 	},
 	'crows' : {
-		type:'Scheme',
 		name: 'Assassinate',
 		text:'',
 		setup:'',
@@ -32,7 +30,6 @@ var cards = {
 		vp:'',
 	},
 	'tomes' : {
-		type:'Scheme',
 		name: 'Protect Territory',
 		text:'',
 		setup:'',
@@ -40,7 +37,6 @@ var cards = {
 		vp:'',
 	},
 	'rams' : {
-		type:'Scheme',
 		name: 'Bodyguard',
 		text:'',
 		setup:'',
@@ -48,7 +44,6 @@ var cards = {
 		vp:'',
 	},
 	'1' : {
-		type:'Scheme',
 		name: 'Cursed Object',
 		text:'',
 		setup:'',
@@ -56,7 +51,6 @@ var cards = {
 		vp:'',
 	},
 	'2' : {
-		type:'Scheme',
 		name: 'Outflank',
 		text:'',
 		setup:'',
@@ -64,7 +58,6 @@ var cards = {
 		vp:'',
 	},
 	'3' : {
-		type:'Scheme',
 		name: 'Plant Evidence',
 		text:'',
 		setup:'',
@@ -72,7 +65,6 @@ var cards = {
 		vp:'',
 	},
 	'4' : {
-		type:'Scheme',
 		name: 'Entourage',
 		text:'',
 		setup:'',
@@ -80,7 +72,6 @@ var cards = {
 		vp:'',
 	},
 	'5' : {
-		type:'Scheme',
 		name: 'Vendetta',
 		text:'',
 		setup:'',
@@ -88,7 +79,6 @@ var cards = {
 		vp:'',
 	},
 	'6' : {
-		type:'Scheme',
 		name: 'Plant Explosives',
 		text:'',
 		setup:'',
@@ -96,7 +86,6 @@ var cards = {
 		vp:'',
 	},
 	'7' : {
-		type:'Scheme',
 		name: 'Make Them Suffer',
 		text:'',
 		setup:'',
@@ -104,7 +93,6 @@ var cards = {
 		vp:'',
 	},
 	'8' : {
-		type:'Scheme',
 		name: 'Deliver a Message',
 		text:'',
 		setup:'',
@@ -112,7 +100,6 @@ var cards = {
 		vp:'',
 	},
 	'9' : {
-		type:'Scheme',
 		name: 'Take Prisoner',
 		text:'',
 		setup:'',
@@ -120,7 +107,6 @@ var cards = {
 		vp:'',
 	},
 	'10' : {
-		type:'Scheme',
 		name: 'Spring the Trap',
 		text:'',
 		setup:'',
@@ -128,7 +114,6 @@ var cards = {
 		vp:'',
 	},
 	'11' : {
-		type:'Scheme',
 		name: 'Murder Protege',
 		text:'',
 		setup:'',
@@ -136,7 +121,6 @@ var cards = {
 		vp:'',
 	},
 	'12' : {
-		type:'Scheme',
 		name: 'Frame For Murder',
 		text:'',
 		setup:'',
@@ -144,7 +128,6 @@ var cards = {
 		vp:'',
 	},
 	'13' : {
-		type:'Scheme',
 		name: 'Power Ritual',
 		text:'',
 		setup:'',

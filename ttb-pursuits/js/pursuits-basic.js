@@ -1,6 +1,6 @@
+var set = 'basic';
+var faction = 'basic';
 var pursuit = {
-	type:'Basic',
-	faction:'basic',
 	'academic' : {
 		name:'academic',
 		text:'Academics are valued for the knowledge they possess and can contribute. They tend to have heightened familiarity with Malifaux culture and architecture, providing essential information to help navigate those lost constructs and find both information and items of value and power.',

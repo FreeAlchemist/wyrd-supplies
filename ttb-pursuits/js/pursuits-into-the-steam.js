@@ -1,5 +1,6 @@
 var set = 'Into The Steam';
 var faction = 'arcanist';
+var lang = 'eng';
 var pursuit = {
 	'animator' : {
 		name: 'animator',

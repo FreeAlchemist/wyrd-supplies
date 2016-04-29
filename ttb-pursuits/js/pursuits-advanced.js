@@ -1,5 +1,6 @@
 var set = 'Advanced';
 var faction = 'advanced';
+var lang = 'eng';
 var pursuit = {
 	'death-marshal' : {
 		name: 'death-marshal',

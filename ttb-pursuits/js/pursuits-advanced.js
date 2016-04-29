@@ -1,6 +1,6 @@
+var set = 'Advanced';
+var faction = 'advanced';
 var pursuit = {
-	type:'Advanced',
-	faction:'advanced',
 	'death-marshal' : {
 		name: 'death-marshal',
 		text:'death-marshal text',

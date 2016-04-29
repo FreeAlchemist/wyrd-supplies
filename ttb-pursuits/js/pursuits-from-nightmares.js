@@ -1,6 +1,6 @@
+var set = 'From Nightmares';
+var faction = 'neverborn';
 var pursuit = {
-	type:'From Nightmares',
-	faction:'neverborn',
 	'from-nightmares' : {
 		name: 'from-nightmares',
 		text:'from-nightmares text',

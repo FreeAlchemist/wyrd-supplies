@@ -1,6 +1,6 @@
+var set = 'Guild Wars';
+var faction = 'guild';
 var pursuit = {
-	type:'Guild Wars',
-	faction:'guild',
 	'guild-wars' : {
 		name: 'guild-wars',
 		text:'guild-wars text',

@@ -1,5 +1,6 @@
 var set = 'Into The Bayou';
 var faction = 'gremlin';
+var lang = 'eng';
 var pursuit = {
 	'bokor' : {
 		name: 'bokor',

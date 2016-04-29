@@ -22,7 +22,7 @@ console.log(arr.length)
 
 var quantity = arr.length;
 
-for (var i = 2; i < quantity; i++) {
+for (var i = 0; i < quantity; i++) {
 	console.log('PURSUIT #'+i+': ')
 	console.log(pursuit[arr[i]])
 	// console.log(pursuit[i].text)
@@ -34,51 +34,49 @@ for (var i = 2; i < quantity; i++) {
 	var cardfrontid = cardid+'-front';
 	var cardbackid = cardid+'-back';
 	console.log(cardid)
-	$('#page').append($('<div />',{class:'card card-front',id:cardfrontid}))
+	$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 	$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
 	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2'}))
-
-
+	
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuit[cardid].name}))
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 
-	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'GEAR:'}))
-	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
+	if(pursuit[cardid].gear){
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'GEAR:'}))
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
+	}
 
-	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
-	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
+	if(pursuit[cardid].talent['name']){
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
+	}
 
 	var stepid = cardfrontid+'-bg2'+'-step'
-	$('#'+cardfrontid+'-bg2').append($('<table />',{class:'text step',id:stepid,cellspacing:'0',cellpadding:'0'}))
-	$('#'+stepid).append($('<tr />',{id:stepid+'-row-0'}))
-	$('#'+stepid+'-row-0').append($('<td />',{class:'step-title',text:'#'}))
-	$('#'+stepid+'-row-0').append($('<td />',{class:'step-title',text:'Talent'}))
-	
+
+	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
+	$('#'+stepid).append($('<b />',{text:'Talent advancement'}))
 
 	var steparr = [];
 	for (var c in pursuit[cardid].step) {
 		steparr.push(c);
 	}
 	var stepquantity = steparr.length;
-	console.log(stepquantity)
+	// console.log(stepquantity)
 	for (var s = 1; s <= stepquantity; s++) {
-	// for (var s = 1; s <= 10; s++) {
 		// console.log('STEP #'+s+': ')
 		// console.log(pursuit[arr[i]].step[s])
-		var steprowid = stepid+'-row-'+s
-		$('#'+stepid).append($('<tr />',{id:steprowid}))
-		$('#'+steprowid).append($('<td />',{class:'td-num',text:s}))
-		$('#'+steprowid).append($('<td />',{text:pursuit[cardid].step[s]}))
+		$('#'+stepid).append($('<li />',{text:pursuit[cardid].step[s]}))
+
 	};
 };
 
 $('#page').append($('<div />',{class:'row'}))
 
-for (var i = quantity-1; i >= 2; i--) {
+for (var i = quantity-1; i >= 0; i--) {
 	var cardid = arr[i];
 	var cardbackid = cardid+'-back';
-	$('#page').append($('<div />',{class:'card card-back',id:cardbackid}))
+	$('#page').append($('<div />',{class:'card card-back '+faction,id:cardbackid}))
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
-	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+pursuit.faction,text:'\"'+pursuit.type+'\"'}))
+	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 }

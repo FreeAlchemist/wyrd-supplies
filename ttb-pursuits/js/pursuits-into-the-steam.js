@@ -1,6 +1,6 @@
+var set = 'Into The Steam';
+var faction = 'arcanist';
 var pursuit = {
-	type:'Into The Steam',
-	faction:'arcanist',
 	'animator' : {
 		name: 'animator',
 		text:'animator text',

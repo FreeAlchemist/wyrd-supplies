@@ -13,13 +13,6 @@ for (var p in cards) {
 
 var quantity = arr.length;
 
-	/*back*/
-	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
-		$('#'+cardid+'-card').append($('<div />',{class:'back',id:cardid+'-back'}))
-			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
-			$('#'+cardid+'-back').append($('<div />',{class:'logo'}))
-			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
-
 console.log(arr)
 console.log(arr.length)
 // console.log(arr[0])
@@ -67,23 +60,18 @@ for (var i = 0; i < quantity; i++) {
 			$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
 				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
 				$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
+
 };
 
-// $('#page').append($('<div />',{class:'row'}))
+/*separator*/
+$('#page').append($('<div />',{class:'row'}))
 
-// <div class="card">
-// 	<div class="back">
-// 		<div class="top_label">scheme</div>
-// 		<div class="logo"></div>
-// 		<div class="bottom_label">scheme</div>
-// 		</div>
-// </div>
-
-// for (var i = quantity-1; i >= 0; i--) {
-// 	var cardid = arr[i];
-// 	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
-// 		$('#'+cardid+'-card').append($('<div />',{class:'back',id:cardid+'-back'}))
-// 			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
-// 			$('#'+cardid+'-back').append($('<div />',{class:'logo'}))
-// 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:type}))
-// }
+/*back*/
+for (var i = quantity-1; i >= 0; i--) {
+	var cardid = arr[i];
+$('#page').append($('<div />',{class:'card',id:cardid+'-card2'}))
+		$('#'+cardid+'-card2').append($('<div />',{class:'back',id:cardid+'-back'}))
+			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
+			$('#'+cardid+'-back').append($('<div />',{class:'logo '+cardid}))
+			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
+}

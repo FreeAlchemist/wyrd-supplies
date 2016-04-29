@@ -1,5 +1,6 @@
 var set = 'Guild Wars';
 var faction = 'guild';
+var lang = 'eng';
 var pursuit = {
 	'guild-wars' : {
 		name: 'guild-wars',

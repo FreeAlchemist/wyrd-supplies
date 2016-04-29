@@ -1,5 +1,6 @@
 var set = 'Under Quarantine';
 var faction = 'ressurectionist';
+var lang = 'eng';
 var pursuit = {
 	'bully' : {
 		name: 'bully',

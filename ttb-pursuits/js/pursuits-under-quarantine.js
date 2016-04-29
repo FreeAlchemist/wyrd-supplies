@@ -1,6 +1,6 @@
+var set = 'Under Quarantine';
+var faction = 'ressurectionist';
 var pursuit = {
-	type:'Under Quarantine',
-	faction:'ressurectionist',
 	'bully' : {
 		name: 'bully',
 		text:'bully text',

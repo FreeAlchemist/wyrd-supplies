@@ -3,6 +3,7 @@ body{
 }
 
 .card {
+	position: relative;
 	float: left;
 	width: 6.2cm;
 	height: 8.7cm;
@@ -15,10 +16,9 @@ body{
 	border: 1px solid  rgba(0,0,0,1);
 	font-family: 'AGFriquer';
 	background-color: rgba(255,255,255,1);
-	margin-bottom: 0.5cm;
+	margin-bottom: 1.1cm;
 	background-color: rgba(180, 135, 105, 1);
-	position: relative;
-
+	background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
 }
 
 p {
@@ -40,6 +40,7 @@ p {
 	width: 5.6cm;
 	margin: 0.2cm 0cm 0cm 0.2cm;
 	border: 0.1cm solid rgba(89, 62, 42, 1);
+	border: 0.1cm solid rgba(66, 67, 73, 1);
 }
 
 .front{
@@ -47,7 +48,7 @@ p {
 	height: 8cm;
 	width: 5.6cm;
 	margin: 0.2cm 0cm 0cm 0.2cm;
-	border: 0.1cm solid rgba(89, 62, 42, 1);
+	/*border: 0.1cm solid rgba(89, 62, 42, 1);*/
 }
 
 .header {
@@ -58,7 +59,7 @@ p {
 	min-height: 0.9cm;
 	border-top: 0.05cm solid rgba(86, 70, 62, 1);
 	border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
-	background-color: rgba(10,10,10,0.5);
+	background-color: rgba(110, 110, 116, 1);
 }
 
 .seal {
@@ -188,16 +189,21 @@ p {
 .logo{
 	position: absolute;
 	top: 3cm;
-	right: 1.5cm;
-	bottom: 3cm;
-	left: 1.5cm;
-	background-color: rgba(255,20,255,0.5);
-	/*background-image: url('img/cbr.gif');*/
+	left: 1.8cm;
+	background-color: Blanchedalmond;
 	background-repeat: no-repeat;
-	background-image:url(../img/jockers.svg);
+	 background-image: url(../img/jockers.svg); 
 	background-position: center center;
-	background-size:  auto 100%;
 	text-align: center;
+	width: 1.8cm;
+	height: 1.8cm;
+	background-size: auto 80%;
+	color: black;
+	font-size: 32px;
+	line-height: 1.8cm;
+	border: solid 0.1cm rgba(86, 70, 62, 1);
+	border-radius: 50%;
+	/*display: none;*/
 }
 
 .row{clear:both;}

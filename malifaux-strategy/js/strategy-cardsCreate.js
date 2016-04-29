@@ -11,13 +11,22 @@ for (var p in cards) {
 	arr.push(p);
 }
 
+var quantity = arr.length;
+
+	/*back*/
+	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
+		$('#'+cardid+'-card').append($('<div />',{class:'back',id:cardid+'-back'}))
+			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
+			$('#'+cardid+'-back').append($('<div />',{class:'logo'}))
+			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
 
 console.log(arr)
 console.log(arr.length)
 // console.log(arr[0])
 
-var quantity = arr.length;
+// console.log('TYPE: '+type)
 
+/*front*/
 for (var i = 0; i < quantity; i++) {
 	var cardid = arr[i];
 	console.log('cards #'+i+': ')
@@ -56,8 +65,8 @@ for (var i = 0; i < quantity; i++) {
 				$('#'+cardid+'-text').append($('<p />',{text:'Victory points'+cards[cardid].vp}))
 
 			$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
-				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:cards[cardid].type}))
-
+				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
+				$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
 };
 
 // $('#page').append($('<div />',{class:'row'}))
@@ -74,7 +83,7 @@ for (var i = 0; i < quantity; i++) {
 // 	var cardid = arr[i];
 // 	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
 // 		$('#'+cardid+'-card').append($('<div />',{class:'back',id:cardid+'-back'}))
-// 			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:cards[cardid].type}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
 // 			$('#'+cardid+'-back').append($('<div />',{class:'logo'}))
-// 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:cards[cardid].type}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:type}))
 // }

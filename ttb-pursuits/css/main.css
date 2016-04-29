@@ -56,22 +56,22 @@ display: none;
 	text-transform: uppercase;
 	font-size: 8pt;
 	float: left;
-	padding: 3px 3px 0px 3px;
+	padding: 6px 3px 0px 6px;
 }
 .gear-text{
 	font-size: 8pt;
-	padding: 3px 3px 0px 3px;
+	padding: 6px 6px 0px 6px;
 }
 
 .talent-name{
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 8pt;
-	padding: 3px 3px 0px 3px;
+	padding: 6px 0px 3px 6px;
 }
 .talent-text{
 	font-size: 8pt;
-	padding: 0px 3px 0px 3px;
+	padding: 0px 6px 0px 6px;
 }
 
 .step td{
@@ -86,10 +86,15 @@ padding-left: 0.1cm;
 }
 
 .step{
+	position: absolute;
+	bottom: 0px;
 width: 5.68cm;
 font-size: 7.5pt;
 /*font-size: 8pt;*/
 }
+
+
+
 
 table.gear{
 	width: 100%;
@@ -175,8 +180,14 @@ border: 1px solid black;
 background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
 }
 
+.card-front{
+position: relative;	
+}
+
 .front1{
-height: 3.6cm;
+/*height: 3.6cm;*/
+/*height: 70%;*/
+height: 8cm;
 width: 5.6cm;
 background-color: Linen;
 /*margin: 0.3cm 0.3cm 0cm 0.3cm;*/
@@ -184,20 +195,37 @@ margin: 0.2cm 0cm 0cm 0.2cm;
 border: 0.1cm solid rgba(89, 62, 42, 1);
 border-bottom-style: none;
 /*border-radius: 6px;*/
-background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);*/
 overflow: hidden;
 }
 
 .front2{
-height: 4.4cm;
-width: 5.61cm;
+position: relative;
+position: absolute;
+bottom: 0px;
+/*height: 4.4cm;*/
+/*height: 3.5cm;*/
+width: 5.6cm;
 background-color: Linen;
 /*margin: 0cm 0.3cm 0.3cm 0.3cm;*/
 margin: 0cm 0cm 0.2cm 0.2cm;
 border: 0.1cm solid rgba(89, 62, 42, 1);
 border-top-style: none;
 /*border-radius: 6px;*/
-background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);*/
+}
+
+.step-ol{
+/*position: absolute;*/
+/*bottom: 0px;*/
+/*width: 5.68cm;*/
+font-size: 7.5pt;
+/*font-size: 8pt;*/
+padding-left: 21px;
+}
+
+.step-ol li{
+/*border: solid 1px rgba(89, 62, 42, 1);*/
 }
 
 
@@ -266,12 +294,13 @@ background-color: Bisque;
 }
 
 #menu a{
-	text-decoration: none;
-	border: solid 1px;
+text-decoration: none;
+border: solid 1px;
 border-radius: 3px;
 background-color: Burlywood;
 margin: 3px;
 float: left;
+color: black;
 }
 
 @media print {

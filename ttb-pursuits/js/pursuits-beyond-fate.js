@@ -1,6 +1,6 @@
+var set = 'Beyond Fate';
+var faction = 'avatar';
 var pursuit = {
-	type:'Beyond Fate',
-	faction:'avatar',
 	'beyond-fate' : {
 		name: 'beyond-fate',
 		text:'beyond-fate text',

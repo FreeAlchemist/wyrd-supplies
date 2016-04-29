@@ -1,5 +1,6 @@
-var set = 'basic';
+var set = 'Basic';
 var faction = 'basic';
+var lang = 'eng';
 var pursuit = {
 	'academic' : {
 		name:'academic',

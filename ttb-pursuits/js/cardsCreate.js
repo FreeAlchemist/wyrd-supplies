@@ -1,13 +1,24 @@
 $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'THROUGH THE BREACH'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Pursuits: Basic'}))
+$('#menu').append($('<a />',{href:'pursuits-basic-rus.html',text:'Занятия: Basic'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Pursuits: Advanced'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Pursuits: Into the Steam'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Pursuits: Under Quarantine'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Pursuits: Into the Bayou'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'Pursuits: From Nightmares'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Pursuits: Guild Wars'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Pursuits: Beyond Fate'}))
+
+console.log('Language: '+lang)
 
 var arr = [];
 
@@ -22,6 +33,7 @@ console.log(arr.length)
 
 var quantity = arr.length;
 
+/*front*/
 for (var i = 0; i < quantity; i++) {
 	console.log('PURSUIT #'+i+': ')
 	console.log(pursuit[arr[i]])
@@ -42,19 +54,34 @@ for (var i = 0; i < quantity; i++) {
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 
 	if(pursuit[cardid].gear){
-		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'GEAR:'}))
+		if(lang == 'rus'){
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'вещи:'}))
+		}
+		else{
+			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'GEAR:'}))
+		}
+		
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
 	}
+
 
 	if(pursuit[cardid].talent['name']){
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
 	}
 
+	// $('#'+cardfrontid+'-bg2').append($('<hr />'))
+
 	var stepid = cardfrontid+'-bg2'+'-step'
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
-	$('#'+stepid).append($('<b />',{text:'Talent advancement'}))
+	if(lang == 'rus'){
+		$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
+	}
+		else{
+			$('#'+stepid).append($('<b />',{text:'Talent advancement'}))
+		}
+	
 
 	var steparr = [];
 	for (var c in pursuit[cardid].step) {
@@ -70,8 +97,10 @@ for (var i = 0; i < quantity; i++) {
 	};
 };
 
+/*separator*/
 $('#page').append($('<div />',{class:'row'}))
 
+/*back*/
 for (var i = quantity-1; i >= 0; i--) {
 	var cardid = arr[i];
 	var cardbackid = cardid+'-back';

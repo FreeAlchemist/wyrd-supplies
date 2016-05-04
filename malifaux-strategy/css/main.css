@@ -177,10 +177,14 @@ p {
 
 .top_label {
 	top: 1cm;
+	border-top: 0.05cm solid rgba(86, 70, 62, 1);
+	border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
 }
 
 .bottom_label {
 	bottom: 1cm;
+	border-top: 0.05cm solid rgba(86, 70, 62, 1);
+	border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
 	/*transform: rotate(180deg);*/
 	font-size: 12pt;
 	background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
@@ -214,32 +218,4 @@ p {
 	width: 100%
 	padding: 0px;
 	margin: 0px;
-}
-
-#menu{
-position: fixed;
-top: 1cm;
-left: 21cm;
-width: 210px;
-border: solid 1px;
-border-radius: 8px;
-padding: 5px;
-background-color: Bisque;
-}
-
-#menu a{
-text-decoration: none;
-border: solid 1px;
-border-radius: 3px;
-background-color: Burlywood;
-padding: 3px;
-margin: 3px;
-float: left;
-clear: left;
-color: black;
-}
-
-@media print {
-	#menu{display: none;}
-	.seal{border-style: solid;}
 }

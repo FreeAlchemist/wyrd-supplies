@@ -1,9 +1,62 @@
 pursuits-advanced
-pursuits-basic
 pursuits-basic-rus
+pursuits-basic
 pursuits-beyond-fate
 pursuits-from-nightmares
 pursuits-guild-wars
 pursuits-into-the-bayou
 pursuits-into-the-steam
 pursuits-under-quarantine
+
+pursuits-advanced.html
+pursuits-basic-rus.html
+pursuits-basic.html
+pursuits-beyond-fate.html
+pursuits-from-nightmares.html
+pursuits-guild-wars.html
+pursuits-into-the-bayou.html
+pursuits-into-the-steam.html
+pursuits-under-quarantine.html
+
+pursuits-advanced.js
+pursuits-basic-rus.js
+pursuits-basic.js
+pursuits-beyond-fate.js
+pursuits-from-nightmares.js
+pursuits-guild-wars.js
+pursuits-into-the-bayou.js
+pursuits-into-the-steam.js
+pursuits-under-quarantine.js
+
+advanced
+basic
+beyond-fate
+from-nightmares
+guild-wars
+into-the-bayou
+into-the-steam
+under-quarantine
+
+Whenever failed an Academic duel, may draw a card. Epilogue: may advance in any Academic skill in addition to skill Advancement options.
+
+When failed a Magic duel during dramatic time, may draw a card. Epilogue: may advance in any Magical skill in addition to skill Advancement options.
+
+При провале Академической дуэли, можете вытянуть карту. Эпилог: можете продвинуться в любом Академическом таланте в дополнение к вариантам развития.
+
+При провале Магической дуэли в драматическое время, можете вытянуть карту. Эпилог: можете продвинуться в любом Магическом таланте в дополнение к вариантам развития.
+
+Academic
+Expertise
+Magical
+Training
+Close Combat
+Ranged Combat
+Social
+
+Академический
+Экспертиза
+Магический
+Тренировка
+Ближний бой
+Дальний бой
+Социальный

@@ -68,9 +68,7 @@ for (var i = 0; i < quantity; i++) {
 	if(pursuit[cardid].talent['name']){
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
-	}
-
-	// $('#'+cardfrontid+'-bg2').append($('<hr />'))
+		}
 
 	var stepid = cardfrontid+'-bg2'+'-step'
 

@@ -5,10 +5,10 @@ var pursuit = {
 	'academic' : {
 		name:'академик',
 		text:'Academics are valued for the knowledge they possess and can contribute. They tend to have heightened familiarity with Malifaux culture and architecture, providing essential information to help navigate those lost constructs and find both information and items of value and power.',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'Заядлый студент',
-			text:'При провале Academic дуэли, вытяните карту. Эпилог: можете продвинуться в любом Academic таланте помимо вариантов развития.'
+			text:'При провале Academic дуэли, вытяните карту. Эпилог: продвинуться в любом Academic таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Student of Knowledge',
@@ -26,10 +26,10 @@ var pursuit = {
 	'criminal' : {
 		name: 'преступник',
 		text:'criminal text',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'оппортунист',
-			text:'При провале Expertise дуэли, вытяните карту. Эпилог: можете продвинуться в любом Expertise таланте помимо вариантов развития.'
+			text:'При провале Expertise дуэли, вытяните карту. Эпилог: продвинуться в любом Expertise таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Competitive Edge',
@@ -47,10 +47,10 @@ var pursuit = {
 	'dabbler' : {
 		name: 'дилетант',
 		text:'dabbler text',
-		gear:'Grimoire: 1 Sorcery Magia, 1 Prestidigitation Magia, 3 Immuto. Magical Theory',
+		gear:'Гримуар: 1 Sorcery Magia, 1 Prestidigitation Magia, 3 Immuto. Магическая Теория',
 		talent:{
 			name:'прозрение',
-			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Magical таланте помимо вариантов развития.'
+			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Magical таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Arcane Musings',
@@ -68,10 +68,10 @@ var pursuit = {
 	'drudge' : {
 		name: 'чернорабочий',
 		text:'drudge text',
-		gear:'1 pneumatic limb + steam augments (total value up to 25§)',
+		gear:'1 пневматическая конечность + паровые улучшения (общая стоимость до 25§)',
 		talent:{
 			name:'ночь после тяжелых дней',
-			text:'При провале Training дуэли, вытяните карту. Эпилог: можете продвинуться в любом Training таланте помимо вариантов развития.'
+			text:'При провале Training дуэли, вытяните карту. Эпилог: продвинуться в любом Training таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Long Days',
@@ -89,10 +89,10 @@ var pursuit = {
 	'graverobber' : {
 		name: 'гробокопатель',
 		text:'graverobber text',
-		gear:'Grimoire: 1 Necromancy Magia, 1 Enchanting Magia, 3 Immuto. Magical Theory',
+		gear:'Гримуар: 1 Necromancy Magia, 1 Enchanting Magia, 3 Immuto. Магическая Теория',
 		talent:{
 			name:'черная душа',
-			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Magical таланте помимо вариантов развития.'
+			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Magical таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Morbid Thoughts',
@@ -110,10 +110,10 @@ var pursuit = {
 	'guard' : {
 		name: 'гвардеец',
 		text:'guard text',
-		gear:'melee weapon, armor (pg 172,176) of a combined value up to 25§',
+		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
 		talent:{
 			name:'теперь ты меня бесишь',
-			text:'При провале Close Combat дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Close Combat таланте помимо вариантов развития.'
+			text:'При провале Close Combat дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Close Combat таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Stoic Defender',
@@ -131,10 +131,10 @@ var pursuit = {
 	'gunfighter' : {
 		name: 'стрелок',
 		text:'gunfighter text',
-		gear:'pistol or shotgun of a value up to 20§. This weapon gets 1 customization (pg 150) at no additional cost',
+		gear:'пистолет либо дробовик стоимостью до 20§. Это оружие получает 1 кастомизацию (стр 150) без дополнительных затрат',
 		talent:{
 			name:'палец на курке',
-			text:'При провале Ranged Combat дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Ranged Combat таланте помимо вариантов развития.'
+			text:'При провале Ranged Combat дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Ranged Combat таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Quick Draw',
@@ -152,10 +152,10 @@ var pursuit = {
 	'mercenary' : {
 		name: 'наемник',
 		text:'mercenary text',
-		gear:'carabine or rifle of a value up to 20§. This weapon gets 1 customization (pg 150) at no additional cost',
+		gear:'карабин либо ружье стоимостью до 20§. Это оружие получает 1 кастомизацию (стр 150) без дополнительных затрат',
 		talent:{
 			name:'категоричный',
-			text:'При провале Ranged Combat дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Ranged Combat таланте помимо вариантов развития.'
+			text:'При провале Ranged Combat дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Ranged Combat таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Speed Loading',
@@ -173,10 +173,10 @@ var pursuit = {
 	'overseer' : {
 		name: 'смотритель',
 		text:'overseer text',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'надзор',
-			text:'При провале Social дуэли, вытяните карту. Эпилог: можете продвинуться в любом Social таланте помимо вариантов развития.'
+			text:'При провале Social дуэли, вытяните карту. Эпилог: продвинуться в любом Social таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Converted Effort',
@@ -194,10 +194,10 @@ var pursuit = {
 	'performer' : {
 		name: 'исполнитель',
 		text:'performer text',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'вспышка драматизма',
-			text:'При провале Social дуэли, вытяните карту. Эпилог: можете продвинуться в любом Social таланте помимо вариантов развития.'
+			text:'При провале Social дуэли, вытяните карту. Эпилог: продвинуться в любом Social таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Powerful Impression',
@@ -215,10 +215,10 @@ var pursuit = {
 	'pioneer' : {
 		name: 'первопроходец',
 		text:'pioneer text',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'стойкая личность',
-			text:'При провале Training дуэли, вытяните карту. Эпилог: можете продвинуться в любом Training таланте помимо вариантов развития.'
+			text:'При провале Training дуэли, вытяните карту. Эпилог: продвинуться в любом Training таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Born Under A Wandering Star',
@@ -236,10 +236,10 @@ var pursuit = {
 	'scrapper' : {
 		name: 'боец',
 		text:'scrapper text',
-		gear:'melee weapon, armor (pg 172,176) of a combined value up to 25§',
+		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
 		talent:{
 			name:'кроваво мыслящий',
-			text:'При провале Close Combat дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Close Combat таланте помимо вариантов развития.'
+			text:'При провале Close Combat дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Close Combat таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Close the Gap',
@@ -257,10 +257,10 @@ var pursuit = {
 	'tinkerer' : {
 		name: 'жестянщик',
 		text:'tinkerer text',
-		gear:'Grimoire: 1 Enchanting Magia, 1 Sorcery Magia, 3 Immuto. Magical Theory',
+		gear:'Гримуар: 1 Enchanting Magia, 1 Sorcery Magia, 3 Immuto. Магическая Теория',
 		talent:{
 			name:'шестеренки в голове',
-			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: можете продвинуться в любом Magical таланте помимо вариантов развития.'
+			text:'При провале Magic дуэли в dramatic time, вытяните карту. Эпилог: продвинуться в любом Magical таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Push the Limits',
@@ -278,10 +278,10 @@ var pursuit = {
 	'wastrel' : {
 		name: 'расточитель',
 		text:'wastrel text',
-		gear:'не магический инструментарий (pg 179)',
+		gear:'не магический инструментарий (стр 179)',
 		talent:{
 			name:'образованный',
-			text:'При провале Expertise дуэли, вытяните карту. Эпилог: можете продвинуться в любом Expertise таланте помимо вариантов развития.'
+			text:'При провале Expertise дуэли, вытяните карту. Эпилог: продвинуться в любом Expertise таланте помимо вариантов развития.'
 		},
 		step:{
 			'1' : 'Luck of the Draw',

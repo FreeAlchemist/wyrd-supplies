@@ -1,5 +1,5 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'THROUGH THE BREACH'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Pursuits: Basic'}))
 $('#menu').append($('<a />',{href:'pursuits-basic-rus.html',text:'Занятия: Basic'}))
@@ -100,6 +100,21 @@ for (var i = 0; i < quantity; i++) {
 /*separator*/
 $('#page').append($('<div />',{class:'row'}))
 
+// for (var i = 1; i <= 35; i++) {
+// 	console.log('i: '+i+' i % 3 = '+ i % 3)
+// }
+
+/*filler*/
+if(quantity > 3 && (quantity % 3) != 0){
+	if((quantity % 3) == 2){
+		$('#page').append($('<div />',{class:'card filler'}))
+	}
+	if((quantity % 3) == 1){
+		$('#page').append($('<div />',{class:'card filler'}))
+		$('#page').append($('<div />',{class:'card filler'}))
+	}
+}
+
 /*back*/
 for (var i = quantity-1; i >= 0; i--) {
 	var cardid = arr[i];
@@ -108,4 +123,5 @@ for (var i = quantity-1; i >= 0; i--) {
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
+	// $('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:pursuit[cardid].text}))
 }

@@ -1,14 +1,13 @@
 .menu{
 margin-left: 10px;
 float: left;
-width: 250px;
 border: ridge; 1px;
 border-radius: 5px;
 padding: 5px;
-background-color: Azure;
+background-color: Oldlace;
 box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
+text-align: center;
 }
-
 
 .menu a{
 text-decoration: none;

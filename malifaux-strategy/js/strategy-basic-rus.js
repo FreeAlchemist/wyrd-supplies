@@ -1,6 +1,6 @@
-var set = 'basic';
-var type = 'Strategy';
-var lang = 'eng';
+var set = 'Базовая';
+var type = 'Стратегия';
+var lang = 'rus';
 var cards = {
 	
 	'rams' : {

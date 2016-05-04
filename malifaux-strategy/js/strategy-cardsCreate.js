@@ -1,9 +1,16 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'Wyrd Supplies'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'strategy-basic.html',text:'Strategy: Basic'}))
+$('#menu').append($('<a />',{href:'strategy-basic-rus.html',text:'Стратегии: Базовые'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'scheme-basic.html',text:'Scheme: Basic'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'strategy-gg.html',text:'Strategy: Gaining Grounds 2016'}))
+$('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'scheme-gg.html',text:'Scheme: Gaining Grounds 2016'}))
+
+console.log('Language: '+lang)
 
 var arr = [];
 
@@ -54,8 +61,14 @@ for (var i = 0; i < quantity; i++) {
 				$('#'+cardid+'-block').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
 
 			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
-				$('#'+cardid+'-text').append($('<p />',{text:'Setup: '+cards[cardid].setup}))
-				$('#'+cardid+'-text').append($('<p />',{text:'Victory points'+cards[cardid].vp}))
+				if(lang == 'rus'){
+					$('#'+cardid+'-text').append($('<p />',{text:'Расстановка: '+cards[cardid].setup}))
+					$('#'+cardid+'-text').append($('<p />',{text:'Победные очки: '+cards[cardid].vp}))
+				}
+					else{
+						$('#'+cardid+'-text').append($('<p />',{text:'Setup: '+cards[cardid].setup}))
+						$('#'+cardid+'-text').append($('<p />',{text:'Victory points: '+cards[cardid].vp}))
+					}
 
 			$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
 				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
@@ -65,6 +78,17 @@ for (var i = 0; i < quantity; i++) {
 
 /*separator*/
 $('#page').append($('<div />',{class:'row'}))
+
+/*filler*/
+if(quantity > 3 && (quantity % 3) != 0){
+	if((quantity % 3) == 2){
+		$('#page').append($('<div />',{class:'card filler'}))
+	}
+	if((quantity % 3) == 1){
+		$('#page').append($('<div />',{class:'card filler'}))
+		$('#page').append($('<div />',{class:'card filler'}))
+	}
+}
 
 /*back*/
 for (var i = quantity-1; i >= 0; i--) {

@@ -1,5 +1,6 @@
 var set = 'basic';
 var type = 'Scheme';
+var lang = 'eng';
 var cards = {
 	'always' : {
 		name: 'A Line in the Sand',

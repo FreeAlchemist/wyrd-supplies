@@ -1,5 +1,6 @@
 var set = 'gaining grounds 2016';
 var type = 'Scheme';
+var lang = 'eng';
 var cards = {
 	'always' : {
 		name: '',

@@ -191,4 +191,46 @@ var pursuit = {
 			'10' : 'shape-shifter step10',
 		}
 	},
+	'december-acolyte' : {
+		name: 'december acolyte',
+		text:'december acolyte text',
+		gear:'',
+		talent:{
+			name:'educated',
+			text:'Whenever this character...december acolyte'
+		},
+		step:{
+			'1' : 'december acolyte step1',
+			'2' : 'General Talent',
+			'3' : 'december acolyte step3',
+			'4' : 'General Talent',
+			'5' : 'december acolyte step5',
+			'6' : 'General Talent',
+			'7' : 'december acolyte step7',
+			'8' : 'General Talent',
+			'9' : 'december acolyte step9',
+			'10' : 'december acolyte step10',
+		}
+	},
+	'silent-one' : {
+		name: 'silent one',
+		text:'silent one text',
+		gear:'',
+		talent:{
+			name:'educated',
+			text:'Whenever this character...silent one'
+		},
+		step:{
+			'1' : 'silent one step1',
+			'2' : 'General Talent',
+			'3' : 'silent one step3',
+			'4' : 'General Talent',
+			'5' : 'silent one step5',
+			'6' : 'General Talent',
+			'7' : 'silent one step7',
+			'8' : 'General Talent',
+			'9' : 'silent one step9',
+			'10' : 'silent one step10',
+		}
+	},
 }

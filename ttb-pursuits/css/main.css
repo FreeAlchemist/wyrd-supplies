@@ -55,23 +55,23 @@ display: none;
 .gear-name{
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 8pt;
+	font-size: 7pt;
 	float: left;
 	padding: 6px 3px 0px 6px;
 }
 .gear-text{
-	font-size: 8pt;
+	font-size: 7pt;
 	padding: 6px 6px 0px 6px;
 }
 
 .talent-name{
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 8pt;
+	font-size: 7pt;
 	padding: 6px 0px 3px 6px;
 }
 .talent-text{
-	font-size: 8pt;
+	font-size: 7pt;
 	padding: 0px 6px 0px 6px;
 }
 
@@ -247,6 +247,7 @@ border-radius: 6px;
 }
 
 .row{clear:both;}
+
 /*Basic*/
 .academic{background-image: url(../img/basic/academic.png);}
 .criminal{background-image: url(../img/basic/criminal.png);}
@@ -277,9 +278,22 @@ border-radius: 6px;
 .primal{background-image: url(../img/into-the-steam/primal.jpg);}
 .shape-shifter{background-image: url(../img/into-the-steam/shape-shifter.jpg);}
 
+.december-acolyte{background-image: url(../img/into-the-steam/december-acolyte.jpg);}
+.silent-one{background-image: url(../img/into-the-steam/silent-one.jpg);}
+
 /*Under Quarantine*/
 .bully{background-image: url(../img/under-quarantine/bully.jpg);}
+.chemist{background-image: url(../img/under-quarantine/chemist.jpg);}
+.forgotten{background-image: url(../img/under-quarantine/forgotten.jpg);}
 .ghost-eater{background-image: url(../img/under-quarantine/ghost-eater.jpg);}
 .ghoul{background-image: url(../img/under-quarantine/ghoul.jpg);}
+.medium{background-image: url(../img/under-quarantine/medium.jpg);}
+.necromancer{background-image: url(../img/under-quarantine/necromancer.jpg);}
+.sawbones{background-image: url(../img/under-quarantine/sawbones.jpg);}
+
 /*Into the Bayou*/
 .bokor{background-image: url(../img/into-the-bayou/bokor.jpg);}
+
+/*From Nightmares*/
+/*Guild Wars*/
+/*Beyond Fate*/

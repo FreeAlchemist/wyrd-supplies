@@ -41,39 +41,73 @@ for (var i = 0; i < quantity; i++) {
 
 	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
 		$('#'+cardid+'-card').append($('<div />',{class:'front',id:cardid+'-front'}))
+			$('#'+cardid+'-front').append($('<div />',{class:'header',id:cardid+'-header',text:cards[cardid].name}))
+			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
 
-			$('#'+cardid+'-front').append($('<div />',{class:'header',id:cardid+'-header'}))
-				if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){
-					$('#'+cardid+'-header').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal'}))
-				}
-				else if(cardid == 'always'){
-					$('#'+cardid+'-header').append($('<div />',{class:'seal',id:cardid+'-seal',text:'A'}))
-				}
-				else if(cardid == 'doubles'){
-					$('#'+cardid+'-header').append($('<div />',{class:'seal',id:cardid+'-seal',text:'D'}))
+			if(cards[cardid].setup){
+				if(lang == 'rus'){
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
 				}
 				else{
-					$('#'+cardid+'-header').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Setup:'}))
 				}
-			$('#'+cardid+'-header').append($('<div />',{class:'title',id:cardid+'-title',text:cards[cardid].name}))
+				$('#'+cardid+'-text').append($('<div />',{text:cards[cardid].setup}))
+			}
 
-			$('#'+cardid+'-front').append($('<div />',{class:'block',id:cardid+'-block'}))
-				$('#'+cardid+'-block').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
-
-			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
+			if(cards[cardid].special){
 				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<p />',{text:'Расстановка: '+cards[cardid].setup}))
-					$('#'+cardid+'-text').append($('<p />',{text:'Победные очки: '+cards[cardid].vp}))
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Специальные правила:'}))
 				}
-					else{
-						$('#'+cardid+'-text').append($('<p />',{text:'Setup: '+cards[cardid].setup}))
-						$('#'+cardid+'-text').append($('<p />',{text:'Victory points: '+cards[cardid].vp}))
-					}
+				else{
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Special rules:'}))
+				}
+				$('#'+cardid+'-text').append($('<div />',{text:cards[cardid].special}))
+			}
+
+			if(cards[cardid].vp){
+				if(lang == 'rus'){
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Победные очки:'}))
+				}
+				else{
+					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Victory points:'}))
+				}
+				$('#'+cardid+'-text').append($('<div />',{text:cards[cardid].vp}))
+			}
 
 			$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
 				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
 				$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
 
+		if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){
+			$('#'+cardid+'-bottom').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal'}))
+		}
+		else if(cardid == 'always'){
+			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'A'}))
+		}
+		else if(cardid == 'doubles'){
+			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'D'}))
+		}
+		else{
+			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
+		}		
+
+
+		var hfront = parseInt($('#'+cardid+'-front').css('height'))
+		var hheader = parseInt($('#'+cardid+'-header').css('height'))
+		var htext = parseInt($('#'+cardid+'-text').css('height'))
+		var hbottom = parseInt($('#'+cardid+'-bottom').css('height'))
+		var hplace = hfront-hheader-hbottom
+
+		// console.log('#'+cardid+'-front height: '+hfront)
+		// console.log('#'+cardid+'-header height: '+hheader)
+		// console.log('#'+cardid+'-text height: '+htext)
+		// console.log('#'+cardid+'-bottom height: '+hbottom)
+		// console.log(hplace)
+
+		if(htext > hplace){
+			// $('#'+cardid+'-text').css('color','red')
+			$('#'+cardid+'-text').css('font-size','7pt')
+		}
 };
 
 /*separator*/
@@ -98,4 +132,7 @@ $('#page').append($('<div />',{class:'card',id:cardid+'-card2'}))
 			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
 			$('#'+cardid+'-back').append($('<div />',{class:'logo '+cardid}))
 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
+			// $('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:'Contents copyright ©, http://www.wyrd-games.net/home Wyrd Miniatures, LLC.'}))
+
+			// Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.
 }

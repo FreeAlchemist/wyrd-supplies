@@ -159,6 +159,9 @@ float: left;
 	background-color: gray;
 	/*background-image: url('img/darkwood.jpg');*/
 	background-image: radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+	background-image: radial-gradient(circle farthest-corner at 20px 20px, #DFC597, #664937);
+	color: Linen;
+	color: rgba(255,255,255,1);
 	color: rgba(255,255,255,1);
 	font-size: 3em;
 }
@@ -189,6 +192,7 @@ float: left;
 	/*transform: rotate(180deg);*/
 	font-size: 12pt;
 	background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
+	/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(89, 87, 86, 1),rgba(182, 179, 177, 1), rgba(182, 179, 177, 1),rgba(89, 87, 86, 1));*/
 }
 
 .logo{

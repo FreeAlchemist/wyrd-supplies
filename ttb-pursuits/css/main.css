@@ -28,13 +28,17 @@ font-size: 8pt;
 text-align: center;
 background-color: rgba(89, 62, 42, 1);
 background-color: rgba(110, 110, 116, 1);
+background-color: rgba(180, 135, 105, 1);
+background-color: rgba(129, 124, 121, 1);
 /*background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 color: Linen;
 height: 0.5cm;
 line-height: 0.5cm;
 font-size: 13pt;
 font-weight: bold;
 text-transform: uppercase;
+letter-spacing: 0.05em;
 }
 
 .step-title{
@@ -130,14 +134,17 @@ margin-bottom: 1cm;
 
 .title-back{
 background-color: Blanchedalmond;
-background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));
-background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));
+background-color: rgba(129, 124, 121, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 font-weight: bold;
 color: Linen;
 text-transform: uppercase;
-font-size: 16pt;
-position: relative;
-top: 5.5cm;
+letter-spacing: 0.05em;
+font-size: 13pt;
+width: 100%;
+position: absolute;
+/* top: 5.5cm; */
 border-top: 1px solid rgba(89, 62, 42, 1);
 border-bottom: 1px solid rgba(89, 62, 42, 1);
 text-align: center;
@@ -146,31 +153,40 @@ text-align: center;
 
 .type{
 font-size: 12pt;
+bottom: 0px;
 }
 
 .basic{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
+background-color: rgba(129, 124, 121, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));*/
 }
 .advanced{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 179, 105, 1), rgba(92, 88, 43, 1));
+background-color: rgba(180, 179, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 179, 105, 1), rgba(92, 88, 43, 1));*/
 }
 .arcanist{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(105, 117, 180, 1), rgba(43, 47, 92, 1));
+background-color: rgba(105, 117, 180, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(105, 117, 180, 1), rgba(43, 47, 92, 1));*/
 }
 .ressurectionist{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(110, 180, 105, 1), rgba(43, 92, 45, 1));
+background-color: rgba(110, 180, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(110, 180, 105, 1), rgba(43, 92, 45, 1));*/
 }
 .gremlin{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(174, 154, 88, 1), rgba(94, 75, 50, 1));
+background-color: rgba(174, 154, 88, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(174, 154, 88, 1), rgba(94, 75, 50, 1));*/
 }
 .neverborn{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(158, 105, 180, 1), rgba(85, 43, 92, 1));
+background-color: rgba(158, 105, 180, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(158, 105, 180, 1), rgba(85, 43, 92, 1));*/
 }
 .guild{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(181, 105, 105, 1), rgba(92, 45, 43, 1));
+background-color: rgba(181, 105, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(181, 105, 105, 1), rgba(92, 45, 43, 1));*/
 }
 .avatar{
-background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(163, 158, 60, 1), rgba(43, 92, 85, 1));
+background-color: rgba(163, 158, 60, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(163, 158, 60, 1), rgba(43, 92, 85, 1));*/
 }
 
 .front{
@@ -234,16 +250,17 @@ padding-left: 21px;
 
 
 .back{
+position: relative;
 height: 8cm;
 background-color: Blanchedalmond;
 background-color: #FAFBF8;
 background-position: center;
-background-position: 50% 20px;
+background-position: 50% 40px;
 background-size: auto 100%;
 background-repeat: no-repeat;
 margin: 0.3cm;
 border: 1px solid black;
-border-radius: 6px;
+/* border-radius: 6px; */
 }
 
 .row{clear:both;}

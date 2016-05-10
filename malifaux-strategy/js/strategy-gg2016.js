@@ -32,7 +32,7 @@ var cards = {
 	},
 	'jockers' : {
 		name: 'Collect the Bounty',
-		text:'',
+		text:'"You\'re telling me that thing is only worth 10 Scrip?" he whined. "That\'s what I\'m telling you." "It\'s one of those Hanged! No WAY that\'s only worth 10 Scrip!" "I don\'t make the rules, bud. Take it or leave it"',
 		setup:'',
 		special:'Whenever a model is reduced to 0 Wounds by a non-Peon model, the Crew which reduced it to 0 Wounds gains a number of Bounty Points depending on the type of model which was reduced to 0 Wounds, so long as the Crew considered the model an enemy. Models are worth the following number of Bounty Points: PEONS:0; MINIONS:1; ENFORSERS:2; HENCHMEN:3; MASTERS:4; At the end of each Turn, after calculating VP, reset each player to 0 Bounty Points.',
 		vp:'At the end of every Turn after the first, the player with the most Bounty Points scores 1 VP. Either player may also score 1 VP if the opposing player has no models left in play. No more than 1 VP may be scored from this strategy per Turn. If both players still have models in play and they are tied for Bounty Points, neither will score any VP.',

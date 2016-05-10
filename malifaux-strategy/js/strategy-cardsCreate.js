@@ -10,7 +10,7 @@ $('#menu').append($('<a />',{href:'strategy-gg.html',text:'Strategy: Gaining Gro
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'scheme-gg.html',text:'Scheme: Gaining Grounds 2016'}))
 
-console.log('Language: '+lang)
+// console.log('Language: '+lang)
 
 var arr = [];
 
@@ -20,8 +20,8 @@ for (var p in cards) {
 
 var quantity = arr.length;
 
-console.log(arr)
-console.log(arr.length)
+// console.log(arr)
+// console.log(arr.length)
 // console.log(arr[0])
 
 // console.log('TYPE: '+type)
@@ -29,21 +29,21 @@ console.log(arr.length)
 /*front*/
 for (var i = 0; i < quantity; i++) {
 	var cardid = arr[i];
-	console.log('cards #'+i+': ')
-	console.log(cardid)
-	console.log(cardid+' is not a number:'+isNaN(cardid))
-	console.log(cards[cardid].name)
-	console.log(cards[cardid].text)
-	console.log(cards[cardid].setup)
-	console.log(cards[cardid].special)
-	console.log(cards[cardid].vp)
+	// console.log('cards #'+i+': ')
+	// console.log(cardid)
+	// console.log(cardid+' is not a number:'+isNaN(cardid))
+	// console.log(cards[cardid].name)
+	// console.log(cards[cardid].text)
+	// console.log(cards[cardid].setup)
+	// console.log(cards[cardid].special)
+	// console.log(cards[cardid].vp)
 
 
 	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
 		$('#'+cardid+'-card').append($('<div />',{class:'front',id:cardid+'-front'}))
 			$('#'+cardid+'-front').append($('<div />',{class:'header',id:cardid+'-header',text:cards[cardid].name}))
 			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
-
+			// $('#'+cardid+'-text').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
 			if(cards[cardid].setup){
 				if(lang == 'rus'){
 					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
@@ -91,22 +91,23 @@ for (var i = 0; i < quantity; i++) {
 			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
 		}		
 
-
 		var hfront = parseInt($('#'+cardid+'-front').css('height'))
 		var hheader = parseInt($('#'+cardid+'-header').css('height'))
 		var htext = parseInt($('#'+cardid+'-text').css('height'))
 		var hbottom = parseInt($('#'+cardid+'-bottom').css('height'))
 		var hplace = hfront-hheader-hbottom
 
-		// console.log('#'+cardid+'-front height: '+hfront)
-		// console.log('#'+cardid+'-header height: '+hheader)
-		// console.log('#'+cardid+'-text height: '+htext)
-		// console.log('#'+cardid+'-bottom height: '+hbottom)
-		// console.log(hplace)
+		console.log('#'+cardid+'-front height: '+hfront)
+		console.log('#'+cardid+'-header height: '+hheader)
+		console.log('#'+cardid+'-text height: '+htext)
+		console.log('#'+cardid+'-bottom height: '+hbottom)
+		console.log('hplace: '+hplace)
 
 		if(htext > hplace){
+			console.log('; htext: '+htext+' > hplace: '+hplace)
 			// $('#'+cardid+'-text').css('color','red')
 			$('#'+cardid+'-text').css('font-size','7pt')
+			$('#'+cardid+'-flavor').css('display','none')
 		}
 };
 
@@ -125,14 +126,12 @@ if(quantity > 3 && (quantity % 3) != 0){
 }
 
 /*back*/
-for (var i = quantity-1; i >= 0; i--) {
-	var cardid = arr[i];
-$('#page').append($('<div />',{class:'card',id:cardid+'-card2'}))
-		$('#'+cardid+'-card2').append($('<div />',{class:'back',id:cardid+'-back'}))
-			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
-			$('#'+cardid+'-back').append($('<div />',{class:'logo '+cardid}))
-			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
-			// $('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:'Contents copyright ©, http://www.wyrd-games.net/home Wyrd Miniatures, LLC.'}))
-
-			// Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.
-}
+// for (var i = quantity-1; i >= 0; i--) {
+// 	var cardid = arr[i];
+// $('#page').append($('<div />',{class:'card',id:cardid+'-card2'}))
+// 		$('#'+cardid+'-card2').append($('<div />',{class:'back',id:cardid+'-back'}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'top_label',text:type}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'logo '+cardid}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:set}))
+// 			$('#'+cardid+'-back').append($('<div />',{class:'bottom_label',text:'Contents copyright ©, http://www.wyrd-games.net/home Wyrd Miniatures, LLC.'}))
+// }

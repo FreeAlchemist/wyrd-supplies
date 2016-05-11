@@ -1,5 +1,5 @@
 var set = 'gaining grounds 2016';
-var type = 'Strategy';
+var type = 'strategy';
 var lang = 'eng';
 var cards = {
 	'rams' : {

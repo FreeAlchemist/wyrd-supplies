@@ -1,5 +1,5 @@
 var set = 'basic';
-var type = 'Scheme';
+var type = 'scheme';
 var lang = 'eng';
 var cards = {
 	'always' : {

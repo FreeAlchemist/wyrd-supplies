@@ -1,5 +1,5 @@
 var set = 'basic';
-var type = 'Strategy';
+var type = 'strategy';
 var lang = 'eng';
 var cards = {
 	

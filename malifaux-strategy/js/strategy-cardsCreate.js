@@ -39,9 +39,38 @@ for (var i = 0; i < quantity; i++) {
 	// console.log(cards[cardid].vp)
 
 
-	$('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
+	if(type == 'strategy'){
+		$('#page').append($('<div />',{class:'card strategy',id:cardid+'-card'}))
+	}
+
+	if(type == 'scheme'){
+		$('#page').append($('<div />',{class:'card scheme',id:cardid+'-card'}))
+	}
+
+
+	// $('#page').append($('<div />',{class:'card',id:cardid+'-card'}))
 		$('#'+cardid+'-card').append($('<div />',{class:'front',id:cardid+'-front'}))
 			$('#'+cardid+'-front').append($('<div />',{class:'header',id:cardid+'-header',text:cards[cardid].name}))
+
+					$('#'+cardid+'-header').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
+					// $('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
+						$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
+						$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
+
+				if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal'}))
+				}
+				else if(cardid == 'always'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'A'}))
+				}
+				else if(cardid == 'doubles'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'D'}))
+				}
+				else{
+					$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
+				}
+
+
 			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
 			// $('#'+cardid+'-text').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
 			if(cards[cardid].setup){
@@ -74,22 +103,7 @@ for (var i = 0; i < quantity; i++) {
 				$('#'+cardid+'-text').append($('<div />',{text:cards[cardid].vp}))
 			}
 
-			$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
-				$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
-				$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
-
-		if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){
-			$('#'+cardid+'-bottom').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal'}))
-		}
-		else if(cardid == 'always'){
-			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'A'}))
-		}
-		else if(cardid == 'doubles'){
-			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'D'}))
-		}
-		else{
-			$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
-		}		
+		
 
 		var hfront = parseInt($('#'+cardid+'-front').css('height'))
 		var hheader = parseInt($('#'+cardid+'-header').css('height'))

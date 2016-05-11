@@ -18,7 +18,8 @@ body{
 	background-color: rgba(255,255,255,1);
 	margin-bottom: 1.1cm;
 	background-color: rgba(180, 135, 105, 1);
-	background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
+	background-color: rgba(89, 87, 86, 1);
+	/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));*/
 }
 
 p {
@@ -51,8 +52,10 @@ p {
 
 .header {
 color: Linen;
+color: black;
 font-size: 2em;
 background-color: rgba(110, 110, 116, 1);
+background-color: rgba(89, 62, 42, 0.2);
 font-size: 14px;
 height: 1cm;
 line-height: 1cm;
@@ -126,7 +129,7 @@ float: left;
 	width: 100%;
 	background-color: rgba(89, 62, 42, 0.2);
 	/*background-color: Blanchedalmond;*/
-	font-size: 16pt;
+	font-size: 10pt;
 	color: black;
 	border-top: 0.05cm solid rgba(86, 70, 62, 1);
 	/*border-bottom: 0.05cm solid rgba(86, 70, 62, 1);*/
@@ -213,4 +216,12 @@ float: left;
 	width: 100%
 	padding: 0px;
 	margin: 0px;
+}
+
+.scheme{
+	background-color: rgba(180, 135, 105, 0.7);
+}
+
+.strategy{
+	background-color: rgba(89, 87, 86, 1);
 }

@@ -23,8 +23,14 @@ body{
 }
 
 p {
-	margin: 0cm; 
-	padding: 0cm; 
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+ul {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	list-style-type: circle;
 }
 
 .front, .back {
@@ -46,7 +52,7 @@ p {
 	background-color: Linen;
 	height: 8cm;
 	width: 5.6cm;
-	margin: 0.2cm 0cm 0cm 0.2cm;
+	margin: 0.25cm 0cm 0cm 0.2cm;
 	/*border-radius: 10px 25px 10px 25px;*/
 }
 
@@ -62,6 +68,7 @@ line-height: 1cm;
 text-transform: uppercase;
 font-weight: bold;
 text-align: center;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1); 
 /*font-family: ringbearer;*/
 /*font-family: "28 Days Later";*/
 font-family: blood crow;
@@ -104,15 +111,6 @@ font-family: "28 Days Later";
 	border-bottom: 0.05cm solid rgba(0,0,0,0.5);
 }
 
-.flavor {
-padding: 0.1cm 0.1cm 0.125cm;
-background-color: rgba(255,255,255,0.3);
-font-size: 0.3cm;
- /*font-size: 7pt; */
-line-height: 0.3cm;
-font-style: italic;
-}
-
 .text {
 	/* padding: 0.3cm; */
 font-size: 1.1em;
@@ -123,12 +121,22 @@ width: 100%;
 float: left;
 }
 .text div{
-	padding: 0.1cm 0.2cm 0cm 0.2cm;
+	padding: 0.1cm 0.2cm 0.1cm 0.2cm;
 }
 .text-title{
 	font-weight: bold;
 	padding-top: 0.2cm;
 }
+
+.flavor {
+background-color: rgba(255,255,255,0.4);
+font-size: 0.3cm;
+line-height: 0.3cm;
+font-style: italic;
+padding: 0.1cm 0.2cm 0.1cm 0.2cm;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+}
+
 
 .bottom {
 	position: absolute;
@@ -233,3 +241,9 @@ float: left;
 .strategy{
 	background-color: rgba(89, 87, 86, 1);
 }
+
+.text-float{
+	float: right;
+	width: 2.1cm;
+}
+

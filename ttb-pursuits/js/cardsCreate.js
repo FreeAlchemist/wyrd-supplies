@@ -120,6 +120,7 @@ for (var i = quantity-1; i >= 0; i--) {
 	$('#page').append($('<div />',{class:'card card-back '+faction,id:cardbackid}))
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
-	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
+	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
+	// $('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 	// $('#'+cardbackid+'-bg').append($('<div />',{class:'title-back type '+faction,text:pursuit[cardid].text}))
 }

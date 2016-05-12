@@ -8,7 +8,7 @@ var cards = {
 		text:'Turf War text',
 		setup:'Corners',
 		special:'',
-		vp:'For every crew marker on the centerline get 1 VP at the end of each turn after turn 3',
+		vp:'For every <b>crew</b> marker on the centerline get 1 VP at the end of each turn after turn 3',
 	},
 	'crows' : {
 		name: 'Reckoning',

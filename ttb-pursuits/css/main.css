@@ -3,6 +3,7 @@ body{
 }
 
 .card{
+position: relative;
 width: 6.2cm;
 height: 8.7cm;
 float: left;
@@ -30,15 +31,24 @@ background-color: rgba(89, 62, 42, 1);
 background-color: rgba(110, 110, 116, 1);
 background-color: rgba(180, 135, 105, 1);
 background-color: rgba(129, 124, 121, 1);
+background-color: rgba(89, 62, 42, 0.2);
 /*background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 /*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 color: Linen;
+color: black;
 height: 0.5cm;
 line-height: 0.5cm;
 font-size: 13pt;
 font-weight: bold;
 text-transform: uppercase;
 letter-spacing: 0.05em;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+/*font-family: ringbearer;*/
+/*font-family: "28 Days Later";*/
+font-family: blood crow;
+/*font-family: malifaux rodent edition;*/
+/*font-family: inked god;*/
+/*font-family: bleeding cowboys;*/
 }
 
 .step-title{
@@ -135,10 +145,12 @@ margin-bottom: 1cm;
 .title-back{
 background-color: Blanchedalmond;
 background-color: rgba(129, 124, 121, 1);
+background-color: rgba(89, 62, 42, 0.2);
 /*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 /*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 font-weight: bold;
 color: Linen;
+color: black;
 text-transform: uppercase;
 letter-spacing: 0.05em;
 font-size: 13pt;
@@ -152,8 +164,12 @@ text-align: center;
 }
 
 .type{
-font-size: 12pt;
-bottom: 0px;
+	font-size: 12pt;
+	bottom: 0px;
+	border-bottom-style: none;
+	margin-left: 0.3cm;
+	width: 5.6cm;
+	font-family: "28 Days Later";
 }
 
 .basic{
@@ -261,6 +277,8 @@ background-repeat: no-repeat;
 margin: 0.3cm;
 border: 1px solid black;
 /* border-radius: 6px; */
+border-top-style: none;
+border-bottom-style: none;
 }
 
 .row{clear:both;}

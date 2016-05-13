@@ -1,4 +1,4 @@
-.page{
+#page{
 width: 21cm;
 height: 29cm;
 border:solid 1px;
@@ -6,17 +6,20 @@ margin: 0px;
 padding: 0px;
 }
 
+
 .condition,.token{
+	background-color: Linen;
 width: 1cm;
 height: 1cm;
-background-size: 100%;
+background-size: auto 80%;
+background-position: center;
 background-repeat: no-repeat;
 float: left;
 text-align: center;
 line-height: 1cm;
 font-weight: bold;
 color: black;
-border: solid Maroon 1px;
+border: solid black 1px;
 }
 
 .row{
@@ -40,9 +43,9 @@ color: Maroon;
 .poison,.poison-color,.burning,.burning-color,.armor{line-height: 47px;}
 
 .poison{background-image: url(../img/poison.svg);}
-.poison-color{background-image: url(../img/poison-color.svg);}
+.poison{background-image: url(../img/poison-color.svg);}
 .burning{background-image: url(../img/burning.svg);}
-.burning-color{background-image: url(../img/burning-color.svg);}
+.burning{background-image: url(../img/burning-color.svg);}
 .focus{background-image: url(../img/focus.svg);}
 
 .reactivate{background-image: url(../img/reactivate.svg);}
@@ -62,3 +65,43 @@ color: Maroon;
 .brilliance{background-image: url(../img/brilliance.svg);}
 
 .cursed{background-image: url(../img/cursed.svg);}
+
+.scheme-guild{background-color: rgba(171,49,45,1);}
+.scheme-arcanist{background-color: rgba(48,100,175,1);}
+.scheme-ressurect{background-color: rgba(0,150,72,1);}
+.scheme-neverborn{background-color: rgba(121,78,143,1);}
+.scheme-outcast{background-color: rgba(89, 87, 86, 1);}
+.scheme-thunder{background-color: rgba(89, 87, 86, 1);}
+.scheme-gremlin{background-color: rgba(89, 87, 86, 1);}
+
+.square{
+	border-radius: 0px;
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+.size-10{
+	width: 10mm;
+	height: 10mm;
+}
+
+.size-30{
+	width: 30mm;
+	height: 30mm;
+}
+
+.size-40{
+	width: 40mm;
+	height: 40mm;
+}
+
+.size-50{
+	width: 50mm;
+	height: 50mm;
+}
+
+.float-left{
+	float: left;
+}

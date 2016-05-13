@@ -7,150 +7,73 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
 <div id="menu">
-	<a href="../index.html" >WYRD SUPPLIES</a>
+	<div class="menu">
+	<a href="../index.html">WYRD SUPPLIES</a>
+	</div>
+	<div class="menu"  onclick="preview()">
+		<div class="float-left">
+			<select name="tokentype" size="25">
+				<option value="poison" selected="selected">Poison</option>
+				<option value="burning">Burning</option>
+				<option value="focus">Focus</option>
+				<option value="reactivate">Reactivate</option>
+				<option value="manipulate">Manipulate</option>
+				<option value="slow">Slow</option>
+				<option value="fast">Fast</option>
+				<option value="defensive">Defensive</option>
+				<option value="armor">Armor</option>
+				<option value="paralyzed">Paralyzed</option>
+				<option value="brilliance">Brilliance</option>
+				<option value="cursed">Cursed</option>
+				<option value="distracted">Distracted</option>
+				<option value="blight">Blight</option>
+				<option value="scheme-guild">Scheme: Guild</option>
+				<option value="scheme-arcanist">Scheme: Arcanists</option>
+				<option value="scheme-ressurect">Scheme: Ressurectionists</option>
+				<option value="scheme-neverborn">Scheme: Neverborn</option>
+				<option value="scheme-outcast">Scheme: Outcasts</option>
+				<option value="scheme-thunder">Scheme: Ten Thunders</option>
+				<option value="scheme-gremlin">Scheme: Gremlins</option>
+			</select>
+		</div>
+		<div class="float-left">
+			<input type="button" id="clear" value="Clear page" onclick="cleartokens()">
+			<hr>
+			<input type="checkbox" name="isrow" value="row">One row
+			<hr>
+			<input type="radio" name="tokenform" value="square">Square<br>
+			<input type="radio" name="tokenform" value="circle" checked="checked">Circle<br>
+			<hr>
+			<input type="radio" name="tokensize" value="size-10">10 mm<br>
+			<input type="radio" name="tokensize" value="size-30" checked="checked">30 mm<br>
+			<input type="radio" name="tokensize" value="size-40">40 mm<br>
+			<input type="radio" name="tokensize" value="size-50">50 mm<br>
+			<hr>
+			<input type="radio" name="tokenquantity" value="1">1<br>
+			<input type="radio" name="tokenquantity" value="6" checked="checked">6<br>
+			<input type="radio" name="tokenquantity" value="10">10<br>
+			<input type="button" id="createall" value="All tokens" onclick="alltokens()"><br>
+			<input type="button" id="create" value="Create tokens" onclick="createtokens()">
+		</div>
+	</div>
+	<div class="row"></div>
+	<div id="preview"></div>
 </div>
-<div class="page">
 
-	<pre>
-	Distracted
-	Blight
-	</pre>
 
-	Poison +1
+<div id="page">
+<!-- 	Poison +1
 	<div class="condition poison">1</div>
 	<div class="condition poison">2</div>
 	<div class="condition poison">3</div>
 	<div class="condition poison">4</div>
 	<div class="condition poison">5</div>
-	<div class="condition poison">6</div>
-	<!-- <div class="condition poison-color">1</div>
-	<div class="condition poison-color">2</div>
-	<div class="condition poison-color">3</div> -->
-
-	<div class="row"></div>
-	Focus +1
-	<div class="condition focus">1</div>
-	<div class="condition focus">2</div>
-	<div class="condition focus">3</div>
-	<div class="condition focus">4</div>
-	<div class="condition focus">5</div>
-	<div class="condition focus">6</div>
-
-	<div class="row"></div>
-	Burning +1
-	<div class="condition burning">1</div>
-	<div class="condition burning">2</div>
-	<div class="condition burning">3</div>
-	<div class="condition burning">4</div>
-	<div class="condition burning">5</div>
-	<div class="condition burning">6</div>
-	<!-- <div class="condition burning-color">1</div>
-	<div class="condition burning-color">2</div>
-	<div class="condition burning-color">3</div> -->
-
-	<div class="row"></div>
-	Defensive +1
-	<div class="condition defensive">1</div>
-	<div class="condition defensive">2</div>
-	<div class="condition defensive">3</div>
-	<div class="condition defensive">4</div>
-	<div class="condition defensive">5</div>
-	<div class="condition defensive">6</div>
-
-	<div class="row"></div>
-	Armor +1
-	<div class="condition armor">1</div>
-	<div class="condition armor">2</div>
-	<div class="condition armor">3</div>
-	<div class="condition armor">4</div>
-	<div class="condition armor">5</div>
-	<div class="condition armor">6</div>
-
-	<div class="row"></div>
-	<div class="condition poison token"></div>
-	<div class="condition focus token"></div>
-	<div class="condition burning token"></div>
-	<div class="condition defensive token"></div>
-	<div class="condition armor token"></div>
-
-	<div class="row"></div>
-	Manipulate
-	<div class="condition manipulate token"></div>
-	<div class="condition manipulate token"></div>
-	<div class="condition manipulate token"></div>
-	<div class="condition manipulate token"></div>
-	<div class="condition manipulate token"></div>
-
-	<div class="row"></div>
-	Reactivate
-	<div class="condition reactivate token"></div>
-	<div class="condition reactivate token"></div>
-	<div class="condition reactivate token"></div>
-	<div class="condition reactivate token"></div>
-	<div class="condition reactivate token"></div>
-	<!-- <div class="condition reactivate-color token"></div> -->
-
-	<div class="row"></div>
-	Slow
-	<div class="condition slow token"></div>
-	<div class="condition slow token"></div>
-	<div class="condition slow token"></div>
-	<div class="condition slow token"></div>
-	<div class="condition slow token"></div>
-	<!-- <div class="condition slow-color token"></div> -->
-
-	<div class="row"></div>
-	Fast
-	<div class="condition fast token"></div>
-	<div class="condition fast token"></div>
-	<div class="condition fast token"></div>
-	<div class="condition fast token"></div>
-	<div class="condition fast token"></div>
-	<!-- <div class="condition fast-color token"></div> -->
-
-	<div class="row"></div>
-	Paralyzed
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-
-	<div class="row"></div>
-	Cursed
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-
-	<div class="row"></div>
-	Brilliance
-	<div class="condition brilliance token"></div>
-	<div class="condition brilliance token"></div>
-	<div class="condition brilliance token"></div>
-	<div class="condition brilliance token"></div>
-	<div class="condition brilliance token"></div>
-
-	<div class="row"></div>
-	Paralyzed
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-	<div class="condition paralyzed token"></div>
-
-	<div class="row"></div>
-	Cursed
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-	<div class="condition cursed token"></div>
-
-<div class="row"></div>
-
+	<div class="condition poison">6</div> -->
 </div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tokensCreate.js"></script>
 </body>
 </html>

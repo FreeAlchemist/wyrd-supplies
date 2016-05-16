@@ -4,16 +4,15 @@ $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'index.html',text:'Crossroads Tarot'}))
 $('#menu').append($('<a />',{href:'index-rus.html',text:'Таро перекрёстка'}))
 
-function checkLang(language){
-	var lang = language
-	console.log(lang)
+console.log(lang)
 	if(lang == 'ENG'){
 		$('#lang-eng').addClass('lang-active')
 	}
 	if(lang == 'RUS'){
 		$('#lang-rus').addClass('lang-active')
+		$('#printbtn').attr('value','Печать')
+		$('#randombtn').attr('value','Случайная судьба')
 	}
-}
 
 var objs = {};
 	var arr = [];

@@ -1,3 +1,4 @@
+var lang = 'RUS'
 var interpretation = {
 	hearts : {
 		'1' : {

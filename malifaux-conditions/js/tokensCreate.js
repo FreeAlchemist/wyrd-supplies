@@ -6,17 +6,13 @@ isrow = $("input[name='isrow']:checked").val()
 $("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
 	
 function preview(){
-type = $("select[name='tokentype'] > option:checked").val()
-form = $("input[name='tokenform']:checked").val()
-size = $("input[name='tokensize']:checked").val()
-quantity = $("input[name='tokenquantity']:checked").val()
-isrow = $("input[name='isrow']:checked").val()
-if(size == "size-10"){
-	form = "square"
+	type = $("select[name='tokentype'] > option:checked").val()
+	form = $("input[name='tokenform']:checked").val()
+	size = $("input[name='tokensize']:checked").val()
+	quantity = $("input[name='tokenquantity']:checked").val()
+	isrow = $("input[name='isrow']:checked").val()
+	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
 }
-$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
-}
-
 
 function createtokens(){
 	console.log("Created "+quantity+" "+form+" "+size+" "+type+" tokens")
@@ -28,7 +24,6 @@ function createtokens(){
 			else{
 				$("#page").append($('<div />',{class:'condition '+type+' '+form+" "+size}))
 			}
-			// $("#page").append($('<div />',{class:'condition '+type+' '+form+" "+size}))
 	}
 
 	if(isrow){
@@ -53,4 +48,3 @@ function cleartokens(){
 	console.log("Cleared page")
 	$("#page").html("")
 }
-

@@ -42,29 +42,29 @@ color: Maroon;
 
 .poison,.poison-color,.burning,.burning-color,.armor{line-height: 47px;}
 
-.poison{background-image: url(../img/poison.svg);}
-.poison{background-image: url(../img/poison-color.svg);}
+.armor{background-image: url(../img/armor.svg);}
+.blast{
+	background-image: url(../img/blast.svg);
+	background-size: 100%;
+}
+/*.blight{background-image: url(../img/blight.svg);}*/
+.brilliance{background-image: url(../img/brilliance.svg);}
 .burning{background-image: url(../img/burning.svg);}
 .burning{background-image: url(../img/burning-color.svg);}
-.focus{background-image: url(../img/focus.svg);}
-
-.reactivate{background-image: url(../img/reactivate.svg);}
-.reactivate-color{background-image: url(../img/reactivate-color.svg);}
-.manipulate{background-image: url(../img/manipulate.svg);}
-
-.slow{background-image: url(../img/slow.svg);}
-.slow-color{background-image: url(../img/slow-color.svg);}
+.cursed{background-image: url(../img/cursed.svg);}
+.defensive{background-image: url(../img/defensive.svg);}
+/*.distracted{background-image: url(../img/distracted.svg);}*/
 .fast{background-image: url(../img/fast.svg);}
 .fast-color{background-image: url(../img/fast-color.svg);}
-.defensive{background-image: url(../img/defensive.svg);}
-
-.armor{background-image: url(../img/armor.svg);}
-
+.focus{background-image: url(../img/focus.svg);}
+.manipulate{background-image: url(../img/manipulate.svg);}
 .paralyzed{background-image: url(../img/paralyzed.svg);}
-
-.brilliance{background-image: url(../img/brilliance.svg);}
-
-.cursed{background-image: url(../img/cursed.svg);}
+.poison{background-image: url(../img/poison.svg);}
+.poison{background-image: url(../img/poison-color.svg);}
+.slow{background-image: url(../img/slow.svg);}
+.slow-color{background-image: url(../img/slow-color.svg);}
+.reactivate{background-image: url(../img/reactivate.svg);}
+.reactivate-color{background-image: url(../img/reactivate-color.svg);}
 
 .scheme-guild{background-color: rgba(171,49,45,1);}
 .scheme-arcanist{background-color: rgba(48,100,175,1);}

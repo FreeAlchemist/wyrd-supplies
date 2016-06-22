@@ -4,15 +4,6 @@ size = $("input[name='tokensize']:checked").val()
 quantity = $("input[name='tokenquantity']:checked").val()
 isrow = $("input[name='isrow']:checked").val()
 $("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
-	
-function preview(){
-	type = $("select[name='tokentype'] > option:checked").val()
-	form = $("input[name='tokenform']:checked").val()
-	size = $("input[name='tokensize']:checked").val()
-	quantity = $("input[name='tokenquantity']:checked").val()
-	isrow = $("input[name='isrow']:checked").val()
-	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
-}
 
 function createtokens(){
 	console.log("Created "+quantity+" "+form+" "+size+" "+type+" tokens")
@@ -43,8 +34,22 @@ var typearr = $("select[name='tokentype']").children()
 	}
 }
 
-
 function cleartokens(){
 	console.log("Cleared page")
 	$("#page").html("")
 }
+
+
+$("#tokentype").change(function(){
+	type = $("select[name='tokentype'] > option:checked").val()
+	form = $("input[name='tokenform']:checked").val()
+	size = $("input[name='tokensize']:checked").val()
+	quantity = $("input[name='tokenquantity']:checked").val()
+	isrow = $("input[name='isrow']:checked").val()
+	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
+})
+
+// $("#menu").css("color","red")
+// $("#menu").fadeOut(3000)
+// $("#menu").fadeIn(1000)
+$("#menu").slideDown(2000)

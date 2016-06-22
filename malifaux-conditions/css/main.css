@@ -108,5 +108,10 @@ color: Maroon;
 	float: left;
 }
 
-#menu{left:20cm;}
+#menu{
+	left:20cm;
+	display: none;
+}
 #create,#createall{margin-top: 0.5cm;}
+
+.test{color: red}

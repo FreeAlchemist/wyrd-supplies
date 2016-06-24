@@ -47,9 +47,10 @@ $("#tokentype").change(function(){
 	quantity = $("input[name='tokenquantity']:checked").val()
 	isrow = $("input[name='isrow']:checked").val()
 	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
+	console.log($("input:checked").val())
 })
 
 // $("#menu").css("color","red")
 // $("#menu").fadeOut(3000)
 // $("#menu").fadeIn(1000)
-$("#menu").slideDown(2000)
+// $("#menu").slideDown(2000)

@@ -68,10 +68,22 @@ color: Maroon;
 .reactivate{background-image: url(../img/reactivate.svg);}
 .reactivate-color{background-image: url(../img/reactivate-color.svg);}
 
-.scheme-guild{background-color: rgba(171,49,45,1);}
-.scheme-arcanist{background-color: rgba(48,100,175,1);}
-.scheme-ressurect{background-color: rgba(0,150,72,1);}
-.scheme-neverborn{background-color: rgba(121,78,143,1);}
+.scheme-guild{
+	background-color: rgba(171,49,45,1);
+	background-image: url(../img/rams.svg);
+}
+.scheme-arcanist{
+	background-color: rgba(48,100,175,1);
+	background-image: url(../img/tomes.svg);
+}
+.scheme-ressurect{
+	background-color: rgba(0,150,72,1);
+	background-image: url(../img/crows.svg);
+}
+.scheme-neverborn{
+	background-color: rgba(121,78,143,1);
+	background-image: url(../img/masks.svg);
+}
 .scheme-outcast{background-color: rgba(216, 190, 105, 1);}
 .scheme-thunder{background-color: rgba(221, 153, 28, 1);}
 .scheme-gremlin{background-color: rgba(149, 168, 110, 1);}
@@ -88,7 +100,10 @@ color: Maroon;
 	width: 10mm;
 	height: 10mm;
 }
-
+.size-23{
+	width: 23mm;
+	height: 23mm;
+}
 .size-30{
 	width: 30mm;
 	height: 30mm;
@@ -110,8 +125,5 @@ color: Maroon;
 
 #menu{
 	left:20cm;
-	display: none;
 }
 #create,#createall{margin-top: 0.5cm;}
-
-.test{color: red}

@@ -64,11 +64,46 @@ for (var i = 0; i < quantity; i++) {
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
 	}
 
+	var talentsarr = [];
+	for (var t in pursuit[cardid].talents) {
+		talentsarr.push(t);
+	}
+	// console.log(talentsarr)
+	var talentsquantity = talentsarr.length;
+	console.log(talentsquantity)
+	var table = $('<table />');
+	table.attr('cellpadding',"0px");
+	table.attr('cellspacing','0px');
+	table.attr('width','100%');
+	table.attr('class','talentstable');
+	
+	for (var ts = 1; ts <= talentsquantity; ts++) {
+		console.log('Talent #'+ts+': ')
+		var talentsstep = pursuit[cardid].talents[ts]
+		console.log(talentsstep)
+		// console.log(talentsstep['name'])
+		// console.log(talentsstep['text'])
+		// $('#'+stepid).append($('<li />',{text:pursuit[cardid].talents[ts]}))
+		if(ts == '1'){
+			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:talentsstep['name']}))
+			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:talentsstep['text']}))
+			}
+		var tr = $('<tr />');
+		var td1 = $('<td />',{class:'talentstable-name'});
+		var td2 = $('<td />',{class:'talentstable-text'});
+		td1.append(talentsstep['name'])
+		td2.append(talentsstep['text'])
 
-	if(pursuit[cardid].talent['name']){
-		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
-		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
-		}
+		table.append(tr.append(td1).append(td2))
+	};
+	$('#popup').append(table)
+
+
+
+	// if(pursuit[cardid].talent['name']){
+	// 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:pursuit[cardid].talent['name']}))
+	// 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:pursuit[cardid].talent['text']}))
+	// 	}
 
 	var stepid = cardfrontid+'-bg2'+'-step'
 

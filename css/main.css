@@ -1,47 +1,358 @@
-.menu{
-margin-left: 10px;
+body{
+	width:20cm;
+}
+
+.card{
+position: relative;
+width: 6.2cm;
+height: 8.7cm;
 float: left;
-border: ridge; 1px;
-border-radius: 5px;
-padding: 5px;
-background-color: Oldlace;
-box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
+border: solid black 1px;
+margin-bottom: 1.2cm;
+background-color: Blanchedalmond;
+background-color: rgba(89, 62, 42, 1);
+/*background-color: transparent;*/
+}
+
+.title{
+font-weight: bold;
+text-transform: uppercase;
+font-size: 8pt;
+/*margin-top: 3px;*/
+}
+
+.text{font-size: 8pt;}
+
+.name{font-weight: bold;}
+
+.pursuit-title{
 text-align: center;
+background-color: rgba(89, 62, 42, 1);
+background-color: rgba(110, 110, 116, 1);
+background-color: rgba(180, 135, 105, 1);
+background-color: rgba(129, 124, 121, 1);
+background-color: rgba(89, 62, 42, 0.2);
+background-color: rgba(211, 204, 199, 1);
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+color: Linen;
+color: black;
+height: 0.5cm;
+line-height: 0.5cm;
+font-size: 13pt;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+/*font-family: ringbearer;*/
+/*font-family: "28 Days Later";*/
+font-family: blood crow;
+/*font-family: malifaux rodent edition;*/
+/*font-family: inked god;*/
+/*font-family: bleeding cowboys;*/
+}
+
+.step-title{
+text-align: center;
+background-color: rgba(89, 62, 42, 1);
+background-color: rgba(126, 97, 77, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+color: Linen;
+height: 0.4cm;
+line-height: 0.4cm;
+font-size: 10pt;
+}
+
+.pursuit-text{
+font-size: 8pt;
 display: none;
 }
+.gear-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 7pt;
+	float: left;
+	padding: 6px 3px 0px 6px;
+}
+.gear-text{
+	font-size: 7pt;
+	padding: 6px 6px 0px 6px;
+}
 
-.menu a{
-text-decoration: none;
-float: left;
-padding: 3px;
-margin: 5px;
-border: 2px groove;
-border-bottom-width: 3px;
-border-radius: 3px;
-width: 120px;
-height: 120px;
-line-height: 120px;
-background: linear-gradient(to bottom, Linen, Burlywood);
-border-left-color: Bisque;
-border-right-color: Burlywood;
-border-bottom-color: Burlywood;
-border-top-color: Bisque;
+.talent-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 7pt;
+	padding: 6px 0px 3px 6px;
+}
+.talent-text{
+	font-size: 7pt;
+	padding: 0px 6px 0px 6px;
+}
+
+.step td{
+border: solid 1px rgba(126, 97, 77, 1);
+border: solid 1px rgba(89, 62, 42, 1);
+line-height: 0.35cm;
+padding-left: 0.1cm;
+}
+
+.step tr{
+	height: 0.35cm;
+}
+
+.step{
+	position: absolute;
+	bottom: 0px;
+width: 5.68cm;
+font-size: 7.5pt;
+/*font-size: 8pt;*/
+}
+
+
+
+
+table.gear{
+	width: 100%;
+
+}
+
+table.gear{
+	width: 100%;
+	
+}
+
+table.step{
+/*position: relative;*/
+/*top: 24%;*/
+}
+
+
+
+.td-num{
+	width: 0.1cm;
+}
+
+.card-back{
+background-color: rgba(89, 62, 42, 1);
+/*background-color: transparent;*/
+margin-bottom: 1cm;
+}
+
+.card, .card-back{
+	background-color: rgba(180, 135, 105, 1);
+}
+
+.title-back{
+background-color: Blanchedalmond;
+background-color: rgba(129, 124, 121, 1);
+background-color: rgba(89, 62, 42, 0.2);
+background-color: rgba(211, 204, 199, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+font-weight: bold;
+color: Linen;
 color: black;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+font-size: 13pt;
+width: 100%;
+position: absolute;
+/* top: 5.5cm; */
+border-top: 1px solid rgba(89, 62, 42, 1);
+border-bottom: 1px solid rgba(89, 62, 42, 1);
+text-align: center;
+/* box-shadow: 0px 0px 5px black; */
 }
 
-.menu a:hover{
-	background: linear-gradient(to bottom, Burlywood ,Linen);
+.type{
+	color: Linen;
+	letter-spacing: 0.08em;
+	font-size: 12pt;
+	bottom: 0px;
+	border-bottom-style: none;
+	margin-left: 0.3cm;
+	width: 5.6cm;
+	font-family: "28 Days Later";
 }
 
-@media print {
-	.menu{display: none;}
+.basic{
+background-color: rgba(129, 124, 121, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));*/
+}
+.advanced{
+background-color: rgba(180, 179, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 179, 105, 1), rgba(92, 88, 43, 1));*/
+}
+.arcanist{
+background-color: rgba(105, 117, 180, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(105, 117, 180, 1), rgba(43, 47, 92, 1));*/
+}
+.ressurectionist{
+background-color: rgba(110, 180, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(110, 180, 105, 1), rgba(43, 92, 45, 1));*/
+}
+.gremlin{
+background-color: rgba(174, 154, 88, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(174, 154, 88, 1), rgba(94, 75, 50, 1));*/
+}
+.neverborn{
+background-color: rgba(158, 105, 180, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(158, 105, 180, 1), rgba(85, 43, 92, 1));*/
+}
+.guild{
+background-color: rgba(181, 105, 105, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(181, 105, 105, 1), rgba(92, 45, 43, 1));*/
+}
+.avatar{
+background-color: rgba(163, 158, 60, 1);
+/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(163, 158, 60, 1), rgba(43, 92, 85, 1));*/
 }
 
-@media handheld{
-	.menu a{
-		border-radius: 0px;
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
-	}
+.front{
+height: 8cm;
+background-color: Linen;
+margin: 0.3cm;
+border: 1px solid black;
+/*border-radius: 6px;*/
+background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+}
+
+.card-front{
+position: relative;	
+}
+
+.front1{
+/*height: 3.6cm;*/
+/*height: 70%;*/
+height: 8cm;
+width: 5.6cm;
+background-color: Linen;
+/*margin: 0.3cm 0.3cm 0cm 0.3cm;*/
+margin: 0.2cm 0cm 0cm 0.2cm;
+border: 0.1cm solid rgba(89, 62, 42, 1);
+border: 0.1cm solid rgba(68, 68, 73, 1);
+border-bottom-style: none;
+/*border-radius: 6px;*/
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);*/
+overflow: hidden;
+}
+
+.front2{
+position: relative;
+position: absolute;
+bottom: 0px;
+/*height: 4.4cm;*/
+/*height: 3.5cm;*/
+width: 5.6cm;
+background-color: Linen;
+/*margin: 0cm 0.3cm 0.3cm 0.3cm;*/
+margin: 0cm 0cm 0.2cm 0.2cm;
+border: 0.1cm solid rgba(89, 62, 42, 1);
+border: 0.1cm solid rgba(68, 68, 73, 1);
+/*border-top-style: none;*/
+/*border-radius: 6px;*/
+/*background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);*/
+}
+
+.step-ol{
+/*position: absolute;*/
+/*bottom: 0px;*/
+/*width: 5.68cm;*/
+font-size: 7.5pt;
+/*font-size: 8pt;*/
+padding-left: 21px;
+}
+
+.step-ol li{
+/*border: solid 1px rgba(89, 62, 42, 1);*/
+}
+
+
+.back{
+position: relative;
+height: 8cm;
+background-color: Blanchedalmond;
+background-color: #FAFBF8;
+background-position: center;
+background-position: 50% 40px;
+background-size: auto 100%;
+background-repeat: no-repeat;
+margin: 0.3cm;
+border: 1px solid black;
+/* border-radius: 6px; */
+border-top-style: none;
+border-bottom-style: none;
+}
+
+.row{clear:both;}
+
+/*Basic*/
+.academic{background-image: url(../img/basic/academic.png);}
+.criminal{background-image: url(../img/basic/criminal.png);}
+.dabbler{background-image: url(../img/basic/dabbler.jpg);}
+.drudge{background-image: url(../img/basic/drudge.png);}
+.graverobber{background-image: url(../img/basic/graverobber.png);}
+.guard{background-image: url(../img/basic/guard.png);}
+.gunfighter{background-image: url(../img/basic/gunfighter.png);}
+.mercenary{background-image: url(../img/basic/mercenary.png);}
+.overseer{background-image: url(../img/basic/overseer.png);}
+.performer{background-image: url(../img/basic/performer.png);}
+.pioneer{background-image: url(../img/basic/pioneer.png);}
+.scrapper{background-image: url(../img/basic/scrapper.png);}
+.tinkerer{background-image: url(../img/basic/tinkerer.png);}
+.wastrel{background-image: url(../img/basic/wastrel.png);}
+
+/*Advanced*/
+.death-marshal{background-image: url(../img/advanced/death-marshal.png);}
+
+/*Into the Steam*/
+.animator{background-image: url(../img/into-the-steam/animator.jpg);}
+.augmented{background-image: url(../img/into-the-steam/augmented.jpg);}
+.collaborator{background-image: url(../img/into-the-steam/collaborator.jpg);}
+.engineer{background-image: url(../img/into-the-steam/engineer.jpg);}
+.illusionist{background-image: url(../img/into-the-steam/illusionist.jpg);}
+.infiltrator{background-image: url(../img/into-the-steam/infiltrator.jpg);}
+.mage{background-image: url(../img/into-the-steam/mage.jpg);}
+.primal{background-image: url(../img/into-the-steam/primal.jpg);}
+.shape-shifter{background-image: url(../img/into-the-steam/shape-shifter.jpg);}
+
+.december-acolyte{background-image: url(../img/into-the-steam/december-acolyte.jpg);}
+.silent-one{background-image: url(../img/into-the-steam/silent-one.jpg);}
+
+/*Under Quarantine*/
+.bully{background-image: url(../img/under-quarantine/bully.jpg);}
+.chemist{background-image: url(../img/under-quarantine/chemist.jpg);}
+.forgotten{background-image: url(../img/under-quarantine/forgotten.jpg);}
+.ghost-eater{background-image: url(../img/under-quarantine/ghost-eater.jpg);}
+.ghoul{background-image: url(../img/under-quarantine/ghoul.jpg);}
+.medium{background-image: url(../img/under-quarantine/medium.jpg);}
+.necromancer{background-image: url(../img/under-quarantine/necromancer.jpg);}
+.sawbones{background-image: url(../img/under-quarantine/sawbones.jpg);}
+
+/*Into the Bayou*/
+.bokor{background-image: url(../img/into-the-bayou/bokor.jpg);}
+
+/*From Nightmares*/
+/*Guild Wars*/
+/*Beyond Fate*/
+
+#popup{
+	background-color: grey;
+	position: absolute;
+	top: 5px;
+	left:5px;
+	/*height: 100px;*/
+	/*width: 200px;*/
+}
+.talentstable td{
+border:solid 1px;
+}
+
+.talentstable-name{
+width: 200px;
+}
+
+.talentstable-text{
+width: 500px;	
 }

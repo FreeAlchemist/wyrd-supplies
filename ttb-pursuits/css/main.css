@@ -336,3 +336,23 @@ border-bottom-style: none;
 /*From Nightmares*/
 /*Guild Wars*/
 /*Beyond Fate*/
+
+#popup{
+	background-color: grey;
+	position: absolute;
+	top: 5px;
+	left:5px;
+	/*height: 100px;*/
+	/*width: 200px;*/
+}
+.talentstable td{
+border:solid 1px;
+}
+
+.talentstable-name{
+width: 200px;
+}
+
+.talentstable-text{
+width: 500px;	
+}

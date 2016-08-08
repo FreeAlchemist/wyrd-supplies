@@ -338,15 +338,29 @@ border-bottom-style: none;
 /*Beyond Fate*/
 
 #popup{
-	background-color: grey;
+	
 	position: absolute;
 	top: 5px;
 	left:5px;
-	/*height: 100px;*/
-	/*width: 200px;*/
+	display: none;
+}
+
+.talentstable{
+	margin-top: 9px;
+	/*background-color: Linen;*/
 }
 .talentstable td{
 border:solid 1px;
+font-size: 10pt;
+padding-left: 10px;
+}
+
+.talentstable-pursuit
+{
+padding-left: 10px;
+text-transform: uppercase;
+line-height: 20pt;
+/*background-color: rgba(211, 204, 199, 1);*/
 }
 
 .talentstable-name{
@@ -355,4 +369,10 @@ width: 200px;
 
 .talentstable-text{
 width: 500px;	
+}
+
+#btn-talents-pursuit{
+	margin-top: 20px;
+	width:100px;
+	height: 50px;
 }

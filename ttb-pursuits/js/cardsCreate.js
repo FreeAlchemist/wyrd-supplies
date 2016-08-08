@@ -17,6 +17,11 @@ $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Pursuits: Guild Wars'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Pursuits: Beyond Fate'}))
+$('#menu').append($('<div />',{class:'row'}))
+$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Pursuit talents','click':function(){
+	$('#popup').toggle()
+	$('#page').toggle()
+}}))
 
 console.log('Language: '+lang)
 
@@ -76,6 +81,12 @@ for (var i = 0; i < quantity; i++) {
 	table.attr('cellspacing','0px');
 	table.attr('width','100%');
 	table.attr('class','talentstable');
+	table.attr('id',' talents-'+cardid);
+	var tr = $('<tr />');
+	// var td0 = $('<td />',{class:'talentstable-pursuit',text:cardid});
+	var td0 = $('<td />',{class:'talentstable-pursuit',text:pursuit[cardid].name+' ('+cardid+')'});
+	td0.attr('colspan',"2");
+	table.append(tr.append(td0))
 	
 	for (var ts = 1; ts <= talentsquantity; ts++) {
 		console.log('Talent #'+ts+': ')
@@ -89,8 +100,10 @@ for (var i = 0; i < quantity; i++) {
 			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:talentsstep['text']}))
 			}
 		var tr = $('<tr />');
+		// var td0 = $('<td />',{class:'talentstable-pursuit'});
 		var td1 = $('<td />',{class:'talentstable-name'});
 		var td2 = $('<td />',{class:'talentstable-text'});
+		// td0.append(pursuit[cardid].name)
 		td1.append(talentsstep['name'])
 		td2.append(talentsstep['text'])
 

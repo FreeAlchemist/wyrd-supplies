@@ -1,5 +1,5 @@
-$('#popup').toggle()
-$('#page').toggle()
+// $('#popup').toggle()
+// $('#page').toggle()
 $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
 $('#menu').append($('<div />',{class:'row'}))

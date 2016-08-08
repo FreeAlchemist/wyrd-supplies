@@ -29,7 +29,17 @@ var pursuit = {
 			},
 			'6' : {
 				name:'Applied Learning',
-				text:''
+				text:'Choose an Academic skill as well as a secondary
+skill. Whenever the character makes a skill Challenge
+with the secondary skill, he may exchange the chosen
+Academic skill rating for the Aspect rating used.
+A character may have the Applied Learning Talent
+multiple times, but each time a new combination of
+Academic skill and secondary skill must be chosen.
+Note: The combination of skills selected must be
+approved by the Fatemaster, as some Fatemasters may
+not feel that certain combinations (such as Literacy
+and Dodge) make logical sense in their campaign.'
 			},
 			'7' : {
 				name:'Sum of All Knowledge',

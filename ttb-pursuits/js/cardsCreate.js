@@ -20,13 +20,25 @@ $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Pursuits: Beyond Fate'}))
 // $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Pursuit talents','click':function(){
-	$('#popup').toggle()
-	$('#page').toggle()
-}}))
-$('#menu').append($('<input />',{type:'button',id:'btn-pursuit-text',value:'Pursuit description','click':function(){
-	$('.pursuit-text').toggle()
-}}))
+if(lang == 'rus'){
+	$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Таланты занятий','click':function(){
+		$('#popup').toggle()
+		$('#page').toggle()
+	}}))
+	$('#menu').append($('<input />',{type:'button',id:'btn-pursuit-text',value:'Описания занятий','click':function(){
+		$('.pursuit-text').toggle()
+	}}))
+}
+else{
+	$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Pursuit talents','click':function(){
+		$('#popup').toggle()
+		$('#page').toggle()
+	}}))
+	$('#menu').append($('<input />',{type:'button',id:'btn-pursuit-text',value:'Pursuit description','click':function(){
+		$('.pursuit-text').toggle()
+	}}))	
+}
+
 
 console.log('Language: '+lang)
 

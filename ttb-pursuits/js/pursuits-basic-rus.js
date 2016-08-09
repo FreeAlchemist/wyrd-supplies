@@ -13,7 +13,7 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Student of Knowledge',
-				text:'This character has frequent flashes of brilliant insight. He gains the following Trigger on all Academics skill Duels:<span class="icon">T</span> Insight: After resolving, draw a card.'
+				text:'This character has frequent flashes of brilliant insight. He gains the following Trigger on all Academics skill Duels:♣ Insight: After resolving, draw a card.'
 			},
 			'3' : {
 				name:'Eureka Moment',
@@ -107,7 +107,7 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Arcane Musings',
-				text:'This character removes a single t from the TN of any Spell he casts.'
+				text:'This character removes a single ♣ from the TN of any Spell he casts.'
 			},
 			'3' : {
 				name:'Empowered Channeling',
@@ -318,7 +318,7 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Speed Loading',
-				text:'Choose a type of firearm skill (Long Arms, Pistols, Shotguns, or Heavy Weapons). The character gains the following Trigger on any attack Action with that type of weapon. R: Reload this weapon if its Reload AP cost is 2 or lower. '
+				text:'Choose a type of firearm skill (Long Arms, Pistols, Shotguns, or Heavy Weapons). The character gains the following Trigger on any attack Action with that type of weapon. ♥: Reload this weapon if its Reload AP cost is 2 or lower. '
 			},
 			'3' : {
 				name:'Gruesome Attack',
@@ -561,7 +561,7 @@ var pursuit = {
 			},
 			'4' : {
 				name:'Percussive Maintenance',
-				text:'All Artefacting Challenges made to repair contraptions or constructs gain the following Trigger: t Advantage: Gain 1 additional Margin of Success.'
+				text:'All Artefacting Challenges made to repair contraptions or constructs gain the following Trigger: ♣ Advantage: Gain 1 additional Margin of Success.'
 			},
 			'5' : {
 				name:'Unrealistic Expectations',
@@ -573,7 +573,7 @@ var pursuit = {
 			},
 			'7' : {
 				name:'Over Pressure',
-				text:'The character gains the following Trigger on all pneumatic attacks: t: At the end of this turn the character may make a single extra attack with a pneumatic weapon. This additional attack may not activate any Triggers. This Trigger may only be activated once per turn.'
+				text:'The character gains the following Trigger on all pneumatic attacks: ♣: At the end of this turn the character may make a single extra attack with a pneumatic weapon. This additional attack may not activate any Triggers. This Trigger may only be activated once per turn.'
 			},
 		},
 		step:{
@@ -616,7 +616,7 @@ var pursuit = {
 			},
 			'6' : {
 				name:'Play For Blood',
-				text:'When this character is suffering from one or more Critical Effects, all of his Challenges gain the following Trigger: c Advantage: Gain 1 additional Margin of Success. A character may have this Talent multiple times, increasing the Margins of Success gained by 1 each additional time.'
+				text:'When this character is suffering from one or more Critical Effects, all of his Challenges gain the following Trigger: ♠ Advantage: Gain 1 additional Margin of Success. A character may have this Talent multiple times, increasing the Margins of Success gained by 1 each additional time.'
 			},
 			'7' : {
 				name:'Fifty-Fifty Chance',

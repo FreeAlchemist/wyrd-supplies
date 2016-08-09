@@ -4,7 +4,7 @@ var lang = 'rus';
 var pursuit = {
 	'academic' : {
 		name:'академик',
-		text:'Academics are valued for the knowledge they possess and can contribute. They tend to have heightened familiarity with Malifaux culture and architecture, providing essential information to help navigate those lost constructs and find both information and items of value and power.',
+		text:'Академики ценятся за знания, которыми они владеют и вклад который вносят. Они как правило обладают высокой осведомленностью о культуре и архитектуре Малифо, предоставляя существенную информацию помогающую управлять заброшенными констрактами и находить не только новый знания, но и предметы обладающие силой и ценностью.',
 		gear:'не магический инструментарий (стр 179)',
 		talents:{
 			'1' : {

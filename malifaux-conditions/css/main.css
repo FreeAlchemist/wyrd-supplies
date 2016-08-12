@@ -8,7 +8,7 @@ padding: 0px;
 
 
 .condition,.token{
-	background-color: Linen;
+/*background-color: Linen;*/
 width: 1cm;
 height: 1cm;
 background-size: auto 80%;
@@ -49,24 +49,26 @@ color: Maroon;
 }
 .blight{background-image: url(../img/blight.svg);}
 .blind{background-image: url(../img/blind.svg);}
+.bleeding{background-image: url(../img/bleeding.svg);}
 .brilliance{background-image: url(../img/brilliance.svg);}
 .burning{background-image: url(../img/burning.svg);}
-.burning{background-image: url(../img/burning-color.svg);}
+/*.burning{background-image: url(../img/burning-color.svg);}*/
 .cursed{background-image: url(../img/cursed.svg);}
+/*.dazed{background-image: url(../img/dazed.svg);}*/
 .defensive{background-image: url(../img/defensive.svg);}
 .distracted{background-image: url(../img/distracted.svg);}
 .fast{background-image: url(../img/fast.svg);}
-.fast-color{background-image: url(../img/fast-color.svg);}
+/*.fast-color{background-image: url(../img/fast-color.svg);}*/
 .focus{background-image: url(../img/focus.svg);}
 .manipulate{background-image: url(../img/manipulate.svg);}
 .paralyzed{background-image: url(../img/paralyzed.svg);}
 .poison{background-image: url(../img/poison.svg);}
-.poison{background-image: url(../img/poison-color.svg);}
+/*.poison{background-image: url(../img/poison-color.svg);}*/
 .redtape{background-image: url(../img/redtape.svg);}
 .slow{background-image: url(../img/slow.svg);}
-.slow-color{background-image: url(../img/slow-color.svg);}
+/*.slow-color{background-image: url(../img/slow-color.svg);}*/
 .reactivate{background-image: url(../img/reactivate.svg);}
-.reactivate-color{background-image: url(../img/reactivate-color.svg);}
+/*.reactivate-color{background-image: url(../img/reactivate-color.svg);}*/
 
 .scheme-guild{
 	background-color: rgba(171,49,45,1);
@@ -99,24 +101,62 @@ color: Maroon;
 .size-10{
 	width: 10mm;
 	height: 10mm;
+	font-size: 12px;
+	line-height: 10mm;
 }
 .size-23{
 	width: 23mm;
 	height: 23mm;
+	font-size: 14px;
+	line-height: 23mm;
 }
 .size-30{
 	width: 30mm;
 	height: 30mm;
+	font-size: 18px;
+	line-height: 30mm;
 }
 
 .size-40{
 	width: 40mm;
-	height: 40mm;
+	height: 55mm;
+	font-size: 24px;
+	line-height: 40mm;
+float: left;
+line-height: 1cm;
+font-weight: bold;
+color: black;
+border: solid black 1px;
 }
+
+.condition-image{
+position: absolute;
+width: 10mm;
+height: 10mm;
+background-size: auto 80%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.condition-name{
+	padding-left: 11mm;
+	text-align: left;
+font-size: 13pt;
+}
+.condition-text{
+font-size: 10pt;
+padding: 2mm;
+padding-top: 0mm;
+text-align: left;
+line-height: 4mm;
+}
+
 
 .size-50{
 	width: 50mm;
 	height: 50mm;
+	font-size: 30px;
+	line-height: 50mm;
 }
 
 .float-left{

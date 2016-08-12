@@ -15,23 +15,28 @@
 	<div class="menu">
 		<div class="float-left">
 			<select name="tokentype" id="tokentype" size="25">
-				<option value="armor" selected="selected">Armor + #</option>
-				<option value="blast">Blast</option>
+				<option value="armor" selected="selected">TTB_Armor + #</option>
+				<option value="blind">TTB_Blind</option>
+				<option value="bleeding">TTB_Bleeding Out</option>
+				<option value="burning">TTB_Burning + #</option>
+				<option value="dazed">TTB_Dazed</option>
+				<option value="defensive">TTB_Defensive + #</option>
+				<option value="blast">TTB_Blast</option>
+				<option value="fast">TTB_Fast</option>
+				<option value="focus">TTB_Focus + #</option>
+				<option value="intoxicated">TTB_Intoxicated</option>
+				<option value="paralyzed">TTB_Paralyzed</option>
+				<option value="poison">TTB_Poison + #</option>
+				<option value="slow">TTB_Slow</option>
+				<option value="suffocating">TTB_Suffocating</option>
+				<option value="reactivate">TTB_Reactivate</option>
+				<option value="useless-limb">TTB_Useless Limb</option>
 				<option value="blight">Blight</option>
-				<option value="blind">Blind</option>
 				<option value="brilliance">Brilliance</option>
-				<option value="burning">Burning + #</option>
-				<option id="cursed" value="cursed">Cursed</option>
-				<option value="defensive">Defensive</option>
+				<option value="cursed">Cursed</option>
 				<option value="distracted">Distracted</option>
-				<option value="fast">Fast</option>
-				<option value="focus">Focus + #</option>
 				<option value="manipulate">Manipulate</option>
-				<option value="paralyzed">Paralyzed</option>
-				<option value="poison">Poison + #</option>
 				<option value="redtape">Red Tape</option>
-				<option value="slow">Slow</option>
-				<option value="reactivate">Reactivate</option>
 				<option value="scheme-guild">Scheme: Guild</option>
 				<option value="scheme-arcanist">Scheme: Arcanists</option>
 				<option value="scheme-ressurect">Scheme: Ressurectionists</option>
@@ -46,17 +51,19 @@
 			<hr>
 			<input type="checkbox" name="isrow" value="row">One row
 			<hr>
-			<input type="radio" name="tokenform" value="square">Square<br>
-			<input type="radio" name="tokenform" value="circle" checked="checked">Circle<br>
+			<input type="radio" name="tokenform" value="square" checked="checked">Square<br>
+			<input type="radio" name="tokenform" value="circle">Circle<br>
 			<hr>
 			<input type="radio" name="tokensize" value="size-10">10 mm<br>
 			<input type="radio" name="tokensize" value="size-23">23 mm<br>
-			<input type="radio" name="tokensize" value="size-30" checked="checked">30 mm<br>
-			<input type="radio" name="tokensize" value="size-40">40 mm<br>
+			<input type="radio" name="tokensize" value="size-30">30 mm<br>
+			<input type="radio" name="tokensize" value="size-40" checked="checked">40 mm<br>
 			<input type="radio" name="tokensize" value="size-50">50 mm<br>
 			<hr>
 			<input type="radio" name="tokenquantity" value="1">1<br>
-			<input type="radio" name="tokenquantity" value="6" checked="checked">6<br>
+			<input type="radio" name="tokenquantity" value="3">5<br>
+			<input type="radio" name="tokenquantity" value="5" checked="checked">5<br>
+			<input type="radio" name="tokenquantity" value="6">6<br>
 			<input type="radio" name="tokenquantity" value="10">10<br>
 			<input type="button" id="createall" value="All tokens" onclick="alltokens()"><br>
 			<input type="button" id="create" value="Create tokens" onclick="createtokens()">

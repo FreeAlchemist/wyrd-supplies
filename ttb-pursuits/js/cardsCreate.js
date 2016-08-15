@@ -155,3 +155,5 @@ for (var i = quantity-1; i >= 0; i--) {
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 }
+
+// $('.card-back').toggle()

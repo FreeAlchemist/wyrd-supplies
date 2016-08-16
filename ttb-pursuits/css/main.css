@@ -35,7 +35,7 @@ background-color: rgba(89, 62, 42, 0.2);
 background-color: rgba(211, 204, 199, 1);
 /*background-image:radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 /*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
-color: Linen;
+/*color: Linen;*/
 color: black;
 height: 0.5cm;
 line-height: 0.5cm;
@@ -57,7 +57,7 @@ text-align: center;
 background-color: rgba(89, 62, 42, 1);
 background-color: rgba(126, 97, 77, 1);
 /*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
-color: Linen;
+/*color: Linen;*/
 height: 0.4cm;
 line-height: 0.4cm;
 font-size: 10pt;
@@ -67,7 +67,7 @@ font-size: 10pt;
 	font-size: 8pt;
 	display: none;
 	height: 257px;
-	background-color: Linen;
+	/*background-color: Linen;*/
 	padding: 10px;
 	padding-top: 30px;
 }
@@ -155,7 +155,6 @@ background-color: rgba(211, 204, 199, 1);
 /*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 /*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
 font-weight: bold;
-color: Linen;
 color: black;
 text-transform: uppercase;
 letter-spacing: 0.05em;
@@ -170,7 +169,7 @@ text-align: center;
 }
 
 .type{
-	color: Linen;
+	/*color: Linen;*/
 	letter-spacing: 0.08em;
 	font-size: 12pt;
 	bottom: 0px;
@@ -215,7 +214,7 @@ background-color: rgba(163, 158, 60, 1);
 
 .front{
 height: 8cm;
-background-color: Linen;
+/*background-color: Linen;*/
 margin: 0.3cm;
 border: 1px solid black;
 /*border-radius: 6px;*/
@@ -232,6 +231,7 @@ position: relative;
 height: 8cm;
 width: 5.6cm;
 background-color: Linen;
+background-color: white;
 /*margin: 0.3cm 0.3cm 0cm 0.3cm;*/
 margin: 0.2cm 0cm 0cm 0.2cm;
 border: 0.1cm solid rgba(89, 62, 42, 1);
@@ -250,6 +250,7 @@ bottom: 0px;
 /*height: 3.5cm;*/
 width: 5.6cm;
 background-color: Linen;
+background-color: white;
 /*margin: 0cm 0.3cm 0.3cm 0.3cm;*/
 margin: 0cm 0cm 0.2cm 0.2cm;
 border: 0.1cm solid rgba(89, 62, 42, 1);
@@ -379,4 +380,9 @@ width: 500px;
 	margin-top: 20px;
 	/*width:100px;*/
 	height: 50px;
+	
+}
+
+.pursuit-text{
+	background-color: Linen;
 }

@@ -8,8 +8,8 @@ $('#menu').append($('<a />',{href:'pursuits-basic-rus.html',text:'Занятия
 $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Pursuits: Advanced'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Pursuits: Into the Steam'}))
-// $('#menu').append($('<div />',{class:'row'}))
+$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Pursuits: Into the Steam'}))
+$('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Pursuits: Under Quarantine'}))
 // $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Pursuits: Into the Bayou'}))
@@ -75,41 +75,6 @@ for (var i = 0; i < quantity; i++) {
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
 	}
 
-	var talentsarr = [];
-	for (var t in pursuit[cardid].talents) {
-		talentsarr.push(t);
-	}
-	var talentsquantity = talentsarr.length;
-	console.log(talentsquantity)
-	var table = $('<table />');
-	table.attr('cellpadding',"0px");
-	table.attr('cellspacing','0px');
-	table.attr('width','100%');
-	table.attr('class','talentstable');
-	table.attr('id',' talents-'+cardid);
-	var tr = $('<tr />');
-	var td0 = $('<td />',{class:'talentstable-pursuit',text:pursuit[cardid].name+' ('+cardid+')'});
-	td0.attr('colspan',"2");
-	table.append(tr.append(td0))
-	
-	for (var ts = 1; ts <= talentsquantity; ts++) {
-		console.log('Talent #'+ts+': ')
-		var talentsstep = pursuit[cardid].talents[ts]
-		console.log(talentsstep)
-		if(ts == '1'){
-			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:talentsstep['name']}))
-			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:talentsstep['text']}))
-			}
-		var tr = $('<tr />');
-		var td1 = $('<td />',{class:'talentstable-name'});
-		var td2 = $('<td />',{class:'talentstable-text'});
-		td1.append(talentsstep['name'])
-		td2.append(talentsstep['text'])
-
-		table.append(tr.append(td1).append(td2))
-	};
-	$('#popup').append(table)
-
 	var stepid = cardfrontid+'-bg2'+'-step'
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
@@ -155,3 +120,5 @@ for (var i = quantity-1; i >= 0; i--) {
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 }
+
+// $('.card-back').toggle()

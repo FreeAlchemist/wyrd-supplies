@@ -111,7 +111,7 @@ var pursuit = {
 			},
 			'3' : {
 				name:'Empowered Channeling',
-				text:''
+				text:'When casting a spell, the character increases the value of his Focus condition by 1. This Talent only applies if the character has the Focus condition (he does not gain it if he does not have it).'
 			},
 		},
 		step:{
@@ -138,23 +138,23 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Long Days',
-				text:''
+				text:'The character may discard a Twist Card to automatically pass any Unconsiosness Challenge. In addition, he gains the following Trigger on all Resilence and Tenacity Duels (but not Defence or Willpower Duels): ♥ Recuperate: After resolving, heal 1 damage.'
 			},
 			'3' : {
 				name:'Steady Pace',
-				text:''
+				text:'During an Ongoing Challenge, if the character succeeds at a Challenge Flip he gains a + to the next Challenge Flip. A character may have this Talent up to three times, and the effects stack.'
 			},
 			'4' : {
 				name:'Team Work',
-				text:''
+				text:'When assisting another character or being assisted, this character adds an additional + to the Challenge Flip. A character may have this Talent up two times, and the effects stack.'
 			},
 			'5' : {
 				name:'Slow To Die',
-				text:''
+				text:'Critical Effect Flips against this character gain -. A character may have this Talent up to three times, and the effects stack.'
 			},
 			'6' : {
 				name:'Long Suffering',
-				text:''
+				text:'The character may use Resilence instead of Tenacity, or vice versa, when calculating the Initial Acting value of any Challenge Flip that uses one of those two Aspects.'
 			},
 			'7' : {
 				name:'Cant\'t Keep Me Down',
@@ -271,7 +271,7 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Quick Draw',
-				text:''
+				text:'The character gains following Trigger on any Challenge Flip (including Initiative Flips). ♥ Quick Draw: Take a Ready Weapon Action immediately after this Challenge Flip is resolved. In addition, the character treats (1) Ready Weapon Actions as if they were (0) Ready Weapon Actions.'
 			},
 			'3' : {
 				name:'Call Out',
@@ -279,7 +279,7 @@ var pursuit = {
 			},
 			'4' : {
 				name:'Gunfighter',
-				text:''
+				text:'Choose a Ranged skill; this character may choose to use the weapon as if its Range were melee-2 yards. A character may have this Talent multiple times, choosing a different Ranged skill each time.'
 			},
 			'5' : {
 				name:'No Time For This',
@@ -291,7 +291,7 @@ var pursuit = {
 			},
 			'7' : {
 				name:'Ranged Expert',
-				text:''
+				text:'This character generates an additional AP on its turn, which must be used to make a strike with a Ranged weapon.'
 			},
 		},
 		step:{
@@ -553,7 +553,7 @@ var pursuit = {
 			},
 			'2' : {
 				name:'Push the Limits',
-				text:'character may cause a construct under his control to suffer 1 damage that may not be reduced. If he does so, the construct gains a + to its next Action. The character may use this ability on himself if he has at least one pneumatic limb and that limb is used in the Action.'
+				text:'Character may cause a construct under his control to suffer 1 damage that may not be reduced. If he does so, the construct gains a + to its next Action. The character may use this ability on himself if he has at least one pneumatic limb and that limb is used in the Action.'
 			},
 			'3' : {
 				name:'Combat Construct',

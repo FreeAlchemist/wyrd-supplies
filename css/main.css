@@ -7,7 +7,7 @@ padding: 5px;
 background-color: Oldlace;
 box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
 text-align: center;
-display: none;
+width: 40%;
 }
 
 .menu a{
@@ -19,7 +19,9 @@ border: 2px groove;
 border-bottom-width: 3px;
 border-radius: 3px;
 width: 120px;
+width: 45%;
 height: 120px;
+height: 45%;
 line-height: 120px;
 background: linear-gradient(to bottom, Linen, Burlywood);
 border-left-color: Bisque;
@@ -33,6 +35,10 @@ color: black;
 	background: linear-gradient(to bottom, Burlywood ,Linen);
 }
 
+.title{
+	color:Sienna;
+}
+
 @media print {
 	.menu{display: none;}
 }
@@ -43,5 +49,6 @@ color: black;
 		width: 120px;
 		height: 120px;
 		line-height: 120px;
+		color:Crimson;
 	}
 }

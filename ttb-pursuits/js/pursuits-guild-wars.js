@@ -1,15 +1,10 @@
 var set = 'Guild Wars';
 var faction = 'guild';
-var lang = 'eng';
 var pursuit = {
 	'guild-wars' : {
 		name: 'guild-wars',
 		text:'guild-wars text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...guild-wars'
-		},
 		step:{
 			'1' : 'guild-wars step1',
 			'2' : 'General Talent',
@@ -27,10 +22,6 @@ var pursuit = {
 		name: 'guild-wars1',
 		text:'guild-wars text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...guild-wars'
-		},
 		step:{
 			'1' : 'guild-wars step1',
 			'2' : 'General Talent',
@@ -48,10 +39,6 @@ var pursuit = {
 		name: 'guild-wars2',
 		text:'guild-wars text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...guild-wars'
-		},
 		step:{
 			'1' : 'guild-wars step1',
 			'2' : 'General Talent',

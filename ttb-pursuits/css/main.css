@@ -309,34 +309,41 @@ border-bottom-style: none;
 .wastrel{background-image: url(../img/basic/wastrel.png);}
 
 /*Advanced*/
-.death-marshal{background-image: url(../img/advanced/death-marshal.png);}
+.deathmarshal{background-image: url(../img/advanced/deathmarshal.png);}
 
 /*Into the Steam*/
-.animator{background-image: url(../img/into-the-steam/animator.jpg);}
-.augmented{background-image: url(../img/into-the-steam/augmented.jpg);}
-.collaborator{background-image: url(../img/into-the-steam/collaborator.jpg);}
-.engineer{background-image: url(../img/into-the-steam/engineer.jpg);}
-.illusionist{background-image: url(../img/into-the-steam/illusionist.jpg);}
-.infiltrator{background-image: url(../img/into-the-steam/infiltrator.jpg);}
-.mage{background-image: url(../img/into-the-steam/mage.jpg);}
-.primal{background-image: url(../img/into-the-steam/primal.jpg);}
-.shape-shifter{background-image: url(../img/into-the-steam/shape-shifter.jpg);}
-
-.december-acolyte{background-image: url(../img/into-the-steam/december-acolyte.jpg);}
-.silent-one{background-image: url(../img/into-the-steam/silent-one.jpg);}
+.animator{background-image: url(../img/into-the-steam/animator.png);}
+.augmented{background-image: url(../img/into-the-steam/augmented.png);}
+.collaborator{background-image: url(../img/into-the-steam/collaborator.png);}
+.engineer{background-image: url(../img/into-the-steam/engineer.png);}
+.illusionist{background-image: url(../img/into-the-steam/illusionist.png);}
+.infiltrator{background-image: url(../img/into-the-steam/infiltrator.png);}
+.mage{background-image: url(../img/into-the-steam/mage.png);}
+.primal{background-image: url(../img/into-the-steam/primal.png);}
+/*Advanced*/
+.shapeshifter{background-image: url(../img/into-the-steam/shapeshifter.png);}
+.decemberacolyte{background-image: url(../img/into-the-steam/decemberacolyte.png);}
+.silentone{background-image: url(../img/into-the-steam/silentone.png);}
+.demolitionist{background-image: url(../img/into-the-steam/demolitionist.png);}
 
 /*Under Quarantine*/
-.bully{background-image: url(../img/under-quarantine/bully.jpg);}
-.chemist{background-image: url(../img/under-quarantine/chemist.jpg);}
-.forgotten{background-image: url(../img/under-quarantine/forgotten.jpg);}
-.ghost-eater{background-image: url(../img/under-quarantine/ghost-eater.jpg);}
-.ghoul{background-image: url(../img/under-quarantine/ghoul.jpg);}
-.medium{background-image: url(../img/under-quarantine/medium.jpg);}
-.necromancer{background-image: url(../img/under-quarantine/necromancer.jpg);}
-.sawbones{background-image: url(../img/under-quarantine/sawbones.jpg);}
+.bully{background-image: url(../img/under-quarantine/bully.png);}
+.chemist{background-image: url(../img/under-quarantine/chemist.png);}
+.forgotten{background-image: url(../img/under-quarantine/forgotten.png);}
+.ghost-eater{background-image: url(../img/under-quarantine/ghost-eater.png);}
+.ghoul{background-image: url(../img/under-quarantine/ghoul.png);}
+.medium{background-image: url(../img/under-quarantine/medium.png);}
+.necromancer{background-image: url(../img/under-quarantine/necromancer.png);}
+.sawbones{background-image: url(../img/under-quarantine/sawbones.png);}
+/*Advanced*/
+.abettorofobliteration{background-image: url(../img/into-the-steam/abettorofobliteration.png);}
+.exorcist{background-image: url(../img/into-the-steam/exorcist.png);}
+.revenant{background-image: url(../img/into-the-steam/revenant.png);}
+.revivalist{background-image: url(../img/into-the-steam/revivalist.png);}
+.studentoftransmortis{background-image: url(../img/into-the-steam/studentoftransmortis.png);}
 
 /*Into the Bayou*/
-.bokor{background-image: url(../img/into-the-bayou/bokor.jpg);}
+.bokor{background-image: url(../img/into-the-bayou/bokor.png);}
 
 /*From Nightmares*/
 /*Guild Wars*/
@@ -357,7 +364,7 @@ border-bottom-style: none;
 .talentstable td{
 border:solid 1px;
 font-size: 10pt;
-padding-left: 10px;
+padding: 5px;
 }
 
 .talentstable-pursuit
@@ -380,9 +387,54 @@ width: 500px;
 	margin-top: 20px;
 	/*width:100px;*/
 	height: 50px;
+
 	
 }
 
 .pursuit-text{
 	background-color: Linen;
+}
+
+.talent-story{
+	font-style: italic;
+}
+
+.btn{
+	background: linear-gradient(to bottom, Linen, Burlywood);
+    border-bottom-color: Burlywood;
+    border-bottom-width: 3px;
+    border-left-color: Bisque;
+    border-left-width: 2px;
+    border-radius: 5px;
+    border-right-color: Burlywood;
+    border-right-width: 3px;
+    border-style: groove;
+    border-top-color: Bisque;
+    border-top-width: 2px;
+    color: black;
+    box-shadow: 0px 2px 2px Saddlebrown;
+}
+
+.btn:hover{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
+}
+
+.btn:active{
+	box-shadow: inset 0px 4px 10px Saddlebrown;
+}
+
+.btnactive{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
+    border-bottom-color: Burlywood;
+    border-bottom-width: 3px;
+    border-left-color: Bisque;
+    border-left-width: 2px;
+    border-radius: 5px;
+    border-right-color: Burlywood;
+    border-right-width: 3px;
+    border-style: groove;
+    border-top-color: Bisque;
+    border-top-width: 2px;
+    color: black;
+    box-shadow: inset 0px 4px 10px Saddlebrown;
 }

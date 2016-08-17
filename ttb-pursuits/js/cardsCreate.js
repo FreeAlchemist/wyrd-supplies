@@ -1,46 +1,43 @@
-// $('#popup').toggle()
-// $('#page').toggle()
 $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Pursuits: Basic'}))
-$('#menu').append($('<a />',{href:'pursuits-basic-rus.html',text:'Занятия: Basic'}))
+$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Занятия: Basic'}))
 $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Pursuits: Advanced'}))
-// $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Pursuits: Into the Steam'}))
+$('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Занятия: Advanced'}))
 $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Pursuits: Under Quarantine'}))
+$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Занятия: Into the Steam'}))
+$('#menu').append($('<div />',{class:'row'}))
+$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Занятия: Under Quarantine'}))
+$('#menu').append($('<div />',{class:'row'}))
+// $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Занятия: Into the Bayou'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Pursuits: Into the Bayou'}))
+// $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'Занятия: From Nightmares'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'Pursuits: From Nightmares'}))
+// $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Занятия: Guild Wars'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Pursuits: Guild Wars'}))
+// $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Занятия: Beyond Fate'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Pursuits: Beyond Fate'}))
-// $('#menu').append($('<div />',{class:'row'}))
-if(lang == 'rus'){
-	$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Таланты занятий','click':function(){
-		$('#popup').toggle()
-		$('#page').toggle()
-	}}))
-	$('#menu').append($('<input />',{type:'button',id:'btn-pursuit-text',value:'Описания занятий','click':function(){
-		$('.pursuit-text').toggle()
-	}}))
-}
-else{
-	$('#menu').append($('<input />',{type:'button',id:'btn-talents-pursuit',value:'Pursuit talents','click':function(){
-		$('#popup').toggle()
-		$('#page').toggle()
-	}}))
-	$('#menu').append($('<input />',{type:'button',id:'btn-pursuit-text',value:'Pursuit description','click':function(){
-		$('.pursuit-text').toggle()
-	}}))	
+function activeBtn(elem){
+	console.log(elem)
+	if($(elem).hasClass('btnactive')){
+			$(elem).removeClass('btnactive')
+		}
+		else{
+			$(elem).addClass('btnactive')
+		}
 }
 
 
-console.log('Language: '+lang)
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Таланты занятий','click':function(){
+	$('#popup').toggle()
+	$('#page').toggle()
+	activeBtn(this)
+
+}}))
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий','click':function(){
+	$('.pursuit-text').toggle()
+	activeBtn(this)
+}}))
 
 var arr = [];
 
@@ -65,25 +62,19 @@ for (var i = 0; i < quantity; i++) {
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuit[cardid].name}))
 
 	if(pursuit[cardid].gear){
-		if(lang == 'rus'){
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'вещи:'}))
-		}
-		else{
-			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'GEAR:'}))
-		}
-		
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
 	}
+
+	var name = getTalent(cardid,'n')
+	var talent = getTalent(cardid,'t')
+	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:name}))
+	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:talent}))
 
 	var stepid = cardfrontid+'-bg2'+'-step'
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
-	if(lang == 'rus'){
-		$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
-	}
-		else{
-			$('#'+stepid).append($('<b />',{text:'Talent advancement'}))
-		}
+	$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
 
 	var steparr = [];
 	for (var c in pursuit[cardid].step) {

@@ -1,15 +1,10 @@
 var set = 'Beyond Fate';
 var faction = 'avatar';
-var lang = 'eng';
 var pursuit = {
-	'beyond-fate' : {
+	'beyondfate' : {
 		name: 'beyond-fate',
 		text:'beyond-fate text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...beyond-fate'
-		},
 		step:{
 			'1' : 'beyond-fate step1',
 			'2' : 'General Talent',

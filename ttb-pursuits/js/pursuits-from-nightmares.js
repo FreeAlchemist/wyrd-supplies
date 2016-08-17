@@ -1,15 +1,10 @@
 var set = 'From Nightmares';
 var faction = 'neverborn';
-var lang = 'eng';
 var pursuit = {
 	'from-nightmares' : {
 		name: 'from-nightmares',
 		text:'from-nightmares text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...from-nightmares'
-		},
 		step:{
 			'1' : 'from-nightmares step1',
 			'2' : 'General Talent',
@@ -27,10 +22,6 @@ var pursuit = {
 		name: 'from-nightmares1',
 		text:'from-nightmares text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...from-nightmares'
-		},
 		step:{
 			'1' : 'from-nightmares step1',
 			'2' : 'General Talent',

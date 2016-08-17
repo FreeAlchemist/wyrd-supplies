@@ -1,15 +1,10 @@
 var set = 'Under Quarantine';
 var faction = 'ressurectionist';
-var lang = 'eng';
 var pursuit = {
 	'bully' : {
 		name: 'bully',
 		text:'bully text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...bully'
-		},
 		step:{
 			'1' : 'bully step1',
 			'2' : 'General Talent',
@@ -27,10 +22,6 @@ var pursuit = {
 		name: 'chemist',
 		text:'chemist text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...chemist'
-		},
 		step:{
 			'1' : 'chemist step1',
 			'2' : 'General Talent',
@@ -48,10 +39,6 @@ var pursuit = {
 		name: 'forgotten',
 		text:'forgotten text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...forgotten'
-		},
 		step:{
 			'1' : 'forgotten step1',
 			'2' : 'General Talent',
@@ -69,10 +56,6 @@ var pursuit = {
 		name: 'ghost-eater',
 		text:'ghost-eater text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...ghost-eater'
-		},
 		step:{
 			'1' : 'ghost-eater step1',
 			'2' : 'General Talent',
@@ -90,10 +73,6 @@ var pursuit = {
 		name: 'ghoul',
 		text:'ghoul text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...ghoul'
-		},
 		step:{
 			'1' : 'ghoul step1',
 			'2' : 'General Talent',
@@ -111,10 +90,6 @@ var pursuit = {
 		name: 'medium',
 		text:'medium text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...medium'
-		},
 		step:{
 			'1' : 'medium step1',
 			'2' : 'General Talent',
@@ -132,10 +107,6 @@ var pursuit = {
 		name: 'necromancer',
 		text:'necromancer text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...necromancer'
-		},
 		step:{
 			'1' : 'necromancer step1',
 			'2' : 'General Talent',
@@ -153,10 +124,6 @@ var pursuit = {
 		name: 'sawbones',
 		text:'sawbones text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...sawbones'
-		},
 		step:{
 			'1' : 'sawbones step1',
 			'2' : 'General Talent',

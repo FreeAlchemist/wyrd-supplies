@@ -1,15 +1,10 @@
 var set = 'Into The Steam';
 var faction = 'arcanist';
-var lang = 'eng';
 var pursuit = {
 	'animator' : {
 		name: 'animator',
 		text:'animator text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...animator'
-		},
 		step:{
 			'1' : 'animator step1',
 			'2' : 'General Talent',
@@ -27,10 +22,6 @@ var pursuit = {
 		name: 'augmented',
 		text:'augmented text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...augmented'
-		},
 		step:{
 			'1' : 'augmented step1',
 			'2' : 'General Talent',
@@ -48,10 +39,6 @@ var pursuit = {
 		name: 'collaborator',
 		text:'collaborator text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...collaborator'
-		},
 		step:{
 			'1' : 'collaborator step1',
 			'2' : 'General Talent',
@@ -69,10 +56,6 @@ var pursuit = {
 		name: 'engineer',
 		text:'engineer text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...engineer'
-		},
 		step:{
 			'1' : 'engineer step1',
 			'2' : 'General Talent',
@@ -90,10 +73,6 @@ var pursuit = {
 		name: 'illusionist',
 		text:'illusionist text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...illusionist'
-		},
 		step:{
 			'1' : 'illusionist step1',
 			'2' : 'General Talent',
@@ -111,10 +90,6 @@ var pursuit = {
 		name: 'infiltrator',
 		text:'infiltrator text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...infiltrator'
-		},
 		step:{
 			'1' : 'infiltrator step1',
 			'2' : 'General Talent',
@@ -132,10 +107,6 @@ var pursuit = {
 		name: 'mage',
 		text:'mage text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...mage'
-		},
 		step:{
 			'1' : 'mage step1',
 			'2' : 'General Talent',
@@ -153,10 +124,6 @@ var pursuit = {
 		name: 'primal',
 		text:'primal text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...primal'
-		},
 		step:{
 			'1' : 'primal step1',
 			'2' : 'General Talent',
@@ -168,69 +135,6 @@ var pursuit = {
 			'8' : 'General Talent',
 			'9' : 'primal step9',
 			'10' : 'primal step10',
-		}
-	},
-	'shape-shifter' : {
-		name: 'shape-shifter',
-		text:'shape-shifter text',
-		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...shape-shifter'
-		},
-		step:{
-			'1' : 'shape-shifter step1',
-			'2' : 'General Talent',
-			'3' : 'shape-shifter step3',
-			'4' : 'General Talent',
-			'5' : 'shape-shifter step5',
-			'6' : 'General Talent',
-			'7' : 'shape-shifter step7',
-			'8' : 'General Talent',
-			'9' : 'shape-shifter step9',
-			'10' : 'shape-shifter step10',
-		}
-	},
-	'december-acolyte' : {
-		name: 'december acolyte',
-		text:'december acolyte text',
-		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...december acolyte'
-		},
-		step:{
-			'1' : 'december acolyte step1',
-			'2' : 'General Talent',
-			'3' : 'december acolyte step3',
-			'4' : 'General Talent',
-			'5' : 'december acolyte step5',
-			'6' : 'General Talent',
-			'7' : 'december acolyte step7',
-			'8' : 'General Talent',
-			'9' : 'december acolyte step9',
-			'10' : 'december acolyte step10',
-		}
-	},
-	'silent-one' : {
-		name: 'silent one',
-		text:'silent one text',
-		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...silent one'
-		},
-		step:{
-			'1' : 'silent one step1',
-			'2' : 'General Talent',
-			'3' : 'silent one step3',
-			'4' : 'General Talent',
-			'5' : 'silent one step5',
-			'6' : 'General Talent',
-			'7' : 'silent one step7',
-			'8' : 'General Talent',
-			'9' : 'silent one step9',
-			'10' : 'silent one step10',
 		}
 	},
 }

@@ -15,7 +15,7 @@ var talents = {
 	academic : {
 		book:'Fated Almanac',
 		'Avid Student' : {
-				story:'req3',
+				story:'',
 				text:'Whenever failed an Academic duel, may draw a card. Epilogue: may advance in any Academic skill in addition to skill Advancement options.',
 				trigger:'',
 			},
@@ -219,8 +219,8 @@ var talents = {
 			},
 		'Quick Draw' : {
 				story:'',
-				text:'The character gains following Trigger on any Challenge Flip (including Initiative Flips). ♥ Quick Draw: Take a Ready Weapon Action immediately after this Challenge Flip is resolved. In addition, the character treats (1) Ready Weapon Actions as if they were (0) Ready Weapon Actions.',
-				trigger:'',
+				text:'The character gains following Trigger on any Challenge Flip (including Initiative Flips). In addition, the character treats (1) Ready Weapon Actions as if they were (0) Ready Weapon Actions.',
+				trigger:'♥ Quick Draw: Take a Ready Weapon Action immediately after this Challenge Flip is resolved.',
 			},
 		'Call Out' : {
 				story:'',
@@ -257,8 +257,8 @@ var talents = {
 			},
 		'Speed Loading' : {
 				story:'',
-				text:'Choose a type of firearm skill (Long Arms, Pistols, Shotguns, or Heavy Weapons). The character gains the following Trigger on any attack Action with that type of weapon. ♥: Reload this weapon if its Reload AP cost is 2 or lower. ',
-				trigger:'',
+				text:'Choose a type of firearm skill (Long Arms, Pistols, Shotguns, or Heavy Weapons). The character gains the following Trigger on any attack Action with that type of weapon.',
+				trigger:'♥: Reload this weapon if its Reload AP cost is 2 or lower.',
 			},
 		'Gruesome Attack' : {
 				story:'',
@@ -457,8 +457,8 @@ var talents = {
 			},
 		'Percussive Maintenance' : {
 				story:'',
-				text:'All Artefacting Challenges made to repair contraptions or constructs gain the following Trigger: ♣ Advantage: Gain 1 additional Margin of Success.',
-				trigger:'',
+				text:'All Artefacting Challenges made to repair contraptions or constructs gain the following Trigger:',
+				trigger:'♣ Advantage: Gain 1 additional Margin of Success.',
 			},
 		'Unrealistic Expectations' : {
 				story:'',
@@ -472,8 +472,8 @@ var talents = {
 			},
 		'Over Pressure' : {
 				story:'',
-				text:'The character gains the following Trigger on all pneumatic attacks: ♣: At the end of this turn the character may make a single extra attack with a pneumatic weapon. This additional attack may not activate any Triggers. This Trigger may only be activated once per turn.',
-				trigger:'',
+				text:'The character gains the following Trigger on all pneumatic attacks:',
+				trigger:'♣: At the end of this turn the character may make a single extra attack with a pneumatic weapon. This additional attack may not activate any Triggers. This Trigger may only be activated once per turn.',
 			},
 	},
 	wastrel : {
@@ -505,12 +505,1390 @@ var talents = {
 			},
 		'Play For Blood' : {
 				story:'',
-				text:'When this character is suffering from one or more Critical Effects, all of his Challenges gain the following Trigger: ♠ Advantage: Gain 1 additional Margin of Success. A character may have this Talent multiple times, increasing the Margins of Success gained by 1 each additional time.',
-				trigger:'',
+				text:'When this character is suffering from one or more Critical Effects, all of his Challenges gain the following Trigger: A character may have this Talent multiple times, increasing the Margins of Success gained by 1 each additional time.',
+				trigger:'♠ Advantage: Gain 1 additional Margin of Success.',
 			},
 		'Fifty-Fifty Chance' : {
 				story:'',
 				text:'Once per Dramatic Time, this character may “stack the deck.” To stack the deck, the player goes through the discard pile and Fate Deck to find both Jokers. The Fatemaster then randomly shuffles one into the deck (along with the discard pile) and then places the other on top of the deck. Nobody looks at which is actually on top.',
+				trigger:'',
+			},
+	},
+	deathmarshal : {
+		book:'Advanced (Fated Almanac)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	animator : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	augmented : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	collaborator : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	engineer : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	illusionist : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	infiltrator : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	mage : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	primal : {
+		book:'Into the Steam',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	shapeshifter : {
+		book:'Advanced (Into the Steam)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	decemberacolyte : {
+		book:'Advanced (Into the Steam)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	silentone : {
+		book:'Advanced (Into the Steam)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	demolitionist : {
+		book:'Advanced (Into the Steam)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	bully : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	chemist : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	forgotten : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	ghosteater : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	ghoul : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	medium : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	necromancer : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+	sawbones : {
+		book:'Under Quarantine',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+		abettorofobliteration : {
+		book:'Advanced (Under Quarantine)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+		exorcist : {
+		book:'Advanced (Under Quarantine)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+		revenant : {
+		book:'Advanced (Under Quarantine)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+		revivalist : {
+		book:'Advanced (Under Quarantine)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+	},
+		studentoftransmortis : {
+		book:'Advanced (Under Quarantine)',
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
+				trigger:'',
+			},
+		'' : {
+				story:'',
+				text:'',
 				trigger:'',
 			},
 	},
@@ -557,35 +1935,61 @@ function TalentsTable(){
 				td0.prepend(book+': ')
 			}
 			else{
-				// console.log(talents[arr[t]][arr1[i]])
-				var story = talents[arr[t]][arr1[i]].story
-				if(story){
-					console.log('Story: '+talents[arr[t]][arr1[i]].story)
-				}
-				var requirement = talents[arr[t]][arr1[i]].requirement
-				if(requirement){
-					console.log('Requirement: '+talents[arr[t]][arr1[i]].requirement)
-				}
-				var text = talents[arr[t]][arr1[i]].text
-				if(text){
-					console.log('Text: '+talents[arr[t]][arr1[i]].text)
-				}
-				var trigger = talents[arr[t]][arr1[i]].trigger
-				if(trigger){
-					console.log('Trigger : '+talents[arr[t]][arr1[i]].trigger)
-				}
-				console.log('-----------')
 				var tr = $('<tr />');
 				var td1 = $('<td />',{class:'talentstable-name'});
 				var td2 = $('<td />',{class:'talentstable-text'});
 				td1.append(arr1[i])
-				td2.append(talents[arr[t]][arr1[i]].text)
+				// console.log(talents[arr[t]][arr1[i]])
+				var story = talents[arr[t]][arr1[i]].story
+				if(story){
+					console.log('Story: '+story)
+					td2.append('<span class="talent-story">'+story+'</span><br>')
+				}
+				var requirement = talents[arr[t]][arr1[i]].requirement
+				if(requirement){
+					console.log('Requirement: '+requirement)
+					td2.append('Requirement: '+requirement+'<br>')
+				}
+				var text = talents[arr[t]][arr1[i]].text
+				if(text){
+					console.log('Text: '+text)
+					td2.append(text+'<br>')
+				}
+				var trigger = talents[arr[t]][arr1[i]].trigger
+				if(trigger){
+					console.log('Trigger : '+trigger)
+					td2.append('Trigger : '+trigger)
+				}
+				console.log('-----------')
+				
 				table.append(tr.append(td1).append(td2))
 			}
-			
 		}
 		$('#popup').append(table)
 	}
 }
 
 TalentsTable()
+
+function getTalent(card,type){
+	var arr2 = [];
+	var cardtalent = talents[card]
+	for (var p in cardtalent) {
+			// console.log(talents[arr[t]])
+			arr2.push(p);
+		}
+		if(type == 'n'){
+			return arr2[1]
+		}
+			else if(type == 't'){
+				return cardtalent[arr2[1]].text
+			}
+				else{
+					'none'
+				}
+		
+		
+}
+
+// $('#popup').toggle()
+// $('#page').toggle()

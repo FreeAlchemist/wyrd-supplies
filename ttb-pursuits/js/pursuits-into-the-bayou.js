@@ -1,15 +1,10 @@
 var set = 'Into The Bayou';
 var faction = 'gremlin';
-var lang = 'eng';
 var pursuit = {
 	'bokor' : {
 		name: 'bokor',
 		text:'bokor text',
 		gear:'',
-		talent:{
-			name:'educated',
-			text:'Whenever this character...bokor'
-		},
 		step:{
 			'1' : 'bokor step1',
 			'2' : 'General Talent',

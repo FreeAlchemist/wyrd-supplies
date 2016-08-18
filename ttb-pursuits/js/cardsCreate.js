@@ -74,7 +74,11 @@ for (var i = 0; i < quantity; i++) {
 	var stepid = cardfrontid+'-bg2'+'-step'
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
-	$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
+	$('#'+stepid).append($('<b />',{text:'Развитие талантов','click':function(){
+		// $('#talents-scrapper').toggle()
+		// $('#popup').toggle()
+	}}))
+	//#popup #talents-scrapper
 
 	var steparr = [];
 	for (var c in pursuit[cardid].step) {

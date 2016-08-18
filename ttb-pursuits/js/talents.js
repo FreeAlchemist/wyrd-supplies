@@ -16,13 +16,13 @@ var talents = {
 		book:'Fated Almanac',
 		'Avid Student' : {
 				story:'',
-				text:'Whenever failed an Academic duel, may draw a card. Epilogue: may advance in any Academic skill in addition to skill Advancement options.',
+				text:'При провале Academic duel, можно вытянуть карту на руку. Эпилог: можно развить любой Academic skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Student of Knowledge' : {
-				story:'This character has frequent flashes of brilliant insight.',
-				text:'He gains the following Trigger on all Academics skill Duels:',
-				trigger:'♣ Insight: After resolving, draw a card.'
+				story:'У этого персонажа случаются частые вспышки гениальной проницательности.',
+				text:'Он получает следующий триггер на все дуэли Академических навыков:',
+				trigger:'♣ Озарение: После решения, возьмите карту на руку.'
 			},
 		'Eureka Moment' : {
 				story:'',
@@ -54,7 +54,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Opportunist' : {
 				story:'',
-				text:'Whenever failed an Expertise duel, may draw a card. Epilogue: may advance in any Expertise skill in addition to skill Advancement options.',
+				text:'При провале Expertise duel, можно вытянуть карту на руку. Эпилог: можно развить любой Expertise skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Competitive Edge' : {
@@ -92,7 +92,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Epiphany' : {
 				story:'',
-				text:'When failed a Magic duel during dramatic time, may draw a card. Epilogue: may advance in any Magical skill in addition to skill Advancement options.',
+				text:'После провала Магической дуэли во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magical skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Arcane Musings' : {
@@ -110,17 +110,17 @@ var talents = {
 		book:'Fated Almanac',
 		'Hard days night' : {
 				story:'',
-				text:'Whenever failed a Training duel, may draw a card. Epilogue: may advance in any Training skill in addition to skill Advancement options.',
+				text:'Whenever failed a Training duel, можно вытянуть карту на руку. Эпилог: можно развить любой Training skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Long Days' : {
 				story:'',
-				text:'The character may discard a Twist Card to automatically pass any Unconsiosness Challenge. In addition, he gains the following Trigger on all Resilence and Tenacity Duels (but not Defence or Willpower Duels):',
+				text:'The character may discard a Искаженную карту (Twist card) to automatically pass any Unconsiosness Challenge. In addition, he gains the following Trigger on all Resilence and Tenacity Duels (but not Defence or Willpower Duels):',
 				trigger:'♥ Recuperate: After resolving, heal 1 damage.',
 			},
 		'Steady Pace' : {
 				story:'',
-				text:'During an Ongoing Challenge, if the character succeeds at a Challenge Flip he gains a + to the next Challenge Flip. A character may have this Talent up to three times, and the effects stack.',
+				text:'Во время an Ongoing Challenge, if the character succeeds at a Challenge Flip he gains a + to the next Challenge Flip. A character may have this Talent up to three times, and the effects stack.',
 				trigger:'',
 			},
 		'Team Work' : {
@@ -148,7 +148,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Black soul' : {
 				story:'',
-				text:'When failed a Magic duel during dramatic time, may draw a card. Epilogue: may advance in any Magical skill in addition to skill Advancement options.',
+				text:'После провала дуэли Magic duel во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magical skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Morbid Thoughts' : {
@@ -176,7 +176,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Now you are pissing me off' : {
 				story:'',
-				text:'When failed a Close Combat duel during dramatic time, may draw a card. Epilogue: may advance in any Close Combat skill in addition to skill Advancement options.',
+				text:'После провала дуэли Close Combat duel во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Close Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Stoic Defender' : {
@@ -214,7 +214,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Finger on the trigger' : {
 				story:'',
-				text:'When failed a Ranged Combat duel during dramatic time, may draw a card. Epilogue: may advance in any Ranged Combat skill in addition to skill Advancement options.',
+				text:'После провала дуэли Ranged Combat duel during dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Ranged Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Quick Draw' : {
@@ -234,13 +234,13 @@ var talents = {
 			},
 		'No Time For This' : {
 				story:'',
-				text:'',
+				text:'Whenever this character is involved in an Ongoing Challenge he may choose to make one of the Challenge Flips (at any point in the Action) using his Pistols or Shotgun skill instead of the appropriate skill (he still uses the appropriate Aspect, however).',
 				trigger:'',
 			},
 		'Rapid Fire' : {
 				story:'',
-				text:'',
-				trigger:'',
+				text:'Choose a Ranged Combat skill. This character has access to the following attack Action with the chosen skill:',
+				trigger:'(2) Rapid Fire: The character may discard a Искаженную карту (Twist card) to take three 1 AP strikes with a Ranged weapon using the chosen skill, against a single target. A character may have this Talent multiple times, each time he must choose a different Ranged Combat skill.',
 			},
 		'Ranged Expert' : {
 				story:'',
@@ -252,7 +252,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Deadset' : {
 				story:'',
-				text:'When failed a Ranged Combat duel during dramatic time, may draw a card. Epilogue: may advance in any Ranged Combat skill in addition to skill Advancement options.',
+				text:'После провала дуэли Ranged Combat duel during dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Ranged Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Speed Loading' : {
@@ -290,7 +290,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Oversight' : {
 				story:'',
-				text:'Whenever failed an Social duel, may draw a card. Epilogue: may advance in any Social skill in addition to skill Advancement options.',
+				text:'При провале Social duel, можно вытянуть карту на руку. Эпилог: можно развить любой Social skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Converted Effort' : {
@@ -328,7 +328,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Flare for the dramatic' : {
 				story:'',
-				text:'Whenever failed an Social duel, may draw a card. Epilogue: may advance in any Social skill in addition to skill Advancement options.',
+				text:'При провале Social duel, можно вытянуть карту на руку. Эпилог: можно развить любой Social skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Powerful Impression' : {
@@ -366,7 +366,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Rugged individual' : {
 				story:'',
-				text:'Whenever failed an Training duel, may draw a card. Epilogue: may advance in any Training skill in addition to skill Advancement options.',
+				text:'При провале Training duel, можно вытянуть карту на руку. Эпилог: можно развить любой Training skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Born Under A Wandering Star' : {
@@ -402,39 +402,39 @@ var talents = {
 	},
 	scrapper : {
 		book:'Fated Almanac',
-		'Bloody minded' : {
+		'Кровожадный (Bloody Minded)' : {
 				story:'',
-				text:'When failed a Close Combat duel during dramatic time, may draw a card. Epilogue: may advance in any Close Combat skill in addition to skill Advancement options.',
+				text:'После провала дуэли Ближнего Боя (Close Combat) во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой навык Ближнего Боя (Close Combat) в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
-		'Close the Gap' : {
+		'Сомкнуть разрыв (Close the Gap)' : {
 				story:'',
-				text:'When this character declares a Charge Action he may draw a Twist card.',
+				text:'Когда персонаж заявляет Действие Нападения (Charge Action) он может вытянуть Искаженную карту (Twist card) на руку.',
 				trigger:'',
 			},
-		'Flurry' : {
+		'Шквал (Flurry)' : {
 				story:'',
-				text:'Choose a Close Combat skill. This character has access to the following attack Action with the chosen skill: (2) Flurry: The character may discard a Twist Card to take three 1 AP strikes with a Melee weapon using the chosen skill against a single target. A character may have this Talent multiple times, each time he must choose a different Close Combat skill.',
+				text:'Выберите навык Ближнего Боя (Close Combat. Этот персонаж имеет доступ к следующему атакующему Действию с выбранным навыком: (2) Шквал: Персонаж может сбросить Искаженную карту (Twist card) чтобы выполнить три (1) ОД (AP) удара оружием Ближнего Боя, использующим выбранный навык, против одной цели. Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык Ближнего Боя.',
 				trigger:'',
 			},
-		'Recovery' : {
+		'Восстановление (Recovery)' : {
 				story:'',
-				text:'This character gains + to all Healing Flips he makes. A character may take this Talent more than once, and its effects stack.',
+				text:'Персонаж получает + ко всем Переворотам Лечения (Healing Flip) которые  делает. Персонаж может взять этот Талант больше одного раза, и эффекты складываются.',
 				trigger:'',
 			},
-		'Watch Them All' : {
+		'Видеть всех (Watch Them All)' : {
 				story:'',
-				text:'This character gains + to any attempt to resist intimidation or deception. In addition, this character gains a + to all Initiative Flips.',
+				text:'Этот персонаж получает + ко всем попыткам противостоять угрозам (intimidation) или обману (deception). Также персонаж получает + ко всем Переворотам Инициативы (Initiative Flips).',
 				trigger:'',
 			},
-		'Wicked' : {
+		'Злобный (Wicked)' : {
 				story:'',
-				text:'When this character makes a disengaging strike, he deals damage with his weapon, in addition to stopping the target’s movement.',
+				text:'Когда персонаж совершает удерживающий удар (disengaging strike), он наносит урон своим оружием, помимо предотвращения движения цели.',
 				trigger:'',
 			},
-		'Melee Expert' : {
+		'Эксперт Ближнего боя (Melee Expert)' : {
 				story:'',
-				text:'This character generates an additional AP on its turn, which must be used to make a strike with a Melee weapon.',
+				text:'Персонаж получает дополнительное ОД (AP) на свой ход, которое может быть использовано только для атаки оружием ближнего боя (Melee).',
 				trigger:'',
 			},
 	},
@@ -442,7 +442,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Gear head' : {
 				story:'',
-				text:'When failed a Magic duel during dramatic time, may draw a card. Epilogue: may advance in any Magic skill in addition to skill Advancement options.',
+				text:'После провала Магической дуэли во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magic skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Push the Limits' : {
@@ -480,7 +480,7 @@ var talents = {
 		book:'Fated Almanac',
 		'Educated' : {
 				story:'',
-				text:'Whenever failed an Expertise duel, may draw a card. Epilogue: may advance in any Expertise skill in addition to skill Advancement options.',
+				text:'При провале Expertise duel, можно вытянуть карту на руку. Эпилог: можно развить любой Expertise skill в дополнение к вариантам развития навыков.',
 				trigger:'',
 			},
 		'Luck of the Draw' : {
@@ -495,12 +495,12 @@ var talents = {
 			},
 		'Trump Card' : {
 				story:'',
-				text:'During Dramatic Time, this character can discard a card from his Control Hand after he has taken his turn. If he does so, he may look at the top 3 cards of the Fate Deck and replace them in any order. He may not tell anyone what cards are there, but he may hint that they are good or bad.',
+				text:'Во время Dramatic Time, this character can discard a card from his Control Hand after he has taken his turn. If he does so, he may look at the top 3 cards of the Fate Deck and replace them in any order. He may not tell anyone what cards are there, but he may hint that they are good or bad.',
 				trigger:'',
 			},
 		'All In' : {
 				story:'',
-				text:'This character gains + to all Duels when he has no Twist Cards in his hand.',
+				text:'This character gains + to all Duels when he has no Искаженную карту (Twist card)s in his hand.',
 				trigger:'',
 			},
 		'Play For Blood' : {
@@ -1914,7 +1914,52 @@ function TalentsTable(){
 		table.attr('class','talentstable');
 		table.attr('id',' talents-'+arr[t]);
 		var tr = $('<tr />');
-		var td0 = $('<td />',{class:'talentstable-pursuit',text:arr[t]});
+		var pursuit = arr[t]
+		var name = pursuit
+
+		if(pursuit == 'academic'){name = 'Академик'}
+		if(pursuit == 'criminal'){name = 'Преступник'}
+		if(pursuit == 'dabbler'){name = 'Дилетант'}
+		if(pursuit == 'drudge'){name = 'Трудяга'}
+		if(pursuit == 'graverobber'){name = 'Гробокопатель'}
+		if(pursuit == 'guard'){name = 'Гвардеец'}
+		if(pursuit == 'gunfighter'){name = 'Стрелок'}
+		if(pursuit == 'mercenary'){name = 'Наемник'}
+		if(pursuit == 'overseer'){name = 'Смотритель'}
+		if(pursuit == 'performer'){name = 'Исполнитель'}
+		if(pursuit == 'pioneer'){name = 'Первопроходец'}
+		if(pursuit == 'scrapper'){name = 'Задира'}
+		if(pursuit == 'tinkerer'){name = 'Жестянщик'}
+		if(pursuit == 'wastrel'){name = 'Кутила'}
+		if(pursuit == 'deathmarshal'){name = 'Маршал Смерти'}
+		if(pursuit == 'animator'){name = 'Аниматор'}
+		if(pursuit == 'augmented'){name = 'Дополненный'}
+		if(pursuit == 'collaborator'){name = 'Переговорщик'}
+		if(pursuit == 'engineer'){name = 'Инженер'}
+		if(pursuit == 'illusionist'){name = 'Иллюзионист'}
+		if(pursuit == 'infiltrator'){name = 'Лазутчик'}
+		if(pursuit == 'mage'){name = 'Маг'}
+		if(pursuit == 'primal'){name = 'Первобытный'}
+		if(pursuit == 'shapeshifter'){name = 'Перевертыш'}
+		if(pursuit == 'decemberacolyte'){name = 'Аколит Декабря'}
+		if(pursuit == 'silentone'){name = 'Безмолвный'}
+		if(pursuit == 'demolitionist'){name = 'Подрывник'}
+		if(pursuit == 'bully'){name = 'Хулиган'}
+		if(pursuit == 'chemist'){name = 'Химик'}
+		if(pursuit == 'forgotten'){name = 'Забытый'}
+		if(pursuit == 'ghosteater'){name = 'Пожиратель духов'}
+		if(pursuit == 'ghoul'){name = 'Упырь'}
+		if(pursuit == 'medium'){name = 'Медиум'}
+		if(pursuit == 'necromancer'){name = 'Некромант'}
+		if(pursuit == 'sawbones'){name = 'Костоправ'}
+		if(pursuit == 'abettorofobliteration'){name = ''}
+		if(pursuit == 'exorcist'){name = 'Экзорцист'}
+		if(pursuit == 'revenant'){name = 'Призрак'}
+		if(pursuit == 'revivalist'){name = 'Реаниматор'}
+		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортиса'}
+
+
+		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");
 		table.append(tr.append(td0))
 		// $('#popup').append(table)
@@ -1939,6 +1984,7 @@ function TalentsTable(){
 				var td1 = $('<td />',{class:'talentstable-name'});
 				var td2 = $('<td />',{class:'talentstable-text'});
 				td1.append(arr1[i])
+
 				// console.log(talents[arr[t]][arr1[i]])
 				var story = talents[arr[t]][arr1[i]].story
 				if(story){
@@ -1948,7 +1994,7 @@ function TalentsTable(){
 				var requirement = talents[arr[t]][arr1[i]].requirement
 				if(requirement){
 					console.log('Requirement: '+requirement)
-					td2.append('Requirement: '+requirement+'<br>')
+					td2.append('Требование: '+requirement+'<br>')
 				}
 				var text = talents[arr[t]][arr1[i]].text
 				if(text){
@@ -1958,11 +2004,12 @@ function TalentsTable(){
 				var trigger = talents[arr[t]][arr1[i]].trigger
 				if(trigger){
 					console.log('Trigger : '+trigger)
-					td2.append('Trigger : '+trigger)
+					td2.append('Триггер : '+trigger)
 				}
 				console.log('-----------')
 				
 				table.append(tr.append(td1).append(td2))
+				// table.css('display','none')
 			}
 		}
 		$('#popup').append(table)

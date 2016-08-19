@@ -1,1895 +1,2910 @@
 var talents = {
 	general :{
 		book:'Fated Almanac',
-		'Armor Training' : {
-				requirement:'req1',
-				story:'',
-				text:'gen1',
+		'Тренированная Броня (Armor Training)' : {
+				requirement:'Нет',
+				story:'Умный человек не просто носит броню, но изучает как правильно ее использовать.',
+				text:'Этот персонаж снижает штраф к защите (Defense) от ношения брони на 1, до минимума в 0.',
+				trigger:'',
+				limit:'Персонаж может брать этот талант несколько раз.',
 			},
-		'Better Part of Valor' : {
-				requirement:'req2',
-				story:'',
-				text:'gen2',
+		'Лучшая часть доблести (Better Part of Valor)' : {
+				requirement:'Стойкость (Tenacity) -1 или ниже.',
+				story:'Когда ситуация становиться жесткой, пожалуй лучше пойти в другую сторону!',
+				text:'Нападение (Charge) персонажа становиться “—” но он получает +2 к Движению (Walk).',
+				trigger:'',
+				limit:'',
+			},
+		'Блаженное неведенье (Blissful Ignorance)' : {
+				requirement:'Хитрость (Cunning) -1 или ниже.',
+				story:'Этот персонаж зачастую не замечает деталей вокруг себя и это может оказаться полезным!',
+				text:'При провале дуэли страха (Horror Duel), этот персонаж получает состояние замедлен (Slow), а не парализован (Paralyzed).',
+				trigger:'',
+				limit:'',
+			},
+		'Заявленный выстрел (Call Shot)' : {
+				requirement:'Нет',
+				story:'Пули летят туда, куда хочет персонаж.',
+				text:'Выберите навык. Когда персонаж создает Критический Эффект () атакой использующей выбранный навык, он может сбросить карту чтобы поменять масть Критического Эффекта на масть сброшенной карты.',
+				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык.',
+			},
+		'Спокойный и собранный (Calm & Collected)' : {
+				requirement:'Скорость (Speed) -1 или ниже.',
+				story:'Персонаж познал, что спешка ведет только к ошибкам.',
+				text:'Персонаж добавляет +1 к значению состояния Сфокусирован (Focused) на себе (например считая "Сфокусирован + 1" как "Сфокусирован + 2"). Он все еще не может превысить "Сфокусирован + 3".',
+				trigger:'',
+				limit:'',
+			},
+		'Четкие приказы (Clear Orders)' : {
+				requirement:'Лидерство (Leadership) 3 или выше.',
+				story:'Этот персонаж раздает четкие и краткие приказы.',
+				text:'Когда этот персонаж выполняет действие Приказ (Order Action), он может обмануть судьбу (Cheat Fate) за получающего приказ персонажа.',
+				trigger:'',
+				limit:'',
+			},
+		'Чтение битвы (Combat reading)' : {
+				requirement:'Хитрость (Cunning) 1 или выше.',
+				story:'Персонаж способен считывать цель во время битвы и атаковать в открывающиеся бреши, которых другие не заметят.',
+				text:'При совершении удерживающего удара (disengaging strike), персонаж добавляет половину своего навыка Контроля (Scrutiny) в дополнение к действующему значению (Acting value).',
+				trigger:'',
+				limit:'',
+			},
+		'Противодействие заклинаниям (Counter-spell)' : {
+				requirement:'Противодействие заклинаниям (Counter-spell) 3 или выше.',
+				story:'Тренировка в искусстве противодействия заклинаниям дала персонажу способность интуитивно сопротивляться магии.',
+				text:'Когда этот персонаж является целью магической атаки или действия, атакующий теряет люые масти ассоциированные с его магическим навыком (Magical)',
+				trigger:'',
+				limit:'',
+			},
+		'Критический удар (Critical strike)' : {
+				requirement:'Специализированный (Specialized) с выбранным навыком.',
+				story:'Опытный атакующий зачастую может нанести больше урона чем дилетант (или обычный бандит) и этот персонаж не является исключением.',
+				text:'Выберите навык. Все атаки с выбранным навыком получают следующий триггер:',
+				trigger:'♥ Критический удар: При нанесении урона добавьте 1 дополнительную единицу урона за каждую ♥ в итоговом значении.',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык.',
+			},
+		'Циник (Cynic)' : {
+				requirement:'Обаяние (Charm) -1 или ниже.',
+				story:'Если похоже, что ему лгут, то вполне вероятно персонаж назовет кого-то лжецом.',
+				text:'Этот персонаж получает + на любые дуэли по сопротивлению обману (deception)',
+				trigger:'',
+				limit:'',
+			},
+		'Легким движением руки (Flick of the Wrist)' : {
+				requirement:'Сила (Might) -1 или ниже.',
+				story:'Персонаж познал как использовать точность с оружием там где другие полагаются на грубую силу.',
+				text:'Совершая атаку ближнего боя (Close Combat) с оружием удерживаемым в одной руке, персонаж может использовать Грацию (Grace) вместо Силы (Might) при вычислении Действующего Значения (Acting value).',
+				trigger:'',
+				limit:'',
+			},
+		'Подарок Губернатора (Governor’s Gift)' : {
+				requirement:'Обаяние (Charm) 1 или выше.',
+				story:'Некоторые люди на короткой ноге с представителями определенного пола.',
+				text:'Выберите мужчину или женщину. Этот персонаж получает + на любую дуэль Очарования (Bewitch) или Контроля (Scrutiny) против представителей выбранного пола.',
+				trigger:'',
+				limit:'',
+			},
+		'Великая судьба (Great Fate)' : {
+				requirement:'Нет',
+				story:'Судьба улыбается этому персонажу, позволяя управлять собой чаще.',
+				text:'Этот персонаж тянет дополнительную карту в начале каждой игровой сессии.',
+				trigger:'',
+				limit:'Персонаж может брать этот талант несколько раз и эффект накапливается. Но после вытягивания карт в начале игры, необходимо сбросить карты до 5, если их больше на руке.',
+			},
+		'Грубоватый (Gruff)' : {
+				requirement:'Обаяние (Charm) -1 или ниже.',
+				story:'Когда этот персонаж говорит, присутствует некий перегиб и столь явный, что его очень тяжело понять.',
+				text:'Дуэли Контроля (Scrutiny) против этого персонажа получают -.',
+				trigger:'',
+				limit:'',
+			},
+		'Трудно убить (Hard to Kill)' : {
+				requirement:'Выносливость (Resilence) +1 или выше.',
+				story:'Персонаж может получить наиболее сильные повреждения, но продолжить идти вперед.',
+				text:'Этот персонаж может проигнорировать один Критический Эффект per Dramatic Time.',
+				trigger:'',
+				limit:'',
+			},
+		'Хромающая атака (Hobbling attack)' : {
+				requirement:'Специализированный (Specialized) с выбранным навыком.',
+				story:'Персонаж может всадить пулю так, чтобы помимо нанесения урона замедлить цель',
+				text:'Выберите навык. Все атаки с выбранным навыком получают следующий триггер:',
+				trigger:'♠ Хромота: После успеха, цель следующее состояние до конца Dramatic Time: "Хромой: Этот персонаж может заявлять только одно действие движения (Movement General Action) в ход."',
+				limit:'',
+			},
+		'Честный (Honest)' : {
+				requirement:'Хитрость (Cunning) -1 или ниже.',
+				story:'Персонажу нет необходимости убеждать окружающих доверять ему, все видят его честную природу.',
+				text:'Этот персонаж получает + на все дуэли Убеждения (Convince) и Лидерства (Leadership) против нейтральных и дружественных персонажей (тех кто либо заинтересован в его успехе, либо безучастны к его существованию как констебль или бюрократ).',
+				trigger:'',
+				limit:'',
+			},
+		'Внушительная масса (Imposing Mass)' : {
+				requirement:'Грация (Grace) -1 или ниже.',
+				story:'Персонаж не может передвигаться ловко и научился использовать свои неточные движения в своих интересах.',
+				text:'Этот персонаж получает + на дуэли удерживающего удара (disengaging strike)',
+				trigger:'',
+				limit:'',
+			},
+		'Находчивый (Ingenious)' : {
+				requirement:'Сила (Might) -1 или ниже.',
+				story:'Чтобы противостоять частой неспособности этого персонажа открыть упрямые банки с вареньем, он стал умело использовать инструменты.',
+				text:'Персонаж добавляет половину своего Интеллекта (Intellect) к любым дуэлям, которые обычно требуют инструменты (такие как Ремесло (Crafting)).',
+				trigger:'',
+				limit:'',
+			},
+		'Просто царапина (Just a Graze)' : {
+				requirement:'Обреченный',
+				story:'Удача благоволит дуракам, а этот персонаж имеет странное свойство принимать удары нужнвм местом.',
+				text:'Персонаж может подтасовывать урон (Cheat Damage Flips) который получает, покуда Переворот Урона не имеет "+".',
+				trigger:'',
+				limit:'',
+			},
+		'Рукопашный бой (Open Hand Fighting)' : {
+				requirement:'Нет',
+				story:'Свободная рука (или две) имеет свои преимущества.',
+				text:'Если персонаж орудует одним одноручным оружием, он может наносить урон при проведении удерживающих удров (disengaging strikes).',
+				trigger:'',
+				limit:'',
+			},
+		'Парное оружие (Paired Weapons)' : {
+				requirement:'Выбранный навык ранга 3 или выше',
+				story:'Два оружия лучше чем одно... Правда? Персонаж способен эффективно орудовать двумя одноручными оружиями.',
+				text:'Выберите навык Ближнего (Close Combat) или Дальнего боя (Ranged) с рангом 3 или выше.Персонаж получает "+" к Перевороту Атаки когда владеет двумя оружиями. Стоит отметить, что это несовместимо с оружием требующим двух рук. Персонаж совершает только один Переворот Атаки для обоих оружий.',
+				trigger:'',
+				limit:'',
+			},
+		'Обычный разговорный (Plain Spoken)' : {
+				requirement:'Интеллект (Intellect) -1 или ниже.',
+				story:'Персонаж не пытается засорять свой разговор цветастыми выражениями и хорош в произнесении тяжелой правды простым языком..',
+				text:'Персонаж получает "+" к Социальным (Social) дуэлям во время Dramatic Time.',
+				trigger:'',
+				limit:'',
+			},
+		'Быстрое обучение (Quick Study)' : {
+				requirement:'Интеллект (Intellect) +1 или выше.',
+				story:'Некоторые люди быстро учаться просто наблюдая за окружающими.',
+				text:'Когда персонаж должен получить навык, он может выбрать навык, которого у него нет и в использовании которого дружественный персонаж преуспел во время игровой сессии, вместо вариантов предоставленных Мастером.',
+				trigger:'',
+				limit:'',
+			},
+		'Спешка (Rush)' : {
+				requirement:'Скорость (Speed) 1 или выше.',
+				story:'Персонаж хорош в ввязывании в битву, связывая противника жестоким ближним боем.',
+				text:'Персонаж получает +1 к своему аспекту Нападения (Charge).',
+				trigger:'',
+				limit:'Персонаж может брать этот талант несколько раз и эффект накапливается.',
+			},
+		'Подлец (Scoundrel)' : {
+				requirement:'Есть те, кто буквально очарует деньги из вашего кошелька.',
+				story:'Персонаж получает следующий триггер на все Социальные испытания (Social Challenges):',
+				text:'♦: Выполнить карманную кражу (Pick Pocket Action)(не требует ОД) как часть разрешения Социального действия (Social Action). Карманная кража получает "+".',
+				trigger:'',
+				limit:'',
+			},
+		'Исследование выстрелов (Shot Studies)' : {
+				requirement:'Дробовик (Shotgun) 3 или выше.',
+				story:'Дальность карабина или дробовика - вторая натура персонажа.',
+				text:'Персонаж увеличивает дальность (range) карабина (Carbine) или дробовика (Shotgun) стреляющего пулями (slugs) на 10 если у него есть состояние "Сфокусирован + 1" (или выше). В отличие от способности ружья, дальность увеличивается только на 10 в независимости от значения сфокусированности.',
+				trigger:'',
+				limit:'',
+			},
+		'Толчок в сторону (Shove Aside)' : {
+				requirement:'Сила (Might) 1 или выше.',
+				story:'Персонаж может проходить мимо других с незначительным сопротивлением.',
+				text:'Персонаж может безпрепятственно проходить сквозь персонажей с высотой (Height) ниже чем у него. Эти персонажи все еще могут делать удерживающие удары (disengaging strikes) против него.',
+				trigger:'',
+				limit:'',
+			},
+		'Отмахнуться (Shrug Off)' : {
+				requirement:'Выносливость -1 или меньше либо происхождение Ортега',
+				story:'Этот персонаж настолько привык к незначительной боли, болезням, или другим препятствиям, что он может их игнорировать как типичный фон его существования.',
+				text:'Персонаж получает следующее тактическое действие:',
+				trigger:'(0) Отмахнуться: Персонаж может сбросить карту чтобы убрать одно состояние (condition) с себя.',
+				limit:'',
+			},
+		'Простая Логика (Simple Logic)' : {
+				requirement:'Интеллект (Intellect) -1 или ниже.',
+				story:'Персонаж не усложняет и склоняется к черно белому представлению о вещах.',
+				text:'Персонаж получает "+" к сопротивлению дуэлям Очарования (Bewitch), Убеждения (Convince) и Обмана (Deceive) направленным против него.',
+				trigger:'',
+				limit:'',
+			},
+		'Мастер навыка (Skill Mastery)' : {
+				requirement:'Есть те к кому приходит мастерство по мере тренировок.',
+				story:'Выберите навык. Персонаж получает "+" на все Перевороты Испытания (Challenge Flips) с данным навыком.',
+				text:'',
+				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык.',
+			},
+		'Специализированный навык (Specialized skill)' : {
+				requirement:'Обреченный',
+				story:'Персонаж оттачивал определенное умение, позволяющее ему выполнять трюки с небольшим усилием.',
+				text:'Выберите навык и масть. Добавьте масть к знчению выбранного навыка.',
+				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык.',
+			},
+		'Крепкий (Sturdy)' : {
+				requirement:'Грация (Grace) -1 или ниже.',
+				story:'Персонаж признает, что плохой танцор и не может нормально стоять на одной ноге... но он выносливее многих, а это что-то да значит.',
+				text:'Персонаж получает +1 Рану (Wounds).',
+				trigger:'',
+				limit:'',
+			},
+		'Неспотыкающийся (Sure-Footed)' : {
+				requirement:'Скорость (Speed) -1 или ниже.',
+				story:'Этот персонаж не может двигаться быстро, но его также трудно сдвинуть с места.',
+				text:'Персонаж может применять свою скорость как штраф к дистанции на которую он сдвигается (push) эффектом.',
+				trigger:'',
+				limit:'',
+			},
+		'Искаженные судьбы (Twisted Fates)' : {
+				requirement:'Обреченный',
+				story:'Удача благоволит подготовленным, как говорится, но этот персонаж кажется, может направлять удачу чаще чем большинство.',
+				text:'Выберите карту в Искаженной колоде персонажа и увелисьте или уменьшите ее значение на 1. Смена значения не должна привести к двум одинаковым картам (масть + число). Например персонаж может иметь две 8 но с разнвми мастями.',
+				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз.',
+			},
+		'Скромный (Unassuming)' : {
+				requirement:'Сила (Might) -1 или меньше.',
+				story:'Всю жизнь имея дело с теми, кто сильнее его, персонаж научился относиться к происходящему спокойно и гармонично.',
+				text:'Персонаж получает "+" к любой дуэли на избежание быть замеченным или разозлить кого-то.',
+				trigger:'',
+				limit:'',
+			},
+		'Подорвать Доверие (Undermine Confidence)' : {
+				requirement:'Выносливость (Resilence) -1 или ниже.',
+				story:'Иногда лучше много говорить и позволить нервозности спасть.',
+				text:'Персонаж получает "+" на все дуэли Запугивания (Intimidation) выполняемые вне Dramatic Time.',
+				trigger:'',
+				limit:'',
+			},
+		'Непревзойденная Точность (Unequaled Accuracy)' : {
+				requirement:'рейтинг выбранного навыка 2 или выше.',
+				story:'Мало тех, у кого непревзойденное чувство времени при всаживании снаряда.',
+				text:'Персонаж не определяет цель случайно при стрельбе в связанную боем цель.',
+				trigger:'',
+				limit:'',
+			},
+		'Беспрепятственный (Unimpeded)' : {
+				requirement:'Грация (Grace) 1 или выше.',
+				story:'Персонаж ловко ставит ноги при перемещении, там гдн другие стадкиваются с трудностями.',
+				text:'Персонаж игнорирует штрафы от местности (такие как мокрая земля или щеьень) при выполнении действия Движения.',
+				trigger:'',
+				limit:'',
+			},
+		'Стена Мускулов (Wall of Muscle)' : {
+				requirement:'Выносливость (Resilence) 1 или выше.',
+				story:'Персонаж и высок и широк и знает как использовать это в свою пользу.',
+				text:'Повысьте высоту (Height) персонажа до 3. Также увеличьте дальность всего оружия ближнего бой, которым владеет персонаж на 1, до максимума в 3.',
+				trigger:'',
+				limit:'',
+			},
+		'Воля веков (Will of Ages)' : {
+				requirement:'Стойкость (Tenacity) 1 или выше.',
+				story:'Персонаж может защитить больше одного дружественного персонажа своим навыком Противодействие заклинаниям (Counter-spelling).При использовании Магического щита (стр 245) персонаж может защитить дружественных персонажей (включая себя) в количестве равном его Стойкости (Tenacity)',
+				text:'',
+				trigger:'',
+				limit:'',
 			},
 	},
 	academic : {
 		book:'Fated Almanac',
-		'Avid Student' : {
+		'(Avid Student)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Academic duel, можно вытянуть карту на руку. Эпилог: можно развить любой Academic skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Student of Knowledge' : {
+		'(Student of Knowledge)' : {
+				requirement:'',
 				story:'У этого персонажа случаются частые вспышки гениальной проницательности.',
 				text:'Он получает следующий триггер на все дуэли Академических навыков:',
-				trigger:'♣ Озарение: После решения, возьмите карту на руку.'
+				trigger:'♣ Озарение: После решения, возьмите карту на руку.',
+				limit:'',
 			},
-		'Eureka Moment' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Eureka Moment)' : {
+				requirement:'',
+				story:'An epiphany is a powerful thing, especially among those with the intellectual prowess to realize how important a new discovery is.',
+				text:'The character gains the following Trigger on all Academic skills:',
+				trigger:'♣: Gain 2 additional Margins of Success.',
 			},
-		'Great Thinker' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Great Thinker)' : {
+				requirement:'',
+				story:'As one of the greatest minds in Academia, the character is paralleled by few within his field.',
+				text:'Choose a single Academic skill, the maximum rating for this skill is 6 (instead of 5).',
+				trigger:'A character may have the Great Thinker Talent multiple times, but each time a different skill must be chosen.',
+				limit:'',
 			},
-		'Rational Mind' : {
-				story:'',
-				text:'',
+		'(Rational Mind)' : {
+				requirement:'',
+				story:'A calm and clear head allows the character to avoid manipulation through illusion or deceit.',
+				text:'Whenever the character must make a Challenge Flip to resist an act of manipulation (such as terror, mind control, or intimidation) the character may use his choice of Cunning or Intellect instead of the normal Aspect.',
 				trigger:'',
+				limit:'',
 			},
-		'Applied Learning' : {
-				story:'',
-				text:'Choose an Academic skill as well as a secondary skill. Whenever the character makes a skill Challenge with the secondary skill, he may exchange the chosen Academic skill rating for the Aspect rating used. A character may have the Applied Learning Talent multiple times, but each time a new combination of Academic skill and secondary skill must be chosen. Note: The combination of skills selected must be approved by the Fatemaster, as some Fatemasters may not feel that certain combinations (such as Literacy and Dodge) make logical sense in their campaign.',
+		'(Applied Learning)' : {
+				requirement:'',
+				story:'Knowledge must be applied to have use, and the character has learned some tricks for using a skill in new ways. ',
+				text:'Choose an Academic skill as well as a secondary skill. Whenever the character makes a skill Challenge with the secondary skill, he may exchange the chosen Academic skill rating for the Aspect rating used. Note: The combination of skills selected must be approved by the Fatemaster, as some Fatemasters may not feel that certain combinations (such as Literacy and Dodge) make logical sense in their campaign.',
 				trigger:'',
+				limit:'A character may have the Applied Learning Talent multiple times, but each time a new combination of Academic skill and secondary skill must be chosen.',
 			},
-		'Sum of All Knowledge' : {
-				story:'',
-				text:'',
+		'(Sum of All Knowledge)' : {
+				requirement:'',
+				story:'Capable of great leaps of logic, the character is able to translate knowledge in one field into many others.',
+				text:'Whenever the character must make a Cunning or Intellect based Challenge Flip, he may add an additional bonus equal to half of any one Academic skill rating (rounding down) to his Initial Acting value. The Academics skill used must have the same Associated Aspect as the Challenge Flip to be modified.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	criminal : {
 		book:'Fated Almanac',
-		'Opportunist' : {
+		'(Opportunist)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Expertise duel, можно вытянуть карту на руку. Эпилог: можно развить любой Expertise skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Competitive Edge' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Competitive Edge)' : {
+				requirement:'',
+				story:'The character is able to make good guesses, relying on his instincts.',
+				text:'This character gains the following Trigger on all Expertise skill Duels:',
+				trigger:'♦ Fortunate: After resolving, draw a Twist card.',
+				limit:'',
 			},
-		'Improvise' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'Импровизация (Improvise)' : {
+				requirement:'',
+				story:'Some men grow adept at making do without tools, even if it takes them a bit longer.',
+				text:'Choose a skill. This character is always considered to have a tool kit of the chosen skill.',
+				trigger:'A Character may have this ability multiple times, but each time a different skill must be chosen.',
+				limit:'',
 			},
-		'Quick Work' : {
-				story:'',
-				text:'',
+		'(Quick Work)' : {
+				requirement:'',
+				story:'The character is able to perform a skill far more rapidly than normally.',
+				text:'Reduce the AP cost by 1 of the first Use skill Action made by the Character during each Turn (to a minimum of 0).',
 				trigger:'',
+				limit:'',
 			},
-		'Nimble' : {
-				story:'',
-				text:'',
+		'(Nimble)' : {
+				requirement:'',
+				story:'This character is ready to move at a moment’s notice, and is able to do so without much focus.',
+				text:'This character generates an additional AP on his turn, but the AP must be used to take a Movement General Action.',
 				trigger:'',
+				limit:'',
 			},
-		'Surprise Assault' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Surprise Assault)' : {
+				requirement:'',
+				story:'The character is adept at making attacks against an unprepared opponent, either from hiding or just making the first move.',
+				text:'Any of the character’s attacks gain + to the Challenge Flip and Damage Flip when he attacks before any other character acts during Dramatic Time.',
+				trigger:'A character may have this Talent more than once, gaining a + each time.',
+				limit:'',
 			},
-		'Master of Misdirection' : {
-				story:'',
-				text:'',
+		'(Master of Misdirection)' : {
+				requirement:'',
+				story:'Some characters are better at working with a group than most.',
+				text:'When this character succeeds on a (1) Trick Challenge, anyone attacking the target gains +, instead of just the acting character. As well, this character gains + to defend against attacks that anyone makes while they are suffering from the effects of the Trick, even someone else’s Trick.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	dabbler : {
 		book:'Fated Almanac',
-		'Epiphany' : {
+		'(Epiphany)' : {
+				requirement:'',
 				story:'',
 				text:'После провала Магической дуэли во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magical skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Arcane Musings' : {
-				story:'',
+		'(Arcane Musings)' : {
+				requirement:'',
+				story:'Part of the character’s mind is constantly considering arcane Aspects of the world, preparing his mind to work wonders.',
 				text:'This character removes a single ♣ from the TN of any Spell he casts.',
 				trigger:'',
+				limit:'',
 			},
-		'Empowered Channeling' : {
-				story:'',
+		'(Empowered Channeling)' : {
+				requirement:'',
+				story:'When the character chooses to channel a Spell more carefully it is infused with even greater arcane power.',
 				text:'When casting a spell, the character increases the value of his Focus condition by 1. This Talent only applies if the character has the Focus condition (he does not gain it if he does not have it).',
 				trigger:'',
+				limit:'',
 			},
+		' (Mastered Magia)' : {
+			requirement:'',
+			story:'To be considered a master of a Magia, one must devote considerable time to the arcane arts.',
+			text:'Choose a Magia which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Magia. In addition, if the character does not have a Grimoire, he may act as if he possessed a Grimoire with the chosen Magia in it. This means that he may cast a Spell without a Grimoire if he has mastered the appropriate Magia and Immuto.',
+			trigger:'',
+			limit:'',
+		},
+		' (Masterd Immuto)' : {
+			requirement:'',
+			story:'Long hours of use has led to the mastery of a single magical Immuto.',
+			text:'Choose an Immuto which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Immuto.',
+			trigger:'',
+			limit:'',
+		},
+		' (Spell Affinity)' : {
+			requirement:'',
+			story:'Repeated use has given the character an affinity with a particular Spell component.',
+			text:'Choose a specific Immuto or Magia. All Challenge Flips to cast Spells or resist Spells that contain the chosen Genus, Immuto, or Magia gain +.',
+			trigger:'A character may have the Spell Affinity Talent multiple times, but each time a different Genus, Immuto, or Magia must be chosen. In addition, a character may only benefit from one Spell Affinity during a Challenge Flip.',
+			limit:'',
+		},
 	},
 	drudge : {
 		book:'Fated Almanac',
-		'Hard days night' : {
+		'(Hard days night)' : {
+				requirement:'',
 				story:'',
 				text:'Whenever failed a Training duel, можно вытянуть карту на руку. Эпилог: можно развить любой Training skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Long Days' : {
-				story:'',
+		'(Long Days)' : {
+				requirement:'',
+				story:'Some days just won’t end, and this character can push himself on where others would collapse.',
 				text:'The character may discard a Искаженную карту (Twist card) to automatically pass any Unconsiosness Challenge. In addition, he gains the following Trigger on all Resilence and Tenacity Duels (but not Defence or Willpower Duels):',
 				trigger:'♥ Recuperate: After resolving, heal 1 damage.',
+				limit:'',
 			},
-		'Steady Pace' : {
-				story:'',
+		'(Steady Pace)' : {
+				requirement:'',
+				story:'Efforts that proceed at a reliable speed are, for this character, far more efficient than sudden bursts of energy.',
 				text:'Во время an Ongoing Challenge, if the character succeeds at a Challenge Flip he gains a + to the next Challenge Flip. A character may have this Talent up to three times, and the effects stack.',
 				trigger:'',
+				limit:'',
 			},
-		'Team Work' : {
+		'(Team Work)' : {
+				requirement:'',
 				story:'',
 				text:'When assisting another character or being assisted, this character adds an additional + to the Challenge Flip. A character may have this Talent up two times, and the effects stack.',
 				trigger:'',
+				limit:'',
 			},
-		'Slow To Die' : {
-				story:'',
+		'(Slow To Die)' : {
+				requirement:'',
+				story:'It takes more to really hurt this character than most.',
 				text:'Critical Effect Flips against this character gain -. A character may have this Talent up to three times, and the effects stack.',
 				trigger:'',
+				limit:'',
 			},
-		'Long Suffering' : {
-				story:'',
+		'(Long Suffering)' : {
+				requirement:'',
+				story:'The years have not been kind, but the character has learned not to expect such kindness.',
 				text:'The character may use Resilence instead of Tenacity, or vice versa, when calculating the Initial Acting value of any Challenge Flip that uses one of those two Aspects.',
 				trigger:'',
+				limit:'',
 			},
-		'Cant\'t Keep Me Down' : {
-				story:'',
+		'(Cant\'t Keep Me Down)' : {
+				requirement:'',
+				story:'It takes a lot to keep this character from fighting.',
 				text:'The character may discard a card from his Control Hand to ignore the negative effects of all Critical Effects until the end of his turn. This does not heal the effects, the character just powers through the pain, or pushes his damaged body beyond normal limits.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	graverobber : {
 		book:'Fated Almanac',
-		'Black soul' : {
+		'(Black soul)' : {
+				requirement:'',
 				story:'',
 				text:'После провала дуэли Magic duel во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magical skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Morbid Thoughts' : {
-				story:'',
-				text:'',
+		'(Morbid Thoughts)' : {
+				requirement:'',
+				story:'This is a character who is constantly dwelling on death and its power, making some magic much easier to cast.',
+				text:'This character removes a single ♠ from the TN of any Spell he casts.',
 				trigger:'',
+				limit:'',
 			},
-		'Deathly Pallor' : {
-				story:'',
-				text:'',
+		'(Deathly Pallor)' : {
+				requirement:'',
+				story:'Time spent among the dead (or undead) has given this character an unmistakable aura of the grave.',
+				text:'The character gains + to any challenge to Intimidate or strike fear (including Spells).',
 				trigger:'',
+				limit:'',
 			},
-		'Macabre Infusions' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Macabre Infusions)' : {
+				requirement:'',
+				story:'Time spent around necromantic energies and locations has infused the character’s body with death like qualities.',
+				text:'The character counts as undead as well as Living if he wishes.',
+				trigger:'This also means that many undead will treat the character with disinterest (instead of attacking him), per the Fatemaster’s discretion.',
+				limit:'',
 			},
-		'Unholy Beacon' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Unholy Beacon)' : {
+				requirement:'',
+				story:'The undead bow to the character’s whims.',
+				text:'The character may discard a card from his Control Hand to take control of any undead (including natural undead, or undead under another character’s control). The undead acts as if it were the character’s minion.',
+				trigger:'Sentient undead may resist this ability. The character must succeed on a Charm + Necromancy Challenge Flip against the sentient undead’s Tenacity + Resilience to dominate it.',
+				limit:'',
 			},
+		' (Mastered Magia)' : {
+			requirement:'',
+			story:'To be considered a master of a Magia, one must devote considerable time to the arcane arts.',
+			text:'Choose a Magia which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Magia. In addition, if the character does not have a Grimoire, he may act as if he possessed a Grimoire with the chosen Magia in it. This means that he may cast a Spell without a Grimoire if he has mastered the appropriate Magia and Immuto.',
+			trigger:'',
+			limit:'',
+		},
+		' (Masterd Immuto)' : {
+			requirement:'',
+			story:'Long hours of use has led to the mastery of a single magical Immuto.',
+			text:'Choose an Immuto which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Immuto.',
+			trigger:'',
+			limit:'',
+		},
 	},
 	guard : {
 		book:'Fated Almanac',
-		'Now you are pissing me off' : {
+		'(Now you are pissing me off)' : {
+				requirement:'',
 				story:'',
 				text:'После провала дуэли Close Combat duel во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Close Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Stoic Defender' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Stoic Defender)' : {
+				requirement:'',
+				story:'The character has learned to grimly shield himself from attacks.',
+				text:'This character gains the following Trigger on all Defense Duels:',
+				trigger:'♦ Just a Glance: When suffering damage, reduce the amount of damage suffered by 1, to a minimum of 1. ',
+				limit:'',
 			},
-		'Inevitable Defence' : {
-				story:'',
-				text:'',
+		'(Inevitable Defence)' : {
+				requirement:'',
+				story:'This character doesn’t rely on luck or the whims of fate when he adopts a defensive posture.',
+				text:'When this character takes a Defensive Stance Action, he does not have to discard a Twist Card. In addition, when this character takes a Defensive Stance Action, all friendly characters also gain + to Defense Challenges while they remain within 2 yards of him.',
 				trigger:'',
+				limit:'',
 			},
-		'Take The Hit' : {
-				story:'',
-				text:'',
+		'(Take The Hit)' : {
+				requirement:'',
+				story:'Leaping in front of a friend, the character takes a hit for him.',
+				text:'The character may discard a card from his Control Hand after an attack hits a target character (friendly or not) within 2 yards, but before damage is dealt. This character moves to a position in front of the target character. This character takes the hit for the target character and Damage Flip suffers - .',
 				trigger:'',
+				limit:'',
 			},
-		'Hard To Wound' : {
-				story:'',
-				text:'',
+		'(Hard To Wound)' : {
+				requirement:'',
+				story:'This rugged character can resist damage better than most.',
+				text:'This character imposes a - to any Damage Flip made against him.',
 				trigger:'',
+				limit:'A character may have this Talent up to two times, and the effects stack.',
 			},
-		'Flurry' : {
-				story:'',
-				text:'',
+		'Шквал (Flurry)' : {
+				requirement:'',
+				story:'Когда дело доходит до нанесения стремительных атак с оружием в руках, этот персонаж делает это эффективно, и скорее всего жестоко.',
+				text:'Выберите навык Ближнего Боя (Close Combat). Этот персонаж имеет доступ к следующему атакующему Действию с выбранным навыком: (2) Шквал: Персонаж может сбросить Искаженную карту (Twist card) чтобы выполнить три (1) ОД (AP) удара оружием Ближнего Боя, использующим выбранный навык, против одной цели.',
 				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык Ближнего Боя.',
 			},
-		'Unyielding' : {
-				story:'',
-				text:'',
+		'(Unyielding)' : {
+				requirement:'',
+				story:'The character is a master of defensive skills, protecting both himself and his companions with ease.',
+				text:'The character reduces the cost of Defensive Stance Actions by 1 AP (to a minimum of 0).',
 				trigger:'',
+				limit:'',
 			},
 	},
 	gunfighter : {
 		book:'Fated Almanac',
-		'Finger on the trigger' : {
+		'(Finger on the trigger)' : {
+				requirement:'',
 				story:'',
 				text:'После провала дуэли Ranged Combat duel during dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Ranged Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Quick Draw' : {
-				story:'',
+		'(Quick Draw)' : {
+				requirement:'',
+				story:'With blinding speed this character can draw his weapon, sometimes faster than anyone can see.',
 				text:'The character gains following Trigger on any Challenge Flip (including Initiative Flips). In addition, the character treats (1) Ready Weapon Actions as if they were (0) Ready Weapon Actions.',
 				trigger:'♥ Quick Draw: Take a Ready Weapon Action immediately after this Challenge Flip is resolved.',
+				limit:'',
 			},
-		'Call Out' : {
-				story:'',
+		'(Call Out)' : {
+				requirement:'',
+				story:'Some men just have a knack for jawin’ in such a way as to call attention to themselves, even in a fight.',
 				text:'This character may discard a card from his Control Hand to give a target character a -3 penalty on any attack Action that does not target this character.',
 				trigger:'',
+				limit:'',
 			},
-		'Gunfighter' : {
-				story:'',
+		'(Gunfighter)' : {
+				requirement:'',
+				story:'This character is comfortable with a ranged weapon, even up close.',
 				text:'Choose a Ranged skill; this character may choose to use the weapon as if its Range were melee-2 yards. A character may have this Talent multiple times, choosing a different Ranged skill each time.',
 				trigger:'',
+				limit:'',
 			},
-		'No Time For This' : {
-				story:'',
+		'(No Time For This)' : {
+				requirement:'',
+				story:'It’s been said that if brute force doesn’t work, enough wasn’t employed, and this character understands the unsubtle truth of that statement.',
 				text:'Whenever this character is involved in an Ongoing Challenge he may choose to make one of the Challenge Flips (at any point in the Action) using his Pistols or Shotgun skill instead of the appropriate skill (he still uses the appropriate Aspect, however).',
 				trigger:'',
+				limit:'',
 			},
-		'Rapid Fire' : {
-				story:'',
+		'(Rapid Fire)' : {
+				requirement:'',
+				story:'Whether it is fanning a revolver, or quickly levering a rifle, this character is capable of burning through ammunition.',
 				text:'Choose a Ranged Combat skill. This character has access to the following attack Action with the chosen skill:',
 				trigger:'(2) Rapid Fire: The character may discard a Искаженную карту (Twist card) to take three 1 AP strikes with a Ranged weapon using the chosen skill, against a single target. A character may have this Talent multiple times, each time he must choose a different Ranged Combat skill.',
+				limit:'',
 			},
-		'Ranged Expert' : {
-				story:'',
+		'(Ranged Expert)' : {
+				requirement:'',
+				story:'Making Ranged attacks is second nature to this character, who is able to point and shoot with terrifying efficiency.',
 				text:'This character generates an additional AP on its turn, which must be used to make a strike with a Ranged weapon.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	mercenary : {
 		book:'Fated Almanac',
-		'Deadset' : {
+		'(Deadset)' : {
+				requirement:'',
 				story:'',
 				text:'После провала дуэли Ranged Combat duel during dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Ranged Combat skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Speed Loading' : {
-				story:'',
+		'(Speed Loading)' : {
+				requirement:'',
+				story:'The most professional of combatants understand that running out of bullets can be a death sentence, and this character has taken steps to ensure that this rarely happens to him.',
 				text:'Choose a type of firearm skill (Long Arms, Pistols, Shotguns, or Heavy Weapons). The character gains the following Trigger on any attack Action with that type of weapon.',
 				trigger:'♥: Reload this weapon if its Reload AP cost is 2 or lower.',
+				limit:'',
 			},
-		'Gruesome Attack' : {
-				story:'',
+		'(Gruesome Attack)' : {
+				requirement:'',
+				story:'Combat is a dangerous thing, and a skilled warrior knows exactly where to put the bullet or blade.',
 				text:'Choose a single Melee or Ranged skill. All Critical Effect Flips generated by attacks using the chosen skill gain +. A character may have this ability multiple times (even with the same skill) and the effects stack.',
 				trigger:'',
+				limit:'',
 			},
-		'Tricky Shot' : {
-				story:'',
+		'(Tricky Shot)' : {
+				requirement:'',
+				story:'The character is highly adept at pulling off tricky shots in a variety of conditions.',
 				text:'Choose a Ranged Combat skill. While making a Ranged attack Challenge Flip with the chosen skill, the character may choose to ignore one negative Fate Modifier source.',
 				trigger:'',
+				limit:'',
 			},
-		'Coin For Kills' : {
-				story:'',
+		'(Coin For Kills)' : {
+				requirement:'',
+				story:'It doesn’t matter if he is hunting a posted bounty or was paid to fight, this character is highly motivated by profit to commit violence.',
 				text:'The character gains + to the Damage Flip of any attack against a target he was paid to fight (or kill). It falls to Fatemaster’s discretion what counts as “paid to fight,” but for the most part, if the character was hired to commit violence, he should have access to this ability in pursuit of that contract.',
 				trigger:'',
+				limit:'',
 			},
-		'Relentless' : {
+		'(Relentless)' : {
+				requirement:'',
 				story:'',
 				text:'The character doesn\'t believe that life is scared, not even his own. This character is immune to the effects of Horror.',
 				trigger:'',
+				limit:'',
 			},
-		'Endless Pursuit' : {
-				story:'',
+		'(Endless Pursuit)' : {
+				requirement:'',
+				story:'When this character is hired to track a target, he never gives up.',
 				text:'This character gains + to any Defense Flips against attacks made by targets he was paid to fight. Furthermore, the character may choose to declare anyone with a bounty on their head as someone he was paid to fight (or kill).',
 				trigger:'',
+				limit:'',
 			},
 	},
 	overseer : {
 		book:'Fated Almanac',
-		'Oversight' : {
+		'(Oversight)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Social duel, можно вытянуть карту на руку. Эпилог: можно развить любой Social skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Converted Effort' : {
-				story:'',
-				text:'',
+		'(Concerted Effort)' : {
+				requirement:'',
+				story:'A group is always better acting simultaneously, at least in this character’s eyes.',
+				text:'When friendly characters make Initiative Flips, they may choose to not make an Initiative Flip and use this character’s Initiative value instead.',
 				trigger:'',
+				limit:'',
 			},
-		'Time Is Money' : {
-				story:'',
-				text:'',
+		'(Time Is Money)' : {
+				requirement:'',
+				story:'When a job needs doing, it needs doing quick.',
+				text:'Choose a skill, this character generates an additional Margin of Success whenever he succeeds on a Challenge Flip during an Ongoing Challenge with the chosen skill.',
 				trigger:'',
+				limit:'',
 			},
-		'Work Smarter' : {
-				story:'',
-				text:'',
+		'(Work Smarter)' : {
+				requirement:'',
+				story:'With stern looks or shouted abuse, this character can make anyone focus a little bit more intensely.',
+				text:'This character may discard a card from his Control Hand to add the Suit of the discarded card to the Initial Acting value of himself or another friendly character that can see or hear him.',
 				trigger:'',
+				limit:'',
 			},
-		'Delegate' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Delegate)' : {
+				requirement:'',
+				story:'This character is adept at making sure others have the opportunity to protect him.',
+				text:'The character gains the following Trigger to all Defense Duels:',
+				trigger:'♣ “Delegate”: When damage is dealt to this character, a friendly character within 3 yards becomes the target of the attack instead.',
+				limit:'',
 			},
-		'You Lazy So & So' : {
-				story:'',
-				text:'',
+		'(You Lazy So & So)' : {
+				requirement:'',
+				story:'A tolerance for the faults (or suffering) of others doesn’t impede this character in the slightest.',
+				text:'This character may discard a card from his Control Hand to allow a friendly character that can see or hear him to ignore the effects of all Critical Effects until the end of that character’s turn. The character must still make any challenges (such as Unconsciousness challenges) he is called upon to make by his injuries, he simply ignores the effects until the end of his turn.',
 				trigger:'',
+				limit:'A character may have this ability multiple times, each time after the first, the duration of the effect lasts an additional turn.',
 			},
-		'Now Men!' : {
-				story:'',
-				text:'',
+		'(Now Men!)' : {
+				requirement:'',
+				story:'A life of leading men has given the character a commanding presence in an emergency.',
+				text:'This character may discard three cards from his Control Hand. If he does, every friendly character that can see or hear him may immediately take a 1 AP Action in any order that this character wishes.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	performer : {
 		book:'Fated Almanac',
-		'Flare for the dramatic' : {
+		'(Flare for the dramatic)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Social duel, можно вытянуть карту на руку. Эпилог: можно развить любой Social skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Powerful Impression' : {
-				story:'',
-				text:'',
-				trigger:'',
+		'(Powerful Impression)' : {
+				requirement:'',
+				story:'This character draws attention whenever he wants, and is used to the spotlight.',
+				text:'This character gains the following Trigger on all Social Duels:',
+				trigger:'♦ Impress: : After resolving, draw a card.',
+				limit:'',
 			},
-		'Grace Under Fire' : {
-				story:'',
-				text:'',
+		'(Grace Under Fire)' : {
+				requirement:'',
+				story:'As they say, the show must go on, and this character handles danger, as well as the unexpected, with grace.',
+				text:'This character may use Grace instead of Speed to derive his Defense Aspect, as well he may use Grace instead of Speed during Initiative Flips.',
 				trigger:'',
+				limit:'',
 			},
-		'Helluva Entrance' : {
-				story:'',
-				text:'',
+		'(Helluva Entrance)' : {
+				requirement:'',
+				story:'This character never fails to make an impression when he enters the room.',
+				text:'This character gains + to the first Challenge Flip he makes in any scene.',
 				trigger:'',
+				limit:'',
 			},
-		'Classically Trained' : {
-				story:'',
-				text:'',
+		'(Classically Trained)' : {
+				requirement:'',
+				story:'This character has received training from a true thespian, or at least pretends to have.',
+				text:'Choose a single Social skill, the maximum rating for this skill is 6 (instead of 5).',
 				trigger:'',
+				limit:'A character may have the Classically Trained Talent multiple times, but each time a different skill must be chosen.',
 			},
-		'Graceful Exit' : {
-				story:'',
-				text:'',
+		'(Graceful Exit)' : {
+				requirement:'',
+				story:'The character is adept at removing themselves from view, or becoming unassuming.',
+				text:'This character may discard a card from his Control Hand to impose a -- on any attack that targets him directly (not Area attacks), until the end of his next Turn.',
 				trigger:'',
+				limit:'',
 			},
-		'That\'s Showbiz' : {
-				story:'',
-				text:'',
+		'(That\'s Showbiz)' : {
+				requirement:'',
+				story:'In any social situation, this character is adept at becoming liked, even when he wishes to coerce a mark.',
+				text:'The character may exchange Charm for any other Aspect when he makes a Social Challenge.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	pioneer : {
 		book:'Fated Almanac',
-		'Rugged individual' : {
+		'(Rugged individual)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Training duel, можно вытянуть карту на руку. Эпилог: можно развить любой Training skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Born Under A Wandering Star' : {
-				story:'',
+		'(Born Under A Wandering Star)' : {
+				requirement:'',
+				story:'While navigating Malifaux is extremely difficult (as traditional navigation uses the laws of Earth), this character is capable of navigating any environment.',
 				text:'The character never suffers negative Fate Modifiers to his Navigation or Wilderness tests.',
 				trigger:'',
+				limit:'',
 			},
-		'Circle The Wagons' : {
-				story:'',
+		'(Circle The Wagons)' : {
+				requirement:'',
+				story:'This character knows how to quickly fortify an area for defense.',
 				text:'The character can discard a card from his Control Hand to make all friendly characters that can hear him treat all cover as Hard cover.',
 				trigger:'',
+				limit:'',
 			},
-		'Tougth as Nails' : {
-				story:'',
+		'(Tough as Nails)' : {
+				requirement:'',
+				story:'This rugged character just doesn’t concern himself with pain or suffering, allowing him to ignore part of almost any attack.',
 				text:'When attacking this character with a Ranged or Melee strike, the Attacker cannot declare any Triggers.',
 				trigger:'',
+				limit:'',
 			},
-		'Ornery' : {
-				story:'',
+		'(Ornery)' : {
+				requirement:'',
+				story:'There are some men who just have to be dragged kicking and screaming into the cold darkness of death.',
 				text:'When the character suffers a Critical Effect the effect suffers a -3 penalty to the Flip. A character may have this Talent more than once, and the effects stack.',
 				trigger:'',
+				limit:'',
 			},
-		'Soldier On' : {
-				story:'',
+		'(Soldier On)' : {
+				requirement:'',
+				story:'There are some men who won’t quit, and they can inspire others to press on despite the worst the world can throw at them.',
 				text:'At the beginning of Dramatic Time this character may heal 2/3/5 damage, if he has 1 or more Wound remaining. In addition, he may choose to have any friendly character that can hear him also heal 2/3/5 damage, if the character has 1 or more Wounds remaining.',
 				trigger:'',
+				limit:'',
 			},
-		'Relentless' : {
+		'(Relentless)' : {
+				requirement:'',
 				story:'',
 				text:'The character doesn\'t believe that life is scared, not even his own. This character is immune to the effects of Horror.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	scrapper : {
 		book:'Fated Almanac',
 		'Кровожадный (Bloody Minded)' : {
+				requirement:'',
 				story:'',
 				text:'После провала дуэли Ближнего Боя (Close Combat) во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой навык Ближнего Боя (Close Combat) в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
 		'Сомкнуть разрыв (Close the Gap)' : {
-				story:'',
+				requirement:'',
+				story:'This character isn’t afraid to charge into combat, and knows how to press this instinct for an advantage.',
 				text:'Когда персонаж заявляет Действие Нападения (Charge Action) он может вытянуть Искаженную карту (Twist card) на руку.',
 				trigger:'',
+				limit:'',
 			},
 		'Шквал (Flurry)' : {
-				story:'',
-				text:'Выберите навык Ближнего Боя (Close Combat. Этот персонаж имеет доступ к следующему атакующему Действию с выбранным навыком: (2) Шквал: Персонаж может сбросить Искаженную карту (Twist card) чтобы выполнить три (1) ОД (AP) удара оружием Ближнего Боя, использующим выбранный навык, против одной цели. Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык Ближнего Боя.',
+				requirement:'',
+				story:'Когда дело доходит до нанесения стремительных атак с оружием в руках, этот персонаж делает это эффективно, и скорее всего жестоко.',
+				text:'Выберите навык Ближнего Боя (Close Combat). Этот персонаж имеет доступ к следующему атакующему Действию с выбранным навыком: (2) Шквал: Персонаж может сбросить Искаженную карту (Twist card) чтобы выполнить три (1) ОД (AP) удара оружием Ближнего Боя, использующим выбранный навык, против одной цели.',
 				trigger:'',
+				limit:'Персонаж может взять этот Талант несколько раз, каждый раз он должен выбирать разный навык Ближнего Боя.',
 			},
 		'Восстановление (Recovery)' : {
-				story:'',
+				requirement:'',
+				story:'Scrapes and cuts mean little to this character, and he can heal quickly from injury.',
 				text:'Персонаж получает + ко всем Переворотам Лечения (Healing Flip) которые  делает. Персонаж может взять этот Талант больше одного раза, и эффекты складываются.',
 				trigger:'',
+				limit:'',
 			},
 		'Видеть всех (Watch Them All)' : {
-				story:'',
+				requirement:'',
+				story:'This characters ability to watch an opponent in a fight translates into social situations as well.',
 				text:'Этот персонаж получает + ко всем попыткам противостоять угрозам (intimidation) или обману (deception). Также персонаж получает + ко всем Переворотам Инициативы (Initiative Flips).',
 				trigger:'',
+				limit:'',
 			},
 		'Злобный (Wicked)' : {
-				story:'',
+				requirement:'',
+				story:'Every opening is a chance to hurt an opponent, and this character isn’t going to hesitate to take the shot.',
 				text:'Когда персонаж совершает удерживающий удар (disengaging strike), он наносит урон своим оружием, помимо предотвращения движения цели.',
 				trigger:'',
+				limit:'',
 			},
 		'Эксперт Ближнего боя (Melee Expert)' : {
-				story:'',
+				requirement:'',
+				story:'When this character decides to cut down an opponent, he is incredibly efficient at the task. ',
 				text:'Персонаж получает дополнительное ОД (AP) на свой ход, которое может быть использовано только для атаки оружием ближнего боя (Melee).',
 				trigger:'',
+				limit:'',
 			},
 	},
 	tinkerer : {
 		book:'Fated Almanac',
-		'Gear head' : {
+		'(Gear head)' : {
+				requirement:'',
 				story:'',
 				text:'После провала Магической дуэли во время dramatic time, можно вытянуть карту на руку. Эпилог: можно развить любой Magic skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Push the Limits' : {
-				story:'',
+		'(Push the Limits)' : {
+				requirement:'',
+				story:'This character can ask more of a machine, pushing it beyond its normal capacity.',
 				text:'Character may cause a construct under his control to suffer 1 damage that may not be reduced. If he does so, the construct gains a + to its next Action. The character may use this ability on himself if he has at least one pneumatic limb and that limb is used in the Action.',
 				trigger:'',
+				limit:'',
 			},
-		'Combat Construct' : {
-				story:'',
+		'(Combat Construct)' : {
+				requirement:'',
+				story:'With a flare for the violent, this character’s constructs are all capable of combat.',
 				text:'Whenever the character uses Artefacting to create or repair a construct, he may choose to give it a pneumatic skill equal to his Artefacting skill.',
 				trigger:'',
+				limit:'',
 			},
-		'Percussive Maintenance' : {
-				story:'',
+		'(Percussive Maintenance)' : {
+				requirement:'',
+				story:'With a sharp blow to the right place on a machine, this character can re-align malfunctioning components to keep them operating.',
 				text:'All Artefacting Challenges made to repair contraptions or constructs gain the following Trigger:',
 				trigger:'♣ Advantage: Gain 1 additional Margin of Success.',
+				limit:'',
 			},
-		'Unrealistic Expectations' : {
-				story:'',
+		'(Unrealistic Expectation)' : {
+				requirement:'',
+				story:'Constant tinkering allows this character to improve the performance of his pneumatic limbs, keeping them at peak performance.',
 				text:'This character’s Pneumatic limbs improve one Physical Aspect by 1 (as a group), and the character can change which Aspect is improved with one hour of tinkering. In addition, the TN of repairs to the limbs made by this character is reduced by 5, to a minimum of 1.',
 				trigger:'',
+				limit:'',
 			},
-		'Multi-Tasker' : {
-				story:'',
-				text:'Whenever this character takes a (1) Order Action he may give orders to two construct subordinates instead of one, and the orders may be different. A character may have this ability multiple times, and the effects stack (increasing the number of ordered constructs by 1 each time).',
+		'(Multi-Tasker)' : {
+				requirement:'',
+				story:'This character can command multiple constructs with a word or gesture.',
+				text:'Whenever this character takes a (1) Order Action he may give orders to two construct subordinates instead of one, and the orders may be different.',
 				trigger:'',
+				limit:'A character may have this ability multiple times, and the effects stack (increasing the number of ordered constructs by 1 each time).',
 			},
-		'Over Pressure' : {
-				story:'',
+		'(Over Pressure)' : {
+				requirement:'',
+				story:'This character is able to quickly rig his pneumatic equipment and augmentations for rapid Action.',
 				text:'The character gains the following Trigger on all pneumatic attacks:',
 				trigger:'♣: At the end of this turn the character may make a single extra attack with a pneumatic weapon. This additional attack may not activate any Triggers. This Trigger may only be activated once per turn.',
+				limit:'',
 			},
 	},
 	wastrel : {
 		book:'Fated Almanac',
-		'Educated' : {
+		'(Educated)' : {
+				requirement:'',
 				story:'',
 				text:'При провале Expertise duel, можно вытянуть карту на руку. Эпилог: можно развить любой Expertise skill в дополнение к вариантам развития навыков.',
 				trigger:'',
+				limit:'',
 			},
-		'Luck of the Draw' : {
-				story:'',
+		'(Luck of the Draw)' : {
+				requirement:'',
+				story:'Some men are just born lucky.',
 				text:'This character draws 2 cards when the Fatemaster shuffles the deck, instead of 1.',
 				trigger:'',
+				limit:'',
 			},
-		'Cards Up A Sleeve' : {
-				story:'',
+		'(Cards Up A Sleeve)' : {
+				requirement:'',
+				story:'While many card players know how to cheat a card into their own hands, it takes a special Talent to load someone else’s.',
 				text:'The character may place one card from his Control Hand face up on the table in front of him. Any player may discard a card from their Control Hand to Cheat Fate with the face up card. Afterwards, the face up card is discarded into the appropriate discard pile.',
 				trigger:'',
+				limit:'',
 			},
-		'Trump Card' : {
-				story:'',
+		'(Trump Card)' : {
+				requirement:'',
+				story:'This character always seems to know something everyone else doesn’t.',
 				text:'Во время Dramatic Time, this character can discard a card from his Control Hand after he has taken his turn. If he does so, he may look at the top 3 cards of the Fate Deck and replace them in any order. He may not tell anyone what cards are there, but he may hint that they are good or bad.',
 				trigger:'',
+				limit:'',
 			},
-		'All In' : {
-				story:'',
+		'(All In)' : {
+				requirement:'',
+				story:'This character knows that sometimes you have to risk it all and hope luck is on your side.',
 				text:'This character gains + to all Duels when he has no Искаженную карту (Twist card)s in his hand.',
 				trigger:'',
+				limit:'',
 			},
-		'Play For Blood' : {
-				story:'',
+		'(Play For Blood)' : {
+				requirement:'',
+				story:'When pressed into a corner, this character knows the risks and becomes even more dangerous.',
 				text:'When this character is suffering from one or more Critical Effects, all of his Challenges gain the following Trigger: A character may have this Talent multiple times, increasing the Margins of Success gained by 1 each additional time.',
 				trigger:'♠ Advantage: Gain 1 additional Margin of Success.',
+				limit:'',
 			},
-		'Fifty-Fifty Chance' : {
-				story:'',
+		'(Fifty-Fifty Chance)' : {
+				requirement:'',
+				story:'Every gambler knows that sometimes, you just have to Flip the coin and take your chances.',
 				text:'Once per Dramatic Time, this character may “stack the deck.” To stack the deck, the player goes through the discard pile and Fate Deck to find both Jokers. The Fatemaster then randomly shuffles one into the deck (along with the discard pile) and then places the other on top of the deck. Nobody looks at which is actually on top.',
 				trigger:'',
+				limit:'',
 			},
 	},
 	deathmarshal : {
 		book:'Advanced (Fated Almanac)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	animator : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	augmented : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	collaborator : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	engineer : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	illusionist : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	infiltrator : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	mage : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	primal : {
 		book:'Into the Steam',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	shapeshifter : {
 		book:'Advanced (Into the Steam)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	decemberacolyte : {
 		book:'Advanced (Into the Steam)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	silentone : {
 		book:'Advanced (Into the Steam)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	demolitionist : {
 		book:'Advanced (Into the Steam)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	bully : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	chemist : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	forgotten : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	ghosteater : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	ghoul : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	medium : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	necromancer : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 	sawbones : {
 		book:'Under Quarantine',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 		abettorofobliteration : {
 		book:'Advanced (Under Quarantine)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 		exorcist : {
 		book:'Advanced (Under Quarantine)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 		revenant : {
 		book:'Advanced (Under Quarantine)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 		revivalist : {
 		book:'Advanced (Under Quarantine)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 		studentoftransmortis : {
 		book:'Advanced (Under Quarantine)',
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
-		'' : {
+		' ()' : {
+				requirement:'',
 				story:'',
 				text:'',
 				trigger:'',
+				limit:'',
 			},
 	},
 }
@@ -1958,7 +2973,6 @@ function TalentsTable(){
 		if(pursuit == 'revivalist'){name = 'Реаниматор'}
 		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортиса'}
 
-
 		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");
 		table.append(tr.append(td0))
@@ -1986,7 +3000,7 @@ function TalentsTable(){
 				td1.append(arr1[i])
 
 				// console.log(talents[arr[t]][arr1[i]])
-				var story = talents[arr[t]][arr1[i]].story
+				story = talents[arr[t]][arr1[i]].story
 				if(story){
 					console.log('Story: '+story)
 					td2.append('<span class="talent-story">'+story+'</span><br>')
@@ -2004,7 +3018,14 @@ function TalentsTable(){
 				var trigger = talents[arr[t]][arr1[i]].trigger
 				if(trigger){
 					console.log('Trigger : '+trigger)
-					td2.append('Триггер : '+trigger)
+					// td2.append('Триггер : '+trigger)
+					td2.append(trigger+'<br>')
+				}
+				var limit = talents[arr[t]][arr1[i]].limit
+				if(limit){
+					console.log('limit : '+limit)
+					// td2.append('Триггер : '+limit)
+					td2.append(limit+'<br>')
 				}
 				console.log('-----------')
 				
@@ -2034,8 +3055,6 @@ function getTalent(card,type){
 				else{
 					'none'
 				}
-		
-		
 }
 
 // $('#popup').toggle()

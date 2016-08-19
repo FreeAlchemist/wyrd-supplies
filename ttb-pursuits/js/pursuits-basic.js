@@ -3,7 +3,7 @@ var faction = 'basic';
 var pursuit = {
 	'academic' : {
 		name:'академик',
-		text:'Академики ценятся за знания, которыми они владеют и вклад который вносят. Они как правило обладают высокой осведомленностью о культуре и архитектуре Малифо, предоставляя существенную информацию помогающую управлять заброшенными констрактами и находить не только новый знания, но и предметы обладающие силой и ценностью.',
+		text:'Академик является экспертом в области знаний и пользуется популярностью, когда возникают сложные вопросы.',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : 'Student of Knowledge',
@@ -20,7 +20,7 @@ var pursuit = {
 	},
 	'criminal' : {
 		name: 'преступник',
-		text:'criminal text',
+		text:'Преступник сметлив в получении того, что хочет. Иногда даже законным путем!',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : 'Competitive Edge',
@@ -37,7 +37,7 @@ var pursuit = {
 	},
 	'dabbler' : {
 		name: 'дилетант',
-		text:'dabbler text',
+		text:'Дилетант сделал первый шаг по дороге запретных знаний.',
 		gear:'Гримуар: 1 Sorcery Magia, 1 Prestidigitation Magia, 3 Immuto. Магическая Теория',
 		step:{
 			'1' : 'Arcane Musings',
@@ -54,7 +54,7 @@ var pursuit = {
 	},
 	'drudge' : {
 		name: 'трудяга',
-		text:'drudge text',
+		text:'Трудяга явдяется паромеханически усиленным рабочим, он выполнит работу несмотря на трудности.',
 		gear:'1 пневматическая конечность + паровые улучшения (общая стоимость до 25§)',
 		step:{
 			'1' : 'Long Days',
@@ -71,7 +71,7 @@ var pursuit = {
 	},
 	'graverobber' : {
 		name: 'гробокопатель',
-		text:'graverobber text',
+		text:'Гробокопатель сторонится цивилизованного общества в погоне за древними силами.',
 		gear:'Гримуар: 1 Necromancy Magia, 1 Enchanting Magia, 3 Immuto. Магическая Теория',
 		step:{
 			'1' : 'Morbid Thoughts',
@@ -88,7 +88,7 @@ var pursuit = {
 	},
 	'guard' : {
 		name: 'гвардеец',
-		text:'guard text',
+		text:'Гвардеец высоко ценится как стойкий и защищенный боец.',
 		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
 		step:{
 			'1' : 'Stoic Defender',
@@ -105,7 +105,7 @@ var pursuit = {
 	},
 	'gunfighter' : {
 		name: 'стрелок',
-		text:'gunfighter text',
+		text:'Стрелок считается мастером дуэли один на один.',
 		gear:'пистолет либо дробовик стоимостью до 20§ + 1 кастомизация (стр 150) без дополнительных затрат',
 		step:{
 			'1' : 'Quick Draw',
@@ -122,7 +122,7 @@ var pursuit = {
 	},
 	'mercenary' : {
 		name: 'наемник',
-		text:'mercenary text',
+		text:'Наемник это человек с пушкой за ваши деньги. Знает толк в длинноствольном оружии.',
 		gear:'карабин либо ружье стоимостью до 20§ + 1 кастомизация (стр 150) без дополнительных затрат',
 		step:{
 			'1' : 'Speed Loading',
@@ -139,10 +139,10 @@ var pursuit = {
 	},
 	'overseer' : {
 		name: 'смотритель',
-		text:'overseer text',
+		text:'Смотритель это начальник, владелец магазина или бригадир, кто знает как организовать работу правильно.',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
-			'1' : 'Converted Effort',
+			'1' : 'Concerted Effort',
 			'2' : 'General Talent',
 			'3' : 'Time Is Money либо Work Smarter',
 			'4' : 'General Talent',
@@ -156,7 +156,7 @@ var pursuit = {
 	},
 	'performer' : {
 		name: 'исполнитель',
-		text:'performer text',
+		text:'Талантливый актер, танцор или музыкант, знающий толк в артистизме и дезориентации.',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : 'Powerful Impression',
@@ -173,16 +173,16 @@ var pursuit = {
 	},
 	'pioneer' : {
 		name: 'первопроходец',
-		text:'pioneer text',
+		text:'Выносливый путешественник, который может выжить и рпоцветать практически в любой среде.',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : 'Born Under A Wandering Star',
 			'2' : 'General Talent',
-			'3' : 'Circle The Wagons либо Tougth as Nails',
+			'3' : 'Circle The Wagons либо Tough as Nails',
 			'4' : 'General Talent',
 			'5' : 'Circle The Wagons либо Ornery',
 			'6' : 'General Talent',
-			'7' : 'Soldier On либо Tougth as Nails',
+			'7' : 'Soldier On либо Tough as Nails',
 			'8' : 'General Talent',
 			'9' : 'Ornery',
 			'10' : 'Relentless',
@@ -190,7 +190,7 @@ var pursuit = {
 	},
 	'scrapper' : {
 		name: 'задира',
-		text:'scrapper text',
+		text:'Задира использует свое тело и рукопашное оружие для победы в бою.',
 		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
 		step:{
 			'1' : 'Close the Gap',
@@ -207,24 +207,24 @@ var pursuit = {
 	},
 	'tinkerer' : {
 		name: 'жестянщик',
-		text:'tinkerer text',
+		text:'Жестянщик может строить удивительных констрактов неподдающихся логике.',
 		gear:'Гримуар: 1 Enchanting Magia, 1 Sorcery Magia, 3 Immuto. Магическая Теория',
 		step:{
 			'1' : 'Push the Limits',
 			'2' : 'General Talent',
 			'3' : 'Combat Construct либо Percussive Maintenance',
 			'4' : 'General Talent',
-			'5' : 'Combat Construct либо Unrealistic Expectations',
+			'5' : 'Combat Construct либо Unrealistic Expectation',
 			'6' : 'General Talent',
 			'7' : 'Multi-Tasker либо Percussive Maintenance',
 			'8' : 'General Talent',
-			'9' : 'Multi-Tasker либо Unrealistic Expectations',
+			'9' : 'Multi-Tasker либо Unrealistic Expectation',
 			'10' : 'Over Pressure',
 		}
 	},
 	'wastrel' : {
 		name: 'кутила',
-		text:'wastrel text',
+		text:'Кутила это дилетант социального статуса, у которого столько же имен, сколько и друзей.',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : 'Luck of the Draw',

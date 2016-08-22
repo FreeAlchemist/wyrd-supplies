@@ -17,27 +17,43 @@ $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Занятия: Beyond Fate'}))
 // $('#menu').append($('<div />',{class:'row'}))
+
 function activeBtn(elem){
 	console.log(elem)
+	var active = 0
 	if($(elem).hasClass('btnactive')){
 			$(elem).removeClass('btnactive')
+			active = 0
 		}
 		else{
 			$(elem).addClass('btnactive')
+			active = 1
 		}
+		return active
 }
 
 
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Таланты занятий','click':function(){
-	$('#popup').toggle()
-	$('#page').toggle()
-	activeBtn(this)
-
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты','click':function(){
+	var active = activeBtn(this)
+	console.log(active)
+	if(active == '0'){
+		$('#popup').hide()
+		$('#talents-general').hide()
+		$('#page').show()
+	}
+		else{
+			$('#popup').show()
+			$('#talents-general').show()
+			$('#page').hide()
+		}
 }}))
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий','click':function(){
+
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий (обложка)','click':function(){
 	$('.pursuit-text').toggle()
 	activeBtn(this)
 }}))
+
+$('#menu').append($('<p />',{text:'Чтобы увидеть таланты занятия, нажмите на блок "Развитие талантов" карточки.'}))
 
 var arr = [];
 
@@ -58,7 +74,7 @@ for (var i = 0; i < quantity; i++) {
 	console.log(cardid)
 	$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 	$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
-	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2'}))
+	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id)}}))
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuit[cardid].name}))
 
 	if(pursuit[cardid].gear){
@@ -74,10 +90,7 @@ for (var i = 0; i < quantity; i++) {
 	var stepid = cardfrontid+'-bg2'+'-step'
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
-	$('#'+stepid).append($('<b />',{text:'Развитие талантов','click':function(){
-		// $('#talents-scrapper').toggle()
-		// $('#popup').toggle()
-	}}))
+	$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
 	//#popup #talents-scrapper
 
 	var steparr = [];

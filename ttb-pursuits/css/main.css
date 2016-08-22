@@ -260,6 +260,10 @@ border: 0.1cm solid rgba(68, 68, 73, 1);
 /*background-image:radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);*/
 }
 
+.front2:hover{
+	cursor: pointer;
+}
+
 .step-ol{
 /*position: absolute;*/
 /*bottom: 0px;*/
@@ -359,8 +363,11 @@ border-bottom-style: none;
 
 .talentstable{
 	margin-top: 9px;
-	/*background-color: Linen;*/
+	background-color: Linen;
+	/*display: none;*/
 }
+
+
 .talentstable td{
 border:solid 1px;
 font-size: 10pt;
@@ -395,8 +402,30 @@ width: 500px;
 	background-color: Linen;
 }
 
-.talent-story{
+.talents-story{
 	font-style: italic;
+	margin: 0px;
+	/*margin-top: 5px;*/
+}
+
+.talents-requirement{
+	margin: 0px;
+	margin-top: 5px;
+}
+
+.talents-text{
+	margin: 0px;
+	margin-top: 5px;
+}
+
+.talents-trigger{
+	margin: 0px;
+	margin-top: 5px;
+}
+
+.talents-limit{
+	margin: 0px;
+	margin-top: 5px;
 }
 
 .btn{
@@ -437,4 +466,17 @@ width: 500px;
     border-top-width: 2px;
     color: black;
     box-shadow: inset 0px 4px 10px Saddlebrown;
+}
+
+.talents-btn{
+	float: right;
+}
+
+@media print{
+	.talentstable,.talentstable-pursuit{
+		background-color: white;
+	}
+	.talents-btn{
+		display: none;
+	}
 }

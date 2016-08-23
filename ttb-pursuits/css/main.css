@@ -363,7 +363,7 @@ border-bottom-style: none;
 
 .talentstable{
 	margin-top: 9px;
-	background-color: Linen;
+	/*background-color: Linen;*/
 	/*display: none;*/
 }
 
@@ -376,9 +376,8 @@ padding: 5px;
 
 .talentstable-pursuit
 {
-padding-left: 10px;
 text-transform: uppercase;
-line-height: 20pt;
+line-height: 40px;
 background-color: rgba(211, 204, 199, 1);
 }
 
@@ -437,7 +436,7 @@ width: 500px;
     border-radius: 5px;
     border-right-color: Burlywood;
     border-right-width: 3px;
-    border-style: groove;
+    border-style: ridge;
     border-top-color: Bisque;
     border-top-width: 2px;
     color: black;
@@ -470,6 +469,16 @@ width: 500px;
 
 .talents-btn{
 	float: right;
+	height: 40px;
+	width: 60px;
+}
+
+.btn-pursuit{
+	height: 30px;
+	width: 200px;
+	text-align: left;
+	text-transform: capitalize;
+	margin-bottom: 5px;
 }
 
 @media print{
@@ -478,5 +487,8 @@ width: 500px;
 	}
 	.talents-btn{
 		display: none;
+	}
+	.pursuit-text{
+		background-color: White;
 	}
 }

@@ -74,7 +74,7 @@ for (var i = 0; i < quantity; i++) {
 	console.log(cardid)
 	$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 	$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
-	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id)}}))
+	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id,'t')}}))
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuit[cardid].name}))
 
 	if(pursuit[cardid].gear){
@@ -102,6 +102,8 @@ for (var i = 0; i < quantity; i++) {
 		$('#'+stepid).append($('<li />',{text:pursuit[cardid].step[s]}))
 
 	};
+
+	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:'Таланты: '+pursuit[cardid].name,'click':function(){showElem(this.id,'c')}}))
 };
 
 /*separator*/

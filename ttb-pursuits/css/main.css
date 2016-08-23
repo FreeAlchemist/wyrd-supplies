@@ -474,11 +474,11 @@ width: 500px;
 }
 
 .btn-pursuit{
-	height: 30px;
+	height:50px;
 	width: 200px;
 	text-align: left;
 	text-transform: capitalize;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 }
 
 @media print{
@@ -491,4 +491,42 @@ width: 500px;
 	.pursuit-text{
 		background-color: White;
 	}
+}
+
+.talentstable-img,.talentstable-gear,.talentstable-options{
+	float: left;
+}
+
+.talentstable-img{
+width: 3cm;
+height: 100%;
+}
+.talentstable-img div{
+border:solid 1px black;
+background-color: White;
+position: relative;
+height: 4cm;
+background-position: center;
+background-position: 50% 5px;
+background-size: auto 100%;
+background-repeat: no-repeat;
+margin: 0.3cm;
+}
+.talentstable-gear{
+	
+}
+
+.talentstable-gear div.gear-text{
+	width: 6cm;
+	font-size: 10pt;
+}
+
+.talentstable-options{
+	float: right;
+	width: 8cm;
+}
+
+.talentstable-options .step-ol{
+	font-size: 8pt;
+	
 }

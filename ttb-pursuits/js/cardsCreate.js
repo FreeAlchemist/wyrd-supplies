@@ -48,12 +48,12 @@ $('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursu
 		}
 }}))
 
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий (обложка)','click':function(){
-	$('.pursuit-text').toggle()
-	activeBtn(this)
-}}))
+// $('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий (обложка)','click':function(){
+// 	$('.pursuit-text').toggle()
+// 	activeBtn(this)
+// }}))
 
-$('#menu').append($('<p />',{text:'Чтобы увидеть таланты занятия, нажмите на блок "Развитие талантов" карточки.'}))
+// $('#menu').append($('<p />',{text:'Чтобы увидеть таланты занятия, нажмите на блок "Развитие талантов" карточки.'}))
 
 var arr = [];
 
@@ -80,6 +80,9 @@ for (var i = 0; i < quantity; i++) {
 	if(pursuit[cardid].gear){
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'вещи:'}))
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
+
+		$('#'+cardid+'-talentstable-gear').append($('<div />',{class:'gear-name',text:'вещи:'}))
+		$('#'+cardid+'-talentstable-gear').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
 	}
 
 	var name = getTalent(cardid,'n')
@@ -102,6 +105,8 @@ for (var i = 0; i < quantity; i++) {
 		$('#'+stepid).append($('<li />',{text:pursuit[cardid].step[s]}))
 
 	};
+
+	$('#'+stepid).clone().appendTo($('#'+cardid+'-talentstable-options'))
 
 	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:'Таланты: '+pursuit[cardid].name,'click':function(){showElem(this.id,'c')}}))
 };
@@ -126,9 +131,11 @@ for (var i = quantity-1; i >= 0; i--) {
 	var cardbackid = cardid+'-back';
 	$('#page').append($('<div />',{class:'card card-back '+faction,id:cardbackid}))
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
+	$('#'+cardbackid+'-bg').clone().appendTo($('#'+cardid+'-talentstable-img'))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
+
 }
 
 // $('.card-back').toggle()

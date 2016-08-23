@@ -479,7 +479,7 @@ var talents = {
 			story:'Чтобы считаться мастером Магии, нужно потратить существенное время на тайные искусства.',
 			text:'Выберите Магию (Magia) которая доступна вам минимум в одном Гримуаре (Grimoire). Когда вы колдуете заклинание из любого Гримуара, вы можете использовать выбранную Магию. Также, Если вы не имеете Гримуара, вы можете действовать как если бы владели Гримуаром с выбранной Магией в нем. Это значит, что вы может колдовть заклинание без Гримуара если вы освоили соответствующие Магию и Иммуто.',
 			trigger:'',
-			limit:'',
+			limit:'[____________________][____________________][____________________]',
 		},
 		'Mastered Immuto' : {
 			name:'Освоенный Иммуто',
@@ -487,7 +487,7 @@ var talents = {
 			story:'Долгие часы практики привели к освоению одного магического Иммуто.',
 			text:'Выберите Иммуто (Immuto) который доступен вам минимум в одном Гримуаре (Grimoire). Когда вы колдуете заклинание из любого Гримуара, вы можете использовать выбранный Иммуто.',
 			trigger:'',
-			limit:'',
+			limit:'[____________________][____________________]',
 		},
 		'Spell Affinity' : {
 			name:'Родство с заклинанием',
@@ -495,7 +495,7 @@ var talents = {
 			story:'Периодическое использование сроднило вас с одним из компонентов определенного заклинания.',
 			text:'Выберите определенный Иммуто (Immuto) или Магию (Magia). Все проверки на колдовство или защиту от заклинания содержащего выбранный Genus, Immuto, or Magia получают "+".',
 			trigger:'',
-			limit:'Вы можете взять этот Талант несколько раз, но каждый раз разный Genus, Immuto, or Magia должен быть выбран. Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки.',
+			limit:'Вы можете взять этот Талант несколько раз, но каждый раз разный Genus, Immuto, or Magia должен быть выбран. Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки. [____________________][____________________][____________________]',
 		},
 	},
 	drudge : {
@@ -605,7 +605,7 @@ var talents = {
 			story:'To be considered a master of a Magia, one must devote considerable time to the arcane arts.',
 			text:'Choose a Magia which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Magia. In addition, if the character does not have a Grimoire, he may act as if he possessed a Grimoire with the chosen Magia in it. This means that he may cast a Spell without a Grimoire if he has mastered the appropriate Magia and Immuto.',
 			trigger:'',
-			limit:'',
+			limit:'[____________________][____________________][____________________]',
 		},
 		'Masterd Immuto' : {
 			name:'Освоенный Immuto',
@@ -613,7 +613,7 @@ var talents = {
 			story:'Long hours of use has led to the mastery of a single magical Immuto.',
 			text:'Choose an Immuto which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Immuto.',
 			trigger:'',
-			limit:'',
+			limit:'[____________________][____________________]',
 		},
 	},
 	guard : {
@@ -1005,7 +1005,7 @@ var talents = {
 				limit:'Вы можете взять этот Талант больше одного раза, и эффекты складываются.',
 			},
 		'Watch Them All' : {
-				name:'Видеть всех',
+				name:'Следить за всеми ними',
 				requirement:'',
 				story:'Способность отслеживать противника в бою переносится и на социальные ситуации.',
 				text:'Вы получаете "+" ко всем попыткам противостоять угрозам (intimidation) или обману (deception). Также вы получаете "+" ко всем Переворотам Инициативы (Initiative Flips).',
@@ -3320,17 +3320,15 @@ function TalentsTable(){
 		console.log(arr[t])
 		// console.log(talents[arr[t]])
 
-		var table = $('<table />');
-		table.attr('cellpadding',"0px");
-		table.attr('cellspacing','0px');
-		table.attr('width','100%');
-		table.attr('class','talentstable');
-		table.attr('id','talents-'+arr[t]);
-		table.css('display','none');
-		var tr = $('<tr />');
+		var table = $('<table />')
+		table.attr('cellpadding',"0px")
+		table.attr('cellspacing','0px')
+		table.attr('width','100%')
+		table.attr('class','talentstable')
+		table.attr('id','talents-'+arr[t])
+		table.css('display','none')
 		var pursuit = arr[t]
 		var name = pursuit
-
 		if(pursuit == 'general'){name = 'Общие таланты'}
 		if(pursuit == 'academic'){name = 'Академик'}
 		if(pursuit == 'criminal'){name = 'Преступник'}
@@ -3372,7 +3370,7 @@ function TalentsTable(){
 		if(pursuit == 'revenant'){name = 'Призрак'}
 		if(pursuit == 'revivalist'){name = 'Реаниматор'}
 		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортиса'}
-
+		var tr = $('<tr />');
 		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");
 		if (pursuit != 'general'){
@@ -3382,7 +3380,15 @@ function TalentsTable(){
 		}
 		
 		table.append(tr.append(td0))
-		// $('#popup').append(table)
+
+		var tr = $('<tr />')
+		var td = $('<td />')
+		var div1 = $('<div />',{id:pursuit+'-talentstable-img',class:'talentstable-img'});
+		var div2 = $('<div />',{id:pursuit+'-talentstable-options',class:'talentstable-options'});
+		var div3 = $('<div />',{id:pursuit+'-talentstable-gear',class:'talentstable-gear'});		
+		td.attr('colspan',"3");
+		table.append(tr.append(td.append(div1).append(div2).append(div3)))
+
 		var arr1 = [];
 
 		for (var p in talents[arr[t]]) {

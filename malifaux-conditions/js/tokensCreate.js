@@ -37,7 +37,7 @@ function createtokens(){
 					$('.'+type+'-text').html('<input type="radio">Armor + 1<br><input type="radio">Armor + 2<br><input type="radio">Armor + 3<br>armor-text')
 				}
 				if(type == "blind"){
-					$('.'+type+'-text').html('blind-text1')
+					$('.'+type+'-text').html('Персонажи с этим состоянием получают "-" "-" на любое действие обычно требующее видеть цель, как большинство атакующих действий.')
 				}
 				if(type == "bleedimg"){
 					$('.'+type+'-text').html('bleedimg-text')

@@ -5,10 +5,10 @@ $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Занятия: Ba
 $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Занятия: Advanced'}))
 // $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Занятия: Into the Steam'}))
-// $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Занятия: Under Quarantine'}))
-// $('#menu').append($('<div />',{class:'row'}))
+$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Занятия: Into the Steam'}))
+$('#menu').append($('<div />',{class:'row'}))
+$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Занятия: Under Quarantine'}))
+$('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Занятия: Into the Bayou'}))
 // $('#menu').append($('<div />',{class:'row'}))
 // $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'Занятия: From Nightmares'}))
@@ -65,13 +65,13 @@ var quantity = arr.length;
 
 /*front*/
 for (var i = 0; i < quantity; i++) {
-	console.log('PURSUIT #'+i+': ')
-	console.log(pursuit[arr[i]])
+	// console.log('PURSUIT #'+i+': ')
+	// console.log(pursuit[arr[i]])
 
 	var cardid = arr[i];
 	var cardfrontid = cardid+'-front';
 	var cardbackid = cardid+'-back';
-	console.log(cardid)
+	// console.log(cardid)
 	$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 	$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
 	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id,'t')}}))
@@ -132,6 +132,7 @@ for (var i = quantity-1; i >= 0; i--) {
 	$('#page').append($('<div />',{class:'card card-back '+faction,id:cardbackid}))
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 	$('#'+cardbackid+'-bg').clone().appendTo($('#'+cardid+'-talentstable-img'))
+	$('#'+cardid+'-talentstable-summary').append(pursuit[cardid].text)
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
 	$('#'+cardbackid+'-bg').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
 	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))

@@ -2,7 +2,7 @@ var set = 'Into The Steam';
 var faction = 'arcanist';
 var pursuit = {
 	'animator' : {
-		name: 'animator',
+		name: 'аниматор',
 		text:'animator text',
 		gear:'',
 		step:{
@@ -19,7 +19,7 @@ var pursuit = {
 		}
 	},
 	'augmented' : {
-		name: 'augmented',
+		name: 'дополненный',
 		text:'augmented text',
 		gear:'',
 		step:{
@@ -36,7 +36,7 @@ var pursuit = {
 		}
 	},
 	'collaborator' : {
-		name: 'collaborator',
+		name: 'пособник',
 		text:'collaborator text',
 		gear:'',
 		step:{
@@ -53,7 +53,7 @@ var pursuit = {
 		}
 	},
 	'engineer' : {
-		name: 'engineer',
+		name: 'инженер',
 		text:'engineer text',
 		gear:'',
 		step:{
@@ -70,7 +70,7 @@ var pursuit = {
 		}
 	},
 	'illusionist' : {
-		name: 'illusionist',
+		name: 'иллюзионист',
 		text:'illusionist text',
 		gear:'',
 		step:{
@@ -87,7 +87,7 @@ var pursuit = {
 		}
 	},
 	'infiltrator' : {
-		name: 'infiltrator',
+		name: 'лазутчик',
 		text:'infiltrator text',
 		gear:'',
 		step:{
@@ -104,7 +104,7 @@ var pursuit = {
 		}
 	},
 	'mage' : {
-		name: 'mage',
+		name: 'маг',
 		text:'mage text',
 		gear:'',
 		step:{
@@ -121,7 +121,7 @@ var pursuit = {
 		}
 	},
 	'primal' : {
-		name: 'primal',
+		name: 'первобытный',
 		text:'primal text',
 		gear:'',
 		step:{

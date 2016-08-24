@@ -338,7 +338,6 @@ var talents = {
 				story:'',
 				text:'При провале Academic duel, можно вытянуть карту на руку. Эпилог: можно развить любой Academic skill в дополнение к вариантам развития навыков.',
 				trigger:'',
-				limit:'',
 			},
 		'Student of Knowledge' : {
 				name:'Студент познания',
@@ -346,7 +345,6 @@ var talents = {
 				story:'У вас случаются частые вспышки гениальной проницательности.',
 				text:'Он получает следующий триггер на все дуэли Академических навыков:',
 				trigger:'♣ Озарение: После решения, возьмите карту на руку.',
-				limit:'',
 			},
 		'Eureka Moment' : {
 				name:'Эврика',
@@ -362,6 +360,7 @@ var talents = {
 				text:'Choose a single Academic skill, the maximum rating for this skill is 6 (instead of 5).',
 				trigger:'A character may have the Great Thinker Talent multiple times, but each time a different skill must be chosen.',
 				limit:'',
+				fill:3,
 			},
 		'Rational Mind' : {
 				name:'Рациональный ум',
@@ -479,7 +478,8 @@ var talents = {
 			story:'Чтобы считаться мастером Магии, нужно потратить существенное время на тайные искусства.',
 			text:'Выберите Магию (Magia) которая доступна вам минимум в одном Гримуаре (Grimoire). Когда вы колдуете заклинание из любого Гримуара, вы можете использовать выбранную Магию. Также, Если вы не имеете Гримуара, вы можете действовать как если бы владели Гримуаром с выбранной Магией в нем. Это значит, что вы может колдовть заклинание без Гримуара если вы освоили соответствующие Магию и Иммуто.',
 			trigger:'',
-			limit:'[____________________][____________________][____________________]',
+			limit:'',
+			fill:3,
 		},
 		'Mastered Immuto' : {
 			name:'Освоенный Иммуто',
@@ -487,7 +487,8 @@ var talents = {
 			story:'Долгие часы практики привели к освоению одного магического Иммуто.',
 			text:'Выберите Иммуто (Immuto) который доступен вам минимум в одном Гримуаре (Grimoire). Когда вы колдуете заклинание из любого Гримуара, вы можете использовать выбранный Иммуто.',
 			trigger:'',
-			limit:'[____________________][____________________]',
+			limit:'',
+			fill:2,
 		},
 		'Spell Affinity' : {
 			name:'Родство с заклинанием',
@@ -495,7 +496,8 @@ var talents = {
 			story:'Периодическое использование сроднило вас с одним из компонентов определенного заклинания.',
 			text:'Выберите определенный Иммуто (Immuto) или Магию (Magia). Все проверки на колдовство или защиту от заклинания содержащего выбранный Genus, Immuto, or Magia получают "+".',
 			trigger:'',
-			limit:'Вы можете взять этот Талант несколько раз, но каждый раз разный Genus, Immuto, or Magia должен быть выбран. Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки. [____________________][____________________][____________________]',
+			limit:'Вы можете взять этот Талант несколько раз, но каждый раз разный Genus, Immuto, or Magia должен быть выбран. Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки.',
+			fill:3,
 		},
 	},
 	drudge : {
@@ -605,7 +607,8 @@ var talents = {
 			story:'To be considered a master of a Magia, one must devote considerable time to the arcane arts.',
 			text:'Choose a Magia which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Magia. In addition, if the character does not have a Grimoire, he may act as if he possessed a Grimoire with the chosen Magia in it. This means that he may cast a Spell without a Grimoire if he has mastered the appropriate Magia and Immuto.',
 			trigger:'',
-			limit:'[____________________][____________________][____________________]',
+			limit:'',
+			fill:3,
 		},
 		'Masterd Immuto' : {
 			name:'Освоенный Immuto',
@@ -613,7 +616,8 @@ var talents = {
 			story:'Long hours of use has led to the mastery of a single magical Immuto.',
 			text:'Choose an Immuto which the character has access to in at least one Grimoire. Whenever the character casts a Spell from any Grimoire, he may use the chosen Immuto.',
 			trigger:'',
-			limit:'[____________________][____________________]',
+			limit:'',
+			fill:2,
 		},
 	},
 	guard : {
@@ -3317,7 +3321,7 @@ function TalentsTable(){
 	// console.log(arr)
 	// console.log(arr.length)
 	for(var t = 0; t < arr.length; t++){
-		console.log(arr[t])
+		// console.log(arr[t])
 		// console.log(talents[arr[t]])
 
 		var table = $('<table />')
@@ -3347,7 +3351,7 @@ function TalentsTable(){
 		if(pursuit == 'deathmarshal'){name = 'Маршал Смерти'}
 		if(pursuit == 'animator'){name = 'Аниматор'}
 		if(pursuit == 'augmented'){name = 'Дополненный'}
-		if(pursuit == 'collaborator'){name = 'Переговорщик'}
+		if(pursuit == 'collaborator'){name = 'Пособник'}
 		if(pursuit == 'engineer'){name = 'Инженер'}
 		if(pursuit == 'illusionist'){name = 'Иллюзионист'}
 		if(pursuit == 'infiltrator'){name = 'Лазутчик'}
@@ -3383,11 +3387,14 @@ function TalentsTable(){
 
 		var tr = $('<tr />')
 		var td = $('<td />')
+		var div0 = $('<div />',{id:pursuit+'-talentstable-wrap',class:'talentstable-wrap'});
 		var div1 = $('<div />',{id:pursuit+'-talentstable-img',class:'talentstable-img'});
 		var div2 = $('<div />',{id:pursuit+'-talentstable-options',class:'talentstable-options'});
-		var div3 = $('<div />',{id:pursuit+'-talentstable-gear',class:'talentstable-gear'});		
+		var div3 = $('<div />',{id:pursuit+'-talentstable-summary',class:'talentstable-summary'});
+		var div4 = $('<div />',{id:pursuit+'-talentstable-gear',class:'talentstable-gear'});
+		
 		td.attr('colspan',"3");
-		table.append(tr.append(td.append(div1).append(div2).append(div3)))
+		table.append(tr.append(td.append(div1).append(div0.append(div2).append(div3)).append(div4)))
 
 		var arr1 = [];
 
@@ -3399,10 +3406,10 @@ function TalentsTable(){
 		// console.log('ARR1: '+arr1)
 		// console.log(arr1.length)
 		for(var i = 0; i < arr1.length; i++){
-			console.log(arr1[i])
+			// console.log(arr1[i])
 			if(arr1[i] == 'book'){
 				var book = talents[arr[t]].book
-				console.log(book)
+				// console.log(book)
 				td0.prepend(book+': ')
 			}
 			else{
@@ -3419,39 +3426,58 @@ function TalentsTable(){
 				else{
 					td1.append(arr1[i])
 				}
-
 				// console.log(talents[arr[t]][arr1[i]])
 				story = talents[arr[t]][arr1[i]].story
 				if(story){
-					console.log('Story: '+story)
+					// console.log('Story: '+story)
 					td2.append('<p class="talents-story">'+story+'</p>')
 				}
 				var requirement = talents[arr[t]][arr1[i]].requirement
 				if(requirement){
-					// console.log('Requirement: '+requirement)
 					td2.append('<p class="talents-requirement">Требование: '+requirement+'</p>')
 				}
 				var text = talents[arr[t]][arr1[i]].text
 				if(text){
-					// console.log('Text: '+text)
 					td2.append('<p class="talents-text">'+text+'</p>')
 				}
 				var trigger = talents[arr[t]][arr1[i]].trigger
 				if(trigger){
-					// console.log('Trigger : '+trigger)
-					// td2.append('Триггер : '+trigger)
 					td2.append('<p class="talents-trigger">'+trigger+'</p>')
 				}
 				var limit = talents[arr[t]][arr1[i]].limit
 				if(limit){
-					// console.log('limit : '+limit)
-					// td2.append('Триггер : '+limit)
 					td2.append('<p class="talents-limit">'+limit+'</p>')
 				}
-				console.log('-----------')
-				
+				var fill = talents[arr[t]][arr1[i]].fill
+				if(fill){
+					console.log('fill: '+fill)
+					console.log('numeric: '+$.isNumeric(fill))
+					if($.isNumeric(fill) == true){
+						var div1 = $('<div />',{class:'talents-fill'});
+						var div2 = $('<div />',{class:'talents-fill'});
+						var div3 = $('<div />',{class:'talents-fill'});
+						if(fill == 1){
+							td2.append(div1)
+							// $('.talents-fill').css('width','400px')
+							// td2.append('<div class="talents-fill" id="'+arr1[i]+'-fill">'+'[___]'+'</div>')
+						}
+						if(fill == 2){
+							td2.append(div1).append(div2)
+							// $('.talents-fill').css('width','200px')
+							// td2.append('<div class="talents-fill" id="'+arr1[i]+'-fill">'+'[___][___]'+'</div>')
+						}
+						if(fill == 3){
+							td2.append(div1).append(div2).append(div3)
+							// $('.talents-fill').css('width','50px')
+							// td2.append('<div class="talents-fill" id="'+arr1[i]+'-fill">'+'[___][___][___]'+'</div>')
+						}
+					}
+					else{
+						td2.append('<div class="talents-fill">'+fill+'</div>')
+					}
+				}
 				table.append(tr.append(td1).append(td2))
-				// table.css('display','none')
+				console.log($('.talentstable-text').css('width'))
 			}
 		}
 		$('#popup').append(table)
@@ -3485,10 +3511,10 @@ function getTalent(card,type){
 }
 
 function showElem(elem,type){
-console.log(type)
+// console.log(type)
 arr = elem.split('-')
-console.log(arr)
-console.log(arr[0])
+// console.log(arr)
+// console.log(arr[0])
 	if(type == 't'){
 			$('.talentstable').hide()
 			$('#popup').hide()
@@ -3500,8 +3526,6 @@ console.log(arr[0])
 			$('.talentstable').hide()
 			$('#popup').hide()
 			$('#page').hide()
-			// $('#'+arr[0]+'-front')
-			// $('#'+arr[0]+'-back')
 			$('#talents-'+arr[0]).show()
 			$('#'+arr[0]+'-front').show()
 			$('#popup').show()

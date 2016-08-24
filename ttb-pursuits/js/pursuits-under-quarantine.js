@@ -2,7 +2,7 @@ var set = 'Under Quarantine';
 var faction = 'ressurectionist';
 var pursuit = {
 	'bully' : {
-		name: 'bully',
+		name: 'хулиган',
 		text:'bully text',
 		gear:'',
 		step:{
@@ -19,7 +19,7 @@ var pursuit = {
 		}
 	},
 	'chemist' : {
-		name: 'chemist',
+		name: 'химик',
 		text:'chemist text',
 		gear:'',
 		step:{
@@ -36,7 +36,7 @@ var pursuit = {
 		}
 	},
 	'forgotten' : {
-		name: 'forgotten',
+		name: 'забытый',
 		text:'forgotten text',
 		gear:'',
 		step:{
@@ -52,8 +52,8 @@ var pursuit = {
 			'10' : 'forgotten step10',
 		}
 	},
-	'ghost-eater' : {
-		name: 'ghost-eater',
+	'ghosteater' : {
+		name: 'пожиратель духов',
 		text:'ghost-eater text',
 		gear:'',
 		step:{
@@ -70,7 +70,7 @@ var pursuit = {
 		}
 	},
 	'ghoul' : {
-		name: 'ghoul',
+		name: 'гуль',
 		text:'ghoul text',
 		gear:'',
 		step:{
@@ -87,7 +87,7 @@ var pursuit = {
 		}
 	},
 	'medium' : {
-		name: 'medium',
+		name: 'медиум',
 		text:'medium text',
 		gear:'',
 		step:{
@@ -104,7 +104,7 @@ var pursuit = {
 		}
 	},
 	'necromancer' : {
-		name: 'necromancer',
+		name: 'некромант',
 		text:'necromancer text',
 		gear:'',
 		step:{
@@ -121,7 +121,7 @@ var pursuit = {
 		}
 	},
 	'sawbones' : {
-		name: 'sawbones',
+		name: 'костоправ',
 		text:'sawbones text',
 		gear:'',
 		step:{

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 brilliance.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.5771in" height="1.54021in"
+		viewBox="0 0 113.551 110.895" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st3 {stroke:#510000;stroke-dasharray:10.5,7.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(17.0906,-1.5)">
+			<title>Лист.4</title>
+			<path d="M16.19 34.95 L16.05 34.95 L0 50.7 L38.98 110.9 L77.95 50.7 L62.19 35.22 L61.9 34.95 L16.19 34.95 Z"
+					class="st1"/>
+		</g>
+		<g id="shape5-3" v:mID="5" v:groupContext="shape" transform="translate(147.986,22.9831) rotate(75.2459)">
+			<title>Лист.5</title>
+			<path d="M0 110.9 L60.15 110.9" class="st2"/>
+		</g>
+		<g id="shape6-6" v:mID="6" v:groupContext="shape" transform="translate(56.0836,-1.52581)">
+			<title>Лист.6</title>
+			<path d="M38.73 51.09 L15.85 52.74 L0 110.9" class="st2"/>
+		</g>
+		<g id="shape7-9" v:mID="7" v:groupContext="shape" transform="translate(27.7196,-61.185) rotate(5.50012)">
+			<title>Лист.7</title>
+			<path d="M0 110.9 L23.84 110.9" class="st2"/>
+		</g>
+		<g id="shape8-12" v:mID="8" v:groupContext="shape" transform="translate(40.0626,-59.5303) rotate(-0.372649)">
+			<title>Лист.8</title>
+			<path d="M0 110.9 L31.98 110.9" class="st2"/>
+		</g>
+		<g id="shape9-15" v:mID="9" v:groupContext="shape" transform="translate(-31.2144,10.5476) rotate(-68.3873)">
+			<title>Лист.9</title>
+			<path d="M0 110.9 L19.3 110.9" class="st2"/>
+		</g>
+		<g id="shape10-18" v:mID="10" v:groupContext="shape" transform="translate(135.191,-9.60757) rotate(67.0982)">
+			<title>Лист.10</title>
+			<path d="M0 110.9 L19.45 110.9" class="st2"/>
+		</g>
+		<g id="shape12-21" v:mID="12" v:groupContext="shape" transform="translate(17.9688,-43.7441) rotate(-44.029)">
+			<title>Лист.12</title>
+			<path d="M0 110.9 L23.66 110.9" class="st3"/>
+		</g>
+		<g id="shape13-24" v:mID="13" v:groupContext="shape" transform="translate(-64.6562,110.923) rotate(-132.51)">
+			<title>Лист.13</title>
+			<path d="M0 110.9 L23.07 110.9" class="st3"/>
+		</g>
+		<g id="shape14-27" v:mID="14" v:groupContext="shape" transform="translate(-56.4131,78.4317) rotate(-119.852)">
+			<title>Лист.14</title>
+			<path d="M0 110.9 L25.06 110.9" class="st3"/>
+		</g>
+		<g id="shape15-30" v:mID="15" v:groupContext="shape" transform="translate(-28.8522,-21.9017) rotate(-65.1795)">
+			<title>Лист.15</title>
+			<path d="M0 110.9 L24.99 110.9" class="st3"/>
+		</g>
+		<g id="shape16-33" v:mID="16" v:groupContext="shape" transform="translate(-55.5368,23.2323) rotate(-90)">
+			<title>Лист.16</title>
+			<path d="M0 110.9 L18.43 110.9" class="st3"/>
+		</g>
+		<g id="shape17-36" v:mID="17" v:groupContext="shape" transform="translate(-61.7043,94.0213) rotate(-126.87)">
+			<title>Лист.17</title>
+			<path d="M0 110.9 L14.17 110.9" class="st3"/>
+		</g>
+		<g id="shape18-39" v:mID="18" v:groupContext="shape" transform="translate(6.24835,-51.8828) rotate(-45.0185)">
+			<title>Лист.18</title>
+			<path d="M0 110.9 L13.04 110.9" class="st3"/>
+		</g>
+	</g>
+</svg>

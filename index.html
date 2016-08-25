@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wyrd Supplies</title>
+	<title>Conditions</title>
 	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="icon" type="image/png" href="img/breach.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="../img/malifaux.png" sizes="160x160">
 </head>
 <body>
 
-<div class="menu">
-	<h2 class="title">Malifaux</h2>
-	<a href="malifaux-strategy/strategy-basic.html">Strategy Cards</a>
-	<a href="malifaux-conditions/index.html">Condition Tokens</a>
+<div id="menu">
+	<div class="menu">
+	<a href="../index.html">WYRD SUPPLIES</a>
+	</div>
+	<div class="menu">
+		<div class="float-left">
+			<select name="tokentype" id="tokentype" size="25">
+				<option value="armor" selected="selected">TTB_Armor + #</option>
+				<option value="blind">TTB_Blind</option>
+				<option value="bleeding">TTB_Bleeding Out</option>
+				<option value="burning">TTB_Burning + #</option>
+				<option value="dazed">TTB_Dazed</option>
+				<option value="defensive">TTB_Defensive + #</option>
+				<option value="blast">TTB_Blast</option>
+				<option value="fast">TTB_Fast</option>
+				<option value="focus">TTB_Focus + #</option>
+				<option value="intoxicated">TTB_Intoxicated</option>
+				<option value="paralyzed">TTB_Paralyzed</option>
+				<option value="poison">TTB_Poison + #</option>
+				<option value="slow">TTB_Slow</option>
+				<option value="suffocating">TTB_Suffocating</option>
+				<option value="reactivate">TTB_Reactivate</option>
+				<option value="useless-limb">TTB_Useless Limb</option>
+				<option value="blight">Blight</option>
+				<option value="brilliance">Brilliance</option>
+				<option value="cursed">Cursed</option>
+				<option value="distracted">Distracted</option>
+				<option value="manipulate">Manipulate</option>
+				<option value="redtape">Red Tape</option>
+				<option value="scheme-guild">Scheme: Guild</option>
+				<option value="scheme-arcanist">Scheme: Arcanists</option>
+				<option value="scheme-ressurect">Scheme: Ressurectionists</option>
+				<option value="scheme-neverborn">Scheme: Neverborn</option>
+				<option value="scheme-outcast">Scheme: Outcasts</option>
+				<option value="scheme-thunder">Scheme: Ten Thunders</option>
+				<option value="scheme-gremlin">Scheme: Gremlins</option>
+			</select>
+		</div>
+		<div class="float-left">
+			<input type="button" id="clear" value="Clear page" onclick="cleartokens()">
+			<hr>
+			<input type="checkbox" name="isrow" value="row">One row
+			<hr>
+			<input type="radio" name="tokenform" value="square" checked="checked">Square<br>
+			<input type="radio" name="tokenform" value="circle">Circle<br>
+			<hr>
+			<input type="radio" name="tokensize" value="size-10">10 mm<br>
+			<input type="radio" name="tokensize" value="size-23">23 mm<br>
+			<input type="radio" name="tokensize" value="size-30">30 mm<br>
+			<input type="radio" name="tokensize" value="size-40" checked="checked">40 mm<br>
+			<input type="radio" name="tokensize" value="size-50">50 mm<br>
+			<hr>
+			<input type="radio" name="tokenquantity" value="1">1<br>
+			<input type="radio" name="tokenquantity" value="3">5<br>
+			<input type="radio" name="tokenquantity" value="5" checked="checked">5<br>
+			<input type="radio" name="tokenquantity" value="6">6<br>
+			<input type="radio" name="tokenquantity" value="10">10<br>
+			<input type="button" id="createall" value="All tokens" onclick="alltokens()"><br>
+			<input type="button" id="create" value="Create tokens" onclick="createtokens()">
+		</div>
+	</div>
+	<div class="row"></div>
+	<div id="preview"></div>
 </div>
 
-<div class="menu">
-	<h2 class="title">Through The Breach</h2>
-	<div id="ttb" \></div>
-	<a href="ttb-crossroads-tarot/index-rus.html">Crossroads Tarot</a>
-	<a href="ttb-pursuits/pursuits-basic.html">Pursuit Cards</a>
+
+<div id="page">
+<!-- 	Poison +1
+	<div class="condition poison">1</div>
+	<div class="condition poison">2</div>
+	<div class="condition poison">3</div>
+	<div class="condition poison">4</div>
+	<div class="condition poison">5</div>
+	<div class="condition poison">6</div> -->
 </div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/tokensCreate.js"></script>
 </body>
 </html>

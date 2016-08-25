@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 manipulate.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.15046in" height="1.64458in"
+		viewBox="0 0 82.8333 118.41" xml:space="preserve" color-interpolation-filters="sRGB" class="st6">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#510000;stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st3 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st4 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6}
+		.st5 {stroke:#510000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st6 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape3-1" v:mID="3" v:groupContext="shape" transform="translate(29.2484,-51.1902)">
+			<title>Круг</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 110.19 A8.21614 8.21614 0 0 1 16.43 110.19 A8.21614 8.21614 0 1 1 -0 110.19 Z" class="st1"/>
+		</g>
+		<g id="shape4-3" v:mID="4" v:groupContext="shape" transform="translate(8.51149,-22.2137) rotate(-15)">
+			<title>Прямоугольник</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<rect x="0" y="94.3154" width="15.1917" height="24.0945" class="st1"/>
+		</g>
+		<g id="shape5-5" v:mID="5" v:groupContext="shape" transform="translate(165.676,52.3783) rotate(73.393)">
+			<title>Лист.5</title>
+			<path d="M0 118.41 L16.86 118.41" class="st2"/>
+		</g>
+		<g id="shape6-8" v:mID="6" v:groupContext="shape" transform="translate(158.317,96.705) rotate(94.6669)">
+			<title>Лист.6</title>
+			<path d="M0 118.41 L19.06 118.41" class="st2"/>
+		</g>
+		<g id="shape7-11" v:mID="7" v:groupContext="shape" transform="translate(57.5906,-15.465)">
+			<title>Лист.7</title>
+			<path d="M0 118.41 L14.17 118.41" class="st2"/>
+		</g>
+		<g id="shape8-14" v:mID="8" v:groupContext="shape" transform="translate(140.284,166.984) rotate(120.964)">
+			<title>Лист.8</title>
+			<path d="M0 118.41 L9.92 118.41" class="st2"/>
+		</g>
+		<g id="shape9-17" v:mID="9" v:groupContext="shape" transform="translate(72.0353,182.71) rotate(172.595)">
+			<title>Лист.9</title>
+			<path d="M0 118.41 L9.46 118.41" class="st2"/>
+		</g>
+		<g id="shape10-20" v:mID="10" v:groupContext="shape" transform="translate(-83.8285,143.355) rotate(-104.834)">
+			<title>Лист.10</title>
+			<path d="M0 118.41 L80.89 118.41" class="st3"/>
+		</g>
+		<g id="shape11-23" v:mID="11" v:groupContext="shape" transform="translate(21.9214,188.178) rotate(-174.483)">
+			<title>Лист.11</title>
+			<path d="M0 118.41 L11.48 118.41" class="st2"/>
+		</g>
+		<g id="shape12-26" v:mID="12" v:groupContext="shape" transform="translate(-45.7964,6.89224) rotate(-67.6524)">
+			<title>Лист.12</title>
+			<path d="M0 118.41 L32.84 118.41" class="st3"/>
+		</g>
+		<g id="shape13-29" v:mID="13" v:groupContext="shape" transform="translate(19.8516,-99.512) rotate(2.56439)">
+			<title>Лист.13</title>
+			<path d="M0 118.41 L62.34 118.41" class="st4"/>
+		</g>
+		<g id="shape14-32" v:mID="14" v:groupContext="shape" transform="translate(-42.6223,105.696) rotate(-91.9786)">
+			<title>Лист.14</title>
+			<path d="M0 118.41 L94.91 118.41" class="st3"/>
+		</g>
+		<g id="shape15-35" v:mID="15" v:groupContext="shape" transform="translate(-102.95,47.4358) rotate(-82.6896)">
+			<title>Лист.15</title>
+			<path d="M0 118.41 L43.83 118.41" class="st3"/>
+		</g>
+		<g id="shape16-38" v:mID="16" v:groupContext="shape" transform="translate(-42.2566,-71.5164) rotate(-24.0503)">
+			<title>Лист.16</title>
+			<path d="M0 118.41 L75.12 118.41" class="st4"/>
+		</g>
+		<g id="shape17-41" v:mID="17" v:groupContext="shape" transform="translate(101.811,-9.19424) rotate(15)">
+			<title>Эллипс</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 116.09 A3.47244 2.31496 0 0 1 6.94 116.09 A3.47244 2.31496 0 0 1 -0 116.09 Z" class="st1"/>
+		</g>
+		<g id="shape18-43" v:mID="18" v:groupContext="shape" transform="translate(-2.16772,4.03472) rotate(-15)">
+			<title>Эллипс.41</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 116.09 A3.47244 2.31496 0 0 1 6.94 116.09 A3.47244 2.31496 0 0 1 -0 116.09 Z" class="st1"/>
+		</g>
+		<g id="shape19-45" v:mID="19" v:groupContext="shape" transform="translate(31.5931,-58.339) rotate(-15)">
+			<title>Эллипс.42</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 116.61 A2.49668 1.79903 0 1 1 4.99 116.61 A2.49668 1.79903 0 1 1 0 116.61 Z" class="st1"/>
+		</g>
+		<g id="shape20-47" v:mID="20" v:groupContext="shape" transform="translate(165.322,115.306) rotate(120.443)">
+			<title>Лист.20</title>
+			<path d="M0 118.41 L11.47 118.41" class="st2"/>
+		</g>
+		<g id="shape21-50" v:mID="21" v:groupContext="shape" transform="translate(-41.9553,168.946) rotate(-147.381)">
+			<title>Лист.21</title>
+			<path d="M0 118.41 L8.41 118.41" class="st2"/>
+		</g>
+		<g id="shape22-53" v:mID="22" v:groupContext="shape" transform="translate(41.8016,-49.0432) rotate(15)">
+			<title>Эллипс.45</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 116.61 A2.49668 1.79903 0 1 1 4.99 116.61 A2.49668 1.79903 0 1 1 0 116.61 Z" class="st1"/>
+		</g>
+		<g id="shape23-55" v:mID="23" v:groupContext="shape" transform="translate(22.0636,-102.031) rotate(3.11084)">
+			<title>Лист.23</title>
+			<path d="M0 118.41 L26.1 118.41" class="st5"/>
+		</g>
+		<g id="shape24-58" v:mID="24" v:groupContext="shape" transform="translate(-7.13033,-90.035) rotate(-24.2359)">
+			<title>Лист.24</title>
+			<path d="M0 118.41 L35.99 118.41" class="st5"/>
+		</g>
+		<g id="shape25-61" v:mID="25" v:groupContext="shape" transform="translate(-42.923,-73.9219) rotate(-24.1372)">
+			<title>Лист.25</title>
+			<path d="M0 118.41 L39.69 118.41" class="st5"/>
+		</g>
+		<g id="shape26-64" v:mID="26" v:groupContext="shape" transform="translate(46.7896,-100.834) rotate(2.09618)">
+			<title>Лист.26</title>
+			<path d="M0 118.41 L34.43 118.41" class="st5"/>
+		</g>
+	</g>
+</svg>

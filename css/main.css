@@ -1,169 +1,64 @@
-#page{
-width: 21cm;
-height: 29cm;
-border:solid 1px;
-margin: 0px;
-padding: 0px;
-}
-
-
-.condition,.token{
-/*background-color: Linen;*/
-width: 1cm;
-height: 1cm;
-background-size: auto 80%;
-background-position: center;
-background-repeat: no-repeat;
+.menu{
+margin-left: 10px;
 float: left;
+border: ridge; 1px;
+border-radius: 5px;
+padding: 5px;
+background-color: Oldlace;
+box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
 text-align: center;
-line-height: 1cm;
-font-weight: bold;
-color: black;
-border: solid black 1px;
+width: 40%;
 }
 
-.row{
-	clear:both;
-}
-
-.token{
-width: 2cm;
-height: 2cm;
-clear:right;
-color: Maroon;
-/*border-radius: 50%;*/
-/*border: solid Maroon 0.1cm;*/
-/*border: solid Maroon 1px;*/
-}
-
-/*rgba(222,173,120)*/
-/*rgba(255,255,204)*/
-/*rgba(80,0,0)*/
-
-.poison,.poison-color,.burning,.burning-color,.armor{line-height: 47px;}
-
-.armor{background-image: url(../img/armor.svg);}
-.blast{
-	background-image: url(../img/blast.svg);
-	background-size: 100%;
-}
-.blight{background-image: url(../img/blight.svg);}
-.blind{background-image: url(../img/blind.svg);}
-.bleeding{background-image: url(../img/bleeding.svg);}
-.brilliance{background-image: url(../img/brilliance.svg);}
-.burning{background-image: url(../img/burning.svg);}
-/*.burning{background-image: url(../img/burning-color.svg);}*/
-.cursed{background-image: url(../img/cursed.svg);}
-/*.dazed{background-image: url(../img/dazed.svg);}*/
-.defensive{background-image: url(../img/defensive.svg);}
-.distracted{background-image: url(../img/distracted.svg);}
-.fast{background-image: url(../img/fast.svg);}
-/*.fast-color{background-image: url(../img/fast-color.svg);}*/
-.focus{background-image: url(../img/focus.svg);}
-.manipulate{background-image: url(../img/manipulate.svg);}
-.paralyzed{background-image: url(../img/paralyzed.svg);}
-.poison{background-image: url(../img/poison.svg);}
-/*.poison{background-image: url(../img/poison-color.svg);}*/
-.redtape{background-image: url(../img/redtape.svg);}
-.slow{background-image: url(../img/slow.svg);}
-/*.slow-color{background-image: url(../img/slow-color.svg);}*/
-.reactivate{background-image: url(../img/reactivate.svg);}
-/*.reactivate-color{background-image: url(../img/reactivate-color.svg);}*/
-
-.scheme-guild{
-	background-color: rgba(171,49,45,1);
-	background-image: url(../img/rams.svg);
-}
-.scheme-arcanist{
-	background-color: rgba(48,100,175,1);
-	background-image: url(../img/tomes.svg);
-}
-.scheme-ressurect{
-	background-color: rgba(0,150,72,1);
-	background-image: url(../img/crows.svg);
-}
-.scheme-neverborn{
-	background-color: rgba(121,78,143,1);
-	background-image: url(../img/masks.svg);
-}
-.scheme-outcast{background-color: rgba(216, 190, 105, 1);}
-.scheme-thunder{background-color: rgba(221, 153, 28, 1);}
-.scheme-gremlin{background-color: rgba(149, 168, 110, 1);}
-
-.square{
-	border-radius: 0px;
-}
-
-.circle{
-	border-radius: 50%;
-}
-
-.size-10{
-	width: 10mm;
-	height: 10mm;
-	font-size: 12px;
-	line-height: 10mm;
-}
-.size-23{
-	width: 23mm;
-	height: 23mm;
-	font-size: 14px;
-	line-height: 23mm;
-}
-.size-30{
-	width: 30mm;
-	height: 30mm;
-	font-size: 18px;
-	line-height: 30mm;
-}
-
-.size-40{
-	width: 40mm;
-	height: 55mm;
-	font-size: 24px;
-	line-height: 40mm;
+.menu a{
+text-decoration: none;
 float: left;
-line-height: 1cm;
-font-weight: bold;
+padding: 3px;
+margin: 5px;
+border: 2px groove;
+border-bottom-width: 3px;
+border-radius: 3px;
+width: 120px;
+width: 45%;
+height: 120px;
+height: 45%;
+line-height: 120px;
+background: linear-gradient(to bottom, Linen, Burlywood);
+border-left-color: Bisque;
+border-right-color: Burlywood;
+border-bottom-color: Burlywood;
+border-top-color: Bisque;
 color: black;
-border: solid black 1px;
 }
 
-.condition-image{
-position: absolute;
-width: 10mm;
-height: 10mm;
-background-size: auto 80%;
-background-position: center;
-background-repeat: no-repeat;
+.menu a:hover{
+	background: linear-gradient(to bottom, Burlywood ,Linen);
 }
 
-.condition-name{
-	padding-left: 11mm;
-	text-align: left;
-font-size: 13pt;
-}
-.condition-text{
-font-size: 10pt;
-padding: 2mm;
-padding-top: 0mm;
-text-align: left;
-line-height: 4mm;
+.title{
+	color:Sienna;
 }
 
-
-.size-50{
-	width: 50mm;
-	height: 50mm;
-	font-size: 30px;
-	line-height: 50mm;
+@media print {
+	.menu{display: none;}
 }
 
-.float-left{
-	float: left;
+@media handheld{
+	.menu a{
+		border-radius: 0px;
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+		color:Crimson;
+	}
 }
 
-#menu{
-	left:20cm;
+#ttb{
+	position: relative;
+	top: -45px;
+	height: 4cm;
+	background-position: center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/ttb.png);
 }
-#create,#createall{margin-top: 0.5cm;}

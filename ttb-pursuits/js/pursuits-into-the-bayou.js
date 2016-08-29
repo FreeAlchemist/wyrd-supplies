@@ -7,13 +7,13 @@ var pursuit = {
 		gear:'',
 		step:{
 			'1' : 'bokor step1',
-			'2' : 'General Talent',
+			'2' : 'Общий талант',
 			'3' : 'bokor step3',
-			'4' : 'General Talent',
+			'4' : 'Общий талант',
 			'5' : 'bokor step5',
-			'6' : 'General Talent',
+			'6' : 'Общий талант',
 			'7' : 'bokor step7',
-			'8' : 'General Talent',
+			'8' : 'Общий талант',
 			'9' : 'bokor step9',
 			'10' : 'bokor step10',
 		}

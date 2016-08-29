@@ -1,88 +1,90 @@
 var glossary = {
-		'' : {
-				name:'',
+		'Cunning' : {
+				name:'Хитрость',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Charm' : {
+				name:'Обаяние',
+				text:'',
+				},
+		'Speed' : {
+				name:'Скорость',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Wounds' : {
+				name:'Раны',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Charge' : {
+				name:'Нападение',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Defense' : {
+				name:'Защита',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Tenacity' : {
+				name:'Стойкость',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Walk' : {
+				name:'Движение',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Resilence' : {
+				name:'Выносливость',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Grace' : {
+				name:'Грация',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'Might' : {
+				name:'Сила',
 				text:'',
 			},
-				'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
-				text:'',
-			},
-		'' : {
-				name:'',
+		'Intellect' : {
+				name:'Интеллект',
 				text:'',
 			},
 				'' : {
 				name:'',
 				text:'',
 			},
+		'Sorcery Magia' : {
+				name:'Волшебство',
+				text:'',
+			},
+		'Prestidigitation Magia' : {
+				name:'Изменение',
+				text:'',
+			},
+		'Necromancy Magia' : {
+				name:'Некромантия',
+				text:'',
+			},
+		'Enchanting Magia' : {
+				name:'Зачарование',
+				text:'',
+			},
+
+		'Slow' : {
+				name:'Замедлен',
+				text:'',
+			},
+		'Paralyzed' : {
+				name:'Парализован',
+				text:'',
+			},
+		'Critical Effect' : {
+				name:'Критический Эффект',
+				text:'',
+			},
+		'Leadership' : {
+				name:'Лидерство',
+				text:'',
+			},
+
 		'' : {
 				name:'',
 				text:'',

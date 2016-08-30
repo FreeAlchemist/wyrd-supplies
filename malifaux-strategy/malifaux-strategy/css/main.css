@@ -1,0 +1,260 @@
+body{
+	width:20cm;
+}
+
+.card {
+	position: relative;
+	float: left;
+	width: 6.2cm;
+	height: 8.7cm;
+	background-size: 100% 100%;
+	font-size: 0.225cm;
+	line-height: 0.225cm;
+	display: inline-block;
+	border-right: 1px solid  rgba(0,0,0,1);
+	border-bottom: 1px solid  rgba(0,0,0,1);
+	border: 1px solid  rgba(0,0,0,1);
+	font-family: 'AGFriquer';
+	background-color: rgba(255,255,255,1);
+	margin-bottom: 1.1cm;
+	background-color: rgba(180, 135, 105, 1);
+	background-color: rgba(89, 87, 86, 1);
+	/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));*/
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+ul {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	list-style-type: circle;
+}
+
+.front, .back {
+	background-color: rgba(255,255,255,1);
+	height: 8cm;
+	width: 5.6cm;
+	margin: 0.2cm 0cm 0cm 0.2cm;
+	position: relative;
+	border:solid 0.04cm black;
+	background-color: Linen;
+	height: 8cm;
+	width: 5.6cm;
+	margin: 0.2cm 0cm 0cm 0.2cm;
+	border: 0.1cm solid rgba(66, 67, 73, 1);
+	/*border-radius: 10px;*/
+}
+
+.front{
+	background-color: Linen;
+	height: 8cm;
+	width: 5.6cm;
+	margin: 0.25cm 0cm 0cm 0.2cm;
+	/*border-radius: 10px 25px 10px 25px;*/
+}
+
+.header {
+color: Linen;
+color: black;
+font-size: 2em;
+background-color: rgba(110, 110, 116, 1);
+background-color: rgba(89, 62, 42, 0.2);
+font-size: 14px;
+height: 1cm;
+line-height: 1cm;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1); 
+/*font-family: ringbearer;*/
+/*font-family: "28 Days Later";*/
+/*font-family: baskerville old face;*/
+/*font-family: blood crow;*/
+/*font-family: malifaux rodent edition;*/
+/*font-family: inked god;*/
+/*font-family: bleeding cowboys;*/
+/*font-family: harrington;
+font-family: vivaldi;*/
+
+/*font-family: viner hand itc;*/
+/*font-family: niagara engraved;*/
+}
+
+.seal {
+position: absolute;
+top: 0px;
+left: 0px;
+/*background-color: Blanchedalmond;*/
+width: 1.2cm;
+height: 100%;
+background-position: center center;
+background-size: auto 80%;
+background-repeat: no-repeat;
+text-align: center;
+color: black;
+font-weight: bold;
+font-size: 28px;
+line-height: 1.2cm;
+/*border-right: solid 0.05cm rgba(66, 67, 73, 1);*/
+font-family: "28 Days Later";
+}
+
+.masks{background-image:url(../img/masks.svg);}
+.crows{background-image:url(../img/crows.svg);}
+.tomes{background-image:url(../img/tomes.svg);}
+.rams{
+	background-image:url(../img/rams.svg);
+	background-size: auto 75%;
+}
+.jockers{background-image:url(../img/jockers.svg);}
+
+.block {
+	float: left;
+	width: 100%;
+	border-bottom: 0.05cm solid rgba(0,0,0,0.5);
+}
+
+.text {
+	/* padding: 0.3cm; */
+font-size: 1.1em;
+font-size: 8pt;
+min-height: 4.45cm;
+line-height: 1.1em;
+width: 100%;
+float: left;
+}
+.text div{
+	padding: 0.1cm 0.2cm 0.1cm 0.2cm;
+}
+.text-title{
+	font-weight: bold;
+	padding-top: 0.2cm;
+}
+
+.flavor {
+background-color: rgba(255,255,255,0.4);
+font-size: 0.3cm;
+line-height: 0.3cm;
+font-style: italic;
+padding: 0.1cm 0.2cm 0.1cm 0.2cm;
+border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+}
+
+
+.bottom {
+	position: absolute;
+	bottom: 0cm;
+	width: 100%;
+	background-color: rgba(89, 62, 42, 0.2);
+	/*background-color: Blanchedalmond;*/
+	font-size: 10pt;
+	color: black;
+	border-top: 0.05cm solid rgba(86, 70, 62, 1);
+	/*border-bottom: 0.05cm solid rgba(86, 70, 62, 1);*/
+	/*border-radius: 0px 0px 10px 20px;*/
+}
+
+.label{
+	line-height: 0.7cm;
+	/*color: Linen;*/
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "28 Days Later";
+	/*margin-left: 1.2cm;*/
+	/*border-bottom: 0.05cm solid rgba(86, 70, 62, 1);*/
+	/*background-color: rgba(168, 130, 102, 1);*/
+	/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
+}
+
+.label-type{
+	font-size: 12px;
+	line-height: 0.5cm;
+	/*background-color: rgba(89, 87, 86, 1);*/
+	/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));*/
+	border-bottom-style: none;
+}
+
+
+.back {
+	background-color: gray;
+	background-image: radial-gradient(circle farthest-corner at 20px 20px, #FFFFFF, #E4CB9E);
+	background-image: radial-gradient(circle farthest-corner at 20px 20px, #DFC597, #664937);
+	color: Linen;
+	color: rgba(255,255,255,1);
+	color: rgba(255,255,255,1);
+	font-size: 3em;
+}
+
+.top_label,.bottom_label {
+	position: absolute;
+	width: 100%;
+	height: 1cm;
+	line-height: 1cm;
+	background-color: rgba(230,220,210,0.5);
+	text-align: center;
+	text-transform: uppercase;
+	/*padding-top: 0.25cm;*/
+	/*box-shadow:inset 0 4px 6px rgba(0,0,0,0.5);*/
+	background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));
+}
+
+.top_label {
+	top: 0cm;
+	border-top: 0.05cm solid rgba(86, 70, 62, 1);
+	border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+}
+
+.bottom_label {
+	bottom: 0cm;
+	border-top: 0.05cm solid rgba(86, 70, 62, 1);
+	border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
+	/*transform: rotate(180deg);*/
+	font-size: 12pt;
+	background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(182, 179, 177, 1), rgba(89, 87, 86, 1));
+	/*background-image: radial-gradient(circle farthest-corner at 20px 20px, rgba(89, 87, 86, 1),rgba(182, 179, 177, 1), rgba(182, 179, 177, 1),rgba(89, 87, 86, 1));*/
+}
+
+.logo{
+	width: 3cm;
+	height: 3cm;
+	position: absolute;
+	top: 2.5cm;
+	left: 1.3cm;
+	background-repeat: no-repeat;
+	/*background-image: url(../img/logo.png);*/
+	background-image: url(../img/logo.svg);
+	background-position: center center;
+	background-size: contain;
+}
+
+.row{clear:both;}
+
+.hr {
+	float: left;
+	clear: both;
+	width: 100%
+	padding: 0px;
+	margin: 0px;
+}
+
+.scheme{
+	background-color: rgba(180, 135, 105, 0.7);
+}
+
+.strategy{
+	background-color: rgba(89, 87, 86, 1);
+}
+
+.text-float{
+	float: right;
+	width: 2.1cm;
+}
+
+.fill{
+	border:solid 1px black;
+	border-top: none;
+	height: 3mm;
+}

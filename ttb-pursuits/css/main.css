@@ -540,7 +540,8 @@ margin: 0.3cm;
 	border:solid 1px black;
 	border-top: none;
 	margin-right: 5px;
-	height: 5mm;
+	height: 2mm;
+	margin-top: 3mm;
 	float: left;
 	width: 30%;
 }

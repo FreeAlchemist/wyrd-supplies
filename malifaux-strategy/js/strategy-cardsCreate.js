@@ -56,39 +56,32 @@ for (var i = 0; i < quantity; i++) {
 			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
 			// $('#'+cardid+'-text').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
 			if(cards[cardid].setup){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Setup:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].setup}))
 			}
 
 			if(cards[cardid].special){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Специальные правила:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Special rules:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Специальные правила:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].special}))
 			}
 
 			if(cards[cardid].vp){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Победные очки:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Victory points:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Победные очки:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].vp}))
 			}
 
 
 // BOTTOM
 				$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
+				if(type == 'strategy'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'стратегия'}))
+				}
+				else if(type == 'scheme'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'схема'}))
+				}
+				else{
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
+				}
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
 
 			if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){

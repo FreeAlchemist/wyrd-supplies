@@ -1,6 +1,5 @@
 var set = 'gaining grounds 2016';
 var type = 'scheme';
-var lang = 'eng';
 var cards = {
 	'always' : {
 		name: 'Convict Labor',
@@ -32,7 +31,7 @@ var cards = {
 		text:'Hunt them down and make them pay.',
 		setup:'Эта схема не может начаться открытой. Откройте эту схему как только этот Отряд получил <b>VP</b> за нее.',
 		special:'',
-		vp:'В конце каждого хода после первого, score 1 <b>VP</b> if at least one enemy Minion or Peon модель was killed by one of этот Отряд\'s Enforcer or Henchmen модели. <p>В конце каждого хода после первого, if the enemy Crew has no Minion or Peon модели in play, score 1 <b>VP</b>. No more than 1 <b>VP</b> per Turn may be scored from this Scheme.</p>',
+		vp:'В конце каждого хода после первого, получите 1 <b>VP</b> если как минимум одна вражеская Minion или Peon модель была убита Enforcer или Henchmen моделью из вашего Отряда . <p>В конце каждого хода после первого, если вражеский Отряд не имеет Minion или Peon моделей в игре, получите 1 <b>VP</b>. Только 1 <b>VP</b> за ход может быть получено от этой схемы.</p>',
 	},
 	'tomes' : {
 		name: 'leave your mark',
@@ -40,7 +39,7 @@ var cards = {
 		text:'Let the world know you were here.',
 		setup:'Эта схема не может начаться открытой. Откройте эту схему как только этот Отряд получил <b>VP</b> за нее.',
 		special:'',
-		vp:'В конце каждого хода после первого, этот Отряд may remove one of its Маркеры Схем which is on the opponent\'s half of the board, not within 6" of the Centerline, and not within 4" of a не-Peon enemy модель to score 1 <b>VP</b>.',
+		vp:'В конце каждого хода после первого, этот Отряд может убрать один из своих Маркеров Схем находящихся на половине стола противника, не ближе 6" от центральной линии, и не в 4" от вражеской не-Peon модели чтобы получить 1 <b>VP</b>.',
 	},
 	'rams' : {
 		name: 'show of force',
@@ -48,7 +47,7 @@ var cards = {
 		text:'Sometimes showing up well-armed is all you need to put down a riot.',
 		setup:'Эта схема не может начаться открытой. Откройте эту схему как только этот Отряд получил <b>VP</b> за нее.',
 		special:'',
-		vp:'В конце каждого хода после первого, count the number of face-up Upgrades with a printed cost greater than 0 attached to each non-Master модель within 6" of the center of the board for each Crew. Upgrades which began the game attached to a Master do not count toward this total. <p>If этот Отряд has at least one qualifying Upgrade and has a number of qualifying Upgrades equal to or exceeding the opposing Crew\'s number of qualifying Upgrades, этот Отряд scores 1 <b>VP</b>.</p>',
+		vp:'В конце каждого хода после первого, count the number of face-up Upgrades with a printed cost greater than 0 attached to each non-Master модель within 6" of the center of the board for each Crew. Upgrades which began the game attached to a Master do not count toward this total. <p>Если этот Отряд has at least one qualifying Upgrade and has a number of qualifying Upgrades equal to or exceeding the opposing Crew\'s number of qualifying Upgrades, этот Отряд scores 1 <b>VP</b>.</p>',
 	},
 	'1' : {
 		name: 'covert breakthrough',
@@ -56,7 +55,7 @@ var cards = {
 		text:'The Crew must push into enemy territory, but keep quiet about it!',
 		setup:'Эта схема не может начаться открытой.',
 		special:'',
-		vp:'В конце игры, этот Отряд earns 1 <b>VP</b> for each of its Маркеры Схем within 6" of the enemy Deployment Zone.',
+		vp:'В конце игры, этот Отряд earns 1 <b>VP</b> за каждый свой Маркер Схем в 6" от вражеской зоны расстановки.',
 	},
 	'2' : {
 		name: 'undercover entourage',
@@ -64,7 +63,7 @@ var cards = {
 		text:'It is vital that an important person be secretly delivered into enemy territory.',
 		setup:'Эта схема не может начаться открытой.',
 		special:'',
-		vp:'При выборе этой схемы, запишите one of этот Отряд\'s Master or Henchmen модели.<p class="fill"/> В конце игры, if the chosen модель is in the opponent\'s half of the table, этот Отряд earns 1 <b>VP</b>. <p>If the chosen модель is in the enemy Deployment Zone В конце игры, этот Отряд earns 1 additional <b>VP</b>.</p><p>if the chosen модель is in the opponent\'s half of the table В конце игры and has half or more of its Wounds remaining, этот Отряд earns 1 additional <b>VP</b>.</p>',
+		vp:'При выборе этой схемы, запишите одну Master или Henchmen модель из вашего Отряда.<p class="fill"/> В конце игры, если выбранная модель на половине стола противника, этот Отряд получает 1 <b>VP</b>. <p>Если выбранная модель во вражеской зоне расстановки в конце игры, этот Отряд получает 1 дополнительное <b>VP</b>.</p><p>if the chosen модель is in the opponent\'s half of the table в конце игры and has half or more of its Wounds remaining, этот Отряд получает 1 дополнительное <b>VP</b>.</p>',
 	},
 	'3' : {
 		name: 'neutralize the leader',

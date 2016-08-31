@@ -161,9 +161,9 @@ border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
 	line-height: 0.7cm;
 	/*color: Linen;*/
 	text-transform: uppercase;
-	text-align: center;
-	font-family: "28 Days Later";
-	/*margin-left: 1.2cm;*/
+	text-align: left;
+	/* font-family: "28 Days Later"; */
+	margin-left: 1.2cm;
 	/*border-bottom: 0.05cm solid rgba(86, 70, 62, 1);*/
 	/*background-color: rgba(168, 130, 102, 1);*/
 	/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/

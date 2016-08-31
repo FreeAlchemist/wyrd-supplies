@@ -1,5 +1,5 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Занятия: Basic'}))
 $('#menu').append($('<div />',{class:'row'}))

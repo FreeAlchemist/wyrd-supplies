@@ -1,14 +1,13 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Strategy: Basic'}))
-$('#menu').append($('<a />',{href:'strategy-basic-rus.html',text:'Стратегии: Базовые'}))
+$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Стратегии: Базовые'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Scheme: Basic'}))
+$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Схемы: Базовые'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Strategy: Gaining Grounds 2016'}))
+$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Стратегии: Турнирные'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Scheme: Gaining Grounds 2016'}))
+$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Схемы: Турнирные'}))
 
 // console.log('Language: '+lang)
 
@@ -74,10 +73,10 @@ for (var i = 0; i < quantity; i++) {
 // BOTTOM
 				$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
 				if(type == 'strategy'){
-					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'стратегия'}))
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'стратегия [_] [_] [_] [_]'}))
 				}
 				else if(type == 'scheme'){
-					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'схема'}))
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'схема [_] [_] [_]'}))
 				}
 				else{
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))

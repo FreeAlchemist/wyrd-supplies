@@ -1,6 +1,5 @@
 var set = 'basic';
 var type = 'strategy';
-var lang = 'eng';
 var cards = {
 	
 	'rams' : {

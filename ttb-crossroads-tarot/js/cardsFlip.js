@@ -1,5 +1,5 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'index.html',text:'Crossroads Tarot'}))
 $('#menu').append($('<a />',{href:'index-rus.html',text:'Таро перекрёстка'}))

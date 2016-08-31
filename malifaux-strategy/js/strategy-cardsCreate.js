@@ -1,14 +1,13 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Strategy: Basic'}))
-$('#menu').append($('<a />',{href:'strategy-basic-rus.html',text:'Стратегии: Базовые'}))
+$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Стратегии: Базовые'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Scheme: Basic'}))
+$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Схемы: Базовые'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Strategy: Gaining Grounds 2016'}))
+$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Стратегии: Турнирные'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Scheme: Gaining Grounds 2016'}))
+$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Схемы: Турнирные'}))
 
 // console.log('Language: '+lang)
 
@@ -56,39 +55,32 @@ for (var i = 0; i < quantity; i++) {
 			$('#'+cardid+'-front').append($('<div />',{class:'text',id:cardid+'-text'}))
 			// $('#'+cardid+'-text').append($('<div />',{class:'flavor',id:cardid+'-flavor',text:cards[cardid].text}))
 			if(cards[cardid].setup){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Setup:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Расстановка:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].setup}))
 			}
 
 			if(cards[cardid].special){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Специальные правила:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Special rules:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Специальные правила:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].special}))
 			}
 
 			if(cards[cardid].vp){
-				if(lang == 'rus'){
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Победные очки:'}))
-				}
-				else{
-					$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Victory points:'}))
-				}
+				$('#'+cardid+'-text').append($('<div />',{class:'text-title',text:'Победные очки:'}))
 				$('#'+cardid+'-text').append($('<div />',{html:cards[cardid].vp}))
 			}
 
 
 // BOTTOM
 				$('#'+cardid+'-front').append($('<div />',{class:'bottom',id:cardid+'-bottom'}))
+				if(type == 'strategy'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'стратегия [_] [_] [_] [_]'}))
+				}
+				else if(type == 'scheme'){
+					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:'схема [_] [_] [_]'}))
+				}
+				else{
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label',text:type}))
+				}
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
 
 			if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){

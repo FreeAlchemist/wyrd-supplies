@@ -1,40 +1,44 @@
 var set = 'gaining grounds 2016';
 var type = 'strategy';
-var lang = 'eng';
 var cards = {
 	'rams' : {
 		name: 'Extraction',
+		name: 'Извлечение',
 		text:'Rumor was he discovered something valuable during his last excavation, something that anyone would kill for. It\'s our job to make sure we\'re the only ones who hear what he has to say.',
-		setup:'Place an Informant Marker at the Center of the table.',
-		special:'At the end of every Turn after the first, after scoring <b>VP</b>, the player with the most non-Peon models within 6" of Informant Marker may place the Marker up to 3" from its current location, not into terrain or base contact with a model',
-		vp:'At the end of each Turn after the first, a Crew earns 1 VP if it has two or more non-Peon models within 6" of the Informant Marker.',
+		setup:'Поместите Маркер Информатора в центре стола.',
+		special:'В конце каждого хода после первого, после получения <b>VP</b>, игрок с наибольшим количеством не-Peon моделей в 6" от Маркера Информатора может переместить Маркер на расстояние до 3" от его текущего положения, но не в элемент ландшафта или базовый контакт с моделью',
+		vp:'В конце каждого хода после первого, Отряд зарабатывает 1 VP если имеет две или больше не-Peon модели в 6" от Маркера Информатора.',
 	},
 	'crows' : {
 		name: 'Guard the Stash',
+		name: 'Охрана Заначки',
 		text:'"I told you we shouldn\'t pick such a central location to hide the Soulstones!" "Well, it must have been a good choice if they\'re hiding theirs there too!"',
-		setup:'Place two 50mm Stash Markers (Ht5, blocking, impassable, hard cover) on the Centerline each 5" on either side of the Center of thr board (10" apart from each other).',
+		setup:'Поместите два 50мм Маркера Заначки (Высота 5, Блокирующий, непроходимый, твердое укрытие) на Центральной линии каждый в 5" от центра стола (10" друг от друга).',
 		special:'',
-		vp:'At the end of each Turn after the first, a Crew earns 1 VP if it has at least one non-Peon model within 2" of each Stash Marker.',
+		vp:'В конце каждого хода после первого, Отряд зарабатывает 1 VP если имеет как минимум одну не-Peon модель в 2" от каждого из Маркеров Заначки.',
 	},
 	'masks' : {
 		name: 'Interference',
+		name: 'Вмешательство',
 		text:'"What do you think they\'re doing?" the Handler asked, looking over the stationary Gamin spread out across the field. "No idea, but let\'s stop them just in case."',
-		setup:'Divide the table into four 18" by 18" table Quarters.',
+		setup:'Разделите стол на четыре 18" на 18" четверти.',
 		special:'',
-		vp:'At the end of each Turn after the first, a Crew earns 1 VP if it controls two or more table Quarters. <p>To control a table Quarter, the Crew must have the most unengaged non-Peon models within the table Quarter. These models cannot be within 6" of the Center of the table, or partially within another table Quarter.</p>',
+		vp:'В конце каждого хода после первого, Отряд зарабатывает 1 VP если контролирует две и более четвертей стола. <p>Для контроля четверти, Отряд должен иметь большинство не связаных боем не-Peon моделей в четверти. Эти модели не должны быть в 6" от центра стола, или частично в другой четверти.</p>',
 	},
 	'tomes' : {
 		name: 'Headhunter',
+		name: 'Охотник за головами',
 		text:'"Maybe this time they\'ll believe me when I say I killed 5 men" he muttered to himself as he cut off the next fellow\'s scalp. It was gruesome work, but this time he was going to get paid.',
 		setup:'',
-		special:'Whenever a model kills or sacrifices a non-Peon model which it considers an enemy, the model which made the kill must place a 30mm Head Marker within 3" and LoS of the killed or sacrificed model before removing it from play. This Marker may not be placed in base contact with any model; if there is nowhere it can legally be placed, then skip placing a Marker. Any model in base contact with a Head Marker may make a (1) Interact Action with it to remove it from play.',
-		vp:'At the end of every Turn after the first, a Crew earns 1 VP if it removed at least one Head Marker from play that turn.',
+		special:'Когда модель убивает или приносит в жертву не-Peon модель которую считает врагом, модель совершившая убийство должна поместить 30mm Маркер Головы в 3" и LoS от убитой или принесенной в жертву модели перед тем как убрать ее из игры.<p>Этот Маркер не может быть помещен в базовом контакте с любой моделью; если нет легального места для размещения, пропустите размещение Маркера.</p><p>Любая модель в базовом контакте с Маркером Головы может выполнить (1) Interact Action чтобы убрать его из игры.</p>',
+		vp:'В конце каждого хода после первого, Отряд зарабатывает 1 VP если убрал как минимум один Маркер Головы из игры в этот ход.',
 	},
 	'jockers' : {
 		name: 'Collect the Bounty',
+		name: 'Сбор вознаграждения',
 		text:'"You\'re telling me that thing is only worth 10 Scrip?" he whined. "That\'s what I\'m telling you." "It\'s one of those Hanged! No WAY that\'s only worth 10 Scrip!" "I don\'t make the rules, bud. Take it or leave it"',
 		setup:'',
-		special:'Whenever a model is reduced to 0 Wounds by a non-Peon model, the Crew which reduced it to 0 Wounds gains a number of Bounty Points depending on the type of model which was reduced to 0 Wounds, so long as the Crew considered the model an enemy. Models are worth the following number of Bounty Points:<div class="text-float"><b>PEONS</b>:0<br><b>MINIONS</b>:1<br><b>ENFORSERS</b>:2<br><b>HENCHMEN</b>:3<br><b>MASTERS</b>:4</div><div class="text-float">At the end of each Turn, after calculating VP, reset each player to 0 Bounty Points.</div>',
-		vp:'At the end of every Turn after the first, the player with the most Bounty Points scores 1 VP. Either player may also score 1 VP if the opposing player has no models left in play. No more than 1 VP may be scored from this strategy per Turn. If both players still have models in play and they are tied for Bounty Points, neither will score any VP.',
+		special:'Когда раны модели снижены до 0 не-Peon моделью, Отряд который снизил ее раны до 0 получает Очки Вознаграждения в зависимости от ее типа, если считает эту модель врагом.<div><div class="text-float"><b>PEONS</b>:0<br><b>MINIONS</b>:1<br><b>ENFORSERS</b>:2<br><b>HENCHMEN</b>:3<br><b>MASTERS</b>:4</div><div class="text-float">В конце каждого хода, после подсчета VP, сбросьте Очки Вознаграждения каждого игрока до 0.</div></div>',
+		vp:'В конце каждого хода после первого, игрок с наибольшим количеством Очков Вознаграждения получает 1 VP. Каждый игрок может также получить 1 VP если у противника не осталось моделей в игре. Только 1 VP может быть получено от этой стратегии за ход. Если оба игрока имеют модели в игре и равны по Очкам Вознаграждения, никто не получает VP.',
 	},
 }

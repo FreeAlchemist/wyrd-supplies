@@ -54,12 +54,13 @@ color: Maroon;
 .burning{background-image: url(../img/burning.svg);}
 /*.burning{background-image: url(../img/burning-color.svg);}*/
 .cursed{background-image: url(../img/cursed.svg);}
-/*.dazed{background-image: url(../img/dazed.svg);}*/
+.dazed{background-image: url(../img/dazed.svg);}
 .defensive{background-image: url(../img/defensive.svg);}
 .distracted{background-image: url(../img/distracted.svg);}
 .fast{background-image: url(../img/fast.svg);}
 /*.fast-color{background-image: url(../img/fast-color.svg);}*/
 .focus{background-image: url(../img/focus.svg);}
+.intoxicated{background-image: url(../img/intoxicated.svg);}
 .manipulate{background-image: url(../img/manipulate.svg);}
 .paralyzed{background-image: url(../img/paralyzed.svg);}
 .poison{background-image: url(../img/poison.svg);}
@@ -67,8 +68,9 @@ color: Maroon;
 .redtape{background-image: url(../img/redtape.svg);}
 .slow{background-image: url(../img/slow.svg);}
 /*.slow-color{background-image: url(../img/slow-color.svg);}*/
+.suffocating{background-image: url(../img/suffocating.svg);}
 .reactivate{background-image: url(../img/reactivate.svg);}
-/*.reactivate-color{background-image: url(../img/reactivate-color.svg);}*/
+.useless-limb{background-image: url(../img/useless-limb.svg);}
 
 .scheme-guild{
 	background-color: rgba(171,49,45,1);
@@ -141,10 +143,10 @@ background-repeat: no-repeat;
 .condition-name{
 	padding-left: 11mm;
 	text-align: left;
-font-size: 13pt;
+font-size: 12pt;
 }
 .condition-text{
-font-size: 10pt;
+font-size: 8pt;
 padding: 2mm;
 padding-top: 0mm;
 text-align: left;
@@ -167,3 +169,13 @@ line-height: 4mm;
 	left:20cm;
 }
 #create,#createall{margin-top: 0.5cm;}
+
+.valtable td{
+	border:solid 1px black;
+	height: 3mm;
+}
+
+.valtable{
+	float: left;
+	margin-right: 5px;
+}

@@ -71,10 +71,16 @@ text-align: center;
 border-bottom: 0.05cm solid rgba(86, 70, 62, 1); 
 /*font-family: ringbearer;*/
 /*font-family: "28 Days Later";*/
-font-family: blood crow;
+/*font-family: baskerville old face;*/
+/*font-family: blood crow;*/
 /*font-family: malifaux rodent edition;*/
 /*font-family: inked god;*/
 /*font-family: bleeding cowboys;*/
+/*font-family: harrington;
+font-family: vivaldi;*/
+
+/*font-family: viner hand itc;*/
+/*font-family: niagara engraved;*/
 }
 
 .seal {
@@ -155,9 +161,9 @@ border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
 	line-height: 0.7cm;
 	/*color: Linen;*/
 	text-transform: uppercase;
-	text-align: center;
-	font-family: "28 Days Later";
-	/*margin-left: 1.2cm;*/
+	text-align: left;
+	/* font-family: "28 Days Later"; */
+	margin-left: 1.2cm;
 	/*border-bottom: 0.05cm solid rgba(86, 70, 62, 1);*/
 	/*background-color: rgba(168, 130, 102, 1);*/
 	/*background-image: radial-gradient(circle farthest-corner at 0px 0px,rgba(89, 62, 42, 1), rgba(180, 135, 105, 1), rgba(180, 135, 105, 1), rgba(89, 62, 42, 1));*/
@@ -247,3 +253,8 @@ border-bottom: 0.05cm solid rgba(86, 70, 62, 1);
 	width: 2.1cm;
 }
 
+.fill{
+	border:solid 1px black;
+	border-top: none;
+	height: 3mm;
+}

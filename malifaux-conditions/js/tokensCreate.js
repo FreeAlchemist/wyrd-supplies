@@ -95,7 +95,12 @@ function cleartokens(){
 }
 
 
-$("#tokentype").change(function(){
+$("#tokentype").change(function(){checkVal()})
+$("input[name='tokenform']").click(function(){checkVal()})
+$("input[name='tokensize']").click(function(){checkVal()})
+$("input[name='tokenquantity']").click(function(){checkVal()})
+
+function checkVal(){
 	type = $("select[name='tokentype'] > option:checked").val()
 	form = $("input[name='tokenform']:checked").val()
 	size = $("input[name='tokensize']:checked").val()
@@ -103,7 +108,7 @@ $("#tokentype").change(function(){
 	isrow = $("input[name='isrow']:checked").val()
 	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
 	console.log($("input:checked").val())
-})
+}
 
 // $("#menu").css("color","red")
 // $("#menu").fadeOut(3000)

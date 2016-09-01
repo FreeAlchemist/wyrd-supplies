@@ -121,6 +121,13 @@ color: Maroon;
 
 .size-40{
 	width: 40mm;
+	height: 40mm;
+	font-size: 18px;
+	line-height: 30mm;
+}
+
+/*.size-40{
+	width: 40mm;
 	height: 55mm;
 	font-size: 24px;
 	line-height: 40mm;
@@ -129,26 +136,37 @@ line-height: 1cm;
 font-weight: bold;
 color: black;
 border: solid black 1px;
-}
+width: 6.2cm;
+height: 8.7cm;
+}*/
 
 .condition-image{
-position: absolute;
-width: 10mm;
-height: 10mm;
-background-size: auto 80%;
-background-position: center;
-background-repeat: no-repeat;
+	position: relative;
+	width: 15mm;
+	height: 15mm;
+	background-size: auto 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	top: 0px;
+	left: 0px;
+	float: left;
 }
 
 .condition-name{
-	padding-left: 11mm;
+	 padding-left: 17mm; 
+	position: relative;
 	text-align: left;
-font-size: 12pt;
+	font-size: 10pt;
+	line-height: 7mm;
+	/* border-bottom: black solid 2px; */
+	text-transform: uppercase;
+	/* line-height: 15mm; */
+	/* float: left; */
 }
 .condition-text{
-font-size: 8pt;
+font-size: 10pt;
 padding: 2mm;
-padding-top: 0mm;
+/*padding-top: 0mm;*/
 text-align: left;
 line-height: 4mm;
 }
@@ -173,9 +191,25 @@ line-height: 4mm;
 .valtable td{
 	border:solid 1px black;
 	height: 3mm;
+	padding: 0px 3px 0px 3px;
 }
 
 .valtable{
-	float: left;
-	margin-right: 5px;
+	/*float: left;*/
+	/*margin-bottom: 5px;*/
+}
+
+.tokentable{
+	width: 100%;
+	border: solid 1mm black;
+}
+
+.td-name{
+border-right: solid 1mm black;
+width: 50mm;
+height: 15mm;
+}
+.td-text{
+/*border: solid 1mm black;*/
+width: 150mm;
 }

@@ -359,6 +359,11 @@ border-bottom-style: none;
 	top: 5px;
 	left:5px;
 	display: none;
+	width: 21cm;
+	height: 29cm;
+	/*border:solid 1px red;*/
+	margin: 0px;
+	padding: 0px;
 }
 
 .talentstable{

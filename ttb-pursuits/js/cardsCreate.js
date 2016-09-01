@@ -1,5 +1,5 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'WYRD SUPPLIES'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Занятия: Basic'}))
 $('#menu').append($('<div />',{class:'row'}))
@@ -140,3 +140,28 @@ for (var i = quantity-1; i >= 0; i--) {
 }
 
 // $('.card-back').toggle()
+
+// TEXT HEIGHT CONTROL
+	var hcard = parseInt($('.condition').css('height'))
+	var himage = parseInt($('.'+value+'-image').css('height'))
+	var hname = parseInt($('.'+value+'-name').css('height'))
+	var htext = parseInt($('.'+value+'-text').css('height'))
+	var hplace = hcard - hname
+	console.log(hplace)
+
+	var hnplace = 37
+	var htplace = 175
+	if(hname > himage){
+		$('.'+value+'-name').css('font-size','8pt').css('color','red')
+	}
+	if(htext > hplace){
+		// $('.'+value+'-text').css('font-size','7pt').css('color','red')
+	}
+	var hname = parseInt($('.'+value+'-name').css('height'))
+	var htext = parseInt($('.'+value+'-text').css('height'))
+	if(hname <= himage){
+		$('.'+value+'-name').css('color','black')
+	}
+	if(htext <= hplace){
+		$('.'+value+'-text').css('color','black')
+	}

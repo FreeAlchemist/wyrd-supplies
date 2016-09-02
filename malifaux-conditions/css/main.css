@@ -213,3 +213,10 @@ height: 15mm;
 /*border: solid 1mm black;*/
 width: 150mm;
 }
+
+@media print{
+	#page{
+		border: none;
+		background-color: white;
+	}
+}

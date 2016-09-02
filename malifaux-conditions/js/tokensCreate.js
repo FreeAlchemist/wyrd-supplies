@@ -81,12 +81,13 @@ var typearr = $("select[name='tokentype']").children()
 		$("#page").append(token)
 		$("#page").append(table)
 		
-		if(isrow){
-			$("#page").append($('<div />',{class:isrow}))
-		}
+		
 		changeName(type)
 	}
 	// $(".valtable").css('display','none')
+	if(isrow){
+		$("#page").append($('<div />',{class:'row'}))
+	}
 }
 
 function cleartokens(){
@@ -96,6 +97,7 @@ function cleartokens(){
 
 
 $("#tokentype").change(function(){checkVal()})
+$("input[name='isrow']").click(function(){checkVal()})
 $("input[name='tokenform']").click(function(){checkVal()})
 $("input[name='tokensize']").click(function(){checkVal()})
 $("input[name='tokenquantity']").click(function(){checkVal()})

@@ -394,6 +394,10 @@ width: 200px;
 width: 500px;	
 }
 
+.talentstable-summary{
+	margin-top: 0.3cm;
+}
+
 #btn-talents-pursuit,#btn-pursuit-text{
 	margin-top: 20px;
 	/*width:100px;*/
@@ -534,6 +538,7 @@ margin: 0.3cm;
 .talentstable-options{
 	float: right;
 	width: 8cm;
+	margin-top: -0.3cm;
 }
 
 .talentstable-options .step-ol{
@@ -554,5 +559,5 @@ margin: 0.3cm;
 
 
 .talentstable-wrap{
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }

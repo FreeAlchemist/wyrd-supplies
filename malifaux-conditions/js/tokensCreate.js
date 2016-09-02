@@ -15,23 +15,27 @@ $("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
 function createtokens(){
 	console.log("Created "+quantity+" "+form+" "+size+" "+type+" tokens")
 
+
 	for (var i = quantity; i > 0; i--) {
 			if(size == "size-10"){
 			var token = $('<div />',{class:'condition '+type+' '+form+" "+size})
 			}
-			if(size == "size-40"){
-				var token = $('<div />',{class:'condition '+form+" "+size})
-				token.append($('<div />',{class:type+' condition-image'}))
-				token.append($('<div />',{class:type+'-name condition-name',text:type}))
-				var text = 'condition-text'
-				token.append($('<div />',{class:type+'-text condition-text',text:text}))
-			}
+			// if(size == "size-40"){
+
+			// 	// var token = $('<div />',{class:'condition '+form+" "+size})
+			// 	// token.append($('<div />',{class:type+' condition-image'}))
+			// 	// token.append($('<div />',{class:type+'-name condition-name',text:type}))
+			// 	// var text = 'condition-text'
+			// 	// token.append($('<div />',{class:type+'-text condition-text',text:text}))
+
+			// }
 			else{
 			var token = $('<div />',{class:'condition '+type+' '+form+" "+size,text:type})
 			token.css('background-image','none')
 			}
 			console.log(size)
 			$("#page").append(token)
+
 	}
 	changeName(type)
 	if(isrow){
@@ -42,6 +46,7 @@ function createtokens(){
 function alltokens(){
 var typearr = $("select[name='tokentype']").children()
 	for (var i = 0; i < typearr.length; i++) {
+
 		var type = typearr[i].value
 		console.log(type)
 		if(size == "size-10"){
@@ -50,22 +55,38 @@ var typearr = $("select[name='tokentype']").children()
 			if(size == "size-10"){
 			var token = $('<div />',{class:'condition '+type+' '+form+" "+size})
 			}
-			if(size == "size-40"){
-				var token = $('<div />',{class:'condition '+form+" "+size})
-				token.append($('<div />',{class:type+' condition-image'}))
-				token.append($('<div />',{class:type+'-name condition-name',text:type}))
+			if(size == "table"){
+				// var token = $('<div />',{class:'condition '+form+" "+size})
+				// token.append($('<div />',{class:type+' '+type+'-image condition-image'}))
+				// token.append($('<div />',{class:type+'-name condition-name',text:type}))
+				// var text = 'condition-text'
+				// token.append($('<div />',{class:type+'-text condition-text',text:text}))
+				var table = $('<table />')
+				table.attr('cellpadding',"0px")
+				table.attr('cellspacing','0px')
+				table.attr('class','tokentable')
+				var tr = $('<tr />');
+				var td0 = $('<td />',{class:'td-name'});
+				var td1 = $('<td />',{class:'td-text'});
+				td0.append($('<div />',{class:type+' condition-image'}))
+				td0.append($('<div />',{class:type+'-name condition-name',text:type}))
 				var text = 'condition-text'
-				token.append($('<div />',{class:type+'-text condition-text',text:text}))
+				td1.append($('<div />',{class:type+'-text condition-text',text:text}))
+				table.append(tr.append(td0).append(td1))
 			}
 		else{
 		// var token = $('<div />',{class:'condition '+type+' '+form+" "+size,text:type})
 		var token = $('<div />',{class:'condition '+type+' '+form+" "+size})
 		}
 		$("#page").append(token)
-		if(isrow){
-			$("#page").append($('<div />',{class:isrow}))
-		}
+		$("#page").append(table)
+		
+		
 		changeName(type)
+	}
+	// $(".valtable").css('display','none')
+	if(isrow){
+		$("#page").append($('<div />',{class:'row'}))
 	}
 }
 
@@ -75,7 +96,13 @@ function cleartokens(){
 }
 
 
-$("#tokentype").change(function(){
+$("#tokentype").change(function(){checkVal()})
+$("input[name='isrow']").click(function(){checkVal()})
+$("input[name='tokenform']").click(function(){checkVal()})
+$("input[name='tokensize']").click(function(){checkVal()})
+$("input[name='tokenquantity']").click(function(){checkVal()})
+
+function checkVal(){
 	type = $("select[name='tokentype'] > option:checked").val()
 	form = $("input[name='tokenform']:checked").val()
 	size = $("input[name='tokensize']:checked").val()
@@ -83,7 +110,7 @@ $("#tokentype").change(function(){
 	isrow = $("input[name='isrow']:checked").val()
 	$("#preview").html($('<div />',{class:'condition '+type+' '+form+" "+size}))
 	console.log($("input:checked").val())
-})
+}
 
 // $("#menu").css("color","red")
 // $("#menu").fadeOut(3000)
@@ -93,10 +120,11 @@ $("#tokentype").change(function(){
 function changeName(value){
 	console.log(value)
 	var br = $('<br>')
-	var valtable = '<table class="valtable" cellpadding="0" cellspacing="0"><tr><td>+1</td><td>+2</td><td>+3</td><tr><td></td><td></td><td></td></table>'
+	var valtable3 = '<div><table class="valtable" cellspacing="0"><tr><td>+1</td><td>+2</td><td>+3</td><tr><td></td><td></td><td></td></table></div>'
+	var valtable6 = '<div><table class="valtable" cellspacing="0"><tr><td>+1</td><td>+2</td><td>+3</td><td>+4</td><td>+5</td><td>+6</td><tr><td/><td/><td/><td/><td/><td/></table></div>'
 	if(value == "armor"){
-		$('.'+value+'-name').html('Броня')
-		$('.'+value+'-text').html(valtable+'armor-text')
+		$('.'+value+'-name').html('Броня'+valtable3)
+		$('.'+value+'-text').html('armor-text')
 	}
 	if(value == "blind"){
 		$('.'+value+'-name').html('Слепота')
@@ -104,27 +132,27 @@ function changeName(value){
 	}
 	if(value == "bleeding"){
 		$('.'+value+'-name').html('Кровотечение')
-		$('.'+value+'-text').html('Персонаж умрет за 10 раундов (или 1 минуту). Это состояние не исчезает в конце хода персонажа. Оно может быть снято (2) Use Doctoring Action со сложностью TN 15. ')
+		$('.'+value+'-text').html('Персонаж умрет за 10 раундов (или 1 минуту).<br>Это состояние не исчезает в конце хода персонажа.<br>Оно может быть снято (2) Use Doctoring Action со сложностью TN 15. ')
 	}
 	if(value == "burning"){
-		$('.'+value+'-name').html('Горение')
-		$('.'+value+'-text').html(valtable+'В конце каждого раунда, Горящий получает урон равный значению состояния. Эффект снимается в конце раунда (после нанесения урона). Персонаж в 1" (включая себя) может выполнить (1) Действие чтобы убрать 1 из значения состояния, при 0 эффект снимается.')
+		$('.'+value+'-name').html('Горение'+valtable6)
+		$('.'+value+'-text').html('В конце каждого раунда, Горящий получает урон равный значению состояния.<br>Эффект снимается в конце раунда (после нанесения урона).<br>Персонаж в 1" (включая себя) может выполнить (1) Действие чтобы убрать 1 из значения состояния, при 0 эффект снимается.')
 	}
 	if(value == "dazed"){
 		$('.'+value+'-name').html('Ошеломление')
 		$('.'+value+'-text').html('Все действия персонажа получают +2 к сложности (TN).')
 	}
 	if(value == "defensive"){
-		$('.'+value+'-name').html('Защита')
-		$('.'+value+'-text').html(valtable+'Чаще всего это состояние получают, через действие Защитная Стойка (Defensive Stance). Персонаж с этим состоянием получает "+" на свои проверки Защиты (Defense) за каждое значение состояния.')
+		$('.'+value+'-name').html('Защита'+valtable3)
+		$('.'+value+'-text').html('Чаще всего это состояние получают, через действие Защитная Стойка (Defensive Stance).<br>Персонаж с этим состоянием получает "+" на свои проверки Защиты (Defense) за каждое значение состояния.')
 	}
 	if(value == "fast"){
 		$('.'+value+'-name').html('Ускорение')
-		$('.'+value+'-text').html('Персонаж с этим состоянием получает 1 дополнительное очко действия (AP). Это состояние снимается в конце хода персонажа. Ускорение и Замедление отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
+		$('.'+value+'-text').html('Персонаж с этим состоянием получает 1 дополнительное очко действия (AP).<br>Это состояние снимается в конце хода персонажа. Ускорение и Замедление отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
 	}
 	if(value == "focus"){
-		$('.'+value+'-name').html('Фокусировка')
-		$('.'+value+'-text').html(valtable+'Чаще всего это состояние получают, через действие Фокус (Focus) (стр. 202). Сфокусированный персонаж получает "+" на свое следующее (не-Фокус) Действие и любую сопутствующую проверку Урона (Damage) за каждое значение состояния. ')
+		$('.'+value+'-name').html('Фокусировка'+valtable3)
+		$('.'+value+'-text').html('Чаще всего это состояние получают, через действие Фокус (Focus) (стр. 202).<br>Сфокусированный персонаж получает "+" на свое следующее (не-Фокус) Действие и любую сопутствующую проверку Урона (Damage) за каждое значение состояния. ')
 	}
 	if(value == "intoxicated"){
 		$('.'+value+'-name').html('Опьянение')
@@ -132,46 +160,51 @@ function changeName(value){
 	}
 	if(value == "paralyzed"){
 		$('.'+value+'-name').html('Паралич')
-		$('.'+value+'-text').html('Персонаж с этим состоянием не получает очков действия (AP) и не может заявлять действия во время своей активации (даже (0) Действия). Это состояние снимается в конце хода персонажа. Паралич и Повторная активация отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
+		$('.'+value+'-text').html('Персонаж с этим состоянием не получает очков действия (AP) и не может заявлять действия во время своей активации (даже (0) Действия).<br>Это состояние снимается в конце хода персонажа.<br>Паралич и Повторная активация отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
 	}
 	if(value == "poison"){
-		$('.'+value+'-name').html('Отравление')
-		$('.'+value+'-text').html(valtable+'Эффект накапливается. В конце каждого раунда Отравленный получает 1 урона, который не может быть снижен или отменен. После получения урона, снизьте значение Отравления на 1. Отравление снимается с персонажа когда его значение достигнет 0.')
+		$('.'+value+'-name').html('Отравление'+valtable6)
+		$('.'+value+'-text').html('Эффект накапливается.<br>В конце каждого раунда Отравленный получает 1 урона, который не может быть снижен или отменен.<br>После получения урона, снизьте значение Отравления на 1. Отравление снимается с персонажа когда его значение достигнет 0.')
 	}
 	if(value == "slow"){
 		$('.'+value+'-name').html('Замедление')
-		$('.'+value+'-text').html('Персонаж с этим состоянием получает на 1 меньше очков действия (AP). Это состояние снимается в конце хода персонажа. Ускорение и Замедление отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
+		$('.'+value+'-text').html('Персонаж с этим состоянием получает на 1 меньше очков действия (AP).<br>Это состояние снимается в конце хода персонажа. Ускорение и Замедление отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
 	}
 	if(value == "suffocating"){
 		$('.'+value+'-name').html('Удушье')
-		$('.'+value+'-text').html('Каждый ход эффект растет. В конце активации: проверка Силы Воли (Willpower), сложность = значение состояния. При провале, потеря сознания (Unconscious), если уже без сознания получить 3/4/5 урона который нельзя предотвратить, если при этом раны (wounds) снижаются до 0 или меньше, персонаж умирает.')
+		$('.'+value+'-text').html('Каждый ход эффект растет.<br>В конце активации: проверка Силы Воли (Willpower), сложность = значение состояния.<br>При провале, потеря сознания (Unconscious), если уже без сознания получить 3/4/5 урона который нельзя предотвратить, если при этом раны (wounds) снижаются до 0 или меньше, персонаж умирает.')
 	}
 	if(value == "reactivate"){
 		$('.'+value+'-name').html('Повторная активация')
-		$('.'+value+'-text').html('В конце раунда, любой персонаж с этим состоянием может сделать еще один ход. Если несколько персонажей обладают таким состоянием, они делают ходы в порядке их инициативы. Паралич и Повторная активация отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
+		$('.'+value+'-text').html('В конце раунда, любой персонаж с этим состоянием может сделать еще один ход.<br>Если несколько персонажей обладают таким состоянием, они делают ходы в порядке их инициативы.<br>Паралич и Повторная активация отменяют друг друга, снимите оба с персонажа если они присутствуют одновременно.')
 	}
 	if(value == "useless-limb"){
 		$('.'+value+'-name').html('Бесполезная конечность')
-		$('.'+value+'-text').html('Рука: персонаж получает "--" на любое действие требующее двух рук, включая многие Физические (Physical) проверки. Нога: персонаж снижает свое движение (Walk) на 1, и получает "--" на все Физические (Physical) проверки требующие движения.')
+		$('.'+value+'-text').html('Рука: персонаж получает "--" на любое действие требующее двух рук, включая многие Физические (Physical) проверки.<p>Нога: персонаж снижает свое движение (Walk) на 1, и получает "--" на все Физические (Physical) проверки требующие движения.</p>')
 	}
 
 	// TEXT HEIGHT CONTROL
+		var hcard = parseInt($('.condition').css('height'))
+		var himage = parseInt($('.'+value+'-image').css('height'))
 		var hname = parseInt($('.'+value+'-name').css('height'))
 		var htext = parseInt($('.'+value+'-text').css('height'))
+		var hplace = hcard - hname
+		console.log(hplace)
+
 		var hnplace = 37
 		var htplace = 175
-		if(hname > hnplace){
-			$('.'+value+'-name').css('font-size','7pt').css('color','red')
+		if(hname > himage){
+			$('.'+value+'-name').css('font-size','8pt').css('color','red')
 		}
-		if(htext > htplace){
-			$('.'+value+'-text').css('font-size','7pt').css('color','red')
+		if(htext > hplace){
+			// $('.'+value+'-text').css('font-size','7pt').css('color','red')
 		}
 		var hname = parseInt($('.'+value+'-name').css('height'))
 		var htext = parseInt($('.'+value+'-text').css('height'))
-		if(hname <= hnplace){
+		if(hname <= himage){
 			$('.'+value+'-name').css('color','black')
 		}
-		if(htext <= htplace){
+		if(htext <= hplace){
 			$('.'+value+'-text').css('color','black')
 		}
 }

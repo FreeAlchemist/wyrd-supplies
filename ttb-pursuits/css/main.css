@@ -359,6 +359,11 @@ border-bottom-style: none;
 	top: 5px;
 	left:5px;
 	display: none;
+	width: 21cm;
+	height: 29cm;
+	/*border:solid 1px red;*/
+	margin: 0px;
+	padding: 0px;
 }
 
 .talentstable{
@@ -387,6 +392,10 @@ width: 200px;
 
 .talentstable-text{
 width: 500px;	
+}
+
+.talentstable-summary{
+	margin-top: 0.3cm;
 }
 
 #btn-talents-pursuit,#btn-pursuit-text{
@@ -529,6 +538,7 @@ margin: 0.3cm;
 .talentstable-options{
 	float: right;
 	width: 8cm;
+	margin-top: -0.3cm;
 }
 
 .talentstable-options .step-ol{
@@ -549,5 +559,5 @@ margin: 0.3cm;
 
 
 .talentstable-wrap{
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }

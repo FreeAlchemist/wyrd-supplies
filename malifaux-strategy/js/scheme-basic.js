@@ -4,6 +4,7 @@ var lang = 'eng';
 var cards = {
 	'always' : {
 		name: 'A Line in the Sand',
+		name: 'Линия на песке',
 		text:'',
 		setup:'',
 		special:'',
@@ -11,6 +12,7 @@ var cards = {
 	},
 	'doubles' : {
 		name: 'Distract',
+		name: 'Отвлечение',
 		text:'',
 		setup:'',
 		special:'',
@@ -18,6 +20,7 @@ var cards = {
 	},
 	'masks' : {
 		name: 'Breakthrough',
+		name: 'Прорыв',
 		text:'',
 		setup:'',
 		special:'',
@@ -25,6 +28,7 @@ var cards = {
 	},
 	'crows' : {
 		name: 'Assassinate',
+		name: 'Покушение',
 		text:'',
 		setup:'',
 		special:'',
@@ -32,6 +36,7 @@ var cards = {
 	},
 	'tomes' : {
 		name: 'Protect Territory',
+		name: 'Защита территории',
 		text:'',
 		setup:'',
 		special:'',
@@ -39,6 +44,7 @@ var cards = {
 	},
 	'rams' : {
 		name: 'Bodyguard',
+		name: 'Телохранитель',
 		text:'',
 		setup:'',
 		special:'',
@@ -46,6 +52,7 @@ var cards = {
 	},
 	'1' : {
 		name: 'Cursed Object',
+		name: 'Проклятая вещь',
 		text:'',
 		setup:'',
 		special:'',
@@ -53,6 +60,7 @@ var cards = {
 	},
 	'2' : {
 		name: 'Outflank',
+		name: 'Обход',
 		text:'',
 		setup:'',
 		special:'',
@@ -60,6 +68,7 @@ var cards = {
 	},
 	'3' : {
 		name: 'Plant Evidence',
+		name: 'Сфабрикованные улики',
 		text:'',
 		setup:'',
 		special:'',
@@ -67,6 +76,7 @@ var cards = {
 	},
 	'4' : {
 		name: 'Entourage',
+		name: 'Прикрытие',
 		text:'',
 		setup:'',
 		special:'',
@@ -74,13 +84,15 @@ var cards = {
 	},
 	'5' : {
 		name: 'Vendetta',
+		name: 'Вендетта',
 		text:'',
 		setup:'',
 		special:'',
 		vp:'',
 	},
 	'6' : {
-		name: 'Plant Explosives',
+		name: 'Установка зарядов',
+		name: '',
 		text:'',
 		setup:'',
 		special:'',
@@ -88,6 +100,7 @@ var cards = {
 	},
 	'7' : {
 		name: 'Make Them Suffer',
+		name: 'Заставить их страдать',
 		text:'',
 		setup:'',
 		special:'',
@@ -95,6 +108,7 @@ var cards = {
 	},
 	'8' : {
 		name: 'Deliver a Message',
+		name: 'Доставка сообщения',
 		text:'',
 		setup:'',
 		special:'',
@@ -102,6 +116,7 @@ var cards = {
 	},
 	'9' : {
 		name: 'Take Prisoner',
+		name: 'Взять пленника',
 		text:'',
 		setup:'',
 		special:'',
@@ -109,6 +124,7 @@ var cards = {
 	},
 	'10' : {
 		name: 'Spring the Trap',
+		name: 'Захлопнуть ловушку',
 		text:'',
 		setup:'',
 		special:'',
@@ -116,6 +132,7 @@ var cards = {
 	},
 	'11' : {
 		name: 'Murder Protege',
+		name: 'Убийство протеже',
 		text:'',
 		setup:'',
 		special:'',
@@ -123,6 +140,7 @@ var cards = {
 	},
 	'12' : {
 		name: 'Frame For Murder',
+		name: 'Основание убийства',
 		text:'',
 		setup:'',
 		special:'',
@@ -130,6 +148,7 @@ var cards = {
 	},
 	'13' : {
 		name: 'Power Ritual',
+		name: 'Ритуал Силы',
 		text:'',
 		setup:'',
 		special:'',

@@ -1,3 +1,4 @@
+$('body').prepend($('<div />',{id:'page'}))
 $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
 $('#menu').append($('<div />',{class:'row'}))
@@ -33,20 +34,37 @@ function activeBtn(elem){
 }
 
 
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты','click':function(){
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты (таблица)','click':function(){
 	var active = activeBtn(this)
 	console.log(active)
 	if(active == '0'){
-		$('#popup').hide()
+		$('#popup-talents').hide()
 		$('#talents-general').hide()
+		$('#popup-cards').hide()
 		$('#page').show()
 	}
 		else{
-			$('#popup').show()
+			$('#popup-talents').show()
 			$('#talents-general').show()
+			$('#popup-cards').hide()
 			$('#page').hide()
 		}
 }}))
+$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты (карточки)','click':function(){
+	var active = activeBtn(this)
+	console.log(active)
+	if(active == '0'){
+		$('#popup-talents').hide()
+		$('#popup-cards').hide()
+		$('#page').show()
+	}
+		else{
+			$('#popup-talents').hide()
+			$('#popup-cards').show()
+			$('#page').hide()
+		}
+}}))
+$('#menu').append($('<div />',{class:'row'}))
 
 // $('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий (обложка)','click':function(){
 // 	$('.pursuit-text').toggle()
@@ -94,7 +112,7 @@ for (var i = 0; i < quantity; i++) {
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
 	$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
-	//#popup #talents-scrapper
+	//#popup-talents #talents-scrapper
 
 	var steparr = [];
 	for (var c in pursuit[cardid].step) {

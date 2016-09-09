@@ -4,6 +4,7 @@ var cards = {
 	
 	'rams' : {
 		name: 'Turf War',
+		name: 'Земельная война',
 		text:'Turf War text',
 		setup:'Corners',
 		special:'',
@@ -11,6 +12,7 @@ var cards = {
 	},
 	'crows' : {
 		name: 'Reckoning',
+		name: 'Расплата',
 		text:'Reckoning text',
 		setup:'',
 		special:'',
@@ -18,6 +20,7 @@ var cards = {
 	},
 	'masks' : {
 		name: 'Reconnoiter',
+		name: 'Разведка',
 		text:'Reconnoiter text',
 		setup:'Reconnoiter setup',
 		special:'',
@@ -25,6 +28,7 @@ var cards = {
 	},
 	'tomes' : {
 		name: 'Squatter\'s Rights',
+		name: 'Жилищные права',
 		text:'Squatter\'s Rights text',
 		setup:'Squatter\'s Rights setup',
 		special:'Squatter\'s Rights special',
@@ -32,6 +36,7 @@ var cards = {
 	},
 	'jockers' : {
 		name: 'Stake A Claim',
+		name: 'Застолбить',
 		text:'Stake A Claim text',
 		setup:'',
 		special:'Stake A Claim special',

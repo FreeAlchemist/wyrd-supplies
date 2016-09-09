@@ -84,6 +84,7 @@ for (var i = 0; i < quantity; i++) {
 					$('#'+cardid+'-bottom').append($('<div />',{class:'label label-type',text:set}))
 
 			if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles'){
+			// if(isNaN(cardid) == true && cardid != 'always' && cardid != 'doubles' && cardid != 'masks'){
 				$('#'+cardid+'-bottom').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal'}))
 			}
 			else if(cardid == 'always'){
@@ -92,6 +93,9 @@ for (var i = 0; i < quantity; i++) {
 			else if(cardid == 'doubles'){
 				$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:'D'}))
 			}
+			// else if(cardid == 'masks'){
+			// 	$('#'+cardid+'-bottom').append($('<div />',{class:'seal '+cardid,id:cardid+'-seal',text:'M'}))
+			// }
 			else{
 				$('#'+cardid+'-bottom').append($('<div />',{class:'seal',id:cardid+'-seal',text:cardid}))
 			}

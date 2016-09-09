@@ -1,3 +1,6 @@
+$('body').prepend($('<div />',{class:'popup',id:'popup-cards'}))
+$('body').prepend($('<div />',{class:'popup',id:'popup-talents'}))
+
 var talents = {
 	general :{
 		book:'Fated Almanac',
@@ -58,8 +61,8 @@ var talents = {
 				limit:'',
 			},
 		'Counter-spell' : {
-				name:'Противодействие заклинаниям',
-				requirement:'Противодействие заклинаниям (Counter-spell) 3 или выше.',
+				name:'Антимагия',
+				requirement:'Противодействие магии (Counter-spell) 3 или выше.',
 				story:'Тренировка в искусстве противодействия заклинаниям дала вам способность интуитивно сопротивляться магии.',
 				text:'Когда вы являетесь целью магической атаки или действия, атакующий теряет любые масти ассоциированные с его магическим навыком (Magical)',
 				trigger:'',
@@ -70,8 +73,8 @@ var talents = {
 				requirement:'Специализированный (Specialized) с выбранным навыком.',
 				story:'Опытный атакующий зачастую может нанести больше урона чем дилетант (или обычный бандит) и вы не являетесь исключением.',
 				text:'Выберите навык. Все атаки с выбранным навыком получают следующий триггер:',
-				trigger:'♥ "Критический удар": При нанесении урона добавьте 1 дополнительную единицу урона за каждую ♥ в итоговом значении.',
-				limit:'Вы можете взять этот Талант несколько раз, каждый раз вы должны выбирать разный навык.',
+				trigger:'<b>♥ "Критический удар"</b>: При нанесении урона добавьте 1 дополнительную единицу урона за каждую ♥ в итоговом значении.',
+				limit:'Вы можете взять этот Талант несколько раз, каждый раз выбирая разный навык.',
 			},
 		'Cynic' : {
 				name:'Циник',
@@ -90,7 +93,7 @@ var talents = {
 				limit:'',
 			},
 		'Governor’s Gift' : {
-				name:'Подарок Губернатора',
+				name:'Дар Губернатора',
 				requirement:'Обаяние (Charm) 1 или выше.',
 				story:'Некоторые люди на короткой ноге с представителями определенного пола.',
 				text:'Выберите мужчину или женщину. Вы получаете "+" на любую дуэль Очарования (Bewitch) или Контроля (Scrutiny) против представителей выбранного пола.',
@@ -103,7 +106,7 @@ var talents = {
 				story:'Судьба улыбается вам, позволяя управлять собой чаще.',
 				text:'Вы тянете дополнительную карту в начале каждой игровой сессии.',
 				trigger:'',
-				limit:'Вы можете брать этот талант несколько раз и эффект накапливается. Но после вытягивания карт в начале игры, необходимо сбросить карты до 5, если их больше на руке.',
+				limit:'Вы можете брать этот талант несколько раз и эффект накапливается.<br>Но после вытягивания карт в начале игры, необходимо сбросить карты до 5, если их больше на руке.',
 			},
 		'Gruff' : {
 				name:'Грубоватый',
@@ -126,8 +129,9 @@ var talents = {
 				requirement:'Специализированный (Specialized) с выбранным навыком.',
 				story:'Вы можете всадить пулю так, чтобы помимо нанесения урона замедлить цель',
 				text:'Выберите навык. Все атаки с выбранным навыком получают следующий триггер:',
-				trigger:'♠ "Хромота": После успеха, цель получает следующее состояние до конца Dramatic Time: "Хромой: Этот персонаж может заявлять только одно действие движения (Movement General Action) в ход."',
+				trigger:'<b>♠ "Хромота"</b>: После успеха, цель получает следующее состояние до конца Dramatic Time: "Хромой: Этот персонаж может заявлять только одно действие движения (Movement General Action) в ход."',
 				limit:'',
+				fill:1,
 			},
 		'Honest' : {
 				name:'Честный',
@@ -203,10 +207,10 @@ var talents = {
 			},
 		'Scoundrel' : {
 				name:'Подлец',
-				requirement:'Есть те, кто буквально очаровывает деньги из чужого кошелька.',
-				story:'Вы получаете следующий триггер на все Социальные испытания (Social Challenges):',
-				text:'♦: "Карманная кража" (Pick Pocket Action)(не требует ОД) как часть определения результата Социального действия (Social Action). Карманная кража получает "+".',
-				trigger:'',
+				requirement:'Нет',
+				story:'Есть те, кто буквально очаровывает деньги из чужого кошелька.',
+				text:'Вы получаете следующий триггер на все Социальные испытания (Social Challenges):',
+				trigger:'<b>♦: "Карманная кража"</b> (Pick Pocket Action)(не требует ОД) как часть определения результата Социального действия (Social Action). Карманная кража получает "+".',
 				limit:'',
 			},
 		'Shot Studies' : {
@@ -230,7 +234,7 @@ var talents = {
 				requirement:'Выносливость -1 или меньше либо происхождение "Ортега"',
 				story:'Вы настолько привыкли к незначительной боли, болезням, или другим препятствиям, что можете их игнорировать как типичный фон своего существования.',
 				text:'Вы получаете следующее тактическое действие:',
-				trigger:'(0) "Отмахнуться": Вы можете сбросить карту чтобы убрать одно состояние (condition) с себя.',
+				trigger:'<b>(0) "Отмахнуться"</b>: Вы можете сбросить карту чтобы убрать одно состояние (condition) с себя.',
 				limit:'',
 			},
 		'Simple Logic' : {
@@ -243,14 +247,14 @@ var talents = {
 			},
 		'Skill Mastery' : {
 				name:'Мастер навыка',
-				requirement:'???',
+				requirement:'Обреченный',
 				story:'Есть те к кому приходит мастерство по мере тренировок.',
-				text:'Выберите навык. Вы получаете "+" на все Перевороты Испытания (Challenge Flips) с данным навыком.',
+				text:'Выберите навык. Вы получаете "+" на все проверки (Challenge Flips) с данным навыком.',
 				trigger:'',
 				limit:'Вы можете взять этот Талант несколько раз, каждый раз вы должны выбирать разный навык.',
 			},
 		'Specialized skill' : {
-				name:'Специализированный навык',
+				name:'Специализированный',
 				requirement:'Обреченный',
 				story:'Вы оттачивали определенное умение, позволяющее выполнять трюки с небольшим усилием.',
 				text:'Выберите навык и масть. Добавьте масть к знчению выбранного навыка.',
@@ -3394,6 +3398,7 @@ function TalentsTable(){
 		var tr = $('<tr />');
 		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");
+		td0.attr('id',"td-title");
 		if (pursuit != 'general'){
 			td0.append($('<input />',{type:'button',class:'btn talents-btn',value:'скрыть','click':function(){
 				hideElem(this)
@@ -3411,6 +3416,7 @@ function TalentsTable(){
 		var div4 = $('<div />',{id:pursuit+'-talentstable-gear',class:'talentstable-gear'});
 		
 		td.attr('colspan',"3");
+		td.attr('class',"pursuit-info td-"+pursuit);
 		table.append(tr.append(td.append(div1).append(div0.append(div2).append(div3)).append(div4)))
 
 		var arr1 = [];
@@ -3420,8 +3426,12 @@ function TalentsTable(){
 			arr1.push(p);
 		}
 		// console.log(arr1)
+		var count = arr1.length
 		// console.log('ARR1: '+arr1)
-		// console.log(arr1.length)
+		console.log(arr1.length)
+		console.log(count)
+		talentsCards(pursuit,count)
+		var cardcount = 1
 		for(var i = 0; i < arr1.length; i++){
 			// console.log(arr1[i])
 			if(arr1[i] == 'book'){
@@ -3437,33 +3447,57 @@ function TalentsTable(){
 
 				var name = talents[arr[t]][arr1[i]].name
 				if(name){
+					var cardname = name+'<br>('+arr1[i]+')'
+					var shortname = '<p class="talents-name">'+name+'</p>'
 					// console.log('name: '+name)
-					td1.append(name+'<br>('+arr1[i]+')')
+					td1.append(cardname)
 				}
 				else{
 					td1.append(arr1[i])
+					var shortname = arr1[i]
 				}
 				// console.log(talents[arr[t]][arr1[i]])
 				story = talents[arr[t]][arr1[i]].story
 				if(story){
+					var cardstory = '<p class="talents-story">'+story+'</p>'
 					// console.log('Story: '+story)
-					td2.append('<p class="talents-story">'+story+'</p>')
+					td2.append(cardstory)
+				}
+				else{
+					var cardstory =''
 				}
 				var requirement = talents[arr[t]][arr1[i]].requirement
 				if(requirement){
-					td2.append('<p class="talents-requirement"><b>Требование:</b> '+requirement+'</p>')
+					var cardrequirement = '<p class="talents-requirement"><b>Требование:</b> '+requirement+'</p>'
+					td2.append(cardrequirement)
+					// td2.append('<p class="talents-requirement"><b>Требование:</b> '+requirement+'</p>')
+				}
+				else{
+					var cardrequirement =''
 				}
 				var text = talents[arr[t]][arr1[i]].text
 				if(text){
-					td2.append('<p class="talents-text">'+text+'</p>')
+					var cardtext = '<p class="talents-text">'+text+'</p>'
+					td2.append(cardtext)
+				}
+				else{
+					var cardtext =''
 				}
 				var trigger = talents[arr[t]][arr1[i]].trigger
 				if(trigger){
-					td2.append('<p class="talents-trigger">'+trigger+'</p>')
+					var cardtrigger = '<p class="talents-trigger">'+trigger+'</p>'
+					td2.append(cardtrigger)
+				}
+				else{
+					var cardtrigger =''
 				}
 				var limit = talents[arr[t]][arr1[i]].limit
 				if(limit){
-					td2.append('<p class="talents-limit">'+limit+'</p>')
+					var cardlimit = '<p class="talents-limit">'+limit+'</p>'
+					td2.append(cardlimit)
+				}
+				else{
+					var cardlimit =''
 				}
 				var fill = talents[arr[t]][arr1[i]].fill
 				if(fill){
@@ -3475,6 +3509,7 @@ function TalentsTable(){
 						var div3 = $('<div />',{class:'talents-fill'});
 						if(fill == 1){
 							td2.append(div1)
+							var cardfill = div1
 						}
 						if(fill == 2){
 							td2.append(div1).append(div2)
@@ -3488,14 +3523,59 @@ function TalentsTable(){
 					}
 				}
 				table.append(tr.append(td1).append(td2))
-				console.log($('.talentstable-text').css('width'))
+
+				console.log(cardcount)
+				console.log(pursuit)
+
+				var card = $('<div />',{class:'card card-talent',id:'card-talent'+cardcount,}).html(shortname+cardrequirement+cardtext+cardtrigger+cardlimit)
+				if(pursuit == 'general' && cardcount <= 9){
+					console.log('add card')
+					$('#page-1').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 9 && cardcount <= 18){
+					console.log('add card')
+					$('#page-2').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 18 && cardcount <= 27){
+					console.log('add card')
+					$('#page-3').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 27 && cardcount <= 36){
+					console.log('add card')
+					$('#page-4').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 36 && cardcount <= 45){
+					console.log('add card')
+					$('#page-5').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 45 && cardcount <= 54){
+					console.log('add card')
+					$('#page-6').append(card)
+				}
+				cardcount+=1
+				// console.log($('.talentstable-text').css('width'))
 			}
+
 		}
-		$('#popup').append(table)
+		$('#popup-talents').append(table)
+		checkHeight(pursuit)
 	}
 }
 
 TalentsTable()
+
+function talentsCards(elem,pgcount){
+	if(elem == 'general'){
+		var count = pgcount
+		var pgnum = Math.round(count/9)
+		console.log(pgnum)
+		for(i=0;i<pgnum;i++){
+			$('#popup-cards').append($('<div/>',{class:'page',id:'page-'+(i+1)}))
+		}
+	}
+}
+
+talentsCards()
 
 function getTalent(card,type){
 	var arr2 = [];
@@ -3528,28 +3608,71 @@ arr = elem.split('-')
 // console.log(arr[0])
 	if(type == 't'){
 			$('.talentstable').hide()
-			$('#popup').hide()
+			$('#popup-talents').hide()
 			$('#talents-'+arr[0]).show()
-			$('#popup').show()
+			$('#popup-talents').show()
 			$('#page').hide()
 	}
 	if(type == 'c'){
 			$('.talentstable').hide()
-			$('#popup').hide()
+			$('#popup-talents').hide()
 			$('#page').hide()
 			$('#talents-'+arr[0]).show()
 			$('#'+arr[0]+'-front').show()
-			$('#popup').show()
+			$('#popup-talents').show()
 			
 	}
 }
 
 function hideElem(elem){
 	$(elem).parents('table').hide()
-	$('#popup').hide()
+	$('#popup-talents').hide()
 	$('#page').show()
 }
 
 // $('#popup').toggle()
-// $('.talentstable').hide()
+// $('.talentstable').show()
 // $('#page').toggle()
+
+function checkHeight(type){
+
+var hpopup = parseInt($('#popup-talents').css('height'))
+var htable = parseInt($('#talents-'+type).css('height'))
+var htitle = parseInt($('.talentstable-pursuit').css('height'))
+var hinfo = parseInt($('.pursuit-info').css('height'))
+
+console.log('Тип: '+type)
+console.log('Доступная высота: '+hpopup)
+console.log('Высота таблицы: '+htable)
+console.log('Высота заголовка: '+htitle)
+console.log('Высота информации: '+hinfo)
+}
+
+// var hpopup = parseInt($('#popup').css('height'))
+// var htitle = parseInt($('.talentstable-pursuit').css('height'))
+// var hinfo = parseInt($('.pursuit-info').css('height'))
+
+// console.log('Доступная высота: '+hpopup)
+// console.log('Высота заголовка: '+htitle)
+// console.log('Высота информации: '+hinfo)
+	// var hcard = parseInt($('.condition').css('height'))
+	// var himage = parseInt($('.'+value+'-image').css('height'))
+	// var hname = parseInt($('.'+value+'-name').css('height'))
+	// var htext = parseInt($('.'+value+'-text').css('height'))
+	// var hplace = hcard - hname
+	// console.log(hplace)
+
+	// if(hname > himage){
+	// 	$('.'+value+'-name').css('font-size','8pt').css('color','red')
+	// }
+	// if(htext > hplace){
+	// 	// $('.'+value+'-text').css('font-size','7pt').css('color','red')
+	// }
+	// var hname = parseInt($('.'+value+'-name').css('height'))
+	// var htext = parseInt($('.'+value+'-text').css('height'))
+	// if(hname <= himage){
+	// 	$('.'+value+'-name').css('color','black')
+	// }
+	// if(htext <= hplace){
+	// 	$('.'+value+'-text').css('color','black')
+	// }

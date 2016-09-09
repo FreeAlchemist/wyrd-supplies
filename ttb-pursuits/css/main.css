@@ -14,6 +14,19 @@ background-color: rgba(89, 62, 42, 1);
 /*background-color: transparent;*/
 }
 
+.page{
+position: relative;
+float: left;
+/*display: none;*/
+/*width: 20.9cm;
+height: 29.7cm;*/
+width: 18.9cm;
+height: 27.7cm;
+padding: 1cm 1cm 1cm 1cm;
+/*border:solid 1px blue;*/
+margin: 0px;
+}
+
 .title{
 font-weight: bold;
 text-transform: uppercase;
@@ -361,6 +374,19 @@ border-bottom-style: none;
 	display: none;
 	width: 21cm;
 	height: 29cm;
+	border:solid 1px red;
+	margin: 0px;
+	padding: 0px;
+}
+
+.popup{
+	
+	position: absolute;
+	top: 5px;
+	left:5px;
+	display: none;
+	width: 21cm;
+	height: 29cm;
 	/*border:solid 1px red;*/
 	margin: 0px;
 	padding: 0px;
@@ -377,6 +403,9 @@ border-bottom-style: none;
 border:solid 1px;
 font-size: 10pt;
 padding: 5px;
+/*height: 130px;*/
+max-height: 3.5cm;
+height: 3.5cm;
 }
 
 .talentstable-pursuit
@@ -405,6 +434,9 @@ width: 500px;
 
 	
 }
+
+#btn-talents-pursuit{
+	margin-bottom: 10px;}
 
 .pursuit-text{
 	background-color: Linen;
@@ -454,6 +486,7 @@ width: 500px;
 
 .btn:hover{
 	background: linear-gradient(to bottom, Burlywood ,Linen);
+	cursor: pointer;
 }
 
 .btn:active{
@@ -490,17 +523,6 @@ width: 500px;
 	/*margin-bottom: 5px;*/
 }
 
-@media print{
-	.talentstable,.talentstable-pursuit{
-		background-color: white;
-	}
-	.talents-btn{
-		display: none;
-	}
-	.pursuit-text{
-		background-color: White;
-	}
-}
 
 .talentstable-img,.talentstable-gear,.talentstable-options{
 	float: left;
@@ -560,4 +582,104 @@ margin: 0.3cm;
 
 .talentstable-wrap{
 	/*padding-top: 10px;*/
+}
+
+.td-general{
+	display: none;
+}
+
+#td-title{
+	height: 1cm;
+}
+
+.card-talent{
+	margin-bottom: 0cm;
+	background-color: Ivory;
+	background-color: white;
+	font-size: 10pt;
+	width: 6.2cm;
+	height: 8.7cm;
+	box-sizing: border-box;
+	border: 3mm solid rgba(137, 137, 140, 1);
+	outline: 1px solid #000000;
+	outline-width: 1mm;
+	box-shadow: inset black 0.5mm -0.5mm 0mm 0mm,inset rgb(0, 0, 0) -0.5mm 0mm 0mm 0mm;
+}
+
+.card-talent .talents-name{
+	/* border: solid black 0.5mm; */
+	/* border-radius: 0mm 0mm 5mm 5mm; */
+	text-align: center;
+	/* padding: 2mm 0mm 3mm 0mm; */
+	margin: 0px;
+	line-height: 8mm;
+	font-size: 10pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	/* background-color: peachpuff; */
+	background-color: rgba(211, 204, 199, 1);
+	box-shadow: inset black 0.5mm 0.5mm 0mm 0mm,inset black -0.5mm -0.5mm 0mm 0mm;
+}
+
+.card-talent .talents-story{
+	font-style: italic;
+	margin: 0px;
+	/*margin-top: 5px;*/
+	border-bottom: solid 0.5mm;
+	padding: 0mm 2mm 0mm 2mm;
+	font-size: 8pt;
+}
+
+.card-talent .talents-requirement{
+	margin: 0px;
+	margin-top: 5px;
+	border-bottom: solid 0.5mm;
+	padding: 0mm 2mm 0mm 2mm;
+	font-size: 9pt;
+	height: 10mm;
+}
+
+/*.card-talent .talents-requirement b{
+	text-transform: uppercase;
+}*/
+
+.card-talent .talents-text{
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0mm 2mm 0mm 2mm;
+	/*border-top: solid 0.5mm;*/
+}
+
+.card-talent .talents-trigger{
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0mm 2mm 0mm 2mm;
+}
+
+.card-talent .talents-limit{
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0mm 2mm 0mm 2mm;
+}
+
+
+
+@media print{
+	.talentstable,.talentstable-pursuit{
+		background-color: white;
+	}
+	.talents-btn{
+		display: none;
+	}
+	.pursuit-text{
+		background-color: White;
+	}
+	.card-talent,.card-talent{
+		background-color: White;
+		/*box-shadow: none;*/
+	}
+	.page{
+		border: none;
+	}
+
 }

@@ -1,13 +1,13 @@
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Стратегии: Базовые'}))
+$('#menu').append($('<a />',{href:'strategy-basic.html',text:'Стратегии: Базовые',class:'btn btn-strategy'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Схемы: Базовые'}))
+$('#menu').append($('<a />',{href:'scheme-basic.html',text:'Схемы: Базовые',class:'btn btn-strategy'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Стратегии: Турнирные'}))
+$('#menu').append($('<a />',{href:'strategy-gg.html',text:'Стратегии: Турнирные',class:'btn btn-strategy'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Схемы: Турнирные'}))
+$('#menu').append($('<a />',{href:'scheme-gg.html',text:'Схемы: Турнирные',class:'btn btn-strategy'}))
 
 // console.log('Language: '+lang)
 

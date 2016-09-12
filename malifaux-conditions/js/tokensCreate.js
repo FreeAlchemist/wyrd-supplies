@@ -30,8 +30,9 @@ function createtokens(){
 
 			// }
 			else{
-			var token = $('<div />',{class:'condition '+type+' '+form+" "+size,text:type})
-			token.css('background-image','none')
+				var token = $('<div />',{class:'condition '+type+' '+form+" "+size})
+				// var token = $('<div />',{class:'condition '+type+' '+form+" "+size,text:type})
+				// token.css('background-image','none')
 			}
 			console.log(size)
 			$("#page").append(token)

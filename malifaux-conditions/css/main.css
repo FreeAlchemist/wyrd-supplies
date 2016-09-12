@@ -117,7 +117,7 @@ color: Maroon;
 	height: 30mm;
 	font-size: 18px;
 	line-height: 30mm;
-	border-radius: 5mm;
+	/*border-radius: 5mm;*/
 }
 
 .size-40{
@@ -188,6 +188,8 @@ line-height: 4mm;
 	left:20cm;
 }
 #create,#createall{margin-top: 0.5cm;}
+
+#tokentype{height: 500px;}
 
 .valtable td{
 	border:solid 1px black;

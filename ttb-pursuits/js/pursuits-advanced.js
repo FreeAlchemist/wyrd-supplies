@@ -235,7 +235,7 @@ var pursuit = {
 		}
 	},
 	'studentoftransmortis' : {
-		name:'Студент Трансмортиса',
+		name:'Студент Трансмортизма',
 		text:'',
 		gear:'',
 		step:{

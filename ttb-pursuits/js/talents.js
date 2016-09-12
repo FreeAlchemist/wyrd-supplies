@@ -3394,7 +3394,7 @@ function TalentsTable(){
 		if(pursuit == 'exorcist'){name = 'Экзорцист'}
 		if(pursuit == 'revenant'){name = 'Призрак'}
 		if(pursuit == 'revivalist'){name = 'Реаниматор'}
-		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортиса'}
+		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортизма'}
 		var tr = $('<tr />');
 		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");

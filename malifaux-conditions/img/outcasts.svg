@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 outcasts.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.49026in" height="1.24541in"
+		viewBox="0 0 107.299 89.6694" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad37-4);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<radialGradient id="grad37-4" v:fillPattern="37" v:foreground="#ffff8c" v:background="#9c4a09" cx="1" cy="0" r="1">
+			<stop offset="0" style="stop-color:#ffff8c;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#9c4a09;stop-opacity:1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(49.822,-22.3467)">
+			<title>Лист.2</title>
+			<path d="M7.66 76.05 C8.61 64.67 0.79 64.48 1.11 64.06 C1.3 63.81 4.67 63.46 6.97 62.25 C8.66 61.37 9.77 60.02 11.58
+						 59.25 C12.56 58.83 13.73 58.58 14.62 58.39 C20.19 57.17 14.8 58.09 16.65 65.72 C17.75 70.26 21.4 77.16 22.24
+						 81.69 C24.2 92.22 11.01 89.94 4.53 88.14 C2.7 87.63 1.4 87.16 0.69 83.11 C0.27 80.73 0.06 77.12 0.01 75.59
+						 C-0.07 72.88 0.37 76.6 2.04 79.39 C4.83 84.05 11.01 86.11 14.48 85.1 C23.89 82.37 13.35 57.07 7.66 76.05
+						 Z" class="st1"/>
+		</g>
+		<g id="shape3-5" v:mID="3" v:groupContext="shape" transform="translate(27.3575,-17.4686)">
+			<title>Лист.3</title>
+			<path d="M37 86.02 C11.39 92.67 7.59 59.46 28.46 54.24 C24.67 50.92 0.95 49.02 0 58.98 C1.54 59.72 3.88 60.76 5.42 62.2
+						 C10.11 66.58 7.36 74.61 9.37 80.21 C10.52 83.39 13.2 85.79 15.87 87.36 C21.95 90.95 27.99 90.29 37 86.02
+						 Z" class="st1"/>
+		</g>
+		<g id="shape4-8" v:mID="4" v:groupContext="shape" transform="translate(56.771,-26.8071)">
+			<title>Лист.4</title>
+			<path d="M0 62.15 C19.93 45.07 22.3 70.69 19.93 89.67 C24.67 82.08 24.67 81.13 33.21 82.08 C22.77 55.51 30.36 37.96 36.53
+						 27.05 C29.89 27.79 12.81 33.69 0.95 48.87 C4.74 50.77 6.64 53.61 0 62.15 Z" class="st1"/>
+		</g>
+		<g id="shape5-11" v:mID="5" v:groupContext="shape" transform="translate(19.7669,-41.9882)">
+			<title>Лист.5</title>
+			<path d="M36.06 67.85 C15.18 67.85 7.59 72.59 3.8 89.67 C7.59 69.98 7.35 55.99 0 46.97 C6.64 54.56 28.94 58.36 32.26
+						 55.51 C30.36 61.68 31.79 64.05 36.06 67.85 Z" class="st1"/>
+		</g>
+		<g id="shape6-14" v:mID="6" v:groupContext="shape" transform="translate(4.11135,-60.9647)">
+			<title>Лист.6</title>
+			<path d="M19.45 89.67 C20.87 83.98 20.4 80.66 19.45 76.86 C15.18 75.91 8.06 77.33 0 80.66 C5.69 80.18 17.08 84.45 19.45
+						 89.67 Z" class="st1"/>
+		</g>
+		<g id="shape7-17" v:mID="7" v:groupContext="shape" transform="translate(7.43223,-2.1526)">
+			<title>Лист.7</title>
+			<path d="M70.21 76.4 C47.44 83.99 34.1 82.15 27.64 70.92 C22.81 62.53 21.82 48.88 0 50.78 C7.59 55.53 8.54 60.27 4.74
+						 64.07 C18.98 71.66 -1.47 75.32 28.59 88.35 C33.16 90.33 38.9 92.53 70.21 76.4 Z" class="st1"/>
+		</g>
+		<g id="shape8-20" v:mID="8" v:groupContext="shape" transform="translate(-20.7978,-9.42662) rotate(-15)">
+			<title>Лист.8</title>
+			<path d="M15.02 89.67 C16.71 85.21 15.82 83.01 14.01 80.56 C10.93 79.87 5.81 80.9 0 83.29 C4.1 82.95 12.3 86.02 15.02
+						 89.67 Z" class="st1"/>
+		</g>
+		<g id="shape9-23" v:mID="9" v:groupContext="shape" transform="translate(45.3852,-0.24)">
+			<title>Лист.9</title>
+			<path d="M0 89.67 C19.93 83.5 31.31 78.28 35.11 72.59 C28.23 74.49 17.08 77.33 10.91 76.39 C20.87 73.06 23.32 70.23 25.24
+						 68.73 C28.57 66.13 30.32 67.58 33.88 65.5 C35.92 64.32 38.55 61.97 39.38 59.78 C44.59 61.2 55.98 54.56 61.67
+						 46.5 C56.93 55.51 47.44 73.54 58.35 84.45 C46.97 78.28 28.94 82.08 0 89.67 Z" class="st1"/>
+		</g>
+	</g>
+</svg>

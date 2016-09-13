@@ -1,23 +1,16 @@
 $('body').prepend($('<div />',{id:'page'}))
 $('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню'}))
+$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
 $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Занятия: Basic'}))
+$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Basic',class:'btn btn-book'}))
+// $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Into the Steam',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Under Quarantine',class:'btn btn-book'}))
+// $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
+// $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
+// $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Guild Wars',class:'btn btn-book'}))
+// $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
 $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Занятия: Advanced'}))
-// $('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Занятия: Into the Steam'}))
-$('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Занятия: Under Quarantine'}))
-$('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Занятия: Into the Bayou'}))
-// $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'Занятия: From Nightmares'}))
-// $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Занятия: Guild Wars'}))
-// $('#menu').append($('<div />',{class:'row'}))
-// $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Занятия: Beyond Fate'}))
-// $('#menu').append($('<div />',{class:'row'}))
 
 function activeBtn(elem){
 	console.log(elem)
@@ -34,7 +27,7 @@ function activeBtn(elem){
 }
 
 
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты (таблица)','click':function(){
+$('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',value:'Таланты (таблица)','click':function(){
 	var active = activeBtn(this)
 	console.log(active)
 	if(active == '0'){
@@ -50,7 +43,7 @@ $('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursu
 			$('#page').hide()
 		}
 }}))
-$('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-talents-pursuit',value:'Общие Таланты (карточки)','click':function(){
+$('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',value:'Таланты (карточки)','click':function(){
 	var active = activeBtn(this)
 	console.log(active)
 	if(active == '0'){
@@ -126,7 +119,7 @@ for (var i = 0; i < quantity; i++) {
 
 	$('#'+stepid).clone().appendTo($('#'+cardid+'-talentstable-options'))
 
-	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:'Таланты: '+pursuit[cardid].name,'click':function(){showElem(this.id,'c')}}))
+	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:pursuit[cardid].name,'click':function(){showElem(this.id,'c')}}))
 };
 
 /*separator*/

@@ -22,7 +22,7 @@ float: left;
 height: 29.7cm;*/
 width: 18.9cm;
 height: 27.7cm;
-padding: 1cm 1cm 1cm 1cm;
+padding: 2cm 1cm 0cm 1cm;
 /*border:solid 1px blue;*/
 margin: 0px;
 }
@@ -374,7 +374,7 @@ border-bottom-style: none;
 	display: none;
 	width: 21cm;
 	height: 29cm;
-	border:solid 1px red;
+	/*border:solid 1px red;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -405,7 +405,7 @@ font-size: 10pt;
 padding: 5px;
 /*height: 130px;*/
 max-height: 3.5cm;
-height: 3.5cm;
+height: 2cm;
 }
 
 .talentstable-pursuit
@@ -427,16 +427,7 @@ width: 500px;
 	margin-top: 0.3cm;
 }
 
-#btn-talents-pursuit,#btn-pursuit-text{
-	margin-top: 20px;
-	/*width:100px;*/
-	height: 50px;
 
-	
-}
-
-#btn-talents-pursuit{
-	margin-bottom: 10px;}
 
 .pursuit-text{
 	background-color: Linen;
@@ -493,6 +484,53 @@ width: 500px;
 	box-shadow: inset 0px 4px 10px Saddlebrown;
 }
 
+
+
+.talents-btn{
+	float: right;
+	height: 40px;
+	width: 60px;
+}
+
+.btn-pursuit{
+	height: 45px;
+	width: 130px;
+	text-align: left;
+	text-transform: capitalize;
+	/* margin-bottom: 5px; */
+	float: left;
+}
+
+.btn-book{
+	margin: 0px;
+	padding: 5px;
+	background: linear-gradient(to bottom, rgb(253, 249, 245), rgb(187, 150, 130));
+	border-bottom-color: rgb(199, 187, 172);
+	border-right-color: rgb(199, 187, 172);
+	border-top-color: rgb(237, 219, 197);
+	border-left-color: rgb(237, 219, 197);
+	width: 114px;
+	line-height: 40px;
+}
+
+.btn-main{
+	margin-bottom: 5px;
+	line-height: 40px;
+	width: 100%;
+}
+
+.btn-talents-pursuit{
+	margin-top: 20px;
+	/*width:100px;*/
+	height: 50px;
+	margin-bottom: 10px;
+	height: 45px;
+	width: 130px;
+	text-align: left;
+	text-transform: capitalize;
+	/* margin-bottom: 5px; */
+	float: left;
+}
 .btnactive{
 	background: linear-gradient(to bottom, Burlywood ,Linen);
     border-bottom-color: Burlywood;
@@ -508,21 +546,6 @@ width: 500px;
     color: black;
     box-shadow: inset 0px 4px 10px Saddlebrown;
 }
-
-.talents-btn{
-	float: right;
-	height: 40px;
-	width: 60px;
-}
-
-.btn-pursuit{
-	height:45px;
-	width: 200px;
-	text-align: left;
-	text-transform: capitalize;
-	/*margin-bottom: 5px;*/
-}
-
 
 .talentstable-img,.talentstable-gear,.talentstable-options{
 	float: left;
@@ -678,7 +701,7 @@ margin: 0.3cm;
 		background-color: White;
 		/*box-shadow: none;*/
 	}
-	.page{
+	.page,.popup{
 		border: none;
 	}
 

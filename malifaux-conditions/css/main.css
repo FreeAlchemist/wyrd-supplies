@@ -88,9 +88,15 @@ color: Maroon;
 	background-color: rgba(121,78,143,1);
 	background-image: url(../img/masks.svg);
 }
-.scheme-outcast{background-color: rgba(216, 190, 105, 1);}
+.scheme-outcast{
+	background-color: rgba(213, 198, 166, 1);
+	background-image: url(../img/outcasts.svg);
+}
 .scheme-thunder{background-color: rgba(221, 153, 28, 1);}
-.scheme-gremlin{background-color: rgba(149, 168, 110, 1);}
+.scheme-gremlin{
+	background-color: rgba(149, 168, 110, 1);
+	background-image: url(../img/gremlins.svg);
+}
 
 .square{
 	border-radius: 0px;
@@ -117,7 +123,7 @@ color: Maroon;
 	height: 30mm;
 	font-size: 18px;
 	line-height: 30mm;
-	border-radius: 5mm;
+	/*border-radius: 5mm;*/
 }
 
 .size-40{
@@ -188,6 +194,8 @@ line-height: 4mm;
 	left:20cm;
 }
 #create,#createall{margin-top: 0.5cm;}
+
+#tokentype{height: 500px;}
 
 .valtable td{
 	border:solid 1px black;

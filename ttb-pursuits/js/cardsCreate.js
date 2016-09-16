@@ -3,13 +3,13 @@ $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Basic',class:'btn btn-book'}))
-// $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Into the Steam',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Under Quarantine',class:'btn btn-book'}))
-// $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
-// $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
-// $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Guild Wars',class:'btn btn-book'}))
-// $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Guild Wars',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
 $('#menu').append($('<div />',{class:'row'}))
 
 function activeBtn(elem){
@@ -59,45 +59,68 @@ $('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',v
 }}))
 $('#menu').append($('<div />',{class:'row'}))
 
-// $('#menu').append($('<input />',{type:'button',class:'btn',id:'btn-pursuit-text',value:'Описания занятий (обложка)','click':function(){
-// 	$('.pursuit-text').toggle()
-// 	activeBtn(this)
-// }}))
+console.log(pursuit)
 
-// $('#menu').append($('<p />',{text:'Чтобы увидеть таланты занятия, нажмите на блок "Развитие талантов" карточки.'}))
 
-var arr = [];
-
-for (var p in pursuit) {
-	arr.push(p);
-}
-
-var quantity = arr.length;
+var quantity = pursuit.length;
 
 /*front*/
 for (var i = 0; i < quantity; i++) {
 	// console.log('PURSUIT #'+i+': ')
 	// console.log(pursuit[arr[i]])
+	// console.log(pursuit[i])
 
-	var cardid = arr[i];
+	// var cardid = arr[i];
+	var cardid = pursuit[i];
+	if(getInfo('glossary',cardid,'name')){
+		var pursuitname = getInfo('glossary',cardid,'name')
+	}
+	else{
+		var pursuitname = cardid
+	}
+
+		
 	var cardfrontid = cardid+'-front';
 	var cardbackid = cardid+'-back';
 	// console.log(cardid)
 	$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 	$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
 	$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id,'t')}}))
-	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuit[cardid].name}))
 
-	if(pursuit[cardid].gear){
+	console.log('NAME '+pursuitname)
+
+	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuitname}))
+
+	if(getInfo('talents',cardid,'gear')){
+		var gear = getInfo('talents',cardid,'gear')
+	}
+	else{
+		var gear = cardid+'-talent-gear'
+	}
+	console.log(gear)
+
+	if(gear){
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'вещи:'}))
-		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
+		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-text',text:gear}))
 
 		$('#'+cardid+'-talentstable-gear').append($('<div />',{class:'gear-name',text:'вещи:'}))
-		$('#'+cardid+'-talentstable-gear').append($('<div />',{class:'gear-text',text:pursuit[cardid].gear}))
+		$('#'+cardid+'-talentstable-gear').append($('<div />',{class:'gear-text',text:gear}))
 	}
 
-	var name = getTalent(cardid,'n')
-	var talent = getTalent(cardid,'t')
+	if(getInfo('talents',cardid,'name','main')){
+		var name = getInfo('talents',cardid,'name','main')
+	}
+	else{
+		var name = cardid+'-talent-name'
+	}
+
+	if(getInfo('talents',cardid,'text','main')){
+		var talent = getInfo('talents',cardid,'text','main')
+	}
+	else{
+		var talent = cardid+'-talent-text'
+	}
+
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-name',text:name}))
 	$('#'+cardfrontid+'-bg1').append($('<div />',{class:'talent-text',text:talent}))
 
@@ -105,21 +128,21 @@ for (var i = 0; i < quantity; i++) {
 
 	$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
 	$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
-	//#popup-talents #talents-scrapper
 
-	var steparr = [];
-	for (var c in pursuit[cardid].step) {
-		steparr.push(c);
+	if(talents[cardid].step){
+		var steparr = [];
+		for (var c in talents[cardid].step) {
+			steparr.push(c);
+		}
+		var stepquantity = steparr.length;
+		for (var s = 1; s <= stepquantity; s++) {
+			$('#'+stepid).append($('<li />',{text:talents[cardid].step[s]}))
+		};
 	}
-	var stepquantity = steparr.length;
-	for (var s = 1; s <= stepquantity; s++) {
-		$('#'+stepid).append($('<li />',{text:pursuit[cardid].step[s]}))
-
-	};
 
 	$('#'+stepid).clone().appendTo($('#'+cardid+'-talentstable-options'))
 
-	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:pursuit[cardid].name,'click':function(){showElem(this.id,'c')}}))
+	$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:pursuitname,'click':function(){showElem(this.id,'c')}}))
 };
 
 /*separator*/
@@ -138,14 +161,28 @@ if(quantity > 3 && (quantity % 3) != 0){
 
 /*back*/
 for (var i = quantity-1; i >= 0; i--) {
-	var cardid = arr[i];
+	var cardid = pursuit[i];
+
+	if(getInfo('glossary',cardid,'name')){
+		var pursuitname = getInfo('glossary',cardid,'name')
+	}
+	else{
+		var pursuitname = cardid
+	}
+
+	if(getInfo('glossary',cardid,'text')){
+		var pursuittext = getInfo('glossary',cardid,'text')
+	}
+	else{
+		var pursuittext = cardid+'-text'
+	}
+
 	var cardbackid = cardid+'-back';
 	$('#page').append($('<div />',{class:'card card-back '+faction,id:cardbackid}))
 	$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 	$('#'+cardbackid+'-bg').clone().appendTo($('#'+cardid+'-talentstable-img'))
-	$('#'+cardid+'-talentstable-summary').append(pursuit[cardid].text)
-	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuit[cardid].name}))
-	$('#'+cardbackid+'-bg').append($('<div />',{class:'pursuit-text',text:pursuit[cardid].text}))
+	$('#'+cardid+'-talentstable-summary').append(pursuittext)
+	$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuitname}))
 	$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 
 }
@@ -166,7 +203,7 @@ for (var i = quantity-1; i >= 0; i--) {
 		$('.'+value+'-name').css('font-size','8pt').css('color','red')
 	}
 	if(htext > hplace){
-		// $('.'+value+'-text').css('font-size','7pt').css('color','red')
+		$('.'+value+'-text').css('font-size','7pt').css('color','red')
 	}
 	var hname = parseInt($('.'+value+'-name').css('height'))
 	var htext = parseInt($('.'+value+'-text').css('height'))

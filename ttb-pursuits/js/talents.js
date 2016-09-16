@@ -1,5 +1,7 @@
+$('body').prepend($('<script />',{type:'text/javascript',src:'js/glossary.js'}))
 $('body').prepend($('<div />',{class:'popup',id:'popup-cards'}))
 $('body').prepend($('<div />',{class:'popup',id:'popup-talents'}))
+//<script type="text/javascript" src="js/talents.js"></script>
 
 var talents = {
 	general :{
@@ -336,6 +338,19 @@ var talents = {
 	},
 	academic : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Student of Knowledge',
+			'2' : 'Общий талант',
+			'3' : 'Eureka Moment / Rational Mind',
+			'4' : 'Общий талант',
+			'5' : 'Великий мыслитель / Rational Mind',
+			'6' : 'Общий талант',
+			'7' : 'Прикладное обучение / Эврика',
+			'8' : 'Общий талант',
+			'9' : 'Прикладное обучение / Великий мыслитель',
+			'10' : 'Сумма всех знаний',
+		},
 		'Avid Student' : {
 				name:'Заядлый студент',
 				requirement:'',
@@ -394,6 +409,19 @@ var talents = {
 	},
 	criminal : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Конкурентное преимущество',
+			'2' : 'Общий талант',
+			'3' : 'Импровизация / Быстрая работа',
+			'4' : 'Общий талант',
+			'5' : 'Импровизация / Юркий',
+			'6' : 'Общий талант',
+			'7' : 'Быстрая работа / Внезапный удар',
+			'8' : 'Общий талант',
+			'9' : 'Внезапный удар / Юркий',
+			'10' : 'Мастер дезориентации',
+		},
 		'Opportunist' : {
 				name:'Оппортунист',
 				requirement:'',
@@ -455,6 +483,19 @@ var talents = {
 	},
 	dabbler : {
 		book:'Fated Almanac',
+		gear:'Гримуар: 1 Sorcery Магия, 1 Prestidigitation Магия, 3 Иммуто. Магическая Теория',
+		step:{
+			'1' : 'Таинственные размышления',
+			'2' : 'Общий талант',
+			'3' : 'Освоенный Иммуто / Родство с заклинанием',
+			'4' : 'Общий талант',
+			'5' : 'Освоенная Магия / Родство с заклинанием',
+			'6' : 'Общий талант',
+			'7' : 'Освоенный Иммуто / Освоенная Магия',
+			'8' : 'Общий талант',
+			'9' : 'Освоенная Магия / Родство с заклинанием',
+			'10' : 'Усиленная проводимость',
+		},
 		'Epiphany' : {
 			name:'Богоявление',
 			requirement:'',
@@ -509,6 +550,19 @@ var talents = {
 	},
 	drudge : {
 		book:'Fated Almanac',
+		gear:'1 пневматическая конечность + паровые улучшения (общая стоимость до 25§)',
+		step:{
+			'1' : 'Долгие дни',
+			'2' : 'Общий талант',
+			'3' : 'Размеренный темп / Командная работа',
+			'4' : 'Общий талант',
+			'5' : 'Командная работа / Медлящий умирать',
+			'6' : 'Общий талант',
+			'7' : 'Долгие страдания / Размеренный темп',
+			'8' : 'Общий талант',
+			'9' : 'Долгие страдания / Медлящий умирать',
+			'10' : 'Меня не сломить',
+		},
 		'Hard days night' : {
 				name:'Ночь после тяжелого дня',
 				requirement:'',
@@ -571,6 +625,19 @@ var talents = {
 	},
 	graverobber : {
 		book:'Fated Almanac',
+		gear:'Гримуар: 1 Магия Некромантии (Necromancy), 1 Магия Зачарования (Enchanting), 3 Иммуто. Магическая Теория',
+		step:{
+			'1' : 'Нездоровые мысли',
+			'2' : 'Общий талант',
+			'3' : 'Мертвенная бледность / Освоенный Иммуто',
+			'4' : 'Общий талант',
+			'5' : 'Мертвенная бледность / Освоенная Магия',
+			'6' : 'Общий талант',
+			'7' : 'Жуткие примеси / Освоенный Иммуто',
+			'8' : 'Общий талант',
+			'9' : 'Жуткие примеси / Освоенная Магия',
+			'10' : 'Нечистый маяк',
+		},
 		'Black soul' : {
 				name:'Черная душа',
 				requirement:'',
@@ -632,6 +699,19 @@ var talents = {
 	},
 	guard : {
 		book:'Fated Almanac',
+		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
+		step:{
+			'1' : 'Стойкий защитник',
+			'2' : 'Общий талант',
+			'3' : 'Неизбежная защита / Принять удар',
+			'4' : 'Общий талант',
+			'5' : 'Неизбежная защита / Тяжело ранить',
+			'6' : 'Общий талант',
+			'7' : 'Тяжело ранить / Шквал',
+			'8' : 'Общий талант',
+			'9' : 'Шквал / Принять удар',
+			'10' : 'Неуступчивый',
+		},
 		'Now you are pissing me off' : {
 				name:'Теперь ты меня бесишь',
 				requirement:'',
@@ -693,6 +773,19 @@ var talents = {
 	},
 	gunfighter : {
 		book:'Fated Almanac',
+		gear:'пистолет либо дробовик стоимостью до 20§ + 1 кастомизация (стр 150) без дополнительных затрат',
+		step:{
+			'1' : 'Быстрое выхватывание',
+			'2' : 'Общий талант',
+			'3' : 'Вызов / Стрелок',
+			'4' : 'Общий талант',
+			'5' : 'Вызов / Нет времени на это',
+			'6' : 'Общий талант',
+			'7' : 'Нет времени на это / Скорострельный',
+			'8' : 'Общий талант',
+			'9' : 'Стрелок / Скорострельный',
+			'10' : 'Эксперт дальнего боя',
+		},
 		'Finger on the trigger' : {
 				name:'Палец на курке',
 				requirement:'',
@@ -754,6 +847,19 @@ var talents = {
 	},
 	mercenary : {
 		book:'Fated Almanac',
+		gear:'карабин либо ружье стоимостью до 20§ + 1 кастомизация (стр 150) без дополнительных затрат',
+		step:{
+			'1' : 'Скоростная перезарядка',
+			'2' : 'Общий талант',
+			'3' : 'Ужасная атака / Сложный выстрел',
+			'4' : 'Общий талант',
+			'5' : 'Монета за убийство',
+			'6' : 'Общий талант',
+			'7' : 'Неумолимый / Сложный выстрел',
+			'8' : 'Общий талант',
+			'9' : 'Неумолимый / Ужасная атака',
+			'10' : 'Бесконечное преследование',
+		},
 		'Deadset' : {
 				name:'Захват цели',
 				requirement:'',
@@ -814,6 +920,19 @@ var talents = {
 	},
 	overseer : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Согласованные усилия',
+			'2' : 'Общий талант',
+			'3' : 'Время деньги / Работать умнее',
+			'4' : 'Общий талант',
+			'5' : 'Делегировать / Работать умнее',
+			'6' : 'Общий талант',
+			'7' : 'Время деньги / Ты ленивый ...',
+			'8' : 'Общий талант',
+			'9' : 'Делегировать / Ты ленивый ...',
+			'10' : 'Сейчас парни!',
+		},
 		'Oversight' : {
 				name:'Надзор',
 				requirement:'',
@@ -874,6 +993,19 @@ var talents = {
 	},
 	performer : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Сильное впечатление',
+			'2' : 'Общий талант',
+			'3' : 'Изящество под огнем / Эффектный вход',
+			'4' : 'Общий талант',
+			'5' : 'Классическое образование / Изящество под огнем',
+			'6' : 'Общий талант',
+			'7' : 'Изящный выход / Эффектный вход',
+			'8' : 'Общий талант',
+			'9' : 'Классическое образование / Изящный выход',
+			'10' : 'Это шоубизнес',
+		},
 		'Flare for the dramatic' : {
 				name:'Вспышка драматизма',
 				requirement:'',
@@ -934,6 +1066,19 @@ var talents = {
 	},
 	pioneer : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Рожденный под странствующей звездой',
+			'2' : 'Общий талант',
+			'3' : 'Повозки в круг / Жесткий как гвоздь',
+			'4' : 'Общий талант',
+			'5' : 'Повозки в круг / Плохиш',
+			'6' : 'Общий талант',
+			'7' : 'Начеку / Жесткий как гвоздь',
+			'8' : 'Общий талант',
+			'9' : 'Плохиш',
+			'10' : 'Неумолимый',
+		},
 		'Rugged individual' : {
 				name:'Прочная личность',
 				requirement:'',
@@ -994,6 +1139,19 @@ var talents = {
 	},
 	scrapper : {
 		book:'Fated Almanac',
+		gear:'рукопашное оружие, броня (стр 172,176) общей стоимостью до 25§',
+		step:{
+			'1' : 'Сомкнуть разрыв',
+			'2' : 'Общий талант',
+			'3' : 'Шквал / Восстановление',
+			'4' : 'Общий талант',
+			'5' : 'Шквал / Следить за всеми ними',
+			'6' : 'Общий талант',
+			'7' : 'Злобный / Восстановление',
+			'8' : 'Общий талант',
+			'9' : 'Злобный / Следить за всеми ними',
+			'10' : 'Эксперт Ближнего боя',
+		},
 		'Bloody Minded' : {
 				name:'Кровожадный',
 				requirement:'',
@@ -1054,6 +1212,19 @@ var talents = {
 	},
 	tinkerer : {
 		book:'Fated Almanac',
+		gear:'Гримуар: 1 Магия Зачарования, 1 Sorcery Магия, 3 Иммуто. Магическая Теория',
+		step:{
+			'1' : 'Расширить границы',
+			'2' : 'Общий талант',
+			'3' : 'Боевой Конструкт / Ударный ремонт',
+			'4' : 'Общий талант',
+			'5' : 'Боевой Конструкт / Нереальные ожидания',
+			'6' : 'Общий талант',
+			'7' : 'Многозадачный / Ударный ремонт',
+			'8' : 'Общий талант',
+			'9' : 'Многозадачный / Нереальные ожидания',
+			'10' : 'Под давлением',
+		},
 		'Gear head' : {
 				name:'Шестеренки в голове',
 				requirement:'',
@@ -1114,6 +1285,19 @@ var talents = {
 	},
 	wastrel : {
 		book:'Fated Almanac',
+		gear:'не магический инструментарий (стр 179)',
+		step:{
+			'1' : 'Удачная лотерея',
+			'2' : 'Общий талант',
+			'3' : 'Карты в рукаве / Козырь',
+			'4' : 'Общий талант',
+			'5' : 'Карты в рукаве / Ва банк',
+			'6' : 'Общий талант',
+			'7' : 'Игра до крови / Козырь',
+			'8' : 'Общий талант',
+			'9' : 'Ва банк / Игра до крови',
+			'10' : 'Шансы пятьдесят на пятьдесят',
+		},
 		'Educated' : {
 				name:'Образованный',
 				requirement:'',
@@ -1174,6 +1358,14 @@ var talents = {
 	},
 	deathmarshal : {
 		book:'Advanced (Fated Almanac)',
+		gear:'',
+		step:{
+			'1' : 'Peacebringer',
+			'2' : 'Coffin',
+			'3' : 'Special Dispensation',
+			'4' : 'Pine Box',
+			'5' : 'Flaming Head',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1257,6 +1449,14 @@ var talents = {
 	},
 	animator : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1340,6 +1540,14 @@ var talents = {
 	},
 	augmented : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1423,6 +1631,14 @@ var talents = {
 	},
 	collaborator : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1506,6 +1722,14 @@ var talents = {
 	},
 	engineer : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1589,6 +1813,14 @@ var talents = {
 	},
 	illusionist : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1672,6 +1904,14 @@ var talents = {
 	},
 	infiltrator : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1755,6 +1995,14 @@ var talents = {
 	},
 	mage : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1838,6 +2086,14 @@ var talents = {
 	},
 	primal : {
 		book:'Into the Steam',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -1921,6 +2177,14 @@ var talents = {
 	},
 	shapeshifter : {
 		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2004,6 +2268,14 @@ var talents = {
 	},
 	decemberacolyte : {
 		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2087,6 +2359,14 @@ var talents = {
 	},
 	silentone : {
 		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2170,6 +2450,14 @@ var talents = {
 	},
 	demolitionist : {
 		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2253,6 +2541,14 @@ var talents = {
 	},
 	bully : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2336,6 +2632,14 @@ var talents = {
 	},
 	chemist : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2419,6 +2723,14 @@ var talents = {
 	},
 	forgotten : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2502,6 +2814,14 @@ var talents = {
 	},
 	ghosteater : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2585,6 +2905,14 @@ var talents = {
 	},
 	ghoul : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2668,6 +2996,14 @@ var talents = {
 	},
 	medium : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2751,6 +3087,14 @@ var talents = {
 	},
 	necromancer : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2834,6 +3178,14 @@ var talents = {
 	},
 	sawbones : {
 		book:'Under Quarantine',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -2917,6 +3269,14 @@ var talents = {
 	},
 		abettorofobliteration : {
 		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -3000,6 +3360,14 @@ var talents = {
 	},
 		exorcist : {
 		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -3083,6 +3451,14 @@ var talents = {
 	},
 		revenant : {
 		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -3166,6 +3542,14 @@ var talents = {
 	},
 		revivalist : {
 		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -3249,6 +3633,14 @@ var talents = {
 	},
 		studentoftransmortis : {
 		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : '',
+			'3' : '',
+			'4' : '',
+			'5' : '',
+		},
 		'' : {
 				name:'',
 				requirement:'',
@@ -3353,48 +3745,20 @@ function TalentsTable(){
 		table.attr('id','talents-'+arr[t])
 		table.css('display','none')
 		var pursuit = arr[t]
-		var name = pursuit
-		if(pursuit == 'general'){name = 'Общие таланты'}
-		if(pursuit == 'academic'){name = 'Академик'}
-		if(pursuit == 'criminal'){name = 'Преступник'}
-		if(pursuit == 'dabbler'){name = 'Дилетант'}
-		if(pursuit == 'drudge'){name = 'Трудяга'}
-		if(pursuit == 'graverobber'){name = 'Гробокопатель'}
-		if(pursuit == 'guard'){name = 'Гвардеец'}
-		if(pursuit == 'gunfighter'){name = 'Стрелок'}
-		if(pursuit == 'mercenary'){name = 'Наемник'}
-		if(pursuit == 'overseer'){name = 'Смотритель'}
-		if(pursuit == 'performer'){name = 'Исполнитель'}
-		if(pursuit == 'pioneer'){name = 'Первопроходец'}
-		if(pursuit == 'scrapper'){name = 'Задира'}
-		if(pursuit == 'tinkerer'){name = 'Жестянщик'}
-		if(pursuit == 'wastrel'){name = 'Кутила'}
-		if(pursuit == 'deathmarshal'){name = 'Маршал Смерти'}
-		if(pursuit == 'animator'){name = 'Аниматор'}
-		if(pursuit == 'augmented'){name = 'Дополненный'}
-		if(pursuit == 'collaborator'){name = 'Пособник'}
-		if(pursuit == 'engineer'){name = 'Инженер'}
-		if(pursuit == 'illusionist'){name = 'Иллюзионист'}
-		if(pursuit == 'infiltrator'){name = 'Лазутчик'}
-		if(pursuit == 'mage'){name = 'Маг'}
-		if(pursuit == 'primal'){name = 'Первобытный'}
-		if(pursuit == 'shapeshifter'){name = 'Перевертыш'}
-		if(pursuit == 'decemberacolyte'){name = 'Аколит Декабря'}
-		if(pursuit == 'silentone'){name = 'Безмолвный'}
-		if(pursuit == 'demolitionist'){name = 'Подрывник'}
-		if(pursuit == 'bully'){name = 'Хулиган'}
-		if(pursuit == 'chemist'){name = 'Химик'}
-		if(pursuit == 'forgotten'){name = 'Забытый'}
-		if(pursuit == 'ghosteater'){name = 'Пожиратель духов'}
-		if(pursuit == 'ghoul'){name = 'Упырь'}
-		if(pursuit == 'medium'){name = 'Медиум'}
-		if(pursuit == 'necromancer'){name = 'Некромант'}
-		if(pursuit == 'sawbones'){name = 'Костоправ'}
-		if(pursuit == 'abettorofobliteration'){name = 'Пособник Забвения'}
-		if(pursuit == 'exorcist'){name = 'Экзорцист'}
-		if(pursuit == 'revenant'){name = 'Призрак'}
-		if(pursuit == 'revivalist'){name = 'Реаниматор'}
-		if(pursuit == 'studentoftransmortis'){name = 'Студент Трансмортизма'}
+		if(getInfo('glossary',pursuit,'name')){
+			var name = getInfo('glossary',pursuit,'name')
+		}
+		else{
+			var name = pursuit
+		}
+
+		// if(getName(pursuit,'n')){
+		// 	var name = getName(pursuit,'n')
+		// }
+		// else{
+		// 	var name = pursuit
+		// }
+
 		var tr = $('<tr />');
 		var td0 = $('<td />',{class:'talentstable-pursuit',text:name});
 		td0.attr('colspan',"2");
@@ -3439,7 +3803,20 @@ function TalentsTable(){
 				// console.log(book)
 				td0.prepend(book+': ')
 			}
-			else{
+			// else if(arr1[i] == 'gear'){
+			// 	// if(talents[arr[t]].gear){
+			// 	// 	var gear = talents[arr[t]].gear
+			// 	// }
+			// 	// else{
+			// 	// 	var gear = 'No Gear'
+			// 	// }
+			// 	// var gear = talents[arr[t]].gear
+			// 	console.log(talents[arr[t]].gear)
+			// 	// console.log(arr[t])
+			// 	// td0.prepend(gear+': ')
+			// 	// $('#'+arr[t]+'-talentstable-gear').append($('<div />',{class:'gear-text',text:gear}))
+			// }
+			else if(arr1[i] != 'book'&&arr1[i] != 'gear'&&arr1[i] != 'step'){
 				var tr = $('<tr />');
 				var td1 = $('<td />',{class:'talentstable-name'});
 				var td2 = $('<td />',{class:'talentstable-text'});
@@ -3552,6 +3929,42 @@ function TalentsTable(){
 					console.log('add card')
 					$('#page-6').append(card)
 				}
+				if(pursuit == 'general'&& cardcount > 54 && cardcount <= 63){
+					console.log('add card')
+					$('#page-7').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 63 && cardcount <= 72){
+					console.log('add card')
+					$('#page-8').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 72 && cardcount <= 81){
+					console.log('add card')
+					$('#page-9').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 81 && cardcount <= 90){
+					console.log('add card')
+					$('#page-10').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 90 && cardcount <= 99){
+					console.log('add card')
+					$('#page-11').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 99 && cardcount <= 108){
+					console.log('add card')
+					$('#page-12').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 108 && cardcount <= 117){
+					console.log('add card')
+					$('#page-13').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 117 && cardcount <= 126){
+					console.log('add card')
+					$('#page-14').append(card)
+				}
+				if(pursuit == 'general'&& cardcount > 126 && cardcount <= 135){
+					console.log('add card')
+					$('#page-15').append(card)
+				}
 				cardcount+=1
 				// console.log($('.talentstable-text').css('width'))
 			}
@@ -3577,29 +3990,29 @@ function talentsCards(elem,pgcount){
 
 talentsCards()
 
-function getTalent(card,type){
-	var arr2 = [];
-	var cardtalent = talents[card]
-	for (var p in cardtalent) {
-			arr2.push(p);
-		}
-		if(type == 'n'){
+// function getTalent(card,type){
+// 	var arr2 = [];
+// 	var cardtalent = talents[card]
+// 	for (var p in cardtalent) {
+// 			arr2.push(p);
+// 		}
+// 		if(type == 'n'){
 			
-			if(cardtalent[arr2[1]].name){
-				return cardtalent[arr2[1]].name
-			}
-			else{
-				return arr2[1]
-			}
+// 			if(cardtalent[arr2[1]].name){
+// 				return cardtalent[arr2[1]].name
+// 			}
+// 			else{
+// 				return arr2[1]
+// 			}
 			
-		}
-			else if(type == 't'){
-				return cardtalent[arr2[1]].text
-			}
-				else{
-					'none'
-				}
-}
+// 		}
+// 			else if(type == 't'){
+// 				return cardtalent[arr2[1]].text
+// 			}
+// 				else{
+// 					return 'none'
+// 				}
+// }
 
 function showElem(elem,type){
 // console.log(type)

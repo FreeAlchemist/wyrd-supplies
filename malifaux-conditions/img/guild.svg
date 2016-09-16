@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 guild.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.59564in" height="1.19045in"
+		viewBox="0 0 114.886 85.7122" xml:space="preserve" color-interpolation-filters="sRGB" class="st7">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad28-4);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:url(#grad28-8);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:url(#grad28-12);stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st4 {fill:url(#grad28-16);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st5 {fill:url(#grad36-41);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st6 {fill:url(#grad40-174);stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad28-4" v:fillPattern="28" v:foreground="#ffffff" v:background="#dfd0c4" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#dfd0c4;stop-opacity:1"/>
+		</linearGradient>
+		<linearGradient id="grad28-8" v:fillPattern="28" v:foreground="#f0e9e3" v:background="#795c42" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#f0e9e3;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#795c42;stop-opacity:1"/>
+		</linearGradient>
+		<linearGradient id="grad28-12" v:fillPattern="28" v:foreground="#f0e9e3" v:foregroundOpacity="0.4" v:background="#795c42"
+				v:backgroundOpacity="0.4" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#f0e9e3;stop-opacity:0.4"/>
+			<stop offset="1" style="stop-color:#795c42;stop-opacity:0.4"/>
+		</linearGradient>
+		<linearGradient id="grad28-16" v:fillPattern="28" v:foreground="#1e1e1e" v:background="#000000" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#1e1e1e;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#000000;stop-opacity:1"/>
+		</linearGradient>
+		<radialGradient id="grad36-41" v:fillPattern="36" v:foreground="#f5deb3" v:background="#795c42" cx="0" cy="0" r="1">
+			<stop offset="0" style="stop-color:#f5deb3;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#795c42;stop-opacity:1"/>
+		</radialGradient>
+		<radialGradient id="grad40-174" v:fillPattern="40" v:foreground="#ffc000" v:background="#000000" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" style="stop-color:#ffc000;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#000000;stop-opacity:1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(36.6448,-0.75)">
+			<title>Лист.2</title>
+			<path d="M20.6 82.61 C20.63 82.65 20.66 82.69 20.69 82.73 C20.75 82.79 20.8 82.86 20.85 82.93 C20.91 82.86 20.96 82.79
+						 21.01 82.73 C21.05 82.69 21.08 82.65 21.11 82.61 C23.34 79.93 22.51 82.3 24.21 85.71 C27.45 61.59 32.61
+						 71.56 34.13 55.22 C35.1 44.7 43.93 52.56 41.18 30.88 C39.01 27.49 37.05 25.01 35.16 23.18 A17.0762 13.9094
+						 -180 0 0 6.54 23.18 C4.66 25.01 2.7 27.49 0.53 30.88 C-2.22 52.56 6.61 44.7 7.58 55.22 C9.67 74.35 14.25
+						 61.59 17.38 85.71 C19.43 82.3 18.37 79.93 20.6 82.61 Z" class="st1"/>
+		</g>
+		<g id="shape3-5" v:mID="3" v:groupContext="shape" transform="translate(62.6853,-17.8262)">
+			<title>Лист.3</title>
+			<path d="M15.64 55.26 C6.88 53.05 -1.97 39.37 0.38 34.66 C13.2 9.21 54.87 12.63 51.45 54.29 C51.45 67.95 30.28 87.08
+						 16.62 85.71 C49.4 65.22 45.3 40.63 35.74 35.17 C31.64 33.12 13.88 29.02 15.64 55.26 Z" class="st2"/>
+		</g>
+		<g id="shape4-9" v:mID="4" v:groupContext="shape" transform="translate(57.7844,-5.87731)">
+			<title>Лист.4</title>
+			<path d="M10.63 69.66 C10.12 73.08 5.17 72.56 3.46 85.71 C-5.76 86.74 5.85 67.27 10.63 69.66 Z" class="st3"/>
+		</g>
+		<g id="shape5-13" v:mID="5" v:groupContext="shape" transform="translate(58.9618,-8.07281)">
+			<title>Лист.5</title>
+			<path d="M5.61 73.91 C1.8 78.88 1.64 80.79 0 85.71 C2.16 83.01 2.21 83.07 2.3 83.04 C2.67 82.87 3.81 80.74 3.46 79.27
+						 C3.88 77.13 4.62 76.63 5.61 73.91 Z" class="st4"/>
+		</g>
+		<g id="shape6-17" v:mID="6" v:groupContext="shape" transform="translate(57.1436,-5.87285) scale(-1,1)">
+			<title>Лист.6</title>
+			<path d="M10.63 69.66 C10.12 73.08 5.17 72.56 3.46 85.71 C-5.76 86.74 5.85 67.27 10.63 69.66 Z" class="st3"/>
+		</g>
+		<g id="shape7-20" v:mID="7" v:groupContext="shape" transform="translate(56.0362,-8.07281) scale(-1,1)">
+			<title>Лист.7</title>
+			<path d="M5.61 73.91 C1.8 78.88 1.64 80.79 0 85.71 C2.16 83.01 2.21 83.07 2.3 83.04 C2.67 82.87 3.81 80.74 3.46 79.27
+						 C3.88 77.13 4.62 76.63 5.61 73.91 Z" class="st4"/>
+		</g>
+		<g id="shape8-23" v:mID="8" v:groupContext="shape" transform="translate(60.1751,-28.7549)">
+			<title>Лист.8</title>
+			<path d="M0 82.7 C3.42 85.43 5.46 86.79 9.56 84.74 C11.61 75.18 15.03 79.28 17.9 69.65 L10.34 70.34 L4.84 72.75 L1.4
+						 76.87 L0 82.7 Z" class="st3"/>
+		</g>
+		<g id="shape9-26" v:mID="9" v:groupContext="shape" transform="translate(61.085,-34.1786)">
+			<title>Лист.9</title>
+			<path d="M0.4 84.37 C-1.12 85.8 2.06 86.17 4.12 85.13 C8.56 83.08 6.03 79.8 13.09 76.75 L7.63 77.81 L3.4 80.35 L0.4 84.37
+						 Z" class="st4"/>
+		</g>
+		<g id="shape10-29" v:mID="10" v:groupContext="shape" transform="translate(54.7107,-29.1532) scale(-1,1)">
+			<title>Лист.10</title>
+			<path d="M0 82.7 C3.42 85.43 5.46 86.79 9.56 84.74 C11.61 75.18 15.03 79.28 17.9 69.65 L10.34 70.34 L4.84 72.75 L1.4
+						 76.87 L0 82.7 Z" class="st3"/>
+		</g>
+		<g id="shape11-32" v:mID="11" v:groupContext="shape" transform="translate(53.913,-34.1786) scale(-1,1)">
+			<title>Лист.11</title>
+			<path d="M0.4 84.37 C-1.12 85.8 2.06 86.17 4.12 85.13 C8.56 83.08 6.03 79.8 13.09 76.75 L7.63 77.81 L3.4 80.35 L0.4 84.37
+						 Z" class="st4"/>
+		</g>
+		<g id="shape12-35" v:mID="12" v:groupContext="shape" transform="translate(52.2005,-17.8262) scale(-1,1)">
+			<title>Лист.12</title>
+			<path d="M15.64 55.26 C6.88 53.05 -1.97 39.37 0.38 34.66 C13.2 9.21 54.87 12.63 51.45 54.29 C51.45 67.95 30.28 87.08
+						 16.62 85.71 C49.4 65.22 45.3 40.63 35.74 35.17 C31.64 33.12 13.88 29.02 15.64 55.26 Z" class="st2"/>
+		</g>
+		<g id="shape13-38" v:mID="13" v:groupContext="shape" transform="translate(107.656,-75.3189)">
+			<title>Лист.13</title>
+			<path d="M0.08 85.47 C0.05 85.55 0.03 85.63 0 85.71 C0.05 85.66 0.1 85.61 0.15 85.56 C0.13 85.53 0.1 85.5 0.08 85.47 Z"
+					class="st5"/>
+		</g>
+		<g id="shape14-42" v:mID="14" v:groupContext="shape" transform="translate(78.3362,-56.8101)">
+			<title>Лист.14</title>
+			<path d="M0 85.63 C0 85.64 0 85.65 0 85.66 C0.04 85.68 0.07 85.69 0.11 85.71 C0.07 85.69 0.04 85.66 0 85.63 Z"
+					class="st5"/>
+		</g>
+		<g id="shape15-45" v:mID="15" v:groupContext="shape" transform="translate(70.752,-64.5584)">
+			<title>Лист.15</title>
+			<path d="M4.74 68.49 C3.09 69.35 1.5 70.39 -0 71.59 C1.49 76.48 5.48 82.54 10.17 85.71 C11.41 83.76 12.95 82.46 14.62
+						 81.63 C10.04 78.34 6.13 72.83 4.74 68.49 Z" class="st5"/>
+		</g>
+		<g id="shape16-48" v:mID="16" v:groupContext="shape" transform="translate(79.1022,-17.7428)">
+			<title>Лист.16</title>
+			<path d="M8.89 84.2 C7.55 83.48 6.17 82.87 4.8 82.43 C3.3 83.51 1.7 84.58 0 85.65 C2.74 85.92 5.78 85.37 8.89 84.2 Z"
+					class="st5"/>
+		</g>
+		<g id="shape17-51" v:mID="17" v:groupContext="shape" transform="translate(100.868,-27.1765)">
+			<title>Лист.17</title>
+			<path d="M0.06 85.64 C0.04 85.65 0.02 85.67 0 85.69 C0.05 85.7 0.11 85.7 0.16 85.71 C0.13 85.69 0.1 85.66 0.06 85.64 Z"
+					class="st5"/>
+		</g>
+		<g id="shape18-54" v:mID="18" v:groupContext="shape" transform="translate(111.352,-67.8735)">
+			<title>Лист.18</title>
+			<path d="M0 85.71 C0.16 85.64 0.32 85.57 0.48 85.51 C0.43 85.39 0.38 85.27 0.34 85.14 C0.22 85.33 0.11 85.52 0 85.71 Z"
+					class="st5"/>
+		</g>
+		<g id="shape19-57" v:mID="19" v:groupContext="shape" transform="translate(98.522,-33.4776)">
+			<title>Лист.19</title>
+			<path d="M0 83.91 C3.02 84.12 6 84.77 8.45 85.71 C9.99 83.82 11.34 81.86 12.43 79.9 C12.45 79.85 12.48 79.8 12.51 79.75
+						 C9.95 78.93 6.53 78.6 3.06 78.85 C2.52 79.91 1.92 80.97 1.24 82.04 C0.85 82.66 0.44 83.28 -0 83.91 Z"
+					class="st5"/>
+		</g>
+		<g id="shape20-60" v:mID="20" v:groupContext="shape" transform="translate(94.7334,-27.2519)">
+			<title>Лист.20</title>
+			<path d="M0 82.41 C2.31 83.31 4.46 84.46 6.19 85.71 C8.15 84.01 9.98 82.16 11.62 80.23 C11.83 79.99 12.04 79.74 12.24
+						 79.49 C9.79 78.54 6.81 77.89 3.79 77.68 C2.93 78.9 1.97 80.14 0.91 81.37 C0.62 81.72 0.31 82.06 -0 82.41
+						 Z" class="st5"/>
+		</g>
+		<g id="shape21-63" v:mID="21" v:groupContext="shape" transform="translate(90.8205,-23.3039)">
+			<title>Лист.21</title>
+			<path d="M0 82.39 C1.79 83.36 3.48 84.5 4.94 85.71 C6.7 84.54 8.41 83.23 10.05 81.82 C10.07 81.8 10.09 81.78 10.11 81.76
+						 C8.37 80.51 6.22 79.36 3.91 78.46 C3.16 79.29 2.36 80.12 1.51 80.96 C1.02 81.44 0.52 81.92 0 82.39 Z"
+					class="st5"/>
+		</g>
+		<g id="shape22-66" v:mID="22" v:groupContext="shape" transform="translate(83.9058,-19.2504)">
+			<title>Лист.22</title>
+			<path d="M0 83.94 C1.37 84.38 2.75 84.98 4.09 85.71 C6.18 84.93 8.3 83.87 10.38 82.6 C10.87 82.3 11.37 81.98 11.86 81.66
+						 C10.39 80.45 8.7 79.31 6.91 78.34 C6.06 79.12 5.17 79.9 4.23 80.68 C2.91 81.77 1.5 82.86 -0 83.94 Z"
+					class="st5"/>
+		</g>
+		<g id="shape23-69" v:mID="23" v:groupContext="shape" transform="translate(101.579,-39.4357)">
+			<title>Лист.23</title>
+			<path d="M2.32 79.03 C2.02 80.06 1.65 81.11 1.21 82.18 C0.85 83.05 0.45 83.92 0 84.81 C3.48 84.56 6.89 84.89 9.45 85.71
+						 C10.71 83.41 11.61 81.1 12.05 78.88 C12.07 78.78 12.09 78.69 12.11 78.59 C9.31 78.15 5.77 78.29 2.32 79.03
+						 Z" class="st5"/>
+		</g>
+		<g id="shape24-72" v:mID="24" v:groupContext="shape" transform="translate(103.902,-46.1224)">
+			<title>Лист.24</title>
+			<path d="M1.06 80.31 C1.04 80.45 1.03 80.58 1.02 80.72 C0.91 81.68 0.75 82.66 0.53 83.66 C0.38 84.34 0.2 85.02 0 85.71
+						 C3.45 84.98 6.99 84.83 9.78 85.28 C9.95 84.37 10.04 83.48 10.04 82.6 C10.16 81.08 10.22 79.62 10.23 78.2
+						 C10.23 78.09 10.23 77.98 10.23 77.87 C7.88 78.09 5.24 78.7 2.69 79.65 C2.14 79.86 1.59 80.08 1.06 80.31
+						 Z" class="st5"/>
+		</g>
+		<g id="shape25-75" v:mID="25" v:groupContext="shape" transform="translate(104.76,-51.5217)">
+			<title>Лист.25</title>
+			<path d="M9.38 83.27 C9.37 80.83 9.21 78.53 8.89 76.38 C8.86 76.23 8.84 76.08 8.81 75.92 C7.09 76.34 5.21 77.02 3.36
+						 77.92 C2.59 78.29 1.83 78.7 1.08 79.14 C0.72 79.28 0.36 79.43 -0 79.58 C0.01 79.65 0.02 79.72 0.03 79.79
+						 C0.32 81.62 0.4 83.6 0.2 85.71 C0.73 85.48 1.28 85.25 1.83 85.05 C4.38 84.1 7.02 83.48 9.38 83.27 Z"
+					class="st5"/>
+		</g>
+		<g id="shape26-78" v:mID="26" v:groupContext="shape" transform="translate(103.607,-57.6514)">
+			<title>Лист.26</title>
+			<path d="M7.74 75.49 C5.27 76.61 2.44 78.84 0 81.61 C0.51 82.86 0.9 84.23 1.15 85.71 C1.52 85.56 1.88 85.41 2.23 85.27
+						 C2.98 84.83 3.74 84.42 4.51 84.05 C6.37 83.15 8.24 82.47 9.97 82.05 C9.57 79.6 8.98 77.35 8.22 75.29 C8.06
+						 75.35 7.9 75.42 7.74 75.49 Z" class="st5"/>
+		</g>
+		<g id="shape27-81" v:mID="27" v:groupContext="shape" transform="translate(101.555,-61.7573)">
+			<title>Лист.27</title>
+			<path d="M0 82.09 C0.53 82.78 1.01 83.54 1.44 84.38 C1.66 84.81 1.86 85.25 2.05 85.71 C4.49 82.95 7.32 80.71 9.8 79.6
+						 C9.91 79.41 10.02 79.22 10.13 79.03 C9.11 76.35 7.79 74.01 6.25 72 C6.2 72.05 6.15 72.1 6.1 72.15 C3.74
+						 74.52 1.44 78.2 -0 82.09 Z" class="st5"/>
+		</g>
+		<g id="shape28-84" v:mID="28" v:groupContext="shape" transform="translate(98.3315,-65.3785)">
+			<title>Лист.28</title>
+			<path d="M0 82.8 C0.81 83.27 1.58 83.89 2.29 84.63 C2.62 84.97 2.93 85.33 3.22 85.71 C4.66 81.82 6.96 78.14 9.32 75.77
+						 C9.35 75.69 9.38 75.61 9.4 75.53 C7.81 73.47 5.97 71.76 3.98 70.38 C3.88 70.31 3.78 70.25 3.69 70.19 C1.75
+						 73.45 0.27 78.23 -0 82.8 Z" class="st5"/>
+		</g>
+		<g id="shape29-87" v:mID="29" v:groupContext="shape" transform="translate(94.0479,-68.2951)">
+			<title>Лист.29</title>
+			<path d="M1.72 70.15 C1.69 70.14 1.66 70.13 1.63 70.12 C0.69 72.46 0.11 75.55 0.01 78.77 C-0.02 79.81 0 80.87 0.08 81.92
+						 C0.14 82.77 0.24 83.61 0.37 84.44 C0.99 84.56 1.57 84.7 2.1 84.86 C2.96 85.12 3.67 85.4 4.18 85.65 C4.21
+						 85.67 4.25 85.69 4.28 85.71 C4.56 81.15 6.03 76.37 7.97 73.1 C6.02 71.8 3.91 70.82 1.72 70.15 Z"
+					class="st5"/>
+		</g>
+		<g id="shape30-90" v:mID="30" v:groupContext="shape" transform="translate(88.2751,-69.5671)">
+			<title>Лист.30</title>
+			<path d="M6.14 85.71 C6.01 84.89 5.91 84.04 5.85 83.19 C5.78 82.14 5.76 81.08 5.79 80.04 C5.88 76.82 6.46 73.73 7.4 71.39
+						 C5.36 70.78 3.25 70.43 1.12 70.34 C0.81 70.33 0.51 70.32 0.21 70.32 C-0.16 72.94 -0.05 76.14 0.55 79.28
+						 C0.92 81.21 1.47 83.13 2.21 84.88 C2.21 85.05 2.2 85.22 2.2 85.4 C2.28 85.4 2.36 85.4 2.44 85.39 C3.37 85.37
+						 4.28 85.43 5.13 85.55 C5.48 85.59 5.82 85.65 6.14 85.71 Z" class="st5"/>
+		</g>
+		<g id="shape31-93" v:mID="31" v:groupContext="shape" transform="translate(82.0967,-69.6391)">
+			<title>Лист.31</title>
+			<path d="M6.39 70.39 C4.3 70.38 2.19 70.61 0.12 71.09 C0.08 71.09 0.04 71.1 -0 71.11 C0.47 75.67 2.83 81.62 6.28 85.71
+						 C6.98 85.58 7.69 85.5 8.38 85.47 C8.38 85.3 8.38 85.12 8.39 84.95 C7.65 83.2 7.1 81.28 6.73 79.35 C6.13
+						 76.21 6.02 73.02 6.39 70.39 Z" class="st5"/>
+		</g>
+		<g id="shape32-96" v:mID="32" v:groupContext="shape" transform="translate(75.4957,-68.636)">
+			<title>Лист.32</title>
+			<path d="M12.88 84.71 C9.43 80.62 7.07 74.66 6.6 70.11 C4.51 70.6 2.45 71.34 0.48 72.32 C0.32 72.4 0.16 72.48 -0 72.57
+						 C1.39 76.91 5.3 82.41 9.87 85.71 C10.1 85.6 10.34 85.49 10.57 85.4 C11.33 85.08 12.1 84.86 12.88 84.71 Z"
+					class="st5"/>
+		</g>
+		<g id="shape33-99" v:mID="33" v:groupContext="shape" transform="translate(62.487,-48.2627)">
+			<title>Лист.33</title>
+			<path d="M15.64 85.71 C15.42 82.38 15.51 79.53 15.85 77.11 C15.85 77.1 15.85 77.09 15.85 77.09 C9.93 72.78 5.13 64.43
+						 4.51 58.93 C4.03 59.49 3.56 60.07 3.11 60.67 C2.1 62.04 1.19 63.52 0.38 65.11 C-1.97 69.82 6.88 83.51 15.64
+						 85.71 Z" class="st5"/>
+		</g>
+		<g id="shape34-102" v:mID="34" v:groupContext="shape" transform="translate(66.9963,-56.8875)">
+			<title>Лист.34</title>
+			<path d="M13.92 78.04 C9.24 74.87 5.25 68.81 3.76 63.92 C3.61 64.04 3.47 64.15 3.33 64.27 C2.15 65.26 1.04 66.35 0 67.55
+						 C0.62 73.05 5.42 81.4 11.34 85.71 C11.71 83.09 12.37 80.97 13.23 79.26 C13.45 78.83 13.68 78.42 13.92 78.04
+						 Z" class="st5"/>
+		</g>
+		<g id="shape35-105" v:mID="35" v:groupContext="shape" transform="translate(7.23013,-75.3189) scale(-1,1)">
+			<title>Лист.35</title>
+			<path d="M0.08 85.47 C0.05 85.55 0.03 85.63 0 85.71 C0.05 85.66 0.1 85.61 0.15 85.56 C0.13 85.53 0.1 85.5 0.08 85.47 Z"
+					class="st5"/>
+		</g>
+		<g id="shape36-108" v:mID="36" v:groupContext="shape" transform="translate(36.5496,-56.8101) scale(-1,1)">
+			<title>Лист.36</title>
+			<path d="M0 85.63 C0 85.64 0 85.65 0 85.66 C0.04 85.68 0.07 85.69 0.11 85.71 C0.07 85.69 0.04 85.66 0 85.63 Z"
+					class="st5"/>
+		</g>
+		<g id="shape37-111" v:mID="37" v:groupContext="shape" transform="translate(44.1338,-64.5584) scale(-1,1)">
+			<title>Лист.37</title>
+			<path d="M4.74 68.49 C3.09 69.35 1.5 70.39 -0 71.59 C1.49 76.48 5.48 82.54 10.17 85.71 C11.41 83.76 12.95 82.46 14.62
+						 81.63 C10.04 78.34 6.13 72.83 4.74 68.49 Z" class="st5"/>
+		</g>
+		<g id="shape38-114" v:mID="38" v:groupContext="shape" transform="translate(35.7837,-17.7428) scale(-1,1)">
+			<title>Лист.38</title>
+			<path d="M8.89 84.2 C7.55 83.48 6.17 82.87 4.8 82.43 C3.3 83.51 1.7 84.58 0 85.65 C2.74 85.92 5.78 85.37 8.89 84.2 Z"
+					class="st5"/>
+		</g>
+		<g id="shape39-117" v:mID="39" v:groupContext="shape" transform="translate(14.0178,-27.1765) scale(-1,1)">
+			<title>Лист.39</title>
+			<path d="M0.06 85.64 C0.04 85.65 0.02 85.67 0 85.69 C0.05 85.7 0.11 85.7 0.16 85.71 C0.13 85.69 0.1 85.66 0.06 85.64 Z"
+					class="st5"/>
+		</g>
+		<g id="shape40-120" v:mID="40" v:groupContext="shape" transform="translate(3.53401,-67.8735) scale(-1,1)">
+			<title>Лист.40</title>
+			<path d="M0 85.71 C0.16 85.64 0.32 85.57 0.48 85.51 C0.43 85.39 0.38 85.27 0.34 85.14 C0.22 85.33 0.11 85.52 0 85.71 Z"
+					class="st5"/>
+		</g>
+		<g id="shape41-123" v:mID="41" v:groupContext="shape" transform="translate(16.3638,-33.4776) scale(-1,1)">
+			<title>Лист.41</title>
+			<path d="M0 83.91 C3.02 84.12 6 84.77 8.45 85.71 C9.99 83.82 11.34 81.86 12.43 79.9 C12.45 79.85 12.48 79.8 12.51 79.75
+						 C9.95 78.93 6.53 78.6 3.06 78.85 C2.52 79.91 1.92 80.97 1.24 82.04 C0.85 82.66 0.44 83.28 -0 83.91 Z"
+					class="st5"/>
+		</g>
+		<g id="shape42-126" v:mID="42" v:groupContext="shape" transform="translate(20.1524,-27.2519) scale(-1,1)">
+			<title>Лист.42</title>
+			<path d="M0 82.41 C2.31 83.31 4.46 84.46 6.19 85.71 C8.15 84.01 9.98 82.16 11.62 80.23 C11.83 79.99 12.04 79.74 12.24
+						 79.49 C9.79 78.54 6.81 77.89 3.79 77.68 C2.93 78.9 1.97 80.14 0.91 81.37 C0.62 81.72 0.31 82.06 -0 82.41
+						 Z" class="st5"/>
+		</g>
+		<g id="shape43-129" v:mID="43" v:groupContext="shape" transform="translate(24.0653,-23.3039) scale(-1,1)">
+			<title>Лист.43</title>
+			<path d="M0 82.39 C1.79 83.36 3.48 84.5 4.94 85.71 C6.7 84.54 8.41 83.23 10.05 81.82 C10.07 81.8 10.09 81.78 10.11 81.76
+						 C8.37 80.51 6.22 79.36 3.91 78.46 C3.16 79.29 2.36 80.12 1.51 80.96 C1.02 81.44 0.52 81.92 0 82.39 Z"
+					class="st5"/>
+		</g>
+		<g id="shape44-132" v:mID="44" v:groupContext="shape" transform="translate(30.9801,-19.2504) scale(-1,1)">
+			<title>Лист.44</title>
+			<path d="M0 83.94 C1.37 84.38 2.75 84.98 4.09 85.71 C6.18 84.93 8.3 83.87 10.38 82.6 C10.87 82.3 11.37 81.98 11.86 81.66
+						 C10.39 80.45 8.7 79.31 6.91 78.34 C6.06 79.12 5.17 79.9 4.23 80.68 C2.91 81.77 1.5 82.86 -0 83.94 Z"
+					class="st5"/>
+		</g>
+		<g id="shape45-135" v:mID="45" v:groupContext="shape" transform="translate(13.3064,-39.4357) scale(-1,1)">
+			<title>Лист.45</title>
+			<path d="M2.32 79.03 C2.02 80.06 1.65 81.11 1.21 82.18 C0.85 83.05 0.45 83.92 0 84.81 C3.48 84.56 6.89 84.89 9.45 85.71
+						 C10.71 83.41 11.61 81.1 12.05 78.88 C12.07 78.78 12.09 78.69 12.11 78.59 C9.31 78.15 5.77 78.29 2.32 79.03
+						 Z" class="st5"/>
+		</g>
+		<g id="shape46-138" v:mID="46" v:groupContext="shape" transform="translate(10.9836,-46.1224) scale(-1,1)">
+			<title>Лист.46</title>
+			<path d="M1.06 80.31 C1.04 80.45 1.03 80.58 1.02 80.72 C0.91 81.68 0.75 82.66 0.53 83.66 C0.38 84.34 0.2 85.02 0 85.71
+						 C3.45 84.98 6.99 84.83 9.78 85.28 C9.95 84.37 10.04 83.48 10.04 82.6 C10.16 81.08 10.22 79.62 10.23 78.2
+						 C10.23 78.09 10.23 77.98 10.23 77.87 C7.88 78.09 5.24 78.7 2.69 79.65 C2.14 79.86 1.59 80.08 1.06 80.31
+						 Z" class="st5"/>
+		</g>
+		<g id="shape47-141" v:mID="47" v:groupContext="shape" transform="translate(10.1255,-51.5217) scale(-1,1)">
+			<title>Лист.47</title>
+			<path d="M9.38 83.27 C9.37 80.83 9.21 78.53 8.89 76.38 C8.86 76.23 8.84 76.08 8.81 75.92 C7.09 76.34 5.21 77.02 3.36
+						 77.92 C2.59 78.29 1.83 78.7 1.08 79.14 C0.72 79.28 0.36 79.43 -0 79.58 C0.01 79.65 0.02 79.72 0.03 79.79
+						 C0.32 81.62 0.4 83.6 0.2 85.71 C0.73 85.48 1.28 85.25 1.83 85.05 C4.38 84.1 7.02 83.48 9.38 83.27 Z"
+					class="st5"/>
+		</g>
+		<g id="shape48-144" v:mID="48" v:groupContext="shape" transform="translate(11.2788,-57.6514) scale(-1,1)">
+			<title>Лист.48</title>
+			<path d="M7.74 75.49 C5.27 76.61 2.44 78.84 0 81.61 C0.51 82.86 0.9 84.23 1.15 85.71 C1.52 85.56 1.88 85.41 2.23 85.27
+						 C2.98 84.83 3.74 84.42 4.51 84.05 C6.37 83.15 8.24 82.47 9.97 82.05 C9.57 79.6 8.98 77.35 8.22 75.29 C8.06
+						 75.35 7.9 75.42 7.74 75.49 Z" class="st5"/>
+		</g>
+		<g id="shape49-147" v:mID="49" v:groupContext="shape" transform="translate(13.3306,-61.7573) scale(-1,1)">
+			<title>Лист.49</title>
+			<path d="M0 82.09 C0.53 82.78 1.01 83.54 1.44 84.38 C1.66 84.81 1.86 85.25 2.05 85.71 C4.49 82.95 7.32 80.71 9.8 79.6
+						 C9.91 79.41 10.02 79.22 10.13 79.03 C9.11 76.35 7.79 74.01 6.25 72 C6.2 72.05 6.15 72.1 6.1 72.15 C3.74
+						 74.52 1.44 78.2 -0 82.09 Z" class="st5"/>
+		</g>
+		<g id="shape50-150" v:mID="50" v:groupContext="shape" transform="translate(16.5543,-65.3785) scale(-1,1)">
+			<title>Лист.50</title>
+			<path d="M0 82.8 C0.81 83.27 1.58 83.89 2.29 84.63 C2.62 84.97 2.93 85.33 3.22 85.71 C4.66 81.82 6.96 78.14 9.32 75.77
+						 C9.35 75.69 9.38 75.61 9.4 75.53 C7.81 73.47 5.97 71.76 3.98 70.38 C3.88 70.31 3.78 70.25 3.69 70.19 C1.75
+						 73.45 0.27 78.23 -0 82.8 Z" class="st5"/>
+		</g>
+		<g id="shape51-153" v:mID="51" v:groupContext="shape" transform="translate(20.8379,-68.2951) scale(-1,1)">
+			<title>Лист.51</title>
+			<path d="M1.72 70.15 C1.69 70.14 1.66 70.13 1.63 70.12 C0.69 72.46 0.11 75.55 0.01 78.77 C-0.02 79.81 0 80.87 0.08 81.92
+						 C0.14 82.77 0.24 83.61 0.37 84.44 C0.99 84.56 1.57 84.7 2.1 84.86 C2.96 85.12 3.67 85.4 4.18 85.65 C4.21
+						 85.67 4.25 85.69 4.28 85.71 C4.56 81.15 6.03 76.37 7.97 73.1 C6.02 71.8 3.91 70.82 1.72 70.15 Z"
+					class="st5"/>
+		</g>
+		<g id="shape52-156" v:mID="52" v:groupContext="shape" transform="translate(26.6107,-69.5671) scale(-1,1)">
+			<title>Лист.52</title>
+			<path d="M6.14 85.71 C6.01 84.89 5.91 84.04 5.85 83.19 C5.78 82.14 5.76 81.08 5.79 80.04 C5.88 76.82 6.46 73.73 7.4 71.39
+						 C5.36 70.78 3.25 70.43 1.12 70.34 C0.81 70.33 0.51 70.32 0.21 70.32 C-0.16 72.94 -0.05 76.14 0.55 79.28
+						 C0.92 81.21 1.47 83.13 2.21 84.88 C2.21 85.05 2.2 85.22 2.2 85.4 C2.28 85.4 2.36 85.4 2.44 85.39 C3.37 85.37
+						 4.28 85.43 5.13 85.55 C5.48 85.59 5.82 85.65 6.14 85.71 Z" class="st5"/>
+		</g>
+		<g id="shape53-159" v:mID="53" v:groupContext="shape" transform="translate(32.7891,-69.6391) scale(-1,1)">
+			<title>Лист.53</title>
+			<path d="M6.39 70.39 C4.3 70.38 2.19 70.61 0.12 71.09 C0.08 71.09 0.04 71.1 -0 71.11 C0.47 75.67 2.83 81.62 6.28 85.71
+						 C6.98 85.58 7.69 85.5 8.38 85.47 C8.38 85.3 8.38 85.12 8.39 84.95 C7.65 83.2 7.1 81.28 6.73 79.35 C6.13
+						 76.21 6.02 73.02 6.39 70.39 Z" class="st5"/>
+		</g>
+		<g id="shape54-162" v:mID="54" v:groupContext="shape" transform="translate(39.3901,-68.636) scale(-1,1)">
+			<title>Лист.54</title>
+			<path d="M12.88 84.71 C9.43 80.62 7.07 74.66 6.6 70.11 C4.51 70.6 2.45 71.34 0.48 72.32 C0.32 72.4 0.16 72.48 -0 72.57
+						 C1.39 76.91 5.3 82.41 9.87 85.71 C10.1 85.6 10.34 85.49 10.57 85.4 C11.33 85.08 12.1 84.86 12.88 84.71 Z"
+					class="st5"/>
+		</g>
+		<g id="shape55-165" v:mID="55" v:groupContext="shape" transform="translate(52.3988,-48.2627) scale(-1,1)">
+			<title>Лист.55</title>
+			<path d="M15.64 85.71 C15.42 82.38 15.51 79.53 15.85 77.11 C15.85 77.1 15.85 77.09 15.85 77.09 C9.93 72.78 5.13 64.43
+						 4.51 58.93 C4.03 59.49 3.56 60.07 3.11 60.67 C2.1 62.04 1.19 63.52 0.38 65.11 C-1.97 69.82 6.88 83.51 15.64
+						 85.71 Z" class="st5"/>
+		</g>
+		<g id="shape56-168" v:mID="56" v:groupContext="shape" transform="translate(47.8896,-56.8875) scale(-1,1)">
+			<title>Лист.56</title>
+			<path d="M13.92 78.04 C9.24 74.87 5.25 68.81 3.76 63.92 C3.61 64.04 3.47 64.15 3.33 64.27 C2.15 65.26 1.04 66.35 0 67.55
+						 C0.62 73.05 5.42 81.4 11.34 85.71 C11.71 83.09 12.37 80.97 13.23 79.26 C13.45 78.83 13.68 78.42 13.92 78.04
+						 Z" class="st5"/>
+		</g>
+		<g id="shape57-171" v:mID="57" v:groupContext="shape" transform="translate(64.6149,-36.8405)">
+			<title>Круг.249</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 83.89 A1.81861 1.81861 0 0 1 3.64 83.89 A1.81861 1.81861 0 0 1 0 83.89 Z" class="st6"/>
+		</g>
+		<g id="shape58-175" v:mID="58" v:groupContext="shape" transform="translate(46.9752,-36.8405)">
+			<title>Круг.250</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 83.89 A1.81861 1.81861 0 0 1 3.64 83.89 A1.81861 1.81861 0 0 1 0 83.89 Z" class="st6"/>
+		</g>
+	</g>
+</svg>

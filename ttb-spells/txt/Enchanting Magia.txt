@@ -1,0 +1,90 @@
+Enchanting Magia
+Enchantment is the art of magically augmenting a
+target. Whether imbuing a sword so that it is constantly
+freezing to the touch, or healing the wounds of a friend,
+Enchanting Magia usually enhances a target in some way.
+
+
+Animate construct
+The caster imbues a prepared construct body with life so
+that it might obey his commands.
+Effect: Target inanimate construct comes to life as a
+construct under the caster's control for 1 hour. At the
+end of the Spell, the construct returns to its inanimate
+form, and may be later reanimated.
+A caster may only control one construct at a time.
+
+Animate Limb
+The caster causes an artificial limb to come to life under the
+control of the character the limb is attached to.
+Effect: The target limb comes to life for a number of weeks
+equal to the Charm + Enchanting of the caster (or less if the
+caster wishes). The limb is under the control of the character
+attached to it, which is not necessarily the caster.
+The limb must have been crafted to perform as a limb,
+although it need not be shaped or otherwise created in
+the form of a natural limb.
+Pneumatic limbs are detailed on page 178. If a character
+has a non-Pneumatic replacement (such a stitched
+together arm from the flesh of dead men) then the TN
+requires a C instead of a t.
+
+Heal
+The caster channels raw magical energy into a target,
+causing it to return to its proper form.
+Effect: The target heals 1/2/3 damage, if it is living.
+The target may choose to not resist, making this Spell a
+Simple Duel instead. Each additional time a character is
+targeted by this Spell within an hour the TN is increased
+by 3 or requires an additional a R (caster's choice). If
+this Spell fails to heal a target, the target may not receive
+magical healing from this Magia until the next sunrise.
+Mend Critical
+The caster focuses magical energy into the target, repairing
+the worst of its damage.
+Effect: Remove a single condition from the target, if it
+is living. The target may choose to not resist, making
+this Spell a Simple Duel instead.
+The removed condition must be a Critical condition or
+a condition placed on the target by a non-magical effect.
+This is a 0 AP Action unless the condition being
+removed is a Moderate or Severe Critical condition. If it
+is Moderate this is a 1 AP Action and if it is Severe this
+is a 2 AP Action.
+
+Physical Enhancement
+The caster enhances the target's physical prowess,
+invigorating the target.
+Effect: The target gains the following condition for
+one hour: "Physically Enhanced +1: This character
+adds +1 to his Physical Aspects, to a maximum of 5."
+
+Elemental Weapon
+The caster enhances a weapon, or a person's body, with an
+elemental effect.
+Effect: The target weapon gains the effects of an
+Elemental Immuto, treating the weapon as if it were
+the Magia that the Immuto were altering. This effect
+lasts 1 minute.
+The wielder of the weapon may resist and, if they
+choose to do so, this Spell immediately fails.
+This Magia may also be cast on a person, causing
+their unarmed attacks to gain the benefits of the
+Elemental Immuto. The target of this power suffers
+no damage from this effect (they don't catch fire from
+their burning hands, for instance).
+This Spell must choose a single Elemental Immuto
+to be cast.
+
+Shapeshift
+The Caster takes on the physical form of an animal.
+Effect: The caster's body shifts into a Beast for 1
+turn. The caster gains the Beast characteristic while
+shifted, as well as all of the Beast's physical qualities
+(such as poisonous fangs, or the ability to fly).
+The TN for this Magia is 10t, plus the difference
+between the Beast's highest Physical Aspect and the
+caster's lowest Physical Aspect. For instance, a caster
+with a Speed of -2 (his lowest Aspect) shifting into a
+creature with a Might of +4 (its highest Aspect) would
+have a TN of 16t (10, plus the difference of 6).

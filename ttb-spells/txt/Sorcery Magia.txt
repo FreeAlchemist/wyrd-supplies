@@ -1,0 +1,90 @@
+Sorcery Magia
+The Magia of Sorcery creates temporary effects that
+typically have obvious combat applications. Sorcery,
+as a general rule, creates elemental effects such as fire.
+These “elemental” effects aren’t just the traditional
+elements, but also include such concepts as force,
+poison, and a variety of other options.
+
+
+Elemental Engulf
+The Caster causes a target to be surrounded with dangerous
+elemental energy.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Elemental Projectile
+The Caster hurls a bolt of magical power at a target, much
+like a bullet.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Elemental strike
+The Caster strikes his opponent with a melee attack infused
+with elemental energy.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Telekinetic Movement
+The Caster moves a target with his mind, as if it were
+grasped by unseen hands.
+Effect: The caster may move a target object as if it
+were being lifted and carried by a character with a
+Might equal to the caster's Tenacity, and a Speed
+equal to the caster's Cunning.
+If the target is inanimate, it does not resist this Action
+and the caster must simply meet the TN requirements
+for moving the object. If the caster is attempting to
+move an object held by another character, then the
+character holding the object may resist the Spell.
+A caster may choose to maintain this Spell, moving
+the object from turn to turn. If he does so, the Spell
+does not need to be cast again (if it was successfully
+cast). The caster may not cast any other Spell while
+maintaining the telekinesis, and moving the object
+requires a (1) AP Action, as if this Spell were being
+cast again.
+A character may make attacks with an object held in
+this way, making a standard melee attack using a skill
+appropriate for the item (such as Melee for a sword),
+but replacing the relevant Aspect with Intellect.
+
+Telekinetic push
+The Caster unleashes a blast or wave of force at a target,
+shoving it with his mind.
+Effect: The target is pushed a number of yards equal
+to the caster's Tenacity directly away from the caster.
+
+Sleep
+The caster causes the target to lose consciousness.
+Effect: If the target is Living, it must make
+a TN 10 Unconsciousness Challenge. The
+TN of the Challenge is increased by 2 for
+each Margin of Success achieved by the
+caster.
+Note that this Spell is not resisted by the target, they
+must pass the Unconsciousness challenge instead,
+if the Spell is successful. This will create a set TN
+for many Fatemaster characters (as their Flip value is
+not random).
+
+Wrench
+The caster reaches into the target with telekinetic force,
+wrenching internal organs about.
+Effect: If the target is living, it must make a TN
+10 Toughness + Resilience Challenge. The TN of
+the Challenge is increased by 2 for each Margin of
+Success achieved by the Caster.
+Note that this Spell is not resisted by the
+target, they must pass the challenge instead,
+if the Spell is successful. This will create a
+set TN for many Fatemaster characters
+(as their Flip value is not random).
+If the target fails the challenge it
+suffers a Moderate Critical Effect,
+with normal adjustments for damage
+and other factors, as normal for a
+Critical Effect.

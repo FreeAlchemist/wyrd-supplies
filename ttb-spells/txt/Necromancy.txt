@@ -1,0 +1,90 @@
+Necromancy
+The so-called "Dark Art" of Necromancy is, to its
+practitioners, an art of life, death, and the very substance
+of human existence. Necromancy Magia deals with the
+ephemeral energies of thought and death.
+
+
+Beckon
+The caster lures a target towards himself.
+Effect: Target character must move its Walk
+Aspect directly towards the caster and must end this
+movement as close to the caster as possible.
+
+Bury
+The caster traps a target within an "other realm" where time
+does not pass.
+Effect: The target is removed from reality. It will
+return to reality at the end of the turn, appearing in a
+safe spot within 1 yard of the caster, without sensing
+that any time passed.
+
+Cadaver Mask
+The caster removes the face of a corpse and wears the dead
+man's visage for a while.
+Effect: The character removes the face of the corpse
+and takes on the appearance and voice that the corpse
+had in life. The character gains a ++ to all attempts
+to impersonate the person. This effect lasts until the
+next Sunrise or Sunset.
+
+Interrogate
+The caster sifts through the target's mind, looking for
+answers to questions.
+Effect: The caster may ask a single yes-or-no question
+of the living target, plus an additional question for
+each Margin of Success. The character will receive
+a truthful yes, no, or "I don't know" answer from the
+target, to the best of the target's ability.
+
+Mind Control
+The caster takes momentary command over the target's mind
+and body, forcing them to take an Action against their will.
+Effect: The target takes a 1 AP Action
+that it could normally take under
+this character's control. This Action
+may not force the target to sacrifice
+itself directly, but can cause him
+to take Actions against his own
+nature (such as attacking
+his friends). A caster may
+not affect themselves
+with Mind Control.
+
+Raise undead
+The caster brings a corpse to life to serve him.
+Effect: Target corpse becomes an undead under the
+caster's control for 10 minutes. The undead undergoes
+the following alterations from the original form:
+•The undead's Tenacity is increased to 3 and all of
+its other Mental Aspects are lowered to -5.
+•The undead loses the Living Characteristic (if it
+has it) and gains the Undead Characteristic.
+•The undead loses any mental skills it had in life, and
+the physical skill ratings are halved (rounding up).
+Alternatively, this Spell may be used to take control
+of an uncontrolled and non-sentient undead creature.
+The new undead may need physical repairs (as critical
+damage may physically render the body less useful).
+Otherwise, the corpse is raised with half of its Wounds
+remaining.
+At the end of the Spell, the undead becomes
+uncontrolled (and usually violent).
+
+Subsume Corpse
+The caster causes a corpse to disintegrate, restoring his own
+body in the process.
+Effect: Target corpse is turned into dust. The caster
+then heals 1/2/3 damage, plus an additional number
+of Wounds equal to the corpse's Resilience (if the
+Resilience is positive).
+
+Terrifying Aura
+The caster emanates a powerful aura that causes terror in
+the living.
+Effect: The target gains a powerful Terrifying Aura
+for 1 minute. If a Living character ends a movement
+within a1 of the target, or attacks the target, it must
+succeed on a TN 10 Horror Duel.
+See page 219 for rules regarding Fated characters
+causing Horror Duels.

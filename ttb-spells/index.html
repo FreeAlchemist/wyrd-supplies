@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spells</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/png" href="../img/malifaux.png" sizes="160x160">
+</head>
+<body>
+	<div class="spellmenu">
+		<div class="spellmenu">
+		<a href="../index.html" class="btn btn-main">Главное меню</a>
+		</div>
+		<div class="spellmenu">
+			<div class="float-left">
+				<div class="spelltitle">Magia (1)</div>
+				<select name="magia" id="magia" size="30" class="spellpart"></select>
+			</div>
+			<div class="float-left">
+			<div class="spelltitle">genus immuto (0-1)</div>
+				<select name="genus" id="genus" size="10" class="spellpart"></select>
+			</div>
+			<div class="float-left">
+			<div class="spelltitle">elemental immuto (0-1)</div>
+				<select name="elemental" id="elemental" size="10" class="spellpart"></select>
+			</div>
+			<div class="float-left">
+			<div class="spelltitle">alteration immuto (0-n)</div>
+				<select multiple name="alteration[]" id="alteration" size="10" class="spellpart"></select>
+			</div>
+			<div class="float-left">
+			<div class="spelltitle">augmentation immuto (0-n)</div>
+				<select multiple name="augmentation[]" id="augmentation" size="10" class="spellpart"></select>
+			</div>
+		</div>
+	</div>
+	<div id="spell">
+		<div class="float-left spellpart card" id="magia-info">
+			<div class="cardpart cardpart-name" id="magia-info-name"></div>
+			<div class="cardpart cardpart-story" id="magia-info-story"></div>
+			<div class="cardpart cardpart-aspect" id="magia-info-aspect"></div>
+			<div class="cardpart cardpart-ap" id="magia-info-ap"></div>
+			<div class="cardpart cardpart-tn" id="magia-info-tn"></div>
+			<div class="cardpart cardpart-resist" id="magia-info-resist"></div>
+			<div class="cardpart cardpart-range" id="magia-info-range"></div>
+			<div class="cardpart cardpart-text" id="magia-info-text"></div>
+			<div class="cardpart cardpart-requirement" id="magia-info-requirement"></div>
+		</div>
+		<div class="float-left spellpart card" id="genus-info">2</div>
+		<div class="float-left spellpart card" id="elemental-info">3</div>
+		<div class="float-left spellpart card" id="alteration-info">4</div>
+		<div class="float-left spellpart card" id="augmentation-info">5</div>
+		<hr>
+		
+		<div id="spellTotal">
+			<div id="spellText"></div>
+			<div id="spellTNtext" class="float-left">Total TN:</div>
+			<div id="spellTNnum" class="float-left"></div>
+
+			<div id="spellAPtext" class="float-left">Total AP:</div>
+			<div id="spellAPnum" class="float-left"></div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/spellCreate.js"></script>	
+</body>
+</html>

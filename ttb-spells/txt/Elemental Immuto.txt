@@ -1,0 +1,60 @@
+Elemental Immuto
+Elemental Immuto are a sub-set of Immuto that add
+elemental effects to some Spells. Along with the more
+"traditional" four elements, Elemental Immuto include a
+variety of other types of environmental effects.
+A Spell may only have one Elemental Immuto placed
+on it.
+
+
+Darkness (TN +1)
+Any character that suffers damage from the Magia also
+gains the Blind condition for 1 turn. This Magia may
+be taken multiple times, increasing the duration of the
+Blind condition by 1 turn each time.
+
+Decay (TN +1)
+Any undead character that suffers damage from the
+Magia suffers no damage and heals 1 damage instead.
+This Magia may be taken multiple times, increasing the
+amount of damage healed by undead by 1 each time.
+
+Electric (TN +3)
+Damage dealt by this Magia ignores armor. In addition,
+the attack does not randomly determine its target if it is
+used on a target that is engaged.
+
+Fire (TN +2)
+Any character that suffers damage from the Magia also
+gains the Burning +1 condition. This Magia may be
+taken multiple times, increasing the value of the Burning
+condition given by 1 each time.
+
+Ice (TN +3)
+Any character that suffers damage from the Magia also
+gains the Slow condition. This Magia may be taken
+twice, and, if it is taken a second time, the target gains
+the Paralyzed condition instead of Slow.
+
+Natural (TN +2)
+Any character that suffers damage from the Magia also
+gains the following condition: "Rooted: This character
+may not take Walk or Charge Actions. If this character is
+pushed, remove this condition and the character suffers
+3 damage."
+
+Poison (TN +1)
+Any character that suffers damage from the Magia also
+gains the Poison +1 condition. This Magia may be
+taken multiple times, increasing the value of the Poison
+condition given by 1 each time.
+
+Spirit (TN +4)
+Damage dealt by this Magia ignores armor and the Hard
+to Wound ability.
+
+Terror (TN +1)
+Any character that suffers damage from the Magia must
+make a TN 6 Horror Duel. This Magia may be taken
+multiple times, increasing the TN of the Horror Duel
+by 1 each time.

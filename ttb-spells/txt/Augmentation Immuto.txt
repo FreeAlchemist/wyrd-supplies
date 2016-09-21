@@ -1,0 +1,124 @@
+Augmentation Immuto
+These Immuto enhance the way a Magia performs,
+usually by increasing numeric values inherent to the
+Spell's effect.
+
+
+Additional Suit (TN -2)
+The TN for the Spell gains an additional required
+Suit of the caster's choice.
+
+Alter Range (TN Varies)
+This Immuto may be placed
+on a Spell multiple times.
+Each time it is taken the
+Spell moves up or down the
+Range Step table one step.
+Moving up the table (lowering
+the range) reduces the TN of
+the Spell Action by -2. Moving
+down the table (increasing the
+range) increases the TN of
+the Spell by 2.
+Some Spells do not have a y
+or z symbol in their range. If this is the case, they move
+up and down the range table as normal, but they do not
+gain the Close or Projectile (yor z) attached to range.
+A y Magia may never increase its range beyond y3,
+and a z Magia may never reduce its range below z5.
+
+Increase AP: (TN -3)
+The Spell requires 1 additional AP to cast. This Immuto
+may be taken multiple times, but a character may not
+spend AP over multiple turns to cast this Spell. This
+Immuto may only be placed on Spells cast during
+Dramatic Time.
+
+Increased damage (TN +2)
+This Immuto may be placed
+on a Spell multiple times.
+Each time this Immuto is
+taken, improve the Magia's
+Damage Flip one step on the
+damage Step table.
+
+Increased Duration (TN +2)
+This Immuto may be placed
+on a Spell multiple times.
+Each time it is taken move
+the Spell duration down the
+Duration Step table one step.
+Any part of the Spell with a
+set duration (for instance the
+time a target remains buried
+by a Bury Spell) will be
+increased 1 step.
+Spells with a duration that
+sit between two steps (for
+instance, Animate Limb) are
+assumed to sit on the lower
+step of the two they are between. For instance, an
+Animate Limb Spell cast by a character with a Charm
++ Enchanting of 5 would be considered a "1 Month"
+Spell. By raising the TN by 2 he can increase the
+duration to 6 months.
+
+Increase Pulse (TN +2)
+This Immuto may be placed on a Spell multiple times.
+Any pulse range in the Spell is increased by 1, and the
+TN to resist the pulse is increased by 1.
+
+Increase Resistance (TN +2)
+This Immuto may be placed on a Spell multiple times.
+Any Duel made by characters affected by the Spell (such
+as Horror Duels) has the TN of the Duel increased by 1.
+
+Increased Severity (TN +1)
+Increase the Severe value of the Damage Flip by 1. A
+Magia may have this Immuto multiple times, increasing
+the Severe damage of its Damage Flip by 1 each time.
+Magia that do not have a damage flip, but instead deal
+a set amount of damage, may take this Immuto as well,
+increasing the damage by 1 each time this Immuto is
+taken. However, those Magia must increase the TN by
++2, instead of +1.
+
+Pulse (TN +4)
+The Spell affects every legal target within an area around
+the initial target. If the target of the Spell is hit, then every
+character within 1 yard that could be affected by the Spell
+must succeed on a TN 10 Duel, using the same defense
+as the initial target.
+Any character that fails the Duel also suffers the results
+of the pulse. If damage is dealt they automatically suffer
+Weak damage.
+
+Reduce AP (TN +5)
+The Spell requires 1 less AP to cast. This Immuto may
+be taken multiple times, reducing the AP required by 1
+each time (to a minimum of 0).
+
+Reduce damage (TN -1)
+This Immuto may be placed
+on a Spell multiple times.
+Each time this Immuto is
+taken, decrease the Magia's
+Damage Flip one step on the
+damage Step table.
+
+Reduce Resistance (TN -2)
+This Immuto may be placed on a Spell multiple times.
+Any Resistance Duel made by the target (such as Horror
+Duels) has the TN of the Duel decreased by 1.
+
+Reduce Severity (TN -3)
+If the Spell deals a set amount of damage, instead of a
+Damage Flip, the Magia instead deals no damage. All
+other effects of the Magia remain the same. Targets that
+would suffer effects only if they suffered damage still
+suffer the effects of the Magia.
+
+Selective Targeting (TN +4)
+This Spell has no effect on characters the caster does
+not wish to target (although secondary effects may
+still affect them).

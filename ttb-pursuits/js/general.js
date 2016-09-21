@@ -1,3 +1,4 @@
+$('body').prepend($('<script />',{type:'text/javascript',src:'js/gear.js'}))
 $('body').prepend($('<script />',{type:'text/javascript',src:'js/talents.js'}))
 $('body').prepend($('<script />',{type:'text/javascript',src:'js/glossary.js'}))
 
@@ -88,6 +89,11 @@ function getInfo(dir,name,type,mode){
 			else{
 				return 'No mode'
 			}
+	}
+	else if(dir == 'gear'){
+		if(gear.armor){
+			return gear.armor
+		}
 	}
 }
 

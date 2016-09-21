@@ -1,0 +1,122 @@
+Prestidigitation Magia
+The arts included in Prestidigitation are more than simply
+producing something from nothing. Prestidigitation
+Magia governs anything with illusion, space, and the
+corresponding locations of objects within that space.
+
+
+Divination
+The caster throws his sense to a target location, seeing and
+hearing as if he were in that location.
+Effect: The caster enters a divination trance, his body
+going limp. While in the trance the caster can see and
+hear as if his sense were located at the target location.
+The target location must obey all of the normal targeting
+restrictions for a Spell (range, Line of Sight, etc.).
+The effects of this Spell last for one hour, or until the
+caster wishes the Spell to end. The caster may not take
+any other Actions while in a divination trance.
+
+Teleport
+The caster teleports the target causing it to vanish and then
+reappear in a new location.
+Effect: A target within range of this Spell is teleported
+to a safe location within range of this Spell. The target
+may choose to relent to the teleportation, in which
+case the caster must make a Simple Challenge Duel
+instead.
+Objects may also be teleported, but if the object is in
+the possession of someone, they may resist the Spell.
+
+Conjuring
+The caster summons an object from nothing in an instant.
+Effect: The Caster summons an object that was
+previously prepared for summoning. The object appears
+in his hands, and must be an object that the character
+can hold in both hands.
+A character may prepare an object for summoning by
+touching the object briefly and mentally concentrating on
+it. A character may have a number of objects prepared
+for summoning equal to his Cunning Aspect, with a
+minimum of 1.
+The range of this Spell is equal to the user's Cunning
+Aspect in miles.
+
+Invisibility
+The caster obscures a target's appearance, blending in with
+the background or becoming completely transparent.
+Effect: The target becomes invisible for 1 round.
+The invisibility immediately breaks if the character
+interacts with the world in a meaningful way, such as
+by attacking, moving an object, or opening doors.
+Any attempts to spot the character suffer --- to
+the Flip if the spotter is relying on sight at all while
+the character is invisible. Even a guard who hears
+footsteps, for instance, will believe his eyes when he
+turns to see nobody there.
+The character can otherwise be registered by other
+senses, but not by magical "sight" based sense (such as
+seeing spirits).
+Any attacks made against an invisible character suffer
+--- to their attack Flip. If the attack succeeds,
+however, the invisibility ends as well.
+
+Parlor Tricks
+The caster produces one of a variety of minor and obviously
+magical effects.
+Effect: The caster may choose one of the following
+effects to produce. These effects may never be used
+to directly harm a target physically, and any situation
+that would warrant a Resist Duel is automatically won
+by the Defender, if he wishes.
+•Instantly clean and repair the clothes of a target.
+•Create a short and simple sound, such as soft
+bells or a single word, audible to all in the room.
+•Whisper a short sentence into the ear of someone
+you can see that is only heard by that person.
+•Make a light object (such as a key or handkerchief)
+dance about within a small area (such as the top of
+a coffee table).
+•Change the flavor of a food or drink, such as
+making water taste like cherry juice.
+•Light a candle, lantern, or other object designed
+to be lit, that is within sight.
+•Create a translucent and still image visible to all
+in the room.
+•Summon a small orb of light, about the brightness
+of a lantern, that moves about the room erratically,
+or hovers near a person.
+•Open an unlocked door, window, or container
+that could be easily opened with one hand and that
+is within sight.
+•Cause soft music to be audible within the room.
+
+Phantasm
+The caster conjures a complex illusion that can appear real.
+Effect: The caster creates an animated illusion
+that appears real to observers for 1 minute. When
+created, the caster must declare all of the details of
+the illusion, such as what it will do, and how it will
+be sensed. The illusion does not react to external
+stimulus unless controlled by the caster (see below).
+The phantasm can be seen, heard, and smelled, but
+not touched or tasted. If touched, the illusion may be
+passed through, but is otherwise unharmed.
+As long as a creature sensing the phantasm has no
+reason to call it into question, it automatically fools
+the observer. A character who has never been in a
+particular room, for instance, would not notice the
+illusion of a wall hiding a door that he never knew
+was there in the first place.
+If a character has a reason to disbelieve an illusion,
+such as the image of a dead friend sitting in a chair,
+then he must succeed on a Wp 10 Duel to disbelieve
+the illusion. Otherwise, he believes the illusion is
+real. If the character comes into physical contact with
+the illusion, then he automatically disbelieves it.
+The caster may take control of the illusions Actions
+with a 1 AP Action. The illusion will act as the caster
+wishes, and may even change its form, within the
+bounds of the effect. In addition, the caster may
+banish an illusion he created at any time without
+using an Action.

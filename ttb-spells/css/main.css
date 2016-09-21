@@ -1,0 +1,98 @@
+.spellmenu{
+width: 100%;
+border:solid 1px;
+margin: 0px;
+padding: 0px;
+}
+
+.float-left,.spellmenu{
+	float: left;
+}
+
+.spellpart{
+	width: 200px;
+	border: black 1px solid;
+	/*overflow: auto;*/
+}
+
+.spelltitle{
+	text-transform: uppercase;
+	font-size: 11pt;
+	line-height: 25px;
+}
+
+.btn-main{
+	float: right;
+	width: 20%;
+}
+
+hr{
+	clear: both;
+}
+
+.card{
+/*position: relative;
+/*width: 6.2cm;*/
+height: 300px;
+/*float: left;
+border: solid black 1px;
+margin-bottom: 1.2cm;
+background-color: Blanchedalmond;*/
+/*background-color: rgba(89, 62, 42, 1);*/
+/*background-color: transparent;*/
+}
+
+.cardpart{
+	border: solid 1px black;
+	float: left;
+	font-size: 8pt;
+	padding: 1px;
+	width: 100%;
+}
+
+.cardpart-name{
+	font-size: 8pt;
+	font-weight: bold;
+}
+.cardpart-story{
+	font-style: italic;
+}
+.cardpart-aspect{
+	width: 25%;
+}
+.cardpart-ap{
+	width: 10%;
+	text-align: center;
+}
+.cardpart-tn{
+	width: 10%;
+	text-align: center;
+}
+.cardpart-resist{
+	width: 23%;
+}
+.cardpart-range{
+	width: 22%;
+}
+.cardpart-text{}
+.cardpart-requirement{}
+
+.info-title{
+	color: White;
+	background-color: black;
+	text-align: center;
+}
+
+#magia option{
+	font-size: 8pt;
+}
+
+@media print{
+	body{
+		border: none;
+		background-color: white;
+	}
+	.spellmenu{
+		display: none;
+	}
+}

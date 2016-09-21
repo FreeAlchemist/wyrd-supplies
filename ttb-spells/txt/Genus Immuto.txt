@@ -1,0 +1,55 @@
+Genus Immuto
+These Immuto have two functions, in that they can add
+a legal target to a Spell, or remove all others. These
+are referred to as Unleashing and Chaining the Spell,
+respectively.
+A Spell may only have one Genus Immuto placed on it.
+Each Genus's target modifier is listed without a positive
+or negative value. This is because the TN for the Spell is
+raised by the noted value when the Spell is Unleashed,
+and the TN is lowered when the Spell is Chained.
+Unleashing a Spell
+If a Spell lists a specific target other than the target
+type of the Genus Immuto, then the Immuto will add
+the noted Genus to the legal targets of the Spell.
+For instance, the Interrogate Spell allows the caster
+to ask questions of a Living target. If the caster added
+the undead Genus to the Spell, it would allow the
+character to ask questions of an undead target.
+Unleashing a Spell requires Fatemaster consent, as
+many Spells simply won't have a way to resolve against
+some target types. While creatively rationalizing or
+resolving such things is the very essence of magic, it
+is ultimately up to the Fatemaster to determine how
+Unleashing a Spell works in these odd situations, if it
+works at all.
+When a Spell has an Unleashed Genus, it increases
+the TN by the Genus's TN modifier.
+Chaining a Spell
+If a Spell can already target the Genus's subject, then
+the Spell becomes Chained to the Genus. The Spell
+can only choose targets with the noted Genus.
+
+Beast (TN 2)
+The Spell affects targets with the Beast Characteristic.
+
+Construct (TN 2)
+The Spell affects targets with the construct Characteristic.
+
+Living (TN 1)
+The Spell affects targets with the Living Characteristic.
+
+Location (TN 3)
+The Spell affects a location within range. Any targets in
+the area that could normally resist the Spell are assumed
+to automatically succeed in their Resistance Duel.
+
+Inanimate (TN 3)
+The Spell affects only objects that cannot move under
+their own volition.
+
+Spirits (TN 2)
+The Spell affects targets with the Spirit Characteristic.
+
+Undead (TN 2)
+The Spell affects targets with the undead Characteristic.

@@ -1,0 +1,104 @@
+Alternate Resistance (TN +2)
+If this Action is resisted by Wp, it is resisted by Df
+instead. If it is resisted by Df it is resisted by Wp instead.
+
+Blast (TN +2)
+This Immuto may be taken up to three times. The
+Action's Damage Flip gains 0/0/b the first time it
+is taken, 0/b/b the second time, and 0/b/bb the
+third time. These effects are added to the damage the
+Magia deals.
+
+Combined Spell (TN +5)
+This Spell combines the effects of two Spells. Choose
+a second Magia and add its effects to this Spell. The
+Spell must follow these requirements:
+•The second Magia must have a Base TN equal to
+or lower than the Base TN of the primary Magia.
+•The resist of the Magia must be the same.
+•The Primary Magia may only have Immuto that
+can be applied to both Magia.
+•The Magia must be different.
+240 Chapter 8: Magic
+
+Delay [Special] (TN Variable):
+The Spell is delayed, waiting for a set time to be
+released. When an Action with the Delay Immuto is
+taken the character spends the AP to cast the Spell
+and declares all targets as normal, but no other Spell
+effects are resolved and no Duels are made. Instead,
+when the Delay condition is met, the Spell takes
+effect and is resolved as normal, with no additional
+AP spent.
+The caster may choose to not have the Spell take
+effect at the prescribed time, allowing the Spell to
+instead dissipate.
+There are two situations that can be chosen to resolve a
+delayed Spell:
+Turns (TN +2): The character chooses a number of
+turns (up to 10) of Dramatic Time that the Spell will be
+delayed. After that many turns have passed, the Spell
+takes effect.
+Defined (TN +5): The character may define a situation
+in which the Spell will be cast, such as when an enemy
+walks through a location, or a key word is spoken. Unless
+made permanent through Harness Soulstone, this effect
+will dissipate, without resolving the Spell, at sunrise or
+sunset (whichever comes first).
+The defined situation must be an external event, it cannot
+be something that the Caster has control over (such as,
+"when I say the magic word"). The defined condition
+must be an event that the character cannot absolutely
+predict. For instance, he could set a Spell to cast when
+a door is opened, however, it would simply dissipate if
+the character then opened the door himself, or had a
+knowledgeable friend do it.
+
+Ignore Caster (TN +2)
+This Spell has no effect on the caster of the Spell, he
+suffers no damage and is only subject to secondary
+effects. For instance, the caster is immune to the fireball
+Spell itself, but, if he sets the building on fire, he still has
+cause for concern.
+
+Focus Object (TN Varies)
+This Spell requires a focus to be cast, allowing the caster
+to reduce the Spell's TN by requiring a Focus Object.
+When this Immuto is learned, the Focus Object is also
+chosen, and cannot be changed later on. A character
+may, however, learn multiple versions of this Immuto.
+Any attempts to cast a Spell with a Focus Object
+Immuto without the Focus Object, immediately fail.
+The object must be brandished when the Spell is cast.
+A character who, for instance, requires a wand for a
+Spell must have the wand in their hand and visible to
+all. In the case of non-portable objects, it must simply
+be visible to all and touched by the caster (although
+many casters will add a bit of showmanship as a matter
+of professionalism).
+The TN reduction is based on the portability and
+commonality of the object (combine the two for a
+final TN adjustment).
+Portability:
+-0 TN: Light object that can fit in a small pocket, such
+as a coin or handful of beans.
+-1 TN: Object that can be held in one hand or carried
+in a pouch/holster, such as a wand or a pistol.
+-2 TN: Object that can be carried in two hands, such
+as a staff or a rifle.
+-3 TN: Objects that are effectively immobile without
+much effort, such as an engraved summoning circle
+or large iron cauldron.
+Commonality:
+-0 TN: Extremely common object that can be readily
+purchased for under 10§, such as a length of rope or
+a pistol.
+-1 TN: Object with a few requirements but that is
+reasonably available, such as a certain make/model
+of pistol, or a wand made from oak.
+-2 TN: Object that must be specifically crafted by
+or for the caster (requiring at least 2 hours of work),
+but that can be replaced, such as a special staff, or a
+customized weapon/pneumatic limb.
+-3 TN: Objects that are irreplaceable. If the object is
+lost or destroyed the character is just out of luck!

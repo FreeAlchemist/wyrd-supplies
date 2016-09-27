@@ -27,33 +27,26 @@
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">alteration immuto (0-n)</div>
-				<select multiple name="alteration[]" id="alteration" size="10" class="spellpart"></select>
+				<select multiple name="alteration" id="alteration" size="10" class="spellpart"></select>
+				<p><input type="range" min="1" max="10"></p>
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">augmentation immuto (0-n)</div>
-				<select multiple name="augmentation[]" id="augmentation" size="10" class="spellpart"></select>
+				<select multiple name="augmentation" id="augmentation" size="10" class="spellpart"></select>
+				<p><input type="range" min="1" max="10"></p>
 			</div>
 		</div>
 	</div>
 	<div id="spell">
-		<div class="float-left spellpart card" id="magia-info">
-			<div class="cardpart cardpart-name" id="magia-info-name"></div>
-			<div class="cardpart cardpart-story" id="magia-info-story"></div>
-			<div class="cardpart cardpart-aspect" id="magia-info-aspect"></div>
-			<div class="cardpart cardpart-ap" id="magia-info-ap"></div>
-			<div class="cardpart cardpart-tn" id="magia-info-tn"></div>
-			<div class="cardpart cardpart-resist" id="magia-info-resist"></div>
-			<div class="cardpart cardpart-range" id="magia-info-range"></div>
-			<div class="cardpart cardpart-text" id="magia-info-text"></div>
-			<div class="cardpart cardpart-requirement" id="magia-info-requirement"></div>
-		</div>
-		<div class="float-left spellpart card" id="genus-info">2</div>
-		<div class="float-left spellpart card" id="elemental-info">3</div>
-		<div class="float-left spellpart card" id="alteration-info">4</div>
-		<div class="float-left spellpart card" id="augmentation-info">5</div>
+		<div class="float-left spellpart card" id="magia-info"></div>
+		<div class="float-left spellpart card" id="genus-info"></div>
+		<div class="float-left spellpart card" id="elemental-info"></div>
+		<div class="float-left spellpart card" id="alteration-info"></div>
+		<div class="float-left spellpart card" id="augmentation-info"></div>
 		<hr>
 		
 		<div id="spellTotal">
+		<div class="float-left spellpart card" id="total-info"></div>
 			<div id="spellText"></div>
 			<div id="spellTNtext" class="float-left">Total TN:</div>
 			<div id="spellTNnum" class="float-left"></div>
@@ -61,6 +54,10 @@
 			<div id="spellAPtext" class="float-left">Total AP:</div>
 			<div id="spellAPnum" class="float-left"></div>
 		</div>
+	</div>
+	<div id="copyright" class="copyright">
+		<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p>
+		<p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>
 	</div>
 
 

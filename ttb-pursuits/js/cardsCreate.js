@@ -12,6 +12,10 @@ $('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Guild Wars',c
 $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
 $('#menu').append($('<div />',{class:'row'}))
 
+$('#menu').append($('<div />',{id:'copyright',class:'copyright'}))
+var copyright = '<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p><p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>'
+$('#copyright').html(copyright)
+
 function activeBtn(elem){
 	console.log(elem)
 	var active = 0

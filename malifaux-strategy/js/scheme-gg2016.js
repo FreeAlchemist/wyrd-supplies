@@ -151,6 +151,6 @@ var cards = {
 		text:'Take everything they have.',
 		setup:'Эта схема не может начаться открытой.',
 		special:'',
-		vp:'Раз за игру, в конце любого хода, ваш Отряд may Откройте эту схему to score a number of <b>VP</b> equal to the number of ваш Отряд\'s Minion модели on the enemy half of the board which are not within 10" of the Centerline.',
+		vp:'Раз за игру, в конце любого хода, ваш Отряд может Открыть эту схему чтобы получить количество <b>VP</b> равное количеству  ваших Minion моделей на половине стола противника не ближе 10" от центральной линии.',
 	},
 }

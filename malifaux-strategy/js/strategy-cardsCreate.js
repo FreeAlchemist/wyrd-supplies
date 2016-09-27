@@ -9,6 +9,13 @@ $('#menu').append($('<a />',{href:'strategy-gg.html',text:'Стратегии: �
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'scheme-gg.html',text:'Схемы: Турнирные',class:'btn btn-strategy'}))
 
+$('#menu').append($('<div />',{id:'copyright',class:'copyright'}))
+$('#copyright').html('<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p><p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>')
+// <div id="copyright">
+// 	<h4>Web part, <a href="http://www.github.com/freealchemist">FreeAlchemist</a></h4>
+// 	<h4>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</h4>
+// 	</div>
+
 // console.log('Language: '+lang)
 
 var arr = [];

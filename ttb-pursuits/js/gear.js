@@ -1,4 +1,4 @@
-var gear = {
+var gears = {
 	armor:{
 		'Aventail':{
 			type:'Head protection',
@@ -41,6 +41,8 @@ var gear = {
 	}
 }
 
+	console.log(gears)
+/*
 Armor
 head
 leg
@@ -155,3 +157,4 @@ effect
 text
 cost
 augments
+*/

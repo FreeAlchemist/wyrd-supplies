@@ -149,3 +149,9 @@ box-shadow: inset rgb(43, 47, 63) 0px 1px 8px;
 	border-color: Royalblue;
 	background: linear-gradient(to bottom, white, Lightblue);
 }
+
+.copyright{
+	clear: both;
+	width: 100%;
+	font-size: 8pt;
+}

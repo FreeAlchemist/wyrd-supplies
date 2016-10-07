@@ -1,0 +1,763 @@
+Alteration
+
+					Alternate Resistance (TN +2)
+					If this Action is resisted by Wp, it is resisted by Df
+					instead. If it is resisted by Df it is resisted by Wp instead.
+
+					Blast (TN +2)
+					This Immuto may be taken up to three times. The
+					Action's Damage Flip gains 0/0/b the first time it
+					is taken, 0/b/b the second time, and 0/b/bb the
+					third time. These effects are added to the damage the
+					Magia deals.
+
+Combined Spell (TN +5)
+This Spell combines the effects of two Spells. Choose
+a second Magia and add its effects to this Spell. The
+Spell must follow these requirements:
+•The second Magia must have a Base TN equal to
+or lower than the Base TN of the primary Magia.
+•The resist of the Magia must be the same.
+•The Primary Magia may only have Immuto that
+can be applied to both Magia.
+•The Magia must be different.
+240 Chapter 8: Magic
+
+Delay [Special] (TN Variable):
+The Spell is delayed, waiting for a set time to be
+released. When an Action with the Delay Immuto is
+taken the character spends the AP to cast the Spell
+and declares all targets as normal, but no other Spell
+effects are resolved and no Duels are made. Instead,
+when the Delay condition is met, the Spell takes
+effect and is resolved as normal, with no additional
+AP spent.
+The caster may choose to not have the Spell take
+effect at the prescribed time, allowing the Spell to
+instead dissipate.
+There are two situations that can be chosen to resolve a
+delayed Spell:
+Turns (TN +2): The character chooses a number of
+turns (up to 10) of Dramatic Time that the Spell will be
+delayed. After that many turns have passed, the Spell
+takes effect.
+Defined (TN +5): The character may define a situation
+in which the Spell will be cast, such as when an enemy
+walks through a location, or a key word is spoken. Unless
+made permanent through Harness Soulstone, this effect
+will dissipate, without resolving the Spell, at sunrise or
+sunset (whichever comes first).
+The defined situation must be an external event, it cannot
+be something that the Caster has control over (such as,
+"when I say the magic word"). The defined condition
+must be an event that the character cannot absolutely
+predict. For instance, he could set a Spell to cast when
+a door is opened, however, it would simply dissipate if
+the character then opened the door himself, or had a
+knowledgeable friend do it.
+
+					Ignore Caster (TN +2)
+					This Spell has no effect on the caster of the Spell, he
+					suffers no damage and is only subject to secondary
+					effects. For instance, the caster is immune to the fireball
+					Spell itself, but, if he sets the building on fire, he still has
+					cause for concern.
+
+Focus Object (TN Varies)
+This Spell requires a focus to be cast, allowing the caster
+to reduce the Spell's TN by requiring a Focus Object.
+When this Immuto is learned, the Focus Object is also
+chosen, and cannot be changed later on. A character
+may, however, learn multiple versions of this Immuto.
+Any attempts to cast a Spell with a Focus Object
+Immuto without the Focus Object, immediately fail.
+The object must be brandished when the Spell is cast.
+A character who, for instance, requires a wand for a
+Spell must have the wand in their hand and visible to
+all. In the case of non-portable objects, it must simply
+be visible to all and touched by the caster (although
+many casters will add a bit of showmanship as a matter
+of professionalism).
+The TN reduction is based on the portability and
+commonality of the object (combine the two for a
+final TN adjustment).
+Portability:
+-0 TN: Light object that can fit in a small pocket, such
+as a coin or handful of beans.
+-1 TN: Object that can be held in one hand or carried
+in a pouch/holster, such as a wand or a pistol.
+-2 TN: Object that can be carried in two hands, such
+as a staff or a rifle.
+-3 TN: Objects that are effectively immobile without
+much effort, such as an engraved summoning circle
+or large iron cauldron.
+Commonality:
+-0 TN: Extremely common object that can be readily
+purchased for under 10§, such as a length of rope or
+a pistol.
+-1 TN: Object with a few requirements but that is
+reasonably available, such as a certain make/model
+of pistol, or a wand made from oak.
+-2 TN: Object that must be specifically crafted by
+or for the caster (requiring at least 2 hours of work),
+but that can be replaced, such as a special staff, or a
+customized weapon/pneumatic limb.
+-3 TN: Objects that are irreplaceable. If the object is
+lost or destroyed the character is just out of luck!
+
+----
+Augmentation Immuto
+These Immuto enhance the way a Magia performs,
+usually by increasing numeric values inherent to the
+Spell's effect.
+
+
+					Additional Suit (TN -2)
+					The TN for the Spell gains an additional required
+					Suit of the caster's choice.
+
+Alter Range (TN Varies)
+This Immuto may be placed
+on a Spell multiple times.
+Each time it is taken the
+Spell moves up or down the
+Range Step table one step.
+Moving up the table (lowering
+the range) reduces the TN of
+the Spell Action by -2. Moving
+down the table (increasing the
+range) increases the TN of
+the Spell by 2.
+Some Spells do not have a y
+or z symbol in their range. If this is the case, they move
+up and down the range table as normal, but they do not
+gain the Close or Projectile (yor z) attached to range.
+A y Magia may never increase its range beyond y3,
+and a z Magia may never reduce its range below z5.
+
+					Increase AP: (TN -3)
+					The Spell requires 1 additional AP to cast. This Immuto
+					may be taken multiple times, but a character may not
+					spend AP over multiple turns to cast this Spell. This
+					Immuto may only be placed on Spells cast during
+					Dramatic Time.
+
+					Increased damage (TN +2)
+					This Immuto may be placed
+					on a Spell multiple times.
+					Each time this Immuto is
+					taken, improve the Magia's
+					Damage Flip one step on the
+					damage Step table.
+
+					Increased Duration (TN +2)
+					This Immuto may be placed
+					on a Spell multiple times.
+					Each time it is taken move
+					the Spell duration down the
+					Duration Step table one step.
+					Any part of the Spell with a
+					set duration (for instance the
+					time a target remains buried
+					by a Bury Spell) will be
+					increased 1 step.
+					Spells with a duration that
+					sit between two steps (for
+					instance, Animate Limb) are
+					assumed to sit on the lower
+					step of the two they are between. For instance, an
+					Animate Limb Spell cast by a character with a Charm
+					+ Enchanting of 5 would be considered a "1 Month"
+					Spell. By raising the TN by 2 he can increase the
+					duration to 6 months.
+
+					Increase Pulse (TN +2)
+					This Immuto may be placed on a Spell multiple times.
+					Any pulse range in the Spell is increased by 1, and the
+					TN to resist the pulse is increased by 1.
+
+					Increase Resistance (TN +2)
+					This Immuto may be placed on a Spell multiple times.
+					Any Duel made by characters affected by the Spell (such
+					as Horror Duels) has the TN of the Duel increased by 1.
+
+					Increased Severity (TN +1)
+					Increase the Severe value of the Damage Flip by 1. A
+					Magia may have this Immuto multiple times, increasing
+					the Severe damage of its Damage Flip by 1 each time.
+					Magia that do not have a damage flip, but instead deal
+					a set amount of damage, may take this Immuto as well,
+					increasing the damage by 1 each time this Immuto is
+					taken. However, those Magia must increase the TN by
+					+2, instead of +1.
+
+					Pulse (TN +4)
+					The Spell affects every legal target within an area around
+					the initial target. If the target of the Spell is hit, then every
+					character within 1 yard that could be affected by the Spell
+					must succeed on a TN 10 Duel, using the same defense
+					as the initial target.
+					Any character that fails the Duel also suffers the results
+					of the pulse. If damage is dealt they automatically suffer
+					Weak damage.
+
+					Reduce AP (TN +5)
+					The Spell requires 1 less AP to cast. This Immuto may
+					be taken multiple times, reducing the AP required by 1
+					each time (to a minimum of 0).
+
+					Reduce damage (TN -1)
+					This Immuto may be placed
+					on a Spell multiple times.
+					Each time this Immuto is
+					taken, decrease the Magia's
+					Damage Flip one step on the
+					damage Step table.
+
+					Reduce Resistance (TN -2)
+					This Immuto may be placed on a Spell multiple times.
+					Any Resistance Duel made by the target (such as Horror
+					Duels) has the TN of the Duel decreased by 1.
+
+					Reduce Severity (TN -3)
+					If the Spell deals a set amount of damage, instead of a
+					Damage Flip, the Magia instead deals no damage. All
+					other effects of the Magia remain the same. Targets that
+					would suffer effects only if they suffered damage still
+					suffer the effects of the Magia.
+
+					Selective Targeting (TN +4)
+					This Spell has no effect on characters the caster does
+					not wish to target (although secondary effects may
+					still affect them).
+----
+
+Elemental Immuto
+Elemental Immuto are a sub-set of Immuto that add
+elemental effects to some Spells. Along with the more
+"traditional" four elements, Elemental Immuto include a
+variety of other types of environmental effects.
+A Spell may only have one Elemental Immuto placed
+on it.
+
+
+Darkness (TN +1)
+Any character that suffers damage from the Magia also
+gains the Blind condition for 1 turn. This Magia may
+be taken multiple times, increasing the duration of the
+Blind condition by 1 turn each time.
+
+Decay (TN +1)
+Any undead character that suffers damage from the
+Magia suffers no damage and heals 1 damage instead.
+This Magia may be taken multiple times, increasing the
+amount of damage healed by undead by 1 each time.
+
+Electric (TN +3)
+Damage dealt by this Magia ignores armor. In addition,
+the attack does not randomly determine its target if it is
+used on a target that is engaged.
+
+Fire (TN +2)
+Any character that suffers damage from the Magia also
+gains the Burning +1 condition. This Magia may be
+taken multiple times, increasing the value of the Burning
+condition given by 1 each time.
+
+Ice (TN +3)
+Any character that suffers damage from the Magia also
+gains the Slow condition. This Magia may be taken
+twice, and, if it is taken a second time, the target gains
+the Paralyzed condition instead of Slow.
+
+Natural (TN +2)
+Any character that suffers damage from the Magia also
+gains the following condition: "Rooted: This character
+may not take Walk or Charge Actions. If this character is
+pushed, remove this condition and the character suffers
+3 damage."
+
+Poison (TN +1)
+Any character that suffers damage from the Magia also
+gains the Poison +1 condition. This Magia may be
+taken multiple times, increasing the value of the Poison
+condition given by 1 each time.
+
+Spirit (TN +4)
+Damage dealt by this Magia ignores armor and the Hard
+to Wound ability.
+
+Terror (TN +1)
+Any character that suffers damage from the Magia must
+make a TN 6 Horror Duel. This Magia may be taken
+multiple times, increasing the TN of the Horror Duel
+by 1 each time.
+----
+Enchanting Magia
+Enchantment is the art of magically augmenting a
+target. Whether imbuing a sword so that it is constantly
+freezing to the touch, or healing the wounds of a friend,
+Enchanting Magia usually enhances a target in some way.
+
+
+Animate construct
+The caster imbues a prepared construct body with life so
+that it might obey his commands.
+Effect: Target inanimate construct comes to life as a
+construct under the caster's control for 1 hour. At the
+end of the Spell, the construct returns to its inanimate
+form, and may be later reanimated.
+A caster may only control one construct at a time.
+
+Animate Limb
+The caster causes an artificial limb to come to life under the
+control of the character the limb is attached to.
+Effect: The target limb comes to life for a number of weeks
+equal to the Charm + Enchanting of the caster (or less if the
+caster wishes). The limb is under the control of the character
+attached to it, which is not necessarily the caster.
+The limb must have been crafted to perform as a limb,
+although it need not be shaped or otherwise created in
+the form of a natural limb.
+Pneumatic limbs are detailed on page 178. If a character
+has a non-Pneumatic replacement (such a stitched
+together arm from the flesh of dead men) then the TN
+requires a C instead of a t.
+
+Heal
+The caster channels raw magical energy into a target,
+causing it to return to its proper form.
+Effect: The target heals 1/2/3 damage, if it is living.
+The target may choose to not resist, making this Spell a
+Simple Duel instead. Each additional time a character is
+targeted by this Spell within an hour the TN is increased
+by 3 or requires an additional a R (caster's choice). If
+this Spell fails to heal a target, the target may not receive
+magical healing from this Magia until the next sunrise.
+Mend Critical
+The caster focuses magical energy into the target, repairing
+the worst of its damage.
+Effect: Remove a single condition from the target, if it
+is living. The target may choose to not resist, making
+this Spell a Simple Duel instead.
+The removed condition must be a Critical condition or
+a condition placed on the target by a non-magical effect.
+This is a 0 AP Action unless the condition being
+removed is a Moderate or Severe Critical condition. If it
+is Moderate this is a 1 AP Action and if it is Severe this
+is a 2 AP Action.
+
+Mend Critical
+The caster focuses magical energy into the target, repairing
+the worst of its damage.
+Effect: Remove a single condition from the target, if it
+is living. The target may choose to not resist, making
+this Spell a Simple Duel instead.
+The removed condition must be a Critical condition or
+a condition placed on the target by a non-magical effect.
+This is a 0 AP Action unless the condition being
+removed is a Moderate or Severe Critical condition. If it
+is Moderate this is a 1 AP Action and if it is Severe this
+is a 2 AP Action.
+
+Physical Enhancement
+The caster enhances the target's physical prowess,
+invigorating the target.
+Effect: The target gains the following condition for
+one hour: "Physically Enhanced +1: This character
+adds +1 to his Physical Aspects, to a maximum of 5."
+
+Elemental Weapon
+The caster enhances a weapon, or a person's body, with an
+elemental effect.
+Effect: The target weapon gains the effects of an
+Elemental Immuto, treating the weapon as if it were
+the Magia that the Immuto were altering. This effect
+lasts 1 minute.
+The wielder of the weapon may resist and, if they
+choose to do so, this Spell immediately fails.
+This Magia may also be cast on a person, causing
+their unarmed attacks to gain the benefits of the
+Elemental Immuto. The target of this power suffers
+no damage from this effect (they don't catch fire from
+their burning hands, for instance).
+This Spell must choose a single Elemental Immuto
+to be cast.
+
+Shapeshift
+The Caster takes on the physical form of an animal.
+Effect: The caster's body shifts into a Beast for 1
+turn. The caster gains the Beast characteristic while
+shifted, as well as all of the Beast's physical qualities
+(such as poisonous fangs, or the ability to fly).
+The TN for this Magia is 10t, plus the difference
+between the Beast's highest Physical Aspect and the
+caster's lowest Physical Aspect. For instance, a caster
+with a Speed of -2 (his lowest Aspect) shifting into a
+creature with a Might of +4 (its highest Aspect) would
+have a TN of 16t (10, plus the difference of 6).
+-----
+Genus Immuto
+These Immuto have two functions, in that they can add
+a legal target to a Spell, or remove all others. These
+are referred to as Unleashing and Chaining the Spell,
+respectively.
+A Spell may only have one Genus Immuto placed on it.
+Each Genus's target modifier is listed without a positive
+or negative value. This is because the TN for the Spell is
+raised by the noted value when the Spell is Unleashed,
+and the TN is lowered when the Spell is Chained.
+Unleashing a Spell
+If a Spell lists a specific target other than the target
+type of the Genus Immuto, then the Immuto will add
+the noted Genus to the legal targets of the Spell.
+For instance, the Interrogate Spell allows the caster
+to ask questions of a Living target. If the caster added
+the undead Genus to the Spell, it would allow the
+character to ask questions of an undead target.
+Unleashing a Spell requires Fatemaster consent, as
+many Spells simply won't have a way to resolve against
+some target types. While creatively rationalizing or
+resolving such things is the very essence of magic, it
+is ultimately up to the Fatemaster to determine how
+Unleashing a Spell works in these odd situations, if it
+works at all.
+When a Spell has an Unleashed Genus, it increases
+the TN by the Genus's TN modifier.
+Chaining a Spell
+If a Spell can already target the Genus's subject, then
+the Spell becomes Chained to the Genus. The Spell
+can only choose targets with the noted Genus.
+
+Beast (TN 2)
+The Spell affects targets with the Beast Characteristic.
+
+Construct (TN 2)
+The Spell affects targets with the construct Characteristic.
+
+Living (TN 1)
+The Spell affects targets with the Living Characteristic.
+
+Location (TN 3)
+The Spell affects a location within range. Any targets in
+the area that could normally resist the Spell are assumed
+to automatically succeed in their Resistance Duel.
+
+Inanimate (TN 3)
+The Spell affects only objects that cannot move under
+their own volition.
+
+Spirits (TN 2)
+The Spell affects targets with the Spirit Characteristic.
+
+Undead (TN 2)
+The Spell affects targets with the undead Characteristic.
+----
+
+Necromancy
+The so-called "Dark Art" of Necromancy is, to its
+practitioners, an art of life, death, and the very substance
+of human existence. Necromancy Magia deals with the
+ephemeral energies of thought and death.
+
+
+Beckon
+The caster lures a target towards himself.
+Effect: Target character must move its Walk
+Aspect directly towards the caster and must end this
+movement as close to the caster as possible.
+
+Bury
+The caster traps a target within an "other realm" where time
+does not pass.
+Effect: The target is removed from reality. It will
+return to reality at the end of the turn, appearing in a
+safe spot within 1 yard of the caster, without sensing
+that any time passed.
+
+Cadaver Mask
+The caster removes the face of a corpse and wears the dead
+man's visage for a while.
+Effect: The character removes the face of the corpse
+and takes on the appearance and voice that the corpse
+had in life. The character gains a ++ to all attempts
+to impersonate the person. This effect lasts until the
+next Sunrise or Sunset.
+
+Interrogate
+The caster sifts through the target's mind, looking for
+answers to questions.
+Effect: The caster may ask a single yes-or-no question
+of the living target, plus an additional question for
+each Margin of Success. The character will receive
+a truthful yes, no, or "I don't know" answer from the
+target, to the best of the target's ability.
+
+Mind Control
+The caster takes momentary command over the target's mind
+and body, forcing them to take an Action against their will.
+Effect: The target takes a 1 AP Action
+that it could normally take under
+this character's control. This Action
+may not force the target to sacrifice
+itself directly, but can cause him
+to take Actions against his own
+nature (such as attacking
+his friends). A caster may
+not affect themselves
+with Mind Control.
+
+Raise undead
+The caster brings a corpse to life to serve him.
+Effect: Target corpse becomes an undead under the
+caster's control for 10 minutes. The undead undergoes
+the following alterations from the original form:
+•The undead's Tenacity is increased to 3 and all of
+its other Mental Aspects are lowered to -5.
+•The undead loses the Living Characteristic (if it
+has it) and gains the Undead Characteristic.
+•The undead loses any mental skills it had in life, and
+the physical skill ratings are halved (rounding up).
+Alternatively, this Spell may be used to take control
+of an uncontrolled and non-sentient undead creature.
+The new undead may need physical repairs (as critical
+damage may physically render the body less useful).
+Otherwise, the corpse is raised with half of its Wounds
+remaining.
+At the end of the Spell, the undead becomes
+uncontrolled (and usually violent).
+
+Subsume Corpse
+The caster causes a corpse to disintegrate, restoring his own
+body in the process.
+Effect: Target corpse is turned into dust. The caster
+then heals 1/2/3 damage, plus an additional number
+of Wounds equal to the corpse's Resilience (if the
+Resilience is positive).
+
+Terrifying Aura
+The caster emanates a powerful aura that causes terror in
+the living.
+Effect: The target gains a powerful Terrifying Aura
+for 1 minute. If a Living character ends a movement
+within a1 of the target, or attacks the target, it must
+succeed on a TN 10 Horror Duel.
+See page 219 for rules regarding Fated characters
+causing Horror Duels.
+
+---
+
+Prestidigitation Magia
+The arts included in Prestidigitation are more than simply
+producing something from nothing. Prestidigitation
+Magia governs anything with illusion, space, and the
+corresponding locations of objects within that space.
+
+
+Divination
+The caster throws his sense to a target location, seeing and
+hearing as if he were in that location.
+Effect: The caster enters a divination trance, his body
+going limp. While in the trance the caster can see and
+hear as if his sense were located at the target location.
+The target location must obey all of the normal targeting
+restrictions for a Spell (range, Line of Sight, etc.).
+The effects of this Spell last for one hour, or until the
+caster wishes the Spell to end. The caster may not take
+any other Actions while in a divination trance.
+
+Teleport
+The caster teleports the target causing it to vanish and then
+reappear in a new location.
+Effect: A target within range of this Spell is teleported
+to a safe location within range of this Spell. The target
+may choose to relent to the teleportation, in which
+case the caster must make a Simple Challenge Duel
+instead.
+Objects may also be teleported, but if the object is in
+the possession of someone, they may resist the Spell.
+
+Conjuring
+The caster summons an object from nothing in an instant.
+Effect: The Caster summons an object that was
+previously prepared for summoning. The object appears
+in his hands, and must be an object that the character
+can hold in both hands.
+A character may prepare an object for summoning by
+touching the object briefly and mentally concentrating on
+it. A character may have a number of objects prepared
+for summoning equal to his Cunning Aspect, with a
+minimum of 1.
+The range of this Spell is equal to the user's Cunning
+Aspect in miles.
+
+Invisibility
+The caster obscures a target's appearance, blending in with
+the background or becoming completely transparent.
+Effect: The target becomes invisible for 1 round.
+The invisibility immediately breaks if the character
+interacts with the world in a meaningful way, such as
+by attacking, moving an object, or opening doors.
+Any attempts to spot the character suffer --- to
+the Flip if the spotter is relying on sight at all while
+the character is invisible. Even a guard who hears
+footsteps, for instance, will believe his eyes when he
+turns to see nobody there.
+The character can otherwise be registered by other
+senses, but not by magical "sight" based sense (such as
+seeing spirits).
+Any attacks made against an invisible character suffer
+--- to their attack Flip. If the attack succeeds,
+however, the invisibility ends as well.
+
+Parlor Tricks
+The caster produces one of a variety of minor and obviously
+magical effects.
+Effect: The caster may choose one of the following
+effects to produce. These effects may never be used
+to directly harm a target physically, and any situation
+that would warrant a Resist Duel is automatically won
+by the Defender, if he wishes.
+•Instantly clean and repair the clothes of a target.
+•Create a short and simple sound, such as soft
+bells or a single word, audible to all in the room.
+•Whisper a short sentence into the ear of someone
+you can see that is only heard by that person.
+•Make a light object (such as a key or handkerchief)
+dance about within a small area (such as the top of
+a coffee table).
+•Change the flavor of a food or drink, such as
+making water taste like cherry juice.
+•Light a candle, lantern, or other object designed
+to be lit, that is within sight.
+•Create a translucent and still image visible to all
+in the room.
+•Summon a small orb of light, about the brightness
+of a lantern, that moves about the room erratically,
+or hovers near a person.
+•Open an unlocked door, window, or container
+that could be easily opened with one hand and that
+is within sight.
+•Cause soft music to be audible within the room.
+
+Phantasm
+The caster conjures a complex illusion that can appear real.
+Effect: The caster creates an animated illusion
+that appears real to observers for 1 minute. When
+created, the caster must declare all of the details of
+the illusion, such as what it will do, and how it will
+be sensed. The illusion does not react to external
+stimulus unless controlled by the caster (see below).
+The phantasm can be seen, heard, and smelled, but
+not touched or tasted. If touched, the illusion may be
+passed through, but is otherwise unharmed.
+As long as a creature sensing the phantasm has no
+reason to call it into question, it automatically fools
+the observer. A character who has never been in a
+particular room, for instance, would not notice the
+illusion of a wall hiding a door that he never knew
+was there in the first place.
+If a character has a reason to disbelieve an illusion,
+such as the image of a dead friend sitting in a chair,
+then he must succeed on a Wp 10 Duel to disbelieve
+the illusion. Otherwise, he believes the illusion is
+real. If the character comes into physical contact with
+the illusion, then he automatically disbelieves it.
+The caster may take control of the illusions Actions
+with a 1 AP Action. The illusion will act as the caster
+wishes, and may even change its form, within the
+bounds of the effect. In addition, the caster may
+banish an illusion he created at any time without
+using an Action.
+
+----
+Sorcery Magia
+The Magia of Sorcery creates temporary effects that
+typically have obvious combat applications. Sorcery,
+as a general rule, creates elemental effects such as fire.
+These “elemental” effects aren’t just the traditional
+elements, but also include such concepts as force,
+poison, and a variety of other options.
+
+
+Elemental Engulf
+The Caster causes a target to be surrounded with dangerous
+elemental energy.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Elemental Projectile
+The Caster hurls a bolt of magical power at a target, much
+like a bullet.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Elemental strike
+The Caster strikes his opponent with a melee attack infused
+with elemental energy.
+Effect: The target suffers 1/2/3 damage.
+Requirements: This Magia must have at least one
+Elemental Immuto.
+
+Telekinetic Movement
+The Caster moves a target with his mind, as if it were
+grasped by unseen hands.
+Effect: The caster may move a target object as if it
+were being lifted and carried by a character with a
+Might equal to the caster's Tenacity, and a Speed
+equal to the caster's Cunning.
+If the target is inanimate, it does not resist this Action
+and the caster must simply meet the TN requirements
+for moving the object. If the caster is attempting to
+move an object held by another character, then the
+character holding the object may resist the Spell.
+A caster may choose to maintain this Spell, moving
+the object from turn to turn. If he does so, the Spell
+does not need to be cast again (if it was successfully
+cast). The caster may not cast any other Spell while
+maintaining the telekinesis, and moving the object
+requires a (1) AP Action, as if this Spell were being
+cast again.
+A character may make attacks with an object held in
+this way, making a standard melee attack using a skill
+appropriate for the item (such as Melee for a sword),
+but replacing the relevant Aspect with Intellect.
+
+Telekinetic push
+The Caster unleashes a blast or wave of force at a target,
+shoving it with his mind.
+Effect: The target is pushed a number of yards equal
+to the caster's Tenacity directly away from the caster.
+
+Sleep
+The caster causes the target to lose consciousness.
+Effect: If the target is Living, it must make
+a TN 10 Unconsciousness Challenge. The
+TN of the Challenge is increased by 2 for
+each Margin of Success achieved by the
+caster.
+Note that this Spell is not resisted by the target, they
+must pass the Unconsciousness challenge instead,
+if the Spell is successful. This will create a set TN
+for many Fatemaster characters (as their Flip value is
+not random).
+
+Wrench
+The caster reaches into the target with telekinetic force,
+wrenching internal organs about.
+Effect: If the target is living, it must make a TN
+10 Toughness + Resilience Challenge. The TN of
+the Challenge is increased by 2 for each Margin of
+Success achieved by the Caster.
+Note that this Spell is not resisted by the
+target, they must pass the challenge instead,
+if the Spell is successful. This will create a
+set TN for many Fatemaster characters
+(as their Flip value is not random).
+If the target fails the challenge it
+suffers a Moderate Critical Effect,
+with normal adjustments for damage
+and other factors, as normal for a
+Critical Effect.

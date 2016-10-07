@@ -1,3 +1,4 @@
+
 window.addEventListener("keyup",function(){
 	key =event.keyCode;
 if(key==13) {
@@ -30,11 +31,20 @@ function createspell(){
 		$('#'+typearr[i]+'-info').append($('<div />',{class:'cardpart cardpart-range',id:typearr[i]+'-info-range'}))
 		$('#'+typearr[i]+'-info').append($('<div />',{class:'cardpart cardpart-text',id:typearr[i]+'-info-text'}))
 		$('#'+typearr[i]+'-info').append($('<div />',{class:'cardpart cardpart-requirement',id:typearr[i]+'-info-requirement'}))
+
+		/*
+	if .count make input counter with max=count and multiply result according to selected value
+		*/
 		
 		// console.log($('#'+typearr[i]+'-info'))
 
 		if(typearr[i] == 'magia'){
 			checkVal()
+			var count = 1
+						if(spellmagia[magia].count){
+				var count = spellmagia[magia].count
+				// console.log(count)
+			}
 			var name = spellmagia[magia].name
 			// console.log(name)
 			var story = spellmagia[magia].story
@@ -49,6 +59,11 @@ function createspell(){
 		}
 		else if(typearr[i] == 'genus'){
 			checkVal()
+			var count = 1
+						if(spellgenus[genus].count){
+				var count = spellgenus[genus].count
+				// console.log(count)
+			}
 			var name = spellgenus[genus].name
 			var story = spellgenus[genus].story
 			var aspect = spellgenus[genus].aspect
@@ -62,6 +77,11 @@ function createspell(){
 		}
 		else if(typearr[i] == 'elemental'){
 			checkVal()
+			var count = 1
+						if(spellelemental[elemental].count){
+				var count = spellelemental[elemental].count
+				// console.log(count)
+			}
 			var name = spellelemental[elemental].name
 			var story = spellelemental[elemental].story
 			var aspect = spellelemental[elemental].aspect
@@ -75,6 +95,11 @@ function createspell(){
 		}
 		else if(typearr[i] == 'alteration'){
 			checkVal()
+			var count = 1
+			if(spellalteration[alteration].count){
+				var count = spellalteration[alteration].count
+				// console.log(count)
+			}
 			var name = spellalteration[alteration].name
 			var story = spellalteration[alteration].story
 			var aspect = spellalteration[alteration].aspect
@@ -88,6 +113,11 @@ function createspell(){
 		}
 		else if(typearr[i] == 'augmentation'){
 			checkVal()
+			var count = 1
+			if(spellaugmentation[augmentation].count){
+				var count = spellaugmentation[augmentation].count
+				// console.log(count)
+			}
 			var name = spellaugmentation[augmentation].name
 			var story = spellaugmentation[augmentation].story
 			var aspect = spellaugmentation[augmentation].aspect
@@ -100,7 +130,7 @@ function createspell(){
 			var requirement = spellaugmentation[augmentation].requirement
 		}
 
-		writeVal(typearr[i],name,story,aspect,ap,tn,resist,range,text,requirement)
+		writeVal(typearr[i],name,story,aspect,ap,tn,resist,range,text,requirement,count)
 	}
 	
 
@@ -127,20 +157,28 @@ function createspell(){
 		spellelemental[elemental].name
 		+')<br>('+
 		spellalteration[alteration].name
-		+')<br>('+
+		+' x'+alterationcount+')<br>('+
 		spellaugmentation[augmentation].name
-		+')'
+		+' x'+augmentationcount+')'
 	// var story = 
-	// var aspect = 
+	var aspect = spellmagia[magia].aspect
+
+
+
 	var ap = parseInt(spellmagia[magia].AP)
 	+
 	parseInt(spellgenus[genus].AP)
 	+
 	parseInt(spellelemental[elemental].AP)
 	+
-	parseInt(spellalteration[alteration].AP)
+	parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)
 	+
-	parseInt(spellaugmentation[augmentation].AP)
+	parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount)
+
+	console.log(parseInt(spellmagia[magia].AP)+' + '+parseInt(spellgenus[genus].AP)+' + '+parseInt(spellelemental[elemental].AP)+' + '+parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount))
+	console.log('total AP: '+ap)
+
+
 
 	var tn = parseInt(spellmagia[magia].TN)
 	+
@@ -148,14 +186,61 @@ function createspell(){
 	+
 	parseInt(spellelemental[elemental].TN)
 	+
-	parseInt(spellalteration[alteration].TN)
+	parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)
 	+
-	parseInt(spellaugmentation[augmentation].TN)
-	// var tn = 
-	// var resist = 
-	// var range = 
+	parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)
+
+	console.log(parseInt(spellmagia[magia].TN)+' + '+parseInt(spellgenus[genus].TN)+' + '+parseInt(spellelemental[elemental].TN)+' + '+parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount))
+	console.log('total TN: '+tn)
+
+
+	
+	var tnsuit = spellmagia[magia].tnsuit
+	+
+	spellgenus[genus].tnsuit
+	+
+	spellelemental[elemental].tnsuit
+	+
+	spellalteration[alteration].tnsuit
+	+
+	spellaugmentation[augmentation].tnsuit
+
+	console.log(spellmagia[magia].tnsuit+' + '+spellgenus[genus].tnsuit+' + '+spellelemental[elemental].tnsuit+' + '+spellalteration[alteration].tnsuit+' + '+spellaugmentation[augmentation].tnsuit)
+	console.log('total tnsui: '+tnsuit)
+	
+
+
+	var resist = spellmagia[magia].resist
+	if(spellalteration[alteration].resist == 'switch'){
+		if(resist == 'DF'){
+			resist = 'WP'
+		}
+		else if(resist == 'WP'){
+			resist = 'DF'
+		}
+	}
+	if(spellaugmentation[augmentation].resist){
+		var extraresist = parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)
+		resist = resist+extraresist
+	}
+	
+	var range = parseInt(spellmagia[magia].range)
+	+
+	parseInt(spellgenus[genus].range)
+	+
+	parseInt(spellelemental[elemental].range)
+	+
+	parseInt(spellalteration[alteration].range)*parseInt(alterationcount)
+	+
+	parseInt(spellaugmentation[augmentation].range)*parseInt(augmentationcount)
+
+	console.log(parseInt(spellmagia[magia].range)+' + '+parseInt(spellgenus[genus].range)+' + '+parseInt(spellelemental[elemental].range)+' + '+parseInt(spellalteration[alteration].range)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].range)*parseInt(augmentationcount))
+	console.log('total range: '+range)
+	
+
+
 	var text = spellmagia[magia].text
-		+'<br>(<b>'+spellgenus[genus].name+'</b>'+
+		+'<br>(<b>'+spellgenus[genus].name+'</b>: '+
 		spellgenus[genus].text
 		+')<br>('+
 		spellelemental[elemental].text
@@ -168,56 +253,56 @@ function createspell(){
 
 	$('#total-info-name').html(name)
 	// $('#total-info-story').html(story)
-	// $('#total-info-aspect').html('<div class="info-title">ASPECT</div>'+aspect)
+	$('#total-info-aspect').html('<div class="info-title">ASPECT</div>'+aspect)
 	$('#total-info-ap').html('<div class="info-title">AP</div>'+ap)
-	$('#total-info-tn').html('<div class="info-title">TN</div>'+tn)
-	// $('#total-info-resist').html('<div class="info-title">RESIST</div>'+resist)
-	// $('#total-info-range').html('<div class="info-title">RANGE</div>'+range)
+	$('#total-info-tn').html('<div class="info-title">TN</div>'+tn+tnsuit)
+	$('#total-info-resist').html('<div class="info-title">RESIST</div>'+resist)
+	$('#total-info-range').html('<div class="info-title">RANGE</div>'+range)
 	$('#total-info-text').html('<b>Effect</b>: '+text)
 	// $('#total-info-requirement').html('<b>Requirements:</b><br>'+requirement)
 
 
-	$('#spellText').html(
-		spellmagia[magia].name
-		+' ('+
-		spellgenus[genus].name
-		+') ('+
-		spellelemental[elemental].name
-		+') ('+
-		spellalteration[alteration].name
-		+') ('+
-		spellaugmentation[augmentation].name
-		+')'
-		)
+	// $('#spellText').html(
+	// 	spellmagia[magia].name
+	// 	+' ('+
+	// 	spellgenus[genus].name
+	// 	+') ('+
+	// 	spellelemental[elemental].name
+	// 	+') ('+
+	// 	spellalteration[alteration].name
+	// 	+' x'+alterationcount+') ('+
+	// 	spellaugmentation[augmentation].name
+	// 	+' x'+augmentationcount+')'
+	// 	)
 	
-	$('#spellTNnum').html(
-	parseInt(spellmagia[magia].TN)
-	+
-	parseInt(spellgenus[genus].TN)
-	+
-	parseInt(spellelemental[elemental].TN)
-	+
-	parseInt(spellalteration[alteration].TN)
-	+
-	parseInt(spellaugmentation[augmentation].TN)
-	)
+	// $('#spellTNnum').html(
+	// parseInt(spellmagia[magia].TN)
+	// +
+	// parseInt(spellgenus[genus].TN)
+	// +
+	// parseInt(spellelemental[elemental].TN)
+	// +
+	// parseInt(spellalteration[alteration].TN)
+	// +
+	// parseInt(spellaugmentation[augmentation].TN)
+	// )
 	// $('#spellTNnum').append(spellmagia[magia].tnsuit+spellmagia[genus].tnsuit+spellmagia[elemental].tnsuit+spellmagia[alteration].tnsuit+spellmagia[augmentation].tnsuit)
 // console.log('total ap')
-	$('#spellAPnum').html(
-		// spellmagia[magia].AP)
-	parseInt(spellmagia[magia].AP)
-	+
-	parseInt(spellgenus[genus].AP)
-	+
-	parseInt(spellelemental[elemental].AP)
-	+
-	parseInt(spellalteration[alteration].AP)
-	+
-	parseInt(spellaugmentation[augmentation].AP)
-	)
+	// $('#spellAPnum').html(
+	// 	// spellmagia[magia].AP)
+	// parseInt(spellmagia[magia].AP)
+	// +
+	// parseInt(spellgenus[genus].AP)
+	// +
+	// parseInt(spellelemental[elemental].AP)
+	// +
+	// parseInt(spellalteration[alteration].AP)
+	// +
+	// parseInt(spellaugmentation[augmentation].AP)
+	// )
 }
 
-function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement){
+function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement,count){
 	// console.log(type)
 	// console.log(name)
 	// console.log(story)
@@ -237,26 +322,52 @@ function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement){
 	$('#'+type+'-info-range').html('<div class="info-title">RANGE</div>'+range)
 	$('#'+type+'-info-text').html('<b>Effect</b>: '+text)
 	$('#'+type+'-info-requirement').html('<b>Requirements:</b><br>'+requirement)
+	if(count){
+		// console.log(count)
+		// console.log($('#'+type+'-count').attr('max'))
+		$('#'+type+'-count').attr('max',count)
+		// console.log($('#'+type+'-count').attr('max'))
+	}
+	$('#'+type+'-count').change(function(){createspell()})
+	$('#'+type+'-count-min').html($('#'+type+'-count').attr('min'))
+	$('#'+type+'-count-max').html($('#'+type+'-count').attr('max'))
+	$('#'+type+'-count-val').html(' Value:'+$('#'+type+'-count').val())
 }
 
 
 
 function checkVal(){
 	magia = $("select[name='magia'] > option:checked").val()
+	magiacount = $('#magia-count').val()
+	// magiacountmin = $('#magia-count').attr('min')
+	// magiacountmax = $('#magia-count').attr('max')
 	// magia = $("select[name='magia'] > "$('option:selected', this).closest('optgroup').attr('label')).val()
 	/*
 $('option:selected', this).closest('optgroup').attr('label')
 	*/
 	genus = $("select[name='genus'] > option:checked").val()
+	genuscount = $('#genus-count').val()
+	// genuscountmin = $('#genus-count').attr('min')
+	// genuscountmax = $('#genus-count').attr('max')
+
 	elemental = $("select[name='elemental'] > option:checked").val()
+	elementalcount = $('#elemental-count').val()
+	// elementalcountmin = $('#elemental-count').attr('min')
+	// elementalcountmax = $('#elemental-count').attr('max')
+
 	alteration = $("select[name='alteration'] > option:checked").val()
+	alterationcount = $('#alteration-count').val()
+	// alterationcountmin = $('#alteration-count').attr('min')
+	// alterationcountmax = $('#alteration-count').attr('max')
 	/*
 	$('#multiple :selected').each(function(i, sel){ 
 	    alert( $(sel).val()); 
-
 	});
 	*/
 	augmentation = $("select[name='augmentation'] > option:checked").val()
+	augmentationcount = $('#augmentation-count').val()
+	// augmentationcountmin = $('#augmentation-count').attr('min')
+	// augmentationcountmax = $('#augmentation-count').attr('max')
 		// console.log('magia: '+magia)
 		// console.log('genus: '+genus)
 		// console.log('elemental: '+elemental)
@@ -282,7 +393,8 @@ var spellmagia = {
 				TN:'5',
 				tnsuit:'t',
 				resist:'WP',
-				range:'5yrds',
+				range:'5',
+				rangetype:'',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
 			},
 
@@ -290,311 +402,350 @@ var spellmagia = {
 				name:'Волшебство: Элементальный снаряд',
 				story:'',
 				text:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				requirement:'0',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'3',
+				tnsuit:'t',
+				resist:'Df',
+				range:'5',
+				rangetype:'projectile',
+				requirement:'This Magia must have at least one Elemental Immuto.',
 			},
 		3 : {
 				name:'Волшебство: Элементальный удар',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'3',
+				tnsuit:'t',
+				resist:'Df',
+				range:'2',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		4 : {
 				name:'Волшебство: Telekinetic Movement',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'1',
+				TN:'7',
+				tnsuit:'m',
+				resist:'Wp',
+				range:'5',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		5 : {
 				name:'Волшебство: Telekinetic push',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				text:'',
+				story:'The Caster unleashes a blast or wave of force at a target,shoving it with his mind',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'7',
+				tnsuit:'m',
+				resist:'Df',
+				range:'5',
+				rangetype:'',
+				text:'The target is pushed a number of yards equal to the caster\'s Tenacity directly away from the caster',
 				requirement:'0',
 			},
 		6 : {
 				name:'Волшебство: Сон',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'2',
+				TN:'10',
+				tnsuit:'m',
+				resist:'-',
+				range:'3',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		7 : {
 				name:'Волшебство: Wrench',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'2',
+				TN:'10',
+				tnsuit:'t',
+				resist:'-',
+				range:'3',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		8 : {
 				name:'Зачарование: Анимировать конструкта',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'1',
+				TN:'10',
+				tnsuit:'t',
+				resist:'-',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		9 : {
 				name:'Зачарование: Анимировать конечность',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'1',
+				TN:'10',
+				tnsuit:'t',
+				resist:'-',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		10 : {
 				name:'Зачарование: Лечение',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Cunning',
+				AP:'1',
+				TN:'7',
+				tnsuit:'r',
+				resist:'Wp',
+				range:'1',
+				rangetype:'melee',
+				text:'',
+				requirement:'0',
+			},
+			102 : {
+				name:'Mend Critical',
+				story:'',
+				aspect:'Cunning',
+				AP:'0-2',
+				TN:'10',
+				tnsuit:'r',
+				resist:'Wp',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		11 : {
 				name:'Зачарование: Physical Enhancement',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'1',
+				TN:'7',
+				tnsuit:'r',
+				resist:'Df',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		12 : {
 				name:'Зачарование: Элементальное оружие',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Cunning',
+				AP:'2',
+				TN:'8',
+				tnsuit:'t',
+				resist:'Special',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		13 : {
 				name:'Зачарование: Перевоплощение',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
+				aspect:'Cunning',
+				AP:'1',
+				TN:'*',
 				tnsuit:'',
-				resist:'0',
+				resist:'Wp',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		14 : {
 				name:'Некромантия: Beckon',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'2',
+				TN:'10',
+				tnsuit:'m',
+				resist:'Wp',
+				range:'10',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		15 : {
 				name:'Некромантия: Погребение',
 				story:'Заклинатель заточает цель внутри "другого измерения" где время не течет.',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'1',
+				TN:'10',
+				tnsuit:'c',
+				resist:'Wp',
+				range:'5',
+				rangetype:'',
 				text:'Цель исчезает из реального мира. Она вернется в реальный мир в конце хода, появившись в безопасном месте в 1 ярде от заклинателя, не ощущая, что прошло время.',
 				requirement:'0',
 			},
 		16 : {
 				name:'Некромантия: Трупная маска',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'2',
+				TN:'10',
+				tnsuit:'m',
+				resist:'-',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		17 : {
 				name:'Некромантия: Допросить',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'1',
+				TN:'12',
+				tnsuit:'m',
+				resist:'Wp',
+				range:'5',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		18 : {
 				name:'Некромантия: Контроль разума',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'1',
+				TN:'10',
+				tnsuit:'m',
+				resist:'Wp',
+				range:'5',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		19 : {
 				name:'Некромантия: Подъем немертвых',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Charm',
+				AP:'1',
+				TN:'5',
+				tnsuit:'c',
+				resist:'-',
+				range:'5',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		20 : {
 				name:'Некромантия: Subsume Corpse',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'1',
+				TN:'5',
+				tnsuit:'c',
+				resist:'-',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		21 : {
 				name:'Некромантия: Ужасающая аура',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Tenacity',
+				AP:'1',
+				TN:'12',
+				tnsuit:'m',
+				resist:'Wp',
+				range:'5',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		22 : {
-				name:'Prestidigitation: Divination',
+				name:'Изменение: Divination',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Cunning',
+				AP:'2',
+				TN:'10',
+				tnsuit:'t',
+				resist:'-',
+				range:'100',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		23 : {
-				name:'Prestidigitation: Телепорт',
+				name:'Изменение: Телепорт',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'10',
+				tnsuit:'t',
+				resist:'Wp',
+				range:'30',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		24 : {
-				name:'Prestidigitation: Conjuring',
+				name:'Изменение: Conjuring',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Cunning',
+				AP:'2',
+				TN:'10*',
+				tnsuit:'t',
+				resist:'-',
+				range:'*',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		25 : {
-				name:'Prestidigitation: Невидимость',
+				name:'Изменение: Невидимость',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Cunning',
+				AP:'2',
+				TN:'7',
+				tnsuit:'m',
+				resist:'-',
+				range:'1',
+				rangetype:'melee',
 				text:'',
 				requirement:'0',
 			},
 		26 : {
-				name:'Prestidigitation: Parlor Tricks',
+				name:'Изменение: Parlor Tricks',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'5',
+				tnsuit:'m',
+				resist:'-',
+				range:'*',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
 		27 : {
-				name:'Prestidigitation: Фантазм',
+				name:'Изменение: Фантазм',
 				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
+				aspect:'Intellect',
+				AP:'1',
+				TN:'5',
+				tnsuit:'m',
+				resist:'-',
+				range:'*',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -609,6 +760,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -621,6 +773,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Зверь (Beast).',
 				requirement:'0',
 			},
@@ -634,6 +787,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Конструкт (Construct).',
 				requirement:'0',
 			},
@@ -646,6 +800,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Живой (Living).',
 				requirement:'0',
 			},
@@ -658,6 +813,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'The Spell affects a location within range. Any targets in the area that could normally resist the Spell are assumed to automatically succeed in their Resistance Duel.',
 				requirement:'0',
 			},
@@ -670,6 +826,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на объекты, которые не могут перемещаться по собственному желанию (Inanimate).',
 				requirement:'0',
 			},
@@ -682,6 +839,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Дух (Spirits).',
 				requirement:'0',
 			},
@@ -694,6 +852,7 @@ var spellgenus = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Немертвый (Undead).',
 				requirement:'0',
 			},
@@ -708,6 +867,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -720,6 +880,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia also gains the Blind condition for 1 turn. This Magia may be taken multiple times, increasing the duration of the Blind condition by 1 turn each time.',
 				requirement:'0',
 			},
@@ -733,6 +894,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any undead character that suffers damage from the Magia suffers no damage and heals 1 damage instead. This Magia may be taken multiple times, increasing the amount of damage healed by undead by 1 each time.',
 				requirement:'0',
 			},
@@ -745,6 +907,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Damage dealt by this Magia ignores armor. In addition, the attack does not randomly determine its target if it is used on a target that is engaged.',
 				requirement:'0',
 			},
@@ -757,6 +920,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia also gains the Burning +1 condition. This Magia may be taken multiple times, increasing the value of the Burning condition given by 1 each time.',
 				requirement:'0',
 			},
@@ -769,6 +933,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia also gains the Slow condition. This Magia may be taken twice, and, if it is taken a second time, the target gains the Paralyzed condition instead of Slow.',
 				requirement:'0',
 			},
@@ -781,6 +946,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia also gains the following condition: "Rooted: This character may not take Walk or Charge Actions. If this character is pushed, remove this condition and the character suffers 3 damage."',
 				requirement:'0',
 			},
@@ -793,6 +959,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia also gains the Poison +1 condition. This Magia may be taken multiple times, increasing the value of the Poison condition given by 1 each time.',
 				requirement:'0',
 			},
@@ -805,6 +972,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Damage dealt by this Magia ignores armor and the Hard to Wound ability.',
 				requirement:'0',
 			},
@@ -817,6 +985,7 @@ var spellelemental = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'Any character that suffers damage from the Magia must make a TN 6 Horror Duel. This Magia may be taken multiple times, increasing the TN of the Horror Duel by 1 each time.',
 				requirement:'0',
 			},
@@ -831,6 +1000,7 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -841,8 +1011,9 @@ var spellalteration = {
 				AP:'0',
 				TN:'2',
 				tnsuit:'',
-				resist:'0',
+				resist:'switch',
 				range:'0',
+				rangetype:'',
 				text:'If this Action is resisted by Wp, it is resisted by Df instead. If it is resisted by Df it is resisted by Wp instead.',
 				requirement:'0',
 			},
@@ -855,8 +1026,10 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'This Immuto may be taken up to three times. The Action\'s Damage Flip gains 0/0/b the first time it is taken, 0/b/b the second time, and 0/b/bb the third time. These effects are added to the damage the Magia deals.',
 				requirement:'0',
+				count:'3',
 			},
 		3 : {
 				name:'Combined Spell',
@@ -867,6 +1040,7 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'This Spell combines the effects of two Spells. Choose a second Magia and add its effects to this Spell. The Spell must follow these requirements: •The second Magia must have a Base TN equal to or lower than the Base TN of the primary Magia. •The resist of the Magia must be the same. •The Primary Magia may only have Immuto that can be applied to both Magia. •The Magia must be different. 240 Chapter 8: Magic',
 				requirement:'0',
 			},
@@ -879,6 +1053,7 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -891,6 +1066,7 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'This Spell has no effect on the caster of the Spell, he suffers no damage and is only subject to secondary effects. For instance, the caster is immune to the fireball Spell itself, but, if he sets the building on fire, he still has cause for concern.',
 				requirement:'0',
 			},
@@ -903,6 +1079,7 @@ var spellalteration = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -917,6 +1094,7 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'',
 				requirement:'0',
 			},
@@ -925,10 +1103,11 @@ var spellaugmentation = {
 				story:'',
 				aspect:'0',
 				AP:'0',
-				TN:'02',
-				tnsuit:'',
+				TN:'-2',
+				tnsuit:'*',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'The TN for the Spell gains an additional required Suit of the caster\'s choice.',
 				requirement:'0',
 			},
@@ -941,6 +1120,19 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
+				/*
+				Range Steps
+melee y1 Yard
+y2 Yards
+y3 Yards
+projectile z5 Yards
+z10 Yards
+z15 Yards
+z30 Yards
+z50 Yards
+Anywhere in Sight
+				*/
 				text:'',
 				requirement:'0',
 			},
@@ -953,8 +1145,10 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
 				text:'The Spell requires 1 additional AP to cast. This Immuto may be taken multiple times, but a character may not spend AP over multiple turns to cast this Spell. This Immuto may only be placed on Spells cast during Dramatic Time.',
 				requirement:'0',
+				count:'10',
 			},
 		4 : {
 				name:'Increased damage',
@@ -965,6 +1159,16 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
+				rangetype:'',
+				count:'5',
+				/*
+Damage Steps
+0/0/1
+0/1/2
+1/2/3
+2/3/4
+3/4/5
+				*/
 				text:'This Immuto may be placed on a Spell multiple times. Each time this Immuto is taken, improve the Magia\'s Damage Flip one step on the damage Step table.',
 				requirement:'0',
 			},
@@ -977,8 +1181,26 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				
+				/*
+Duration Steps
+1 Turn
+2 Turn
+3 Turn
+1 Minute
+10 Minutes
+1 Hour
+Sunrise or Sunset
+1 Day
+1 Week
+1 Month
+6 Months
+1 Year
+				*/
+				text:'This Immuto may be placed on a Spell multiple times. Each time it is taken move the Spell duration down the Duration Step table one step. Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
 				requirement:'0',
+				count:'12',
 			},
 		6 : {
 				name:'Increase Pulse',
@@ -987,10 +1209,12 @@ var spellaugmentation = {
 				AP:'0',
 				TN:'2',
 				tnsuit:'',
-				resist:'0',
-				range:'0',
+				resist:'-1',
+				range:'1',
+				rangetype:'',
 				text:'This Immuto may be placed on a Spell multiple times. Any pulse range in the Spell is increased by 1, and the TN to resist the pulse is increased by 1.',
 				requirement:'0',
+				count:'10',
 			},
 		7 : {
 				name:'Increase Resistance',
@@ -999,10 +1223,12 @@ var spellaugmentation = {
 				AP:'0',
 				TN:'2',
 				tnsuit:'',
-				resist:'0',
+				resist:'-1',
 				range:'0',
+				rangetype:'',
 				text:'This Immuto may be placed on a Spell multiple times. Any Duel made by characters affected by the Spell (such as Horror Duels) has the TN of the Duel increased by 1.',
 				requirement:'0',
+				count:'10',
 			},
 		8 : {
 				name:'Increased Severity',
@@ -1013,8 +1239,10 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'Increase the Severe value of the Damage Flip by 1. A Magia may have this Immuto multiple times, increasing the Severe damage of its Damage Flip by 1 each time. Magia that do not have a damage flip, but instead deal a set amount of damage, may take this Immuto as well, increasing the damage by 1 each time this Immuto is taken. However, those Magia must increase the TN by +2, instead of +1.',
 				requirement:'0',
+				count:'10',
 			},
 		9 : {
 				name:'Pulse',
@@ -1025,7 +1253,8 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'The Spell affects every legal target within an area around the initial target. If the target of the Spell is hit, then every character within 1 yard that could be affected by the Spell must succeed on a TN 10 Duel, using the same defense as the initial target. Any character that fails the Duel also suffers the results of the pulse. If damage is dealt they automatically suffer Weak damage.',
 				requirement:'0',
 			},
 		10 : {
@@ -1037,31 +1266,44 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'The Spell requires 1 less AP to cast. This Immuto may be taken multiple times, reducing the AP required by 1 each time (to a minimum of 0).',
 				requirement:'0',
+				count:'10',
 			},
 		11 : {
 				name:'Reduce damage',
 				story:'',
 				aspect:'0',
 				AP:'0',
-				TN:'01',
+				TN:'-1',
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				/*
+Damage Steps
+0/0/1
+0/1/2
+1/2/3
+2/3/4
+3/4/5
+				*/
+				text:'This Immuto may be placed on a Spell multiple times. Each time this Immuto is taken, decrease the Magia\'s Damage Flip one step on the damage Step table.',
 				requirement:'0',
+				count:'5',
 			},
 		12 : {
 				name:'Reduce Resistance',
 				story:'',
 				aspect:'0',
 				AP:'0',
-				TN:'02',
+				TN:'-2',
 				tnsuit:'',
-				resist:'0',
+				resist:'-1',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'This Immuto may be placed on a Spell multiple times. Any Resistance Duel made by the target (such as Horror Duels) has the TN of the Duel decreased by 1.',
 				requirement:'0',
 			},
 		13 : {
@@ -1069,11 +1311,12 @@ var spellaugmentation = {
 				story:'',
 				aspect:'0',
 				AP:'0',
-				TN:'03',
+				TN:'-3',
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'If the Spell deals a set amount of damage, instead of a Damage Flip, the Magia instead deals no damage. All other effects of the Magia remain the same. Targets that would suffer effects only if they suffered damage still suffer the effects of the Magia.',
 				requirement:'0',
 			},
 		14 : {
@@ -1085,7 +1328,8 @@ var spellaugmentation = {
 				tnsuit:'',
 				resist:'0',
 				range:'0',
-				text:'',
+				rangetype:'',
+				text:'This Spell has no effect on characters the caster does not wish to target (although secondary effects may still affect them).',
 				requirement:'0',
 			},
 		}

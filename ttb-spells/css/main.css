@@ -15,6 +15,10 @@ padding: 0px;
 	/*overflow: auto;*/
 }
 
+.spellpart-total{
+	width: 550px;
+}
+
 .spelltitle{
 	text-transform: uppercase;
 	font-size: 11pt;
@@ -65,11 +69,11 @@ background-color: Blanchedalmond;*/
 	text-align: center;
 }
 .cardpart-tn{
-	width: 10%;
+	width: 11%;
 	text-align: center;
 }
 .cardpart-resist{
-	width: 23%;
+	width: 22%;
 }
 .cardpart-range{
 	width: 22%;
@@ -85,6 +89,16 @@ background-color: Blanchedalmond;*/
 
 #magia option{
 	font-size: 8pt;
+}
+
+#spellTotal{
+	position: absolute;
+left: 20%;
+top: 33%;
+}
+
+#copyright{
+	clear: both;
 }
 
 @media print{

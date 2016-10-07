@@ -16,44 +16,49 @@
 			<div class="float-left">
 				<div class="spelltitle">Magia (1)</div>
 				<select name="magia" id="magia" size="30" class="spellpart"></select>
+				<p><span id="magia-count-min"></span><input type="range" id="magia-count" min="1" max="1" value="1" step="1"><span id="magia-count-max"></span></p><p><span id="magia-count-val"></span></p>
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">genus immuto (0-1)</div>
 				<select name="genus" id="genus" size="10" class="spellpart"></select>
+				<p><span id="genus-count-min"></span><input type="range" id="genus-count" min="1" max="1" value="1" step="1"><span id="genus-count-max"></span></p><p><span id="genus-count-val"></span></p>
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">elemental immuto (0-1)</div>
 				<select name="elemental" id="elemental" size="10" class="spellpart"></select>
+				<p><span id="elemental-count-min"></span><input type="range" id="elemental-count" min="1" max="1" value="1" step="1"><span id="elemental-count-max"></span></p><p><span id="elemental-count-val"></span></p>
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">alteration immuto (0-n)</div>
 				<select multiple name="alteration" id="alteration" size="10" class="spellpart"></select>
-				<p><input type="range" min="1" max="10"></p>
+				<p><span id="alteration-count-min"></span><input type="range" id="alteration-count" min="1" max="1" value="1" step="1"><span id="alteration-count-max"></span></p><p><span id="alteration-count-val"></span></p>
 			</div>
 			<div class="float-left">
 			<div class="spelltitle">augmentation immuto (0-n)</div>
 				<select multiple name="augmentation" id="augmentation" size="10" class="spellpart"></select>
-				<p><input type="range" min="1" max="10"></p>
+				<p><span id="augmentation-count-min"></span><input type="range" id="augmentation-count" min="1" max="1" value="1" step="1"><span id="augmentation-count-max"></span></p><p><span id="augmentation-count-val"></span></p>
 			</div>
 		</div>
 	</div>
 	<div id="spell">
+		<div id="spellTotal">
+			<div class="float-left spellpart spellpart-total card" id="total-info"></div>
+			<!-- <div id="spellText"></div> -->
+			<!-- <div id="spellTNtext" class="float-left">Total TN:</div> -->
+			<!-- <div id="spellTNnum" class="float-left"></div> -->
+
+			<!-- <div id="spellAPtext" class="float-left">Total AP:</div> -->
+			<!-- <div id="spellAPnum" class="float-left"></div> -->
+		</div>
+		<hr>
 		<div class="float-left spellpart card" id="magia-info"></div>
 		<div class="float-left spellpart card" id="genus-info"></div>
 		<div class="float-left spellpart card" id="elemental-info"></div>
 		<div class="float-left spellpart card" id="alteration-info"></div>
 		<div class="float-left spellpart card" id="augmentation-info"></div>
-		<hr>
+		<!-- <hr> -->
 		
-		<div id="spellTotal">
-		<div class="float-left spellpart card" id="total-info"></div>
-			<div id="spellText"></div>
-			<div id="spellTNtext" class="float-left">Total TN:</div>
-			<div id="spellTNnum" class="float-left"></div>
 
-			<div id="spellAPtext" class="float-left">Total AP:</div>
-			<div id="spellAPnum" class="float-left"></div>
-		</div>
 	</div>
 	<div id="copyright" class="copyright">
 		<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p>

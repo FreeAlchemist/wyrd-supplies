@@ -1,6 +1,6 @@
 .spellmenu{
 width: 100%;
-border:solid 1px;
+/*border:solid 1px;*/
 margin: 0px;
 padding: 0px;
 }
@@ -15,14 +15,45 @@ padding: 0px;
 	/*overflow: auto;*/
 }
 
+.spellpart-magia{
+	width: 270px;
+	/*height: 260px;*/
+}
+.spellpart-genus{
+	width: 140px;
+	height: 260px;
+}
+.spellpart-elemental{
+	width: 140px;
+	height: 260px;
+}
+.spellpart-alteration{
+	width: 200px;
+	height: 260px;
+}
+.spellpart-augmentation{
+	width: 200px;
+	height: 260px;
+}
+
 .spellpart-total{
 	width: 550px;
+}
+
+input{
+	width: 100px;
 }
 
 .spelltitle{
 	text-transform: uppercase;
 	font-size: 11pt;
 	line-height: 25px;
+}
+
+.spelltitle-text{
+	text-transform: none;
+	font-size: 8pt;
+	display: none;
 }
 
 .btn-main{
@@ -47,6 +78,7 @@ background-color: Blanchedalmond;*/
 }
 
 .cardpart{
+	background-color: Aliceblue;
 	border: solid 1px black;
 	float: left;
 	font-size: 8pt;
@@ -93,8 +125,8 @@ background-color: Blanchedalmond;*/
 
 #spellTotal{
 	position: absolute;
-left: 20%;
-top: 33%;
+	left: 300px;
+	top: 410px;
 }
 
 #copyright{

@@ -4,7 +4,6 @@ window.addEventListener("keyup",function(){
 if(key==13) {
 	createspell()
 }
-// $("select").change(createspell())
 });
 
 magia = $("select[name='magia'] > option:checked").val()
@@ -32,18 +31,11 @@ function createspell(){
 		$('#'+typearr[i]+'-info').append($('<div />',{class:'cardpart cardpart-text',id:typearr[i]+'-info-text'}))
 		$('#'+typearr[i]+'-info').append($('<div />',{class:'cardpart cardpart-requirement',id:typearr[i]+'-info-requirement'}))
 
-		/*
-	if .count make input counter with max=count and multiply result according to selected value
-		*/
-		
-		// console.log($('#'+typearr[i]+'-info'))
-
 		if(typearr[i] == 'magia'){
 			checkVal()
 			var count = 1
 						if(spellmagia[magia].count){
 				var count = spellmagia[magia].count
-				// console.log(count)
 			}
 			var name = spellmagia[magia].name
 			// console.log(name)
@@ -62,7 +54,6 @@ function createspell(){
 			var count = 1
 						if(spellgenus[genus].count){
 				var count = spellgenus[genus].count
-				// console.log(count)
 			}
 			var name = spellgenus[genus].name
 			var story = spellgenus[genus].story
@@ -80,7 +71,6 @@ function createspell(){
 			var count = 1
 						if(spellelemental[elemental].count){
 				var count = spellelemental[elemental].count
-				// console.log(count)
 			}
 			var name = spellelemental[elemental].name
 			var story = spellelemental[elemental].story
@@ -98,7 +88,6 @@ function createspell(){
 			var count = 1
 			if(spellalteration[alteration].count){
 				var count = spellalteration[alteration].count
-				// console.log(count)
 			}
 			var name = spellalteration[alteration].name
 			var story = spellalteration[alteration].story
@@ -116,7 +105,6 @@ function createspell(){
 			var count = 1
 			if(spellaugmentation[augmentation].count){
 				var count = spellaugmentation[augmentation].count
-				// console.log(count)
 			}
 			var name = spellaugmentation[augmentation].name
 			var story = spellaugmentation[augmentation].story
@@ -132,13 +120,6 @@ function createspell(){
 
 		writeVal(typearr[i],name,story,aspect,ap,tn,resist,range,text,requirement,count)
 	}
-	
-
-	// console.log(spellmagia[magia].name)
-	// $('#magia-info').html(spellmagia[magia].name+'<br>'+spellmagia[magia].text+'<br>TN: '+spellmagia[magia].TN)
-
-
-	// console.log(spellmagia[magia].name)
 
 	$('#total-info').html($('<div />',{class:'cardpart cardpart-name',id:'total-info-name'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-story',id:'total-info-story'}))
@@ -147,39 +128,59 @@ function createspell(){
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-tn',id:'total-info-tn'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-resist',id:'total-info-resist'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-range'}))
+	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-damage'}))
+	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-duration'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-text',id:'total-info-text'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-requirement',id:'total-info-requirement'}))
 
-	var name = spellmagia[magia].name
-		+' x'+magiacount+'<br>('+
-		spellgenus[genus].name
-		+' x'+genuscount+')<br>('+
-		spellelemental[elemental].name
-		+' x'+elementalcount+')<br>('+
-		spellalteration[alteration].name
-		+' x'+alterationcount+')<br>('+
-		spellaugmentation[augmentation].name
-		+' x'+augmentationcount+')'
-	// var story = 
+//NAME
+	var name = ''
+	if(spellmagia[magia].name){name +=spellmagia[magia].name}
+	if(spellgenus[genus].name){name +='<br>Genus: '+spellgenus[genus].name+' x'+genuscount}
+	if(spellelemental[elemental].name){name +='<br>Elemental: '+spellelemental[elemental].name+' x'+elementalcount}
+	if(spellalteration[alteration].name){name +='<br>Alteration: '+spellalteration[alteration].name+' x'+alterationcount}
+	if(spellaugmentation[augmentation].name){name +='<br>Augmentation: '+spellaugmentation[augmentation].name+' x'+augmentationcount}
+//STORY
+	var story = ''
+		if(spellmagia[magia].story){
+			story += spellmagia[magia].story
+		}
+		if(spellgenus[genus].story){
+			story += '<br>'+spellgenus[genus].story
+		}
+		if(spellelemental[elemental].story){
+			story += '<br>'+spellelemental[elemental].story
+		}
+		if(spellalteration[alteration].story){
+			story += '<br>'+spellalteration[alteration].story
+		}
+		if(spellaugmentation[augmentation].story){
+			story += '<br>'+spellaugmentation[augmentation].story
+		}
+		console.log('story '+story)
+//ASPECT
 	var aspect = spellmagia[magia].aspect
-
-
-
-	var ap = parseInt(spellmagia[magia].AP)*parseInt(magiacount)
-	+
-	parseInt(spellgenus[genus].AP)*parseInt(genuscount)
-	+
-	parseInt(spellelemental[elemental].AP)*parseInt(elementalcount)
-	+
-	parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)
-	+
-	parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount)
-
+//AP
+	var ap = 0
+	if(spellmagia[magia].AP){
+		ap += parseInt(spellmagia[magia].AP)
+	}
+	if(spellgenus[genus].AP){
+		ap += parseInt(spellgenus[genus].AP)
+	}
+	if(spellelemental[elemental].AP){
+		ap += parseInt(spellelemental[elemental].AP)
+	}
+	if(spellalteration[alteration].AP){
+		ap += parseInt(spellalteration[alteration].AP)
+	}
+	if(spellaugmentation[augmentation].AP){
+		ap += parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount)
+	}
+	if(ap < 0){ap = 0}
 	console.log(parseInt(spellmagia[magia].AP)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].AP)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].AP)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount))
 	console.log('total AP: '+ap)
-
-
-
+//TN
 	var tn = parseInt(spellmagia[magia].TN)*parseInt(magiacount)
 	+
 	parseInt(spellgenus[genus].TN)*parseInt(genuscount)
@@ -189,130 +190,198 @@ function createspell(){
 	parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)
 	+
 	parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)
-
 	console.log(parseInt(spellmagia[magia].TN)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].TN)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].TN)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount))
 	console.log('total TN: '+tn)
 
-
-	
-	var tnsuit = spellmagia[magia].tnsuit
-	+
-	spellgenus[genus].tnsuit
-	+
-	spellelemental[elemental].tnsuit
-	+
-	spellalteration[alteration].tnsuit
-	+
-	spellaugmentation[augmentation].tnsuit
+	var tnsuit = ''
+	if(spellmagia[magia].tnsuit){tnsuit += spellmagia[magia].tnsuit}
+	if(spellgenus[genus].tnsuit){tnsuit += spellgenus[genus].tnsuit}
+	if(spellelemental[elemental].tnsuit){tnsuit += spellelemental[elemental].tnsuit}
+	if(spellalteration[alteration].tnsuit){tnsuit += spellalteration[alteration].tnsuit}
+	if(spellaugmentation[augmentation].tnsuit){tnsuit += spellaugmentation[augmentation].tnsuit}
 
 	console.log(spellmagia[magia].tnsuit+' + '+spellgenus[genus].tnsuit+' + '+spellelemental[elemental].tnsuit+' + '+spellalteration[alteration].tnsuit+' + '+spellaugmentation[augmentation].tnsuit)
-	console.log('total tnsui: '+tnsuit)
-	
-
-
+	console.log('total tnsuit: '+tnsuit)
+//RESIST
 	var resist = spellmagia[magia].resist
 	if(spellalteration[alteration].resist == 'switch'){
-		if(resist == 'DF'){
-			resist = 'WP'
-		}
-		else if(resist == 'WP'){
-			resist = 'DF'
-		}
+		if(resist == 'DF'){resist = 'WP'}
+		else if(resist == 'WP'){resist = 'DF'}
 	}
-	if(spellaugmentation[augmentation].resist){
-		var extraresist = parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)
-		resist = resist+extraresist
-	}
-	
-	var range = parseInt(spellmagia[magia].range)
-	+
-	parseInt(spellgenus[genus].range)
-	+
-	parseInt(spellelemental[elemental].range)
-	+
-	parseInt(spellalteration[alteration].range)*parseInt(alterationcount)
-	+
-	parseInt(spellaugmentation[augmentation].range)*parseInt(augmentationcount)
 
-	console.log(parseInt(spellmagia[magia].range)+' + '+parseInt(spellgenus[genus].range)+' + '+parseInt(spellelemental[elemental].range)+' + '+parseInt(spellalteration[alteration].range)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].range)*parseInt(augmentationcount))
+	var extraresist = 0
+	if(spellgenus[genus].resist){extraresist += parseInt(spellgenus[genus].resist)*parseInt(genuscount)}
+	if(spellelemental[elemental].resist){extraresist += parseInt(spellelemental[elemental].resist)*parseInt(elementalcount)}
+	if(spellalteration[alteration].resist){extraresist += parseInt(spellalteration[alteration].resist)*parseInt(alterationcount)}
+	if(spellaugmentation[augmentation].resist){extraresist += parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)}
+	if(extraresist != 0){resist = resist+extraresist}
+	if(spellmagia[magia].resist == '-'){resist = '-'}
+
+//RANGE
+	var rangetype = ''
+	if(spellmagia[magia].rangetype){rangetype += spellmagia[magia].rangetype}
+	if(spellgenus[genus].rangetype){rangetype += '<br>'+spellgenus[genus].rangetype}
+	if(spellelemental[elemental].rangetype){rangetype += '<br>'+spellelemental[elemental].rangetype}
+	if(spellalteration[alteration].rangetype){rangetype += '<br>'+spellalteration[alteration].rangetype}
+	if(spellaugmentation[augmentation].rangetype){rangetype += '<br>'+spellaugmentation[augmentation].rangetype}
+	console.log('rangetype '+rangetype)
+
+	var range = 0
+	if(spellmagia[magia].range){range += parseInt(spellmagia[magia].range)}
+	if(spellgenus[genus].range){range += parseInt(spellgenus[genus].range)}
+	if(spellelemental[elemental].range){range += parseInt(spellelemental[elemental].range)}
+	if(spellalteration[alteration].range){range += parseInt(spellalteration[alteration].range)}
+	if(spellaugmentation[augmentation].range){range += parseInt(spellaugmentation[augmentation].range)*parseInt(augmentationcount)}
+	if(spellaugmentation[augmentation].rangestep){
+		var rngarr = []
+		for(p in spellaugmentation[augmentation].rangestep){
+			rngarr.push(p)
+		}
+		for (var i = 0; i < rngarr.length; i++) {
+			if(parseInt(range) == parseInt(spellaugmentation[augmentation].rangestep[rngarr[i]])){
+				if(spellaugmentation[augmentation].rangesteptype == 'increase'){
+					var altrange = parseInt(spellaugmentation[augmentation].rangestep[rngarr[i+parseInt(augmentationcount)]])
+					$('#augmentation-count').attr('max',(rngarr.length-i-1))
+				}
+				else if(spellaugmentation[augmentation].rangesteptype == 'decrease'){
+					var altrange = parseInt(spellaugmentation[augmentation].rangestep[rngarr[i-parseInt(augmentationcount)]])
+					$('#augmentation-count').attr('max',((rngarr.length)-(rngarr.length-i)))
+				}
+				else{
+					var altrange = 9999
+				}
+				$('#augmentation-count-max').html('Макс.'+$('#augmentation-count').attr('max'))
+			}
+		};
+		range = altrange
+	}
+	if(rangetype){
+		if(rangetype == 'melee'){
+			if(range > 3){range = 3}
+		}
+		if(rangetype == 'projectile'){
+			if(range < 5){range = 5}
+		}
+		if(range < 1){range = 1	}
+		if(range == 999){range = 'Anywhere in Sight'}
+		range = rangetype+': '+range
+	}
+	if(range == 999){range = 'Anywhere in Sight'}
 	console.log('total range: '+range)
-	
+//DAMAGE	
+	var damage = ''
+	console.log(parseInt(alterationcount))
+	if(spellmagia[magia].damagesmall && spellaugmentation[augmentation].damagestep && spellaugmentation[augmentation].damagesteptype){
+		if(spellaugmentation[augmentation].damagesteptype == 'increase'){
+			var damagesmall = parseInt(spellmagia[magia].damagesmall)+parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][0])
+			var damagemoderate = parseInt(spellmagia[magia].damagemoderate)+parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][1])
+			var damagesevere = parseInt(spellmagia[magia].damagesevere)+parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][2])
 
+			if(spellalteration[alteration].blaststep){
+				damage = 
+				damagesmall
+				+spellalteration[alteration].blaststep[alterationcount][0]
+				+' / '+
+				damagemoderate
+				+spellalteration[alteration].blaststep[alterationcount][1]
+				+' / '+
+				damagesevere
+				+spellalteration[alteration].blaststep[alterationcount][2]
+			}
+			else{damage = damagesmall+' / '+damagemoderate+' / '+damagesevere}
+		}
+		else if(spellaugmentation[augmentation].damagesteptype == 'decrease'){
+			var damagesmall = parseInt(spellmagia[magia].damagesmall)-parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][0])
+			var damagemoderate = parseInt(spellmagia[magia].damagemoderate)-parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][1])
+			var damagesevere = parseInt(spellmagia[magia].damagesevere)-parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][2])
 
-	var text = spellmagia[magia].text
-		+'<br>(<b>'+spellgenus[genus].name+'</b>: '+
-		spellgenus[genus].text
-		+')<br>('+
-		spellelemental[elemental].text
-		+')<br>('+
-		spellalteration[alteration].text
-		+')<br>('+
-		spellaugmentation[augmentation].text
-		+')'
-	// var requirement = 
+			if(damagesmall < 0){damagesmall = 0}
+			if(damagemoderate < 0){damagemoderate = 0}
+			if(damagesevere < 0){damagesevere = 0}
+
+			if(spellalteration[alteration].blaststep){
+				damage = 
+				damagesmall+spellalteration[alteration].blaststep[alterationcount][0]
+				+' / '+
+				damagemoderate+spellalteration[alteration].blaststep[alterationcount][1]
+				+' / '+
+				damagesevere+spellalteration[alteration].blaststep[alterationcount][2]
+			}
+			else{damage = damagesmall+' / '+damagemoderate+' / '+damagesevere}
+		}
+		else{damage = parseInt(spellmagia[magia].damagesmall)+' / '+parseInt(spellmagia[magia].damagemoderate)+' / '+parseInt(spellmagia[magia].damagesevere)}
+	}
+	else if(spellmagia[magia].damagesmall){
+		if(spellalteration[alteration].blaststep){
+			damage = 
+			parseInt(spellmagia[magia].damagesmall)+spellalteration[alteration].blaststep[alterationcount][0]
+			+' / '+
+			parseInt(spellmagia[magia].damagemoderate)+spellalteration[alteration].blaststep[alterationcount][1]
+			+' / '+
+			parseInt(spellmagia[magia].damagesevere)+spellalteration[alteration].blaststep[alterationcount][2]
+		}
+		else{damage = parseInt(spellmagia[magia].damagesmall)+' / '+parseInt(spellmagia[magia].damagemoderate)+' / '+parseInt(spellmagia[magia].damagesevere)}
+	}
+//DURATION
+	var duration = ''
+	if(spellmagia[magia].duration){duration = spellmagia[magia].duration}
+	if(spellaugmentation[augmentation].durationstep){
+		var durarr = []
+		for(p in spellaugmentation[augmentation].durationstep){
+			durarr.push(p)
+		}
+		for (var i = 0; i < durarr.length; i++) {
+			if(spellmagia[magia].duration == spellaugmentation[augmentation].durationstep[durarr[i]]){
+				duration = spellaugmentation[augmentation].durationstep[durarr[i+parseInt(augmentationcount)]]
+				$('#augmentation-count').attr('max',(durarr.length-i-1))
+				$('#augmentation-count-max').html('Макс.'+$('#augmentation-count').attr('max'))
+			}
+		};
+	}
+	console.log('duration '+duration)
+//TEXT	
+	var text = ''
+	if(spellmagia[magia].text){text += spellmagia[magia].text}
+	if(spellgenus[genus].text){
+		if(spellgenus[genus].name){text += '<br>'+'<b>'+spellgenus[genus].name+': </b>'+spellgenus[genus].text}
+		else{text += '<br>'+spellgenus[genus].text}
+	}
+	if(spellelemental[elemental].text){
+		if(spellelemental[elemental].name){text += '<br>'+'<b>'+spellelemental[elemental].name+': </b>'+spellelemental[elemental].text		}
+		else{text += '<br>'+spellelemental[elemental].text}
+	}
+	if(spellalteration[alteration].text){
+		if(spellalteration[alteration].name){text += '<br>'+'<b>'+spellalteration[alteration].name+': </b>'+spellalteration[alteration].text}
+		else{text += '<br>'+spellalteration[alteration].text}
+	}
+	if(spellaugmentation[augmentation].text){
+		if(spellaugmentation[augmentation].name){text += '<br>'+'<b>'+spellaugmentation[augmentation].name+': </b>'+spellaugmentation[augmentation].text}
+		else{text += '<br>'+spellaugmentation[augmentation].text}
+	}
+
+//REQUIREMENT
+	var requirement = ''
+	if(spellmagia[magia].requirement){requirement += spellmagia[magia].requirement}
+	if(spellgenus[genus].requirement){requirement += '<br>'+spellgenus[genus].requirement}
+	if(spellelemental[elemental].requirement){requirement += '<br>'+spellelemental[elemental].requirement}
+	if(spellalteration[alteration].requirement){requirement += '<br>'+spellalteration[alteration].requirement}
+	if(spellaugmentation[augmentation].requirement){requirement += '<br>'+spellaugmentation[augmentation].requirement}
+	console.log('requirement '+requirement)
 
 	$('#total-info-name').html(name)
-	// $('#total-info-story').html(story)
+	if(story){$('#total-info-story').html(story)}
 	$('#total-info-aspect').html('<div class="info-title">АСПЕКТ</div>'+aspect)
 	$('#total-info-ap').html('<div class="info-title">ОД (AP)</div>'+ap)
 	$('#total-info-tn').html('<div class="info-title">ЦН (TN)</div>'+tn+tnsuit)
 	$('#total-info-resist').html('<div class="info-title">СОПРОТИВЛЕНИЕ</div>'+resist)
-	$('#total-info-range').html('<div class="info-title">ДАЛЬНОСТЬ</div>'+range)
+	if(range){$('#total-info-range').html('<div class="info-title">ДАЛЬНОСТЬ</div>'+range)}
+	if(damage){$('#total-info-damage').html('<div class="info-title">УРОН</div>'+damage)}
+	if(duration){$('#total-info-duration').html('<div class="info-title">Длительность</div>'+duration)}
 	$('#total-info-text').html('<b>Эффект</b>: '+text)
-	// $('#total-info-requirement').html('<b>Requirements:</b><br>'+requirement)
-
-
-	// $('#spellText').html(
-	// 	spellmagia[magia].name
-	// 	+' ('+
-	// 	spellgenus[genus].name
-	// 	+') ('+
-	// 	spellelemental[elemental].name
-	// 	+') ('+
-	// 	spellalteration[alteration].name
-	// 	+' x'+alterationcount+') ('+
-	// 	spellaugmentation[augmentation].name
-	// 	+' x'+augmentationcount+')'
-	// 	)
-	
-	// $('#spellTNnum').html(
-	// parseInt(spellmagia[magia].TN)
-	// +
-	// parseInt(spellgenus[genus].TN)
-	// +
-	// parseInt(spellelemental[elemental].TN)
-	// +
-	// parseInt(spellalteration[alteration].TN)
-	// +
-	// parseInt(spellaugmentation[augmentation].TN)
-	// )
-	// $('#spellTNnum').append(spellmagia[magia].tnsuit+spellmagia[genus].tnsuit+spellmagia[elemental].tnsuit+spellmagia[alteration].tnsuit+spellmagia[augmentation].tnsuit)
-// console.log('total ap')
-	// $('#spellAPnum').html(
-	// 	// spellmagia[magia].AP)
-	// parseInt(spellmagia[magia].AP)
-	// +
-	// parseInt(spellgenus[genus].AP)
-	// +
-	// parseInt(spellelemental[elemental].AP)
-	// +
-	// parseInt(spellalteration[alteration].AP)
-	// +
-	// parseInt(spellaugmentation[augmentation].AP)
-	// )
+	if(requirement){$('#total-info-requirement').html('<b>Требования:</b><br>'+requirement)}
 }
 
 function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement,count){
-	// console.log(type)
-	// console.log(name)
-	// console.log(story)
-	// console.log(aspect)
-	// console.log(ap)
-	// console.log(tn)
-	// console.log(resist)
-	// console.log(range)
-	// console.log(text)
-	// console.log(requirement)
 	$('#'+type+'-info-name').html(name)
 	$('#'+type+'-info-story').html(story)
 	$('#'+type+'-info-aspect').html('<div class="info-title">ASPECT</div>'+aspect)
@@ -323,10 +392,7 @@ function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement,cou
 	$('#'+type+'-info-text').html('<b>Effect</b>: '+text)
 	$('#'+type+'-info-requirement').html('<b>Requirements:</b><br>'+requirement)
 	if(count){
-		// console.log(count)
-		// console.log($('#'+type+'-count').attr('max'))
 		$('#'+type+'-count').attr('max',count)
-		// console.log($('#'+type+'-count').attr('max'))
 	}
 	$('#'+type+'-count').change(function(){createspell()})
 	$('#'+type+'-count-min').html($('#'+type+'-count').attr('min'))
@@ -334,45 +400,17 @@ function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement,cou
 	$('#'+type+'-count-val').html(' Количество:'+$('#'+type+'-count').val())
 }
 
-
-
 function checkVal(){
 	magia = $("select[name='magia'] > option:checked").val()
 	magiacount = $('#magia-count').val()
-	// magiacountmin = $('#magia-count').attr('min')
-	// magiacountmax = $('#magia-count').attr('max')
-	// magia = $("select[name='magia'] > "$('option:selected', this).closest('optgroup').attr('label')).val()
-	/*
-$('option:selected', this).closest('optgroup').attr('label')
-	*/
 	genus = $("select[name='genus'] > option:checked").val()
 	genuscount = $('#genus-count').val()
-	// genuscountmin = $('#genus-count').attr('min')
-	// genuscountmax = $('#genus-count').attr('max')
-
 	elemental = $("select[name='elemental'] > option:checked").val()
 	elementalcount = $('#elemental-count').val()
-	// elementalcountmin = $('#elemental-count').attr('min')
-	// elementalcountmax = $('#elemental-count').attr('max')
-
 	alteration = $("select[name='alteration'] > option:checked").val()
 	alterationcount = $('#alteration-count').val()
-	// alterationcountmin = $('#alteration-count').attr('min')
-	// alterationcountmax = $('#alteration-count').attr('max')
-	/*
-	$('#multiple :selected').each(function(i, sel){ 
-	    alert( $(sel).val()); 
-	});
-	*/
 	augmentation = $("select[name='augmentation'] > option:checked").val()
 	augmentationcount = $('#augmentation-count').val()
-	// augmentationcountmin = $('#augmentation-count').attr('min')
-	// augmentationcountmax = $('#augmentation-count').attr('max')
-		// console.log('magia: '+magia)
-		// console.log('genus: '+genus)
-		// console.log('elemental: '+elemental)
-		// console.log('alteration: '+alteration)
-		// console.log('augmentation: '+augmentation)
 }
 
 $("#magia").change(function(){createspell()})
@@ -380,6 +418,10 @@ $("#genus").change(function(){createspell()})
 $("#elemental").change(function(){createspell()})
 $("#alteration").change(function(){createspell()})
 $("#augmentation").change(function(){createspell()})
+
+$("#log").click(function(){
+	$(".log").toggle()
+})
 
 
 var spellmagia = {
@@ -394,14 +436,19 @@ var spellmagia = {
 				tnsuit:'t',
 				resist:'WP',
 				range:'5',
-				rangetype:'',
+				damagesmall:'1',
+				damagemoderate:'2',
+				damagesevere:'3',
+				damagesmalltext:'',
+				damagemoderatetext:'',
+				damageseveretext:'',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
 				count:'1',
 			},
 
 		2 : {
 				name:'Волшебство: Элементальный снаряд',
-				story:'The Caster hurls a bolt of magical power at a target, much like a bullet.',
+				story:'Заклинатель направляет разряд магической энергии в цель, подобно встрелу.',
 				text:'Цель получает 1/2/3 урона.',
 				aspect:'Intellect',
 				aspect:'Интеллект',
@@ -411,12 +458,15 @@ var spellmagia = {
 				resist:'Df',
 				range:'5',
 				rangetype:'projectile',
+				damagesmall:'1',
+				damagemoderate:'2',
+				damagesevere:'3',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
 				count:'1',
 			},
 		3 : {
 				name:'Волшебство: Элементальный удар',
-				story:'The Caster strikes his opponent with a melee attack infused with elemental energy.',
+				story:'Заклинатель ударяет противника атакой ближнего боя наполненной элементальной энергией.',
 				aspect:'Intellect',
 				aspect:'Интеллект',
 				AP:'1',
@@ -425,13 +475,16 @@ var spellmagia = {
 				resist:'Df',
 				range:'2',
 				rangetype:'melee',
+				damagesmall:'1',
+				damagemoderate:'2',
+				damagesevere:'3',
 				text:'Цель получает 1/2/3 урона.',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
 				count:'1',
 			},
 		4 : {
 				name:'Волшебство: Телекинетичесое перемещение',
-				story:'The Caster moves a target with his mind, as if it were grasped by unseen hands.',
+				story:'Заклинатель передвигает цель силой разума, как если бы ее несли невидимые руки.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'1',
@@ -439,14 +492,12 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Wp',
 				range:'5',
-				rangetype:'',
 				text:'Заклинатель может перемещать целевой объект как если бы тот был поднят и носим персонажем с Силой (Might) равной Стойкости (Tenacity) заклинателя, и Скоростью (Speed) равной Хитрости (Cunning) заклинателя. Если цель неподвижна, она не сопротивляется этому Действию и заклинателю нужно просто пройти проверку требуемой сложности (TN) для перемещения объекта. Если заклинатель пытается переместить объект несомый другим персонажем, то персонаж держащий объект может сопротивляться заклинанию. Заклинатель может решить поддерживать данное заклинание, перемещая объект от хода к ходу. В таком случае заклинание не требуется исполнять снова (оно уже успешно исполнено). Заклинатель не может исполнять другие заклинания при поддержании телекинеза, и перемещение объекта требует (1) ОД Действие (AP Action), как если бы заклинание исполнялось снова. Заклинатель может выполнять атаки удерживаемым таким образом объектом, выполняя стандартную атаку ближнего боя используя навык подходящий к предмету (например Ближний бой (Melee) для меча), но заменяя соответствующий аспект на Интеллект.',
-				requirement:'0',
 				count:'1',
 			},
 		5 : {
 				name:'Волшебство: Телекинетический толчок',
-				story:'The Caster unleashes a blast or wave of force at a target,shoving it with his mind',
+				story:'Заклинатель высвобождает взрыв или волну энергии в цель, направляя ее своим разумом',
 				aspect:'Intellect',
 				aspect:'Интеллект',
 				AP:'1',
@@ -454,14 +505,12 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Df',
 				range:'5',
-				rangetype:'',
 				text:'Цель толкается на расстояние в ярдах равное Стойкости заклинателя, по прямой от заклинателя.',
-				requirement:'0',
 				count:'1',
 			},
 		6 : {
 				name:'Волшебство: Сон',
-				story:'The caster causes the target to lose consciousness.',
+				story:'Заклинатель заставляет цель потерять сознание.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'2',
@@ -469,14 +518,12 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'-',
 				range:'3',
-				rangetype:'',
-				text:'If the target is Living, it must make a TN 10 Unconsciousness Challenge. The TN of the Challenge is increased by 2 for each Margin of Success achieved by the caster. Note that this Spell is not resisted by the target, they must pass the Unconsciousness challenge instead, if the Spell is successful. This will create a set TN for many Fatemaster characters (as their Flip value is not random).',
-				requirement:'0',
+				text:'Если цель Живая, она должна пройти проверку Бессознательности (Unconsciousness Challenge) сложностью (TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку Бессознательности, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно).',
 				count:'1',
 			},
 		7 : {
 				name:'Волшебство: Выкручивание',
-				story:'The caster reaches into the target with telekinetic force, wrenching internal organs about.',
+				story:'Заклинатель воздействует на цель телекинетической силой, выкручивая внутренние органы.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'2',
@@ -484,14 +531,12 @@ var spellmagia = {
 				tnsuit:'t',
 				resist:'-',
 				range:'3',
-				rangetype:'',
-				text:'If the target is living, it must make a TN 10 Toughness + Resilience Challenge. The TN of the Challenge is increased by 2 for each Margin of Success achieved by the Caster. Note that this Spell is not resisted by the target, they must pass the challenge instead, if the Spell is successful. This will create a set TN for many Fatemaster characters (as their Flip value is not random). If the target fails the challenge it suffers a Moderate Critical Effect, with normal adjustments for damage and other factors, as normal for a Critical Effect.',
-				requirement:'0',
+				text:'Если цель Живая, она должна пройти проверку Выносливости(Toughness) + Стойкости(Resilience) сложностью(TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно). Если цель проваливает проверку она получает Средний Критический Эффект, с обычными для критических эффектов модификаторами урона и другими факторами.',
 				count:'1',
 			},
 		8 : {
 				name:'Зачарование: Анимировать конструкта',
-				story:'The caster imbues a prepared construct body with life so that it might obey his commands.',
+				story:'Заклинатель наполняет подготовленное тело конструкта жизнью, так чтобы тот подчинялся его приказам.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'1',
@@ -500,13 +545,13 @@ var spellmagia = {
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
-				text:'Target inanimate construct comes to life as a construct under the caster\'s control for 1 hour. At the end of the Spell, the construct returns to its inanimate form, and may be later reanimated. A caster may only control one construct at a time.',
-				requirement:'0',
+				duration:'1 Час',
+				text:'Целевой неподвижный конструктоживает под контролем заклинателя на 1 час. По окончании заклинания, конструкт возвращается в неподвижную форму, и может быть оживлен позже. Заклинатель может контролировать только одного конструкта за раз.',
 				count:'1',
 			},
 		9 : {
 				name:'Зачарование: Анимировать конечность',
-				story:'The caster causes an artificial limb to come to life under the control of the character the limb is attached to.',
+				story:'Заклинатель пробуждает искуственную конечность к жизни под контролем персонажа к которому она присоединена.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'1',
@@ -515,13 +560,12 @@ var spellmagia = {
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
-				text:'The target limb comes to life for a number of weeks equal to the Charm + Enchanting of the caster (or less if the caster wishes). The limb is under the control of the character attached to it, which is not necessarily the caster. The limb must have been crafted to perform as a limb, although it need not be shaped or otherwise created in the form of a natural limb. Pneumatic limbs are detailed on page 178. If a character has a non-Pneumatic replacement (such a stitched together arm from the flesh of dead men) then the TN requires a C instead of a t.',
-				requirement:'0',
+				text:'Целевая конечность оживает на число недель равное Обаянию (Charm) + Зачарованию (Enchanting) заклинателя (или меньше если пожелает заклинатель). Конечность под контролем персонажа к которому присоединена, это не обязательно заклинатель. Конечность должна была быть создана чтобы действовать как конечность, хотя она не обязана иметь форму или быть создана в форме природной конечности. Пневматические конечности описаны на стр. 178. Если персонаж владеет не-Пневматической заменой (такой как сшитая (stitched together) рука из плоти мертвецов) тогда TN требует C вместо t.',
 				count:'1',
 			},
 		10 : {
 				name:'Зачарование: Лечение',
-				story:'The caster channels raw magical energy into a target, causing it to return to its proper form.',
+				story:'Заклинатель направляет чистую магическую энергию в цель, возвращая ее в форму.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'1',
@@ -530,28 +574,26 @@ var spellmagia = {
 				resist:'Wp',
 				range:'1',
 				rangetype:'melee',
-				text:'Цель лечит 1/2/3 урона, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Each additional time a character is targeted by this Spell within an hour the TN is increased by 3 or requires an additional a R (выбирает заклинатель). If this Spell fails to heal a target, the target may not receive magical healing from this Magia until the next sunrise.',
-				requirement:'0',
+				text:'Цель лечит 1/2/3 урона, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Каждый дополнительный раз когда персонаж является целью этого заклинания в течении часа, Сложность (TN) повышается на 3 либо требует дополнительно R (выбирает заклинатель). Если заклинание провалилось при лечении цели, цель не может получать магическое лечение от этой Магии до следующего восхода.',
 				count:'1',
 			},
 		11 : {
 				name:'Зачарование: Залатать',
-				story:'The caster focuses magical energy into the target, repairing the worst of its damage.',
+				story:'Заклинатель фокусирует магическую энергию на цели, исправляя самый сильный урон.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
-				AP:'0-2',
+				AP:'012',
 				TN:'10',
 				tnsuit:'r',
 				resist:'Wp',
 				range:'1',
 				rangetype:'melee',
-				text:'Remove a single condition from the target, if it is living. The target may choose to not resist, making this Spell a Simple Duel instead. The removed condition must be a Critical condition or a condition placed on the target by a non-magical effect. This is a 0 AP Action unless the condition being removed is a Moderate or Severe Critical condition. If it is Moderate this is a 1 AP Action and if it is Severe this is a 2 AP Action.',
-				requirement:'0',
+				text:'Снимите одно состояние с цели, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Снимаемое состояние должно быть Критическим состоянием или состоянием помещенным на цель не магическим эффектом. Это 0 AP Действие если снимаемое состояние не Среднее или Тяжелое Критическое состояние. Если Среднее, то 1 AP Действие и если Тяжелое, то 2 AP Действие.',
 				count:'1',
 			},
 		12 : {
 				name:'Зачарование: Физическое усиление',
-				story:'The caster enhances the target\'s physical prowess, invigorating the target.',
+				story:'Заклинатель усиливает физические возможности цели, укрепляя ее.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'1',
@@ -560,13 +602,13 @@ var spellmagia = {
 				resist:'Df',
 				range:'1',
 				rangetype:'melee',
-				text:'The target gains the following condition for one hour: "Физически усиленный +1: This character adds +1 to his Physical Aspects, to a maximum of 5."',
-				requirement:'0',
+				duration:'1 Час',
+				text:'Цель получает следующее состояние на 1 час: "Физически усиленный +1: Этот персонаж добавляет +1 к своим Физическим Аспектам, до максимума в 5."',
 				count:'1',
 			},
 		13 : {
 				name:'Зачарование: Элементальное оружие',
-				story:'The caster enhances a weapon, or a person\'s body, with an elemental effect.',
+				story:'Заклинатель наполняет оружие, или тело цели, элементальной силой.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'2',
@@ -575,28 +617,26 @@ var spellmagia = {
 				resist:'Special',
 				range:'1',
 				rangetype:'melee',
-				text:'Целевое оружие получает эффекты Элементального Иммуто, рассматривая оружие как если бы оно было Магией, которую изменял Иммуто. Эффект длится 1 минуту. Владелец оружия может сопротивляться, при этом, заклинание немедленно проваливается. Эта Магия может быть направлена на персонажа, позволяя его безоружным атакам получить преимущества Элементального Иммуто. Цель заклинания не получает урона от его эффекта (например не загорается от своих горящих кулаков). This Spell must choose a single Elemental Immuto to be cast.',
+				text:'Целевое оружие получает эффекты Элементального Иммуто, рассматривая оружие как если бы оно было Магией, которую изменял Иммуто. Эффект длится 1 минуту. Владелец оружия может сопротивляться, при этом, заклинание немедленно проваливается. Эта Магия может быть направлена на персонажа, позволяя его безоружным атакам получить преимущества Элементального Иммуто. Цель заклинания не получает урона от его эффекта (например не загорается от своих горящих кулаков).',
 				requirement:'Эта магия должна обязательно выбрать одно элементальное иммуто',
 				count:'1',
 			},
 		14 : {
 				name:'Зачарование: Перевоплощение',
-				story:'The Caster takes on the physical form of an animal.',
+				story:'Заклинатель принимает физическую форму животного.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'1',
 				TN:'*',
 				tnsuit:'t',
 				resist:'Wp',
-				range:'0',
-				rangetype:'',
-				text:'Тело заклинателя превращается в  Зверя на 1 Ход. Заклинатель получает характеристику Зверь пока перевоплощен, как и все физические качества Зверя (например ядовитые когти или способность летать). The TN for this Magia is 10t, plus the difference between the Beast\'s highest Physical Aspect and the caster\'s lowest Physical Aspect. For instance, a caster with a Speed of -2 (his lowest Aspect) shifting into a creature with a Might of +4 (its highest Aspect) would have a TN of 16t (10, plus the difference of 6).',
-				requirement:'0',
+				duration:'1 Ход',
+				text:'Тело заклинателя превращается в  Зверя на 1 Ход. Заклинатель получает характеристику Зверь пока перевоплощен, как и все физические качества Зверя (например ядовитые когти или способность летать). Сложность этой Магии 10t, плюс разница между наивысшим физическим аспектом Зверя и наименьшим физическим аспектом заклинателя. Например, колдун со Скоростью(Speed) -2 (его низший аспект) превращается в существо с Силой(Might) +4 (его наивысший аспект), сложность(TN) будет 16t (10, плюс разница в 6).',
 				count:'1',
 			},
 		15 : {
 				name:'Некромантия: Зов',
-				story:'The caster lures a target towards himself.',
+				story:'Заклинатель влечет цель к себе.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'2',
@@ -604,9 +644,7 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Wp',
 				range:'10',
-				rangetype:'',
-				text:'Целевой персонаж должен переместиться на свой аспект Движение по прямой к заклинателю и должен закончить движение насколько возможно близко к заклинателю.',
-				requirement:'0',
+				text:'Целевой персонаж должен переместиться на свой аспект Движения по прямой к заклинателю и должен закончить движение насколько возможно близко к заклинателю.',
 				count:'1',
 			},
 		16 : {
@@ -619,14 +657,12 @@ var spellmagia = {
 				tnsuit:'c',
 				resist:'Wp',
 				range:'5',
-				rangetype:'',
 				text:'Цель исчезает из реального мира. Она вернется в реальный мир в конце хода, появившись в безопасном месте в 1 ярде от заклинателя, не ощущая, что прошло время.',
-				requirement:'0',
 				count:'1',
 			},
 		17 : {
 				name:'Некромантия: Трупная маска',
-				story:'The caster removes the face of a corpse and wears the dead man\'s visage for a while.',
+				story:'Заклинатель снимает лицо с трупа и какое-то время носит личину покойника.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'2',
@@ -635,13 +671,13 @@ var spellmagia = {
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
-				text:'The character removes the face of the corpse and takes on the appearance and voice that the corpse had in life. The character gains a ++ to all attempts to impersonate the person. This effect lasts until the next Sunrise or Sunset.',
-				requirement:'0',
+				duration:'Восход или Закат',
+				text:'Персонаж снимает лицо с трупа и принимает внешность и голос, которыми тот обладал при жизни. Персонаж получает [+][+] ко всем попыткам выдать себя за личность. Этот эффект длится до следующего Восхода или Заката.',
 				count:'1',
 			},
 		18 : {
 				name:'Некромантия: Допрос',
-				story:'The caster sifts through the target\'s mind, looking for answers to questions.',
+				story:'Заклинатель проверяет сознание цели, ища ответы на вопросы.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'1',
@@ -649,14 +685,12 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Wp',
 				range:'5',
-				rangetype:'',
-				text:'The caster may ask a single yes-or-no question of the living target, plus an additional question for each Margin of Success. The character will receive a truthful yes, no, or "I don\'t know" answer from the target, to the best of the target\'s ability.',
-				requirement:'0',
+				text:'Заклинатель может задать один Да-Нет вопрос живой цели, плюс дополнительный вопрос за каждый Margin of Success. Персонаж получит правдивый ответ "Да", "Нет", или "Я не знаю" от цели, в меру возможностей цели.',
 				count:'1',
 			},
 		19 : {
 				name:'Некромантия: Контроль разума',
-				story:'The caster takes momentary command over the target\'s mind and body, forcing them to take an Action against their will.',
+				story:'Заклинатель отдает мгновенный приказ сознанию и телу цели, заставляя ее действовать против воли.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'1',
@@ -664,14 +698,12 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Wp',
 				range:'5',
-				rangetype:'',
-				text:'The target takes a 1 AP Action that it could normally take under this character\'s control. This Action may not force the target to sacrifice itself directly, but can cause him to take Actions against his own nature (such as attacking his friends). A caster may not affect themselves with Mind Control.',
-				requirement:'0',
+				text:'Цель выполняет 1 AP Действие которое могла бы выполнить под контролем данного персонажа. Это Действие не может заставить цель принести себя в жертву напрямую, но может заставить выполнять действия противные его природе (например атаковать друзей). Заклинатель не может воздействовать на себя Контролем разума.',
 				count:'1',
 			},
 		20 : {
 				name:'Некромантия: Подъем немертвых',
-				story:'The caster brings a corpse to life to serve him.',
+				story:'Заклинатель оживляет труп для служения.',
 				aspect:'Charm',
 				aspect:'Обаяние',
 				AP:'1',
@@ -679,14 +711,13 @@ var spellmagia = {
 				tnsuit:'c',
 				resist:'-',
 				range:'5',
-				rangetype:'',
-				text:'arget corpse becomes an undead under the caster\'s control for 10 minutes. The undead undergoes the following alterations from the original form:<ul><li>The undead\'s Tenacity is increased to 3 and all of its other Mental Aspects are lowered to -5.<li>The undead loses the Living Characteristic (if it has it) and gains the Undead Characteristic.<li>The undead loses any mental skills it had in life, and the physical skill ratings are halved (rounding up).</ul>Alternatively, this Spell may be used to take control of an uncontrolled and non-sentient undead creature. The new undead may need physical repairs (as critical damage may physically render the body less useful). Otherwise, the corpse is raised with half of its Wounds remaining. At the end of the Spell, the undead becomes uncontrolled (and usually violent).',
-				requirement:'0',
+				duration:'10 Минут',
+				text:'Целевой труп становится немертвым под контролем заклинателя на 10 минут. Немертвый претерпевает следующие изменения изначальной формы:<ul><li>Стойкость (Tenacity) немертвого повышается до 3 и все другие его Ментальные аспекты понижаются до -5.<li>Немертвый теряет характеристику Живой (если имел) и получает характеристику Немертвый.<li>Немертвый теряет любые ментальные навыки, которыми владел при жизни, а рейтинги физических навыков становятся в половину меньше (округляя вверх).</ul>Также, это заклинание может быть использовано для получения контроля над безконтрольным и не разумным немертвым созданием. Новому немертвому может потребоваться физическая починка (поскольку критический урон может сделать тело менее полезным). Иначе, труп поднят с половиной его Ран. По окончании заклинания, немертвый становится безконтрольным (и обычно агрессивным).',
 				count:'1',
 			},
 		21 : {
 				name:'Некромантия: Поглощение трупа',
-				story:'The caster causes a corpse to disintegrate, restoring his own body in the process.',
+				story:'Заклинатель вызывает распад трупа, восстанавливая собственное тело в процессе.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'1',
@@ -695,13 +726,12 @@ var spellmagia = {
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
-				text:'Target corpse is turned into dust. The caster then heals 1/2/3 damage, plus an additional number of Wounds equal to the corpse\'s Resilience (if the Resilience is positive).',
-				requirement:'0',
+				text:'Целевой труп обращается в прах. Заклинатель лечит 1/2/3 урона, плюс дополнительное число Ран равное Выносливости (Resilience) трупа  (если Выносливость положительная).',
 				count:'1',
 			},
 		22 : {
 				name:'Некромантия: Ужасающая аура',
-				story:'The caster emanates a powerful aura that causes terror in the living.',
+				story:'Заклинатель излучает мощную ауру вселяющую ужас в живых.',
 				aspect:'Tenacity',
 				aspect:'Стойкость',
 				AP:'1',
@@ -709,14 +739,13 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'Wp',
 				range:'5',
-				rangetype:'',
-				text:'The target gains a powerful Terrifying Aura for 1 minute. If a Living character ends a movement within a1 of the target, or attacks the target, it must succeed on a TN 10 Horror Duel. See page 219 for rules regarding Fated characters causing Horror Duels.',
-				requirement:'0',
+				duration:'1 Минута',
+				text:'Цель получает сильную Ужасающую ауру на 1 минуту. Если Живой персонаж заканчивает движение в ауре 1 от цели, или атакует цель, он должен пройти Дуэль Ужаса (Horror Duel) сложностью TN 10. Смотрите стр. 219 для правил касательно Обреченных персонажей вызывающих дуэли Ужаса.',
 				count:'1',
 			},
 		23 : {
 				name:'Изменение: Прорицание',
-				story:'The caster throws his sense to a target location, seeing and hearing as if he were in that location.',
+				story:'Заклинатель направляет свои чувства в нужное место, видя и слыша как если бы сам был там.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'2',
@@ -724,14 +753,13 @@ var spellmagia = {
 				tnsuit:'t',
 				resist:'-',
 				range:'100',
-				rangetype:'',
-				text:'The caster enters a divination trance, his body going limp. While in the trance the caster can see and hear as if his sense were located at the target location. The target location must obey all of the normal targeting restrictions for a Spell (range, Line of Sight, etc.). The effects of this Spell last for one hour, or until the caster wishes the Spell to end. The caster may not take any other Actions while in a divination trance.',
-				requirement:'0',
+				duration:'1 Час',
+				text:'Заклинатель входит в трнс, его тело обмякает. Находясь в трансе заклинатель может видеть и слышать как если бы находился в целевом местонахождении. Целевое местонахождение должно соответствовать всем обычным ограничениям на прицеливание заклинанием (дальность, Линия Видимости, прочее...). Эффект заклинания длится 1 час, либо когда заклинатель захочет прекратить. Заклинатель не может выполнять никаких действий находясь в трансе.',
 				count:'1',
 			},
 		24 : {
 				name:'Изменение: Телепорт',
-				story:'The caster teleports the target causing it to vanish and then reappear in a new location.',
+				story:'Заклинатель телепортирует цель заставляя ее исчезнуть и появиться в новом месте.',
 				aspect:'Intellect',
 				aspect:'Интеллект',
 				AP:'1',
@@ -739,14 +767,12 @@ var spellmagia = {
 				tnsuit:'t',
 				resist:'Wp',
 				range:'30',
-				rangetype:'',
-				text:'A target within range of this Spell is teleported to a safe location within range of this Spell. The target may choose to relent to the teleportation, in which case the caster must make a Simple Challenge Duel instead. Objects may also be teleported, but if the object is in the possession of someone, they may resist the Spell.',
-				requirement:'0',
+				text:'Цель в пределах дальности заклинания телепортируется в безопасное место в пределах дальности заклинания. Цель может решить поддаться телепортации, тогда заклинатель должен выполнить простую проверку. Объекты также можно телепортировать, но если объектом кто-то владеет, он может сопротивляться заклинанию.',
 				count:'1',
 			},
 		25 : {
 				name:'Изменение: Вызов (Conjuring)',
-				story:'The caster summons an object from nothing in an instant.',
+				story:'Заклинатель мгновенно призывает объект из ничего.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'2',
@@ -754,14 +780,13 @@ var spellmagia = {
 				tnsuit:'t',
 				resist:'-',
 				range:'*',
-				rangetype:'',
-				text:'The Caster summons an object that was previously prepared for summoning. The object appears in his hands, and must be an object that the character can hold in both hands. A character may prepare an object for summoning by touching the object briefly and mentally concentrating on it. A character may have a number of objects prepared for summoning equal to his Cunning Aspect, with a minimum of 1. The range of this Spell is equal to the user\'s Cunning Aspect in miles.',
-				requirement:'0',
+				rangetype:'*',
+				text:'Заклинатель призывает объект который предварительно был подготовлен к призыву. Объект появляется в его руках, и должен быть таким, который он может удержать двумя руками. Персонаж может подготовить объект к призыву легко коснувшись его или ментально сосредоточившись на нем. Персонаж может подготовить к призыву некоторое количество объектов, равное его аспекту Хитрости (Cunning), с минимумом в 1. Дальность этого заклинания равна аспекту Хитрости заклинателя в милях.',
 				count:'1',
 			},
 		26 : {
 				name:'Изменение: Невидимость',
-				story:'The caster obscures a target\'s appearance, blending in with the background or becoming completely transparent.',
+				story:'Заклинатель скрывает внешность цели, сливая ее с землей или делая полностью прозрачной.',
 				aspect:'Cunning',
 				aspect:'Хитрость',
 				AP:'2',
@@ -770,13 +795,13 @@ var spellmagia = {
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
-				text:'The target becomes invisible for 1 round. The invisibility immediately breaks if the character interacts with the world in a meaningful way, such as by attacking, moving an object, or opening doors. Any attempts to spot the character suffer --- to the Flip if the spotter is relying on sight at all while the character is invisible. Even a guard who hears footsteps, for instance, will believe his eyes when he turns to see nobody there. The character can otherwise be registered by other senses, but not by magical "sight" based sense (such as seeing spirits). Any attacks made against an invisible character suffer --- to their attack Flip. If the attack succeeds, however, the invisibility ends as well.',
-				requirement:'0',
+				duration:'1 Раунд',
+				text:'Цель становится невидимой на 1 раунд. Невидимость немедленно спадает если персонаж взаимодействует с миром значительным образом,например атакуя, перемещая объект, или открывая двери. Любые попытки заметить персонажа получают [-][-][-] к проверке если ищущий полагается только на зрение пока персонаж невидим. Даже гвардеец услышавший шаги, например, поверит своим глазам когда повернувшись никого не увидит. Персонаж может быть замечен другими органами чувств, но не чувствами основанными на магическом "зрении" (способность видеть духов). Любые атаки против невидимого персонажа получают [-][-][-] к проверкам атаки(попадания). Если атака успешна, невидимость спадает.',
 				count:'1',
 			},
 		27 : {
 				name:'Изменение: Дешевые трюки',
-				story:'The caster produces one of a variety of minor and obviously magical effects.',
+				story:'Заклинатель исполняет один из множества незначительных и откровенно магических эффектов.',
 				aspect:'Intellect',
 				aspect:'Интеллект',
 				AP:'1',
@@ -784,14 +809,13 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'-',
 				range:'*',
-				rangetype:'',
-				text:'The caster may choose one of the following effects to produce. These effects may never be used to directly harm a target physically, and any situation that would warrant a Resist Duel is automatically won by the Defender, if he wishes.<ul><li>Мгновенно почистить и починить the clothes of a target.<li>Create a short and simple sound, such as soft bells or a single word, audible to all in the room.<li>Whisper a short sentence into the ear of someone you can see that is only heard by that person.<li>Make a light object (such as a key or handkerchief) dance about within a small area (such as the top of a coffee table).<li>Change the flavor of a food or drink, such as making water taste like cherry juice.<li>Light a candle, lantern, or other object designed to be lit, that is within sight.<li>Create a translucent and still image visible to all in the room.<li>Summon a small orb of light, about the brightness of a lantern, that moves about the room erratically, or hovers near a person.<li>Open an unlocked door, window, or container that could be easily opened with one hand and that is within sight.<li>Cause soft music to be audible within the room.</ul>',
-				requirement:'0',
+				rangetype:'*',
+				text:'Заклинатель может выбрать один из следующих эффектов. Эти эффекты не могут быть использованы для прямого нанесения физического вреда цели, и любая ситуация приводящая к дуэли Сопротивления (Resist Duel) автоматически выигрывается Защитником, если он пожелает.<ul><li>Мгновенно почистить и починить одежду цели.<li>Создать короткий и простой звук, такой как слабый колокольчик или одно слово, слышимый всем в комнате.<li>Шепнуть короткое предложение в ухо кому-то кого вы можете видеть и которое услышит только эта личность.<li>Заставить легкий объект (как ключ или носовой платок) танцевать внутри маленькой площади (такой как поверхность кофейного столика).<li>Изменить вкус еды или напитка, например сделать воду на вкус как вишневый сок.<li>Зажечь свечу, фонарь, или иной объект предназначенный для зажигания, в пределах видимости.<li>Создать прозрачное и неподвижное изображение видимое всем в комнате.<li>Призвать маленькую сферу света, по яркости как фонарь, которая беспорядочно перемещается по комнате, или парит рядом с личностью.<li>Открыть незапертую дверь, окно, или ящик которые было бы легко открыть одной рукой и в пределах видимости.<li>Заставить приглушенную музыку звучать в комнате.</ul>',
 				count:'1',
 			},
 		28 : {
 				name:'Изменение: Фантазм',
-				story:'The caster conjures a complex illusion that can appear real.',
+				story:'Заклинатель вызывает сложную иллюзию, которая может казаться настоящей.',
 				aspect:'Intellect',
 				aspect:'Интеллект',
 				AP:'1',
@@ -799,643 +823,352 @@ var spellmagia = {
 				tnsuit:'m',
 				resist:'-',
 				range:'*',
-				rangetype:'',
-				text:'The caster creates an animated illusion that appears real to observers for 1 minute. When created, the caster must declare all of the details of the illusion, such as what it will do, and how it will be sensed. The illusion does not react to external stimulus unless controlled by the caster (see below). The phantasm can be seen, heard, and smelled, but not touched or tasted. If touched, the illusion may be passed through, but is otherwise unharmed. As long as a creature sensing the phantasm has no reason to call it into question, it automatically fools the observer. A character who has never been in a particular room, for instance, would not notice the illusion of a wall hiding a door that he never knew was there in the first place. If a character has a reason to disbelieve an illusion, such as the image of a dead friend sitting in a chair, then he must succeed on a Wp 10 Duel to disbelieve the illusion. Otherwise, he believes the illusion is real. If the character comes into physical contact with the illusion, then he automatically disbelieves it. The caster may take control of the illusions Actions with a 1 AP Action. The illusion will act as the caster wishes, and may even change its form, within the bounds of the effect. In addition, the caster may banish an illusion he created at any time without using an Action.',
-				requirement:'0',
+				rangetype:'*',
+				duration:'1 Минута',
+				text:'Заклинатель создает подвижную иллюзию, которая кажется настоящей наблюдателям, на 1 минуту.<br>При создании, заклинатель должен заявить все детали иллюзии, как то, что она будет делать, и как будет восприниматься.<br>Иллюзия не реагирует на внешнее воздействие unless controlled by Заклинатель (see below).<br>Фантазм может быть увиден, услышан, и учуян, но не потроган и не попробован на вкус. При прикосновении, сквози иллюзию можно безвредно пройти. Покуда существо наблюдающее Фантазм не имеет причин сомневаться в нем, он автоматом обманывает наблюдателя.<br>Например персонаж никогда не бывшый в конкретной комнате, не заметит иллюзию стены скрывающую дверь о которой он не знал. Если у персонажа есть причина разуверится в иллюзии, как например видение умершего друга сидящего на стуле, он должен преуспеть в проверке Силы Воли (Wp) сложностью 10 чтобы перестать верить в иллюзию. Иначе он верит, что иллюзия реальна. Если персонаж вступает в физический контакт с иллюзией, он автоматом перестает верить в нее. Заклинатель может контролировать действия иллюзии с помощью 1 AP Действия. Иллюзия будет действовать согласно желанию заклинателя, и может даже изменить свою форму, в рамках эффекта. Также, заклинатель может развеять созданную им иллюзию в любой момент без затрат Действия.',
 				count:'1',
 			},
 		}
 var spellgenus = {
 		0 : {
-				name:'',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'',
-				requirement:'0',
 				count:'1',
 			},
 		1 : {
 				name:'Зверь',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Зверь (Beast).',
-				requirement:'0',
 				count:'1',
 			},
 
 		2 : {
 				name:'Конструкт',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Конструкт (Construct).',
-				requirement:'0',
 				count:'1',
 			},
 		3 : {
 				name:'Живой',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Живой (Living).',
-				requirement:'0',
 				count:'1',
 			},
 		4 : {
 				name:'Местонахождение (Location)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'The Spell affects a location within range. Any targets in the area that could normally resist the Spell are assumed to automatically succeed in their Resistance Duel.',
-				requirement:'0',
+				text:'Заклинание действует на Местонахождение в пределах дальности. Любые цели в области которые обычно сопротивлялись бы заклинанию считаются автоматически прошедшими проверку сопротивления.',
 				count:'1',
 			},
 		5 : {
 				name:'Неподвижный',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на объекты, которые не могут перемещаться по собственному желанию (Inanimate).',
-				requirement:'0',
 				count:'1',
 			},
 		6 : {
 				name:'Дух',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Дух (Spirits).',
-				requirement:'0',
 				count:'1',
 			},
 		7 : {
 				name:'Немертвый',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание действует на цели с характеристикой Немертвый (Undead).',
-				requirement:'0',
 				count:'1',
 			},
 		}
 var spellelemental = {
 		0 : {
-				name:'none',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'',
-				requirement:'0',
 				count:'1',
 			},
 		1 : {
 				name:'Тьма (Darkness)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Персонаж получающий урон от Магии также получает состояние "Ослеплен"  на 1 ход. Эта Магия может быть использована несколько раз, увеличивая длительность состояния "Ослеплен" на 1 хож каждый раз.',
-				requirement:'0',
+				text:'Персонаж получающий урон от Магии также получает состояние "Ослеплен" на 1 ход.<br>Эта Магия может быть использована несколько раз, увеличивая длительность состояния "Ослеплен" на 1 хож каждый раз.',
 				count:'1',
 			},
 
 		2 : {
 				name:'Разложение (Decay)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Любой Немертвый персонаж получающий урон от Магии вместо этого вылечивает 1 рану. This Magia may be taken multiple times, increasing the amount of damage healed by undead by 1 each time.',
-				requirement:'0',
+				text:'Любой Немертвый персонаж получающий урон от Магии вместо этого вылечивает 1 рану.<br>Эта магия может быть использована несколько раз, увеличивая количество лечимого немертвым урона на 1 каждый раз.',
 				count:'1',
 			},
 		3 : {
 				name:'Электричество (Electric)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Damage dealt by this Magia ignores armor. In addition, the attack does not randomly determine its target if it is used on a target that is engaged.',
-				requirement:'0',
+				text:'Урон наносимый этой магией игнорирует броню. Также, атака не определяет цель случайным образом если цель связана боем.',
 				count:'1',
 			},
 		4 : {
 				name:'Огонь (Fire)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Any character that suffers damage from the Magia also gains the Burning +1 condition. This Magia may be taken multiple times, increasing the value of the Burning condition given by 1 each time.',
-				requirement:'0',
+				text:'Любой персонаж получающий урон от магии также получает состояние "Горение" +1.<br>Эта магия может быть использована несколько раз, увеличивая значение состояния "Горение" нп 1 каждый раз.',
 				count:'1',
 			},
 		5 : {
 				name:'Лёд (Ice)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Any character that suffers damage from the Magia also gains the Slow condition. This Magia may be taken twice, and, if it is taken a second time, the target gains the Paralyzed condition instead of Slow.',
-				requirement:'0',
+				text:'Любой персонаж получающий урон от магии также получает состояние "Замедлен".<br>Эта магия может быть использована дважды, и во второй раз, цель получает состояние "Паралич" вместо "Замедлен".',
 				count:'1',
 			},
 		6 : {
 				name:'Природа (Natural)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Any character that suffers damage from the Magia also gains the following condition: "Rooted: This character may not take Walk or Charge Actions. If this character is pushed, remove this condition and the character suffers 3 damage."',
-				requirement:'0',
+				text:'Любой персонаж получающий урон от магии также получает состояние: "Укоренен: Этот персонаж не может заявлять Движение (Walk) или Нападение (Charge). Если этого персонажа толкают (pushed), снимите это состояние и персонаж получает 3 урона."',
 				count:'1',
 			},
 		7 : {
 				name:'Яд (Poison)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Any character that suffers damage from the Magia also gains the Poison +1 condition. This Magia may be taken multiple times, increasing the value of the Poison condition given by 1 each time.',
-				requirement:'0',
+				text:'Любой персонаж получающий урон от магии также получает состояние "Яд" +1.<br>Эта магия может быть использована несколько раз, увеличивая значение состояния "Яд" на 1 каждый раз.',
 				count:'1',
 			},
 		8 : {
 				name:'Дух (Spirit)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'4',
 				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Damage dealt by this Magia ignores armor and the Hard to Wound ability.',
-				requirement:'0',
+				text:'Урон наносимый этой магией игнорирует броню и способность "Тяжело ранить" (Hard to Wound).',
 				count:'1',
 			},
 		9 : {
 				name:'Ужас (Terror)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Any character that suffers damage from the Magia must make a TN 6 Horror Duel. This Magia may be taken multiple times, increasing the TN of the Horror Duel by 1 each time.',
-				requirement:'0',
+				text:'Любой персонаж получающий урон от магии должен пройти дуэль Ужаса сложностью TN 6.<br>Эта магия может быть использована несколько раз, увеличивая сложность TN дуэли Ужаса на 1 каждый раз.',
 				count:'1',
 			},
 		}
 var spellalteration = {
 		0 : {
-				name:'none',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
 				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'',
-				requirement:'0',
 			},
 		1 : {
 				name:'Альтернативное сопротивление',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
 				resist:'switch',
-				range:'0',
-				rangetype:'',
-				text:'If this Action is resisted by Wp, it is resisted by Df instead. If it is resisted by Df it is resisted by Wp instead.',
-				requirement:'0',
+				text:'Если этому действию сопротивляются по Силе Воли (Wp), вместо этого ему сопротивляются по Защите (Df). Если этому действию сопротивляются Защите (Df) , вместо этого ему сопротивляются по Силе Воли (Wp).',
 			},
 		2 : {
 				name:'Взрыв',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'This Immuto may be taken up to three times. The Action\'s Damage Flip gains 0/0/b the first time it is taken, 0/b/b the second time, and 0/b/bb the third time. These effects are added to the damage the Magia deals.',
-				requirement:'0',
+				blaststep:{
+					1:['','','b'],
+					2:['','b','b'],
+					3:['','b','bb'],
+				},
+				text:'Это Иммуто может быть взято до 3 раз. Проверка урона получает 0/0/b в первый раз, 0/b/b во второй раз, и 0/b/bb в третий раз. Эти эффекты добавляются к урону наносимому магией.',
 				count:'3',
 			},
 		3 : {
 				name:'Совмещенное заклинание',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'5',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'This Spell combines the effects of two Spells. Choose a second Magia and add its effects to this Spell. The Spell must follow these requirements: •The second Magia must have a Base TN equal to or lower than the Base TN of the primary Magia. •The resist of the Magia must be the same. •The Primary Magia may only have Immuto that can be applied to both Magia. •The Magia must be different. 240 Chapter 8: Magic',
-				requirement:'0',
 			},
 		4 : {
 				name:'Задержка [Special] (TN Variable)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'',
-				requirement:'0',
 			},
 		5 : {
 				name:'Игнорировать заклинателя',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'This Spell has no effect on the caster of the Spell, he suffers no damage and is only subject to secondary effects. For instance, the caster is immune to the fireball Spell itself, but, if he sets the building on fire, he still has cause for concern.',
-				requirement:'0',
+				text:'Заклинание не оказывает эффекта на заклинателя, он не получает урона, а только вторичные эффекты. Например, заклинатель имеет иммунитет к заклинанию Огненного Шара, но, если он подожжет дом, ему придется поостеречься.',
 			},
 		6 : {
 				name:'Объект фокусировки (TN Varies)',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
 				range:'0',
-				rangetype:'',
 				text:'',
-				requirement:'0',
+				portability:{
+					1:'0',
+					2:'-1',
+					3:'-2',
+					4:'-3',
+				},
+				commonality:{
+					1:'0',
+					2:'-1',
+					3:'-2',
+					4:'-3',
+				},
 			},
 		}
 var spellaugmentation = {
 		0 : {
-				name:'none',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'',
-				requirement:'0',
 				count:'1',
 			},
 		1 : {
 				name:'Дополнительная масть',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'-2',
 				tnsuit:'*',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'The TN for the Spell gains an additional required Suit of the caster\'s choice.',
-				requirement:'0',
+				text:'Сложность (TN) заклинания получает дополнительную масть по выбору заклинателя.',
 				count:'1',
 			},
 		2 : {
-				name:'Изменение дальности (TN Varies)',
-				story:'',
-				aspect:'0',
-				AP:'0',
+				name:'Изменение дальности (Увеличение)',
 				TN:'0',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				/*
-				Range Steps
-melee 1
-melee 2
-melee 3
-projectile 5
-projectile 10
-projectile 15
-projectile 30
-projectile 50
-Anywhere in Sight
-				*/
-				text:'<ul><li>melee 1<li>melee 2<li>melee 3<li>projectile 5<li>projectile 10<li>projectile 15<li>projectile 30<li>projectile 50<li>Anywhere in Sight</ul>This Immuto may be placed on a Spell multiple times. Each time it is taken the Spell moves up or down the Range Step table one step. Moving up the table (lowering the range) reduces the TN of the Spell Action by -2. Moving down the table (increasing the range) increases the TN of the Spell by 2. Some Spells do not have a y or z symbol in their range. If this is the case, they move up and down the range table as normal, but they do not gain the Close or Projectile (yor z) attached to range. A y Magia may never increase its range beyond y3, and a z Magia may never reduce its range below z5.',
+				rangesteptype:'increase',
+				rangestep:{
+					1:'1',
+					2:'2',
+					3:'3',
+					4:'5',
+					5:'10',
+					6:'15',
+					7:'30',
+					8:'50',
+					9:'999Anywhere in Sight',
+				},
+				text:'<ul><li>melee 1<li>melee 2<li>melee 3<li>projectile 5<li>projectile 10<li>projectile 15<li>projectile 30<li>projectile 50<li>Anywhere in Sight</ul>Это Иммуто может быть добавлено в заклинание несколько раз. Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг. Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2. Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2. Некоторые заклинания не имеют символа Ближний(y) или Дальний(z) в их дальности. В таком случае, движение по таблице идет как обычно, но они не получают Ближний или Дальний (y or z) к дальности. Ближняя(y) Магия не может повысить дальность выше чем y3, а Дпльняя(z) Магия не может понизить дальность ниже чем z5.',
 				requirement:'0',
 				count:'9',
 			},
 		3 : {
-				name:'Увеличение ОД (AP)',
-				story:'',
-				aspect:'0',
-				AP:'1',
-				TN:'-3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'The Spell requires 1 additional AP to cast. This Immuto may be taken multiple times, but a character may not spend AP over multiple turns to cast this Spell. This Immuto may only be placed on Spells cast during Dramatic Time.',
+				name:'Изменение дальности (Уменьшение)',
+				TN:'0',
+				rangesteptype:'decrease',
+				rangestep:{
+					1:'1',
+					2:'2',
+					3:'3',
+					4:'5',
+					5:'10',
+					6:'15',
+					7:'30',
+					8:'50',
+					9:'999Anywhere in Sight',
+				},
+				text:'<ul><li>melee 1<li>melee 2<li>melee 3<li>projectile 5<li>projectile 10<li>projectile 15<li>projectile 30<li>projectile 50<li>Anywhere in Sight</ul>Это Иммуто может быть добавлено в заклинание несколько раз. Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг. Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2. Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2. Некоторые заклинания не имеют символа Ближний(y) или Дальний(z) в их дальности. В таком случае, движение по таблице идет как обычно, но они не получают Ближний или Дальний (y or z) к дальности. Ближняя(y) Магия не может повысить дальность выше чем y3, а Дпльняя(z) Магия не может понизить дальность ниже чем z5.',
 				requirement:'0',
-				count:'10',
+				count:'9',
 			},
 		4 : {
-				name:'Увеличение урона',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				/*
-Damage Steps
-0/0/1
-0/1/2
-1/2/3
-2/3/4
-3/4/5
-				*/
-				text:'This Immuto may be placed on a Spell multiple times. Each time this Immuto is taken, improve the Magia\'s Damage Flip one step on the damage Step table.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
-				requirement:'0',
-				count:'5',
-			},
-		5 : {
-				name:'Увеличение длительности',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'2',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				
-				/*
-Duration Steps
-1 Turn
-2 Turn
-3 Turn
-1 Minute
-10 Minutes
-1 Hour
-Sunrise or Sunset
-1 Day
-1 Week
-1 Month
-6 Months
-1 Year
-				*/
-				text:'This Immuto may be placed on a Spell multiple times. Each time it is taken move the Spell duration down the Duration Step table one step.<ul>1 Turn<li>2 Turn<li>3 Turn<li>1 Minute<li>10 Minutes<li>1 Hour<li>Sunrise or Sunset<li>1 Day<li>1 Week<li>1 Month<li>6 Months<li>1 Year<li></ul>Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
-				requirement:'0',
-				count:'12',
-			},
-		6 : {
-				name:'Увеличение Пульса',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'2',
-				tnsuit:'',
-				resist:'-1',
-				range:'1',
-				rangetype:'',
-				text:'This Immuto may be placed on a Spell multiple times. Any pulse range in the Spell is increased by 1, and the TN to resist the pulse is increased by 1.',
-				requirement:'0',
+				name:'Увеличение ОД (AP)',
+				AP:'1',
+				TN:'-3',
+				text:'Заклинание требует 1 дополнительное ОД (AP) для исполнения.<br>Это Иммуто может быть взято несколько раз, но персонаж не может расходовать ОД в несколько ходов для исполнения данного заклинания. Это Иммуто может быть добавлено к Заклинаниям только во время Dramatic Time.',
 				count:'10',
 			},
-		7 : {
-				name:'Increase Resistance',
-				story:'',
-				aspect:'0',
-				AP:'0',
+		5 : {
+				name:'Увеличение урона',
 				TN:'2',
-				tnsuit:'',
+				damagestep:{
+					1:[0,0,1],
+					2:[0,1,2],
+					3:[1,2,3],
+					4:[2,3,4],
+					5:[3,4,5],
+				},
+				damagesteptype:'increase',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз, увеличьте урон заклинания на один шаг Таблицы Урона.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
+				count:'5',
+			},
+		6 : {
+				name:'Увеличение длительности',
+				TN:'2',
+				durationstep:{
+					1:'1 Ход',
+					2:'2 Хода',
+					3:'3 Хода',
+					4:'1 Минута',
+					5:'10 Минут',
+					6:'1 Час',
+					7:'Восход или Закат',
+					8:'1 День',
+					9:'1 Неделя',
+					10:'1 Месяц',
+					11:'6 Месяцев',
+					12:'1 Год',
+				},
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Each time it is taken move the Spell duration down the Duration Step table one step.<ul>1 Ход<li>2 Ход<li>3 Ход<li>1 Минута<li>10 Минут<li>1 Час<li>Восход или Закат<li>1 День<li>1 Неделя<li>1 Месяц<li>6 Месяцев<li>1 Год<li></ul>Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
+				count:'12',
+			},
+		7 : {
+				name:'Увеличение Пульса',
+				TN:'2',
 				resist:'-1',
-				range:'0',
-				rangetype:'',
-				text:'This Immuto may be placed on a Spell multiple times. Any Duel made by characters affected by the Spell (such as Horror Duels) has the TN of the Duel increased by 1.',
-				requirement:'0',
+				range:'1',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Любая дальность Пульса в заклинании увеличивается на 1, и сложность (TN) сопротивления Пульсу возрастает на 1.',
 				count:'10',
 			},
 		8 : {
-				name:'Increased Severity',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'Increase the Severe value of the Damage Flip by 1. A Magia may have this Immuto multiple times, increasing the Severe damage of its Damage Flip by 1 each time. Magia that do not have a damage flip, but instead deal a set amount of damage, may take this Immuto as well, increasing the damage by 1 each time this Immuto is taken. However, those Magia must increase the TN by +2, instead of +1.',
-				requirement:'0',
+				name:'Increase Resistance',
+				TN:'2',
+				resist:'-1',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Any Duel made by characters affected by the Spell (such as Horror Duels) has the TN of the Duel increased by 1.',
 				count:'10',
 			},
 		9 : {
-				name:'Пульс',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'4',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'The Spell affects every legal target within an area around the initial target. If the target of the Spell is hit, then every character within 1 yard that could be affected by the Spell must succeed on a TN 10 Duel, using the same defense as the initial target. Any character that fails the Duel also suffers the results of the pulse. If damage is dealt they automatically suffer Weak damage.',
-				requirement:'0',
-				count:'1',
+				name:'Increased Severity',
+				TN:'1',
+				text:'Increase the Severe value of the Damage Flip by 1. A Magia may have this Immuto multiple times, increasing the Severe damage of its Damage Flip by 1 each time. Magia that do not have a damage flip, but instead deal a set amount of damage, may take this Immuto as well, increasing the damage by 1 each time this Immuto is taken. However, those Magia must increase the TN by +2, instead of +1.',
+				count:'10',
 			},
 		10 : {
-				name:'Снижение ОД (AP)',
-				story:'',
-				aspect:'0',
-				AP:'-1',
-				TN:'5',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'The Spell requires 1 less AP to cast. This Immuto may be taken multiple times, reducing the AP required by 1 each time (to a minimum of 0).',
-				requirement:'0',
-				count:'10',
-			},
-		11 : {
-				name:'Снижение урона',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'-1',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				/*
-Damage Steps
-0/0/1
-0/1/2
-1/2/3
-2/3/4
-3/4/5
-				*/
-				text:'This Immuto may be placed on a Spell multiple times. Each time this Immuto is taken, decrease the Magia\'s Damage Flip one step on the damage Step table.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
-				requirement:'0',
-				count:'5',
-			},
-		12 : {
-				name:'Reduce Resistance',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'-2',
-				tnsuit:'',
-				resist:'-1',
-				range:'0',
-				rangetype:'',
-				text:'This Immuto may be placed on a Spell multiple times. Any Resistance Duel made by the target (such as Horror Duels) has the TN of the Duel decreased by 1.',
-				requirement:'0',
-				count:'10',
-			},
-		13 : {
-				name:'Reduce Severity',
-				story:'',
-				aspect:'0',
-				AP:'0',
-				TN:'-3',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
-				text:'If the Spell deals a set amount of damage, instead of a Damage Flip, the Magia instead deals no damage. All other effects of the Magia remain the same. Targets that would suffer effects only if they suffered damage still suffer the effects of the Magia.',
-				requirement:'0',
+				name:'Пульс',
+				TN:'4',
+				text:'The Spell affects every legal target within an area around the initial target. If the target of the Spell is hit, then every character within 1 yard that could be affected by the Spell must succeed on a TN 10 Duel, using the same defense as the initial target. Any character that fails the Duel also suffers the results of the pulse. If damage is dealt they automatically suffer Weak damage.',
 				count:'1',
 			},
+		11 : {
+				name:'Снижение ОД (AP)',
+				AP:'-1',
+				TN:'5',
+				text:'Заклинание требует на 1 AP меньше. This Immuto may be taken multiple times, reducing the AP required by 1 each time (to a minimum of 0).',
+				count:'10',
+			},
+		12 : {
+				name:'Снижение урона',
+				TN:'-1',
+				damagestep:{
+					1:[0,0,1],
+					2:[0,1,2],
+					3:[1,2,3],
+					4:[2,3,4],
+					5:[3,4,5],
+				},
+				damagesteptype:'decrease',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз, уменьшите урон заклинания на один шаг Таблицы Урона.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
+				count:'5',
+			},
+		13 : {
+				name:'Reduce Resistance',
+				TN:'-2',
+				resist:'-1',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Any Resistance Duel made by the target (such as Horror Duels) has the TN of the Duel decreased by 1.',
+				count:'10',
+			},
 		14 : {
+				name:'Reduce Severity',
+				TN:'-3',
+				text:'Если заклинание наносит фиксированное количество урона, вместо проверки Урона, Магия не наносит урон. Все другие эффекты Магии остаются прежними. Цели что получили бы эффект только при получении урона все еще получают эффект от Магии.',
+				count:'1',
+			},
+		15 : {
 				name:'Выбор целей',
-				story:'',
-				aspect:'0',
-				AP:'0',
 				TN:'4',
-				tnsuit:'',
-				resist:'0',
-				range:'0',
-				rangetype:'',
 				text:'Заклинание не оказывает эффекта на персонажей в которых заклинатель не хочет целиться (хотя вспомогательные эффекты все еще могут на них влиять).',
-				requirement:'0',
 				count:'1',
 			},
 		}
 
 function spellParts(part){
-	// console.log(part)
 	var arr = []
 	for (p in part){
 		arr.push(p)
 	}
-	// console.log(arr)
-	// console.log(arr.length)
-
 	for(var i = 0; i < arr.length; i++){
-		// console.log(i+' '+arr[i])
-		// console.log(part[arr[i]])
-
 		if(part[arr[i]]){
 			var option = $('<option />')
 			option.attr('value',arr[i])
 			if(i == 0){
 				option.attr('selected','selected')
 			}
-				option.attr('label',part[arr[i]].name)
-
-			// console.log(option)
+			option.attr('label',part[arr[i]].name)
 
 			if(part == spellmagia){
 				$('#magia').append(option)
@@ -1461,58 +1194,47 @@ function spellParts(part){
 		}
 	}
 
-	var p1 = $('<p/>')
-	var p2 = $('<p/>')
+	var div = $('<div/>',{class:'count-div'})
 	var counter = ($('<input />',{type:'range',id:'2-count',min:'1',max:'1',value:'1',step:'1'}))
-	var countermin = $('<span/>')
-	var countermax = $('<span/>')
-	var counterval = $('<span/>')
-	/*
-	<p>
-		<span id="genus-count-min"/>
-		<input type="range" id="genus-count" min="1" max="1" value="1" step="1">
-		<span id="genus-count-max"/>
-	</p>
-	<p>
-		<span id="genus-count-val"/>
-	</p>
-	*/
+	var countermin = $('<div/>',{class:'count-min'})
+	var countermax = $('<div/>',{class:'count-max'})
+	var counterval = $('<div/>')
+
 	if(part == spellmagia){
 		counter.attr('id','magia-count')
 		countermin.attr('id','magia-count-min')
 		countermax.attr('id','magia-count-max')
 		counterval.attr('id','magia-count-val')
-		$('#magia').after(p2.append(counterval)).after(p1.append(countermin).append(counter).append(countermax))
+		$('#magia').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellgenus){
 		counter.attr('id','genus-count')
 		countermin.attr('id','genus-count-min')
 		countermax.attr('id','genus-count-max')
 		counterval.attr('id','genus-count-val')
-		$('#genus').after(p2.append(counterval)).after(p1.append(countermin).append(counter).append(countermax))
+		$('#genus').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellelemental){
 		counter.attr('id','elemental-count')
 		countermin.attr('id','elemental-count-min')
 		countermax.attr('id','elemental-count-max')
 		counterval.attr('id','elemental-count-val')
-		$('#elemental').after(p2.append(counterval)).after(p1.append(countermin).append(counter).append(countermax))
+		$('#elemental').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellalteration){
 		counter.attr('id','alteration-count')
 		countermin.attr('id','alteration-count-min')
 		countermax.attr('id','alteration-count-max')
 		counterval.attr('id','alteration-count-val')
-		$('#alteration').after(p2.append(counterval)).after(p1.append(countermin).append(counter).append(countermax))
+		$('#alteration').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellaugmentation){
 		counter.attr('id','augmentation-count')
 		countermin.attr('id','augmentation-count-min')
 		countermax.attr('id','augmentation-count-max')
 		counterval.attr('id','augmentation-count-val')
-		$('#augmentation').after(p2.append(counterval)).after(p1.append(countermin).append(counter).append(countermax))
+		$('#augmentation').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
-
 }
 
 spellParts(spellmagia)

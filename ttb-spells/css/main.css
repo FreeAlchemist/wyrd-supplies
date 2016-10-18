@@ -20,28 +20,28 @@ padding: 0px;
 	/*height: 260px;*/
 }
 .spellpart-genus{
-	width: 140px;
-	height: 260px;
+	/*width: 140px;*/
+	height: 280px;
 }
 .spellpart-elemental{
-	width: 140px;
-	height: 260px;
+	/*width: 140px;*/
+	height: 280px;
 }
 .spellpart-alteration{
 	width: 200px;
-	height: 260px;
+	height: 280px;
 }
 .spellpart-augmentation{
 	width: 200px;
-	height: 260px;
+	height: 280px;
 }
 
 .spellpart-total{
-	width: 550px;
+	width: 760px;
 }
 
 input{
-	width: 100px;
+	/*width: 100px;*/
 }
 
 .spelltitle{
@@ -133,12 +133,43 @@ background-color: Blanchedalmond;*/
 	clear: both;
 }
 
+.count-div{
+	border:solid 1px black;
+	border-top: none;
+	border-bottom: none;
+	padding: 5px;
+	font-size: 8pt;
+}
+.count-min{
+	float: left;
+}
+.count-max{
+	float: right;
+}
+
+.log{
+	display: none;
+	margin-top: 70px;
+}
+
 @media print{
 	body{
 		border: none;
 		background-color: white;
 	}
-	.spellmenu{
+	.spellmenu,#copyright,hr,.log{
 		display: none;
+	}
+	#spellTotal{
+	position: absolute;
+	top: 0.5cm;
+	left: 0.5cm;
+	right: 0.5cm;
+	bottom: 0.5cm;
+	background-color: White;
+	width: 100%;
+	}
+	#spellTotal .cardpart{
+	background-color: White;
 	}
 }

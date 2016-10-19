@@ -11,6 +11,7 @@ padding: 0px;
 
 .spellpart{
 	width: 200px;
+	width: 20%;
 	border: black 1px solid;
 	/*overflow: auto;*/
 }
@@ -20,12 +21,12 @@ padding: 0px;
 	/*height: 260px;*/
 }
 .spellpart-genus{
-	/*width: 140px;*/
+	width: 140px;
 	height: 280px;
 	height: 232px;
 }
 .spellpart-elemental{
-	/*width: 140px;*/
+	width: 140px;
 	height: 280px;
 	height: 232px;
 }
@@ -170,14 +171,14 @@ background-color: Blanchedalmond;*/
 }
 
 #spellTotal{
-	position: absolute;
+	/*position: absolute;*/
 	left: 277px;
 	top: 350px;
 }
 
 #copyright{
 	clear: both;
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0px;
 	width: 270px;
 	font-size: 10pt;

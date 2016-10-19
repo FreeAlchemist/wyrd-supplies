@@ -34,8 +34,10 @@ function createspell(){
 		if(typearr[i] == 'magia'){
 			checkVal()
 			var count = 1
-						if(spellmagia[magia].count){
+			$('#magia-count-div').hide()
+			if(spellmagia[magia].count){
 				var count = spellmagia[magia].count
+				$('#magia-count-div').show()
 			}
 			var name = spellmagia[magia].name
 			// console.log(name)
@@ -52,8 +54,10 @@ function createspell(){
 		else if(typearr[i] == 'genus'){
 			checkVal()
 			var count = 1
-						if(spellgenus[genus].count){
+			$('#genus-count-div').hide()
+			if(spellgenus[genus].count){
 				var count = spellgenus[genus].count
+				$('#genus-count-div').show()
 			}
 			var name = spellgenus[genus].name
 			var story = spellgenus[genus].story
@@ -69,8 +73,10 @@ function createspell(){
 		else if(typearr[i] == 'elemental'){
 			checkVal()
 			var count = 1
-						if(spellelemental[elemental].count){
+			$('#elemental-count-div').hide()
+			if(spellelemental[elemental].count){
 				var count = spellelemental[elemental].count
+				$('#elemental-count-div').show()
 			}
 			var name = spellelemental[elemental].name
 			var story = spellelemental[elemental].story
@@ -86,8 +92,10 @@ function createspell(){
 		else if(typearr[i] == 'alteration'){
 			checkVal()
 			var count = 1
+			$('#alteration-count-div').hide()
 			if(spellalteration[alteration].count){
 				var count = spellalteration[alteration].count
+				$('#alteration-count-div').show()
 			}
 			var name = spellalteration[alteration].name
 			var story = spellalteration[alteration].story
@@ -103,8 +111,10 @@ function createspell(){
 		else if(typearr[i] == 'augmentation'){
 			checkVal()
 			var count = 1
+			$('#augmentation-count-div').hide()
 			if(spellaugmentation[augmentation].count){
 				var count = spellaugmentation[augmentation].count
+				$('#augmentation-count-div').show()
 			}
 			var name = spellaugmentation[augmentation].name
 			var story = spellaugmentation[augmentation].story
@@ -128,8 +138,8 @@ function createspell(){
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-tn',id:'total-info-tn'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-resist',id:'total-info-resist'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-range'}))
-	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-damage'}))
-	$('#total-info').append($('<div />',{class:'cardpart cardpart-range',id:'total-info-duration'}))
+	$('#total-info').append($('<div />',{class:'cardpart cardpart-damage',id:'total-info-damage'}))
+	$('#total-info').append($('<div />',{class:'cardpart cardpart-duration',id:'total-info-duration'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-text',id:'total-info-text'}))
 	$('#total-info').append($('<div />',{class:'cardpart cardpart-requirement',id:'total-info-requirement'}))
 
@@ -181,16 +191,13 @@ function createspell(){
 	console.log(parseInt(spellmagia[magia].AP)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].AP)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].AP)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount))
 	console.log('total AP: '+ap)
 //TN
-	var tn = parseInt(spellmagia[magia].TN)*parseInt(magiacount)
-	+
-	parseInt(spellgenus[genus].TN)*parseInt(genuscount)
-	+
-	parseInt(spellelemental[elemental].TN)*parseInt(elementalcount)
-	+
-	parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)
-	+
-	parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)
-	console.log(parseInt(spellmagia[magia].TN)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].TN)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].TN)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount))
+	var tn = 0
+	if(spellmagia[magia].TN){tn += parseInt(spellmagia[magia].TN)*parseInt(magiacount)}
+	if(spellgenus[genus].TN){tn += parseInt(spellgenus[genus].TN)*parseInt(genuscount)}
+	if(spellelemental[elemental].TN){tn += parseInt(spellelemental[elemental].TN)*parseInt(elementalcount)}
+	if(spellalteration[alteration].TN){tn += parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)}
+	if(spellaugmentation[augmentation].TN){tn += parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)}
+
 	console.log('total TN: '+tn)
 
 	var tnsuit = ''
@@ -202,6 +209,27 @@ function createspell(){
 
 	console.log(spellmagia[magia].tnsuit+' + '+spellgenus[genus].tnsuit+' + '+spellelemental[elemental].tnsuit+' + '+spellalteration[alteration].tnsuit+' + '+spellaugmentation[augmentation].tnsuit)
 	console.log('total tnsuit: '+tnsuit)
+
+	if(spellalteration[alteration].portability){
+		console.log('portability'+$("input[name=portability]:checked").val())
+		var portability = $("input[name=portability]:checked").val()
+		// $("input[name=portability]").click(function(){
+		// 	var portability = $("input[name=portability]:checked").val()
+		// 	if(portability){tn+=parseInt(portability)}
+		// 	$('#total-info-tn').html('<div class="info-title">ЦН (TN)</div>'+tn+tnsuit)
+		// })
+	}
+	if(portability){tn+=parseInt(portability)}
+	if(spellalteration[alteration].commonality){
+		console.log('commonality '+$("input[name=commonality]:checked").val())
+		var commonality = $("input[name=commonality]:checked").val()
+		// $("input[name=commonality]").click(function(){
+		// 	var commonality = $("input[name=commonality]:checked").val()
+		// 	if(commonality){tn+=parseInt(commonality)}
+		// 	$('#total-info-tn').html('<div class="info-title">ЦН (TN)</div>'+tn+tnsuit)
+		// })
+	}
+	if(commonality){tn+=parseInt(commonality)}
 //RESIST
 	var resist = spellmagia[magia].resist
 	if(spellalteration[alteration].resist == 'switch'){
@@ -253,7 +281,7 @@ function createspell(){
 				$('#augmentation-count-max').html('Макс.'+$('#augmentation-count').attr('max'))
 			}
 		};
-		range = altrange
+		if(altrange){range = altrange}
 	}
 	if(rangetype){
 		if(rangetype == 'melee'){
@@ -376,7 +404,7 @@ function createspell(){
 	$('#total-info-resist').html('<div class="info-title">СОПРОТИВЛЕНИЕ</div>'+resist)
 	if(range){$('#total-info-range').html('<div class="info-title">ДАЛЬНОСТЬ</div>'+range)}
 	if(damage){$('#total-info-damage').html('<div class="info-title">УРОН</div>'+damage)}
-	if(duration){$('#total-info-duration').html('<div class="info-title">Длительность</div>'+duration)}
+	if(duration){$('#total-info-duration').html('<div class="info-title">ДЛИТЕЛЬНОСТЬ</div>'+duration)}
 	$('#total-info-text').html('<b>Эффект</b>: '+text)
 	if(requirement){$('#total-info-requirement').html('<b>Требования:</b><br>'+requirement)}
 }
@@ -393,6 +421,7 @@ function writeVal(type,name,story,aspect,ap,tn,resist,range,text,requirement,cou
 	$('#'+type+'-info-requirement').html('<b>Requirements:</b><br>'+requirement)
 	if(count){
 		$('#'+type+'-count').attr('max',count)
+		// $('#count-div').show()
 	}
 	$('#'+type+'-count').change(function(){createspell()})
 	$('#'+type+'-count-min').html($('#'+type+'-count').attr('min'))
@@ -443,7 +472,6 @@ var spellmagia = {
 				damagemoderatetext:'',
 				damageseveretext:'',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
-				count:'1',
 			},
 
 		2 : {
@@ -462,7 +490,6 @@ var spellmagia = {
 				damagemoderate:'2',
 				damagesevere:'3',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
-				count:'1',
 			},
 		3 : {
 				name:'Волшебство: Элементальный удар',
@@ -480,7 +507,6 @@ var spellmagia = {
 				damagesevere:'3',
 				text:'Цель получает 1/2/3 урона.',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
-				count:'1',
 			},
 		4 : {
 				name:'Волшебство: Телекинетичесое перемещение',
@@ -493,7 +519,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'5',
 				text:'Заклинатель может перемещать целевой объект как если бы тот был поднят и носим персонажем с Силой (Might) равной Стойкости (Tenacity) заклинателя, и Скоростью (Speed) равной Хитрости (Cunning) заклинателя. Если цель неподвижна, она не сопротивляется этому Действию и заклинателю нужно просто пройти проверку требуемой сложности (TN) для перемещения объекта. Если заклинатель пытается переместить объект несомый другим персонажем, то персонаж держащий объект может сопротивляться заклинанию. Заклинатель может решить поддерживать данное заклинание, перемещая объект от хода к ходу. В таком случае заклинание не требуется исполнять снова (оно уже успешно исполнено). Заклинатель не может исполнять другие заклинания при поддержании телекинеза, и перемещение объекта требует (1) ОД Действие (AP Action), как если бы заклинание исполнялось снова. Заклинатель может выполнять атаки удерживаемым таким образом объектом, выполняя стандартную атаку ближнего боя используя навык подходящий к предмету (например Ближний бой (Melee) для меча), но заменяя соответствующий аспект на Интеллект.',
-				count:'1',
 			},
 		5 : {
 				name:'Волшебство: Телекинетический толчок',
@@ -506,7 +531,6 @@ var spellmagia = {
 				resist:'Df',
 				range:'5',
 				text:'Цель толкается на расстояние в ярдах равное Стойкости заклинателя, по прямой от заклинателя.',
-				count:'1',
 			},
 		6 : {
 				name:'Волшебство: Сон',
@@ -519,7 +543,6 @@ var spellmagia = {
 				resist:'-',
 				range:'3',
 				text:'Если цель Живая, она должна пройти проверку Бессознательности (Unconsciousness Challenge) сложностью (TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку Бессознательности, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно).',
-				count:'1',
 			},
 		7 : {
 				name:'Волшебство: Выкручивание',
@@ -532,7 +555,6 @@ var spellmagia = {
 				resist:'-',
 				range:'3',
 				text:'Если цель Живая, она должна пройти проверку Выносливости(Toughness) + Стойкости(Resilience) сложностью(TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно). Если цель проваливает проверку она получает Средний Критический Эффект, с обычными для критических эффектов модификаторами урона и другими факторами.',
-				count:'1',
 			},
 		8 : {
 				name:'Зачарование: Анимировать конструкта',
@@ -547,7 +569,6 @@ var spellmagia = {
 				rangetype:'melee',
 				duration:'1 Час',
 				text:'Целевой неподвижный конструктоживает под контролем заклинателя на 1 час. По окончании заклинания, конструкт возвращается в неподвижную форму, и может быть оживлен позже. Заклинатель может контролировать только одного конструкта за раз.',
-				count:'1',
 			},
 		9 : {
 				name:'Зачарование: Анимировать конечность',
@@ -561,7 +582,6 @@ var spellmagia = {
 				range:'1',
 				rangetype:'melee',
 				text:'Целевая конечность оживает на число недель равное Обаянию (Charm) + Зачарованию (Enchanting) заклинателя (или меньше если пожелает заклинатель). Конечность под контролем персонажа к которому присоединена, это не обязательно заклинатель. Конечность должна была быть создана чтобы действовать как конечность, хотя она не обязана иметь форму или быть создана в форме природной конечности. Пневматические конечности описаны на стр. 178. Если персонаж владеет не-Пневматической заменой (такой как сшитая (stitched together) рука из плоти мертвецов) тогда TN требует C вместо t.',
-				count:'1',
 			},
 		10 : {
 				name:'Зачарование: Лечение',
@@ -575,7 +595,6 @@ var spellmagia = {
 				range:'1',
 				rangetype:'melee',
 				text:'Цель лечит 1/2/3 урона, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Каждый дополнительный раз когда персонаж является целью этого заклинания в течении часа, Сложность (TN) повышается на 3 либо требует дополнительно R (выбирает заклинатель). Если заклинание провалилось при лечении цели, цель не может получать магическое лечение от этой Магии до следующего восхода.',
-				count:'1',
 			},
 		11 : {
 				name:'Зачарование: Залатать',
@@ -589,7 +608,6 @@ var spellmagia = {
 				range:'1',
 				rangetype:'melee',
 				text:'Снимите одно состояние с цели, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Снимаемое состояние должно быть Критическим состоянием или состоянием помещенным на цель не магическим эффектом. Это 0 AP Действие если снимаемое состояние не Среднее или Тяжелое Критическое состояние. Если Среднее, то 1 AP Действие и если Тяжелое, то 2 AP Действие.',
-				count:'1',
 			},
 		12 : {
 				name:'Зачарование: Физическое усиление',
@@ -604,7 +622,6 @@ var spellmagia = {
 				rangetype:'melee',
 				duration:'1 Час',
 				text:'Цель получает следующее состояние на 1 час: "Физически усиленный +1: Этот персонаж добавляет +1 к своим Физическим Аспектам, до максимума в 5."',
-				count:'1',
 			},
 		13 : {
 				name:'Зачарование: Элементальное оружие',
@@ -619,7 +636,6 @@ var spellmagia = {
 				rangetype:'melee',
 				text:'Целевое оружие получает эффекты Элементального Иммуто, рассматривая оружие как если бы оно было Магией, которую изменял Иммуто. Эффект длится 1 минуту. Владелец оружия может сопротивляться, при этом, заклинание немедленно проваливается. Эта Магия может быть направлена на персонажа, позволяя его безоружным атакам получить преимущества Элементального Иммуто. Цель заклинания не получает урона от его эффекта (например не загорается от своих горящих кулаков).',
 				requirement:'Эта магия должна обязательно выбрать одно элементальное иммуто',
-				count:'1',
 			},
 		14 : {
 				name:'Зачарование: Перевоплощение',
@@ -632,7 +648,6 @@ var spellmagia = {
 				resist:'Wp',
 				duration:'1 Ход',
 				text:'Тело заклинателя превращается в  Зверя на 1 Ход. Заклинатель получает характеристику Зверь пока перевоплощен, как и все физические качества Зверя (например ядовитые когти или способность летать). Сложность этой Магии 10t, плюс разница между наивысшим физическим аспектом Зверя и наименьшим физическим аспектом заклинателя. Например, колдун со Скоростью(Speed) -2 (его низший аспект) превращается в существо с Силой(Might) +4 (его наивысший аспект), сложность(TN) будет 16t (10, плюс разница в 6).',
-				count:'1',
 			},
 		15 : {
 				name:'Некромантия: Зов',
@@ -645,7 +660,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'10',
 				text:'Целевой персонаж должен переместиться на свой аспект Движения по прямой к заклинателю и должен закончить движение насколько возможно близко к заклинателю.',
-				count:'1',
 			},
 		16 : {
 				name:'Некромантия: Погребение',
@@ -658,7 +672,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'5',
 				text:'Цель исчезает из реального мира. Она вернется в реальный мир в конце хода, появившись в безопасном месте в 1 ярде от заклинателя, не ощущая, что прошло время.',
-				count:'1',
 			},
 		17 : {
 				name:'Некромантия: Трупная маска',
@@ -673,7 +686,6 @@ var spellmagia = {
 				rangetype:'melee',
 				duration:'Восход или Закат',
 				text:'Персонаж снимает лицо с трупа и принимает внешность и голос, которыми тот обладал при жизни. Персонаж получает [+][+] ко всем попыткам выдать себя за личность. Этот эффект длится до следующего Восхода или Заката.',
-				count:'1',
 			},
 		18 : {
 				name:'Некромантия: Допрос',
@@ -686,7 +698,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'5',
 				text:'Заклинатель может задать один Да-Нет вопрос живой цели, плюс дополнительный вопрос за каждый Margin of Success. Персонаж получит правдивый ответ "Да", "Нет", или "Я не знаю" от цели, в меру возможностей цели.',
-				count:'1',
 			},
 		19 : {
 				name:'Некромантия: Контроль разума',
@@ -699,7 +710,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'5',
 				text:'Цель выполняет 1 AP Действие которое могла бы выполнить под контролем данного персонажа. Это Действие не может заставить цель принести себя в жертву напрямую, но может заставить выполнять действия противные его природе (например атаковать друзей). Заклинатель не может воздействовать на себя Контролем разума.',
-				count:'1',
 			},
 		20 : {
 				name:'Некромантия: Подъем немертвых',
@@ -713,7 +723,6 @@ var spellmagia = {
 				range:'5',
 				duration:'10 Минут',
 				text:'Целевой труп становится немертвым под контролем заклинателя на 10 минут. Немертвый претерпевает следующие изменения изначальной формы:<ul><li>Стойкость (Tenacity) немертвого повышается до 3 и все другие его Ментальные аспекты понижаются до -5.<li>Немертвый теряет характеристику Живой (если имел) и получает характеристику Немертвый.<li>Немертвый теряет любые ментальные навыки, которыми владел при жизни, а рейтинги физических навыков становятся в половину меньше (округляя вверх).</ul>Также, это заклинание может быть использовано для получения контроля над безконтрольным и не разумным немертвым созданием. Новому немертвому может потребоваться физическая починка (поскольку критический урон может сделать тело менее полезным). Иначе, труп поднят с половиной его Ран. По окончании заклинания, немертвый становится безконтрольным (и обычно агрессивным).',
-				count:'1',
 			},
 		21 : {
 				name:'Некромантия: Поглощение трупа',
@@ -727,7 +736,6 @@ var spellmagia = {
 				range:'1',
 				rangetype:'melee',
 				text:'Целевой труп обращается в прах. Заклинатель лечит 1/2/3 урона, плюс дополнительное число Ран равное Выносливости (Resilience) трупа  (если Выносливость положительная).',
-				count:'1',
 			},
 		22 : {
 				name:'Некромантия: Ужасающая аура',
@@ -741,7 +749,6 @@ var spellmagia = {
 				range:'5',
 				duration:'1 Минута',
 				text:'Цель получает сильную Ужасающую ауру на 1 минуту. Если Живой персонаж заканчивает движение в ауре 1 от цели, или атакует цель, он должен пройти Дуэль Ужаса (Horror Duel) сложностью TN 10. Смотрите стр. 219 для правил касательно Обреченных персонажей вызывающих дуэли Ужаса.',
-				count:'1',
 			},
 		23 : {
 				name:'Изменение: Прорицание',
@@ -755,7 +762,6 @@ var spellmagia = {
 				range:'100',
 				duration:'1 Час',
 				text:'Заклинатель входит в трнс, его тело обмякает. Находясь в трансе заклинатель может видеть и слышать как если бы находился в целевом местонахождении. Целевое местонахождение должно соответствовать всем обычным ограничениям на прицеливание заклинанием (дальность, Линия Видимости, прочее...). Эффект заклинания длится 1 час, либо когда заклинатель захочет прекратить. Заклинатель не может выполнять никаких действий находясь в трансе.',
-				count:'1',
 			},
 		24 : {
 				name:'Изменение: Телепорт',
@@ -768,7 +774,6 @@ var spellmagia = {
 				resist:'Wp',
 				range:'30',
 				text:'Цель в пределах дальности заклинания телепортируется в безопасное место в пределах дальности заклинания. Цель может решить поддаться телепортации, тогда заклинатель должен выполнить простую проверку. Объекты также можно телепортировать, но если объектом кто-то владеет, он может сопротивляться заклинанию.',
-				count:'1',
 			},
 		25 : {
 				name:'Изменение: Вызов (Conjuring)',
@@ -782,7 +787,6 @@ var spellmagia = {
 				range:'*',
 				rangetype:'*',
 				text:'Заклинатель призывает объект который предварительно был подготовлен к призыву. Объект появляется в его руках, и должен быть таким, который он может удержать двумя руками. Персонаж может подготовить объект к призыву легко коснувшись его или ментально сосредоточившись на нем. Персонаж может подготовить к призыву некоторое количество объектов, равное его аспекту Хитрости (Cunning), с минимумом в 1. Дальность этого заклинания равна аспекту Хитрости заклинателя в милях.',
-				count:'1',
 			},
 		26 : {
 				name:'Изменение: Невидимость',
@@ -797,7 +801,6 @@ var spellmagia = {
 				rangetype:'melee',
 				duration:'1 Раунд',
 				text:'Цель становится невидимой на 1 раунд. Невидимость немедленно спадает если персонаж взаимодействует с миром значительным образом,например атакуя, перемещая объект, или открывая двери. Любые попытки заметить персонажа получают [-][-][-] к проверке если ищущий полагается только на зрение пока персонаж невидим. Даже гвардеец услышавший шаги, например, поверит своим глазам когда повернувшись никого не увидит. Персонаж может быть замечен другими органами чувств, но не чувствами основанными на магическом "зрении" (способность видеть духов). Любые атаки против невидимого персонажа получают [-][-][-] к проверкам атаки(попадания). Если атака успешна, невидимость спадает.',
-				count:'1',
 			},
 		27 : {
 				name:'Изменение: Дешевые трюки',
@@ -811,7 +814,6 @@ var spellmagia = {
 				range:'*',
 				rangetype:'*',
 				text:'Заклинатель может выбрать один из следующих эффектов. Эти эффекты не могут быть использованы для прямого нанесения физического вреда цели, и любая ситуация приводящая к дуэли Сопротивления (Resist Duel) автоматически выигрывается Защитником, если он пожелает.<ul><li>Мгновенно почистить и починить одежду цели.<li>Создать короткий и простой звук, такой как слабый колокольчик или одно слово, слышимый всем в комнате.<li>Шепнуть короткое предложение в ухо кому-то кого вы можете видеть и которое услышит только эта личность.<li>Заставить легкий объект (как ключ или носовой платок) танцевать внутри маленькой площади (такой как поверхность кофейного столика).<li>Изменить вкус еды или напитка, например сделать воду на вкус как вишневый сок.<li>Зажечь свечу, фонарь, или иной объект предназначенный для зажигания, в пределах видимости.<li>Создать прозрачное и неподвижное изображение видимое всем в комнате.<li>Призвать маленькую сферу света, по яркости как фонарь, которая беспорядочно перемещается по комнате, или парит рядом с личностью.<li>Открыть незапертую дверь, окно, или ящик которые было бы легко открыть одной рукой и в пределах видимости.<li>Заставить приглушенную музыку звучать в комнате.</ul>',
-				count:'1',
 			},
 		28 : {
 				name:'Изменение: Фантазм',
@@ -826,125 +828,99 @@ var spellmagia = {
 				rangetype:'*',
 				duration:'1 Минута',
 				text:'Заклинатель создает подвижную иллюзию, которая кажется настоящей наблюдателям, на 1 минуту.<br>При создании, заклинатель должен заявить все детали иллюзии, как то, что она будет делать, и как будет восприниматься.<br>Иллюзия не реагирует на внешнее воздействие unless controlled by Заклинатель (see below).<br>Фантазм может быть увиден, услышан, и учуян, но не потроган и не попробован на вкус. При прикосновении, сквози иллюзию можно безвредно пройти. Покуда существо наблюдающее Фантазм не имеет причин сомневаться в нем, он автоматом обманывает наблюдателя.<br>Например персонаж никогда не бывшый в конкретной комнате, не заметит иллюзию стены скрывающую дверь о которой он не знал. Если у персонажа есть причина разуверится в иллюзии, как например видение умершего друга сидящего на стуле, он должен преуспеть в проверке Силы Воли (Wp) сложностью 10 чтобы перестать верить в иллюзию. Иначе он верит, что иллюзия реальна. Если персонаж вступает в физический контакт с иллюзией, он автоматом перестает верить в нее. Заклинатель может контролировать действия иллюзии с помощью 1 AP Действия. Иллюзия будет действовать согласно желанию заклинателя, и может даже изменить свою форму, в рамках эффекта. Также, заклинатель может развеять созданную им иллюзию в любой момент без затрат Действия.',
-				count:'1',
 			},
 		}
 var spellgenus = {
-		0 : {
-				TN:'0',
-				count:'1',
-			},
+		0 : {},
 		1 : {
 				name:'Зверь',
 				TN:'2',
 				text:'Заклинание действует на цели с характеристикой Зверь (Beast).',
-				count:'1',
 			},
 
 		2 : {
 				name:'Конструкт',
 				TN:'2',
 				text:'Заклинание действует на цели с характеристикой Конструкт (Construct).',
-				count:'1',
 			},
 		3 : {
 				name:'Живой',
 				TN:'1',
 				text:'Заклинание действует на цели с характеристикой Живой (Living).',
-				count:'1',
 			},
 		4 : {
 				name:'Местонахождение (Location)',
 				TN:'3',
 				text:'Заклинание действует на Местонахождение в пределах дальности. Любые цели в области которые обычно сопротивлялись бы заклинанию считаются автоматически прошедшими проверку сопротивления.',
-				count:'1',
 			},
 		5 : {
 				name:'Неподвижный',
 				TN:'3',
 				text:'Заклинание действует на объекты, которые не могут перемещаться по собственному желанию (Inanimate).',
-				count:'1',
 			},
 		6 : {
 				name:'Дух',
 				TN:'2',
 				text:'Заклинание действует на цели с характеристикой Дух (Spirits).',
-				count:'1',
 			},
 		7 : {
 				name:'Немертвый',
 				TN:'2',
 				text:'Заклинание действует на цели с характеристикой Немертвый (Undead).',
-				count:'1',
 			},
 		}
 var spellelemental = {
-		0 : {
-				TN:'0',
-				count:'1',
-			},
+		0 : {},
 		1 : {
 				name:'Тьма (Darkness)',
 				TN:'1',
 				text:'Персонаж получающий урон от Магии также получает состояние "Ослеплен" на 1 ход.<br>Эта Магия может быть использована несколько раз, увеличивая длительность состояния "Ослеплен" на 1 хож каждый раз.',
-				count:'1',
 			},
 
 		2 : {
 				name:'Разложение (Decay)',
 				TN:'1',
 				text:'Любой Немертвый персонаж получающий урон от Магии вместо этого вылечивает 1 рану.<br>Эта магия может быть использована несколько раз, увеличивая количество лечимого немертвым урона на 1 каждый раз.',
-				count:'1',
 			},
 		3 : {
 				name:'Электричество (Electric)',
 				TN:'3',
 				text:'Урон наносимый этой магией игнорирует броню. Также, атака не определяет цель случайным образом если цель связана боем.',
-				count:'1',
 			},
 		4 : {
 				name:'Огонь (Fire)',
 				TN:'2',
 				text:'Любой персонаж получающий урон от магии также получает состояние "Горение" +1.<br>Эта магия может быть использована несколько раз, увеличивая значение состояния "Горение" нп 1 каждый раз.',
-				count:'1',
 			},
 		5 : {
 				name:'Лёд (Ice)',
 				TN:'3',
 				text:'Любой персонаж получающий урон от магии также получает состояние "Замедлен".<br>Эта магия может быть использована дважды, и во второй раз, цель получает состояние "Паралич" вместо "Замедлен".',
-				count:'1',
 			},
 		6 : {
 				name:'Природа (Natural)',
 				TN:'2',
 				text:'Любой персонаж получающий урон от магии также получает состояние: "Укоренен: Этот персонаж не может заявлять Движение (Walk) или Нападение (Charge). Если этого персонажа толкают (pushed), снимите это состояние и персонаж получает 3 урона."',
-				count:'1',
 			},
 		7 : {
 				name:'Яд (Poison)',
 				TN:'1',
 				text:'Любой персонаж получающий урон от магии также получает состояние "Яд" +1.<br>Эта магия может быть использована несколько раз, увеличивая значение состояния "Яд" на 1 каждый раз.',
-				count:'1',
 			},
 		8 : {
 				name:'Дух (Spirit)',
 				TN:'4',
 				tnsuit:'',
 				text:'Урон наносимый этой магией игнорирует броню и способность "Тяжело ранить" (Hard to Wound).',
-				count:'1',
 			},
 		9 : {
 				name:'Ужас (Terror)',
 				TN:'1',
 				text:'Любой персонаж получающий урон от магии должен пройти дуэль Ужаса сложностью TN 6.<br>Эта магия может быть использована несколько раз, увеличивая сложность TN дуэли Ужаса на 1 каждый раз.',
-				count:'1',
 			},
 		}
 var spellalteration = {
-		0 : {
-				TN:'0',
-				resist:'0',
-			},
+		0 : {},
 		1 : {
 				name:'Альтернативное сопротивление',
 				TN:'2',
@@ -970,7 +946,7 @@ var spellalteration = {
 		4 : {
 				name:'Задержка [Special] (TN Variable)',
 				TN:'0',
-				text:'',
+				text:'The Spell is delayed, waiting for a set time to be released. When an Action with the Delay Immuto is taken the character spends the AP to cast the Spell and declares all targets as normal, but no other Spell effects are resolved and no Duels are made. Instead, when the Delay condition is met, the Spell takes effect and is resolved as normal, with no additional AP spent.<br>The caster may choose to not have the Spell take effect at the prescribed time, allowing the Spell to instead dissipate. There are two situations that can be chosen to resolve a delayed Spell:<ul><li>Turns (TN +2): The character chooses a number of turns (up to 10) of Dramatic Time that the Spell will be delayed. After that many turns have passed, the Spell takes effect. <li>Defined (TN +5): The character may define a situation in which the Spell will be cast, such as when an enemy walks through a location, or a key word is spoken. Unless made permanent through Harness Soulstone, this effect will dissipate, without resolving the Spell, at sunrise or sunset (whichever comes first). The defined situation must be an external event, it cannot be something that the Caster has control over (such as, "when I say the magic word"). The defined condition must be an event that the character cannot absolutely predict. For instance, he could set a Spell to cast when a door is opened, however, it would simply dissipate if the character then opened the door himself, or had a knowledgeable friend do it.<ul>',
 			},
 		5 : {
 				name:'Игнорировать заклинателя',
@@ -981,7 +957,7 @@ var spellalteration = {
 				name:'Объект фокусировки (TN Varies)',
 				TN:'0',
 				range:'0',
-				text:'',
+				text:'Это заклинание требует фокусировку для исполнения, позволяя заклинателю снизить сложность заклинания используя Объект Фокусировки (Focus Object). <br>При изучении данного Иммуто, выбирается Объект Фокусировки, который не может быть изменен позже. Однако персонаж может выучить несколько версий данного Иммуто.<br>Любые попытки исполнить заклинание с Иммуто Объект Фокусировки без Объекта Фокусировки, немедленно проваливаются.<br>Объект должен быть продемонстрирован для исполнения заклинания. Персонаж которому, например, для заклинания требуется волшебная палочка должен держать палочку в руке видимую всем. В случае не компактных объектов, он прросто должен быть виден всем и заклинатель должен его касаться (хотя многие заклинатели добавят чуточку шаманства в качестве проявления профессионализма). <br>Снижение сложности основано на портативности и обычности объекта (объедините оба параметра для финальной настройки). <br>Портативность: <ul><li><input type="radio" name="portability" checked="checked" value="0">-0 TN: Легкий объект который поместиться в небольшой карман, например монета или горсть бобов. <li><input type="radio" name="portability" value="-1">-1 TN: Объект который можно удерживать одной рукой и переносить в чехле/кобуре, например волшебная палочка или пистолет. <li><input type="radio" name="portability" value="-2">-2 TN: Объект который можно удерживать двумя руками, например посох или ружье. <li><input type="radio" name="portability" value="-3">-3 TN: Объекты которые не переместить без значительных усилий, например выгравированный круг призыва или большой железный котел. </ul>Обычность: <ul><li><input type="radio" name="commonality" checked="checked" value="0">-0 TN: Абсолютно обычный предмет который легко купить менее чем за 10§, например моток веревки или пистолет. <li><input type="radio" name="commonality" value="-1">-1 TN: Объект с некоторыми требованиями но разумно доступный, например пистолет конкретного производителя/модели или волшебная палочка сделанная из дуба. <li><input type="radio" name="commonality" value="-2">-2 TN: Объект который должен быть специально создан заклинателем или для него (требуя как минимум 2 часа работы), но который может быть заменен, например особый посох, или кастомизированное оружие/пневматическая конечность.<li><input type="radio" name="commonality" value="-3">-3 TN: Незаменимые объекты. Если объект потерян или уничтожен, - персонаж неудачник!</ul>',
 				portability:{
 					1:'0',
 					2:'-1',
@@ -997,20 +973,16 @@ var spellalteration = {
 			},
 		}
 var spellaugmentation = {
-		0 : {
-				TN:'0',
-				count:'1',
-			},
+		0 : {},
 		1 : {
 				name:'Дополнительная масть',
 				TN:'-2',
 				tnsuit:'*',
 				text:'Сложность (TN) заклинания получает дополнительную масть по выбору заклинателя.',
-				count:'1',
 			},
 		2 : {
 				name:'Изменение дальности (Увеличение)',
-				TN:'0',
+				TN:'2',
 				rangesteptype:'increase',
 				rangestep:{
 					1:'1',
@@ -1029,7 +1001,7 @@ var spellaugmentation = {
 			},
 		3 : {
 				name:'Изменение дальности (Уменьшение)',
-				TN:'0',
+				TN:'-2',
 				rangesteptype:'decrease',
 				rangestep:{
 					1:'1',
@@ -1084,7 +1056,7 @@ var spellaugmentation = {
 					11:'6 Месяцев',
 					12:'1 Год',
 				},
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Each time it is taken move the Spell duration down the Duration Step table one step.<ul>1 Ход<li>2 Ход<li>3 Ход<li>1 Минута<li>10 Минут<li>1 Час<li>Восход или Закат<li>1 День<li>1 Неделя<li>1 Месяц<li>6 Месяцев<li>1 Год<li></ul>Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Each time it is taken move the Spell duration down the Duration Step table one step.<ul><li>1 Ход<li>2 Ход<li>3 Ход<li>1 Минута<li>10 Минут<li>1 Час<li>Восход или Закат<li>1 День<li>1 Неделя<li>1 Месяц<li>6 Месяцев<li>1 Год</ul>Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
 				count:'12',
 			},
 		7 : {
@@ -1112,7 +1084,6 @@ var spellaugmentation = {
 				name:'Пульс',
 				TN:'4',
 				text:'The Spell affects every legal target within an area around the initial target. If the target of the Spell is hit, then every character within 1 yard that could be affected by the Spell must succeed on a TN 10 Duel, using the same defense as the initial target. Any character that fails the Duel also suffers the results of the pulse. If damage is dealt they automatically suffer Weak damage.',
-				count:'1',
 			},
 		11 : {
 				name:'Снижение ОД (AP)',
@@ -1146,13 +1117,11 @@ var spellaugmentation = {
 				name:'Reduce Severity',
 				TN:'-3',
 				text:'Если заклинание наносит фиксированное количество урона, вместо проверки Урона, Магия не наносит урон. Все другие эффекты Магии остаются прежними. Цели что получили бы эффект только при получении урона все еще получают эффект от Магии.',
-				count:'1',
 			},
 		15 : {
 				name:'Выбор целей',
 				TN:'4',
 				text:'Заклинание не оказывает эффекта на персонажей в которых заклинатель не хочет целиться (хотя вспомогательные эффекты все еще могут на них влиять).',
-				count:'1',
 			},
 		}
 
@@ -1201,6 +1170,7 @@ function spellParts(part){
 	var counterval = $('<div/>')
 
 	if(part == spellmagia){
+		div.attr('id','magia-count-div')
 		counter.attr('id','magia-count')
 		countermin.attr('id','magia-count-min')
 		countermax.attr('id','magia-count-max')
@@ -1208,6 +1178,7 @@ function spellParts(part){
 		$('#magia').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellgenus){
+		div.attr('id','genus-count-div')
 		counter.attr('id','genus-count')
 		countermin.attr('id','genus-count-min')
 		countermax.attr('id','genus-count-max')
@@ -1215,6 +1186,7 @@ function spellParts(part){
 		$('#genus').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellelemental){
+		div.attr('id','elemental-count-div')
 		counter.attr('id','elemental-count')
 		countermin.attr('id','elemental-count-min')
 		countermax.attr('id','elemental-count-max')
@@ -1222,6 +1194,7 @@ function spellParts(part){
 		$('#elemental').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellalteration){
+		div.attr('id','alteration-count-div')
 		counter.attr('id','alteration-count')
 		countermin.attr('id','alteration-count-min')
 		countermax.attr('id','alteration-count-max')
@@ -1229,6 +1202,7 @@ function spellParts(part){
 		$('#alteration').after(div.append(counter).append(countermin).append(countermax).append(counterval))
 	}
 	else if(part == spellaugmentation){
+		div.attr('id','augmentation-count-div')
 		counter.attr('id','augmentation-count')
 		countermin.attr('id','augmentation-count-min')
 		countermax.attr('id','augmentation-count-max')

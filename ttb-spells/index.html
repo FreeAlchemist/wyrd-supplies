@@ -5,72 +5,34 @@
 	<meta charset="UTF-8"/>
 	<!-- <link rel="stylesheet" type="text/css" href="../css/global.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="../symbol/symbol.css">
 	<link rel="icon" type="image/png" href="../img/malifaux.png" sizes="160x160">
 </head>
 <body>
 	<div class="spellmenu">
 		<div class="spellmenu">
 		<a href="../index.html" class="btn btn-main">Главное меню</a>
-		<input type="button" id="log" value="Отладка"></input>
+		<input type="button" id="log" value="Справка"></input>
 		</div>
 		<div class="spellmenu">
 			<div class="float-left">
-				<div class="spelltitle">Magia</div>
-				<div class="spelltitle-text">
-					Sorcery Magia
-The Magia of Sorcery creates temporary effects that
-typically have obvious combat applications. Sorcery,
-as a general rule, creates elemental effects such as fire.
-These “elemental” effects aren’t just the traditional
-elements, but also include such concepts as force,
-poison, and a variety of other options.
-
-Enchanting Magia
-Enchantment is the art of magically augmenting a
-target. Whether imbuing a sword so that it is constantly
-freezing to the touch, or healing the wounds of a friend,
-Enchanting Magia usually enhances a target in some way.
-
-Necromancy
-The so-called "Dark Art" of Necromancy is, to its
-practitioners, an art of life, death, and the very substance
-of human existence. Necromancy Magia deals with the
-ephemeral energies of thought and death.
-
-Prestidigitation Magia
-The arts included in Prestidigitation are more than simply
-producing something from nothing. Prestidigitation
-Magia governs anything with illusion, space, and the
-corresponding locations of objects within that space.
-				</div>
+				<div class="spelltitle">Магия</div>
 				<select name="magia" id="magia" size="1" class="spellpart spellpart-magia"></select>
 			</div>
 			<div class="float-left">
-				<div class="spelltitle">genus</div>
-				<div class="spelltitle-text">
-				These Immuto have two functions, in that they can add a legal target to a Spell, or remove all others. These are referred to as Unleashing and Chaining the Spell, respectively. A Spell may only have one Genus Immuto placed on it. Each Genus's target modifier is listed without a positive or negative value. This is because the TN for the Spell is raised by the noted value when the Spell is Unleashed, and the TN is lowered when the Spell is Chained. Unleashing a Spell If a Spell lists a specific target other than the target type of the Genus Immuto, then the Immuto will add the noted Genus to the legal targets of the Spell. For instance, the Interrogate Spell allows the caster to ask questions of a Living target. If the caster added the undead Genus to the Spell, it would allow the character to ask questions of an undead target. Unleashing a Spell requires Fatemaster consent, as many Spells simply won't have a way to resolve against some target types. While creatively rationalizing or resolving such things is the very essence of magic, it is ultimately up to the Fatemaster to determine how Unleashing a Spell works in these odd situations, if it works at all. When a Spell has an Unleashed Genus, it increases the TN by the Genus's TN modifier. Chaining a Spell If a Spell can already target the Genus's subject, then the Spell becomes Chained to the Genus. The Spell can only choose targets with the noted Genus.
-				</div>
+				<div class="spelltitle">Генус</div>
 				<select name="genus" id="genus" size="1" class="spellpart spellpart-genus"></select>
 			</div>
 			<div class="float-left">
-				<div class="spelltitle">elemental</div>
-				<div class="spelltitle-text">
-					Elemental Immuto are a sub-set of Immuto that add elemental effects to some Spells. Along with the more "traditional" four elements, Elemental Immuto include a variety of other types of environmental effects. A Spell may only have one Elemental Immuto placed on it.
-				</div>
+				<div class="spelltitle">Элемент</div>
 				<select name="elemental" id="elemental" size="1" class="spellpart spellpart-elemental"></select>
 			</div>
 			<div class="float-left">
-				<div class="spelltitle">alteration</div>
-				<div class="spelltitle-text">
-					
-				</div>
+				<div class="spelltitle">Альтерация</div>
 				<select name="alteration" id="alteration" size="1" class="spellpart spellpart-alteration"></select>
 			</div>
 			<div class="float-left">
-				<div class="spelltitle">augmentation</div>
-				<div class="spelltitle-text">
-					These Immuto enhance the way a Magia performs, usually by increasing numeric values inherent to the Spell's effect.
-				</div>
+				<div class="spelltitle">Аугментация</div>
 				<select name="augmentation" id="augmentation" size="1" class="spellpart spellpart-augmentation"></select>
 			</div>
 		</div>
@@ -78,26 +40,68 @@ corresponding locations of objects within that space.
 	<div id="spell">
 		<div id="spellTotal">
 			<div class="float-left spellpart spellpart-total card" id="total-info"></div>
-			<!-- <div id="spellText"></div> -->
-			<!-- <div id="spellTNtext" class="float-left">Total TN:</div> -->
-			<!-- <div id="spellTNnum" class="float-left"></div> -->
-
-			<!-- <div id="spellAPtext" class="float-left">Total AP:</div> -->
-			<!-- <div id="spellAPnum" class="float-left"></div> -->
 		</div>
-		<!-- <hr> -->
 		<div class="float-left spellpart card log" id="magia-info"></div>
 		<div class="float-left spellpart card log" id="genus-info"></div>
 		<div class="float-left spellpart card log" id="elemental-info"></div>
 		<div class="float-left spellpart card log" id="alteration-info"></div>
 		<div class="float-left spellpart card log" id="augmentation-info"></div>
-		<!-- <hr> -->
-		
-
 	</div>
 	<div id="copyright" class="copyright">
 		<p>Web part, translation to russian, <a href="http://www.github.com/freealchemist">FreeAlchemist</a></p>
 		<p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>
+	</div>
+	<div id="info">
+		<p>
+			<h2>МАГИЯ (MAGIA)</h2>
+			<h3>Волшебство (Sorcery)</h3>
+			Магия волшебства создает временные эффекты обычно имеющие однозначно боевое применение.<br>Волшебство как правило создает элементальные эффекты, такие как пламя.<br>Эти “элементальные” эффекты не только традиционные, но также включают всебя такие вещи как Сила, Яд и некоторые другие.
+			<h3>Зачарование (Enchanting)</h3>
+			Зачарование это искусство магического усиления цели.<br>Наполняя клинок так, что он замораживает прикосновением или излечивая раны друга, Магия зачарования обычно так или иначе расширяет возможности цели.
+			<h3>Некромантия (Necromancy)</h3>
+			Так называемое "Темное искусство" Некромантии является, для прктикующих его, искусством жизни, смерти, и самой сущности человеческого существования.<br>Магия Некромантии имеет дело с эфемерными энергиями мысли и смерти.
+			<h3>Изменение (Prestidigitation)</h3>
+			Искусства включенные в Изменение больше чем просто создание чего-то из ничего.<br>Магия изменения включает все связанное с иллюзиями, пространством и соответствующим положением объектов в данном пространстве.
+		</p>
+		<p>
+			<h2>ИММУТО (IMMUTO)</h2>
+			<h3>Генус (Genus)</h3>
+			Эти иммуто имеют две функции, они могут добавить законную цель к заклинанию, либо убрать все остальные.<br>
+			Они называются Высвобождение (Unleashing) и Связывание (Chaining), соответственно.<br>
+			<b>Заклинание может иметь только одно генус иммуто на нем.</b><br>
+			Модификатор для каждого генуса указан без положительного или отрицательного значения. Сложность (TN) заклинания увеличивается на указанное значение когда заклинание Высвобождается, и сложность понижается когда заклинание Связывается.<br>
+			<p><b>Высвобождение заклинания</b> Если в заклинании указана конкретная цель отличная от типа цели в указанном генус иммуто, то иммуто добавит указанный генус к законным целям заклинания.<br>
+			Например, заклинание Допрос позволяет заклинателю задавать вопросы Живой (Living) цели. Если заклинатель добавил генус Немертвый к заклинанию, это позволит персонажу задавать вопросы Немертвой цели.<br>
+			Высвобождение заклинания требует согласия Мастера Судьбы, поскольку многие заклинания просто не будут иметь пути исполнения против некоторых видов целей.<br>
+			В то время как творческая рационализация или разрешения подобных вещей являются самой сутью магии, итоговое решение о том как Высвобождение заклинания работает в столь странных ситуациях, если работает вообще, остается за Мастером Судьбы. Когда к заклинанию добавляется Высвобожденный генус, он повышает его сложность на свой модификатор.</p>
+			<p><b>Связывание заклинания</b> Если заклинание уже может выбирать целью указанный генус, заклинание становится связанным с этим генусом. Заклинание может выбирать целью только объекты с указанным генусом.</p>
+			<h3>Элемент (Elemental)</h3>
+			Элементальные иммуто это подвид иммуто, добавляющий элементальные эффекты к некоторым заклинаниям.<br>
+			Наряду с более "традиционными" четырьмя элементами, Элементальные иммуто включают ряд других типов окружающих эффектов.<br>
+			<b>Заклинание может иметь только одно элементальное иммуто на нем.</b>
+			<h3>Альтерация (Alteration)</h3>
+			Эти иммуто меняют эффекты заклинания, изменяя способ его действия, без увеличения числовых значений.<br>
+			Они могут стать для заклинателя способом создать уникальные эффекты совмещающие заклинания, или просто заставить их действовать странным образом.
+			<h3>Аугментация (Augmentation)</h3>
+			Эти иммуто расширяют способ действия Магии, обычно увеличивая числовые значения эффекта заклинания.
+		</p>
+		<div class="symbol-info">
+			<span class="symbol aura"></span>Аура<br>
+			<span class="aura">1</span>Аура<br>
+			<span class="symbol pulse"></span>Пульс<br>
+			<span class="symbol blast"></span>Взрыв<br>
+			<h3>Модификаторы</h3>
+			<span class="symbol minus"></span>Минус<br>
+			<span class="symbol plus"></span>Плюс<br>
+			<h3>Тип атаки</h3>
+			<span class="symbol melee"></span>Ближняя<br>
+			<span class="symbol projectile"></span>Стрелковая<br>
+			<h3>Масти</h3>
+			<span class="symbol ram"></span>Бараны<br>
+			<span class="symbol tome"></span>Книги<br>
+			<span class="symbol crow"></span>Перья<br>
+			<span class="symbol mask"></span>Маски<br>
+		</div>
 	</div>
 
 

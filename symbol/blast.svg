@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 blast.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229372in" height="0.229026in"
+		viewBox="0 0 16.5148 16.4898" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(0.75,-0.75)">
+			<title>Лист.4</title>
+			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+			<image x="0" y="1.5" width="15.0148" height="14.9898" preserveAspectRatio="none" xlink:href="data:image/png;base64,i
+						VBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DA
+						cdvqGQAAAHGSURBVDhPY/hPAcCp+dWJ+cuaMuuKC6av2gUVwgBYNH+9uXJZvqkiAxxoBs/Erh9F897e9NIYI0NOqCZUoGAcXbP94kWoU
+						jBAaH6zNkIaqg4n4Imf8fjldagGZM37S7WhSvAA8ei5p89BNcA135kXoAaVJwSUMzZehToeqrlOgwMqRxioJy49DNEF1RwJlSAGaCQuQ
+						9U8O1gGKkUQqGRuunEFogsRYNc2TFw0pWvdpGh7qCpkwK9b2L2+LzkjqWzF0dNQDcia4WCum6iSspQgA4OYo50zRC9n8OwzKDEMAVg03
+						5npLqatoccg7pSbEMHAwC0vIx024c7zq1BpJIBFMxDk+EdWuMj4T+1qEZdwDq9Yc+YsVAIVYNd8tMrYSN8ub82qNXFm7hbxyy9fhkqgA
+						oTm55sKoiMTm9t7tmxbsTbDv6Y3JTnIITBt4v4plXN2LN4yu35SRXhkSNfVJ9CgBgIUmy9MjUpqmbS80i8qt6Q5xCYiwSfENKRvQmZ0Q
+						NyEaVnhVlkbzyHSJhAgND/Y1jmlJiRARt/XXYkbEshwIG/iYiKpHpTR0T3j/E1EsCM0LwkUhSrFAzidm/achGrAFWBEgf//AZfvvMX2B
+						TZDAAAAAElFTkSuQmCC"/>
+			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+		</g>
+	</g>
+</svg>

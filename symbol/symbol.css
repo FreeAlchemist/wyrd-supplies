@@ -1,0 +1,38 @@
+/*<link rel="stylesheet" type="text/css" href="../symbol/symbol.css">*/
+/*
+<span class="symbol aura"/>
+<span class="symbol blast"/>
+<span class="symbol crow"/>
+<span class="symbol mask"/>
+<span class="symbol melee"/>
+<span class="symbol minus"/>
+<span class="symbol plus"/>
+<span class="symbol projectile"/>
+<span class="symbol pulse"/>
+<span class="symbol ram"/>
+<span class="symbol tome"/>
+*/
+.symbol-info{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+.symbol{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.symbol.aura{background-image: url('../symbol/aura.svg');}
+.symbol.blast{background-image: url('../symbol/blast.svg');}
+.symbol.crow{background-image: url('../symbol/crow.svg');}
+.symbol.mask{background-image: url('../symbol/mask.svg');}
+.symbol.melee{background-image: url('../symbol/melee.svg');}
+.symbol.minus{background-image: url('../symbol/minus.svg');}
+.symbol.plus{background-image: url('../symbol/plus.svg');}
+.symbol.projectile{background-image: url('../symbol/projectile.svg');}
+.symbol.pulse{background-image: url('../symbol/pulse.svg');}
+.symbol.ram{background-image: url('../symbol/ram.svg');}
+.symbol.tome{background-image: url('../symbol/tome.svg');}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 aura.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229372in" height="0.229026in"
+		viewBox="0 0 16.5148 16.4898" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(0.75,-0.75)">
+			<title>Лист.4</title>
+			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+			<image x="0" y="1.5" width="15.0148" height="14.9898" preserveAspectRatio="none" xlink:href="data:image/png;base64,i
+						VBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DA
+						cdvqGQAAAJcSURBVDhPY/iPCn4+v/L91aUPt/bePrz88JYl547vfXr30s+XV6HSqABF87dra3f0xidbiDKgADF1z6TW2asfPLoGVQcDC
+						M2np4bZOsa2JGlxQ/UgAw5pO2tTjdCOtbugqsEAqnl7gR5Ij0DE/AXpVhD1yMCsYMnSjCABIEsjoGcDRAsQgDQfKAXrBAF2uZjsWi+Qs
+						7kNfNLCdZVAgjox3aVZ4iAWGGgGz4Daz/BkeagaVBQCdCLrqsrt1SIXHvr+eHmvkYhJQevcLHWoJARw+Uw4ch6kuduEEyoEB0rxCw8ff
+						HL3yo8XZ27vW3dquocKVAIBeOKmPXh+lUEbykUGHPIFi54/u/L16eUvZ1viQF7FAFzBs89chLLRgU7l0cdXvjw9faXfGiqCDhQjFx2CM
+						tGBTtWJp9d+vDiyp0ARKoIBpOvWQFlogDtu2iNgUnu2bVmQMFQIA+DSzKfftuHT4/OfH21cEigEFcMAuDSrJyw++PXJ+a+Pt66JFoOKo
+						QNpzxn7GCShHGRgUrP1xOsdXSsOHrzUbQoVQwceE45dZmgzwohnBpPqrTt35ytwuzefWJ+oCxVEATyRk+++vMlwf6EfRhowqV47vU2Lg
+						4HBqWPjhApMt3F5dR48B0phQLwpEzX1MZhUdmX5gBgy/rMWYAS4ZtD0naCUDc9VyzJ0kHKiV09bkDyYJV7YPCsYSTOXbeasbRAtQIDIz
+						2fnpsTo8oJUmBQv7bUDqwVmxtxJFTpglqhmSMnS/UehqsEAoRkCji2ubssLTjCHJ2iT7Paa4ti8+eu2QlXAwf//AHr9jGTjIH28AAAAA
+						ElFTkSuQmCC"/>
+			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+		</g>
+	</g>
+</svg>

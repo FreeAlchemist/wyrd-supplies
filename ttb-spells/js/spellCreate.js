@@ -146,10 +146,10 @@ function createspell(){
 //NAME
 	var name = ''
 	if(spellmagia[magia].name){name +=spellmagia[magia].name}
-	if(spellgenus[genus].name){name +='<br>Genus: '+spellgenus[genus].name+' x'+genuscount}
-	if(spellelemental[elemental].name){name +='<br>Elemental: '+spellelemental[elemental].name+' x'+elementalcount}
-	if(spellalteration[alteration].name){name +='<br>Alteration: '+spellalteration[alteration].name+' x'+alterationcount}
-	if(spellaugmentation[augmentation].name){name +='<br>Augmentation: '+spellaugmentation[augmentation].name+' x'+augmentationcount}
+	if(spellgenus[genus].name){name +='<br>Genus: '+spellgenus[genus].name+' x'+genuscount+' TN: '+parseInt(spellgenus[genus].TN)*parseInt(genuscount)}
+	if(spellelemental[elemental].name){name +='<br>Elemental: '+spellelemental[elemental].name+' x'+elementalcount+' TN: '+parseInt(spellelemental[elemental].TN)*parseInt(elementalcount)}
+	if(spellalteration[alteration].name){name +='<br>Alteration: '+spellalteration[alteration].name+' x'+alterationcount+' TN: '+parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)}
+	if(spellaugmentation[augmentation].name){name +='<br>Augmentation: '+spellaugmentation[augmentation].name+' x'+augmentationcount+' TN: '+parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)}
 //STORY
 	var story = ''
 		if(spellmagia[magia].story){
@@ -242,7 +242,7 @@ function createspell(){
 	if(spellelemental[elemental].resist){extraresist += parseInt(spellelemental[elemental].resist)*parseInt(elementalcount)}
 	if(spellalteration[alteration].resist){extraresist += parseInt(spellalteration[alteration].resist)*parseInt(alterationcount)}
 	if(spellaugmentation[augmentation].resist){extraresist += parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)}
-	if(extraresist != 0){resist = resist+extraresist}
+	if(extraresist != 0){resist = resist+' + '+extraresist}
 	if(spellmagia[magia].resist == '-'){resist = '-'}
 
 //RANGE
@@ -292,9 +292,11 @@ function createspell(){
 		}
 		if(range < 1){range = 1	}
 		if(range == 999){range = 'Anywhere in Sight'}
+		if(rangetype == 'melee'){rangetype = '<span class="symbol melee"/>'}
+		if(rangetype == 'projectile'){rangetype = '<span class="symbol projectile"/>'}
 		range = rangetype+': '+range
 	}
-	if(range == 999){range = 'Anywhere in Sight'}
+	if(range == 999){range = 'В пределах видимости'}
 	console.log('total range: '+range)
 //DAMAGE	
 	var damage = ''
@@ -449,9 +451,10 @@ $("#alteration").change(function(){createspell()})
 $("#augmentation").change(function(){createspell()})
 
 $("#log").click(function(){
-	$(".log").toggle()
+	$("#info").toggle()
+	if($("#log").attr('value') == 'Справка'){$("#log").attr('value','Скрыть справку')}
+	else{$("#log").attr('value','Справка')}
 })
-
 
 var spellmagia = {
 		1 : {
@@ -462,15 +465,12 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'5',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'WP',
 				range:'5',
 				damagesmall:'1',
 				damagemoderate:'2',
 				damagesevere:'3',
-				damagesmalltext:'',
-				damagemoderatetext:'',
-				damageseveretext:'',
 				requirement:'Эта магия должна содержать как минимум одно элементальное иммуто.',
 			},
 
@@ -482,7 +482,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'3',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'Df',
 				range:'5',
 				rangetype:'projectile',
@@ -498,7 +498,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'3',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'Df',
 				range:'2',
 				rangetype:'melee',
@@ -515,7 +515,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'7',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Wp',
 				range:'5',
 				text:'Заклинатель может перемещать целевой объект как если бы тот был поднят и носим персонажем с Силой (Might) равной Стойкости (Tenacity) заклинателя, и Скоростью (Speed) равной Хитрости (Cunning) заклинателя. Если цель неподвижна, она не сопротивляется этому Действию и заклинателю нужно просто пройти проверку требуемой сложности (TN) для перемещения объекта. Если заклинатель пытается переместить объект несомый другим персонажем, то персонаж держащий объект может сопротивляться заклинанию. Заклинатель может решить поддерживать данное заклинание, перемещая объект от хода к ходу. В таком случае заклинание не требуется исполнять снова (оно уже успешно исполнено). Заклинатель не может исполнять другие заклинания при поддержании телекинеза, и перемещение объекта требует (1) ОД Действие (AP Action), как если бы заклинание исполнялось снова. Заклинатель может выполнять атаки удерживаемым таким образом объектом, выполняя стандартную атаку ближнего боя используя навык подходящий к предмету (например Ближний бой (Melee) для меча), но заменяя соответствующий аспект на Интеллект.',
@@ -527,7 +527,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'7',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Df',
 				range:'5',
 				text:'Цель толкается на расстояние в ярдах равное Стойкости заклинателя, по прямой от заклинателя.',
@@ -539,7 +539,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'2',
 				TN:'10',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'-',
 				range:'3',
 				text:'Если цель Живая, она должна пройти проверку Бессознательности (Unconsciousness Challenge) сложностью (TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку Бессознательности, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно).',
@@ -551,7 +551,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'2',
 				TN:'10',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'-',
 				range:'3',
 				text:'Если цель Живая, она должна пройти проверку Выносливости(Toughness) + Стойкости(Resilience) сложностью(TN) 10. Сложность (TN) проверки увеличивается на 2 за каждый Margin of Success полученный заклинателем. Цель не сопротивляется этому заклинанию, она должна пройти проверку, если заклинание успешно. Это задает фиксированный набор сложности для многих персонажей Мастера Судьбы (поскольку значение проверки для них не случайно). Если цель проваливает проверку она получает Средний Критический Эффект, с обычными для критических эффектов модификаторами урона и другими факторами.',
@@ -563,7 +563,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'1',
 				TN:'10',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
@@ -577,7 +577,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'1',
 				TN:'10',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
@@ -590,11 +590,11 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'1',
 				TN:'7',
-				tnsuit:'r',
+				tnsuit:'<span class="symbol ram"/>',
 				resist:'Wp',
 				range:'1',
 				rangetype:'melee',
-				text:'Цель лечит 1/2/3 урона, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Каждый дополнительный раз когда персонаж является целью этого заклинания в течении часа, Сложность (TN) повышается на 3 либо требует дополнительно R (выбирает заклинатель). Если заклинание провалилось при лечении цели, цель не может получать магическое лечение от этой Магии до следующего восхода.',
+				text:'Цель лечит 1/2/3 урона, если она Живая. Цель может решить не сопротивляться, делая заклинание простой проверкой. Каждый дополнительный раз когда персонаж является целью этого заклинания в течении часа, Сложность (TN) повышается на 3 либо требует дополнительно <span class="symbol ram"/> (выбирает заклинатель). Если заклинание провалилось при лечении цели, цель не может получать магическое лечение от этой Магии до следующего восхода.',
 			},
 		11 : {
 				name:'Зачарование: Залатать',
@@ -603,7 +603,7 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'012',
 				TN:'10',
-				tnsuit:'r',
+				tnsuit:'<span class="symbol ram"/>',
 				resist:'Wp',
 				range:'1',
 				rangetype:'melee',
@@ -616,7 +616,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'1',
 				TN:'7',
-				tnsuit:'r',
+				tnsuit:'<span class="symbol ram"/>',
 				resist:'Df',
 				range:'1',
 				rangetype:'melee',
@@ -630,7 +630,7 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'2',
 				TN:'8',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'Special',
 				range:'1',
 				rangetype:'melee',
@@ -644,10 +644,10 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'1',
 				TN:'*',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'Wp',
 				duration:'1 Ход',
-				text:'Тело заклинателя превращается в  Зверя на 1 Ход. Заклинатель получает характеристику Зверь пока перевоплощен, как и все физические качества Зверя (например ядовитые когти или способность летать). Сложность этой Магии 10t, плюс разница между наивысшим физическим аспектом Зверя и наименьшим физическим аспектом заклинателя. Например, колдун со Скоростью(Speed) -2 (его низший аспект) превращается в существо с Силой(Might) +4 (его наивысший аспект), сложность(TN) будет 16t (10, плюс разница в 6).',
+				text:'Тело заклинателя превращается в  Зверя на 1 Ход. Заклинатель получает характеристику Зверь пока перевоплощен, как и все физические качества Зверя (например ядовитые когти или способность летать). Сложность этой Магии 10<span class="symbol tome"/>, плюс разница между наивысшим физическим аспектом Зверя и наименьшим физическим аспектом заклинателя. Например, колдун со Скоростью(Speed) -2 (его низший аспект) превращается в существо с Силой(Might) +4 (его наивысший аспект), сложность(TN) будет 16<span class="symbol tome"/> (10, плюс разница в 6).',
 			},
 		15 : {
 				name:'Некромантия: Зов',
@@ -656,7 +656,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'2',
 				TN:'10',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Wp',
 				range:'10',
 				text:'Целевой персонаж должен переместиться на свой аспект Движения по прямой к заклинателю и должен закончить движение насколько возможно близко к заклинателю.',
@@ -668,7 +668,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'10',
-				tnsuit:'c',
+				tnsuit:'<span class="symbol crow"/>',
 				resist:'Wp',
 				range:'5',
 				text:'Цель исчезает из реального мира. Она вернется в реальный мир в конце хода, появившись в безопасном месте в 1 ярде от заклинателя, не ощущая, что прошло время.',
@@ -680,12 +680,12 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'2',
 				TN:'10',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
 				duration:'Восход или Закат',
-				text:'Персонаж снимает лицо с трупа и принимает внешность и голос, которыми тот обладал при жизни. Персонаж получает [+][+] ко всем попыткам выдать себя за личность. Этот эффект длится до следующего Восхода или Заката.',
+				text:'Персонаж снимает лицо с трупа и принимает внешность и голос, которыми тот обладал при жизни. Персонаж получает <span class="symbol plus"/><span class="symbol plus"/> ко всем попыткам выдать себя за личность. Этот эффект длится до следующего Восхода или Заката.',
 			},
 		18 : {
 				name:'Некромантия: Допрос',
@@ -694,7 +694,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'12',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Wp',
 				range:'5',
 				text:'Заклинатель может задать один Да-Нет вопрос живой цели, плюс дополнительный вопрос за каждый Margin of Success. Персонаж получит правдивый ответ "Да", "Нет", или "Я не знаю" от цели, в меру возможностей цели.',
@@ -706,7 +706,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'1',
 				TN:'10',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Wp',
 				range:'5',
 				text:'Цель выполняет 1 AP Действие которое могла бы выполнить под контролем данного персонажа. Это Действие не может заставить цель принести себя в жертву напрямую, но может заставить выполнять действия противные его природе (например атаковать друзей). Заклинатель не может воздействовать на себя Контролем разума.',
@@ -718,7 +718,7 @@ var spellmagia = {
 				aspect:'Обаяние',
 				AP:'1',
 				TN:'5',
-				tnsuit:'c',
+				tnsuit:'<span class="symbol crow"/>',
 				resist:'-',
 				range:'5',
 				duration:'10 Минут',
@@ -731,7 +731,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'5',
-				tnsuit:'c',
+				tnsuit:'<span class="symbol crow"/>',
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
@@ -744,7 +744,7 @@ var spellmagia = {
 				aspect:'Стойкость',
 				AP:'1',
 				TN:'12',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'Wp',
 				range:'5',
 				duration:'1 Минута',
@@ -757,11 +757,11 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'2',
 				TN:'10',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'-',
 				range:'100',
 				duration:'1 Час',
-				text:'Заклинатель входит в трнс, его тело обмякает. Находясь в трансе заклинатель может видеть и слышать как если бы находился в целевом местонахождении. Целевое местонахождение должно соответствовать всем обычным ограничениям на прицеливание заклинанием (дальность, Линия Видимости, прочее...). Эффект заклинания длится 1 час, либо когда заклинатель захочет прекратить. Заклинатель не может выполнять никаких действий находясь в трансе.',
+				text:'Заклинатель входит в транс, его тело обмякает. Находясь в трансе заклинатель может видеть и слышать как если бы находился в целевом местонахождении. Целевое местонахождение должно соответствовать всем обычным ограничениям на прицеливание заклинанием (дальность, Линия Видимости, прочее...). Эффект заклинания длится 1 час, либо когда заклинатель захочет прекратить. Заклинатель не может выполнять никаких действий находясь в трансе.',
 			},
 		24 : {
 				name:'Изменение: Телепорт',
@@ -770,7 +770,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'10',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'Wp',
 				range:'30',
 				text:'Цель в пределах дальности заклинания телепортируется в безопасное место в пределах дальности заклинания. Цель может решить поддаться телепортации, тогда заклинатель должен выполнить простую проверку. Объекты также можно телепортировать, но если объектом кто-то владеет, он может сопротивляться заклинанию.',
@@ -782,7 +782,7 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'2',
 				TN:'10*',
-				tnsuit:'t',
+				tnsuit:'<span class="symbol tome"/>',
 				resist:'-',
 				range:'*',
 				rangetype:'*',
@@ -795,12 +795,12 @@ var spellmagia = {
 				aspect:'Хитрость',
 				AP:'2',
 				TN:'7',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'-',
 				range:'1',
 				rangetype:'melee',
 				duration:'1 Раунд',
-				text:'Цель становится невидимой на 1 раунд. Невидимость немедленно спадает если персонаж взаимодействует с миром значительным образом,например атакуя, перемещая объект, или открывая двери. Любые попытки заметить персонажа получают [-][-][-] к проверке если ищущий полагается только на зрение пока персонаж невидим. Даже гвардеец услышавший шаги, например, поверит своим глазам когда повернувшись никого не увидит. Персонаж может быть замечен другими органами чувств, но не чувствами основанными на магическом "зрении" (способность видеть духов). Любые атаки против невидимого персонажа получают [-][-][-] к проверкам атаки(попадания). Если атака успешна, невидимость спадает.',
+				text:'Цель становится невидимой на 1 раунд. Невидимость немедленно спадает если персонаж взаимодействует с миром значительным образом,например атакуя, перемещая объект, или открывая двери.<br>Любые попытки заметить персонажа получают <span class="symbol minus"/><span class="symbol minus"/><span class="symbol minus"/> к проверке если ищущий полагается только на зрение пока персонаж невидим.<br>Даже гвардеец услышавший шаги, например, поверит своим глазам когда повернувшись никого не увидит.<br>Персонаж может быть замечен другими органами чувств, но не чувствами основанными на магическом "зрении" (способность видеть духов).<br>Любые атаки против невидимого персонажа получают <span class="symbol minus"/><span class="symbol minus"/><span class="symbol minus"/> к проверкам атаки(попадания). Если атака успешна, невидимость спадает.',
 			},
 		27 : {
 				name:'Изменение: Дешевые трюки',
@@ -809,7 +809,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'5',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'-',
 				range:'*',
 				rangetype:'*',
@@ -822,7 +822,7 @@ var spellmagia = {
 				aspect:'Интеллект',
 				AP:'1',
 				TN:'5',
-				tnsuit:'m',
+				tnsuit:'<span class="symbol mask"/>',
 				resist:'-',
 				range:'*',
 				rangetype:'*',
@@ -851,7 +851,7 @@ var spellgenus = {
 		4 : {
 				name:'Местонахождение',
 				TN:'3',
-				text:'Заклинание действует на Местонахождение в пределах дальности. Любые цели в области которые обычно сопротивлялись бы заклинанию считаются автоматически прошедшими проверку сопротивления.',
+				text:'Заклинание действует на Местонахождение в пределах дальности.<br>Любые цели в области которые обычно сопротивлялись бы заклинанию считаются автоматически прошедшими проверку сопротивления.',
 			},
 		5 : {
 				name:'Неподвижный',
@@ -885,7 +885,7 @@ var spellelemental = {
 		3 : {
 				name:'Электричество',
 				TN:'3',
-				text:'(Electric)Урон наносимый этой магией игнорирует броню. Также, атака не определяет цель случайным образом если цель связана боем.',
+				text:'(Electric)Урон наносимый этой магией игнорирует броню.<br>Также, атака не определяет цель случайным образом если цель связана боем.',
 			},
 		4 : {
 				name:'Огонь',
@@ -900,7 +900,7 @@ var spellelemental = {
 		6 : {
 				name:'Природа',
 				TN:'2',
-				text:'(Natural) Любой персонаж получающий урон от магии также получает состояние: "Укоренен: Этот персонаж не может заявлять Движение (Walk) или Нападение (Charge). Если этого персонажа толкают (pushed), снимите это состояние и персонаж получает 3 урона."',
+				text:'(Natural) Любой персонаж получающий урон от магии также получает состояние:<br>"Укоренен: Этот персонаж не может заявлять Движение (Walk) или Нападение (Charge). Если этого персонажа толкают (pushed), снимите это состояние и персонаж получает 3 урона."',
 			},
 		7 : {
 				name:'Яд',
@@ -925,23 +925,23 @@ var spellalteration = {
 				name:'Альтернативное сопротивление',
 				TN:'2',
 				resist:'switch',
-				text:'Если этому действию сопротивляются по Силе Воли (Wp), вместо этого ему сопротивляются по Защите (Df). Если этому действию сопротивляются Защите (Df) , вместо этого ему сопротивляются по Силе Воли (Wp).',
+				text:'Если этому действию сопротивляются по Силе Воли (Wp), вместо этого ему сопротивляются по Защите (Df).<br>Если этому действию сопротивляются Защите (Df) , вместо этого ему сопротивляются по Силе Воли (Wp).',
 			},
 		2 : {
 				name:'Взрыв',
 				TN:'2',
 				blaststep:{
-					1:['','','b'],
-					2:['','b','b'],
-					3:['','b','bb'],
+					1:['','','<span class="symbol blast"/>'],
+					2:['','<span class="symbol blast"/>','<span class="symbol blast"/>'],
+					3:['','<span class="symbol blast"/>','<span class="symbol blast"/><span class="symbol blast"/>'],
 				},
-				text:'Это Иммуто может быть взято до 3 раз. Проверка урона получает 0/0/b в первый раз, 0/b/b во второй раз, и 0/b/bb в третий раз. Эти эффекты добавляются к урону наносимому магией.',
+				text:'Это Иммуто может быть взято до 3 раз.<br>Проверка урона получает 0/0/<span class="symbol blast"/> в первый раз, 0/<span class="symbol blast"/>/<span class="symbol blast"/> во второй раз, и 0/<span class="symbol blast"/>/<span class="symbol blast"/><span class="symbol blast"/> в третий раз.<br>Эти эффекты добавляются к урону наносимому магией.',
 				count:'3',
 			},
 		3 : {
 				name:'Совмещенное заклинание',
 				TN:'5',
-				text:'This Spell combines the effects of two Spells. Choose a second Magia and add its effects to this Spell. The Spell must follow these requirements: •The second Magia must have a Base TN equal to or lower than the Base TN of the primary Magia. •The resist of the Magia must be the same. •The Primary Magia may only have Immuto that can be applied to both Magia. •The Magia must be different. 240 Chapter 8: Magic',
+				text:'Это заклинание комбинирует эффекты двух заклинаний. Выберите вторую Магию и добавьте ее эффекты к заклинанию.<br>Заклинание должно следовать следующим ограничениям:<ul><li>Вторая магия должна иметь базовую сложность равную или ниже сложности первичной магии.<li>Сопротивление магии должно быть одинаковым.<li>Первичная магия может содержать только те Иммуто, что могут быть добавлены к каждой магии.<li>Магия должна быть другой. Стр. 240 Глава 8: Магия</ul>',
 			},
 		4 : {
 				name:'Задержка [Special] (TN Variable)',
@@ -951,7 +951,7 @@ var spellalteration = {
 		5 : {
 				name:'Игнорировать заклинателя',
 				TN:'2',
-				text:'Заклинание не оказывает эффекта на заклинателя, он не получает урона, а только вторичные эффекты. Например, заклинатель имеет иммунитет к заклинанию Огненного Шара, но, если он подожжет дом, ему придется поостеречься.',
+				text:'Заклинание не оказывает эффекта на заклинателя, он не получает урона, а только вторичные эффекты.<br>Например, заклинатель имеет иммунитет к заклинанию Огненного Шара, но, если он подожжет дом, ему придется поостеречься.',
 			},
 		6 : {
 				name:'Объект фокусировки (TN Varies)',
@@ -995,7 +995,7 @@ var spellaugmentation = {
 					8:'50',
 					9:'999Anywhere in Sight',
 				},
-				text:'<ul><li>melee 1<li>melee 2<li>melee 3<li>projectile 5<li>projectile 10<li>projectile 15<li>projectile 30<li>projectile 50<li>Anywhere in Sight</ul>Это Иммуто может быть добавлено в заклинание несколько раз. Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг. Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2. Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2. Некоторые заклинания не имеют символа Ближний(y) или Дальний(z) в их дальности. В таком случае, движение по таблице идет как обычно, но они не получают Ближний или Дальний (y or z) к дальности. Ближняя(y) Магия не может повысить дальность выше чем y3, а Дпльняя(z) Магия не может понизить дальность ниже чем z5.',
+				text:'<ul><li><span class="symbol melee"/> 1<li><span class="symbol melee"/> 2<li><span class="symbol melee"/> 3<li><span class="symbol projectile"/> 5<li><span class="symbol projectile"/> 10<li><span class="symbol projectile"/> 15<li><span class="symbol projectile"/> 30<li><span class="symbol projectile"/> 50<li>В пределах видимости</ul>Это Иммуто может быть добавлено в заклинание несколько раз.<br>Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг.<br>Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2.<br>Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2.<br>Некоторые заклинания не имеют символа Ближняя(<span class="symbol melee"/>) или Стрелковая(<span class="symbol projectile"/>) в их дальности.<br>В таком случае, движение по таблице идет как обычно, но они не получают Ближняя или Стрелковая (<span class="symbol melee"/> or <span class="symbol projectile"/>) к дальности.<br>Ближняя(<span class="symbol melee"/>) Магия не может повысить дальность выше чем <span class="symbol melee"/>3, а Стрелковая(<span class="symbol projectile"/>) Магия не может понизить дальность ниже чем <span class="symbol projectile"/>5.',
 				requirement:'0',
 				count:'9',
 			},
@@ -1014,7 +1014,7 @@ var spellaugmentation = {
 					8:'50',
 					9:'999Anywhere in Sight',
 				},
-				text:'<ul><li>melee 1<li>melee 2<li>melee 3<li>projectile 5<li>projectile 10<li>projectile 15<li>projectile 30<li>projectile 50<li>Anywhere in Sight</ul>Это Иммуто может быть добавлено в заклинание несколько раз. Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг. Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2. Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2. Некоторые заклинания не имеют символа Ближний(y) или Дальний(z) в их дальности. В таком случае, движение по таблице идет как обычно, но они не получают Ближний или Дальний (y or z) к дальности. Ближняя(y) Магия не может повысить дальность выше чем y3, а Дпльняя(z) Магия не может понизить дальность ниже чем z5.',
+				text:'<ul><li><span class="symbol melee"/> 1<li><span class="symbol melee"/> 2<li><span class="symbol melee"/> 3<li><span class="symbol projectile"/> 5<li><span class="symbol projectile"/> 10<li><span class="symbol projectile"/> 15<li><span class="symbol projectile"/> 30<li><span class="symbol projectile"/> 50<li>В пределах видимости</ul>Это Иммуто может быть добавлено в заклинание несколько раз.<br>Каждый раз Дальность заклинания двигается вверх или вниз по тблице Шагов Дальности на один шаг.<br>Движение вверх по таблице (снижение дальности) снижает сложность(TN) заклинания на -2.<br>Движение вниз по таблице (увеличение дальности) повышает сложность(TN) заклинания на 2.<br>Некоторые заклинания не имеют символа Ближняя(<span class="symbol melee"/>) или Стрелковая(<span class="symbol projectile"/>) в их дальности.<br>В таком случае, движение по таблице идет как обычно, но они не получают Ближняя или Стрелковая (<span class="symbol melee"/> or <span class="symbol projectile"/>) к дальности.<br>Ближняя(<span class="symbol melee"/>) Магия не может повысить дальность выше чем <span class="symbol melee"/>3, а Стрелковая(<span class="symbol projectile"/>) Магия не может понизить дальность ниже чем <span class="symbol projectile"/>5.',
 				requirement:'0',
 				count:'9',
 			},
@@ -1022,10 +1022,17 @@ var spellaugmentation = {
 				name:'Увеличение ОД (AP)',
 				AP:'1',
 				TN:'-3',
-				text:'Заклинание требует 1 дополнительное ОД (AP) для исполнения.<br>Это Иммуто может быть взято несколько раз, но персонаж не может расходовать ОД в несколько ходов для исполнения данного заклинания. Это Иммуто может быть добавлено к Заклинаниям только во время Dramatic Time.',
+				text:'Заклинание требует 1 дополнительное ОД (AP) для исполнения.<br>Это Иммуто может быть взято несколько раз, но персонаж не может расходовать ОД в несколько ходов для исполнения данного заклинания.<br>Это Иммуто может быть добавлено к Заклинаниям только во время Dramatic Time.',
 				count:'10',
 			},
 		5 : {
+				name:'Снижение ОД (AP)',
+				AP:'-1',
+				TN:'5',
+				text:'Заклинание требует на 1 AP меньше.<br>Это иммуто может быть взято несколько раз, снижая требуемые ОД на 1 каждый раз (до минимума в 0).',
+				count:'10',
+			},
+		6 : {
 				name:'Увеличение урона',
 				TN:'2',
 				damagestep:{
@@ -1039,7 +1046,21 @@ var spellaugmentation = {
 				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз, увеличьте урон заклинания на один шаг Таблицы Урона.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
 				count:'5',
 			},
-		6 : {
+		7 : {
+				name:'Снижение урона',
+				TN:'-1',
+				damagestep:{
+					1:[0,0,1],
+					2:[0,1,2],
+					3:[1,2,3],
+					4:[2,3,4],
+					5:[3,4,5],
+				},
+				damagesteptype:'decrease',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз, уменьшите урон заклинания на один шаг Таблицы Урона.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
+				count:'5',
+			},
+		8 : {
 				name:'Увеличение длительности',
 				TN:'2',
 				durationstep:{
@@ -1056,67 +1077,46 @@ var spellaugmentation = {
 					11:'6 Месяцев',
 					12:'1 Год',
 				},
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Each time it is taken move the Spell duration down the Duration Step table one step.<ul><li>1 Ход<li>2 Ход<li>3 Ход<li>1 Минута<li>10 Минут<li>1 Час<li>Восход или Закат<li>1 День<li>1 Неделя<li>1 Месяц<li>6 Месяцев<li>1 Год</ul>Any part of the Spell with a set duration (for instance the time a target remains buried by a Bury Spell) will be increased 1 step. Spells with a duration that sit between two steps (for instance, Animate Limb) are assumed to sit on the lower step of the two they are between. For instance, an Animate Limb Spell cast by a character with a Charm + Enchanting of 5 would be considered a "1 Month" Spell. By raising the TN by 2 he can increase the duration to 6 months.',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз длительность заклинания движется вниз по Таблице Шагов Длительности на один шаг.<ul><li>1 Ход<li>2 Ход<li>3 Ход<li>1 Минута<li>10 Минут<li>1 Час<li>Восход или Закат<li>1 День<li>1 Неделя<li>1 Месяц<li>6 Месяцев<li>1 Год</ul>Любая часть заклинания с заданной длительностью (например время, что цель остается погребенной заклинанием Погребение) увеличивается на 1 шаг.<br>Заклинания длительность которых находится между двумя шагами (например, Анимировать конечность) считаются находящимися на нижней ступени из двух между которыми они находятся.<p>Например, заклинание Анимировать конечность исполняется персонажем со значением Обаяния (Charm) + Зачарование (Enchanting) равным 5 будет считаться заклинанием с длительностью "1 Месяц".<br>Увеличивая сложность (TN) на 2 можно увеличить длительность до 6 месяцев.</p>',
 				count:'12',
 			},
-		7 : {
+		9 : {
+				name:'Пульс',
+				TN:'4',
+				text:'<span class="symbol pulse"/> Заклинание влияет на каждую доступную цель в области вокруг первоначальной цели.<br>Если заклинание попало в цель, каждый персонаж в 1 ярде подверженный заклинанию должен пройти дуэль сложностью (TN) 10, используя такую же защиту, что и изначальная цель.<br>Любой персонаж проваливший дуэль ощущает последствия пульса. Если наносится урон, то они автоматом получают слабый урон.',
+			},
+		10 : {
 				name:'Увеличение Пульса',
 				TN:'2',
 				resist:'-1',
 				range:'1',
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Любая дальность Пульса в заклинании увеличивается на 1, и сложность (TN) сопротивления Пульсу возрастает на 1.',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз.<br>Любая дальность <span class="symbol pulse"/> Пульса в заклинании увеличивается на 1, и сложность (TN) сопротивления Пульсу возрастает на 1.',
 				count:'10',
-			},
-		8 : {
-				name:'Increase Resistance',
-				TN:'2',
-				resist:'-1',
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Any Duel made by characters affected by the Spell (such as Horror Duels) has the TN of the Duel increased by 1.',
-				count:'10',
-			},
-		9 : {
-				name:'Increased Severity',
-				TN:'1',
-				text:'Increase the Severe value of the Damage Flip by 1. A Magia may have this Immuto multiple times, increasing the Severe damage of its Damage Flip by 1 each time. Magia that do not have a damage flip, but instead deal a set amount of damage, may take this Immuto as well, increasing the damage by 1 each time this Immuto is taken. However, those Magia must increase the TN by +2, instead of +1.',
-				count:'10',
-			},
-		10 : {
-				name:'Пульс',
-				TN:'4',
-				text:'The Spell affects every legal target within an area around the initial target. If the target of the Spell is hit, then every character within 1 yard that could be affected by the Spell must succeed on a TN 10 Duel, using the same defense as the initial target. Any character that fails the Duel also suffers the results of the pulse. If damage is dealt they automatically suffer Weak damage.',
 			},
 		11 : {
-				name:'Снижение ОД (AP)',
-				AP:'-1',
-				TN:'5',
-				text:'Заклинание требует на 1 AP меньше. This Immuto may be taken multiple times, reducing the AP required by 1 each time (to a minimum of 0).',
+				name:'Ухудшить сопротивление',
+				TN:'2',
+				resist:'-1',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз.<br>Любая дуэль выполняемая персонажем под действием заклинания (например Дуэль Ужаса) увеличивает сложность дуэли на 1.',
 				count:'10',
 			},
 		12 : {
-				name:'Снижение урона',
-				TN:'-1',
-				damagestep:{
-					1:[0,0,1],
-					2:[0,1,2],
-					3:[1,2,3],
-					4:[2,3,4],
-					5:[3,4,5],
-				},
-				damagesteptype:'decrease',
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. За каждый раз, уменьшите урон заклинания на один шаг Таблицы Урона.<ul><li>0/0/1<li>0/1/2<li>1/2/3<li>2/3/4<li>3/4/5</ul>',
-				count:'5',
+				name:'Улучшить сопротивление',
+				TN:'-2',
+				resist:'+1',
+				text:'Это Иммуто может быть добавлено к заклинанию несколько раз.<br>Любая дуэль выполняемая персонажем под действием заклинания (например Дуэль Ужаса) уменьшает сложность дуэли на 1.',
+				count:'10',
 			},
 		13 : {
-				name:'Reduce Resistance',
-				TN:'-2',
-				resist:'-1',
-				text:'Это Иммуто может быть добавлено к заклинанию несколько раз. Any Resistance Duel made by the target (such as Horror Duels) has the TN of the Duel decreased by 1.',
+				name:'Увеличение сильного урона',
+				TN:'1',
+				text:'При проверке урона увеличьте значение Сильного урона на 1.<br>Это Иммуто может быть добавлено к заклинанию несколько раз, увеличивая значение Сильного урона на 1 каждый раз.<br>Магия не имеющая проверки урона, а наносящая заданное количество урона, может взять данное иммуто, увеличивая урон на 1 за каждое подобное иммуто.<br>Хотя, такая магия должна повысить сложность на +2, вместо +1.',
 				count:'10',
 			},
 		14 : {
-				name:'Reduce Severity',
+				name:'Снижение сильного урона',
 				TN:'-3',
-				text:'Если заклинание наносит фиксированное количество урона, вместо проверки Урона, Магия не наносит урон. Все другие эффекты Магии остаются прежними. Цели что получили бы эффект только при получении урона все еще получают эффект от Магии.',
+				text:'Если заклинание наносит фиксированное количество урона, вместо проверки Урона, Магия не наносит урон.<br>Все другие эффекты Магии остаются прежними.<br>Цели что получили бы эффект только при получении урона все еще получают эффект от Магии.',
 			},
 		15 : {
 				name:'Выбор целей',

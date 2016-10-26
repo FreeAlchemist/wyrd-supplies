@@ -68,12 +68,6 @@ option:hover{
 	line-height: 25px;
 }
 
-.spelltitle-text{
-	text-transform: none;
-	font-size: 8pt;
-	display: none;
-}
-
 .btn-main{
 	float: right;
 	width: 150px;
@@ -199,10 +193,21 @@ background-color: Blanchedalmond;*/
 	float: right;
 }
 
-#log{display: none;}
+/*#log{display: none;}*/
 .log{
 	display: none;
 	margin-top: 70px;
+}
+
+#info{
+	display: none;
+	position: absolute;
+	top: 50px;
+	background: white;
+	border: solid 1px black;
+	font-size: 10pt;
+	line-height: 10pt;
+	padding: 5px;
 }
 
 @media print{

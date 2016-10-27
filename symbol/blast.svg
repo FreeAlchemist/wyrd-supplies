@@ -2,34 +2,53 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 blast.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229372in" height="0.229026in"
-		viewBox="0 0 16.5148 16.4898" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(0.75,-0.75)">
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг.2</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape4-3" v:mID="4" v:groupContext="shape" transform="translate(2.54813,-1.94079)">
 			<title>Лист.4</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
-			<image x="0" y="1.5" width="15.0148" height="14.9898" preserveAspectRatio="none" xlink:href="data:image/png;base64,i
-						VBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DA
-						cdvqGQAAAHGSURBVDhPY/hPAcCp+dWJ+cuaMuuKC6av2gUVwgBYNH+9uXJZvqkiAxxoBs/Erh9F897e9NIYI0NOqCZUoGAcXbP94kWoU
-						jBAaH6zNkIaqg4n4Imf8fjldagGZM37S7WhSvAA8ei5p89BNcA135kXoAaVJwSUMzZehToeqrlOgwMqRxioJy49DNEF1RwJlSAGaCQuQ
-						9U8O1gGKkUQqGRuunEFogsRYNc2TFw0pWvdpGh7qCpkwK9b2L2+LzkjqWzF0dNQDcia4WCum6iSspQgA4OYo50zRC9n8OwzKDEMAVg03
-						5npLqatoccg7pSbEMHAwC0vIx024c7zq1BpJIBFMxDk+EdWuMj4T+1qEZdwDq9Yc+YsVAIVYNd8tMrYSN8ub82qNXFm7hbxyy9fhkqgA
-						oTm55sKoiMTm9t7tmxbsTbDv6Y3JTnIITBt4v4plXN2LN4yu35SRXhkSNfVJ9CgBgIUmy9MjUpqmbS80i8qt6Q5xCYiwSfENKRvQmZ0Q
-						NyEaVnhVlkbzyHSJhAgND/Y1jmlJiRARt/XXYkbEshwIG/iYiKpHpTR0T3j/E1EsCM0LwkUhSrFAzidm/achGrAFWBEgf//AZfvvMX2B
-						TZDAAAAAElFTkSuQmCC"/>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+			<path d="M6.29 11.85 C6.32 11.67 6.19 11.64 6.1 11.57 C5.96 11.46 5.92 11.23 5.94 11.09 C5.99 10.81 6.32 10.9 6.51 10.8
+						 C6.95 10.55 6.63 9.25 7.2 9.17 C7.5 9.13 8.04 9.42 8.51 9.32 C9.09 9.19 9.57 8.47 9.56 7.97 C9.54 7.39 8.86
+						 7.1 8.61 6.71 C8.37 6.34 8.52 5.88 8.41 5.52 C8.28 5.12 7.82 4.85 7.39 4.86 C7.02 4.88 6.68 5.11 6.51 4.84
+						 C6.35 4.6 6.34 3.95 5.57 3.88 C5.09 3.84 4.31 4.02 3.91 4.17 C3.52 4.3 3.47 4.4 3.38 4.62 C3.25 4.9 3.04
+						 5.38 2.62 5.35 C2.39 5.33 2.1 5.15 1.89 5.13 C1.51 5.1 1.44 5.62 1.39 5.98 C1.32 6.42 1.26 6.61 0.99 6.91
+						 C0.66 7.26 0.02 7.74 0 8.22 C-0.02 8.68 0.52 9.13 1.09 9.04 C1.45 8.98 1.82 8.7 2.07 8.75 C2.56 8.84 2.63
+						 10.11 2.87 10.64 C3.04 11 3.29 11.02 3.38 11.33 C3.47 11.6 3.43 12.11 3.26 12.37 C3.17 12.51 3.04 12.58
+						 2.84 12.66 C2.68 12.73 2.47 12.82 2.33 12.78 C2.01 12.72 2.03 12.11 1.52 11.99 C1.25 11.92 0.83 11.99 0.72
+						 12.06 C0.59 12.15 0.95 12.24 1.2 12.42 C1.56 12.69 1.68 13.17 1.59 13.48 C1.54 13.63 1.45 13.75 1.38 13.81
+						 C1.3 13.88 1.25 13.89 1.2 13.9 C0.64 14.03 0.67 15.05 3.29 14.49 C3.67 14.41 4.11 14.3 5.13 14.31 C6.14
+						 14.33 7.72 14.47 8.28 14.38 C9 14.26 8.01 13.75 7.76 13.52 C7.66 13.43 7.68 13.38 7.72 13.28 C7.81 13.06
+						 8.01 12.59 8.43 12.41 C8.72 12.28 9.12 12.28 9.22 12.27 C9.46 12.23 8.27 12.1 7.64 12.2 C7.32 12.25 7.14
+						 12.36 6.94 12.55 C6.74 12.74 6.53 13.01 6.43 12.9 C6.3 12.75 6.36 11.99 6.29 11.85 Z" class="st2"/>
+		</g>
+		<g id="shape5-5" v:mID="5" v:groupContext="shape" transform="translate(6.32172,-2.88165)">
+			<title>Лист.5</title>
+			<path d="M0.49 13.57 C0.45 12.91 0.76 12.77 0.9 12.15 C0.93 12.02 0.95 11.88 0.96 11.85 C0.96 11.83 0.96 11.86 0.96 11.89
+						 C0.96 12.12 1.16 12.75 1.33 13.16 C1.41 13.35 1.49 13.49 1.61 13.66 C1.71 13.8 1.84 13.96 1.95 13.91 C2.02
+						 13.87 2.08 13.74 2.13 13.72 C2.25 13.67 2.28 14.15 2.17 14.41 C2.09 14.6 1.94 14.68 1.84 14.65 C1.67 14.61
+						 1.62 14.3 1.5 14.04 C1.42 13.87 1.32 13.72 1.24 13.72 C1.09 13.71 1.02 14.18 0.83 14.39 C0.67 14.57 0.42
+						 14.57 0.3 14.41 C0.21 14.29 0.2 14.07 0.12 13.87 C0.07 13.77 0.02 13.67 0 13.64 C-0.01 13.62 0.01 13.66
+						 0.08 13.68 C0.22 13.74 0.57 13.75 0.49 13.57 Z" class="st1"/>
 		</g>
 	</g>
 </svg>

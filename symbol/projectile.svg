@@ -2,52 +2,36 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 projectile.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229101in" height="0.229101in"
-		viewBox="0 0 16.4953 16.4953" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.75,-0.75)">
-			<title>Лист.1</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
-			<switch>
-				<foreignObject x="0" y="1.5" width="14.9953" height="14.9953"
-						requiredExtensions="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
-					<v:foreignData v:dataType="ole" v:type="33280" v:orgSize="4608" v:data="data:metafile;base64,eNq7cF7wwcKNUg8
-								Z0IAdAzPDv/+cDGxIYoxQDAYCDAxMUP6/////w4T/j4IhBf4CMRs0DlmANCsQs0P5/0aDZ9iDIIZ8ICxhUGBwZcgD0kUMlQy
-								kADFgioGZBSoPuIDlBggcgEi7Ias1SPMPC9e/xAhS4cAGK1OcgfbnMhQw+DMkMWQxkAqEGJgYWZDKHWL1+cLLNH+GHIZUBkM
-								GAwY/hkRgCGQylAH5xAIpoP2gMpAZ6gZi9IDCiYUV035PoO2pwLAAuSOXSDfIAe1Hjk9i9IhD8zkDUvkNcj8s/7NBywAOIOY
-								ExykDAzcQ8wAxLxDzATE/pApgEATHAQODMBCLALEoOE0gyo/RMmRwA0ZgTDFzQdIuet4FpYEAp6LS4gwG7MwvlpsKGSgEwAT
-								n5PuMBcIxA2INaEoSAadOCbD4BhZMjaNxR3+w+9736ZtOzZm78vKNc6TqrTj2nYHBVZaB4dD8QFL1zn/4i0OzCaj3wNyA/Zc
-								/XXv8mHi9x1/9VC8/BEwwyW48fgEVM6ZXHz+8k3jtlce/MnD5wlPdlDCGmy/vEa+9bvVlIadqaOpWYHD2cbN393fwCHD2CNg
-								5PZag9qT554F1JWbiX1cnPZoahxZgoAkA1d9zKNIPaX+QC7iArRlSfSkBLd2pYz8Dyfb/o3Js0D6WaWc/I6Q5OgpGKAAAmIc
-								jFQ=="/>
-				</foreignObject>
-				<svg viewBox="0 0 463.97 464.74" enable-background="new" color-interpolation-filters="sRGB" height="14.9953"
-						preserveAspectRatio="none" width="14.9953" x="0" y="1.5">
-					<defs>
-						<clipPath id="mfid1">
-							<rect id="mfid2" x="0" y="0" width="463.97" height="464.74"/>
-						</clipPath>
-					</defs>
-					<g clip-path="url(#mfid1)">
-						<g stroke="#000000" stroke-miterlimit="10" fill="none">
-							<image width="464" height="465" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVDhPY/hPARjVTCKggebz85McGLAA6bp1UBVggEXz5dV11U5CUOUKZm4+zv7u9gEeDgEezrHTd0IVgQG65q/HK325oBpBIGzKvZc3oXIYAEXzz1fHD5WrA7XwuCVXBPhVT5+x8/BxqBw2gKL518P5TZocDAyyAXMPfLq8//Hja1AJHABF8/djFa4gt8oGzj8EFcILUDXf231q0/SVc+ecu3EZKoQXoAcYSWBUM0ng/38A4N5R0v7C9nsAAAAASUVORK5CYII="/>
-						</g>
-					</g>
-				</svg>
-			</switch>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг.2</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape3-3" v:mID="3" v:groupContext="shape" transform="translate(1.36586,-4.15134)">
+			<title>Лист.3</title>
+			<path d="M11.86 8.3 C3.34 8.3 3.18 8.25 3.06 9.6 C3.04 9.84 3.02 10.13 2.79 10.25 C2.65 10.32 2.42 10.33 2.22 10.44 C1.7
+						 10.71 1.33 11.59 0.75 12.43 C0.41 12.93 -0.01 13.42 0 13.64 C0.01 13.76 0.12 13.8 0.27 13.87 C0.63 14.04
+						 1.16 14.34 1.56 14.51 C1.86 14.63 2.09 14.69 2.23 14.64 C2.61 14.5 2.35 13.59 2.4 12.84 C2.43 12.29 2.63
+						 11.82 3.21 11.65 C3.91 11.44 5.16 11.67 5.5 11.2 C5.82 10.76 5.32 9.71 7.63 9.58 C8.73 9.51 10.45 9.66 11.26
+						 9.71 C12.2 9.78 11.86 9.72 11.86 8.3 Z" class="st2"/>
 		</g>
 	</g>
 </svg>

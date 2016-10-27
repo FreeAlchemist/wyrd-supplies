@@ -2,54 +2,44 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 melee.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229101in" height="0.229101in"
-		viewBox="0 0 16.4953 16.4953" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.75,-0.75)">
-			<title>Лист.1</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
-			<switch>
-				<foreignObject x="0" y="1.5" width="14.9953" height="14.9953"
-						requiredExtensions="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
-					<v:foreignData v:dataType="ole" v:type="33280" v:orgSize="4608" v:data="data:metafile;base64,eNq7cF7wwcKNUg8
-								Z0IAdAzPDv/+cDGxIYoxQDAYCDAxMUP6/////w4T/j4IhBf4CMRs0DlmANCsQs0P5/0aDZ9iDIIZ8ICxhUGBwZcgD0kUMlQy
-								kADFgioGZBSoPuIDlBggcgEi7IatVWNd4KVz/EiNIhQMbrExxBtqfy1DA4M+QxJDFQCoQYmBiZEEqd4jV5wsv0/wZchhSGQw
-								ZDBj8GBKBIZDJUAbkEwukgPaDykBmqBuI0QMKJxZWTPs9gbanAsMC5I5cIt0gB7QfOT6J0SMOzecMSOU3yP2w/M8GLQM4gJg
-								THKcMDNxAzAPEvEDMB8T8kCqAQRAcBwwMwkAsAsSi4DSBKD9Gy5DBDRiBMcXMBUm76HkXlAYCnIpKizMYsDO/WG4qZKAQABO
-								ck+8zFgjHDIg1oClJBJw6JcDiG1gwNQ6eMNy+ZD3Zeitjl564fRbI2Lz/JpFa1kzI2Hf9LZAR1X3z6IHpQEZV2cZDl88Sqb2
-								x88jRm5eAjDm5sUAytuvGwUOzIFKHrx3Grzd85auVbe5Ahl/+4UN7JwMZM7KDIFIHdvQRtDrftR3CmFtqBSQDzaYdOLIAyFj
-								Z7kqMy6dn6gLJbIMqCHfr3CSwA1yI0ettNgVI2jeeXTMtDsjoi/IDkpk6bYcu7SGo12HC7fmVDkBGnGgwkHQxnQYkrfIPbFt
-								eRIzVXtLlQNKg+OCSTk9Q+LvrAclp6UR52aDhTGeMApCRaN8PJD0TQa7Ni1t56OIhYrTLRa9c1GwBZGybXwIK9vICILm0q5H
-								IpJJi1wGK6+ZTO1aUAhmbltYDydMX9xCpfVoWKG1U9p0+fGoTKIWc2Ex8vug+8a4tuw3k2rlHjj98SkbOmj9xxaAqaRloAkD
-								19xyK9EPaH+QCLmBrhlRfSkBLd+rYz0Cy/f+oHBu0j2Xa2c8IaY6OghEKACK9HD0="/>
-				</foreignObject>
-				<svg viewBox="0 0 463.97 464.74" enable-background="new" color-interpolation-filters="sRGB" height="14.9953"
-						preserveAspectRatio="none" width="14.9953" x="0" y="1.5">
-					<defs>
-						<clipPath id="mfid3">
-							<rect id="mfid4" x="0" y="0" width="463.97" height="464.74"/>
-						</clipPath>
-					</defs>
-					<g clip-path="url(#mfid3)">
-						<g stroke="#000000" stroke-miterlimit="10" fill="none">
-							<image width="464" height="465" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGOSURBVDhPY/hPAaC95hUT50NZqICA5ncnutuy24CMI3OXPn14HCIIBwQ0B2VNA5Kn+yo3nToMZGw+cQAsDAX4NHfYpQDJU81+pSt2ABn1SzcByT0XT4PkwACn5pXRchbNi4CMkvnbgGRB+Vwg2di1FCQHA9g1n2kwUIjpBDL67ROB5J5ETyC5Mi7v0MVDIGkYwK65XNoLSB4sNvDsXAJk6Lk3AknXdJD/kQEWzbcnODhUguImWDQOSE4zdQGSB/KtipaD3I8MsGieYuYNJM822sdNWwNk+EX1Ack2ncw9l1DcDARYNOtmTgeSVQbZEG7S3K1A0iV7BoSLDNA1t7vmQxhWpaDgnWYWuOAIKG5d21eChVEAiuZXK8Pd20CKDuf7Td4LcmQQzMK+HSjJAwJQNB/pbLx08yiQEZs7B0je6IqddeggWOb/4WugFIYGEJozJqx5e30fkHGzO2r6AZARG8uqzl5GDyRkgCXAlsZWnr19Asi4uX8zRAQXwKJ5/ZLtUBYhgEUz8YACzf//AwBW/UoU+/NMwgAAAABJRU5ErkJggg=="/>
-						</g>
-					</g>
-				</svg>
-			</switch>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг.2</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape4-3" v:mID="4" v:groupContext="shape" transform="translate(9.53613,-3.64157)">
+			<title>Лист.4</title>
+			<path d="M0.48 14.65 C0.26 12.02 0.77 9.83 2.75 8.13 C-0.37 8.98 -0.37 12.95 0.48 14.65 Z" class="st2"/>
+		</g>
+		<g id="shape5-5" v:mID="5" v:groupContext="shape" transform="translate(6.87084,-2.22425)">
+			<title>Лист.5</title>
+			<path d="M0.03 14.65 C1.16 9.83 2.58 7.28 4.57 5.58 C1.45 7 -0.25 10.68 0.03 14.65 Z" class="st2"/>
+		</g>
+		<g id="shape6-7" v:mID="6" v:groupContext="shape" transform="translate(4.35024,-1.37386)">
+			<title>Лист.6</title>
+			<path d="M0 14.65 C1.7 8.42 3.4 5.87 5.7 3.88 C2.27 5.58 0.28 8.7 0 14.65 Z" class="st2"/>
+		</g>
+		<g id="shape7-9" v:mID="7" v:groupContext="shape" transform="translate(2.36598,-3.07465)">
+			<title>Лист.7</title>
+			<path d="M0 14.65 C2.27 8.7 3.97 6.72 6.83 4.45 C3.12 6.43 1.13 8.42 0 14.65 Z" class="st2"/>
 		</g>
 	</g>
 </svg>

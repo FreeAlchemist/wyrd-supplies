@@ -1,16 +1,19 @@
 /*<link rel="stylesheet" type="text/css" href="../symbol/symbol.css">*/
 /*
 <span class="symbol aura"/>
-<span class="symbol blast"/>
-<span class="symbol crow"/>
-<span class="symbol mask"/>
-<span class="symbol melee"/>
-<span class="symbol minus"/>
-<span class="symbol plus"/>
-<span class="symbol projectile"/>
 <span class="symbol pulse"/>
+<span class="symbol blast"/>
+
+<span class="symbol melee"/>
+<span class="symbol projectile"/>
+
+<span class="symbol plus"/>
+<span class="symbol minus"/>
+
 <span class="symbol ram"/>
 <span class="symbol tome"/>
+<span class="symbol crow"/>
+<span class="symbol mask"/>
 */
 .symbol-info{
 	position:absolute;

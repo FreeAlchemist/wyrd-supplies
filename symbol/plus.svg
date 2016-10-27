@@ -2,54 +2,46 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 plus.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229101in" height="0.229101in"
-		viewBox="0 0 16.4953 16.4953" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st3 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.75,-0.75)">
-			<title>Лист.1</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
-			<switch>
-				<foreignObject x="0" y="1.5" width="14.9953" height="14.9953"
-						requiredExtensions="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
-					<v:foreignData v:dataType="ole" v:type="33280" v:orgSize="4608" v:data="data:metafile;base64,eNq7cF7wwcKNUg8
-								Z0IAdAzPDv/+cDGxIYoxQDAYCDAxMUP6/////w4T/j4IhBf4CMRs0DlmANCsQs0P5/0aDZ9iDIIZ8ICxhUGBwZcgD0kUMlQy
-								kADFgioGZBSoPuIDlBggcgEi7oSg+llEVoX+JEaTCgQ1WpjgD7c9lKGDwZ0hiyGIgFQgxMDGyIJU7xOrzhZdp/gw5DKkMhgw
-								GDH4MicAQyGQoA/KJBVJA+0FlIDPUDcToAYUTCyum/Z5A21OBYQFyRy6RbpAD2o8cn8ToEYfmcwak8hvkflj+Z4OWARxAzAm
-								OUwYGbiDmAWJeIOYDYn5IFcAgCI4DBgZhIBYBYlFwmkCUH6NlyOAGjMCYYuaCpF30vAtKAwFORaXFGQzYmV8sNxUyUAiACc7
-								J9xkLhGMGxBrQlCQCTp0SYPENLJgasXpHyKIxzEJ6ckfZ0SN7SQoH3eojcJOB6d7XTLqrLpNIvQwCaVi95qXP3V2XuWfnJlw
-								aXWbcgeQsXADokkoX6as3sfhFxH8RwbAFBuf5HXVYHMwVhmjo6XOLmflh6o0VYLh8eSWaRucZt5EdvKpeGmuRMzuFh6CDVzd
-								g0avKwHBwYRSaxvaL3xm4YgnqjRdguHZtOZregEVPgGVUvBTOdimDVA5Q78wEnluvH6NJScdtAFVUAgx55YmpxTUZxTV7V7U
-								BxVOL61KLav3KGhkEPGUZGPbO8EbT2H3lB4MAevGNGVahXAxXz81B0+s09SZmkliJoXdCEDeWxO8xFzMuZhSJI+uVYWDYPc0
-								bW5JIIZicPBgYLh7tJ09vmwPOKFDwrMCTC4CVyY5+K8L5N6qWgUEJTa8z0MGHuogvBKzSuxi4jCB6J0fykFqWbrr2vmre/gl
-								NzVeuHccSSjQBoPp7DkX6Ie0PcgEXsDVDqi8loKU7dexnINn+f1SODdrHMu3sZ4Q0R0fBCAUAZlxIsQ=="/>
-				</foreignObject>
-				<svg viewBox="0 0 463.97 464.74" enable-background="new" color-interpolation-filters="sRGB" height="14.9953"
-						preserveAspectRatio="none" width="14.9953" x="0" y="1.5">
-					<defs>
-						<clipPath id="mfid7">
-							<rect id="mfid8" x="0" y="0" width="463.97" height="464.74"/>
-						</clipPath>
-					</defs>
-					<g clip-path="url(#mfid7)">
-						<g stroke="#000000" stroke-miterlimit="10" fill="none">
-							<image width="464" height="465" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGiSURBVDhPY/iPF7y/tmn/vKrmpgnHr12BCiEBfJq70q2MuBgggCdyMlQUCWDRXBulqwTVggycuw5dhKqAAYTmCk8Fbqg6rEDMqn8HVCkMQDWnwJyHDzi0QRTDASmaGTz6j6K4HKp5rocQVAESEC+aAVKBADLe03ZD1EMAVPPNqU6YHpauXwlSgQS4gyZA1EMAVPOPK92pAlAVcCBdvwqkAhlwhc45dxWiBQigmoFgQ5w0SFrAIbE8r6Y4taY4o23VXqB4XXFqbVFqY5mfJ8h0We8ZIEEIQGh+sihAECgrFQ/lY4AcKZDhPAkzH7++BRFBaP5+sT0WNcylG1YDxaEcOBCIX37tGkQLQjMQLPIXgaoAA+yaGVSjFh6EqEfRfHuGM3KYYwkwMOBJmQ1Rj6IZCMKQXM6tb+dnJgblIAOB2JWXLwMVo2tGczkOYFa34zxQMbrmOzNc8GYPIOCQdqncexMU2+iagSANI7VAALe+V2Zd96ade6DqsGo+Uq0LVQ4CHNJmvpl1XVA5VIBFMxA0WghJW4SVdUzee+QoVAgT/P8PAI8OdwBiPO8fAAAAAElFTkSuQmCC"/>
-						</g>
-					</g>
-				</svg>
-			</switch>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг.2</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape3-3" v:mID="3" v:groupContext="shape" transform="translate(-4.79676,5.89069) rotate(70) scale(1,-1)">
+			<title>Скругленный прямоугольник</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M10.34 14.65 a0.566934 0.566934 -180 0 0 0.566929 -0.566929 L10.9 7.48 a0.566934 0.566934 -180 0 0 -0.566929
+						 -0.566929 L0.57 6.91 a0.566934 0.566934 -180 0 0 -0.566929 0.566929 L0 14.09 a0.566934 0.566934 -180 0 0
+						 0.566929 0.566929 L10.34 14.65 Z" class="st2"/>
+		</g>
+		<g id="shape4-5" v:mID="4" v:groupContext="shape" transform="translate(4.75011,-7.19717)">
+			<title>Лист.4</title>
+			<path d="M0 14.65 L4.9 14.65" class="st3"/>
+		</g>
+		<g id="shape5-8" v:mID="5" v:groupContext="shape" transform="translate(21.8381,5.0589) rotate(90)">
+			<title>Лист.5</title>
+			<path d="M0 14.65 L4.9 14.65" class="st3"/>
 		</g>
 	</g>
 </svg>

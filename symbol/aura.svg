@@ -2,36 +2,48 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 aura.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229372in" height="0.229026in"
-		viewBox="0 0 16.5148 16.4898" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(0.75,-0.75)">
-			<title>Лист.4</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
-			<image x="0" y="1.5" width="15.0148" height="14.9898" preserveAspectRatio="none" xlink:href="data:image/png;base64,i
-						VBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DA
-						cdvqGQAAAJcSURBVDhPY/iPCn4+v/L91aUPt/bePrz88JYl547vfXr30s+XV6HSqABF87dra3f0xidbiDKgADF1z6TW2asfPLoGVQcDC
-						M2np4bZOsa2JGlxQ/UgAw5pO2tTjdCOtbugqsEAqnl7gR5Ij0DE/AXpVhD1yMCsYMnSjCABIEsjoGcDRAsQgDQfKAXrBAF2uZjsWi+Qs
-						7kNfNLCdZVAgjox3aVZ4iAWGGgGz4Daz/BkeagaVBQCdCLrqsrt1SIXHvr+eHmvkYhJQevcLHWoJARw+Uw4ch6kuduEEyoEB0rxCw8ff
-						HL3yo8XZ27vW3dquocKVAIBeOKmPXh+lUEbykUGHPIFi54/u/L16eUvZ1viQF7FAFzBs89chLLRgU7l0cdXvjw9faXfGiqCDhQjFx2CM
-						tGBTtWJp9d+vDiyp0ARKoIBpOvWQFlogDtu2iNgUnu2bVmQMFQIA+DSzKfftuHT4/OfH21cEigEFcMAuDSrJyw++PXJ+a+Pt66JFoOKo
-						QNpzxn7GCShHGRgUrP1xOsdXSsOHrzUbQoVQwceE45dZmgzwohnBpPqrTt35ytwuzefWJ+oCxVEATyRk+++vMlwf6EfRhowqV47vU2Lg
-						4HBqWPjhApMt3F5dR48B0phQLwpEzX1MZhUdmX5gBgy/rMWYAS4ZtD0naCUDc9VyzJ0kHKiV09bkDyYJV7YPCsYSTOXbeasbRAtQIDIz
-						2fnpsTo8oJUmBQv7bUDqwVmxtxJFTpglqhmSMnS/UehqsEAoRkCji2ubssLTjCHJ2iT7Paa4ti8+eu2QlXAwf//AHr9jGTjIH28AAAAA
-						ElFTkSuQmCC"/>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="15.0148" height="14.9898" class="st1"/>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape5-3" v:mID="5" v:groupContext="shape" transform="translate(0.948661,-0.948661)">
+			<title>Круг.5</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 8.28 A6.37795 6.37795 0 1 1 12.76 8.28 A6.37795 6.37795 0 0 1 0 8.28 Z" class="st2"/>
+		</g>
+		<g id="shape6-5" v:mID="6" v:groupContext="shape" transform="translate(4.29819,-1.189)">
+			<title>Лист.6</title>
+			<path d="M5.06 13.98 C5.06 13.69 5.01 13.57 4.97 13.44 C4.79 12.94 4.6 12.35 4.43 11.8 C4.2 11.07 3.99 10.43 3.89 9.59
+						 C3.8 8.79 3.81 7.82 3.89 7.33 C3.99 6.82 4.17 6.83 4.7 6.18 C4.98 5.84 5.36 5.3 5.8 4.8 C6.08 4.48 6.37
+						 4.17 6.26 3.92 C6.19 3.75 5.92 3.6 5.74 3.56 C5.45 3.47 5.45 3.69 5.37 3.87 C5.23 4.19 4.84 4.41 4.49 4.89
+						 C4.26 5.19 4.05 5.6 3.9 5.57 C3.75 5.54 3.66 5.04 3.47 4.82 C3.25 4.58 2.92 4.65 2.62 4.76 C2.43 4.82 2.27
+						 4.9 2.24 5.12 C2.23 5.25 2.27 5.44 2.24 5.52 C2.17 5.72 1.68 5.28 1.4 4.87 C1 4.29 1.04 3.77 0.99 3.39 C0.96
+						 3.19 0.9 3.02 0.74 2.97 C0.54 2.9 0.2 2.97 0.07 3.15 C-0.11 3.4 0.1 3.84 0.35 4.29 C0.67 4.86 1.07 5.46
+						 1.35 5.97 C1.89 6.97 1.96 7.66 1.85 8.63 C1.76 9.43 1.56 10.43 1.35 11.54 C1.11 12.8 0.88 14.19 1.36 14.43
+						 C1.45 14.47 1.56 14.47 1.65 14.4 C2.01 14.12 2.04 12.58 2.27 11.69 C2.37 11.29 2.52 11.02 2.7 10.8 C2.78
+						 10.72 2.85 10.64 2.92 10.62 C3.03 10.57 3.11 10.68 3.17 10.84 C3.33 11.25 3.43 11.99 3.55 12.59 C3.64 13.04
+						 3.75 13.41 3.8 13.92 C3.82 14.17 3.83 14.45 3.92 14.57 C4.16 14.91 4.96 14.12 5.06 13.98 Z" class="st1"/>
 		</g>
 	</g>
 </svg>

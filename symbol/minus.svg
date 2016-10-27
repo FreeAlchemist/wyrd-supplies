@@ -2,57 +2,42 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 minus.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.229101in" height="0.229101in"
-		viewBox="0 0 16.4953 16.4953" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.203517in" height="0.203517in"
+		viewBox="0 0 14.6532 14.6532" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
 	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st2 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Страница-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.75,-0.75)">
-			<title>Лист.1</title>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
-			<switch>
-				<foreignObject x="0" y="1.5" width="14.9953" height="14.9953"
-						requiredExtensions="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
-					<v:foreignData v:dataType="ole" v:type="33280" v:orgSize="4608" v:data="data:metafile;base64,eNq7cF7wwcKNUg8
-								Z0IAdAzPDv/+cDGxIYoxQDAYCDAxMUP6/////w4T/j4IhBf4CMRs0DlmANCsQs0P5/0aDZ9iDIIZ8ICxhUGBwZcgD0kUMlQy
-								kADFgioGZBSoPuIDlBggcgEi7Iat9MK97T4T+JUaQCgc2WJniDLQ/l6GAwZ8hiSGLgVQgxMDEyIJU7hCrzxdepvkz5DCkMhg
-								yGDD4MSQCQyCToQzIJxZIAe0HlYHMUDcQowcUTiysmPZ7Am1PBYYFyB25RLpBDmg/cnwSo0ccms8ZkMpvkPth+Z8NWgZwADE
-								nOE4ZGLiBmAeIeYGYD4j5IVUAgyA4DhgYhIFYBIhFwWkCUX6MliGDGzACY4qZC5J20fMuKA0EOBWVFmcwYGd+sdxUyEAhACY
-								4J99nLBCOGRBrQFOSCDh1SoDFN7BgaiTotc2nH8/cerFh2qb50+afuX0bv+K0lgVBeXUWHsnCxv6o5RvDslpzrFqcJ15mYFC
-								x0+X2cPVJyUqtbaifMHXu/HW7dxw5DVFg3nO53o7h7L1zmHqFg5YvLhK//PQNLvfEb/pUICZ17t4BTCmF/N1TY7kvPX2ES2/
-								J4S+RnD5nzi3DlLLsu9btx3Dx8U1cepvOfXXlTD65rxdTKmDpi0IpoUsPD+HSO+vOF12xlsPrSjClsnZ9ieeyunR9A54okPZ
-								cuGOGP6Z4zamv3gzR545Nx6NXJn3rqnpVTPHZ977ri7XOXF/Nrt2DNfm1x3Br1q6bnS507tFzTO2STnNmT/GNr9gcn1MVn1s
-								dnwdGuVBycV+N47TzXb7A8LyFxTsJm9a26J+6/xGXmyPXvisQE7/4AEt4qlYem5spdObBc1x6M3Z9jOC0On12CZZkOf1ety/
-								D+QfXcemtO/PdkSHq+K52TKmIte+KpMQu3D+AS+/U218VRer3L0rAkmK3AqNY4dyVNbj0zrn9WcBwwqZuS0ypipPfvBlCTh2
-								diim1/tSzaRvO5czfzW9SuK5FH1PBjLvfRJVbGwtda/rnF01YEFXQaR1WKGUTCqmzgECLk6Ehw+X0Oeyeilt+n13eG9Tj0eM
-								OD/ItKy/pnDBzzrptG/ccPXD2DhVLWgaaAFD9PYci/ZD2B7mAC9iaIdWXEtDSnTr2M5Bs/z8qxwbtY5l29jNCmqOjYIQCAEU
-								rikk="/>
-				</foreignObject>
-				<svg viewBox="0 0 463.97 464.74" enable-background="new" color-interpolation-filters="sRGB" height="14.9953"
-						preserveAspectRatio="none" width="14.9953" x="0" y="1.5">
-					<defs>
-						<clipPath id="mfid9">
-							<rect id="mfid10" x="0" y="0" width="463.97" height="464.74"/>
-						</clipPath>
-					</defs>
-					<g clip-path="url(#mfid9)">
-						<g stroke="#000000" stroke-miterlimit="10" fill="none">
-							<image width="464" height="465" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIwSURBVDhPY/hPAUDXfH95nLc8OwMDA7eenW9QeEl52cwJndvWzTm6Z+OdswegimAARfO3uzNalUVdCxvn99csmFDUWRBVGGYdaiPFDTQMAji1XDIaDpw7DVGPqvlkRQiD99Sjp6B8JPDs1PpzG6btnp9TaMKv37IOIoii+cvWeAWu+DVXzkH5GODz7TkTDAUsuzdBuCia362NEJMqOnD/ApSPAb7enlovopiwaD+Ei6L53nRnBt/u6w/OQ/kY4PuZuigGx/ZdxyFcFM3HKlWFMuc+f3AGyscAH3dlWHFGLDmLLcA2JUjrt6z9eB9LgEHAu7WR4mIFhx5chHBRNM9xkvSdMntzRXxVTnx1bnx1HhhBGLnxNX2Lz09zZPDtuvUYQ/P3e7NbxfSr18/s0QYlEkzAHdO+rlZTKH3280fQ6EBo/nqqJprBe/oxnPEEBFvTZVTrV0E5yJq/7Mqy4orfcP0SlI8NLPSU9p+xA8pB1vxiaYCQVOGhhzg1f7kzq0VMt2TdYSgfWfO1PksGv+6bsMDABF/PNSVzuvbuOwnlI2vena/AHTv10VPcNh8u8eGMXHYOkQoQmpcHCYsXLX7z9DKUjwE+bYqXEis4cA8RogjNlyc6qwDjQ9fOx9UjNSulvqF27tQJu9fNP30EGkKXe8wZ7OrP3TsL4QIBQjMcLGhJq8sLSvaw8DcWhkYxFIiZ1y6DKgIDLJrRwOPTmy9unblpWsP8afNv30ZK9v//AwCerbd7s9y0WQAAAABJRU5ErkJggg=="/>
-						</g>
-					</g>
-				</svg>
-			</switch>
-			<rect v:rectContext="foreign" x="0" y="1.5" width="14.9953" height="14.9953" class="st1"/>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(0.24,-0.24)">
+			<title>Круг.2</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M0 7.57 A7.08661 7.08661 0 1 1 14.17 7.57 A7.08661 7.08661 0 1 1 -0 7.57 Z" class="st1"/>
+		</g>
+		<g id="shape4-3" v:mID="4" v:groupContext="shape" transform="translate(18.6561,3.12991) rotate(96.5)">
+			<title>Скругленный прямоугольник</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<path d="M10.34 14.65 a0.566934 0.566934 -180 0 0 0.566929 -0.566929 L10.9 7.48 a0.566934 0.566934 -180 0 0 -0.566929
+						 -0.566929 L0.57 6.91 a0.566934 0.566934 -180 0 0 -0.566929 0.566929 L0 14.09 a0.566934 0.566934 -180 0 0
+						 0.566929 0.566929 L10.34 14.65 Z" class="st2"/>
+		</g>
+		<g id="shape5-5" v:mID="5" v:groupContext="shape" transform="translate(4.75011,-7.19717)">
+			<title>Лист.5</title>
+			<path d="M0 14.65 L4.9 14.65" class="st3"/>
 		</g>
 	</g>
 </svg>

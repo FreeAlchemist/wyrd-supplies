@@ -1,4 +1,4 @@
-var set = 'gaining grounds 2016';
+var set = 'gaining grounds 2017';
 var type = 'strategy';
 var cards = {
 	'rams' : {

@@ -1,4 +1,3 @@
-
 window.addEventListener("keyup",function(){
 	key =event.keyCode;
 if(key==13) {
@@ -40,7 +39,7 @@ function createspell(){
 				$('#magia-count-div').show()
 			}
 			var name = spellmagia[magia].name
-			// console.log(name)
+												// console.log(name)
 			var story = spellmagia[magia].story
 			var aspect = spellmagia[magia].aspect
 			var ap = spellmagia[magia].AP
@@ -167,7 +166,7 @@ function createspell(){
 		if(spellaugmentation[augmentation].story){
 			story += '<br>'+spellaugmentation[augmentation].story
 		}
-		console.log('story '+story)
+												console.log('story '+story)
 //ASPECT
 	var aspect = spellmagia[magia].aspect
 //AP
@@ -188,8 +187,8 @@ function createspell(){
 		ap += parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount)
 	}
 	if(ap < 0){ap = 0}
-	console.log(parseInt(spellmagia[magia].AP)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].AP)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].AP)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount))
-	console.log('total AP: '+ap)
+												console.log(parseInt(spellmagia[magia].AP)*parseInt(magiacount)+' + '+parseInt(spellgenus[genus].AP)*parseInt(genuscount)+' + '+parseInt(spellelemental[elemental].AP)*parseInt(elementalcount)+' + '+parseInt(spellalteration[alteration].AP)*parseInt(alterationcount)+' + '+parseInt(spellaugmentation[augmentation].AP)*parseInt(augmentationcount))
+												console.log('total AP: '+ap)
 //TN
 	var tn = 0
 	if(spellmagia[magia].TN){tn += parseInt(spellmagia[magia].TN)*parseInt(magiacount)}
@@ -198,7 +197,7 @@ function createspell(){
 	if(spellalteration[alteration].TN){tn += parseInt(spellalteration[alteration].TN)*parseInt(alterationcount)}
 	if(spellaugmentation[augmentation].TN){tn += parseInt(spellaugmentation[augmentation].TN)*parseInt(augmentationcount)}
 
-	console.log('total TN: '+tn)
+												console.log('total TN: '+tn)
 
 	var tnsuit = ''
 	if(spellmagia[magia].tnsuit){tnsuit += spellmagia[magia].tnsuit}
@@ -207,12 +206,13 @@ function createspell(){
 	if(spellalteration[alteration].tnsuit){tnsuit += spellalteration[alteration].tnsuit}
 	if(spellaugmentation[augmentation].tnsuit){tnsuit += spellaugmentation[augmentation].tnsuit}
 
-	console.log(spellmagia[magia].tnsuit+' + '+spellgenus[genus].tnsuit+' + '+spellelemental[elemental].tnsuit+' + '+spellalteration[alteration].tnsuit+' + '+spellaugmentation[augmentation].tnsuit)
-	console.log('total tnsuit: '+tnsuit)
+												console.log(spellmagia[magia].tnsuit+' + '+spellgenus[genus].tnsuit+' + '+spellelemental[elemental].tnsuit+' + '+spellalteration[alteration].tnsuit+' + '+spellaugmentation[augmentation].tnsuit)
+												console.log('total tnsuit: '+tnsuit)
 
 	if(spellalteration[alteration].portability){
-		console.log('portability'+$("input[name=portability]:checked").val())
+												console.log('portability'+$("input[name=portability]:checked").val())
 		var portability = $("input[name=portability]:checked").val()
+												console.log('portability: '+portability)
 		// $("input[name=portability]").click(function(){
 		// 	var portability = $("input[name=portability]:checked").val()
 		// 	if(portability){tn+=parseInt(portability)}
@@ -221,8 +221,9 @@ function createspell(){
 	}
 	if(portability){tn+=parseInt(portability)}
 	if(spellalteration[alteration].commonality){
-		console.log('commonality '+$("input[name=commonality]:checked").val())
+												console.log('commonality '+$("input[name=commonality]:checked").val())
 		var commonality = $("input[name=commonality]:checked").val()
+												console.log('commonality: '+commonality)
 		// $("input[name=commonality]").click(function(){
 		// 	var commonality = $("input[name=commonality]:checked").val()
 		// 	if(commonality){tn+=parseInt(commonality)}
@@ -233,8 +234,8 @@ function createspell(){
 //RESIST
 	var resist = spellmagia[magia].resist
 	if(spellalteration[alteration].resist == 'switch'){
-		if(resist == 'DF'){resist = 'WP'}
-		else if(resist == 'WP'){resist = 'DF'}
+		if(resist == 'DF'||resist == 'Df'||resist == 'df'){resist = 'WP'}
+		else if(resist == 'WP'||resist == 'Wp'||resist == 'wp'){resist = 'DF'}
 	}
 
 	var extraresist = 0
@@ -242,7 +243,12 @@ function createspell(){
 	if(spellelemental[elemental].resist){extraresist += parseInt(spellelemental[elemental].resist)*parseInt(elementalcount)}
 	if(spellalteration[alteration].resist){extraresist += parseInt(spellalteration[alteration].resist)*parseInt(alterationcount)}
 	if(spellaugmentation[augmentation].resist){extraresist += parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)}
-	if(extraresist != 0){resist = resist+' + '+extraresist}
+												// nans = isNaN(extraresist)
+												// console.log(isNaN(extraresist))
+	if(extraresist != 0){
+	// if(extraresist != 0 && isNaN(extraresist) == false){
+		resist = resist+' + '+extraresist
+	}
 	if(spellmagia[magia].resist == '-'){resist = '-'}
 
 //RANGE
@@ -252,7 +258,7 @@ function createspell(){
 	if(spellelemental[elemental].rangetype){rangetype += '<br>'+spellelemental[elemental].rangetype}
 	if(spellalteration[alteration].rangetype){rangetype += '<br>'+spellalteration[alteration].rangetype}
 	if(spellaugmentation[augmentation].rangetype){rangetype += '<br>'+spellaugmentation[augmentation].rangetype}
-	console.log('rangetype '+rangetype)
+												console.log('rangetype '+rangetype)
 
 	var range = 0
 	if(spellmagia[magia].range){range += parseInt(spellmagia[magia].range)}
@@ -297,10 +303,10 @@ function createspell(){
 		range = rangetype+': '+range
 	}
 	if(range == 999){range = 'В пределах видимости'}
-	console.log('total range: '+range)
+												console.log('total range: '+range)
 //DAMAGE	
 	var damage = ''
-	console.log(parseInt(alterationcount))
+												console.log(parseInt(alterationcount))
 	if(spellmagia[magia].damagesmall && spellaugmentation[augmentation].damagestep && spellaugmentation[augmentation].damagesteptype){
 		if(spellaugmentation[augmentation].damagesteptype == 'increase'){
 			var damagesmall = parseInt(spellmagia[magia].damagesmall)+parseInt(spellaugmentation[augmentation].damagestep[augmentationcount][0])
@@ -368,7 +374,7 @@ function createspell(){
 			}
 		};
 	}
-	console.log('duration '+duration)
+												console.log('duration '+duration)
 //TEXT	
 	var text = ''
 	if(spellmagia[magia].text){text += spellmagia[magia].text}
@@ -396,17 +402,17 @@ function createspell(){
 	if(spellelemental[elemental].requirement){requirement += '<br>'+spellelemental[elemental].requirement}
 	if(spellalteration[alteration].requirement){requirement += '<br>'+spellalteration[alteration].requirement}
 	if(spellaugmentation[augmentation].requirement){requirement += '<br>'+spellaugmentation[augmentation].requirement}
-	console.log('requirement '+requirement)
+												console.log('requirement '+requirement)
 
 	$('#total-info-name').html(name)
 	if(story){$('#total-info-story').html(story)}
-	$('#total-info-aspect').html('<div class="info-title">АСПЕКТ</div>'+aspect)
-	$('#total-info-ap').html('<div class="info-title">ОД (AP)</div>'+ap)
-	$('#total-info-tn').html('<div class="info-title">ЦН (TN)</div>'+tn+tnsuit)
-	$('#total-info-resist').html('<div class="info-title">СОПРОТИВЛЕНИЕ</div>'+resist)
-	if(range){$('#total-info-range').html('<div class="info-title">ДАЛЬНОСТЬ</div>'+range)}
-	if(damage){$('#total-info-damage').html('<div class="info-title">УРОН</div>'+damage)}
-	if(duration){$('#total-info-duration').html('<div class="info-title">ДЛИТЕЛЬНОСТЬ</div>'+duration)}
+	$('#total-info-aspect').html('<div class="info-title">АСПЕКТ</div><div class="info-text">'+aspect+'</div>')
+	$('#total-info-ap').html('<div class="info-title">ОД (AP)</div><div class="info-text">'+ap+'</div>')
+	$('#total-info-tn').html('<div class="info-title">ЦН (TN)</div><div class="info-text">'+tn+tnsuit+'</div>')
+	$('#total-info-resist').html('<div class="info-title">СОПРОТИВЛЕНИЕ</div><div class="info-text">'+resist+'</div>')
+	if(range){$('#total-info-range').html('<div class="info-title">ДАЛЬНОСТЬ</div><div class="info-text">'+range+'</div>')}
+	if(damage){$('#total-info-damage').html('<div class="info-title">УРОН</div><div class="info-text">'+damage+'</div>')}
+	if(duration){$('#total-info-duration').html('<div class="info-title">ДЛИТЕЛЬНОСТЬ</div><div class="info-text">'+duration+'</div>')}
 	$('#total-info-text').html('<b>Эффект</b>: '+text)
 	if(requirement){$('#total-info-requirement').html('<b>Требования:</b><br>'+requirement)}
 }

@@ -60,12 +60,21 @@ option{
 
 option:hover{
 	background-color: Lightgrey;
+	cursor: pointer;
+}
+
+select:hover{
+	cursor: pointer;
 }
 
 .spelltitle{
 	text-transform: uppercase;
 	font-size: 11pt;
 	line-height: 25px;
+	background-color: black;
+	color: Linen;
+	padding-left: 5px;
+	font-weight: bold;
 }
 
 .btn-main{
@@ -159,6 +168,12 @@ background-color: Blanchedalmond;*/
 	color: White;
 	background-color: black;
 	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.info-text{
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #magia option{

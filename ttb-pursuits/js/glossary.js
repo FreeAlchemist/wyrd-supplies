@@ -181,7 +181,7 @@ var glossary = {
 				name:'Перевертыш',
 				text:'',
 			},
-		'steamfitter' : {
+		'decemberacolyte' : {
 				name:'Аколит Декабря',
 				text:'',
 			},
@@ -242,7 +242,7 @@ var glossary = {
 				text:'',
 			},
 		'studentoftransmortis' : {
-				name:'Студент Трансмортизма',
+				name:'Студент Трансмортиса',
 				text:'',
 			},
 		'nephilimhunter' : {
@@ -274,31 +274,31 @@ var glossary = {
 				text:'',
 			},
 		'boomer' : {
-				name:'',
+				name:'Взрывала',
 				text:'',
 			},
 		'boozer' : {
-				name:'',
+				name:'Выпивоха',
 				text:'',
 			},
 		'buckaroo' : {
-				name:'',
+				name:'Ковбой',
 				text:'',
 			},
 		'copycat' : {
-				name:'',
+				name:'Подражатель',
 				text:'',
 			},
 		'pugilist' : {
-				name:'',
+				name:'Боец',
 				text:'',
 			},
 		'swineherd' : {
-				name:'',
+				name:'Свинопас',
 				text:'',
 			},
 		'trapper' : {
-				name:'',
+				name:'Зверолов',
 				text:'',
 			},
 		'' : {
@@ -314,4 +314,3 @@ var glossary = {
 				text:'',
 			},
 	}
-

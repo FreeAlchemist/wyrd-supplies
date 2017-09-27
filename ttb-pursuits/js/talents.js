@@ -1,3 +1,4 @@
+
 $('body').prepend($('<script />',{type:'text/javascript',src:'js/glossary.js'}))
 $('body').prepend($('<div />',{class:'popup',id:'popup-cards'}))
 $('body').prepend($('<div />',{class:'popup',id:'popup-talents'}))
@@ -340,11 +341,11 @@ var talents = {
 		book:'Fated Almanac',
 		gear:'не магический инструментарий (стр 179)',
 		step:{
-			'1' : 'Student of Knowledge',
+			'1' : 'Студент познания',
 			'2' : 'Общий талант',
-			'3' : 'Eureka Moment / Rational Mind',
+			'3' : 'Эврика / Рациональный ум',
 			'4' : 'Общий талант',
-			'5' : 'Великий мыслитель / Rational Mind',
+			'5' : 'Великий мыслитель / Рациональный ум',
 			'6' : 'Общий талант',
 			'7' : 'Прикладное обучение / Эврика',
 			'8' : 'Общий талант',
@@ -544,7 +545,7 @@ var talents = {
 			story:'Периодическое использование сроднило вас с одним из компонентов определенного заклинания.',
 			text:'Выберите определенный Иммуто (Immuto) или Магию (Magia). Все проверки на колдовство или защиту от заклинания содержащего выбранный Genus, Immuto, or Magia получают <span class="symbol plus"/>.',
 			trigger:'',
-			limit:'Вы можете взять этот Талант несколько раз, но каждый раз разный Genus, Immuto, or Magia должен быть выбран. Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки.',
+			limit:'Вы можете взять этот Талант несколько раз, но каждый раз необходимо выбирать разный Генус (Genus), Иммуто (Immuto) или Магию (Magia). Также, вы можете получить преимущество только от одного Родства с заклинанием в рамках проверки.',
 			fill:3,
 		},
 	},
@@ -1080,7 +1081,7 @@ var talents = {
 			'10' : 'Неумолимый',
 		},
 		'Rugged individual' : {
-				name:'Прочная личность',
+				name:'Стойкая личность',
 				requirement:'',
 				story:'',
 				text:'При провале Training duel, можно вытянуть карту на руку. Эпилог: можно развить любой Training skill в дополнение к вариантам развития навыков.',
@@ -1186,7 +1187,7 @@ var talents = {
 				limit:'Вы можете взять этот Талант больше одного раза, и эффекты складываются.',
 			},
 		'Watch Them All' : {
-				name:'Следить за всеми ними',
+				name:'Следить за всеми',
 				requirement:'',
 				story:'Способность отслеживать противника в бою переносится и на социальные ситуации.',
 				text:'Вы получаете <span class="symbol plus"/> ко всем попыткам противостоять угрозам (intimidation) или обману (deception). Также вы получаете <span class="symbol plus"/> ко всем Переворотам Инициативы (Initiative Flips).',
@@ -3227,7 +3228,7 @@ var talents = {
 				limit:'',
 			},
 	},
-		abettorofobliteration : {
+	abettorofobliteration : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{
@@ -3318,7 +3319,7 @@ var talents = {
 				limit:'',
 			},
 	},
-		exorcist : {
+	exorcist : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{
@@ -3409,7 +3410,7 @@ var talents = {
 				limit:'',
 			},
 	},
-		revenant : {
+	revenant : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{
@@ -3500,7 +3501,7 @@ var talents = {
 				limit:'',
 			},
 	},
-		revivalist : {
+	revivalist : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{
@@ -3591,7 +3592,7 @@ var talents = {
 				limit:'',
 			},
 	},
-		studentoftransmortis : {
+	studentoftransmortis : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{

@@ -51,19 +51,17 @@ function getInfo(dir,name,type,mode){
 					// }
 
 				}
-					else if(type == 'text'){
-						// if(talents[name].gear){
-						// 	return cardtalent[arr[2]].text
-						// }
-						// else{
-							return cardtalent[arr[3]].text
-						// }
-						
-
-					}
-						else{
-							return 'none'
-						}
+				else if(type == 'text'){
+					// if(talents[name].gear){
+					// 	return cardtalent[arr[2]].text
+					// }
+					// else{
+						return cardtalent[arr[3]].text
+					// }
+				}
+				else{
+					return 'none'
+				}
 			}
 			else if(mode&&mode != 'main'){
 				if(type == 'name'){
@@ -74,7 +72,6 @@ function getInfo(dir,name,type,mode){
 					else{
 						return mode
 					}
-					
 				}
 				if(type == 'text'){
 					return talents[name][mode].text
@@ -103,11 +100,9 @@ getName(cardid,'t')
 getName(pursuit,'n')
 getTalent(cardid,'n')
 getTalent(cardid,'t')
-
 getInfo('glossary',pursuit,'name')
 getInfo('glossary',cardid,'name')
 getInfo('glossary',cardid,'text')
 getInfo('talents',cardid,'name')
 getInfo('talents',cardid,'text')
-
 */

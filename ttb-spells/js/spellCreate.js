@@ -245,8 +245,8 @@ function createspell(){
 	if(spellaugmentation[augmentation].resist){extraresist += parseInt(spellaugmentation[augmentation].resist)*parseInt(augmentationcount)}
 												// nans = isNaN(extraresist)
 												// console.log(isNaN(extraresist))
-	if(extraresist != 0){
-	// if(extraresist != 0 && isNaN(extraresist) == false){
+	// if(extraresist != 0){
+	if(extraresist != 0 && isNaN(extraresist) == false){
 		resist = resist+' + '+extraresist
 	}
 	if(spellmagia[magia].resist == '-'){resist = '-'}

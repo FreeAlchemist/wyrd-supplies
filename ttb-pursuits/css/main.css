@@ -325,7 +325,7 @@ border-bottom-style: none;
 .tinkerer{background-image: url(../img/basic/tinkerer.png);}
 .wastrel{background-image: url(../img/basic/wastrel.png);}
 
-/*Advanced*/
+/*Advanced-Basic*/
 .deathmarshal{background-image: url(../img/advanced/deathmarshal.png);}
 
 /*Into the Steam*/
@@ -337,7 +337,7 @@ border-bottom-style: none;
 .infiltrator{background-image: url(../img/into-the-steam/infiltrator.png);}
 .mage{background-image: url(../img/into-the-steam/mage.png);}
 .primal{background-image: url(../img/into-the-steam/primal.png);}
-/*Advanced*/
+/*Advanced-Into the Steam*/
 .shapeshifter{background-image: url(../img/into-the-steam/shapeshifter.png);}
 .decemberacolyte{background-image: url(../img/into-the-steam/decemberacolyte.png);}
 .silentone{background-image: url(../img/into-the-steam/silentone.png);}
@@ -352,7 +352,7 @@ border-bottom-style: none;
 .medium{background-image: url(../img/under-quarantine/medium.png);}
 .necromancer{background-image: url(../img/under-quarantine/necromancer.png);}
 .sawbones{background-image: url(../img/under-quarantine/sawbones.png);}
-/*Advanced*/
+/*Advanced-Under Quarantine*/
 .abettorofobliteration{background-image: url(../img/into-the-steam/abettorofobliteration.png);}
 .exorcist{background-image: url(../img/into-the-steam/exorcist.png);}
 .revenant{background-image: url(../img/into-the-steam/revenant.png);}
@@ -361,10 +361,23 @@ border-bottom-style: none;
 
 /*Into the Bayou*/
 .bokor{background-image: url(../img/into-the-bayou/bokor.png);}
+.boomer{background-image: url(../img/into-the-bayou/boomer.png);}
+.boozer{background-image: url(../img/into-the-bayou/boozer.png);}
+.buckaroo{background-image: url(../img/into-the-bayou/buckaroo.png);}
+.copycat{background-image: url(../img/into-the-bayou/copycat.png);}
+.pugilist{background-image: url(../img/into-the-bayou/pugilist.png);}
+.swineherd{background-image: url(../img/into-the-bayou/swineherd.png);}
+.trapper{background-image: url(../img/into-the-bayou/trapper.png);}
+/*Advanced-Into the Bayou*/
 
+/*Above the Law*/
+.commander{background-image: url(../img/above-the-law/commander.png);}
+
+/*Advanced-Above the Law*/
 /*From Nightmares*/
-/*Guild Wars*/
+/*Advanced-From Nightmares*/
 /*Beyond Fate*/
+/*Advanced-Beyond Fate*/
 
 #popup{
 	

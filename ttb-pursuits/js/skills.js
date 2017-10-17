@@ -1,62 +1,40 @@
 Physical Aspects
 Might
-	(Close Combat): Melee
-	(Close Combat): Heavy Melee
-	(Ranged Combat): Heavy Guns
-	(Close Combat): Pneumatic
-	(Close Combat): Pugilism
+	(Close Combat): Melee: One handed weapons that bludgeon, slash, or pierce.
+	(Close Combat): Heavy Melee: Large and cumbersome weapons that require two hands.
+	(Ranged Combat): Heavy Guns: Use of large powder guns, such as cannons and Gatlings.
+	(Close Combat): Pneumatic: Weapons that include mechanical parts.
+	(Close Combat): Pugilism: Powerful strikes usually made with closed fists.
 
 Grace
-	(Close Combat): Flexible
-	(Ranged Combat): Archery
-	(Ranged Combat): Pistol
-	(Ranged Combat): Shotgun
-	(Ranged Combat): Thrown Weapons
+	(Close Combat): Flexible: Chains, Lassos, Whips, and any other such weapons.
+	(Ranged Combat): Archery: Use of bows and other tension projectile weapons.
+	(Ranged Combat): Pistol: One handed firearms, like derringers and Dueling pistols.
+	(Ranged Combat): Shotgun: Shotgun weapons of both the scatter and slug variety.
+	(Ranged Combat): Thrown Weapons: Ranged weapons hurled by hand.
 
 Speed
-	(Close Combat): Martial Arts
+	(Close Combat): Martial Arts: Quick strikes to vulnerable areas made with hands and feet.
 
 Resilience
 
 
 Mental Aspects
 Charm
-	(Magical): 
-	(Magical): 
-	(Magical): 
+	*(Magical): Enchanting: Imbuing an object or target with magical qualities.
+	(Magical): Harness Soulstone: Accessing and refilling the power of a Soulstone.
+	*(Magical): Necromancy: Control over another’s Mind, Body, or Spirit.
 
 Cunning
-	(Magical): 
-	(Magical): Prestidigitation*
+	*(Magical): Enchanting: Imbuing an object or target with magical qualities.
+	*(Magical): Prestidigitation: Manipulation of space, time, and the senses.
 
 Intellect
-	(Ranged Combat): Long Arms
-	(Magical): Prestidigitation*
+	(Ranged Combat): Long Arms: Long barrel weapons such as rifles and carbines.
+	*(Magical): Prestidigitation: Manipulation of space, time, and the senses.
+	*(Magical): Sorcery: Creation of temporary elemental effects.
 
 Tenacity
-	(Magical): Counter-Spelling
-
-Close Combat skills Associated Aspect Description
-Flexible Grace Chains, Lassos, Whips, and any other such weapons.
-Heavy Melee Might Large and cumbersome weapons that require two hands.
-Martial Arts Speed Quick strikes to vulnerable areas made with hands and feet.
-Melee Might One handed weapons that bludgeon, slash, or pierce.
-Pneumatic Might Weapons that include mechanical parts.
-Pugilism Might Powerful strikes usually made with closed fists.
-
-Ranged Combat skills Associated Aspect Description
-Archery Grace Use of bows and other tension projectile weapons.
-Heavy Guns Might Use of large powder guns, such as cannons and Gatlings.
-Long Arms Intellect Long barrel weapons such as rifles and carbines.
-Pistol Grace One handed firearms, like derringers and Dueling pistols.
-Shotgun Grace Shotgun weapons of both the scatter and slug variety.
-Thrown Weapons Grace Ranged weapons hurled by hand.
-
-
-Magical skills Associated Aspect Description
-Counter-Spelling Tenacity Stopping magical effects and Spells.
-Enchanting Charm or Cunning Imbuing an object or target with magical qualities.
-Harness Soulstone Charm Accessing and refilling the power of a Soulstone.
-Necromancy Charm or Tenacity Control over another’s Mind, Body, or Spirit.
-Sorcery Intellect or Tenacity Creation of temporary elemental effects.
-Prestidigitation Cunning or Intellect Manipulation of space, time, and the senses.
+	(Magical): Counter-Spelling: Stopping magical effects and Spells.
+	*(Magical): Necromancy: Control over another’s Mind, Body, or Spirit.
+	*(Magical): Sorcery: Creation of temporary elemental effects.

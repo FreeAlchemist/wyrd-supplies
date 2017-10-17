@@ -7,8 +7,8 @@ $('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class
 $('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Into the Steam',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Under Quarantine',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'pursuits-above-the-law.html',text:'Above the Law',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-guild-wars.html',text:'Guild Wars',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
 $('#menu').append($('<div />',{class:'row'}))
 

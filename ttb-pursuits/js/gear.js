@@ -1,4 +1,3 @@
-var gears = {
 	armor:{
 		'Aventail':{
 			type:'Head protection',
@@ -49,13 +48,11 @@ leg
 chest
 arm
 shield
-
 Type
 Armor
 effect
 text
 cost
-
 Weapon
 Range
 Damage
@@ -73,7 +70,6 @@ Ammunition
 	name
 	text
 	cost
-
 'Sidearms'
 	'Legacy Pistols'
 		'A&T Drakon'
@@ -91,7 +87,6 @@ Ammunition
 		'Ganten M1895'
 		'Weshorn & Smitte #3'
 		'Peacebringer'
-
 'Long Arms'
 	'Legacy Long Arms'
 		'A&T Model 10'
@@ -99,7 +94,6 @@ Ammunition
 		'Hawken Rifle'
 		'Enfield Musketoon'
 		'Nock Volley Gun'
-
 	'Rifles'
 		'Yamisaka Type 30'
 		'Perier Model 1886/M93'
@@ -114,25 +108,20 @@ Ammunition
 		'Solberg Inertia'
 		'Chesterfield Model 1887/01'
 		'Chesterfield Model 1897'
-
-
 'Heavy Weapons, Artillery, and Ordnance'
 	'One-Pounder Swivel Gun'
 	'Model 1866 Six Pounder'
 	'Mobile Gatling Gun'
-
 'Bows & Crossbows'
 	'Longbow'
 	'Horn Bow'
 	'Crossbow'
-
 'Melee Arms'
 Weapon
 Range
 Damage
 Special
 Cost
-
 Bayonet (Pistol)
 Bayonet (Rifle)
 Bowie Knife
@@ -143,14 +132,11 @@ Gate-Spear
 Truncheon
 Rail Hammer
 Knuckleduster
-
 customization
 	name
 	effect
 	text
 	cost
-
-
 pneumatic limbs
 pneumatic
 effect

@@ -1359,6 +1359,7 @@ var talents = {
 				limit:'',
 			},
 	},
+/*Advanced (Fated Almanac)*/
 	deathmarshal : {
 		book:'Advanced (Fated Almanac)',
 		gear:'',
@@ -1413,19 +1414,26 @@ var talents = {
 /*Into the Steam*/
 	animator : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'не магический инструментарий (стр 179)',
 		step:{
-			'1' : 'Part Efficiency / Rage of the Machine ',
+			'1' : 'Эффективная запчасть / Ярость машины ',
 			'2' : 'Общий Талант',
-			'3' : 'Extra Cobbling / Scuttling Nuisances',
+			'3' : 'Дополнительное слияние / Избавление от помех',
 			'4' : 'Общий Талант',
-			'5' : 'Part Efficiency / Uncontrolled Detonation',
+			'5' : 'Эффективная запчасть / Uncontrolled Detonation',
 			'6' : 'Общий Талант',
-			'7' : 'Extra Cobbling / Skilled Cobbling',
+			'7' : 'Дополнительное слияние / Качественное слияние',
 			'8' : 'Общий Талант',
-			'9' : 'Part Efficiency / Twisted Propagation',
-			'10' : 'Fusion',
+			'9' : 'Эффективная запчасть / Искаженное воспроизводство',
+			'10' : 'Синтез',
 		},
+		'Always more scrap' : {
+				name:'Больше хлама',
+				requirement:'',
+				story:'',
+				text:'When a Cobbled or Amalgam controlled by this character is killed or sacrificed by an enemy during Dramatic Time, можно вытянуть карту на руку. Эпилог: можно развить любой Magical skill в дополнение к вариантам развития навыков.',
+				trigger:'',
+			},
 		'Cobble Together' : {
 				name:'Слить вместе',
 				requirement:'',
@@ -1437,8 +1445,8 @@ var talents = {
 		'Part Efficiency' : {
 				name:'Эффективная запчасть',
 				requirement:'',
-				story:'',
-				text:'',
+				story:'Whether brand new or slowly being eaten by rust, the Animator can find some way to incorporate material of any quality into her creations.',
+				text:'When this character casts the Cobble Together Manifested Power, the summoned Cobbled gains +2 Cobbling Points for eachinstance of this Talent she possesses.',
 				trigger:'',
 				limit:'',
 			},
@@ -1453,29 +1461,29 @@ var talents = {
 		'Extra Cobbling' : {
 				name:'Дополнительное слияние',
 				requirement:'',
-				story:'',
-				text:'',
+				story:'Controlling a Cobbled can be difficult, but as the character gains more experience, it gradually becomes second nature for her.',
+				text:'Each time the character gains this Talent, the maximum number of Cobbled she may have active at one time increases by +1.',
 				trigger:'',
 				limit:'',
 			},
 		'Scuttling Nuisances' : {
 				name:'Избавление от помех',
 				requirement:'',
-				story:'',
-				text:'',
+				story:'The character’s Cobbled keep low to the ground and cling to their master’s enemies with hooked arms.',
+				text:'Friendly characters do not flip for this character’s Cobbled when determining a random target when shooting into an engagement. Attacks made by friendly non-Cobbled characters against a target that is engaged with one of this character’s Cobbled gain a + to their attack.',
 				trigger:'',
 				limit:'',
 			},
 		'Uncontrolled Detonation' : {
 				name:'Неконтролируемая детонация',
 				requirement:'',
-				story:'',
+				story:'While some artificers might grow despondent at thedestruction of one of their creations, the Animator is uncaring about such an event.',
 				text:'',
 				trigger:'',
 				limit:'',
 			},
 		'Skilled Cobbling' : {
-				name:'Опытное слияние',
+				name:'Качественное слияние',
 				requirement:'',
 				story:'',
 				text:'',
@@ -1485,7 +1493,7 @@ var talents = {
 		'Twisted Propagation' : {
 				name:'Искаженное воспроизводство',
 				requirement:'',
-				story:'',
+				story:'The character’s creations are capable of tearing apart their victims and using their parts to construct new Cobbled for their master. This process is usually quite disturbing to watch, even to those accustomed to some of the darker things Malifaux can throw at a person.',
 				text:'',
 				trigger:'',
 				limit:'',
@@ -1501,7 +1509,7 @@ var talents = {
 	},
 	augmented : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'Pneumatic Limb with augments of a total value up to 25 scrip',
 		step:{
 			'1' : 'Специализированные инструменты',
 			'2' : 'Общий Талант',
@@ -1581,7 +1589,7 @@ var talents = {
 	},
 	collaborator : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'any weapon and armor of a combined value of up to 25 scrip',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -1677,7 +1685,7 @@ var talents = {
 	},
 	engineer : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'Mobile Toolkit (seepage 230)',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -1773,7 +1781,7 @@ var talents = {
 	},
 	illusionist : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'You gain the Stage Magic Talent',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -1869,7 +1877,7 @@ var talents = {
 	},
 	infiltrator : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'не магический инструментарий (стр 179)',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -1965,7 +1973,7 @@ var talents = {
 	},
 	mage : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'Magical Theory and the Arcane Shield Talent',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -2061,7 +2069,7 @@ var talents = {
 	},
 	primal : {
 		book:'Into the Steam',
-		gear:'',
+		gear:'+1 Wound',
 		step:{
 			'1' : '',
 			'2' : 'Общий Талант',
@@ -2156,6 +2164,102 @@ var talents = {
 			},
 	},
 	shapeshifter : {
+		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	showgirl : {
 		book:'Advanced (Into the Steam)',
 		gear:'',
 		step:{
@@ -2444,6 +2548,102 @@ var talents = {
 			},
 	},
 	demolitionist : {
+		book:'Advanced (Into the Steam)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	steamfitter : {
 		book:'Advanced (Into the Steam)',
 		gear:'',
 		step:{
@@ -3501,6 +3701,294 @@ var talents = {
 			},
 	},
 	revenant : {
+		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	graveservant : {
+		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	freikorpsmann : {
+		book:'Advanced (Under Quarantine)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	torakage : {
 		book:'Advanced (Under Quarantine)',
 		gear:'',
 		step:{
@@ -5038,6 +5526,198 @@ var talents = {
 				limit:'',
 			},
 	},
+	propagandist : {
+		book:'Above the Law',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	executioner : {
+		book:'Above the Law',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
 }
 
 
@@ -5330,52 +6010,54 @@ talentsCards()
 // 				}
 // }
 
-function showElem(elem,type){
-// console.log(type)
-arr = elem.split('-')
-// console.log(arr)
-// console.log(arr[0])
-	if(type == 't'){
-			$('.talentstable').hide()
-			$('#popup-talents').hide()
-			$('#talents-'+arr[0]).show()
-			$('#popup-talents').show()
-			$('#page').hide()
+/*Показать таланты*/
+	function showElem(elem,type){
+	// console.log(type)
+	arr = elem.split('-')
+	// console.log(arr)
+	// console.log(arr[0])
+		if(type == 't'){
+				$('.talentstable').hide()
+				$('#popup-talents').hide()
+				$('#talents-'+arr[0]).show()
+				$('#popup-talents').show()
+				$('#page').hide()
+		}
+		if(type == 'c'){
+				$('.talentstable').hide()
+				$('#popup-talents').hide()
+				$('#page').hide()
+				$('#talents-'+arr[0]).show()
+				$('#'+arr[0]+'-front').show()
+				$('#popup-talents').show()
+				
+		}
 	}
-	if(type == 'c'){
-			$('.talentstable').hide()
-			$('#popup-talents').hide()
-			$('#page').hide()
-			$('#talents-'+arr[0]).show()
-			$('#'+arr[0]+'-front').show()
-			$('#popup-talents').show()
-			
-	}
-}
 
-function hideElem(elem){
-	$(elem).parents('table').hide()
-	$('#popup-talents').hide()
-	$('#page').show()
-}
+/*Скрыть таланты*/
+	function hideElem(elem){
+		$(elem).parents('table').hide()
+		$('#popup-talents').hide()
+		$('#page').show()
+	}
 
 // $('#popup').toggle()
 // $('.talentstable').show()
 // $('#page').toggle()
 
-function checkHeight(type){
+/*Проверка высоты текста*/
+	function checkHeight(type){
+		var hpopup = parseInt($('#popup-talents').css('height'))
+		var htable = parseInt($('#talents-'+type).css('height'))
+		var htitle = parseInt($('.talentstable-pursuit').css('height'))
+		var hinfo = parseInt($('.pursuit-info').css('height'))
 
-var hpopup = parseInt($('#popup-talents').css('height'))
-var htable = parseInt($('#talents-'+type).css('height'))
-var htitle = parseInt($('.talentstable-pursuit').css('height'))
-var hinfo = parseInt($('.pursuit-info').css('height'))
-
-console.log('Тип: '+type)
-console.log('Доступная высота: '+hpopup)
-console.log('Высота таблицы: '+htable)
-console.log('Высота заголовка: '+htitle)
-console.log('Высота информации: '+hinfo)
-}
+		console.log('Тип: '+type)
+		console.log('Доступная высота: '+hpopup)
+		console.log('Высота таблицы: '+htable)
+		console.log('Высота заголовка: '+htitle)
+		console.log('Высота информации: '+hinfo)
+	}
 
 // var hpopup = parseInt($('#popup').css('height'))
 // var htitle = parseInt($('.talentstable-pursuit').css('height'))

@@ -6,4 +6,5 @@ var pursuit = [
 	'bureaucrat',
 	'magewright',
 	'gunner',
+	'propagandist',
 ]

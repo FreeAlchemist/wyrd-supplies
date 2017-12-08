@@ -1,6 +1,5 @@
 var glossary = {
-/*Physical aspects*/
-		'Might' : {
+/*Physical aspects*/'Might' : {
 				name:'Сила',
 				text:'',
 			},
@@ -149,12 +148,12 @@ var glossary = {
 /*Advanced Basic*/
 		'deathmarshal' : {
 				name:'Маршал Смерти',
-				text:'Лучшие охотники на нежить и воскрешателей, подвергаются изменениям под влиянием некротической энергии.',
+				text:'requirement',
 			},
 /*Into the Steam*/
 		'animator' : {
 				name:'Аниматор',
-				text:'Может быстро создавать одноразовых конструктов-"Хламоботов", для исполнения своих желаний.',
+				text:'One man\'s junk is another man\'s shambling monstrosity.<br>-Joseph Tisdale',
 			},
 		'augmented' : {
 				name:'Дополненный',
@@ -184,6 +183,7 @@ var glossary = {
 				name:'Первобытный',
 				text:'Тянется к дикой природе, может привлекать на свою сторону животных.',
 			},
+/*Advanced. Into the Steam*/
 		'shapeshifter' : {
 				name:'Перевертыш',
 				text:'Может превращаться в зверя по желанию.',
@@ -236,47 +236,47 @@ var glossary = {
 /*Advanced. Under Quarantine*/
 		'abettorofobliteration' : {
 				name:'Пособник Забвения',
-				text:'Последователь тирана Забвение.',
+				text:'requirement',
 			},
 		'exorcist' : {
 				name:'Экзорцист',
-				text:'Специалист по изгнанию духов и охоте на нечисть.',
+				text:'requirement',
 			},
 		'revenant' : {
 				name:'Призрак',
-				text:'Неупокоенный мстительный дух умершего насильственной смертью.',
+				text:'requirement',
 			},
 		'revivalist' : {
 				name:'Реаниматор',
-				text:'"Оно живое! Живое!"',
+				text:'requirement',
 			},
 		'studentoftransmortis' : {
 				name:'Студент Трансмортиса',
-				text:'Университет Трансмортизма Альбуса Фон Штука никогда до конца не расстается с воспитанниками.',
+				text:'requirement',
 			},
 		'nephilimhunter' : {
 				name:'Охотник на нефилимов',
-				text:'Теперь дело всей жизни - охота на нефилимов.',
+				text:'requirement',
 			},
 		'showgirl' : {
 				name:'Танцовщица',
-				text:'Звездный Театр содержит самых талантливых и красивых исполнителей по обе стороны Разлома, способных растапливать сердца и притягивать взгляды.',
+				text:'requirement',
 			},
 		'steamfitter' : {
 				name:'Паромеханик',
-				text:'Может законно применять магию для обслуживания конструктов.',
+				text:'requirement',
 			},
 		'freikorpsmann' : {
 				name:'Человек Вольного Корпуса',
-				text:'Солдат Вольного Корпуса Фон Шиля',
+				text:'requirement',
 			},
 		'graveservant' : {
 				name:'Могильный прислужник',
-				text:'',
+				text:'requirement',
 			},
 		'torakage' : {
 				name:'Торакагэ',
-				text:'Тень в тьме.',
+				text:'requirement',
 			},
 /*Into the Bayou*/
 		'bokor' : {
@@ -311,13 +311,14 @@ var glossary = {
 				name:'Зверолов',
 				text:'"Я сов ловлю и бью об пень..." Специалист по ловушкам.',
 			},
+/*Advanced. Into the Bayou*/
 /*Above the Law*/
 		'commander' : {
 				name:'Командир',
 				text:'Командир ведет в бой подчиненных бойцов, умело направляя их к достижению цели.',
 			},
 		'marksman' : {
-				name:'Стрелок (снайпер)',
+				name:'Снайпер',
 				text:'',
 			},
 		'bureaucrat' : {
@@ -331,5 +332,14 @@ var glossary = {
 		'gunner' : {
 				name:'Пулеметчик',
 				text:'',
+			},
+		'propagandist' : {
+				name:'Пропагандист',
+				text:'',
+			},
+/*Advanced. Above the Law*/
+		'executioner' : {
+				name:'Палач',
+				text:'requirement',
 			},
 	}

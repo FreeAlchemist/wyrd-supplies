@@ -11,7 +11,6 @@ $('#menu').append($('<a />',{href:'pursuits-above-the-law.html',text:'Above the 
 $('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
 $('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
 $('#menu').append($('<div />',{class:'row'}))
-
 $('#menu').append($('<div />',{id:'copyright',class:'copyright'}))
 var copyright = '<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p><image src="img/FA_logo.svg" height="100px" href="http://www.github.com/freealchemist"><p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>'
 $('#copyright').html(copyright)
@@ -66,7 +65,7 @@ $('#menu').append($('<div />',{class:'row'}))
 												console.log(pursuit)
 	var quantity = pursuit.length;
 
-	/*front*/
+/*front*/
 	for (var i = 0; i < quantity; i++) {
 												// console.log('PURSUIT #'+i+': ')
 												// console.log(pursuit[arr[i]])
@@ -147,10 +146,10 @@ $('#menu').append($('<div />',{class:'row'}))
 		$('#menu').append($('<input />',{type:'button',class:'btn btn-pursuit',id:cardid+'-btn-pursuit',value:pursuitname,'click':function(){showElem(this.id,'c')}}))
 	}
 
-	/*separator*/
+/*separator*/
 	$('#page').append($('<div />',{class:'row'}))
 
-	/*filler*/
+/*filler*/
 	if(quantity > 3 && (quantity % 3) != 0){
 		if((quantity % 3) == 2){
 			$('#page').append($('<div />',{class:'card filler'}))
@@ -161,7 +160,7 @@ $('#menu').append($('<div />',{class:'row'}))
 		}
 	}
 
-	/*back*/
+/*back*/
 	for (var i = quantity-1; i >= 0; i--) {
 		var cardid = pursuit[i];
 
@@ -191,9 +190,9 @@ $('#menu').append($('<div />',{class:'row'}))
 
 
 
-	// $('.card-back').toggle()
+// $('.card-back').toggle()
 
-	// TEXT HEIGHT CONTROL
+// TEXT HEIGHT CONTROL
 		var hcard = parseInt($('.condition').css('height'))
 		var himage = parseInt($('.'+value+'-image').css('height'))
 		var hname = parseInt($('.'+value+'-name').css('height'))

@@ -3,7 +3,7 @@ var faction = 'advanced';
 var pursuit = [
 'deathmarshal',
 'exorcist',
-'nephilimhunter',
+//'nephilimhunter',
 'shapeshifter',
 'showgirl',
 'decemberacolyte',
@@ -17,4 +17,5 @@ var pursuit = [
 'revivalist',
 'studentoftransmortis',
 'torakage',
+'executioner',
 ]

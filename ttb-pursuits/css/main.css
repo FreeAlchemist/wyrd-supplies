@@ -169,6 +169,12 @@ table.step{
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-size: 13pt;
+	vertical-align: middle;
+	line-height: 1cm;
+	/*line-height: 0.5cm;*/
+	max-height: 1cm;
+	/*height: 1cm;*/
+
 	width: 100%;
 	position: absolute;
 	/* top: 5.5cm; */
@@ -320,11 +326,11 @@ table.step{
 	.steamfitter{background-image: url(../img/bg/hold.png),url(../img/into-the-steam/steamfitter.png);}
 
 /*Under Quarantine*/
-	.bully{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/bully.png);}
+	.bully{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/bully.jpg);}
 	.chemist{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/chemist.png);}
 	.forgotten{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/forgotten.png);}
-	.ghost-eater{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/ghost-eater.png);}
-	.ghoul{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/ghoul.png);}
+	.ghosteater{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/ghosteater.jpg);}
+	.ghoul{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/ghoul.jpg);}
 	.medium{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/medium.png);}
 	.necromancer{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/necromancer.png);}
 	.sawbones{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/sawbones.png);}
@@ -339,7 +345,7 @@ table.step{
 	.torakage{background-image: url(../img/bg/hold.png),url(../img/under-quarantine/torakage.png);}
 
 /*Into the Bayou*/
-	.bokor{background-image: url(../img/bg/hold.png),url(../img/into-the-bayou/bokor.png);}
+	.bokor{background-image: url(../img/bg/hold.png),url(../img/into-the-bayou/bokor.jpg);}
 	.boomer{background-image: url(../img/bg/hold.png),url(../img/into-the-bayou/boomer.png);}
 	.boozer{background-image: url(../img/bg/hold.png),url(../img/into-the-bayou/boozer.png);}
 	.buckaroo{background-image: url(../img/bg/hold.png),url(../img/into-the-bayou/buckaroo.png);}
@@ -350,15 +356,16 @@ table.step{
 /*Advanced-Into the Bayou*/
 	
 /*Above the Law*/
-	.commander{background-image: url(../img/bg/hold.png),url(../img/above-the-law/commander.png);}
-	.marksman{background-image: url(../img/bg/hold.png),url(../img/above-the-law/marksman.png);}
-	.bureaucrat{background-image: url(../img/bg/hold.png),url(../img/above-the-law/bureaucrat.png);}
-	.magewright{background-image: url(../img/bg/hold.png),url(../img/above-the-law/magewright.png);}
-	.gunner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/gunner.png);}
-	.propagandist{background-image: url(../img/bg/hold.png),url(../img/above-the-law/propagandist.png);}
+	.commander{background-image: url(../img/bg/hold.png),url(../img/above-the-law/commander.jpg);}
+	.marksman{background-image: url(../img/bg/hold.png),url(../img/above-the-law/marksman.jpg);}
+	.bureaucrat{background-image: url(../img/bg/hold.png),url(../img/above-the-law/bureaucrat.jpg);}
+	.magewright{background-image: url(../img/bg/hold.png),url(../img/above-the-law/magewright.jpg);}
+	.gunner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/gunner.jpg);}
+	.propagandist{background-image: url(../img/bg/hold.png),url(../img/above-the-law/propagandist.jpg);}
 
 /*Advanced-Above the Law*/
-	.executioner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/executioner.png);}
+	.executioner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/executioner.jpg);}
+	.witchlinghandler{background-image: url(../img/bg/hold.png),url(../img/above-the-law/witchlinghandler.jpg);}
 
 /*From Nightmares*/
 /*Advanced-From Nightmares*/

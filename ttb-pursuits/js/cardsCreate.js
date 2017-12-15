@@ -1,37 +1,39 @@
-$('body').prepend($('<div />',{id:'page'}))
-$('body').append($('<div />',{id:'menu'}))
-$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
-$('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Fated Almanac',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Into the Steam',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Under Quarantine',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-above-the-law.html',text:'Above the Law',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
-$('#menu').append($('<div />',{class:'row'}))
-$('#menu').append($('<div />',{id:'copyright',class:'copyright'}))
-var copyright = '<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p><image src="img/FA_logo.svg" height="100px" href="http://www.github.com/freealchemist"><p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>'
-$('#copyright').html(copyright)
+/*Menu*/
+	$('body').prepend($('<div />',{id:'page'}))
+	$('body').append($('<div />',{id:'menu'}))
+	$('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
+	$('#menu').append($('<div />',{class:'row'}))
+	$('#menu').append($('<a />',{href:'pursuits-basic.html',text:'Fated Almanac',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-advanced.html',text:'Advanced',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-into-the-steam.html',text:'Into the Steam',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-under-quarantine.html',text:'Under Quarantine',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-into-the-bayou.html',text:'Into the Bayou',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-above-the-law.html',text:'Above the Law',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-from-nightmares.html',text:'From Nightmares',class:'btn btn-book'}))
+	$('#menu').append($('<a />',{href:'pursuits-beyond-fate.html',text:'Beyond Fate',class:'btn btn-book'}))
+	$('#menu').append($('<div />',{class:'row'}))
+	$('#menu').append($('<div />',{id:'copyright',class:'copyright'}))
+	var copyright = '<p>Web part, translation to russian<a href="http://www.github.com/freealchemist">FreeAlchemist</a></p><image src="img/FA_logo.svg" height="100px" href="http://www.github.com/freealchemist"><p>Contents copyright ©, <a href="http://www.wyrd-games.net/home">Wyrd Miniatures</a>, LLC.</p>'
+	$('#copyright').html(copyright)
 
-function activeBtn(elem){
-												console.log(elem)
-	var active = 0
-	if($(elem).hasClass('btnactive')){
-			$(elem).removeClass('btnactive')
-			active = 0
-		}
-		else{
-			$(elem).addClass('btnactive')
-			active = 1
-		}
-		return active
-}
+/*activeBtn*/
+	function activeBtn(elem){
+													console.log(elem)
+		var active = 0
+		if($(elem).hasClass('btnactive')){
+				$(elem).removeClass('btnactive')
+				active = 0
+			}
+			else{
+				$(elem).addClass('btnactive')
+				active = 1
+			}
+			return active
+	}
 
 $('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',value:'Таланты (таблица)','click':function(){
 	var active = activeBtn(this)
-												console.log(active)
+													console.log(active)
 	if(active == '0'){
 		$('#popup-talents').hide()
 		$('#talents-general').hide()
@@ -47,7 +49,7 @@ $('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',v
 }}))
 $('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',value:'Таланты (карточки)','click':function(){
 	var active = activeBtn(this)
-												console.log(active)
+													console.log(active)
 	if(active == '0'){
 		$('#popup-talents').hide()
 		$('#popup-cards').hide()
@@ -62,14 +64,14 @@ $('#menu').append($('<input />',{type:'button',class:'btn btn-talents-pursuit',v
 $('#menu').append($('<div />',{class:'row'}))
 
 
-												console.log(pursuit)
+													console.log(pursuit)
 	var quantity = pursuit.length;
 
 /*front*/
 	for (var i = 0; i < quantity; i++) {
-												// console.log('PURSUIT #'+i+': ')
-												// console.log(pursuit[arr[i]])
-												// console.log(pursuit[i])
+													// console.log('PURSUIT #'+i+': ')
+													// console.log(pursuit[arr[i]])
+													// console.log(pursuit[i])
 
 		// var cardid = arr[i];
 		var cardid = pursuit[i];
@@ -83,12 +85,12 @@ $('#menu').append($('<div />',{class:'row'}))
 			
 		var cardfrontid = cardid+'-front';
 		var cardbackid = cardid+'-back';
-												// console.log(cardid)
+													// console.log(cardid)
 		$('#page').append($('<div />',{class:'card card-front '+faction,id:cardfrontid}))
 		$('#'+cardfrontid).append($('<div />',{class:'front1',id:cardfrontid+'-bg1'}))
 		$('#'+cardfrontid).append($('<div />',{class:'front2',id:cardfrontid+'-bg2','click':function(){showElem(this.id,'t')}}))
 
-												console.log('NAME '+pursuitname)
+													console.log('NAME '+pursuitname)
 
 		$('#'+cardfrontid+'-bg1').append($('<div />',{class:'pursuit-title',text:pursuitname}))
 
@@ -98,7 +100,7 @@ $('#menu').append($('<div />',{class:'row'}))
 		else{
 			var gear = cardid+'-talent-gear'
 		}
-												console.log(gear)
+													console.log(gear)
 
 		if(gear){
 			$('#'+cardfrontid+'-bg1').append($('<div />',{class:'gear-name',text:'вещи:'}))
@@ -183,7 +185,9 @@ $('#menu').append($('<div />',{class:'row'}))
 		$('#'+cardbackid).append($('<div />',{class:'back '+cardid,id:cardbackid+'-bg'}))
 		$('#'+cardbackid+'-bg').clone().appendTo($('#'+cardid+'-talentstable-img'))
 		$('#'+cardid+'-talentstable-summary').append(pursuittext)
-		$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuitname}))
+													// console.log(pursuitname+' | '+pursuitname.length)
+		if(pursuitname.length >= 17){$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuitname,style:'font-size:10pt;'}))}
+		else{$('#'+cardbackid+'-bg').append($('<div />',{class:'title-back',text:pursuitname}))}
 		$('#'+cardbackid).append($('<div />',{class:'title-back type '+faction,text:'\"'+set+'\"'}))
 
 	}
@@ -198,8 +202,7 @@ $('#menu').append($('<div />',{class:'row'}))
 		var hname = parseInt($('.'+value+'-name').css('height'))
 		var htext = parseInt($('.'+value+'-text').css('height'))
 		var hplace = hcard - hname
-												console.log(hplace)
-
+													console.log(hplace)
 		var hnplace = 37
 		var htplace = 175
 		if(hname > himage){

@@ -1,5 +1,6 @@
 var glossary = {
-/*Physical aspects*/'Might' : {
+/*Physical aspects*/
+		'Might' : {
 				name:'Сила',
 				text:'',
 			},
@@ -157,31 +158,31 @@ var glossary = {
 			},
 		'augmented' : {
 				name:'Дополненный',
-				text:'Часть тела была заменена механической. Чем дальше, тем больше от конструкта, чем от человека.',
+				text:'The best way to stop a machine from taking your job? Become the machine.<br>-Aloysius VanBois',
 			},
 		'collaborator' : {
 				name:'Пособник',
-				text:'Ввиду своей харизмы и лидерских качеств вдохновляет других.',
+				text:'Some people take \'united we stand\' to a whole new level.<br>-Brianna Worchild',
 			},
 		'engineer' : {
 				name:'Инженер',
-				text:'Создает конструктов и изобретения расширяющие границы науки.',
+				text:'Nothing feels better than creating something that will do your bidding.<br>-Aloysius VanBois',
 			},
 		'illusionist' : {
 				name:'Иллюзионист',
-				text:'Владеет магией изменения и сотворения иллюзий.',
+				text:'Any petty magician can make something disappear. It\'s the \'appear\' that\'s hard.<br>-Raina Blout',
 			},
 		'infiltrator' : {
 				name:'Лазутчик',
-				text:'Шпион и диверсант, ложь и предательство скрытые приветливой улыбкой.',
+				text:'Cards walk in like you own the place? Nah, act like you\'ve always been there.<br>-Anonymous',
 			},
 		'mage' : {
 				name:'Маг',
-				text:'В результате пребывания в Малифо обрел Пробужденные Силы.',
+				text:'My magic comes naturally. No need for books or fancy words, just pure power.<br>-Brianna Worchild',
 			},
 		'primal' : {
 				name:'Первобытный',
-				text:'Тянется к дикой природе, может привлекать на свою сторону животных.',
+				text:'You gotta be a bit savage to survive in the wilds. Most people ain\'t got it in \'em.<br>-McTavish',
 			},
 /*Advanced. Into the Steam*/
 		'shapeshifter' : {
@@ -251,7 +252,7 @@ var glossary = {
 				text:'requirement',
 			},
 		'studentoftransmortis' : {
-				name:'Студент Трансмортиса',
+				name:'Трансмортис',
 				text:'requirement',
 			},
 		'nephilimhunter' : {
@@ -267,11 +268,11 @@ var glossary = {
 				text:'requirement',
 			},
 		'freikorpsmann' : {
-				name:'Человек Вольного Корпуса',
+				name:'Фрайкорпсман',
 				text:'requirement',
 			},
 		'graveservant' : {
-				name:'Могильный прислужник',
+				name:'Могильщик',
 				text:'requirement',
 			},
 		'torakage' : {
@@ -340,6 +341,10 @@ var glossary = {
 /*Advanced. Above the Law*/
 		'executioner' : {
 				name:'Палач',
+				text:'requirement',
+			},
+		'witchlinghandler' : {
+				name:'Погонщик ведьм',/*ведьмовская ищейка*/
 				text:'requirement',
 			},
 	}

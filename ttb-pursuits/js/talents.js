@@ -1,8 +1,9 @@
 
-$('body').prepend($('<script />',{type:'text/javascript',src:'js/glossary.js'}))
-$('body').prepend($('<div />',{class:'popup',id:'popup-cards'}))
-$('body').prepend($('<div />',{class:'popup',id:'popup-talents'}))
-//<script type="text/javascript" src="js/talents.js"></script>
+/*Scripts*/
+	$('body').prepend($('<script />',{type:'text/javascript',src:'js/glossary.js'}))
+	$('body').prepend($('<div />',{class:'popup',id:'popup-cards'}))
+	$('body').prepend($('<div />',{class:'popup',id:'popup-talents'}))
+	//<script type="text/javascript" src="js/talents.js"></script>
 
 var talents = {
 /*Общие таланты. Fated Almanac*/
@@ -1404,6 +1405,102 @@ var talents = {
 			},
 		'Flaming Head' : {
 				name:'Пылающая голова',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	nephilimhunter : {
+		book:'Advanced (Fated Almanac)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
 				requirement:'',
 				story:'',
 				text:'',
@@ -5623,7 +5720,103 @@ var talents = {
 			},
 	},
 	executioner : {
-		book:'Above the Law',
+		book:'Advanced (Above the Law)',
+		gear:'',
+		step:{
+			'1' : '',
+			'2' : 'Общий Талант',
+			'3' : '',
+			'4' : 'Общий Талант',
+			'5' : '',
+			'6' : 'Общий Талант',
+			'7' : '',
+			'8' : 'Общий Талант',
+			'9' : '',
+			'10' : '',
+		},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+		'' : {
+				name:'',
+				requirement:'',
+				story:'',
+				text:'',
+				trigger:'',
+				limit:'',
+			},
+	},
+	witchlinghandler : {
+		book:'Advanced (Above the Law)',
 		gear:'',
 		step:{
 			'1' : '',
@@ -5727,11 +5920,11 @@ function TalentsTable(){
 	for (var p in talents) {
 		arr.push(p);
 	}
-	// console.log(arr)
-	// console.log(arr.length)
+												// console.log(arr)
+												// console.log(arr.length)
 	for(var t = 0; t < arr.length; t++){
-		// console.log(arr[t])
-		// console.log(talents[arr[t]])
+												// console.log(arr[t])
+												// console.log(talents[arr[t]])
 
 		var table = $('<table />')
 		table.attr('cellpadding',"0px")
@@ -5782,21 +5975,21 @@ function TalentsTable(){
 		var arr1 = [];
 
 		for (var p in talents[arr[t]]) {
-			// console.log(talents[arr[t]])
+													// console.log(talents[arr[t]])
 			arr1.push(p);
 		}
-		// console.log(arr1)
+													// console.log(arr1)
 		var count = arr1.length
-		// console.log('ARR1: '+arr1)
+													// console.log('ARR1: '+arr1)
 		console.log(arr1.length)
 		console.log(count)
 		talentsCards(pursuit,count)
 		var cardcount = 1
 		for(var i = 0; i < arr1.length; i++){
-			// console.log(arr1[i])
+													// console.log(arr1[i])
 			if(arr1[i] == 'book'){
 				var book = talents[arr[t]].book
-				// console.log(book)
+													// console.log(book)
 				td0.prepend(book+': ')
 			}
 			// else if(arr1[i] == 'gear'){
@@ -5822,18 +6015,18 @@ function TalentsTable(){
 				if(name){
 					var cardname = name+'<br>('+arr1[i]+')'
 					var shortname = '<p class="talents-name">'+name+'</p>'
-					// console.log('name: '+name)
+													// console.log('name: '+name)
 					td1.append(cardname)
 				}
 				else{
 					td1.append(arr1[i])
 					var shortname = arr1[i]
 				}
-				// console.log(talents[arr[t]][arr1[i]])
+													// console.log(talents[arr[t]][arr1[i]])
 				story = talents[arr[t]][arr1[i]].story
 				if(story){
 					var cardstory = '<p class="talents-story">'+story+'</p>'
-					// console.log('Story: '+story)
+													// console.log('Story: '+story)
 					td2.append(cardstory)
 				}
 				else{
@@ -5874,8 +6067,8 @@ function TalentsTable(){
 				}
 				var fill = talents[arr[t]][arr1[i]].fill
 				if(fill){
-					console.log('fill: '+fill)
-					console.log('numeric: '+$.isNumeric(fill))
+													console.log('fill: '+fill)
+													console.log('numeric: '+$.isNumeric(fill))
 					if($.isNumeric(fill) == true){
 						var div1 = $('<div />',{class:'talents-fill'});
 						var div2 = $('<div />',{class:'talents-fill'});
@@ -5897,72 +6090,72 @@ function TalentsTable(){
 				}
 				table.append(tr.append(td1).append(td2))
 
-				console.log(cardcount)
-				console.log(pursuit)
+													console.log(cardcount)
+													console.log(pursuit)
 
 				var card = $('<div />',{class:'card card-talent',id:'card-talent'+cardcount,}).html(shortname+cardrequirement+cardtext+cardtrigger+cardlimit)
 				if(pursuit == 'general' && cardcount <= 9){
-					console.log('add card')
+													console.log('add card')
 					$('#page-1').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 9 && cardcount <= 18){
-					console.log('add card')
+													console.log('add card')
 					$('#page-2').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 18 && cardcount <= 27){
-					console.log('add card')
+													console.log('add card')
 					$('#page-3').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 27 && cardcount <= 36){
-					console.log('add card')
+													console.log('add card')
 					$('#page-4').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 36 && cardcount <= 45){
-					console.log('add card')
+													console.log('add card')
 					$('#page-5').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 45 && cardcount <= 54){
-					console.log('add card')
+													console.log('add card')
 					$('#page-6').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 54 && cardcount <= 63){
-					console.log('add card')
+													console.log('add card')
 					$('#page-7').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 63 && cardcount <= 72){
-					console.log('add card')
+													console.log('add card')
 					$('#page-8').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 72 && cardcount <= 81){
-					console.log('add card')
+													console.log('add card')
 					$('#page-9').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 81 && cardcount <= 90){
-					console.log('add card')
+													console.log('add card')
 					$('#page-10').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 90 && cardcount <= 99){
-					console.log('add card')
+													console.log('add card')
 					$('#page-11').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 99 && cardcount <= 108){
-					console.log('add card')
+													console.log('add card')
 					$('#page-12').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 108 && cardcount <= 117){
-					console.log('add card')
+													console.log('add card')
 					$('#page-13').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 117 && cardcount <= 126){
-					console.log('add card')
+													console.log('add card')
 					$('#page-14').append(card)
 				}
 				if(pursuit == 'general'&& cardcount > 126 && cardcount <= 135){
-					console.log('add card')
+													console.log('add card')
 					$('#page-15').append(card)
 				}
 				cardcount+=1
-				// console.log($('.talentstable-text').css('width'))
+													// console.log($('.talentstable-text').css('width'))
 			}
 
 		}
@@ -5977,7 +6170,7 @@ function talentsCards(elem,pgcount){
 	if(elem == 'general'){
 		var count = pgcount
 		var pgnum = Math.round(count/9)
-		console.log(pgnum)
+													console.log(pgnum)
 		for(i=0;i<pgnum;i++){
 			$('#popup-cards').append($('<div/>',{class:'page',id:'page-'+(i+1)}))
 		}
@@ -6012,10 +6205,10 @@ talentsCards()
 
 /*Показать таланты*/
 	function showElem(elem,type){
-	// console.log(type)
+													// console.log(type)
 	arr = elem.split('-')
-	// console.log(arr)
-	// console.log(arr[0])
+													// console.log(arr)
+													// console.log(arr[0])
 		if(type == 't'){
 				$('.talentstable').hide()
 				$('#popup-talents').hide()
@@ -6052,26 +6245,26 @@ talentsCards()
 		var htitle = parseInt($('.talentstable-pursuit').css('height'))
 		var hinfo = parseInt($('.pursuit-info').css('height'))
 
-		console.log('Тип: '+type)
-		console.log('Доступная высота: '+hpopup)
-		console.log('Высота таблицы: '+htable)
-		console.log('Высота заголовка: '+htitle)
-		console.log('Высота информации: '+hinfo)
+													console.log('Тип: '+type)
+													console.log('Доступная высота: '+hpopup)
+													console.log('Высота таблицы: '+htable)
+													console.log('Высота заголовка: '+htitle)
+													console.log('Высота информации: '+hinfo)
 	}
 
 // var hpopup = parseInt($('#popup').css('height'))
 // var htitle = parseInt($('.talentstable-pursuit').css('height'))
 // var hinfo = parseInt($('.pursuit-info').css('height'))
 
-// console.log('Доступная высота: '+hpopup)
-// console.log('Высота заголовка: '+htitle)
-// console.log('Высота информации: '+hinfo)
+													// console.log('Доступная высота: '+hpopup)
+													// console.log('Высота заголовка: '+htitle)
+													// console.log('Высота информации: '+hinfo)
 	// var hcard = parseInt($('.condition').css('height'))
 	// var himage = parseInt($('.'+value+'-image').css('height'))
 	// var hname = parseInt($('.'+value+'-name').css('height'))
 	// var htext = parseInt($('.'+value+'-text').css('height'))
 	// var hplace = hcard - hname
-	// console.log(hplace)
+													// console.log(hplace)
 
 	// if(hname > himage){
 	// 	$('.'+value+'-name').css('font-size','8pt').css('color','red')

@@ -129,7 +129,7 @@ $('#menu').append($('<div />',{class:'row'}))
 
 		var stepid = cardfrontid+'-bg2'+'-step'
 
-		$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid}))
+		$('#'+cardfrontid+'-bg2').append($('<ol />',{class:'step-ol',id:stepid,start:'0'}))
 		$('#'+stepid).append($('<b />',{text:'Развитие талантов'}))
 
 		if(talents[cardid].step){
@@ -138,7 +138,7 @@ $('#menu').append($('<div />',{class:'row'}))
 				steparr.push(c);
 			}
 			var stepquantity = steparr.length;
-			for (var s = 1; s <= stepquantity; s++) {
+			for (var s = 0; s <= stepquantity-1; s++) {
 				$('#'+stepid).append($('<li />',{text:talents[cardid].step[s]}))
 			};
 		}

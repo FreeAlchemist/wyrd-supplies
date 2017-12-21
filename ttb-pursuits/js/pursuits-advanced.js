@@ -19,4 +19,5 @@ var pursuit = [
 'torakage',
 'executioner',
 'witchlinghandler',
+'soulstoneaficionado',
 ]

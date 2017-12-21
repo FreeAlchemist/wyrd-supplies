@@ -347,4 +347,8 @@ var glossary = {
 				name:'Погонщик ведьм',/*ведьмовская ищейка*/
 				text:'requirement',
 			},
+		'soulstoneaficionado' : {
+				name:'Коллекционер',
+				text:'requirement',
+			},
 	}

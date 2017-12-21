@@ -1,3 +1,16 @@
+/*
+<span class="symbol plus"/>
+<span class="symbol minus"/>
+<span class="symbol ram"/>
+<span class="symbol crow"/> 
+<span class="symbol mask"/>
+<span class="symbol tome"/>
+<span class="symbol blast"/>
+<span class="symbol melee"/>
+<span class="symbol ranged"/>
+*/
+
+
 body{
 	width:20cm;
 }
@@ -366,6 +379,7 @@ table.step{
 /*Advanced-Above the Law*/
 	.executioner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/executioner.jpg);}
 	.witchlinghandler{background-image: url(../img/bg/hold.png),url(../img/above-the-law/witchlinghandler.jpg);}
+	.soulstoneaficionado{background-image: url(../img/bg/hold.png),url(../img/above-the-law/soulstoneaficionado.jpg);}
 
 /*From Nightmares*/
 /*Advanced-From Nightmares*/

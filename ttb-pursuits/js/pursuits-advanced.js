@@ -17,4 +17,8 @@ var pursuit = [
 'revivalist',
 'studentoftransmortis',
 'torakage',
+'executioner',
+'witchlinghandler',
+'soulstoneaficionado',
+'magekiller',
 ]

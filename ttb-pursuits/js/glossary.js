@@ -1,4 +1,22 @@
 var glossary = {
+/*Physical aspects*/
+		'Might' : {
+				name:'Сила',
+				text:'',
+			},
+		'Grace' : {
+				name:'Грация',
+				text:'',
+			},
+		'Speed' : {
+				name:'Скорость',
+				text:'',
+			},
+		'Resilence' : {
+				name:'Выносливость',
+				text:'',
+			},
+/*Mental aspects*/
 		'Cunning' : {
 				name:'Хитрость',
 				text:'',
@@ -7,46 +25,32 @@ var glossary = {
 				name:'Обаяние',
 				text:'',
 				},
-		'Speed' : {
-				name:'Скорость',
+		'Tenacity' : {
+				name:'Стойкость',
 				text:'',
 			},
+		'Intellect' : {
+				name:'Интеллект',
+				text:'',
+			},	
+/*Derived aspects*/
 		'Wounds' : {
 				name:'Раны',
-				text:'',
-			},
-		'Charge' : {
-				name:'Нападение',
 				text:'',
 			},
 		'Defense' : {
 				name:'Защита',
 				text:'',
 			},
-		'Tenacity' : {
-				name:'Стойкость',
-				text:'',
-			},
 		'Walk' : {
 				name:'Движение',
 				text:'',
 			},
-		'Resilence' : {
-				name:'Выносливость',
+		'Charge' : {
+				name:'Нападение',
 				text:'',
 			},
-		'Grace' : {
-				name:'Грация',
-				text:'',
-			},
-		'Might' : {
-				name:'Сила',
-				text:'',
-			},
-		'Intellect' : {
-				name:'Интеллект',
-				text:'',
-			},
+/*Magic*/
 		'Sorcery Magia' : {
 				name:'Волшебство',
 				text:'',
@@ -63,7 +67,11 @@ var glossary = {
 				name:'Зачарование',
 				text:'',
 			},
-
+		'Manifested Power' : {
+				name:'Пробужденная Сила',
+				text:'',
+			},
+/*Status*/
 		'Slow' : {
 				name:'Замедлен',
 				text:'',
@@ -72,6 +80,7 @@ var glossary = {
 				name:'Парализован',
 				text:'',
 			},
+/*General terminology*/
 		'Critical Effect' : {
 				name:'Критический Эффект',
 				text:'',
@@ -80,11 +89,11 @@ var glossary = {
 				name:'Лидерство',
 				text:'',
 			},
-
 		'general' : {
 				name:'Общие таланты',
 				text:'',
 			},
+/*Basic*/
 		'academic' : {
 				name:'Академик',
 				text:'Академик является экспертом в области знаний и пользуется популярностью, когда возникают сложные вопросы.',
@@ -141,69 +150,73 @@ var glossary = {
 				name:'Кутила',
 				text:'Кутила это дилетант социального статуса, у которого столько же имен, сколько и друзей.',
 			},
+/*Advanced Basic*/
 		'deathmarshal' : {
 				name:'Маршал Смерти',
-				text:'',
+				text:'requirement',
 			},
+/*Into the Steam*/
 		'animator' : {
 				name:'Аниматор',
-				text:'',
+				text:'Мусор для одного, шаркающее чудовище для другого.<br>-Джозеф Тисдэйл',
 			},
 		'augmented' : {
 				name:'Дополненный',
-				text:'',
+				text:'Лучший способ остановить машину отнимающую вашу работу? Стать машиной.<br>-Алоизиус ВанБуа',
 			},
 		'collaborator' : {
 				name:'Пособник',
-				text:'',
+				text:'Некоторые люди понимают \'объединенные мы стоим\' на абсолютно новом уровне.<br>-Брианна Ворчайлд',
 			},
 		'engineer' : {
 				name:'Инженер',
-				text:'',
+				text:'Нет ничего лучше создания чего-то исполняющего ваши пожелания.<br>-Алоизиус ВанБуа',
 			},
 		'illusionist' : {
 				name:'Иллюзионист',
-				text:'',
+				text:'Любой завалящий маг может заставить что-то исчезнуть. \'Появление\', вот в чем сложность.<br>-Райна Блоут',
 			},
 		'infiltrator' : {
 				name:'Лазутчик',
-				text:'',
+				text:'Карты идут так, будто вы владеете этим местом? Не, ведите себя, будто всегда здесь были.<br>-Аноним',
 			},
 		'mage' : {
 				name:'Маг',
-				text:'',
+				text:'Моя магия приходит естествено. Нет нужды в книгах или громких словах, только чистая сила.<br>-Брианна Ворчайлд',
 			},
 		'primal' : {
 				name:'Первобытный',
-				text:'',
+				text:'Нужно быть слегка дикарем чтобы выжить на природе. В большинстве людей этого нет.<br>-МкТавиш',
 			},
+/*Advanced. Into the Steam*/
 		'shapeshifter' : {
 				name:'Перевертыш',
-				text:'',
+				text:'Может превращаться в зверя по желанию.',
 			},
-		'steamfitter' : {
+		'decemberacolyte' : {
 				name:'Аколит Декабря',
-				text:'',
+				text:'Свирепый охотник преданный Культу Декабря.',
 			},
 		'silentone' : {
 				name:'Безмолвный',
-				text:'',
+				text:'Прислужники Распутиной, главы Культа Декабря.',
 			},
 		'demolitionist' : {
 				name:'Подрывник',
-				text:'',
+				text:'Иногда динамит нашептывает тихим голосом, "Больше, больше взрывов!".',
 			},
+/*Under Quarantine*/
 		'bully' : {
 				name:'Хулиган',
-				text:'',
+				text:'"Чо? Гремлинов любишь?"',
 			},
 		'chemist' : {
 				name:'Химик',
-				text:'',
+				text:'Смешать и разлить по емкостям, что лекарство, что яд.',
 			},
 		'forgotten' : {
 				name:'Забытый',
-				text:'',
+				text:'... ... ... ...',
 			},
 		'ghosteater' : {
 				name:'Пожиратель духов',
@@ -211,11 +224,11 @@ var glossary = {
 			},
 		'ghoul' : {
 				name:'Упырь',
-				text:'',
+				text:'Черпает силу пожирая человеческую плоть.',
 			},
 		'medium' : {
 				name:'Медиум',
-				text:'',
+				text:'Находится в контакте с миром духов, призывая их на помощь.',
 			},
 		'necromancer' : {
 				name:'Некромант',
@@ -223,95 +236,127 @@ var glossary = {
 			},
 		'sawbones' : {
 				name:'Костоправ',
-				text:'',
+				text:'"Кто-то же должен вас всех лечить..."',
 			},
+/*Advanced. Under Quarantine*/
 		'abettorofobliteration' : {
 				name:'Пособник Забвения',
-				text:'',
+				text:'requirement',
 			},
 		'exorcist' : {
 				name:'Экзорцист',
-				text:'',
+				text:'requirement',
 			},
 		'revenant' : {
 				name:'Призрак',
-				text:'',
+				text:'requirement',
 			},
 		'revivalist' : {
 				name:'Реаниматор',
-				text:'',
+				text:'requirement',
 			},
 		'studentoftransmortis' : {
-				name:'Студент Трансмортизма',
-				text:'',
+				name:'Трансмортис',
+				text:'requirement',
 			},
 		'nephilimhunter' : {
 				name:'Охотник на нефилимов',
-				text:'',
+				text:'requirement',
 			},
 		'showgirl' : {
 				name:'Танцовщица',
-				text:'',
+				text:'requirement',
 			},
 		'steamfitter' : {
 				name:'Паромеханик',
-				text:'',
+				text:'requirement',
 			},
 		'freikorpsmann' : {
-				name:'Человек Вольного Корпуса',
-				text:'',
+				name:'Фрайкорпсман',
+				text:'requirement',
 			},
 		'graveservant' : {
-				name:'Могильный прислужник',
-				text:'',
+				name:'Могильщик',
+				text:'requirement',
 			},
 		'torakage' : {
 				name:'Торакагэ',
-				text:'',
+				text:'requirement',
 			},
+/*Into the Bayou*/
 		'bokor' : {
 				name:'Бокор',
-				text:'',
+				text:'Шаман',
 			},
 		'boomer' : {
-				name:'',
-				text:'',
+				name:'Взрывала',
+				text:'Если гремлин нашел динамит и выжил, он умеет с ним обращаться.',
 			},
 		'boozer' : {
-				name:'',
-				text:'',
+				name:'Выпивоха',
+				text:'"Еще кружечку!"',
 			},
 		'buckaroo' : {
-				name:'',
+				name:'Ковбой',
 				text:'',
 			},
 		'copycat' : {
-				name:'',
-				text:'',
+				name:'Подражатель',
+				text:'"У них большие шляпы и пушки? Нам тоже нужны!"',
 			},
 		'pugilist' : {
-				name:'',
-				text:'',
+				name:'Боец',
+				text:'Кулаки и гремлинская безбашенность. Опасное сочетание.',
 			},
 		'swineherd' : {
-				name:'',
-				text:'',
+				name:'Свинопас',
+				text:'"Свинка хочет кушать... Ты вкусный?"',
 			},
 		'trapper' : {
-				name:'',
+				name:'Зверолов',
+				text:'"Я сов ловлю и бью об пень..." Специалист по ловушкам.',
+			},
+/*Advanced. Into the Bayou*/
+/*Above the Law*/
+		'commander' : {
+				name:'Командир',
+				text:'Командир ведет в бой подчиненных бойцов, умело направляя их к достижению цели.',
+			},
+		'marksman' : {
+				name:'Снайпер',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'bureaucrat' : {
+				name:'Бюрократ',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'magewright' : {
+				name:'Чароплёт',
 				text:'',
 			},
-		'' : {
-				name:'',
+		'gunner' : {
+				name:'Пулеметчик',
 				text:'',
+			},
+		'propagandist' : {
+				name:'Пропагандист',
+				text:'',
+			},
+/*Advanced. Above the Law*/
+		'executioner' : {
+				name:'Палач',
+				text:'requirement',
+			},
+		'witchlinghandler' : {
+				name:'Погонщик ведьм',
+				text:'requirement',
+			},
+		'soulstoneaficionado' : {
+				name:'Коллекционер',
+				text:'requirement',
+			},
+		'magekiller' : {
+				name:'Убийца магов',
+				text:'requirement',
 			},
 	}
-

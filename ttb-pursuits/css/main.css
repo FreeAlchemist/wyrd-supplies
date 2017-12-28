@@ -382,6 +382,7 @@ table.step{
 	.executioner{background-image: url(../img/bg/hold.png),url(../img/above-the-law/executioner.jpg);}
 	.witchlinghandler{background-image: url(../img/bg/hold.png),url(../img/above-the-law/witchlinghandler.jpg);}
 	.soulstoneaficionado{background-image: url(../img/bg/hold.png),url(../img/above-the-law/soulstoneaficionado.jpg);}
+	.magekiller{background-image: url(../img/bg/hold.png),url(../img/above-the-law/magekiller.jpg);}
 
 /*From Nightmares*/
 /*Advanced-From Nightmares*/
@@ -724,3 +725,24 @@ table.step{
 			border: none;
 		}
 	}
+
+.manifestedtable td{
+	height: 10px;
+}
+
+.manifestedtitle{
+	background-color: black;
+	color: Linen;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*
+Персонаж получает следующую Пробужденную Силу (Manifested Power):
+<table class="manifestedtable"><tr><td colspan="5" class="manifestedtitle">НАЗВАНИЕ</td></tr>
+<tr><td>AV</td><td>ОД (AP)</td><td>TN</td><td>Сопротивление</td><td>Дистанция</td></tr>
+<tr><td>АСПЕКТ+НАВЫК<br>(ASPECT+SKILL)</td><td>ОД</td><td>СЛОЖНОСТЬ</td><td>СОПРОТИВЛЕНИЕ</td><td>ДИСТАНЦИЯ</td></tr>
+<tr><td colspan="5"><b>Эффект: </b>ТЕКСТ</td></tr></table>
+
+Персонаж получает следующую Пробужденную Силу (Manifested Power):<table class="manifestedtable"><tr><td colspan="5" class="manifestedtitle">НАЗВАНИЕ</td></tr><tr><td>AV</td><td>ОД (AP)</td><td>TN</td><td>Сопротивление</td><td>Дистанция</td></tr><tr><td>АСПЕКТ+НАВЫК<br>(ASPECT+SKILL)</td><td>ОД</td><td>СЛОЖНОСТЬ</td><td>СОПРОТИВЛЕНИЕ</td><td>ДИСТАНЦИЯ</td></tr><tr><td colspan="5"><b>Эффект: </b>ТЕКСТ</td></tr></table>
+*/

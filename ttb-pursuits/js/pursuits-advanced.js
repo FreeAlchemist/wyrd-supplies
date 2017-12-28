@@ -20,4 +20,5 @@ var pursuit = [
 'executioner',
 'witchlinghandler',
 'soulstoneaficionado',
+'magekiller',
 ]

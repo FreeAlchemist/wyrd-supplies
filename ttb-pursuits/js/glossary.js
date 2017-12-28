@@ -67,6 +67,10 @@ var glossary = {
 				name:'Зачарование',
 				text:'',
 			},
+		'Manifested Power' : {
+				name:'Пробужденная Сила',
+				text:'',
+			},
 /*Status*/
 		'Slow' : {
 				name:'Замедлен',
@@ -154,35 +158,35 @@ var glossary = {
 /*Into the Steam*/
 		'animator' : {
 				name:'Аниматор',
-				text:'One man\'s junk is another man\'s shambling monstrosity.<br>-Joseph Tisdale',
+				text:'Мусор для одного, шаркающее чудовище для другого.<br>-Джозеф Тисдэйл',
 			},
 		'augmented' : {
 				name:'Дополненный',
-				text:'The best way to stop a machine from taking your job? Become the machine.<br>-Aloysius VanBois',
+				text:'Лучший способ остановить машину отнимающую вашу работу? Стать машиной.<br>-Алоизиус ВанБуа',
 			},
 		'collaborator' : {
 				name:'Пособник',
-				text:'Some people take \'united we stand\' to a whole new level.<br>-Brianna Worchild',
+				text:'Некоторые люди понимают \'объединенные мы стоим\' на абсолютно новом уровне.<br>-Брианна Ворчайлд',
 			},
 		'engineer' : {
 				name:'Инженер',
-				text:'Nothing feels better than creating something that will do your bidding.<br>-Aloysius VanBois',
+				text:'Нет ничего лучше создания чего-то исполняющего ваши пожелания.<br>-Алоизиус ВанБуа',
 			},
 		'illusionist' : {
 				name:'Иллюзионист',
-				text:'Any petty magician can make something disappear. It\'s the \'appear\' that\'s hard.<br>-Raina Blout',
+				text:'Любой завалящий маг может заставить что-то исчезнуть. \'Появление\', вот в чем сложность.<br>-Райна Блоут',
 			},
 		'infiltrator' : {
 				name:'Лазутчик',
-				text:'Cards walk in like you own the place? Nah, act like you\'ve always been there.<br>-Anonymous',
+				text:'Карты идут так, будто вы владеете этим местом? Не, ведите себя, будто всегда здесь были.<br>-Аноним',
 			},
 		'mage' : {
 				name:'Маг',
-				text:'My magic comes naturally. No need for books or fancy words, just pure power.<br>-Brianna Worchild',
+				text:'Моя магия приходит естествено. Нет нужды в книгах или громких словах, только чистая сила.<br>-Брианна Ворчайлд',
 			},
 		'primal' : {
 				name:'Первобытный',
-				text:'You gotta be a bit savage to survive in the wilds. Most people ain\'t got it in \'em.<br>-McTavish',
+				text:'Нужно быть слегка дикарем чтобы выжить на природе. В большинстве людей этого нет.<br>-МкТавиш',
 			},
 /*Advanced. Into the Steam*/
 		'shapeshifter' : {
@@ -344,11 +348,15 @@ var glossary = {
 				text:'requirement',
 			},
 		'witchlinghandler' : {
-				name:'Погонщик ведьм',/*ведьмовская ищейка*/
+				name:'Погонщик ведьм',
 				text:'requirement',
 			},
 		'soulstoneaficionado' : {
 				name:'Коллекционер',
+				text:'requirement',
+			},
+		'magekiller' : {
+				name:'Убийца магов',
 				text:'requirement',
 			},
 	}

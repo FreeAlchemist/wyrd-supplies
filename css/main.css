@@ -56,9 +56,9 @@ color: black;
 #ttb{
 	position: relative;
 	top: -45px;
-	height: 4cm;
+	/*height: 4cm;
 	background-position: center;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
-	/*background-image: url(../img/ttb.png);*/
+	background-image: url(../img/ttb.png);*/
 }

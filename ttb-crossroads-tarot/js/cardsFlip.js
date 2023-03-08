@@ -2,7 +2,7 @@ $('body').append($('<div />',{id:'menu'}))
 $('#menu').append($('<a />',{href:'../index.html',text:'Главное меню',class:'btn btn-main'}))
 $('#menu').append($('<div />',{class:'row'}))
 $('#menu').append($('<a />',{href:'index.html',text:'Crossroads Tarot',class:'btn btn-book'}))
-$('#menu').append($('<a />',{href:'index-rus.html',text:'Таро перекрестка',class:'btn btn-book'}))
+$('#menu').append($('<a />',{href:'index-rus.html',text:'Таро перекрёстка',class:'btn btn-book'}))
 
 console.log(lang)
 	if(lang == 'ENG'){
